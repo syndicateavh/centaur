@@ -32,10 +32,10 @@ export default function PlacementsPage() {
   return (
     <>
       <PageHero
+        routeId="placements"
         eyebrow="Transparent career support"
         title={seo.h1}
         intro="Understand what Centaur Careers can support, what learners are expected to complete and which decisions remain with employers."
-        breadcrumbs={[{ label: 'Placements' }]}
       />
 
       <section className="bg-white py-16 sm:py-20">

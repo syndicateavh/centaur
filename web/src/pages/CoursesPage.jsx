@@ -34,10 +34,10 @@ export default function CoursesPage() {
   return (
     <>
       <PageHero
+        routeId="courses"
         eyebrow="Course directory"
         title={seo.h1}
         intro="Compare three focused pathways designed to build practical process knowledge and improve entry-level career readiness."
-        breadcrumbs={[{ label: 'Courses' }]}
       />
 
       <section className="bg-white py-16 sm:py-20">

@@ -1,9 +1,14 @@
 import React from 'react';
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router';
-import { Toaster } from 'sonner';
+import '@fontsource-variable/inter/wght.css';
+import '@fontsource/poppins/latin-500.css';
+import '@fontsource/poppins/latin-600.css';
+import '@fontsource/poppins/latin-700.css';
+import '@fontsource/poppins/latin-800.css';
 // Vite resolves stylesheet URL imports during the React Router build.
 // eslint-disable-next-line import/no-unresolved
 import stylesheet from './index.css?url';
+import AnalyticsPageView from '@/components/AnalyticsPageView.jsx';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import FloatingWhatsAppButton from '@/components/FloatingWhatsAppButton.jsx';
@@ -14,7 +19,7 @@ export const links = () => [
   {
     rel: 'icon',
     type: 'image/jpeg',
-    href: 'https://horizons-cdn.hostinger.com/cffb4313-a439-4b6d-a0e2-eb0a66a950b9/743152148dd3f6734568a106bb709d06.jpg',
+    href: '/images/brand/centaur-careers-logo.jpg',
   },
 ];
 
@@ -34,11 +39,6 @@ export function Layout({ children }) {
         <Meta />
         <Links />
         <script dangerouslySetInnerHTML={{ __html: gtmBootstrap }} />
-        <script
-          src="https://analytics.ahrefs.com/analytics.js"
-          data-key="gXEgeRfhxdJoPzl7E8VfyQ"
-          async
-        />
       </head>
       <body>
         <noscript>
@@ -62,6 +62,7 @@ export default function App() {
   return (
     <>
       <ScrollToTop />
+      <AnalyticsPageView />
       <div className="flex min-h-screen flex-col">
         <Header />
         <main className="flex-grow">
@@ -70,7 +71,6 @@ export default function App() {
         <Footer />
       </div>
       <FloatingWhatsAppButton />
-      <Toaster position="bottom-right" richColors />
     </>
   );
 }

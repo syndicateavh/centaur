@@ -32,10 +32,10 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
+        routeId="about"
         eyebrow="Our institute"
         title={seo.h1}
         intro="A banking and finance training institute focused on practical process knowledge, guided application and responsible career preparation."
-        breadcrumbs={[{ label: 'About' }]}
       />
 
       <section className="bg-white py-16 sm:py-20">

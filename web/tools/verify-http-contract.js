@@ -21,8 +21,13 @@ function serveFile(response, filePath, status = 200) {
   const types = {
     '.css': 'text/css; charset=utf-8',
     '.html': 'text/html; charset=utf-8',
+    '.jpg': 'image/jpeg',
+    '.jpeg': 'image/jpeg',
     '.js': 'text/javascript; charset=utf-8',
+    '.png': 'image/png',
     '.txt': 'text/plain; charset=utf-8',
+    '.webp': 'image/webp',
+    '.woff2': 'font/woff2',
     '.xml': 'application/xml; charset=utf-8',
   };
   response.writeHead(status, { 'Content-Type': types[extension] || 'application/octet-stream' });
@@ -67,9 +72,9 @@ server.listen(0, '127.0.0.1');
 await once(server, 'listening');
 const { port } = server.address();
 
-async function request(pathname, { host = canonicalHost, protocol = 'https', redirect = 'manual' } = {}) {
+async function request(pathname, { host = canonicalHost, protocol = 'https', redirect = 'manual', headers = {} } = {}) {
   return fetch(`http://127.0.0.1:${port}${pathname}`, {
-    headers: { 'X-Test-Host': host, 'X-Forwarded-Proto': protocol },
+    headers: { 'X-Test-Host': host, 'X-Forwarded-Proto': protocol, ...headers },
     redirect,
   });
 }
@@ -105,6 +110,12 @@ try {
     if (response.status !== 404) failures.push(`${missingPath}: expected 404, received ${response.status}`);
     if (!body.includes('name="robots" content="noindex,follow"')) failures.push(`${missingPath}: 404 body is missing noindex,follow`);
   }
+
+  const publicLogo = await request('/images/brand/centaur-careers-logo.jpg', {
+    headers: { 'User-Agent': 'Googlebot/2.1 (+http://www.google.com/bot.html)' },
+  });
+  if (publicLogo.status !== 200) failures.push(`public asset: expected logo 200 without Referer, received ${publicLogo.status}`);
+  if (!publicLogo.headers.get('content-type')?.startsWith('image/')) failures.push('public asset: logo has an incorrect content type');
 } finally {
   server.close();
   await once(server, 'close');

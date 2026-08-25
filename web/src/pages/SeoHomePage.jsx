@@ -49,6 +49,7 @@ export default function SeoHomePage() {
   return (
     <>
       <PageHero
+        routeId="home"
         eyebrow="Centaur Careers · Lucknow and live online"
         title={seo.h1}
         intro="Practical learning for graduates and early-career professionals exploring investment operations, retail banking and finance operations."
@@ -131,6 +132,7 @@ export default function SeoHomePage() {
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
               <Link to="/about/" className="font-bold text-white underline decoration-accent decoration-2 underline-offset-4">About Centaur Careers</Link>
+              <Link to="/locations/lucknow/" className="font-bold text-white underline decoration-accent decoration-2 underline-offset-4">Lucknow training centre</Link>
               <Link to="/contact/" className="font-bold text-white underline decoration-accent decoration-2 underline-offset-4">Contact the centre</Link>
             </div>
           </article>

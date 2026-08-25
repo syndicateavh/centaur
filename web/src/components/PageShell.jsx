@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, CheckCircle2, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router';
+import { getVisibleBreadcrumbs } from '@/seo/seoRoutes.js';
 
 export function Breadcrumbs({ items }) {
   return (
@@ -26,7 +27,9 @@ export function Breadcrumbs({ items }) {
   );
 }
 
-export function PageHero({ eyebrow, title, intro, breadcrumbs = [], children }) {
+export function PageHero({ routeId, eyebrow, title, intro, children }) {
+  const breadcrumbs = routeId ? getVisibleBreadcrumbs(routeId) : [];
+
   return (
     <section className="bg-navy-gradient py-16 text-white sm:py-20 lg:py-24">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

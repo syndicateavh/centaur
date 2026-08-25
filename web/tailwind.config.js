@@ -2,10 +2,11 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    "./pages/**/*.{js,jsx}",
-    "./components/**/*.{js,jsx}",
-    "./app/**/*.{js,jsx}",
-    "./src/**/*.{js,jsx}",
+    "./src/root.jsx",
+    "./src/routes.js",
+    "./src/routes/**/*.{js,jsx}",
+    "./src/pages/**/*.{js,jsx}",
+    "./src/components/{AnalyticsPageView,FloatingWhatsAppButton,Footer,Header,PageShell,ScrollToTop}.{js,jsx}",
   ],
   theme: {
     container: {

@@ -1,19 +1,20 @@
 import React from 'react';
 import { Mail, MapPin, MessageCircle, Phone, Route, Send } from 'lucide-react';
 import { PageHero, SectionHeading } from '@/components/PageShell.jsx';
+import { BUSINESS_DATA } from '@/content/businessData.js';
 import { getSeoRoute } from '@/seo/seoRoutes.js';
 
 const contacts = [
   {
     label: 'Call admissions',
-    value: '+91 93692 13948',
-    href: 'tel:+919369213948',
+    value: BUSINESS_DATA.displayTelephone,
+    href: `tel:${BUSINESS_DATA.telephone}`,
     icon: Phone,
   },
   {
     label: 'Email',
-    value: 'contact@centaurcareers.in',
-    href: 'mailto:contact@centaurcareers.in',
+    value: BUSINESS_DATA.email,
+    href: `mailto:${BUSINESS_DATA.email}`,
     icon: Mail,
   },
   {
@@ -31,10 +32,10 @@ export default function ContactPage() {
   return (
     <>
       <PageHero
+        routeId="contact"
         eyebrow="Admissions and directions"
         title={seo.h1}
         intro="Ask about course suitability, current schedules, learning modes, fees and visits to the Lucknow training centre."
-        breadcrumbs={[{ label: 'Contact' }]}
       />
 
       <section className="bg-white py-16 sm:py-20">
@@ -66,14 +67,13 @@ export default function ContactPage() {
             </div>
             <address className="mt-6 not-italic text-muted-foreground">
               <strong className="text-primary">Centaur Careers × Mindsprout Career Hub</strong><br />
-              R K Tower, 70/2, Sector B<br />
-              Badabirwa, Alambagh<br />
-              Lucknow, Uttar Pradesh 226005<br />
+              {BUSINESS_DATA.address.streetAddress}<br />
+              {BUSINESS_DATA.address.addressLocality}, {BUSINESS_DATA.address.addressRegion} {BUSINESS_DATA.address.postalCode}<br />
               India
             </address>
             <p className="mt-5 text-sm text-muted-foreground">Contact the team before visiting to confirm the current centre schedule and appointment availability.</p>
             <a
-              href="https://www.google.com/maps/search/?api=1&query=R%20K%20Tower%2070%2F2%20Sector%20B%20Badabirwa%20Alambagh%20Lucknow%20226005"
+              href={BUSINESS_DATA.mapUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 inline-flex items-center gap-2 font-bold text-primary underline decoration-accent decoration-2 underline-offset-4"

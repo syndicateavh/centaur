@@ -1,6 +1,7 @@
 import React from 'react';
 import { Instagram, Linkedin, Mail, MapPin, MessageCircle, Phone } from 'lucide-react';
 import { Link } from 'react-router';
+import { BUSINESS_DATA } from '@/content/businessData.js';
 
 const courseLinks = [
   { label: 'All courses', to: '/courses/' },
@@ -12,6 +13,8 @@ const courseLinks = [
 const companyLinks = [
   { label: 'About us', to: '/about/' },
   { label: 'Placement support', to: '/placements/' },
+  { label: 'Lucknow centre', to: '/locations/lucknow/' },
+  { label: 'Course FAQs', to: '/faqs/' },
   { label: 'Contact', to: '/contact/' },
 ];
 
@@ -23,7 +26,7 @@ export default function Footer() {
           <div>
             <Link to="/" className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-white">
-                <img src="https://horizons-cdn.hostinger.com/cffb4313-a439-4b6d-a0e2-eb0a66a950b9/ef91982ed9ea0d6c93e445376b6ac339.jpg" alt="Centaur Careers" className="h-full w-full object-contain" width="40" height="40" />
+                <img src="/images/brand/centaur-careers-logo.jpg" alt="Centaur Careers" className="h-full w-full object-cover" width="1440" height="1435" loading="lazy" decoding="async" />
               </div>
               <span className="font-poppins text-lg font-bold">Centaur Careers</span>
             </Link>
@@ -50,9 +53,9 @@ export default function Footer() {
             <h2 className="text-sm font-semibold uppercase tracking-widest text-white">Contact</h2>
             <div className="mt-3 h-0.5 w-8 rounded-full bg-accent" />
             <ul className="mt-5 space-y-4 text-sm text-white/70">
-              <li className="flex items-start gap-3"><Mail className="mt-0.5 h-4 w-4 shrink-0 text-accent" /><a href="mailto:contact@centaurcareers.in" className="hover:text-accent">contact@centaurcareers.in</a></li>
-              <li className="flex items-start gap-3"><Phone className="mt-0.5 h-4 w-4 shrink-0 text-accent" /><a href="tel:+919369213948" className="hover:text-accent">+91 93692 13948</a></li>
-              <li className="flex items-start gap-3"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" /><span>R K Tower, 70/2, Sector B, Badabirwa, Alambagh, Lucknow, Uttar Pradesh 226005</span></li>
+              <li className="flex items-start gap-3"><Mail className="mt-0.5 h-4 w-4 shrink-0 text-accent" /><a href={`mailto:${BUSINESS_DATA.email}`} className="hover:text-accent">{BUSINESS_DATA.email}</a></li>
+              <li className="flex items-start gap-3"><Phone className="mt-0.5 h-4 w-4 shrink-0 text-accent" /><a href={`tel:${BUSINESS_DATA.telephone}`} className="hover:text-accent">{BUSINESS_DATA.displayTelephone}</a></li>
+              <li className="flex items-start gap-3"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" /><span>{BUSINESS_DATA.address.streetAddress}, {BUSINESS_DATA.address.addressLocality}, {BUSINESS_DATA.address.addressRegion} {BUSINESS_DATA.address.postalCode}</span></li>
             </ul>
           </div>
         </div>

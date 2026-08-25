@@ -7,25 +7,17 @@ const navLinks = [
   { to: '/courses/', label: 'Courses' },
   { to: '/placements/', label: 'Placements' },
   { to: '/about/', label: 'About' },
+  { to: '/faqs/', label: 'FAQs' },
   { to: '/contact/', label: 'Contact' },
 ];
 
-const logoUrl =
-  'https://horizons-cdn.hostinger.com/cffb4313-a439-4b6d-a0e2-eb0a66a950b9/743152148dd3f6734568a106bb709d06.jpg';
+const logoUrl = '/images/brand/centaur-careers-logo.jpg';
 
 const enrollmentUrl = 'https://forms.gle/S27eFPLigM2gwumVA';
 
 export default function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
-
-  useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 20);
-    handleScroll();
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   useEffect(() => {
     setMobileMenuOpen(false);
@@ -66,10 +58,10 @@ export default function Header() {
         </div>
       </div>
 
-      <header className={`sticky top-0 z-50 w-full bg-white transition-all duration-300 ${isScrolled ? 'border-b border-border/70 py-2 shadow-md' : 'border-b border-border py-3'}`}>
+      <header className="sticky top-0 z-50 w-full border-b border-border/70 bg-white py-2 shadow-sm">
         <div className="container mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link to="/" aria-label="Centaur Careers home" className="relative z-50 flex shrink-0 items-center gap-3">
-            <img src={logoUrl} alt="Centaur Careers" className={`rounded-full object-cover transition-all ${isScrolled ? 'h-10 w-10 sm:h-11 sm:w-11' : 'h-11 w-11 sm:h-12 sm:w-12'}`} width="48" height="48" />
+            <img src={logoUrl} alt="Centaur Careers" className="h-11 w-11 rounded-full object-cover" width="1440" height="1435" decoding="async" />
             <span className="font-poppins text-lg font-bold leading-tight text-primary sm:text-xl">Centaur <span className="text-accent">Careers</span></span>
           </Link>
 

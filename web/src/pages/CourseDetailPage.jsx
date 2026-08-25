@@ -1,7 +1,9 @@
 import React from 'react';
 import { BookOpenCheck, BriefcaseBusiness, Clock3, MapPin, Monitor } from 'lucide-react';
+import { Link } from 'react-router';
 import { Checklist, CtaSection, PageHero, SectionHeading } from '@/components/PageShell.jsx';
 import { getCourseData } from '@/content/courseData.js';
+import { COURSE_FAQS } from '@/content/faqData.js';
 import { getSeoRoute } from '@/seo/seoRoutes.js';
 
 export default function CourseDetailPage({ courseId }) {
@@ -11,10 +13,10 @@ export default function CourseDetailPage({ courseId }) {
   return (
     <>
       <PageHero
+        routeId={course.seoId}
         eyebrow={course.eyebrow}
         title={seo.h1}
         intro={course.intro}
-        breadcrumbs={[{ label: 'Courses', to: '/courses/' }, { label: seo.h1 }]}
       >
         <div className="mt-8 grid max-w-3xl gap-3 text-sm sm:grid-cols-3">
           <span className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3"><Clock3 className="h-4 w-4 text-accent" /> Guided course pathway</span>
@@ -85,6 +87,29 @@ export default function CourseDetailPage({ courseId }) {
             <div className="rounded-xl bg-white p-6 shadow-sm"><h2 className="font-bold text-primary">Learning modes</h2><p className="mt-2 text-sm text-muted-foreground">Instructor-led options may include the Lucknow centre and live online delivery.</p></div>
             <div className="rounded-xl bg-white p-6 shadow-sm"><h2 className="font-bold text-primary">Current schedule</h2><p className="mt-2 text-sm text-muted-foreground">Contact admissions for current duration, timetable, fees and seat availability before enrolling.</p></div>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-16 sm:py-20">
+        <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            eyebrow="Course questions"
+            title={`Frequently asked questions about ${seo.h1}`}
+            intro="These answers describe the published pathway. Contact admissions for current batch-specific information."
+          />
+          <div className="space-y-4">
+            {COURSE_FAQS[courseId].map(({ question, answer }) => (
+              <details key={question} className="group rounded-2xl border border-border bg-white p-6 open:border-accent/50">
+                <summary className="cursor-pointer list-none pr-8 text-lg font-bold text-primary marker:hidden">
+                  {question}
+                </summary>
+                <p className="mt-4 text-muted-foreground">{answer}</p>
+              </details>
+            ))}
+          </div>
+          <p className="mt-7 text-sm text-muted-foreground">
+            Looking for admissions, location or career-support answers? Visit the <Link to="/faqs/" className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">complete course FAQ page</Link>.
+          </p>
         </div>
       </section>
 

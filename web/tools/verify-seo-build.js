@@ -40,6 +40,12 @@ for (const route of SEO_ROUTES) {
   if (!html.includes(`name="description" content="${route.description}"`)) failures.push(`${route.path}: incorrect or missing description`);
   if (!html.includes(`rel="canonical" href="${canonicalUrl(route)}"`)) failures.push(`${route.path}: incorrect or missing canonical`);
   if (!html.includes(`name="robots" content="${route.indexable ? 'index,follow' : 'noindex,follow'}"`)) failures.push(`${route.path}: incorrect robots directive`);
+  if (!html.includes(`property="og:url" content="${canonicalUrl(route)}"`)) failures.push(`${route.path}: incorrect or missing Open Graph URL`);
+  if (!html.includes('property="og:image" content="https://centaurcareers.in/images/')) failures.push(`${route.path}: Open Graph image is not first-party`);
+  if (!html.includes('name="twitter:card" content="summary_large_image"')) failures.push(`${route.path}: Twitter card metadata is missing`);
+  if (route.indexable && !rawHtml.includes('type="application/ld+json"')) failures.push(`${route.path}: server-rendered JSON-LD is missing`);
+  if (!route.indexable && rawHtml.includes('type="application/ld+json"')) failures.push(`${route.path}: noindex page should not publish page structured data`);
+  if (rawHtml.includes('horizons-cdn.hostinger.com')) failures.push(`${route.path}: initial HTML still depends on the Horizons CDN`);
   if (h1Count !== 1) failures.push(`${route.path}: expected exactly one h1, found ${h1Count}`);
   if (!plainText.includes(route.h1)) failures.push(`${route.path}: expected H1 text is absent from initial HTML`);
   if (route.indexable && plainText.split(' ').length < 120) failures.push(`${route.path}: initial HTML has too little meaningful body content`);
@@ -60,7 +66,7 @@ if (!fs.existsSync(sitemapPath)) {
   if (locations.some((location) => location.includes('/404/'))) failures.push('sitemap: 404 URL must not be included');
 }
 
-for (const deploymentFile of ['.htaccess', 'robots.txt', 'sitemap.xml']) {
+for (const deploymentFile of ['.htaccess', 'robots.txt', 'sitemap.xml', 'images/brand/centaur-careers-logo.jpg']) {
   if (!fs.existsSync(path.join(buildRoot, deploymentFile))) {
     failures.push(`deployment: ${deploymentFile} was not copied to build/client`);
   }
