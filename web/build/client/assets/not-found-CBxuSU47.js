@@ -1,0 +1,1 @@
+import{w as o}from"./chunk-62JRHF6Z-COQYPlkc.js";import{N as t}from"./NotFoundPage-BZifW84G.js";import{c as r}from"./seoRoutes-Bxr6qaBE.js";import"./createLucideIcon-BzuWzvib.js";const p=()=>r("not-found"),s=o(t);export{s as default,p as meta};
