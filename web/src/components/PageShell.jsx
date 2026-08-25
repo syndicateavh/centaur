@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowRight, CheckCircle2, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router';
 import { getVisibleBreadcrumbs } from '@/seo/seoRoutes.js';
+import { BUSINESS_DATA } from '@/content/businessData.js';
 
 export function Breadcrumbs({ items }) {
   return (
@@ -94,8 +95,10 @@ export function CtaSection({ title, description }) {
           <p className="mt-3 max-w-2xl text-white/70">{description}</p>
         </div>
         <div className="flex flex-wrap gap-3">
-          <PrimaryLink to="/contact/">Contact admissions</PrimaryLink>
-          <PrimaryLink to="/courses/" inverse>Compare courses</PrimaryLink>
+          <a href={BUSINESS_DATA.enrollmentUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-accent px-6 py-3 font-bold text-primary shadow-md transition-all hover:-translate-y-0.5 hover:shadow-lg">
+            Start Your Application <ArrowRight className="h-4 w-4" />
+          </a>
+          <PrimaryLink to="/contact/" inverse>Contact Centaur Careers</PrimaryLink>
         </div>
       </div>
     </section>

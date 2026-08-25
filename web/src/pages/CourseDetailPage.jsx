@@ -1,59 +1,69 @@
 import React from 'react';
-import { BookOpenCheck, BriefcaseBusiness, Clock3, MapPin, Monitor } from 'lucide-react';
+import { CheckCircle2, Clock3, IndianRupee, Route } from 'lucide-react';
 import { Link } from 'react-router';
-import { Checklist, CtaSection, PageHero, SectionHeading } from '@/components/PageShell.jsx';
+import { CtaSection, PageHero, SectionHeading } from '@/components/PageShell.jsx';
 import { getCourseData } from '@/content/courseData.js';
-import { COURSE_FAQS } from '@/content/faqData.js';
+import { GENERAL_FAQS } from '@/content/faqData.js';
+import { CAREER_TRACKS, PROGRAM, PROGRAM_PROCESS } from '@/content/sourceContent.js';
 import { getSeoRoute } from '@/seo/seoRoutes.js';
 
 export default function CourseDetailPage({ courseId }) {
-  const course = getCourseData(courseId);
-  const seo = getSeoRoute(course.seoId);
+  const track = getCourseData(courseId);
+  const seo = getSeoRoute(track.seoId);
+  const trackTopics = track.description.split(', ');
 
   return (
     <>
       <PageHero
-        routeId={course.seoId}
-        eyebrow={course.eyebrow}
+        routeId={track.seoId}
+        eyebrow={`${PROGRAM.name} career track`}
         title={seo.h1}
-        intro={course.intro}
+        intro={track.description}
       >
-        <div className="mt-8 grid max-w-3xl gap-3 text-sm sm:grid-cols-3">
-          <span className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3"><Clock3 className="h-4 w-4 text-accent" /> Guided course pathway</span>
-          <span className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3"><MapPin className="h-4 w-4 text-accent" /> Lucknow centre</span>
-          <span className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3"><Monitor className="h-4 w-4 text-accent" /> Live online option</span>
+        <div className="mt-8 flex flex-wrap gap-3 text-sm">
+          <span className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3"><IndianRupee className="h-4 w-4 text-accent" /> {track.ctc}</span>
+          <span className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3"><Clock3 className="h-4 w-4 text-accent" /> {PROGRAM.duration}</span>
+          <span className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3"><Route className="h-4 w-4 text-accent" /> {PROGRAM.model}</span>
         </div>
       </PageHero>
 
       <section className="bg-white py-16 sm:py-20">
-        <div className="container mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.25fr_0.75fr] lg:px-8">
-          <div>
-            <SectionHeading eyebrow="Course overview" title="What this pathway covers" />
-            <p className="text-lg text-muted-foreground">{course.overview}</p>
-          </div>
-          <aside className="rounded-2xl bg-primary p-7 text-white">
-            <h2 className="text-2xl font-bold text-white">Who this is designed for</h2>
-            <div className="mt-5"><Checklist items={course.audience} light /></div>
-          </aside>
+        <div className="container mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
+          <article>
+            <SectionHeading eyebrow="Career track" title={track.title} />
+            <p className="text-lg text-muted-foreground">{track.description}</p>
+            <p className="mt-5 text-2xl font-black text-primary">{track.ctc}</p>
+          </article>
+          <article className="rounded-2xl bg-muted p-8">
+            <h2 className="text-2xl font-bold text-primary">Track areas shown on the original site</h2>
+            <ul className="mt-6 grid gap-4 sm:grid-cols-2">
+              {trackTopics.map((topic) => (
+                <li key={topic} className="flex items-start gap-3 rounded-xl bg-white p-4 font-medium text-foreground/80">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-accent" /> {topic}
+                </li>
+              ))}
+            </ul>
+          </article>
         </div>
       </section>
 
       <section className="bg-muted py-16 sm:py-20">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            eyebrow="Curriculum"
-            title="Skills and process modules"
-            intro="Modules build from foundations toward applied scenarios and interview communication."
+            eyebrow="Financial Operations Masterclass"
+            title="This track is part of the 6-week program"
+            intro={PROGRAM.trainingDescription}
+            align="center"
           />
-          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {course.modules.map((module, index) => (
-              <article key={module.title} className="rounded-2xl border border-border bg-white p-6 shadow-sm">
-                <div className="mb-4 flex items-center justify-between">
-                  <BookOpenCheck className="h-6 w-6 text-accent" aria-hidden="true" />
-                  <span className="font-poppins text-2xl font-black text-primary/10">0{index + 1}</span>
-                </div>
-                <h2 className="text-lg font-bold text-primary">{module.title}</h2>
-                <p className="mt-3 text-sm text-muted-foreground">{module.description}</p>
+          <div className="grid gap-6 lg:grid-cols-3">
+            {PROGRAM_PROCESS.map(({ step, title, subtitle, items }) => (
+              <article key={step} className="rounded-2xl bg-white p-7 shadow-sm">
+                <p className="text-xs font-black uppercase tracking-widest text-accent">{step}</p>
+                <h2 className="mt-3 text-xl font-bold text-primary">{title}</h2>
+                <p className="mt-2 text-xs font-bold uppercase tracking-wide text-muted-foreground">{subtitle}</p>
+                <ul className="mt-5 space-y-3">
+                  {items.map((item) => <li key={item} className="text-sm text-foreground/75">{item}</li>)}
+                </ul>
               </article>
             ))}
           </div>
@@ -61,62 +71,44 @@ export default function CourseDetailPage({ courseId }) {
       </section>
 
       <section className="bg-white py-16 sm:py-20">
-        <div className="container mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
-          <article className="rounded-2xl border border-border p-8">
-            <h2 className="text-2xl font-bold text-primary">Learning outcomes</h2>
-            <div className="mt-6"><Checklist items={course.outcomes} /></div>
-          </article>
-          <article className="rounded-2xl border border-border p-8">
-            <div className="flex items-center gap-3">
-              <BriefcaseBusiness className="h-6 w-6 text-accent" aria-hidden="true" />
-              <h2 className="text-2xl font-bold text-primary">Related role areas</h2>
-            </div>
-            <p className="mt-4 text-sm text-muted-foreground">
-              Training can support preparation for entry-level discussions in these areas. Role availability and selection are controlled by employers.
-            </p>
-            <div className="mt-6"><Checklist items={course.relatedRoles} /></div>
-          </article>
-        </div>
-      </section>
-
-      <section className="bg-muted py-16">
-        <div className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Delivery and eligibility" title="How to confirm the current batch" />
-          <div className="grid gap-5 md:grid-cols-3">
-            <div className="rounded-xl bg-white p-6 shadow-sm"><h2 className="font-bold text-primary">Eligibility</h2><p className="mt-2 text-sm text-muted-foreground">Designed for graduates, final-year students and early-career learners. Admissions will confirm suitability.</p></div>
-            <div className="rounded-xl bg-white p-6 shadow-sm"><h2 className="font-bold text-primary">Learning modes</h2><p className="mt-2 text-sm text-muted-foreground">Instructor-led options may include the Lucknow centre and live online delivery.</p></div>
-            <div className="rounded-xl bg-white p-6 shadow-sm"><h2 className="font-bold text-primary">Current schedule</h2><p className="mt-2 text-sm text-muted-foreground">Contact admissions for current duration, timetable, fees and seat availability before enrolling.</p></div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white py-16 sm:py-20">
-        <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            eyebrow="Course questions"
-            title={`Frequently asked questions about ${seo.h1}`}
-            intro="These answers describe the published pathway. Contact admissions for current batch-specific information."
-          />
-          <div className="space-y-4">
-            {COURSE_FAQS[courseId].map(({ question, answer }) => (
-              <details key={question} className="group rounded-2xl border border-border bg-white p-6 open:border-accent/50">
-                <summary className="cursor-pointer list-none pr-8 text-lg font-bold text-primary marker:hidden">
-                  {question}
-                </summary>
-                <p className="mt-4 text-muted-foreground">{answer}</p>
-              </details>
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeading eyebrow="All program tracks" title="Career Paths After the Program" align="center" />
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {CAREER_TRACKS.map((item) => (
+              <article key={item.id} className={`rounded-xl border p-5 ${item.id === track.id ? 'border-accent bg-accent/5' : 'border-border'}`}>
+                <h2 className="font-bold text-primary">{item.title}</h2>
+                <p className="mt-2 text-sm text-muted-foreground">{item.description}</p>
+                <p className="mt-3 font-bold text-accent-foreground">{item.ctc}</p>
+              </article>
             ))}
           </div>
-          <p className="mt-7 text-sm text-muted-foreground">
-            Looking for admissions, location or career-support answers? Visit the <Link to="/faqs/" className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">complete course FAQ page</Link>.
+        </div>
+      </section>
+
+      <section className="bg-primary py-16 text-white">
+        <div className="container mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+          <article>
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent">Eligibility</p>
+            <h2 className="mt-3 text-3xl font-bold text-white">{GENERAL_FAQS[0].question}</h2>
+            <p className="mt-5 text-white/70">{GENERAL_FAQS[0].answer}</p>
+          </article>
+          <article>
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent">Program details</p>
+            <h2 className="mt-3 text-3xl font-bold text-white">One masterclass, online or offline</h2>
+            <p className="mt-5 whitespace-pre-line text-white/70">{GENERAL_FAQS[2].answer}</p>
+          </article>
+        </div>
+      </section>
+
+      <section className="bg-white py-12">
+        <div className="container mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+          <p className="text-muted-foreground">
+            Read the original program answers on the <Link to="/faqs/" className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">complete FAQ page</Link> and the full eligibility conditions on the <Link to="/placements/" className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">placement page</Link>.
           </p>
         </div>
       </section>
 
-      <CtaSection
-        title={`Discuss the ${seo.h1}`}
-        description="Ask for the current curriculum, schedule, learning mode and admissions requirements before making a decision."
-      />
+      <CtaSection title="Start Your Application" description="Limited seats available • Free counselling call included" />
     </>
   );
 }

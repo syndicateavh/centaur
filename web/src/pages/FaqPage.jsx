@@ -11,37 +11,28 @@ export default function FaqPage() {
     <>
       <PageHero
         routeId="faqs"
-        eyebrow="Admissions information"
+        eyebrow="Frequently Asked Questions"
         title={seo.h1}
-        intro="Clear answers about courses, suitability, learning modes, current information and responsible career support."
+        intro="Program eligibility, placement guarantee, learning modes, interview opportunities, placement cities and post-placement support."
       />
 
       <section className="bg-white py-16 sm:py-20">
         <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            eyebrow="Frequently asked questions"
-            title="Information to review before enrolling"
-            intro="Batch dates, fees and delivery arrangements can change. Confirm current details with admissions before making a decision or payment."
-          />
+          <SectionHeading eyebrow="Original program FAQs" title="Information to review before enrolling" />
           <div className="space-y-4">
             {GENERAL_FAQS.map(({ question, answer }) => (
               <details key={question} className="group rounded-2xl border border-border bg-white p-6 open:border-accent/50 open:shadow-sm">
-                <summary className="cursor-pointer list-none pr-8 text-lg font-bold text-primary marker:hidden">
-                  {question}
-                </summary>
-                <p className="mt-4 text-muted-foreground">{answer}</p>
+                <summary className="cursor-pointer list-none pr-8 text-lg font-bold text-primary marker:hidden">{question}</summary>
+                <p className="mt-4 whitespace-pre-line text-muted-foreground">{answer}</p>
               </details>
             ))}
           </div>
-
           <aside className="mt-10 rounded-2xl bg-muted p-7">
-            <h2 className="text-2xl font-bold text-primary">Need a batch-specific answer?</h2>
-            <p className="mt-3 text-muted-foreground">
-              Contact admissions for current schedules, modes, fees and written terms. Course pages provide detailed curriculum information.
-            </p>
+            <h2 className="text-2xl font-bold text-primary">Full terms available on request</h2>
+            <p className="mt-3 text-muted-foreground">T&amp;C apply. Placement guarantee is contingent on meeting eligibility criteria.</p>
             <div className="mt-5 flex flex-wrap gap-4">
-              <Link to="/contact/" className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">Contact admissions</Link>
-              <Link to="/courses/" className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">Compare courses</Link>
+              <Link to="/placements/" className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">Review placement eligibility</Link>
+              <Link to="/contact/" className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">Contact Centaur Careers</Link>
             </div>
           </aside>
         </div>

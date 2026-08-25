@@ -2,19 +2,20 @@ import React from 'react';
 import { Instagram, Linkedin, Mail, MapPin, MessageCircle, Phone } from 'lucide-react';
 import { Link } from 'react-router';
 import { BUSINESS_DATA } from '@/content/businessData.js';
+import { PROGRAM } from '@/content/sourceContent.js';
 
-const courseLinks = [
-  { label: 'All courses', to: '/courses/' },
-  { label: 'Investment Banking Operations', to: '/courses/investment-banking-operations/' },
+const programLinks = [
+  { label: 'Financial Operations Masterclass', to: '/courses/' },
+  { label: 'Investment Banking Ops', to: '/courses/investment-banking-operations/' },
   { label: 'Retail Banking', to: '/courses/retail-banking/' },
   { label: 'Finance Operations', to: '/courses/finance-operations/' },
 ];
 
 const companyLinks = [
   { label: 'About us', to: '/about/' },
-  { label: 'Placement support', to: '/placements/' },
-  { label: 'Lucknow centre', to: '/locations/lucknow/' },
-  { label: 'Course FAQs', to: '/faqs/' },
+  { label: 'Placement guarantee', to: '/placements/' },
+  { label: 'Mindsprout Careers Hub', to: '/locations/lucknow/' },
+  { label: 'Program FAQs', to: '/faqs/' },
   { label: 'Contact', to: '/contact/' },
 ];
 
@@ -30,14 +31,14 @@ export default function Footer() {
               </div>
               <span className="font-poppins text-lg font-bold">Centaur Careers</span>
             </Link>
-            <p className="mt-4 max-w-xs text-sm text-white/60">Practical banking and finance training from Lucknow and through live online learning.</p>
+            <p className="mt-4 max-w-xs text-sm text-white/60">{PROGRAM.modelDescription}</p>
           </div>
 
           <div>
-            <h2 className="text-sm font-semibold uppercase tracking-widest text-white">Courses</h2>
+            <h2 className="text-sm font-semibold uppercase tracking-widest text-white">Masterclass</h2>
             <div className="mt-3 h-0.5 w-8 rounded-full bg-accent" />
             <ul className="mt-5 space-y-3">
-              {courseLinks.map((link) => <li key={link.to}><Link to={link.to} className="text-sm text-white/60 transition-colors hover:text-accent">{link.label}</Link></li>)}
+              {programLinks.map((link) => <li key={link.to}><Link to={link.to} className="text-sm text-white/60 transition-colors hover:text-accent">{link.label}</Link></li>)}
             </ul>
           </div>
 
@@ -67,7 +68,7 @@ export default function Footer() {
           <div className="flex items-center gap-4">
             <a href="https://www.linkedin.com/company/centaur-careers/" target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-accent" aria-label="LinkedIn"><Linkedin size={18} /></a>
             <a href="https://www.instagram.com/centaurcareers" target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-accent" aria-label="Instagram"><Instagram size={18} /></a>
-            <a href="https://wa.link/aviltt" target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-accent" aria-label="WhatsApp"><MessageCircle size={18} /></a>
+            <a href={BUSINESS_DATA.whatsappUrl} target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-accent" aria-label="WhatsApp"><MessageCircle size={18} /></a>
           </div>
         </div>
       </div>

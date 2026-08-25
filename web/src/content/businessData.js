@@ -3,12 +3,15 @@ import { SITE_ORIGIN } from '../seo/siteConfig.js';
 export const BUSINESS_DATA = Object.freeze({
   name: 'Centaur Careers',
   description:
-    'A banking and finance training institute offering practical, instructor-led learning from Lucknow and through live online delivery.',
+    'Centaur Careers - 6-week Hire-Train-Deploy program for finance careers. 3 Pillars: IB Ops, Retail Banking, Finance Ops. Lucknow Advantage hometown jobs, unlimited interviews, Target CTC 3–12 LPA. Offline training with Mindsprout partner.',
   url: SITE_ORIGIN,
   logoUrl: `${SITE_ORIGIN}/images/brand/centaur-careers-logo.jpg`,
   telephone: '+919369213948',
   displayTelephone: '+91 93692 13948',
   email: 'contact@centaurcareers.in',
+  trainingPartner: 'Mindsprout Careers Hub',
+  whatsappUrl: 'https://wa.link/aviltt',
+  enrollmentUrl: 'https://forms.gle/S27eFPLigM2gwumVA',
   address: Object.freeze({
     streetAddress: 'R K Tower, 70/2, Sector B, Badabirwa, Alambagh',
     addressLocality: 'Lucknow',

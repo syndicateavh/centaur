@@ -1,6 +1,6 @@
 import { BUSINESS_DATA, ORGANIZATION_ID, WEBSITE_ID } from '../content/businessData.js';
-import { COURSE_DATA } from '../content/courseData.js';
 import { GENERAL_FAQS } from '../content/faqData.js';
+import { CAREER_TRACKS, LEADERSHIP, PROGRAM } from '../content/sourceContent.js';
 import {
   DEFAULT_OG_IMAGE,
   DEFAULT_OG_IMAGE_HEIGHT,
@@ -16,10 +16,9 @@ export const SEO_ROUTES = Object.freeze([
   {
     id: 'home',
     path: '/',
-    title: 'Banking & Finance Career Training in Lucknow | Centaur Careers',
-    description:
-      'Build job-ready banking and finance skills through live training from Centaur Careers in Lucknow, with online learning and structured career support.',
-    h1: 'Job-Oriented Banking & Finance Training in Lucknow',
+    title: 'Finance Career Training Lucknow | Centaur Careers | Investment Banking, Retail Banking & NBFC Jobs | Alambagh & Krishna Nagar',
+    description: PROGRAM.metaDescription,
+    h1: PROGRAM.headline,
     breadcrumbLabel: 'Home',
     schemaType: 'WebPage',
     indexable: true,
@@ -29,12 +28,12 @@ export const SEO_ROUTES = Object.freeze([
     id: 'courses',
     parentId: 'home',
     path: '/courses/',
-    title: 'Banking & Finance Courses with Career Support | Centaur Careers',
-    description:
-      'Compare practical courses in investment banking operations, retail banking and finance operations, including curriculum, eligibility and learning modes.',
-    h1: 'Banking & Finance Career Courses',
-    breadcrumbLabel: 'Courses',
+    title: 'Financial Operations Masterclass | Centaur Careers',
+    description: PROGRAM.trainingDescription,
+    h1: PROGRAM.name,
+    breadcrumbLabel: 'Financial Operations Masterclass',
     schemaType: 'CollectionPage',
+    program: true,
     indexable: true,
     lastModified: LAST_MEANINGFUL_UPDATE,
   },
@@ -42,13 +41,12 @@ export const SEO_ROUTES = Object.freeze([
     id: 'investment-banking-operations',
     parentId: 'courses',
     path: '/courses/investment-banking-operations/',
-    title: 'Investment Banking Operations Course | Centaur Careers',
-    description:
-      'Learn trade settlements, reconciliations, corporate actions and fund accounting through a practical investment banking operations course.',
-    h1: 'Investment Banking Operations Course',
+    title: 'Investment Banking Operations Career Track | Centaur Careers',
+    description: 'Trade Settlements, Reconciliation, Corporate Actions, Fund Accounting. Target CTC ₹6–12 LPA.',
+    h1: 'Investment Banking Ops',
     breadcrumbLabel: 'Investment Banking Operations',
     schemaType: 'WebPage',
-    courseId: 'investment-banking-operations',
+    trackId: 'investment-banking-operations',
     indexable: true,
     lastModified: LAST_MEANINGFUL_UPDATE,
   },
@@ -56,13 +54,12 @@ export const SEO_ROUTES = Object.freeze([
     id: 'retail-banking',
     parentId: 'courses',
     path: '/courses/retail-banking/',
-    title: 'Retail Banking Course with Career Support | Centaur Careers',
-    description:
-      'Prepare for branch operations, customer service, relationship management and loan-processing work through practical retail banking training.',
-    h1: 'Retail Banking Course',
+    title: 'Retail Banking Career Track | Centaur Careers',
+    description: 'Relationship Manager, Branch Ops, Loan Officer, NRI Banking. Target CTC ₹3–6 LPA.',
+    h1: 'Retail Banking',
     breadcrumbLabel: 'Retail Banking',
     schemaType: 'WebPage',
-    courseId: 'retail-banking',
+    trackId: 'retail-banking',
     indexable: true,
     lastModified: LAST_MEANINGFUL_UPDATE,
   },
@@ -70,13 +67,12 @@ export const SEO_ROUTES = Object.freeze([
     id: 'finance-operations',
     parentId: 'courses',
     path: '/courses/finance-operations/',
-    title: 'Finance Operations Course | Centaur Careers',
-    description:
-      'Build practical skills in loan operations, credit documentation, risk controls, payments and NBFC workflows through live finance operations training.',
-    h1: 'Finance Operations Course',
+    title: 'Finance Operations Career Track | Centaur Careers',
+    description: 'NBFC, Loan Processing, Credit Analysis, Risk Management. Target CTC ₹3–6 LPA.',
+    h1: 'Finance Operations',
     breadcrumbLabel: 'Finance Operations',
     schemaType: 'WebPage',
-    courseId: 'finance-operations',
+    trackId: 'finance-operations',
     indexable: true,
     lastModified: LAST_MEANINGFUL_UPDATE,
   },
@@ -84,11 +80,10 @@ export const SEO_ROUTES = Object.freeze([
     id: 'placements',
     parentId: 'home',
     path: '/placements/',
-    title: 'Placement Support for Finance Careers | Centaur Careers',
-    description:
-      'Understand the Centaur Careers placement-support process, student eligibility, interview preparation and standards for publishing verified outcomes.',
-    h1: 'Placement Support and Eligibility',
-    breadcrumbLabel: 'Placement Support',
+    title: 'Placement Guarantee & Student Promise | Centaur Careers',
+    description: "Every student who meets program criteria is supported until they secure the right role, or we return their fee in full.",
+    h1: 'Placement Guarantee & Student Promise',
+    breadcrumbLabel: 'Placement Guarantee',
     schemaType: 'WebPage',
     indexable: true,
     lastModified: LAST_MEANINGFUL_UPDATE,
@@ -98,8 +93,7 @@ export const SEO_ROUTES = Object.freeze([
     parentId: 'home',
     path: '/about/',
     title: 'About Centaur Careers | Banking & Finance Training',
-    description:
-      'Learn about Centaur Careers, its practical training approach and its focus on helping learners build job-ready banking and finance skills.',
+    description: 'Founded by banking veterans with 15+ years of industry experience, Centaur Careers has placed 100+ graduates across Investment Banking, Retail Banking, NBFCs, and FinTech.',
     h1: 'About Centaur Careers',
     breadcrumbLabel: 'About',
     schemaType: 'AboutPage',
@@ -111,8 +105,7 @@ export const SEO_ROUTES = Object.freeze([
     parentId: 'home',
     path: '/contact/',
     title: 'Contact Centaur Careers in Lucknow',
-    description:
-      'Contact Centaur Careers in Alambagh, Lucknow for course details, admissions support, current batch schedules and training-centre directions.',
+    description: 'Fill out the enrollment form and the Centaur Careers team will reach out within 24 hours. Phone, email, WhatsApp and Lucknow address.',
     h1: 'Contact Centaur Careers',
     breadcrumbLabel: 'Contact',
     schemaType: 'ContactPage',
@@ -123,11 +116,10 @@ export const SEO_ROUTES = Object.freeze([
     id: 'lucknow-location',
     parentId: 'home',
     path: '/locations/lucknow/',
-    title: 'Banking & Finance Training Centre in Lucknow | Centaur Careers',
-    description:
-      'Find the Centaur Careers banking and finance training centre in Alambagh, Lucknow, with address, directions, learning options and visit guidance.',
-    h1: 'Banking & Finance Training Centre in Lucknow',
-    breadcrumbLabel: 'Lucknow Training Centre',
+    title: 'Mindsprout Careers Hub Lucknow | Centaur Careers',
+    description: 'In-person sessions at Mindsprout Careers Hub, R K Tower, 70/2, Sector B, Badabirwa, Alambagh, Lucknow, Uttar Pradesh 226005.',
+    h1: 'Mindsprout Careers Hub, Lucknow',
+    breadcrumbLabel: 'Mindsprout Careers Hub',
     schemaType: 'WebPage',
     indexable: true,
     lastModified: LAST_MEANINGFUL_UPDATE,
@@ -136,10 +128,9 @@ export const SEO_ROUTES = Object.freeze([
     id: 'faqs',
     parentId: 'home',
     path: '/faqs/',
-    title: 'Banking & Finance Course FAQs | Centaur Careers',
-    description:
-      'Read clear answers about Centaur Careers courses, eligibility, Lucknow and online learning, schedules, fees and responsible career support.',
-    h1: 'Banking and Finance Course FAQs',
+    title: 'Finance Career Program FAQs | Centaur Careers',
+    description: 'Answers about program eligibility, the placement guarantee, online and offline modes, interview opportunities, placement cities and post-placement support.',
+    h1: 'Finance Career Program FAQs',
     breadcrumbLabel: 'FAQs',
     schemaType: 'FAQPage',
     indexable: true,
@@ -318,26 +309,36 @@ function createBreadcrumbSchema(route) {
 }
 
 function createCourseSchema(route) {
-  if (!route.courseId) {
+  if (!route.program) {
     return null;
-  }
-
-  const course = COURSE_DATA[route.courseId];
-  if (!course) {
-    throw new Error(`Missing course data for structured data route: ${route.id}`);
   }
 
   return {
     '@type': 'Course',
     '@id': `${canonicalUrl(route)}#course`,
     url: canonicalUrl(route),
-    name: route.h1,
-    description: route.description,
+    name: PROGRAM.name,
+    alternateName: PROGRAM.alternateName,
+    description: PROGRAM.trainingDescription,
     provider: { '@id': ORGANIZATION_ID },
     inLanguage: 'en-IN',
-    educationalLevel: 'Graduate, final-year student and early-career learner',
-    teaches: course.outcomes,
+    timeRequired: 'P6W',
+    teaches: CAREER_TRACKS.flatMap((track) => [track.title, track.description]),
   };
+}
+
+function createPeopleSchema() {
+  return LEADERSHIP.map((person) => ({
+    '@type': 'Person',
+    '@id': `${SITE_ORIGIN}/about/#${person.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
+    name: person.name,
+    jobTitle: person.role,
+    worksFor: person.organization === BUSINESS_DATA.name
+      ? { '@id': ORGANIZATION_ID }
+      : { '@type': 'Organization', name: person.organization },
+    description: person.experience,
+    email: person.email,
+  }));
 }
 
 function createFaqQuestions() {
@@ -384,9 +385,14 @@ export function createStructuredData(routeOrId) {
     webPage.mainEntity = createFaqQuestions();
   }
 
+  if (route.id === 'about') {
+    webPage.mainEntity = createPeopleSchema().map((person) => ({ '@id': person['@id'] }));
+  }
+
   const graph = [createOrganizationSchema(), createWebsiteSchema(), webPage];
   if (breadcrumb) graph.push(breadcrumb);
   if (course) graph.push(course);
+  if (route.id === 'about') graph.push(...createPeopleSchema());
 
   return {
     '@context': 'https://schema.org',
