@@ -5,9 +5,11 @@ import {
   EMPLOYER_LOGO_NAMES,
   GUARANTEE_ELIGIBILITY,
   HIRING_PARTNERS,
+  HOME_COPY,
   ORIGINAL_OUTCOME_STATEMENTS,
   PLACEMENT_PROMISE,
   PLACEMENT_TIERS,
+  SUCCESS_STORIES,
   TESTIMONIALS,
 } from '@/content/sourceContent.js';
 import { getSeoRoute } from '@/seo/seoRoutes.js';
@@ -32,7 +34,7 @@ export default function PlacementsPage() {
 
       <section className="bg-white py-16 sm:py-20">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Placement Guarantee & Student Promise" title="A structured pathway to placement" align="center" />
+          <SectionHeading eyebrow="Our Commitment to You" title={PLACEMENT_PROMISE.heading} intro={PLACEMENT_PROMISE.description} align="center" />
           <div className="grid gap-6 md:grid-cols-3">
             {PLACEMENT_PROMISE.cards.map(({ title, description }) => (
               <article key={title} className="rounded-2xl border border-border p-7 shadow-sm">
@@ -47,7 +49,7 @@ export default function PlacementsPage() {
 
       <section className="bg-primary py-16 text-white sm:py-20">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Assessment-Based Placement Tiers" title="Placement Tiers" align="center" />
+          <SectionHeading title="Assessment-Based Placement Tiers" align="center" />
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {PLACEMENT_TIERS.map(({ tier, range, perks }) => (
               <article key={tier} className="rounded-2xl border border-white/10 bg-white/5 p-6">
@@ -70,7 +72,7 @@ export default function PlacementsPage() {
       <section className="bg-muted py-16 sm:py-20">
         <div className="container mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1fr_0.8fr] lg:px-8">
           <article className="rounded-2xl bg-white p-8 shadow-sm">
-            <h2 className="text-3xl font-bold text-primary">Guarantee Eligibility</h2>
+            <h2 className="text-3xl font-bold text-primary">Guarantee Eligibility Criteria</h2>
             <ul className="mt-6 space-y-4">
               {GUARANTEE_ELIGIBILITY.map((item) => (
                 <li key={item} className="flex items-start gap-3 text-foreground/80">
@@ -81,7 +83,7 @@ export default function PlacementsPage() {
             <p className="mt-7 text-sm font-semibold text-primary">{PLACEMENT_PROMISE.termsNote}</p>
           </article>
           <aside className="rounded-2xl bg-white p-8 shadow-sm">
-            <h2 className="text-2xl font-bold text-primary">Published outcomes and role areas</h2>
+            <h2 className="text-2xl font-bold text-primary">{SUCCESS_STORIES.heading}</h2>
             <ul className="mt-6 space-y-4">
               {ORIGINAL_OUTCOME_STATEMENTS.map((statement) => (
                 <li key={statement} className="flex items-start gap-3 text-muted-foreground">
@@ -96,9 +98,9 @@ export default function PlacementsPage() {
       <section className="bg-white py-16 sm:py-20">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            eyebrow="Our Hiring Partners"
-            title="Banking, investment banking, NBFC and FinTech employers"
-            intro="Direct access to multiple BFSI hiring partners"
+            eyebrow={HOME_COPY.hiringNetworkEyebrow}
+            title={HOME_COPY.hiringNetworkHeading}
+            intro={HOME_COPY.hiringNetworkDescription}
             align="center"
           />
           <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -109,7 +111,7 @@ export default function PlacementsPage() {
               </article>
             ))}
           </div>
-          <h2 className="mt-12 text-center text-2xl font-bold text-primary">Leading Companies Across Banking, NBFCs &amp; FinTech</h2>
+          <h2 className="mt-12 text-center text-2xl font-bold text-primary">Our Hiring Partners</h2>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             {EMPLOYER_LOGO_NAMES.map((name) => (
               <span key={name} className="rounded-full bg-muted px-4 py-2 text-sm font-semibold text-primary">{name}</span>
@@ -120,7 +122,11 @@ export default function PlacementsPage() {
 
       <section className="bg-muted py-16 sm:py-20">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Student outcomes" title="Trusted by 500+ students placed across India" align="center" />
+          <SectionHeading eyebrow={SUCCESS_STORIES.eyebrow} title={SUCCESS_STORIES.heading} intro={SUCCESS_STORIES.description} align="center" />
+          <div className="mb-10 flex flex-col items-center gap-3 text-center">
+            <p className="rounded-full border border-accent/40 bg-accent/10 px-6 py-3 font-bold text-primary">{SUCCESS_STORIES.trained} <span className="mx-2 text-accent">•</span> {SUCCESS_STORIES.placed}</p>
+            <p className="text-sm text-muted-foreground">{SUCCESS_STORIES.roleExamples}</p>
+          </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {TESTIMONIALS.map(({ name, role, quote }) => (
               <figure key={name} className="rounded-2xl bg-white p-7 shadow-sm">
@@ -133,6 +139,13 @@ export default function PlacementsPage() {
               </figure>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="bg-primary py-14 text-white">
+        <div className="container mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-white">{PLACEMENT_PROMISE.accountabilityHeading}</h2>
+          <p className="mt-4 text-white/70">{PLACEMENT_PROMISE.accountabilityDescription}</p>
         </div>
       </section>
 

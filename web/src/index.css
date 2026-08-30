@@ -89,3 +89,44 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
 }
+
+@layer components {
+  .home-hero {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(220 55% 12%) 72%);
+  }
+
+  .home-hero-grid {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+    background-size: 52px 52px;
+    mask-image: linear-gradient(to right, black, transparent 80%);
+  }
+
+  .home-hero-panel {
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+    transform-style: preserve-3d;
+    will-change: transform;
+  }
+
+  .home-magnetic-button {
+    will-change: transform;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-page,
+  .home-page *,
+  .home-page *::before,
+  .home-page *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  .home-partner-marquee {
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+}

@@ -23,6 +23,40 @@ export const PROGRAM = Object.freeze({
     'Centaur Careers - 6-week Hire-Train-Deploy program for finance careers. 3 Pillars: IB Ops, Retail Banking, Finance Ops. Lucknow Advantage hometown jobs, unlimited interviews, Target CTC 3–12 LPA. Offline training with Mindsprout partner.',
 });
 
+export const HERO_STEPS = Object.freeze([
+  Object.freeze({ number: '01', title: 'Get Selected', detail: 'Apply & screening' }),
+  Object.freeze({ number: '02', title: '6-Week Masterclass', detail: 'Live banking training' }),
+  Object.freeze({ number: '03', title: 'Get Placed', detail: '₹3–12 LPA roles' }),
+]);
+
+export const HOME_COPY = Object.freeze({
+  headerTraining: 'Banking & Finance Training',
+  headerLocation: 'Lucknow and Live Online',
+  hiringNetworkEyebrow: 'Hiring Network',
+  hiringNetworkHeading: 'Trusted Hiring Network',
+  hiringNetworkDescription: '200+ Leading Companies Across Banking, NBFCs & FinTech',
+  partnerCompanies: '200+ Partner Companies',
+  studentsPlaced: '100+ Students Placed',
+  averageCtc: '3–12 LPA Average CTC Range',
+  tracksEyebrow: '105+ Finance Roles',
+  tracksHeading: 'Finance Career Tracks We Offer',
+  tracksDescription: "Specialised tracks aligned to the most in-demand BFSI functions. Pick your path; we'll train and place you.",
+  whyEyebrow: 'Why Centaur Careers',
+  whyHeading: 'Built for Students Who Mean Business',
+  whyDescription: "We don't just train — we place. Every feature of our program is designed around one outcome: your employment.",
+  benefitsEyebrow: 'Student Benefits',
+  benefitsHeading: 'What You Gain From This Program',
+  benefitsDescription: 'Everything you need to go from campus to corporate — skills, confidence, connections, and a confirmed job offer.',
+  comparisonEyebrow: 'Comparison',
+  comparisonHeading: "Why We're Different",
+  comparisonDescription: 'Most programs teach theory. We focus on getting you hired.',
+  comparisonCtaHeading: 'Ready to Get Hired?',
+  comparisonCtaDescription: 'Join hundreds of graduates who chose Centaur Careers and landed their dream finance role.',
+  finalCtaEyebrow: 'Limited Seats — Next Batch',
+  finalCtaHeading: 'Ready to Transform Your Finance Career?',
+  finalCtaDescription: 'Join hundreds of BBA, BCom, and MBA graduates who chose Centaur Careers and secured corporate finance roles across India. Enroll today and get your career started in 6 weeks.',
+});
+
 export const ABOUT_SUMMARY = Object.freeze({
   heading: 'Bridging the Gap Between Graduates and High-Paying Finance Careers',
   paragraphs: Object.freeze([
@@ -237,6 +271,9 @@ export const PLACEMENT_PROMISE = Object.freeze({
     'Score = aggregate of weekly assessments, mock interviews, and practical project evaluations across the 6-week program.',
   termsNote:
     'Full terms available on request. T&C apply. Placement guarantee is contingent on meeting eligibility criteria above.',
+  accountabilityHeading: 'Your Success Is Our Accountability',
+  accountabilityDescription:
+    'Our placement team works alongside you from training to offer letter. Your career transformation is what measures our success.',
 });
 
 export const PLACEMENT_TIERS = Object.freeze([
@@ -302,20 +339,20 @@ export const ORIGINAL_OUTCOME_STATEMENTS = Object.freeze([
 ]);
 
 export const HIRING_PARTNERS = Object.freeze([
-  Object.freeze({ name: 'Morgan Stanley', category: 'Investment Bank' }),
-  Object.freeze({ name: 'Goldman Sachs', category: 'Investment Bank' }),
-  Object.freeze({ name: 'JP Morgan', category: 'Investment Bank' }),
-  Object.freeze({ name: 'Citi', category: 'Investment Bank' }),
-  Object.freeze({ name: 'HSBC', category: 'Investment Bank' }),
-  Object.freeze({ name: 'HDFC Bank', category: 'Retail Bank' }),
-  Object.freeze({ name: 'ICICI Bank', category: 'Retail Bank' }),
-  Object.freeze({ name: 'Axis Bank', category: 'Retail Bank' }),
-  Object.freeze({ name: 'Kotak Bank', category: 'Retail Bank' }),
-  Object.freeze({ name: 'Bajaj Finance', category: 'NBFC' }),
-  Object.freeze({ name: 'HDFC Finance', category: 'NBFC' }),
-  Object.freeze({ name: 'Paytm', category: 'FinTech' }),
-  Object.freeze({ name: 'PhonePe', category: 'FinTech' }),
-  Object.freeze({ name: 'Razorpay', category: 'FinTech' }),
+  Object.freeze({ name: 'Morgan Stanley', domain: 'morganstanley.com', category: 'Investment Bank' }),
+  Object.freeze({ name: 'Goldman Sachs', domain: 'goldmansachs.com', category: 'Investment Bank' }),
+  Object.freeze({ name: 'JP Morgan', domain: 'jpmorgan.com', category: 'Investment Bank' }),
+  Object.freeze({ name: 'Citi', domain: 'citi.com', category: 'Investment Bank' }),
+  Object.freeze({ name: 'HSBC', domain: 'hsbc.com', category: 'Investment Bank' }),
+  Object.freeze({ name: 'HDFC Bank', domain: 'hdfcbank.com', category: 'Retail Bank' }),
+  Object.freeze({ name: 'ICICI Bank', domain: 'icicibank.com', category: 'Retail Bank' }),
+  Object.freeze({ name: 'Axis Bank', domain: 'axisbank.com', category: 'Retail Bank' }),
+  Object.freeze({ name: 'Kotak Bank', domain: 'kotak.com', category: 'Retail Bank' }),
+  Object.freeze({ name: 'Bajaj Finance', domain: 'bajajfinserv.in', category: 'NBFC' }),
+  Object.freeze({ name: 'HDFC Finance', domain: 'hdfcltd.com', category: 'NBFC' }),
+  Object.freeze({ name: 'Paytm', domain: 'paytm.com', category: 'FinTech' }),
+  Object.freeze({ name: 'PhonePe', domain: 'phonepe.com', category: 'FinTech' }),
+  Object.freeze({ name: 'Razorpay', domain: 'razorpay.com', category: 'FinTech' }),
 ]);
 
 export const EMPLOYER_LOGO_NAMES = Object.freeze([
@@ -370,6 +407,15 @@ export const TESTIMONIALS = Object.freeze([
   }),
 ]);
 
+export const SUCCESS_STORIES = Object.freeze({
+  eyebrow: 'Success Stories',
+  heading: 'Placement Outcomes That Speak for Themselves',
+  description: 'Our learners are building careers across institutions like Citi, HSBC, and JP Morgan.',
+  trained: '500+ trained',
+  placed: '100+ placed in top finance roles',
+  roleExamples: 'Roles include KYC Analyst, IB Operations, Relationship Manager & more',
+});
+
 export const LEADERSHIP = Object.freeze([
   Object.freeze({
     name: 'Bharat Singh',
@@ -405,6 +451,17 @@ export const LEADERSHIP_INTRO = Object.freeze({
   heading: 'Leadership Driving Your Career Outcomes',
   description:
     'Led by professionals with experience across banking, training, and placements — focused on delivering real career outcomes.',
+});
+
+export const CONTACT_COPY = Object.freeze({
+  eyebrow: 'Get In Touch',
+  heading: 'Start Your Finance Career Journey Today',
+  description: 'Have questions? Reach us directly on WhatsApp, call, or email for the fastest response.',
+  quickContact: 'Quick Contact',
+  whatsapp: 'WhatsApp (Fastest)',
+  whatsappDescription: 'Chat with our team instantly',
+  enrollHeading: 'Ready to Enroll?',
+  enrollDescription: 'Fill out the enrollment form and our team will reach out within 24 hours.',
 });
 
 export const PROGRAM_COMPARISON = Object.freeze([

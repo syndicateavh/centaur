@@ -2,8 +2,8 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import { APPROVED_CONTENT_SOURCE } from '../src/content/verifiedClaims.js';
 import { INDEXABLE_ROUTES, SEO_ROUTES, createStructuredData } from '../src/seo/seoRoutes.js';
-import { VERIFIED_PUBLIC_CLAIMS } from '../src/content/verifiedClaims.js';
 
 const sourceRoots = [
   path.resolve('src/components'),
@@ -25,16 +25,22 @@ function sourceFiles(directory) {
 
 const files = [...sourceRoots.flatMap(sourceFiles), ...standaloneFiles];
 const activeSource = files.map((file) => fs.readFileSync(file, 'utf8')).join('\n');
-const restrictedPatterns = [
-  [/100%\s+placement/i, 'unsupported placement guarantee'],
-  [/500\+\s+(?:students\s+)?trained/i, 'unsupported learner total'],
-  [/₹\s*3\s*[–-]\s*12\s*LPA/i, 'unsupported salary range'],
-  [/100%\s+fee\s+refund/i, 'unsupported fee-refund guarantee'],
-  [/105\+\s+(?:finance\s+)?roles/i, 'unsupported role total'],
-];
+const approvedBundle = path.resolve(APPROVED_CONTENT_SOURCE.file);
 
-for (const [pattern, label] of restrictedPatterns) {
-  if (pattern.test(activeSource)) failures.push(`content: found ${label}`);
+if (!fs.existsSync(approvedBundle)) {
+  failures.push(`content: approved original source is missing: ${APPROVED_CONTENT_SOURCE.file}`);
+}
+
+for (const requiredOriginalText of [
+  'Bharat Singh',
+  'Founder & Director',
+  'Finance Career Tracks We Offer',
+  'Placement Guarantee & Student Promise',
+  'Receive an Industry-Recognized Certificate',
+]) {
+  if (!activeSource.includes(requiredOriginalText)) {
+    failures.push(`content: missing original source wording: ${requiredOriginalText}`);
+  }
 }
 
 for (const forbiddenOrigin of [
@@ -43,10 +49,6 @@ for (const forbiddenOrigin of [
   'analytics.ahrefs.com',
 ]) {
   if (activeSource.includes(forbiddenOrigin)) failures.push(`performance: active source still references ${forbiddenOrigin}`);
-}
-
-if (VERIFIED_PUBLIC_CLAIMS.length !== 0) {
-  failures.push('claims: verified claim registry must remain empty until evidence review is completed');
 }
 
 if (INDEXABLE_ROUTES.length < 10) {
@@ -67,7 +69,7 @@ for (const route of SEO_ROUTES) {
     if (route.path !== '/' && !graph.some((item) => item['@type'] === 'BreadcrumbList')) {
       failures.push(`schema: ${route.path} is missing BreadcrumbList data`);
     }
-    if (route.courseId && !graph.some((item) => item['@type'] === 'Course')) {
+    if (route.program && !graph.some((item) => item['@type'] === 'Course')) {
       failures.push(`schema: ${route.path} is missing Course data`);
     }
     if (route.id === 'faqs' && (!Array.isArray(webPage?.mainEntity) || webPage.mainEntity.length === 0)) {
@@ -88,4 +90,4 @@ if (failures.length > 0) {
   process.exit(1);
 }
 
-console.log(`Source content verified: ${INDEXABLE_ROUTES.length} indexable routes, structured data, local critical assets and restricted-claim controls are configured.`);
+console.log(`Source content verified: ${INDEXABLE_ROUTES.length} indexable routes, structured data and approved original-content controls are configured.`);

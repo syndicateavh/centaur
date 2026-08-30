@@ -10,7 +10,7 @@ import {
 
 export { DEFAULT_OG_IMAGE, SITE_ORIGIN } from './siteConfig.js';
 
-const LAST_MEANINGFUL_UPDATE = '2026-08-26';
+const LAST_MEANINGFUL_UPDATE = '2026-08-31';
 
 export const SEO_ROUTES = Object.freeze([
   {

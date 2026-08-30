@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 import { CtaSection, PageHero, SectionHeading } from '@/components/PageShell.jsx';
 import { getCourseData } from '@/content/courseData.js';
 import { GENERAL_FAQS } from '@/content/faqData.js';
-import { CAREER_TRACKS, PROGRAM, PROGRAM_PROCESS } from '@/content/sourceContent.js';
+import { CAREER_TRACKS, HOME_COPY, PROGRAM, PROGRAM_PROCESS } from '@/content/sourceContent.js';
 import { getSeoRoute } from '@/seo/seoRoutes.js';
 
 export default function CourseDetailPage({ courseId }) {
@@ -16,7 +16,7 @@ export default function CourseDetailPage({ courseId }) {
     <>
       <PageHero
         routeId={track.seoId}
-        eyebrow={`${PROGRAM.name} career track`}
+        eyebrow={HOME_COPY.tracksEyebrow}
         title={seo.h1}
         intro={track.description}
       >
@@ -30,12 +30,12 @@ export default function CourseDetailPage({ courseId }) {
       <section className="bg-white py-16 sm:py-20">
         <div className="container mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
           <article>
-            <SectionHeading eyebrow="Career track" title={track.title} />
+            <SectionHeading eyebrow={HOME_COPY.tracksHeading} title={track.title} />
             <p className="text-lg text-muted-foreground">{track.description}</p>
             <p className="mt-5 text-2xl font-black text-primary">{track.ctc}</p>
           </article>
           <article className="rounded-2xl bg-muted p-8">
-            <h2 className="text-2xl font-bold text-primary">Track areas shown on the original site</h2>
+            <h2 className="text-2xl font-bold text-primary">{track.title}</h2>
             <ul className="mt-6 grid gap-4 sm:grid-cols-2">
               {trackTopics.map((topic) => (
                 <li key={topic} className="flex items-start gap-3 rounded-xl bg-white p-4 font-medium text-foreground/80">
@@ -50,9 +50,9 @@ export default function CourseDetailPage({ courseId }) {
       <section className="bg-muted py-16 sm:py-20">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            eyebrow="Financial Operations Masterclass"
-            title="This track is part of the 6-week program"
-            intro={PROGRAM.trainingDescription}
+            eyebrow="Our Process"
+            title="From Applicant to Placed — In 3 Steps"
+            intro="One clear path. One outcome: your first ₹3–12 LPA finance job."
             align="center"
           />
           <div className="grid gap-6 lg:grid-cols-3">
@@ -72,7 +72,7 @@ export default function CourseDetailPage({ courseId }) {
 
       <section className="bg-white py-16 sm:py-20">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="All program tracks" title="Career Paths After the Program" align="center" />
+          <SectionHeading eyebrow={HOME_COPY.tracksEyebrow} title={HOME_COPY.tracksHeading} intro={HOME_COPY.tracksDescription} align="center" />
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {CAREER_TRACKS.map((item) => (
               <article key={item.id} className={`rounded-xl border p-5 ${item.id === track.id ? 'border-accent bg-accent/5' : 'border-border'}`}>
@@ -88,13 +88,13 @@ export default function CourseDetailPage({ courseId }) {
       <section className="bg-primary py-16 text-white">
         <div className="container mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
           <article>
-            <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent">Eligibility</p>
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent">Frequently Asked Questions</p>
             <h2 className="mt-3 text-3xl font-bold text-white">{GENERAL_FAQS[0].question}</h2>
             <p className="mt-5 text-white/70">{GENERAL_FAQS[0].answer}</p>
           </article>
           <article>
-            <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent">Program details</p>
-            <h2 className="mt-3 text-3xl font-bold text-white">One masterclass, online or offline</h2>
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent">Frequently Asked Questions</p>
+            <h2 className="mt-3 text-3xl font-bold text-white">{GENERAL_FAQS[2].question}</h2>
             <p className="mt-5 whitespace-pre-line text-white/70">{GENERAL_FAQS[2].answer}</p>
           </article>
         </div>

@@ -2,13 +2,13 @@ import React from 'react';
 import { Mail, MapPin, MessageCircle, Phone, Route, Send } from 'lucide-react';
 import { PageHero, SectionHeading } from '@/components/PageShell.jsx';
 import { BUSINESS_DATA } from '@/content/businessData.js';
-import { OFFLINE_PARTNER_LINE } from '@/content/sourceContent.js';
+import { CONTACT_COPY, OFFLINE_PARTNER_LINE } from '@/content/sourceContent.js';
 import { getSeoRoute } from '@/seo/seoRoutes.js';
 
 const contacts = [
   { label: 'Phone', value: BUSINESS_DATA.displayTelephone, href: `tel:${BUSINESS_DATA.telephone}`, icon: Phone },
   { label: 'Email', value: BUSINESS_DATA.email, href: `mailto:${BUSINESS_DATA.email}`, icon: Mail },
-  { label: 'WhatsApp', value: 'Message Centaur Careers', href: BUSINESS_DATA.whatsappUrl, icon: MessageCircle, external: true },
+  { label: CONTACT_COPY.whatsapp, value: CONTACT_COPY.whatsappDescription, href: BUSINESS_DATA.whatsappUrl, icon: MessageCircle, external: true },
 ];
 
 export default function ContactPage() {
@@ -18,9 +18,9 @@ export default function ContactPage() {
     <>
       <PageHero
         routeId="contact"
-        eyebrow="Centaur Careers"
+        eyebrow={CONTACT_COPY.eyebrow}
         title={seo.h1}
-        intro="Fill out the enrollment form and our team will reach out within 24 hours."
+        intro={CONTACT_COPY.description}
       >
         <a href={BUSINESS_DATA.enrollmentUrl} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex min-h-12 items-center gap-2 rounded-xl bg-accent px-6 py-3 font-bold text-primary">
           <Send className="h-5 w-5" /> Start Your Application
@@ -29,7 +29,7 @@ export default function ContactPage() {
 
       <section className="bg-white py-16 sm:py-20">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Contact options" title="Contact Centaur Careers" />
+          <SectionHeading eyebrow={CONTACT_COPY.eyebrow} title={CONTACT_COPY.heading} intro={CONTACT_COPY.description} />
           <div className="grid gap-5 md:grid-cols-3">
             {contacts.map(({ label, value, href, icon: Icon, external }) => (
               <a key={label} href={href} {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})} className="rounded-2xl border border-border p-6 shadow-sm transition hover:-translate-y-1 hover:border-accent/50 hover:shadow-lg">
@@ -59,7 +59,7 @@ export default function ContactPage() {
             </a>
           </article>
           <article className="rounded-2xl bg-primary p-8 text-white">
-            <h2 className="text-2xl font-bold text-white">Offline training in Lucknow</h2>
+            <h2 className="text-2xl font-bold text-white">{CONTACT_COPY.quickContact}</h2>
             <p className="mt-5 text-white/70">{OFFLINE_PARTNER_LINE}</p>
             <p className="mt-6 text-white/70">Free counselling call with our advisor</p>
           </article>

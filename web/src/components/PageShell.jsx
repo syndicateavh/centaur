@@ -48,13 +48,13 @@ export function PageHero({ routeId, eyebrow, title, intro, children }) {
   );
 }
 
-export function SectionHeading({ eyebrow, title, intro, align = 'left' }) {
+export function SectionHeading({ eyebrow, title, intro, align = 'left', light = false }) {
   const alignment = align === 'center' ? 'mx-auto text-center' : '';
   return (
     <div className={`mb-10 max-w-3xl ${alignment}`}>
       {eyebrow && <p className="mb-3 text-sm font-bold uppercase tracking-[0.18em] text-accent">{eyebrow}</p>}
-      <h2 className="text-3xl font-bold text-primary sm:text-4xl">{title}</h2>
-      {intro && <p className={`mt-4 text-base text-muted-foreground sm:text-lg ${align === 'center' ? 'mx-auto' : ''}`}>{intro}</p>}
+      <h2 className={`text-3xl font-bold sm:text-4xl ${light ? 'text-white' : 'text-primary'}`}>{title}</h2>
+      {intro && <p className={`mt-4 text-base sm:text-lg ${light ? 'text-white/70' : 'text-muted-foreground'} ${align === 'center' ? 'mx-auto' : ''}`}>{intro}</p>}
     </div>
   );
 }
@@ -86,19 +86,33 @@ export function PrimaryLink({ to, children, inverse = false }) {
   );
 }
 
-export function CtaSection({ title, description }) {
+export function CtaSection({
+  eyebrow,
+  title,
+  description,
+  primaryLabel = 'Start Your Application',
+  primaryHref = BUSINESS_DATA.enrollmentUrl,
+  secondaryLabel = 'Contact Centaur Careers',
+  secondaryTo = '/contact/',
+  secondaryHref,
+}) {
   return (
     <section className="bg-primary py-16 text-white">
       <div className="container mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 px-4 sm:px-6 lg:flex-row lg:items-center lg:px-8">
         <div>
+          {eyebrow && <p className="text-xs font-bold uppercase tracking-[0.18em] text-accent">{eyebrow}</p>}
           <h2 className="text-3xl font-bold text-white">{title}</h2>
           <p className="mt-3 max-w-2xl text-white/70">{description}</p>
         </div>
         <div className="flex flex-wrap gap-3">
-          <a href={BUSINESS_DATA.enrollmentUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-accent px-6 py-3 font-bold text-primary shadow-md transition-all hover:-translate-y-0.5 hover:shadow-lg">
-            Start Your Application <ArrowRight className="h-4 w-4" />
+          <a href={primaryHref} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-accent px-6 py-3 font-bold text-primary shadow-md transition-all hover:-translate-y-0.5 hover:shadow-lg">
+            {primaryLabel} <ArrowRight className="h-4 w-4" />
           </a>
-          <PrimaryLink to="/contact/" inverse>Contact Centaur Careers</PrimaryLink>
+          {secondaryHref ? (
+            <a href={secondaryHref} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-white/25 bg-white/10 px-6 py-3 font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-white/15">
+              {secondaryLabel} <ArrowRight className="h-4 w-4" />
+            </a>
+          ) : <PrimaryLink to={secondaryTo} inverse>{secondaryLabel}</PrimaryLink>}
         </div>
       </div>
     </section>

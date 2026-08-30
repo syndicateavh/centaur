@@ -13,12 +13,12 @@ export default function FaqPage() {
         routeId="faqs"
         eyebrow="Frequently Asked Questions"
         title={seo.h1}
-        intro="Program eligibility, placement guarantee, learning modes, interview opportunities, placement cities and post-placement support."
+        intro="Frequently Asked Questions"
       />
 
       <section className="bg-white py-16 sm:py-20">
         <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Original program FAQs" title="Information to review before enrolling" />
+          <SectionHeading eyebrow="FAQ" title="Frequently Asked Questions" />
           <div className="space-y-4">
             {GENERAL_FAQS.map(({ question, answer }) => (
               <details key={question} className="group rounded-2xl border border-border bg-white p-6 open:border-accent/50 open:shadow-sm">

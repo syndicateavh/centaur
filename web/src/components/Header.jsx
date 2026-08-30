@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { Instagram, Linkedin, Menu, MessageCircle, X } from 'lucide-react';
 import { Link, NavLink, useLocation } from 'react-router';
 import { BUSINESS_DATA } from '@/content/businessData.js';
+import { HOME_COPY } from '@/content/sourceContent.js';
 
 const navLinks = [
   { to: '/', label: 'Home', end: true },
-  { to: '/courses/', label: 'Masterclass' },
+  { to: '/courses/', label: 'Courses' },
   { to: '/placements/', label: 'Placements' },
   { to: '/about/', label: 'About' },
-  { to: '/faqs/', label: 'FAQs' },
   { to: '/contact/', label: 'Contact' },
 ];
 
@@ -30,9 +30,9 @@ export default function Header() {
       <div className="hidden border-b border-white/10 bg-primary px-4 py-2 text-white md:block">
         <div className="container mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-4 text-xs font-medium text-white/80">
-            <span>Financial Operations Masterclass</span>
+            <span>{HOME_COPY.headerTraining}</span>
             <span className="text-accent">•</span>
-            <span>Lucknow + Pan-India Roles</span>
+            <span>{HOME_COPY.headerLocation}</span>
           </div>
           <div className="flex items-center gap-5 text-xs font-medium">
             <a href={BUSINESS_DATA.whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-white/80 transition-colors hover:text-accent"><MessageCircle className="h-3.5 w-3.5" /> WhatsApp</a>
@@ -56,7 +56,7 @@ export default function Header() {
                 <span className="absolute bottom-0 left-0 h-0.5 w-0 rounded-full bg-accent transition-all group-hover:w-full" />
               </NavLink>
             ))}
-            <a href={BUSINESS_DATA.enrollmentUrl} target="_blank" rel="noopener noreferrer" className="inline-flex h-11 items-center justify-center rounded-xl bg-accent px-6 text-sm font-bold text-primary shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md">Start Your Application</a>
+            <a href={BUSINESS_DATA.enrollmentUrl} target="_blank" rel="noopener noreferrer" className="inline-flex h-11 items-center justify-center rounded-xl bg-accent px-6 text-sm font-bold text-primary shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md">Apply for details</a>
           </nav>
 
           <button type="button" onClick={() => setMobileMenuOpen((open) => !open)} aria-label="Toggle navigation menu" aria-expanded={mobileMenuOpen} className="relative z-50 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-primary/5 text-primary lg:hidden">
@@ -71,7 +71,7 @@ export default function Header() {
                 <NavLink key={link.to} to={link.to} end={link.end} className={({ isActive }) => `rounded-xl px-4 py-4 font-poppins text-xl font-medium transition-colors ${isActive ? 'bg-white/10 text-accent' : 'text-white hover:bg-white/10 hover:text-accent'}`}>{link.label}</NavLink>
               ))}
               <div className="my-5 h-px bg-white/10" />
-              <a href={BUSINESS_DATA.enrollmentUrl} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex h-14 items-center justify-center rounded-xl bg-accent px-6 text-lg font-bold text-primary shadow-xl">Start Your Application</a>
+              <a href={BUSINESS_DATA.enrollmentUrl} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex h-14 items-center justify-center rounded-xl bg-accent px-6 text-lg font-bold text-primary shadow-xl">Apply for details</a>
             </nav>
           </div>
         </div>
