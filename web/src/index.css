@@ -105,12 +105,239 @@
 
   .home-hero-panel {
     box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
-    transform-style: preserve-3d;
-    will-change: transform;
   }
 
   .home-magnetic-button {
     will-change: transform;
+  }
+
+  .home-section-deferred {
+    content-visibility: auto;
+    contain-intrinsic-size: 640px;
+  }
+
+  .home-section-deferred[data-home-section='process'] {
+    content-visibility: visible;
+    contain-intrinsic-size: 620px;
+  }
+
+  .home-process-pin {
+    background:
+      radial-gradient(circle at 12% 18%, rgba(212, 175, 55, 0.13), transparent 32%),
+      linear-gradient(135deg, #fff 0%, #fbfaf5 58%, #f7f4e9 100%);
+  }
+
+  .home-process-shell {
+    display: grid;
+    gap: 3rem;
+    padding-block: 4rem;
+  }
+
+  .home-process-copy {
+    max-width: 48rem;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .home-process-copy > p {
+    margin-inline: auto;
+  }
+
+  .home-process-progress {
+    position: relative;
+    display: none;
+    gap: 0.5rem;
+    margin-top: 2.25rem;
+  }
+
+  .home-process-progress::before {
+    position: absolute;
+    top: 1.5rem;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    width: 1px;
+    background: hsl(var(--border));
+    content: '';
+  }
+
+  .home-process-progress-item {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 3rem minmax(0, 1fr);
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 0.65rem 0.75rem;
+    opacity: 0.45;
+    transition: opacity 220ms ease, transform 220ms ease, background-color 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+  }
+
+  .home-process-progress-marker {
+    display: inline-flex;
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid hsl(var(--border));
+    border-radius: 9999px;
+    background: #fff;
+    color: hsl(var(--primary));
+    font-family: Poppins, ui-sans-serif, system-ui, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 800;
+    box-shadow: 0 6px 18px rgba(10, 25, 49, 0.06);
+  }
+
+  .home-process-progress-item[data-state='active'] {
+    border-color: rgba(212, 175, 55, 0.28);
+    background: rgba(255, 255, 255, 0.82);
+    box-shadow: 0 12px 30px rgba(10, 25, 49, 0.08);
+    opacity: 1;
+    transform: translateX(0.35rem);
+  }
+
+  .home-process-progress-item[data-state='active'] .home-process-progress-marker {
+    border-color: hsl(var(--primary));
+    background: hsl(var(--primary));
+    color: #fff;
+  }
+
+  .home-process-progress-item[data-state='complete'] {
+    opacity: 0.72;
+  }
+
+  .home-process-progress-item[data-state='complete'] .home-process-progress-marker {
+    border-color: rgba(212, 175, 55, 0.55);
+    background: hsl(var(--accent));
+    color: hsl(var(--primary));
+  }
+
+  .home-process-scroll-hint {
+    display: none;
+    margin-top: 1.5rem;
+    color: hsl(var(--muted-foreground));
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .home-process-stage {
+    position: relative;
+    width: 100%;
+    max-width: 44rem;
+    margin-inline: auto;
+  }
+
+  .home-process-stack {
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  .home-process-step {
+    position: relative;
+    min-height: 19rem;
+    overflow: hidden;
+    border: 1px solid rgba(26, 42, 74, 0.12);
+    border-radius: 1.75rem;
+    background:
+      radial-gradient(circle at 100% 0%, rgba(212, 175, 55, 0.12), transparent 30%),
+      #fff;
+    padding: 1.75rem;
+    box-shadow: 0 24px 65px rgba(10, 25, 49, 0.1);
+  }
+
+  .home-process-step-accent {
+    position: absolute;
+    top: 0;
+    right: 12%;
+    left: 12%;
+    height: 3px;
+    border-radius: 0 0 9999px 9999px;
+    background: linear-gradient(90deg, transparent, hsl(var(--accent)), transparent);
+  }
+
+  .home-process-step-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    border: 1px solid rgba(212, 175, 55, 0.28);
+    border-radius: 9999px;
+    background: rgba(212, 175, 55, 0.09);
+    padding: 0.55rem 0.9rem;
+    color: hsl(var(--primary));
+  }
+
+  @media (min-width: 640px) {
+    .home-process-step {
+      min-height: 22rem;
+      padding: 2.5rem;
+    }
+  }
+
+  @media (min-width: 960px) and (prefers-reduced-motion: no-preference) {
+    [data-home-process-enhanced='true'] .home-process-shell {
+      min-height: min(52rem, calc(100vh - 4rem));
+      grid-template-columns: minmax(0, 0.78fr) minmax(30rem, 1.22fr);
+      align-items: center;
+      gap: clamp(3rem, 6vw, 6rem);
+      padding-block: clamp(2.75rem, 6vh, 4.5rem);
+    }
+
+    [data-home-process-enhanced='true'] .home-process-copy {
+      max-width: 29rem;
+      margin-inline: 0;
+      text-align: left;
+    }
+
+    [data-home-process-enhanced='true'] .home-process-copy > p {
+      margin-inline: 0;
+    }
+
+    [data-home-process-enhanced='true'] .home-process-progress {
+      display: grid;
+    }
+
+    [data-home-process-enhanced='true'] .home-process-scroll-hint {
+      display: block;
+    }
+
+    [data-home-process-enhanced='true'] .home-process-stage {
+      height: clamp(22rem, 52vh, 30rem);
+      margin-inline: 0;
+      justify-self: end;
+      isolation: isolate;
+    }
+
+    [data-home-process-enhanced='true'] .home-process-stack {
+      position: relative;
+      display: block;
+      height: 100%;
+    }
+
+    [data-home-process-enhanced='true'] .home-process-step {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      min-height: 0;
+      will-change: transform, opacity;
+    }
+  }
+
+  .home-section-deferred[data-home-section='hiring-network'] {
+    contain-intrinsic-size: 460px;
+  }
+
+  .home-section-deferred[data-home-section='career-tracks'],
+  .home-section-deferred[data-home-section='program-features'],
+  .home-section-deferred[data-home-section='program-benefits'] {
+    contain-intrinsic-size: 560px;
+  }
+
+  .home-section-deferred[data-home-section='about-leadership'] {
+    contain-intrinsic-size: 430px;
   }
 }
 

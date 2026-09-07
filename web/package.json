@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "react-router dev --config vite.react-router.config.js --host 0.0.0.0 --port 3000",
     "build": "node tools/generate-sitemap.js && react-router build --config vite.react-router.config.js && node tools/finalize-static-build.js",
-    "start": "vite preview --config vite.react-router.config.js --outDir build/client --host 0.0.0.0 --port 3000",
+    "start": "vite preview --config vite.react-router.config.js --outDir build/client --host 0.0.0.0 --port 3001",
     "test:seo": "node tools/verify-seo-build.js",
     "test:http": "node tools/verify-http-contract.js",
     "test:source": "node tools/verify-source-content.js",

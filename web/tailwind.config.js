@@ -7,6 +7,8 @@ module.exports = {
     "./src/routes/**/*.{js,jsx}",
     "./src/pages/**/*.{js,jsx}",
     "./src/components/{AnalyticsPageView,FloatingWhatsAppButton,Footer,Header,PageShell,ScrollToTop}.{js,jsx}",
+    "./src/components/HiringPartnerMarquee.{js,jsx}",
+    "./src/components/home/**/*.{js,jsx}",
   ],
   theme: {
     container: {

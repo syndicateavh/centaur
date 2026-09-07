@@ -1,10 +1,5 @@
 import React, { useRef } from 'react';
-import { useGSAP } from '@gsap/react';
-import { gsap } from 'gsap';
-
-if (typeof window !== 'undefined') {
-  gsap.registerPlugin(useGSAP);
-}
+import { useMarqueeMotion } from '@/components/home/useMarqueeMotion.js';
 
 function PartnerLogo({ partner, duplicate = false }) {
   const handleImageError = (event) => {
@@ -32,46 +27,7 @@ export function HiringPartnerMarquee({ partners }) {
   const marqueeRef = useRef(null);
   const trackRef = useRef(null);
 
-  useGSAP(() => {
-    const media = gsap.matchMedia();
-    media.add({ reducedMotion: '(prefers-reduced-motion: reduce)' }, (context) => {
-      const track = trackRef.current;
-      const firstSet = track?.querySelector('[data-marquee-set]');
-      if (context.conditions.reducedMotion || !track || !firstSet) return undefined;
-
-      let animation;
-      const createAnimation = () => {
-        const distance = firstSet.getBoundingClientRect().width;
-        if (!distance) return;
-
-        animation?.kill();
-        gsap.set(track, { x: 0 });
-        animation = gsap.to(track, {
-          duration: Math.max(16, distance / 105),
-          ease: 'none',
-          repeat: -1,
-          x: -distance,
-        });
-      };
-
-      createAnimation();
-      window.addEventListener('resize', createAnimation);
-      const pause = () => animation?.pause();
-      const play = () => animation?.play();
-      const marquee = marqueeRef.current;
-      marquee?.addEventListener('pointerenter', pause);
-      marquee?.addEventListener('pointerleave', play);
-
-      return () => {
-        window.removeEventListener('resize', createAnimation);
-        animation?.kill();
-        marquee?.removeEventListener('pointerenter', pause);
-        marquee?.removeEventListener('pointerleave', play);
-      };
-    });
-
-    return () => media.revert();
-  }, { scope: marqueeRef });
+  useMarqueeMotion(marqueeRef, trackRef);
 
   return (
     <div ref={marqueeRef} role="region" className="home-partner-marquee relative overflow-hidden border-y border-border py-4" aria-label="Hiring partner logos">
