@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "commercial-banks-services-operations",
+  "slug": "commercial-banks-services-operations",
+  "status": "published",
+  "title": "Commercial Bank Services and Operations Explained",
+  "excerpt": "Learn what commercial banks do, how common services move through operational checks, and how banks differ from other financial institutions.",
+  "category": "retail-banking",
+  "author": { "type": "Organization", "id": "centaur-careers", "name": "Centaur Careers", "role": "Publisher", "profilePath": "/" },
+  "body": [
+    { "type": "paragraph", "text": "A commercial bank is a banking institution that provides services such as accepting deposits and extending credit, subject to its licence, applicable law and operating model. In India, the Reserve Bank of India describes scheduled and non-scheduled commercial banks as categories in the banking system; that classification is not the same as a complete list of every type of financial institution. The exact products, eligibility and service process vary by bank and customer." },
+    { "type": "heading", "level": 2, "text": "Commercial bank meaning and common services" },
+    { "type": "list", "items": [
+      "Deposit accounts and related customer services, with terms and access governed by the bank's current product documents.",
+      "Credit products, where application review, approval, documentation, disbursement and repayment servicing follow the lender's authorised policies.",
+      "Payments and transfers, which can involve customer instructions, authentication, processing, settlement arrangements and status communication.",
+      "Business banking services that may support collections, payments, cash management or trade-related needs, depending on the bank and customer eligibility.",
+      "Additional services can include cards, remittances or other products, but availability and terms must be checked with the institution."
+    ] },
+    { "type": "heading", "level": 2, "text": "A fictional service workflow: payment instruction" },
+    { "type": "paragraph", "text": "Imagine a customer submits a payment instruction through an authorised channel. This bank operations workflow might include receiving the instruction, authenticating it under the bank's process, checking required fields and applicable limits, routing it through the relevant payment arrangement, updating records after processing, communicating status and reconciling exceptions. The precise controls and settlement steps depend on payment type, channel, bank, system and current rules. This description is a learning map, not an instruction for handling a real payment." },
+    { "type": "paragraph", "text": "Operations helps make services traceable: a record should show what was received, which checks were completed, what status was returned, and how an exception was handled. If information is incomplete or a value does not match, staff should follow approved procedures, preserve evidence and escalate to the authorised owner rather than bypass a control or change a record just to close a case." },
+    { "type": "heading", "level": 2, "text": "Do not confuse a commercial bank with every finance provider" },
+    { "type": "paragraph", "text": "A central bank, a non-banking financial company, a cooperative institution and a commercial bank can have different legal forms, permissions, products and oversight. Everyday language sometimes calls all of them a bank, but a reader should verify the institution's official status and the exact service terms. For an India-specific definition and current context, start with official Reserve Bank of India material rather than relying on a generic category list." },
+    { "type": "link", "label": "Check the Reserve Bank of India's banking concepts", "href": "https://www.rbi.org.in/Scripts/certainconcepts.aspx" },
+    { "type": "link", "label": "Explore retail banking operations roles", "href": "/career-guides/retail-banking-operations/", "routeId": "career-guide-retail-banking-operations" },
+    { "type": "link", "label": "See the retail banking module in the current masterclass", "href": "/courses/retail-banking/", "routeId": "retail-banking" },
+    { "type": "paragraph", "text": "Centaur Careers publishes this general educational overview. It is not banking, credit or financial advice. The current Financial Operations Masterclass includes a retail banking module; this does not mean every bank service described here is taught. Confirm current program and product details directly with the relevant provider or bank." }
+  ],
+  "coverImage": {
+    "src": "/images/blog/commercial-bank-service-workflow.png",
+    "alt": "Illustration of commercial banking services including branch support, digital payments, deposits and account help.",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-24",
+  "updatedAt": "2026-09-24",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Commercial Bank Services and Operations Explained",
+    "description": "Understand commercial bank services and a simple payment workflow, with India-specific definitions and practical operational-control context.",
+    "canonicalPath": "/blog/commercial-banks-services-operations/",
+    "noindex": false
+  },
+  "tags": ["Commercial Bank", "Bank Services", "Bank Operations", "Retail Banking"],
+  "relatedRouteIds": ["blog", "career-guides", "career-guide-retail-banking-operations", "retail-banking"],
+  "redirects": [],
+  "evidenceNotes": [
+    "Reserve Bank of India banking concepts: https://www.rbi.org.in/Scripts/certainconcepts.aspx",
+    "The payment workflow is an illustrative high-level sequence only; actual processing, settlement, eligibility and controls vary by service and institution.",
+    "No product terms, credit decisions, financial advice or specific banking outcome is represented."
+  ]
+}

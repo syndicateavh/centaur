@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "id": "reconciliation-process-steps-finance",
+  "slug": "reconciliation-process-steps-finance",
+  "status": "published",
+  "title": "Reconciliation Process and Steps",
+  "excerpt": "Learn the reconciliation process through a practical finance workflow, a fictional matching example, control checks, exception handling and role guidance.",
+  "category": "finance-operations",
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Finance education editorial team",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "The reconciliation process compares two records that should agree, explains any difference, and leaves an evidence trail for review. In finance operations, the records might be a bank statement and a cash ledger, an internal trade record and a custodian statement, or a sub-ledger and the general ledger. Reconciliation is not just finding a matching number. A sound process identifies the population, preserves the source records, investigates exceptions, records the reason, and escalates anything that cannot be resolved within the authorised procedure. The examples in this article are fictional and are designed for learning, not for changing a live ledger."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What reconciliation means in finance"
+    },
+    {
+      "type": "paragraph",
+      "text": "A reconciliation asks whether two views of an activity are complete, accurate and aligned for a defined date or cycle. Matching can be one-to-one, one-to-many, or based on a controlled tolerance. The analyst should know what each source represents before comparing values. A bank statement may show cleared cash movements while an internal ledger may include pending entries. A trade record may contain economic terms while a settlement statement shows the movement that actually reached an account. Differences are therefore signals to investigate, not automatically errors."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Reconciliation process: six practical steps"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Define the scope: source systems, account or portfolio, date, currency, population, owner and expected completion time.",
+        "Collect and protect the evidence: retain the source files, extraction time, version and any approved data-quality notes.",
+        "Standardise the fields used for matching, such as reference, value date, amount, currency, account and transaction type.",
+        "Match the population using the approved rules, then separate exact matches, probable matches, duplicates, missing records and breaks.",
+        "Investigate each break by tracing both sides to supporting evidence and recording a specific root cause rather than a vague comment.",
+        "Close, carry forward or escalate the exception according to policy, with reviewer sign-off, ageing and an owner for every unresolved item."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A fictional reconciliation example"
+    },
+    {
+      "type": "paragraph",
+      "text": "Imagine a fictional operations team comparing a daily cash ledger with a bank statement. The ledger contains a debit of Rs 18,500 with reference CX104, while the statement contains the same reference for Rs 18,050. The correct response is not to edit the ledger until the totals match. The analyst records the 450 difference, checks the source instruction, verifies currency and value date, searches for a fee or partial posting, and asks the authorised owner for evidence. If the difference is a bank fee, it may need a separate approved accounting entry. If the source record is wrong, the correction and approval path should be recorded."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "What a useful break note contains"
+    },
+    {
+      "type": "list",
+      "items": [
+        "A unique reference and the amount, currency and relevant dates.",
+        "The two source values and the calculated difference.",
+        "The checks completed, evidence reviewed and likely root cause.",
+        "The next action, owner, due date, ageing and escalation status."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Controls that make reconciliation reliable"
+    },
+    {
+      "type": "paragraph",
+      "text": "Good controls separate preparation from review where the process requires it, restrict access to sensitive files, preserve an immutable source copy, and use a clear ageing report. A tolerance should be documented rather than silently built into a spreadsheet. Common weak practices include overwriting source data, deleting unmatched rows, using a plug entry without evidence, and carrying the same break forward without an owner. Equal totals are useful, but they are not proof that the population is complete or that every item is classified correctly."
+    },
+    {
+      "type": "link",
+      "label": "Read the accounting basics resource for debit, credit and ledger context",
+      "href": "/resources/accounting-basics/",
+      "routeId": "resource-accounting-basics"
+    },
+    {
+      "type": "link",
+      "label": "Compare reconciliation types and examples in finance",
+      "href": "/resources/reconciliation-in-finance/",
+      "routeId": "resource-reconciliation-in-finance"
+    },
+    {
+      "type": "link",
+      "label": "Explore the Finance Operations training module",
+      "href": "/courses/finance-operations-training/",
+      "routeId": "courses-finance-operations-training"
+    },
+    {
+      "type": "link",
+      "label": "Practise reconciliation questions for finance interviews",
+      "href": "/resources/accounting-interview-questions/",
+      "routeId": "resource-accounting-interview-questions"
+    },
+    {
+      "type": "link",
+      "label": "Browse all finance career insights",
+      "href": "/blog/",
+      "routeId": "blog"
+    },
+    {
+      "type": "link",
+      "label": "Review the IFRS Accounting Standards Navigator",
+      "href": "https://www.ifrs.org/issued-standards/list-of-standards/"
+    },
+    {
+      "type": "paragraph",
+      "text": "Reconciliation is valuable career preparation because it combines accounting logic, data handling, investigation and written communication. Learn the workflow with fictional records, then compare the exact procedures and approval limits used by the organisation. Centaur Careers publishes this article for education; it is not accounting, audit or legal advice, and it does not promise qualification or employment outcomes."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/reconciliation-process-steps-finance.png",
+    "alt": "Editorial illustration of a finance analyst reconciling a ledger with a bank statement",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-27",
+  "updatedAt": "2026-09-27",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Reconciliation Process and Steps | Centaur Careers",
+    "description": "Learn the reconciliation process with a practical finance workflow, fictional example, control checks and exception-handling guidance.",
+    "canonicalPath": "/blog/reconciliation-process-steps-finance/",
+    "noindex": false,
+    "focusKeyword": "reconciliation process",
+    "secondaryKeywords": ["reconciliation steps", "bank reconciliation", "finance operations"]
+  },
+  "tags": ["Reconciliation Process", "Reconciliation Steps", "Bank Reconciliation", "Finance Operations", "Accounting"],
+  "relatedRouteIds": ["blog", "resource-accounting-basics", "resource-reconciliation-in-finance", "courses-finance-operations-training", "resource-accounting-interview-questions"],
+  "redirects": [],
+  "evidenceNotes": [
+    "IFRS Accounting Standards Navigator: https://www.ifrs.org/issued-standards/list-of-standards/",
+    "Definitions and examples are original educational material; all records and amounts are fictional.",
+    "No accounting, audit, qualification or employment outcome is promised."
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "compliance-analyst-duties-career-path",
+  "slug": "compliance-analyst-duties-career-path",
+  "status": "published",
+  "title": "Compliance Analyst: Duties and Career Path",
+  "excerpt": "Understand compliance analyst duties across KYC, monitoring, evidence and escalation, plus realistic skills and a fictional case for career preparation.",
+  "category": "retail-banking",
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Finance education editorial team",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "A compliance analyst helps an organisation identify, review, document and escalate possible breaches of policy, regulation or control requirements. Depending on the team, the work can include KYC onboarding, transaction monitoring, sanctions screening, quality assurance, regulatory reporting, case management or control testing. The exact authority and procedure depend on the employer and applicable rules. This article is a career and workflow guide, not legal advice and not a decision about any real customer."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Compliance analyst duties"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Review customer, account or transaction information against the relevant procedure and evidence requirements.",
+        "Identify missing, inconsistent, unusual or higher-risk information and record the reason for review.",
+        "Investigate alerts or cases using approved sources without making unsupported accusations.",
+        "Document decisions, reviewer comments, approvals, ageing and the next action.",
+        "Escalate cases outside the analyst's authority or where a policy, risk or deadline requires it.",
+        "Support quality checks, trend analysis, training feedback and control improvements."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A practical compliance workflow"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Define the case type, trigger, scope, date and decision authority.",
+        "Collect the approved evidence and protect personal or confidential information.",
+        "Compare the evidence with the applicable policy, rule, profile or expected behaviour.",
+        "Record facts, gaps, assumptions and questions in a neutral case note.",
+        "Seek a second review or escalate when the case exceeds the procedure or authority.",
+        "Close or carry forward the case with an owner, rationale, date and audit trail."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fictional KYC case"
+    },
+    {
+      "type": "paragraph",
+      "text": "A fictional business onboarding file contains a registration document, an ownership chart and a signatory list. The ownership chart does not match the registration document, and one document is outside its validity period. A careful analyst records the mismatch, checks the current procedure, requests authorised evidence, and escalates if the case meets the defined criteria. They do not label the customer or make a final decision without authority. The case note should separate observed facts from questions and conclusions."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Skills and career progression"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Careful reading, data comparison and the ability to spot an unexplained inconsistency.",
+        "Neutral written communication that can be reviewed by another analyst or investigator.",
+        "Knowledge of KYC, AML, sanctions or control concepts at the level required by the role.",
+        "Confidentiality, access discipline and respect for customer and employee information.",
+        "Judgement about when to ask, pause, seek review or escalate.",
+        "Progression through deeper case types, quality review, investigations, controls or specialist domains."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to prepare honestly"
+    },
+    {
+      "type": "paragraph",
+      "text": "Practise with synthetic customer files that contain a missing document, an ownership mismatch, a duplicate and a clear match. Write a neutral case note, identify the source used, state what remains unknown and choose an escalation point. Never upload real customer data to a public portfolio. In interviews, distinguish coursework or a simulation from production experience and confirm the employer's current procedure."
+    },
+    {
+      "type": "link",
+      "label": "Explore the KYC and AML compliance module",
+      "href": "/courses/kyc-aml/",
+      "routeId": "kyc-aml-compliance"
+    },
+    {
+      "type": "link",
+      "label": "Read the KYC and AML analyst career guide",
+      "href": "/career-guides/kyc-aml-analyst/",
+      "routeId": "career-guide-kyc-aml-analyst"
+    },
+    {
+      "type": "link",
+      "label": "Review finance and BFSI basics",
+      "href": "/resources/finance-gk/",
+      "routeId": "resource-finance-gk"
+    },
+    {
+      "type": "link",
+      "label": "Practise finance interview questions",
+      "href": "/resources/investment-banking-interview-questions/",
+      "routeId": "resource-investment-banking-interview-questions"
+    },
+    {
+      "type": "link",
+      "label": "Browse all finance career insights",
+      "href": "/blog/",
+      "routeId": "blog"
+    },
+    {
+      "type": "link",
+      "label": "Check current RBI KYC directions",
+      "href": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=12866"
+    },
+    {
+      "type": "link",
+      "label": "Review the FATF Recommendations",
+      "href": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html"
+    },
+    {
+      "type": "paragraph",
+      "text": "Compliance work is governed by current rules, internal policy and delegated authority. Use official sources and employer procedures for real cases. Centaur Careers provides this material for education and does not provide legal advice or a compliance decision."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/compliance-analyst-duties-career-path.png",
+    "alt": "Editorial illustration of a compliance analyst reviewing identity and risk controls",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-27",
+  "updatedAt": "2026-09-27",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Compliance Analyst: Duties and Career Path | Centaur Careers",
+    "description": "Learn compliance analyst duties across KYC, monitoring, evidence, escalation and career skills with a fictional case example.",
+    "canonicalPath": "/blog/compliance-analyst-duties-career-path/",
+    "noindex": false,
+    "focusKeyword": "compliance analyst duties",
+    "secondaryKeywords": ["compliance analyst career path", "KYC analyst", "AML analyst"]
+  },
+  "tags": ["Compliance Analyst Duties", "Compliance Analyst Career", "KYC", "AML", "Banking Operations"],
+  "relatedRouteIds": ["blog", "kyc-aml-compliance", "career-guide-kyc-aml-analyst", "resource-finance-gk", "resource-investment-banking-interview-questions"],
+  "redirects": [],
+  "evidenceNotes": [
+    "RBI KYC Directions / amendment: https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=12866",
+    "FATF Recommendations: https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html",
+    "The case is fictional; current laws, rules and employer procedures must be checked before use."
+  ]
+}

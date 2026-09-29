@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "id": "fintech-operations-careers-after-graduation",
+  "slug": "fintech-operations-careers-after-graduation",
+  "status": "published",
+  "title": "FinTech Operations Careers After Graduation in India",
+  "excerpt": "A role-based guide for Indian graduates exploring FinTech operations, including skills, projects, interviews and course selection.",
+  "category": "finance-operations",
+  "author": {
+    "id": "bharat-singh",
+    "name": "Bharat Singh",
+    "role": "Founder & Director",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "FinTech operations brings financial workflows and technology-enabled products together. The work may involve onboarding, payments, lending, reconciliation, customer-service operations, fraud or risk support, merchant operations, regulatory reporting support or process quality. For a graduate, the field is easier to understand when it is broken into specific roles instead of treated as a single technology career."
+    },
+    {
+      "type": "paragraph",
+      "text": "BCom, BBA, MBA and other graduates can enter different parts of this ecosystem, subject to each employer's criteria. Some roles value accounting and process knowledge; others need stronger data, product or technical skills. This guide focuses on operations-oriented paths available to candidates across India and avoids promising a job, salary or fixed career outcome."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Start by choosing a FinTech operations lane"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Customer onboarding and KYC operations: document review, verification, risk classification and case escalation.",
+        "Payments operations: transaction monitoring, reconciliation, failure investigation, refunds and disputes.",
+        "Lending operations: application checks, documentation, disbursement support, servicing and exception handling.",
+        "Merchant operations: onboarding, settlement support, account changes and issue coordination.",
+        "Risk and fraud operations: alert review, pattern investigation, evidence capture and escalation under defined rules.",
+        "Reconciliation and finance operations: comparing records, resolving breaks and reporting open items.",
+        "Customer or partner operations: handling cases across users, banks, networks, vendors and internal teams.",
+        "Process quality and reporting: sampling work, identifying repeat errors and maintaining operational dashboards."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "These lanes overlap, and titles differ between organisations. Search by tasks as well as titles. For example, exception handling, settlement reconciliation or onboarding review may reveal relevant positions that do not use the phrase FinTech operations in the job title."
+    },
+    {
+      "type": "link",
+      "label": "Compare broader finance operations roles and workflows",
+      "href": "/career-guides/finance-operations/",
+      "routeId": "career-guide-finance-operations"
+    },
+    {
+      "type": "link",
+      "label": "Read the digital payments operations career guide for India",
+      "href": "/blog/digital-payments-operations-career-india/"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Build the combined finance and technology foundation"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Financial workflow knowledge"
+    },
+    {
+      "type": "paragraph",
+      "text": "Understand the lifecycle behind your chosen lane: who starts the process, what information is required, which checks occur, how a transaction or case changes status, how records are reconciled and how exceptions are closed. You do not need to memorise every product rule, but you should be able to explain the normal flow and the purpose of its controls."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Data and tool fluency"
+    },
+    {
+      "type": "paragraph",
+      "text": "Develop practical spreadsheet skills for cleaning, filtering, matching and summarising data. Learn how a ticketing queue, operations dashboard and status field support work management. SQL can be useful for data-oriented roles, but it should follow a strong foundation in tables, identifiers and reconciliation logic. Coding is not a universal requirement for operations roles."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Controls and communication"
+    },
+    {
+      "type": "paragraph",
+      "text": "FinTech products can move quickly, but operations work still depends on evidence, approvals, access controls and reliable documentation. Practise writing case notes that separate facts, checks, decisions and next actions. Be ready to explain when you would stop, seek approval or escalate rather than improvising outside your authority."
+    },
+    {
+      "type": "link",
+      "label": "Learn the foundations of KYC and AML analyst work",
+      "href": "/career-guides/kyc-aml-analyst/",
+      "routeId": "career-guide-kyc-aml-analyst"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Create evidence of skill without customer data"
+    },
+    {
+      "type": "paragraph",
+      "text": "A small fictional project can make your interview answers concrete. Choose one lane and build a process map, sample queue and exception log using invented information. For payments, reconcile two mock transaction reports. For onboarding, review fictional profiles against a checklist. For lending, map an application from submission to servicing and identify control points."
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Define the customer problem and the normal end-to-end workflow.",
+        "List the participants, inputs, statuses and control points.",
+        "Create realistic fictional cases, including at least three exceptions.",
+        "Show how you prioritised, investigated, documented and escalated each case.",
+        "Summarise one process improvement without weakening the control.",
+        "Prepare to explain limitations and what information you would need in a real workplace."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Never use real customer, employer or confidential data in a portfolio. Interviewers need to see your reasoning, not private records or screenshots of systems you were not authorised to share."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to read FinTech job descriptions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Separate requirements into four groups: product knowledge, operational tasks, tools and behavioural skills. Mark what you already have, what you can demonstrate through a project and what needs formal learning. Check whether the role involves shifts, customer interaction, sales targets, technical troubleshooting or regulatory responsibilities. The word operations alone does not tell you these conditions."
+    },
+    {
+      "type": "paragraph",
+      "text": "Also research the organisation's regulated activity and partners. The Reserve Bank of India's FinTech portal and regulatory sandbox information can help learners understand how innovation is discussed within the regulatory environment. It should not be used to assume that every FinTech company, product or role has the same approval or status."
+    },
+    {
+      "type": "link",
+      "label": "Explore RBI's regulatory sandbox information",
+      "href": "https://fintech.rbi.org.in/FT_RegSandbox.aspx"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Choose training for the gap you actually have"
+    },
+    {
+      "type": "paragraph",
+      "text": "A commerce graduate may need payment technology vocabulary and hands-on data practice. A technical graduate may need accounting, reconciliation and control concepts. A customer-service professional may need deeper process mapping and risk awareness. Before enrolling, ask for the detailed syllabus, practical assignments, trainer profile, assessment method, complete fee and career-support terms."
+    },
+    {
+      "type": "link",
+      "label": "Explore finance learning tracks from Centaur Careers",
+      "href": "/courses/",
+      "routeId": "courses"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Prepare role-specific interview stories"
+    },
+    {
+      "type": "paragraph",
+      "text": "Prepare examples for accuracy, prioritisation, investigation, communication and improvement. A strong answer describes the situation, your responsibility, the checks you performed, the decision within your authority and the result. Freshers can use academic, volunteer or fictional project examples, provided they label them honestly and explain their own contribution."
+    },
+    {
+      "type": "callout",
+      "title": "A useful first-week plan",
+      "text": "Pick one lane, study its workflow from primary sources, analyse ten relevant job descriptions, build one fictional case project and practise explaining it. This creates a focused base for deciding whether further training is necessary."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Frequently asked questions"
+    },
+    {
+      "type": "faq",
+      "question": "Can a BCom graduate enter FinTech operations?",
+      "answer": "Yes, BCom graduates can be relevant for operations roles when their skills match the work. Build knowledge of the chosen workflow, Excel and reconciliation ability, control awareness and clear communication, then check each employer's criteria."
+    },
+    {
+      "type": "faq",
+      "question": "Do I need coding for a FinTech operations job?",
+      "answer": "Not for every role. Many jobs prioritise process, investigation, data accuracy and communication. SQL, APIs or coding may be useful or required in technical operations, analytics and product-support roles."
+    },
+    {
+      "type": "faq",
+      "question": "Which FinTech operations role is best for a fresher?",
+      "answer": "There is no universal best role. Compare your education and strengths with the tasks in onboarding, payments, lending, merchant, risk and reconciliation roles. Choose a lane where you can build credible evidence of the required skills."
+    },
+    {
+      "type": "link",
+      "label": "Explore finance career paths after graduation",
+      "href": "/career-guides/finance-careers-after-graduation/",
+      "routeId": "career-guide-finance-careers-after-graduation"
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/fintech-operations-careers-india.jpg",
+    "alt": "Young Indian professionals collaborating on FinTech operations workflows and data dashboards",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-15",
+  "updatedAt": "2026-09-15",
+  "scheduledAt": null,
+  "seo": {
+    "title": "FinTech Operations Careers After Graduation India",
+    "description": "Explore FinTech operations careers after graduation in India, with role options, essential skills, portfolio projects and interview preparation.",
+    "canonicalPath": "/blog/fintech-operations-careers-after-graduation/",
+    "noindex": false
+  },
+  "tags": [
+    "FinTech Careers",
+    "Finance Operations",
+    "BCom Careers",
+    "BFSI Jobs",
+    "Centaur Careers"
+  ],
+  "relatedRouteIds": [
+    "courses",
+    "career-guides",
+    "career-guide-finance-careers-after-graduation",
+    "career-guide-finance-operations",
+    "career-guide-digital-payments-operations",
+    "career-guide-kyc-aml-analyst",
+    "india",
+    "contact"
+  ],
+  "redirects": [],
+  "evidenceNotes": [
+    "RBI FinTech regulatory sandbox information: https://fintech.rbi.org.in/FT_RegSandbox.aspx",
+    "NPCI UPI product overview for the payments lane: https://www.npci.org.in/product/upi/about-upi",
+    "Role families are illustrative and responsibilities vary by employer; no salary, vacancy-volume or employment outcome is claimed.",
+    "Portfolio guidance explicitly requires fictional data and prohibits disclosure of customer or employer information."
+  ]
+}

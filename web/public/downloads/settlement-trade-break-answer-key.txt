@@ -1,0 +1,19 @@
+FICTIONAL TRADE BREAK — PRACTICE ANSWER KEY
+Centaur Careers | 26 September 2026
+
+All names, records, dates, prices and process statuses are invented. This is an educational exercise, not an employer's workflow or a statement of the settlement cycle for any market.
+
+1. Scope the record. SIM-1042, Practice Share P, Buy, trade date 22 September 2026, exercise settlement date 24 September 2026, INR 250 per share. The four rows refer to the same simulated trade; verify this identification before comparing values.
+
+2. Quantify the break. Internal capture and queued instruction each show 100 shares and INR 25,000 gross. The counterparty confirmation shows 10 shares and INR 2,500 gross. The differences are 90 shares and INR 22,500 gross. Price is the same in all rows. Gross amount is a simplified quantity × price; fees and taxes are excluded.
+
+3. Investigate the evidence. Compare the original execution note, capture, confirmation and instruction, including identifiers, side, dates, version and any allocation or amendment history. The execution note supports 100 in this packet, but it alone does not authorise an analyst to overwrite the counterparty's record or declare the trade agreed. Ask the designated trade owner to verify the approved execution and contact the counterparty through the authorised channel. An allocation issue, version mismatch or data-entry error remains possible until checked.
+
+4. Record and escalate. Log the source IDs, the two numerical differences, current status, owner, next action and the applicable cut-off. Flag the queued instruction for the authorised settlement-control owner. Whether it is paused or released depends on that employer's procedure and approval rights. Do not force a match or mark settlement complete.
+
+5. Close only with evidence. After the authorised parties agree the trade details and any correction is made through a controlled process, compare the revised confirmation with the approved trade and settlement instruction. Record who approved the change, when it occurred and the final verified status. Escalate an unresolved break under the applicable procedure.
+
+MODEL CASE NOTE
+SIM-1042 has a quantity discrepancy: internal capture SIM-INT-02 and instruction SIM-SET-04 show 100 shares/INR 25,000; counterparty confirmation SIM-CP-03 shows 10 shares/INR 2,500. Price and reference match. Execution note SIM-EX-01 shows 100, subject to trade-owner validation. Difference: 90 shares/INR 22,500 gross. Status: unresolved; queued instruction referred to settlement-control owner. Next: verify execution and allocation/amendment history, request counterparty confirmation through the approved channel, and recheck instructions after authorised resolution. No source record changed.
+
+SELF-CHECK: Award one point each for (a) matching identifiers before comparison, (b) calculating both differences, (c) testing alternative causes without assuming an error, (d) documenting and escalating without unauthorised edits, and (e) verifying the final correction and status. Five points is a learning aid, not a hiring score.

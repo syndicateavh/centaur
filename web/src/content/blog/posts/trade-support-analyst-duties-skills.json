@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "trade-support-analyst-duties-skills",
+  "slug": "trade-support-analyst-duties-skills",
+  "status": "published",
+  "title": "Trade Support Analyst: Duties and Skills",
+  "excerpt": "See what a trade support analyst may do across capture, confirmation, settlement and exception queues, with practical skills and a fictional case.",
+  "category": "investment-banking",
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Finance education editorial team",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "A trade support analyst helps a transaction move through controlled operational stages. Typical duties can include checking trade capture, comparing confirmations, validating reference data, monitoring settlement status, investigating breaks and communicating with internal or external stakeholders. The exact scope depends on the product, market, employer and team design. Trade support is not automatically a trading or investment role; the analyst's value is often in accurate records, timely handoffs and evidence-based exception management."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Trade support analyst duties"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Review newly captured transactions for required fields, identifiers, account details and date logic.",
+        "Compare internal records with confirmations and investigate missing or inconsistent terms.",
+        "Monitor settlement or payment status and identify items approaching a deadline.",
+        "Coordinate questions with the business, control, technology, custodian or settlement team through approved channels.",
+        "Maintain a break log with evidence, root cause, owner, next action and ageing.",
+        "Prepare controlled reports and support quality checks, process metrics or recurring-cause analysis."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A day in the workflow"
+    },
+    {
+      "type": "paragraph",
+      "text": "The day may begin with a queue review and prioritisation based on settlement date, risk, value, ageing and dependencies. The analyst then checks new items, responds to exceptions, documents evidence and updates the status for the next handoff. At the end of a cycle, unresolved items should be visible rather than hidden in an edited spreadsheet. A clear note can save another analyst time: state what was expected, what was found, which source was checked and what decision or evidence is needed next."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fictional case: a confirmation break"
+    },
+    {
+      "type": "paragraph",
+      "text": "A fictional equity trade shows 1,200 shares in the internal system and 1,020 shares in the confirmation. The analyst checks the trade reference, order status, amendment history, time stamps and any approved partial execution. They do not assume the lower quantity is correct and do not overwrite either record. The break note contains both values, the 180-share difference, the evidence checked, the settlement impact, the owner and the next review time. If the source of truth is still uncertain, the issue is escalated before a correction is made."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Skills employers may look for"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Attention to detail without losing sight of the deadline or business impact.",
+        "Comfort with spreadsheets, structured data, formulas and source-to-output checks.",
+        "Clear written communication that is concise, factual and easy to action.",
+        "Understanding of trade lifecycle terms, reconciliations and common exception categories.",
+        "Confidentiality, access discipline and willingness to follow maker-checker review.",
+        "Calm escalation when information is incomplete or a control may be at risk."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to prepare without claiming experience you do not have"
+    },
+    {
+      "type": "paragraph",
+      "text": "Create a fictional trade-support workbook with a source tab, a matching tab and a break log. Include one exact match, one missing record, one value mismatch and one duplicate. Explain the check used for each result and write a short escalation note. This demonstrates reasoning while protecting confidential data. In an interview, be honest about what was simulated, what you learned and how you would verify an unfamiliar process."
+    },
+    {
+      "type": "link",
+      "label": "Learn the Trade Lifecycle in Investment Banking",
+      "href": "/career-guides/trade-lifecycle/",
+      "routeId": "career-guide-trade-lifecycle"
+    },
+    {
+      "type": "link",
+      "label": "Explore Investment Banking Operations training",
+      "href": "/courses/investment-banking-operations/",
+      "routeId": "investment-banking-operations"
+    },
+    {
+      "type": "link",
+      "label": "See the Investment Banking Operations career guide",
+      "href": "/career-guides/investment-banking-operations/",
+      "routeId": "career-guide-investment-banking-operations"
+    },
+    {
+      "type": "link",
+      "label": "Practise investment banking interview questions",
+      "href": "/resources/investment-banking-interview-questions/",
+      "routeId": "resource-investment-banking-interview-questions"
+    },
+    {
+      "type": "link",
+      "label": "Browse all finance career insights",
+      "href": "/blog/",
+      "routeId": "blog"
+    },
+    {
+      "type": "link",
+      "label": "Review SEBI investor education material",
+      "href": "https://investor.sebi.gov.in/iematerial.html"
+    },
+    {
+      "type": "paragraph",
+      "text": "Trade support analyst is a workflow and control role, and job descriptions vary. Confirm the employer's product scope, shifts, systems, training and review expectations before applying."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/trade-support-analyst-duties-skills.png",
+    "alt": "Editorial illustration of a trade support analyst reviewing confirmations and settlement exceptions",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-27",
+  "updatedAt": "2026-09-27",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Trade Support Analyst: Duties and Skills | Centaur Careers",
+    "description": "Learn trade support analyst duties across capture, confirmation, settlement and exceptions, plus skills and a fictional practice case.",
+    "canonicalPath": "/blog/trade-support-analyst-duties-skills/",
+    "noindex": false,
+    "focusKeyword": "trade support analyst duties",
+    "secondaryKeywords": ["trade support duties", "securities operations", "trade lifecycle"]
+  },
+  "tags": ["Trade Support Analyst", "Trade Support Duties", "Securities Operations", "Trade Lifecycle", "Finance Careers"],
+  "relatedRouteIds": ["blog", "investment-banking-operations", "career-guide-investment-banking-operations", "career-guide-trade-lifecycle", "resource-investment-banking-interview-questions"],
+  "redirects": [],
+  "evidenceNotes": [
+    "SEBI investor education material: https://investor.sebi.gov.in/iematerial.html",
+    "The transaction case and workbook suggestions use fictional records only.",
+    "No employer, salary, certification or hiring outcome is promised."
+  ]
+}

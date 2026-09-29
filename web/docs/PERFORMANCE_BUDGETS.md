@@ -21,4 +21,4 @@ Run performance validation only after the new static output is built and deploye
 5. Confirm hashed assets receive immutable caching and compression.
 6. Compare the staging results with field Core Web Vitals after production receives sufficient traffic.
 
-Performance thresholds are release gates, not ranking guarantees. If one fails, retain the current production deployment and investigate before switching traffic.
+Performance thresholds are release gates, not ranking promises. If one fails, retain the current production deployment and investigate before switching traffic.

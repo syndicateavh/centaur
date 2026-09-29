@@ -1,0 +1,277 @@
+// Phase 0 content governance. This registry is internal planning data; it is
+// never rendered into public HTML. Protected copy remains in sourceContent.js
+// and may only change through the explicit baseline-approval workflow.
+
+import {
+  NEXT_CAREER_GUIDE_SPECS,
+  NEXT_COMPARISON_PAGE_SPECS,
+  NEXT_LANDING_PAGE_SPECS,
+  NEXT_RESOURCE_SPECS,
+} from './nextSeoPages.js';
+import { INDIA_LEAD_INTENT_PAGES } from './indiaLeadIntentPages.js';
+
+const NEXT_SEO_PAGE_INVENTORY = Object.freeze([
+  ...NEXT_CAREER_GUIDE_SPECS,
+  ...NEXT_RESOURCE_SPECS,
+  ...NEXT_LANDING_PAGE_SPECS,
+  ...NEXT_COMPARISON_PAGE_SPECS,
+].map((page) => Object.freeze({
+  path: page.path,
+  purpose: page.description,
+  source: 'src/content/nextSeoPages.js; measured next-page SEO plan; current approved program facts and cited primary sources where relevant',
+  status: 'ready-to-build',
+  additions: 'Keep the canonical intent distinct, examples fictional, current terms confirmable, and employer, salary, credential, regulatory, and outcome claims evidence-bound.',
+})));
+
+export const CONTENT_REVIEW_STATUSES = Object.freeze([
+  'repository-verified',
+  'approved-original',
+  'ready-to-build',
+  'needs-business-verification',
+  'needs-permission',
+  'needs-original-content',
+  'needs-regional-data',
+  'needs-search-data',
+  'do-not-build',
+]);
+
+export const PROTECTED_CONTENT_FILES = Object.freeze([
+  'src/content/sourceContent.js',
+  'src/content/businessData.js',
+  'src/content/courseData.js',
+  'src/content/faqData.js',
+]);
+
+export const CONTENT_FACTS = Object.freeze([
+  Object.freeze({
+    id: 'site.canonical-origin', subject: 'Canonical website origin', value: 'https://centaurcareers.in',
+    sourceStatus: 'repository-verified', verificationStatus: 'repository-verified',
+    evidence: ['src/seo/siteConfig.js'], routes: ['*'],
+    allowedUse: 'Technical metadata, canonicals, sitemap, redirects, and structured data.',
+  }),
+  Object.freeze({
+    id: 'business.legal-name', subject: 'Legal business name', value: 'Centaur Careers Private Limited',
+    sourceStatus: 'approved-original', verificationStatus: 'needs-business-verification',
+    evidence: ['src/content/businessData.js', 'user-provided implementation brief'],
+    requiredEvidence: 'Current company registration or approved business document.', routes: ['/', '/about/', '/contact/'],
+    allowedUse: 'Existing entity wording only until current business documentation is confirmed.',
+  }),
+  Object.freeze({
+    id: 'program.name', subject: 'Primary program name', value: 'Financial Operations Masterclass',
+    sourceStatus: 'approved-original', verificationStatus: 'repository-verified',
+    evidence: ['src/content/sourceContent.js#PROGRAM.name', 'user-provided implementation brief'], routes: ['/', '/courses/'],
+    allowedUse: 'Primary program entity and existing program copy.',
+  }),
+  Object.freeze({
+    id: 'program.duration', subject: 'Program duration', value: '6 weeks',
+    sourceStatus: 'approved-original', verificationStatus: 'needs-business-verification',
+    evidence: ['src/content/sourceContent.js#PROGRAM.duration', 'src/content/sourceContent.js#PROGRAM_PROCESS'],
+    requiredEvidence: 'Current course brochure, cohort terms, or written program-owner confirmation.', routes: ['/', '/courses/', '/about/'],
+    allowedUse: 'Existing wording only; do not create new duration claims until reconfirmed.',
+  }),
+  Object.freeze({
+    id: 'program.fees', subject: 'Online and offline fees', value: 'Online ₹35,000 (₹50,000 reference price); Offline ₹50,000 (₹70,000 reference price).',
+    sourceStatus: 'approved-original', verificationStatus: 'approved-original',
+    evidence: ['src/content/sourceContent.js#LEARNING_MODES', 'business-owner instruction to restore pricing'],
+    requiredEvidence: 'Keep the fee sheet and cohort validity dates available to applicants.', routes: ['/courses/', '/placements/', '/faqs/'],
+    allowedUse: 'Publish as current cohort pricing and direct applicants to confirm the applicable cohort and payment terms before paying.',
+  }),
+  Object.freeze({
+    id: 'program.delivery-model', subject: 'Delivery model', value: 'Live online sessions and in-person sessions at Mindsprout Career Hub, Lucknow',
+    sourceStatus: 'approved-original', verificationStatus: 'needs-business-verification',
+    evidence: ['src/content/sourceContent.js#LEARNING_MODES', 'src/content/sourceContent.js#OFFLINE_PARTNER_LINE'],
+    requiredEvidence: 'Current delivery schedule and training-partner confirmation.', routes: ['/courses/', '/locations/lucknow/', '/contact/', '/india/'],
+    allowedUse: 'Do not imply additional physical centres or delivery formats.',
+  }),
+  Object.freeze({
+    id: 'business.lucknow-location', subject: 'Lucknow training location', value: 'R K Tower, 70/2, Sector B, Barabirwa, Alambagh, Lucknow, Uttar Pradesh 226005',
+    sourceStatus: 'approved-original', verificationStatus: 'needs-business-verification',
+    evidence: ['src/content/businessData.js#address', 'src/content/businessData.js#mapUrl'],
+    requiredEvidence: 'Current address confirmation, permission to publish, and matching map/business profile.', routes: ['/locations/lucknow/', '/contact/'],
+    allowedUse: 'Local page only; do not generalize this address to other cities.',
+  }),
+  Object.freeze({
+    id: 'program.curriculum', subject: 'Masterclass curriculum and modules', value: 'Investment Banking Operations, KYC/AML, Digital Payments, Retail Banking, Finance Operations, and FinTech',
+    sourceStatus: 'approved-original', verificationStatus: 'repository-verified',
+    evidence: ['src/content/sourceContent.js#CAREER_TRACKS', 'src/content/sourceContent.js#PROGRAM_PROCESS'],
+    routes: ['/', '/courses/', '/courses/investment-banking-operations/', '/courses/retail-banking/', '/courses/finance-operations/'],
+    allowedUse: 'Present as subjects/modules within the Financial Operations Masterclass, not automatically as independent programs.',
+  }),
+  Object.freeze({
+    id: 'program.placement-support', subject: '100% Job Guarantee Program and support terms', value: 'The business owner has instructed the site to state that graduates and job switchers who complete the six-week program get a guaranteed finance job; the canonical public conditions are at /placements/#job-guarantee-terms.',
+    sourceStatus: 'approved-original', verificationStatus: 'needs-business-verification',
+    evidence: ['src/content/sourceContent.js#PLACEMENT_PROMISE', 'src/content/faqData.js', 'business-owner confirmation'],
+    requiredEvidence: 'Current program details and program-owner approval for every published condition.', routes: ['/', '/courses/', '/placements/', '/faqs/'],
+    allowedUse: 'Publish the exact claim with a visible graduates-and-job-switchers qualifier and program-terms note; do not invent support windows, covered roles, salary, locations, exclusions, or remedies.',
+  }),
+  Object.freeze({
+    id: 'program.interview-opportunities', subject: 'Interview opportunity count', value: 'Legacy source states an interview count; the count is not presented publicly pending current program-owner verification.',
+    sourceStatus: 'approved-original', verificationStatus: 'needs-business-verification',
+    evidence: ['src/content/sourceContent.js#PROGRAM_PROCESS', 'src/content/faqData.js'],
+    requiredEvidence: 'Current program-owner confirmation of the count, conditions, and exceptions.', routes: ['/placements/', '/faqs/'],
+    allowedUse: 'Do not publish a numeric interview count until the program owner confirms the number and conditions.',
+  }),
+  Object.freeze({
+    id: 'outcomes.salary-ranges', subject: 'Salary and CTC ranges', value: 'Legacy salary ranges were removed from public copy and remain unverified.',
+    sourceStatus: 'approved-original', verificationStatus: 'needs-business-verification',
+    evidence: ['src/content/sourceContent.js#CAREER_TRACKS', 'src/content/sourceContent.js#PROGRAM_BENEFITS', 'src/content/sourceContent.js#PLACEMENT_TIERS'],
+    requiredEvidence: 'Current cohort outcome records and a dated methodology for any salary statement.', routes: ['/', '/courses/', '/placements/'],
+    allowedUse: 'Do not publish salary or CTC claims without dated cohort records, definitions, and methodology; the job guarantee does not imply a salary guarantee.',
+  }),
+  Object.freeze({
+    id: 'outcomes.student-counts', subject: 'Training and placement counts', value: 'Legacy training, placement, role, and company counts are not presented publicly pending current evidence.',
+    sourceStatus: 'approved-original', verificationStatus: 'needs-business-verification',
+    evidence: ['src/content/sourceContent.js#ORIGINAL_OUTCOME_STATEMENTS', 'src/content/sourceContent.js#HOME_COPY'],
+    requiredEvidence: 'Dated internal records, definition of each count, and permission to publish.', routes: ['/', '/placements/'],
+    allowedUse: 'Do not publish counts until current records, definitions, date range, and permission are documented.',
+  }),
+  Object.freeze({
+    id: 'outcomes.employer-network', subject: 'Employer and hiring-partner names', value: 'Employer and partner names are listed in the approved HIRING_PARTNER_LOGOS collection.',
+    sourceStatus: 'approved-original', verificationStatus: 'approved-original',
+    evidence: ['src/content/hiringPartnerLogos.js', 'business-owner instruction to restore logos'],
+    requiredEvidence: 'Maintain current relationship records and remove any logo when the relationship is no longer current.', routes: ['/', '/placements/'],
+    allowedUse: 'Publish the approved logo collection in the hiring-partner section; do not add new employer associations without owner approval.',
+  }),
+  Object.freeze({
+    id: 'outcomes.testimonials', subject: 'Student testimonials and employment roles', value: 'Named testimonials and employer roles appear in TESTIMONIALS.',
+    sourceStatus: 'approved-original', verificationStatus: 'needs-permission',
+    evidence: ['src/content/sourceContent.js#TESTIMONIALS'],
+    requiredEvidence: 'Written consent, identity verification, current role confirmation, and permission to publish.', routes: ['/', '/placements/'],
+    allowedUse: 'Do not paraphrase, expand, or multiply testimonials before permission review.',
+  }),
+  Object.freeze({
+    id: 'leadership.profiles', subject: 'Leadership names, roles, and experience', value: 'Leadership profiles are listed in LEADERSHIP.',
+    sourceStatus: 'approved-original', verificationStatus: 'needs-permission',
+    evidence: ['src/content/sourceContent.js#LEADERSHIP', 'docs/LEADERSHIP_CONTENT_REQUIREMENTS.md'],
+    requiredEvidence: 'Approved bios, current roles, experience verification, profile URLs, photographs, and written permission.', routes: ['/about/'],
+    allowedUse: 'Do not create a separate leadership SEO page until the leadership publication gate passes.',
+  }),
+  Object.freeze({
+    id: 'program.certificate', subject: 'Certificate wording', value: 'Public wording is limited to a Centaur Careers Course Completion Certificate; template and completion conditions require current verification.',
+    sourceStatus: 'approved-original', verificationStatus: 'needs-business-verification',
+    evidence: ['src/content/sourceContent.js#CERTIFICATE'],
+    requiredEvidence: 'Current certificate template and program-owner confirmation of its exact scope.', routes: ['/courses/'],
+    allowedUse: 'Do not call it industry-recognized or accredited; verify the current certificate template and exact completion conditions.',
+  }),
+  Object.freeze({
+    id: 'business.contact-details', subject: 'Public contact details', value: '+91 93692 13948 and contact@centaurcareers.in',
+    sourceStatus: 'approved-original', verificationStatus: 'needs-business-verification',
+    evidence: ['src/content/businessData.js'],
+    requiredEvidence: 'Current owner confirmation that phone, email, WhatsApp, and enrollment links remain active.', routes: ['/contact/', '/locations/lucknow/'],
+    allowedUse: 'Keep contact details consistent; do not add new channels without confirmation.',
+  }),
+]);
+
+export const CURRENT_ROUTE_CONTENT_INVENTORY = Object.freeze([
+  Object.freeze({ path: '/', purpose: 'Brand/entity and Financial Operations Masterclass overview', source: 'PROGRAM, HOME_COPY, ABOUT_SUMMARY, CAREER_TRACKS, PROGRAM_FEATURES, PROGRAM_BENEFITS, PROGRAM_PROCESS', status: 'approved-original', additions: 'Append-only SEO structure and verified facts.' }),
+  Object.freeze({ path: '/blog/', purpose: 'Published first-party finance-career article index', source: 'src/content/blog/posts/*.json and blog SEO helpers', status: 'approved-original', additions: 'Editorial additions require article validation and evidence notes.' }),
+  Object.freeze({ path: '/career-guides/', purpose: 'Finance operations career-guide information cluster hub', source: 'src/content/careerGuides.js and career-guide route metadata', status: 'ready-to-build', additions: 'Keep the hub descriptive and link only to distinct, authored guides.' }),
+  Object.freeze({ path: '/career-guides/investment-banking-operations/', purpose: 'Investment Banking Operations career guide', source: 'src/content/careerGuides.js; CAREER_TRACKS and PROGRAM for provider-specific references', status: 'ready-to-build', additions: 'Explain the topic directly; keep course references subordinate and evidence-bound.' }),
+  Object.freeze({ path: '/career-guides/kyc-aml-analyst/', purpose: 'KYC and AML analyst career guide', source: 'src/content/careerGuides.js; CAREER_TRACKS and PROGRAM for provider-specific references', status: 'ready-to-build', additions: 'Keep general compliance explanations accurate and avoid legal or regulatory advice.' }),
+  Object.freeze({ path: '/career-guides/finance-operations/', purpose: 'Finance Operations career guide', source: 'src/content/careerGuides.js; CAREER_TRACKS and PROGRAM for provider-specific references', status: 'ready-to-build', additions: 'Explain roles and workflows without adding unsupported salary, employer, or outcome claims.' }),
+  Object.freeze({ path: '/career-guides/trade-lifecycle/', purpose: 'Trade lifecycle workflow guide', source: 'src/content/careerGuides.js; CAREER_TRACKS for provider-specific references', status: 'ready-to-build', additions: 'Use product-neutral workflow explanations and avoid presenting one process as universal.' }),
+  Object.freeze({ path: '/career-guides/finance-careers-after-graduation/', purpose: 'Finance careers after graduation guide', source: 'src/content/careerGuides.js; PROGRAM and GENERAL eligibility wording for provider-specific references', status: 'ready-to-build', additions: 'Cover pathways and decision criteria without promising employment or typical outcomes.' }),
+  Object.freeze({ path: '/career-guides/retail-banking-operations/', purpose: 'Retail Banking Operations career guide', source: 'src/content/careerGuides.js; CAREER_TRACKS for provider-specific references', status: 'ready-to-build', additions: 'Keep role and workflow descriptions general and distinct from the retail module page.' }),
+  Object.freeze({ path: '/career-guides/digital-payments-operations/', purpose: 'Digital Payment Operations knowledge guide', source: 'src/content/careerGuides.js; CAREER_TRACKS for provider-specific references', status: 'ready-to-build', additions: 'Explain payment workflows without introducing unsupported current-market statistics.' }),
+  Object.freeze({ path: '/career-guides/financial-operations-faq/', purpose: 'Finance operations career answer hub', source: 'src/content/careerGuides.js; PROGRAM and GENERAL eligibility wording for provider-specific references', status: 'ready-to-build', additions: 'Answer distinct career questions; do not duplicate the program FAQ page or make promises.' }),
+  Object.freeze({ path: '/resources/', purpose: 'Finance interview and career resource hub', source: 'src/content/resources.js and resource route metadata', status: 'ready-to-build', additions: 'Keep the hub descriptive and link only to distinct, authored resources.' }),
+  Object.freeze({ path: '/resources/investment-banking-interview-questions/', purpose: 'Investment banking operations interview resource', source: 'src/content/resources.js; CAREER_TRACKS and PROGRAM for provider-specific references', status: 'ready-to-build', additions: 'Use original questions, answer frameworks, and preparation guidance; do not publish unsupported employer or outcome claims.' }),
+  Object.freeze({ path: '/resources/finance-gk/', purpose: 'Beginner finance and BFSI concepts with explained quizzes', source: 'src/content/resources.js; linked primary regulator/payment-system references', status: 'needs-search-data', additions: 'Keep the scope finance/BFSI job preparation; validate search demand before expansion, date-check current facts, and do not present this as financial or compliance advice.' }),
+  Object.freeze({ path: '/resources/accounting-basics/', purpose: 'Introductory accounting rules and double-entry learning for BFSI candidates', source: 'src/content/resources.js; ICAI study materials; keyword-gap workbook dated 2026-09-16 (geography not recorded)', status: 'needs-search-data', additions: 'Keep the page introductory, distinguish classical mnemonics from current accounting policy, and validate the workbook database/location before treating volume as India-specific.' }),
+  Object.freeze({ path: '/resources/accounting-interview-questions/', purpose: 'Worked technical accounting interview practice for finance operations candidates', source: 'src/content/resources.js; fictional transaction exercise; ICAI study material; competitor keyword-gap inventory dated 2026-09-23 (geography not recorded)', status: 'needs-search-data', additions: 'Keep all case records explicitly fictional, verify arithmetic and source explanations, and do not imply actual employer interview questions or India-specific search volume.' }),
+  Object.freeze({ path: '/resources/reconciliation-in-finance/', purpose: 'Reconciliation meaning and operations workflow guide', source: 'src/content/resources.js; ICAI and RBI public material; keyword-gap workbook dated 2026-09-16 (geography not recorded)', status: 'needs-search-data', additions: 'Explain examples without presenting a universal employer procedure; validate the workbook database/location before treating volume as India-specific.' }),
+  Object.freeze({ path: '/courses/', purpose: 'Primary commercial program page', source: 'PROGRAM, LEARNING_MODES, CERTIFICATE, PROGRAM_PROCESS, COURSE_FAQS', status: 'approved-original', additions: 'Append verified program sections; keep one primary Course entity.' }),
+  Object.freeze({ path: '/courses/investment-banking-operations/', purpose: 'Investment Banking Operations module', source: 'CAREER_TRACKS, PROGRAM_PROCESS, COURSE_FAQS', status: 'approved-original', additions: 'Module-specific original content must remain subordinate to the Masterclass.' }),
+  Object.freeze({ path: '/courses/retail-banking/', purpose: 'Retail Banking module', source: 'CAREER_TRACKS, PROGRAM_PROCESS, COURSE_FAQS', status: 'approved-original', additions: 'Module-specific original content must remain subordinate to the Masterclass.' }),
+  Object.freeze({ path: '/courses/finance-operations/', purpose: 'Finance Operations module', source: 'CAREER_TRACKS, PROGRAM_PROCESS, COURSE_FAQS', status: 'approved-original', additions: 'Module-specific original content must remain subordinate to the Masterclass.' }),
+  Object.freeze({ path: '/placements/', purpose: '100% Job Guarantee Program process and terms explanation', source: 'Business-owner instruction plus qualified PLACEMENT_PROMISE copy; current program details require confirmation', status: 'needs-business-verification', additions: 'Keep the graduates-and-job-switchers qualifier and program-terms note visible; do not invent numeric support terms, covered employers, salary, locations, exclusions, or remedies.' }),
+  Object.freeze({ path: '/about/', purpose: 'Business and leadership information', source: 'ABOUT_SUMMARY, LEADERSHIP, LEADERSHIP_INTRO', status: 'needs-permission', additions: 'Leadership expansion is gated by approved bios and consent.' }),
+  Object.freeze({ path: '/contact/', purpose: 'Enrollment and public contact information', source: 'CONTACT_COPY, BUSINESS_DATA, OFFLINE_PARTNER_LINE', status: 'needs-business-verification', additions: 'Keep contact and location facts synchronized.' }),
+  Object.freeze({ path: '/privacy-policy/', purpose: 'Privacy and personal-data disclosure for visitors and advertising enquiries', source: 'src/content/legalContent.js, BUSINESS_DATA, current analytics and tag configuration', status: 'needs-business-verification', additions: 'Confirm the actual data processors, retention periods, rights process, and consent approach before advertising.' }),
+  Object.freeze({ path: '/terms-and-conditions/', purpose: 'Website, program-information, and acceptable-use terms', source: 'src/content/legalContent.js, current program and Job Guarantee Terms', status: 'needs-business-verification', additions: 'Confirm governing-law language, service terms, and the relationship between cohort documents and these general terms.' }),
+  Object.freeze({ path: '/cookie-policy/', purpose: 'Cookie, browser-storage, analytics, and advertising-technology disclosure', source: 'src/content/legalContent.js, src/root.jsx, src/components/AnalyticsPageView.jsx', status: 'needs-business-verification', additions: 'Reconcile the policy with the live GTM container, Clarity configuration, Google Ads tags, and any consent mechanism.' }),
+  Object.freeze({ path: '/refund-cancellation-policy/', purpose: 'Refund and cancellation request process for paid program enquiries', source: 'src/content/legalContent.js, current cohort payment terms', status: 'needs-business-verification', additions: 'Replace the general process with approved cohort-specific windows, charges, exclusions, and timelines where applicable.' }),
+  Object.freeze({ path: '/disclaimer/', purpose: 'Limits on educational, career, finance, and program information', source: 'src/content/legalContent.js, PROGRAM, JOB_GUARANTEE, current published terms', status: 'needs-business-verification', additions: 'Confirm the live advertising claims and ensure the disclaimer remains consistent with current program documents.' }),
+  Object.freeze({ path: '/quiz/', purpose: 'Banking and finance self-assessment question bank', source: 'src/content/quizLibrary.js, FINANCE_QUIZ_DOMAINS, FINANCE_QUIZ_TOTAL', status: 'repository-verified', additions: 'Keep questions educational, original, and separate from legal, investment, employment, or regulatory advice.' }),
+  Object.freeze({ path: '/india/', purpose: 'India-wide online finance operations training access', source: 'src/content/indiaPage.js; PROGRAM, CAREER_TRACKS, LEARNING_MODES, PROGRAM_PROCESS, BUSINESS_DATA', status: 'needs-business-verification', additions: 'Keep online access and Lucknow in-person wording evidence-bound; do not imply physical centres in other cities.' }),
+  Object.freeze({ path: '/india/delhi-ncr/', purpose: 'Selective Delhi-NCR finance-career market and learner-access guide', source: 'src/content/regionalPages.js; dated public GCC, services, and regional employment sources', status: 'ready-to-build', additions: 'Keep Delhi-NCR, Gurugram, and Noida market context distinct; do not claim a Centaur office, salary range, or placement outcome.' }),
+  Object.freeze({ path: '/india/bengaluru/', purpose: 'Selective Bengaluru finance-career market and learner-access guide', source: 'src/content/regionalPages.js; dated Karnataka fintech and GCC sources', status: 'ready-to-build', additions: 'Keep Bengaluru technology-enabled finance context evidence-bound; do not claim a Centaur office, salary range, or placement outcome.' }),
+  Object.freeze({ path: '/india/mumbai/', purpose: 'Selective Mumbai finance-career market and learner-access guide', source: 'src/content/regionalPages.js; Government of Maharashtra and SEBI sources', status: 'ready-to-build', additions: 'Keep Mumbai market-infrastructure context evidence-bound; do not claim a Centaur office, salary range, or placement outcome.' }),
+  Object.freeze({ path: '/compare/investment-banking-operations-courses/', purpose: 'Neutral investment banking operations course alternatives and comparison guide', source: 'src/content/comparisonPage.js; dated official provider pages and brochures', status: 'ready-to-build', additions: 'Publish only attributable provider descriptions, dated source links, verification prompts, non-affiliation wording, and no rankings, logos, copied text, salary claims, or unsupported outcomes.' }),
+  Object.freeze({ path: '/locations/lucknow/', purpose: 'Verified physical training location', source: 'BUSINESS_DATA, LEARNING_MODES, OFFLINE_PARTNER_LINE', status: 'needs-business-verification', additions: 'Only publish current local facts, original photographs, and approved directions.' }),
+  Object.freeze({ path: '/faqs/', purpose: 'Program-level questions and answers', source: 'GENERAL_FAQS', status: 'needs-business-verification', additions: 'Answers must remain concise, factual, and aligned with current program details.' }),
+  Object.freeze({ path: '/courses/kyc-aml/', purpose: 'KYC and AML informational module guide', source: 'src/content/informationalModules.js; CAREER_TRACKS; official regulator references where relevant', status: 'ready-to-build', additions: 'Keep KYC / AML subordinate to the Financial Operations Masterclass; do not claim a standalone course, external credential, or module-specific placement promise.' }),
+  Object.freeze({ path: '/courses/digital-payments/', purpose: 'Digital payments informational module guide', source: 'src/content/informationalModules.js; CAREER_TRACKS; NPCI and RBI primary references', status: 'ready-to-build', additions: 'Keep Digital Payments as a Masterclass module and avoid unsupported certification, regulatory, or employment claims.' }),
+  Object.freeze({ path: '/courses/fintech/', purpose: 'FinTech informational module guide', source: 'src/content/informationalModules.js; CAREER_TRACKS; RBI primary reference', status: 'ready-to-build', additions: 'Keep FinTech as a Masterclass module; do not imply a standalone course, external credential, or guaranteed FinTech role.' }),
+  Object.freeze({ path: '/career-guides/choosing-finance-career-course/', purpose: 'Neutral decision guide for comparing finance learning options', source: 'src/content/careerGuides.js; current provider terms; CFA Institute curriculum for credential comparison', status: 'ready-to-build', additions: 'Use neutral criteria, link provider-specific terms, avoid unsupported rankings, and distinguish Masterclass modules from separate offerings.' }),
+  Object.freeze({ path: '/career-guides/fintech-operations/', purpose: 'FinTech operations career and workflow guide', source: 'src/content/careerGuides.js; RBI FinTech overview; NPCI UPI reference', status: 'ready-to-build', additions: 'Describe role families without salaries, job guarantees, current vacancy counts, or regulatory advice.' }),
+  Object.freeze({ path: '/india/pune/', purpose: 'Selective Pune finance-career market and learner-access guide', source: 'src/content/regionalPages.js; STPI-Pune and Maharashtra government publications', status: 'ready-to-build', additions: 'Treat technology-cluster context as broad ecosystem evidence, not finance vacancy data; do not claim a Centaur Pune classroom or local placement.' }),
+  Object.freeze({ path: '/india/hyderabad/', purpose: 'Selective Hyderabad finance-career market and learner-access guide', source: 'src/content/regionalPages.js; Telangana IT/E&C department and dated state ICT/GCC strategy documents', status: 'ready-to-build', additions: 'Date policy context, distinguish plans from current vacancies, and do not claim a Centaur Hyderabad classroom or local placement.' }),
+  Object.freeze({ path: '/resources/bank-reconciliation-process/', purpose: 'Bank reconciliation process, differences, controls, and worked educational example', source: 'src/content/prioritySeoContent.js; ICAI study material; user-approved Top 20 page brief', status: 'ready-to-build', additions: 'Keep examples fictional, distinguish bank reconciliation from wider reconciliation, and do not force source records to match.' }),
+  Object.freeze({ path: '/resources/cost-accounting-finance-operations/', purpose: 'Cost accounting foundations connected to finance operations', source: 'src/content/prioritySeoContent.js; user-approved Top 20 page brief', status: 'ready-to-build', additions: 'Keep allocation examples educational and do not claim a separate cost-accounting qualification.' }),
+  Object.freeze({ path: '/resources/financial-accounting-banking/', purpose: 'Financial accounting and banking-operations workflow guide', source: 'src/content/prioritySeoContent.js; ICAI public study material; user-approved Top 20 page brief', status: 'ready-to-build', additions: 'Use general accounting explanations and direct real decisions to applicable standards, policy, and authorised review.' }),
+  Object.freeze({ path: '/resources/financial-statement-analysis/', purpose: 'Financial statement analysis methods, ratios, limits, and banking context', source: 'src/content/prioritySeoContent.js; user-approved Top 20 page brief', status: 'ready-to-build', additions: 'Keep the page educational; do not provide investment recommendations or claim a dedicated analyst course.' }),
+  Object.freeze({ path: '/career-guides/reconciliation-analyst/', purpose: 'Reconciliation analyst role, skills, workflow, and career preparation', source: 'src/content/prioritySeoContent.js; user-approved Top 20 page brief', status: 'ready-to-build', additions: 'Use synthetic records and keep employer procedures, vacancies, salary, and outcomes unclaimed.' }),
+  Object.freeze({ path: '/career-guides/investment-banking-operations-roles/', purpose: 'Investment banking operations role-family and career-path guide', source: 'src/content/prioritySeoContent.js; user-approved Top 20 page brief', status: 'ready-to-build', additions: 'Separate operations, middle-office, and front-office responsibilities and avoid universal job-title claims.' }),
+  Object.freeze({ path: '/career-guides/trade-support-analyst/', purpose: 'Trade support analyst duties, exceptions, skills, and entry-level preparation', source: 'src/content/prioritySeoContent.js; user-approved Top 20 page brief', status: 'ready-to-build', additions: 'Use fictional transaction examples and do not claim live employer access or vacancy outcomes.' }),
+  Object.freeze({ path: '/career-guides/securities-operations/', purpose: 'Securities operations workflow, settlement, custody, reconciliation, and controls', source: 'src/content/prioritySeoContent.js; user-approved Top 20 page brief', status: 'ready-to-build', additions: 'Keep the guide educational and separate securities operations from trading and investment advice.' }),
+  Object.freeze({ path: '/career-guides/what-is-investment-banking/', purpose: 'Investment banking definition, business lines, operations pathway, and career scope', source: 'src/content/prioritySeoContent.js; user-approved Top 20 page brief', status: 'ready-to-build', additions: 'Distinguish investment banking from investment advice and from the operations module.' }),
+  Object.freeze({ path: '/courses/banking-courses/', purpose: 'Banking-course topic and career-direction landing page', source: 'src/content/prioritySeoContent.js; PROGRAM and CAREER_TRACKS for current program references', status: 'ready-to-build', additions: 'Do not target government-exam coaching or imply that modules are separate classes.' }),
+  Object.freeze({ path: '/courses/banking-and-finance/', purpose: 'Banking and finance course orientation page', source: 'src/content/prioritySeoContent.js; PROGRAM, CAREER_TRACKS, and current program terms', status: 'ready-to-build', additions: 'Present the page as an orientation to one Masterclass; do not claim a degree, CFA, CA, or external accreditation.' }),
+  Object.freeze({ path: '/courses/finance-operations-training/', purpose: 'Finance operations training topics and career-fit landing page', source: 'src/content/prioritySeoContent.js; PROGRAM and CAREER_TRACKS', status: 'ready-to-build', additions: 'Keep Finance Operations subordinate to the Financial Operations Masterclass and avoid module-specific employment promises.' }),
+  Object.freeze({ path: '/compare/finance-operations-vs-financial-modelling-cfa/', purpose: 'Neutral comparison of finance operations, modelling, and CFA learning goals', source: 'src/content/prioritySeoContent.js; CFA Institute official pages; user-approved Top 20 page brief', status: 'ready-to-build', additions: 'Do not imply CFA affiliation, exam preparation, rankings, or equivalent credentials.' }),
+  Object.freeze({ path: '/compare/online-vs-offline-finance-training/', purpose: 'Online versus offline finance-training decision guide', source: 'src/content/prioritySeoContent.js; current Centaur access wording and published location page', status: 'ready-to-build', additions: 'Keep offline access limited to the published Lucknow location and confirm cohort-specific mode, schedule, and fees.' }),
+  Object.freeze({ path: '/compare/best-finance-institutes-india/', purpose: 'Transparent India-wide finance-institute selection and verification guide', source: 'src/content/prioritySeoContent.js; current Centaur course and placement pages; dated official provider references', status: 'ready-to-build', additions: 'Use comparison criteria and verification prompts rather than self-awarded rankings; keep fees, access, certificate, placement scope, and written terms current.' }),
+  Object.freeze({ path: '/faqs/finance-program/', purpose: 'Finance program FAQs and current-term trust page', source: 'src/content/prioritySeoContent.js; PROGRAM, LEARNING_MODES, CERTIFICATE, PLACEMENT_PROMISE, and current policies', status: 'needs-business-verification', additions: 'Reconfirm duration, fees, delivery, certificate, and guarantee wording before publishing or advertising the page.' }),
+  ...INDIA_LEAD_INTENT_PAGES.map((page) => Object.freeze({
+    path: page.path,
+    purpose: page.description,
+    source: 'src/content/indiaLeadIntentPages.js; India lead-intent implementation brief; current provider terms where referenced',
+    status: 'ready-to-build',
+    additions: 'Keep the decision query distinct, use current written terms for fees and support, and do not add unsupported employer, salary, location, credential, or outcome claims.',
+  })),
+  ...NEXT_SEO_PAGE_INVENTORY,
+]);
+
+export const PROPOSED_PAGE_READINESS = Object.freeze([
+  Object.freeze({ path: '/courses/', mappedKeywords: 85, topPriority: 98, wave: 'Wave 1', pageType: 'Program hub', status: 'ready-to-build', currentRoute: true, requirements: ['Confirm current program facts before adding new sections.'] }),
+  Object.freeze({ path: '/locations/lucknow/', mappedKeywords: 8, topPriority: 97, wave: 'Wave 1', pageType: 'Real local page', status: 'needs-business-verification', currentRoute: true, requirements: ['Confirm address, offline availability, photographs, directions, and local business profile.'] }),
+  Object.freeze({ path: '/courses/kyc-aml/', mappedKeywords: 18, topPriority: 94, wave: 'Wave 1', pageType: 'Module guide', status: 'ready-to-build', currentRoute: true, requirements: ['Published as informational content about a Masterclass module, not a separate course.', 'Clarify that no external KYC / AML credential is offered.'] }),
+  Object.freeze({ path: '/india/', mappedKeywords: 108, topPriority: 90, wave: 'Wave 3', pageType: 'National hub', status: 'needs-business-verification', currentRoute: true, requirements: ['Confirm online delivery across India.', 'Keep the national-access content unique and evidence-bound.', 'Do not imply branches outside Lucknow.'] }),
+  Object.freeze({ path: '/career-guides/choosing-finance-career-course/', mappedKeywords: 14, topPriority: 90, wave: 'Wave 1', pageType: 'Comparison/advisory guide', status: 'ready-to-build', currentRoute: true, requirements: ['Use neutral decision criteria and current official credential references.', 'Route provider-specific delivery and support questions to the published terms.'] }),
+  Object.freeze({ path: '/india/delhi-ncr/', mappedKeywords: 24, topPriority: 88, wave: 'Wave 2', pageType: 'Regional guide', status: 'ready-to-build', currentRoute: true, requirements: ['Use the dated GCC and services research in src/content/regionalPages.js.', 'Keep Delhi-NCR as a market guide, not a physical-branch claim.', 'Retain the explicit online-access and Lucknow boundary.'] }),
+  Object.freeze({ path: '/india/bengaluru/', mappedKeywords: 16, topPriority: 88, wave: 'Wave 2', pageType: 'Regional guide', status: 'ready-to-build', currentRoute: true, requirements: ['Use the dated Karnataka fintech and GCC research in src/content/regionalPages.js.', 'Keep Bengaluru as a market guide, not a physical-branch claim.', 'Retain the explicit online-access and Lucknow boundary.'] }),
+  Object.freeze({ path: '/india/mumbai/', mappedKeywords: 8, topPriority: 88, wave: 'Wave 2', pageType: 'Regional guide', status: 'ready-to-build', currentRoute: true, requirements: ['Use the dated Maharashtra and SEBI research in src/content/regionalPages.js.', 'Keep Mumbai as a market guide, not a physical-branch claim.', 'Retain the explicit online-access and Lucknow boundary.'] }),
+  Object.freeze({ path: '/india/pune/', mappedKeywords: 8, topPriority: 88, wave: 'Wave 2', pageType: 'Regional guide', status: 'ready-to-build', currentRoute: true, requirements: ['Cite STPI and government sources as broad ecosystem context only.', 'Do not suggest a Centaur Pune branch, vacancy, or local employment outcome.'] }),
+  Object.freeze({ path: '/india/hyderabad/', mappedKeywords: 8, topPriority: 88, wave: 'Wave 2', pageType: 'Regional guide', status: 'ready-to-build', currentRoute: true, requirements: ['Use dated Telangana policy sources as context, not current vacancy counts.', 'Do not suggest a Centaur Hyderabad branch, vacancy, or local employment outcome.'] }),
+  Object.freeze({ path: '/resources/investment-banking-interview-questions/', mappedKeywords: 25, topPriority: 85, wave: 'Wave 2', pageType: 'Resource hub', status: 'ready-to-build', currentRoute: true, requirements: ['Use the authored questions, answer frameworks, and preparation checklist in src/content/resources.js.'] }),
+  Object.freeze({ path: '/career-guides/finance-careers-after-graduation/', mappedKeywords: 62, topPriority: 84, wave: 'Wave 2', pageType: 'Pillar guide', status: 'ready-to-build', currentRoute: true, requirements: ['Original BCom, BBA, and MBA sections tied to real role pathways.'] }),
+  Object.freeze({ path: '/career-guides/investment-banking-operations/', mappedKeywords: 40, topPriority: 84, wave: 'Wave 1', pageType: 'Pillar career guide', status: 'ready-to-build', currentRoute: true, requirements: ['Expert-reviewed definitions, workflows, roles, skills, and FAQs.'] }),
+  Object.freeze({ path: '/career-guides/trade-lifecycle/', mappedKeywords: 83, topPriority: 82, wave: 'Wave 2', pageType: 'Workflow pillar', status: 'ready-to-build', currentRoute: true, requirements: ['Original trade-lifecycle explanations, diagrams, and examples.'] }),
+  Object.freeze({ path: '/career-guides/finance-operations/', mappedKeywords: 57, topPriority: 82, wave: 'Wave 1', pageType: 'Career guide', status: 'ready-to-build', currentRoute: true, requirements: ['Original finance-operations career and workflow content.'] }),
+  Object.freeze({ path: '/career-guides/kyc-aml-analyst/', mappedKeywords: 53, topPriority: 82, wave: 'Wave 1', pageType: 'Career guide', status: 'ready-to-build', currentRoute: true, requirements: ['Original KYC/AML definitions, process content, and analyst guidance.'] }),
+  Object.freeze({ path: '/career-guides/financial-operations-faq/', mappedKeywords: 30, topPriority: 78, wave: 'Wave 3', pageType: 'FAQ hub', status: 'ready-to-build', currentRoute: true, requirements: ['Create unique answer content; do not duplicate the program FAQ page.'] }),
+  Object.freeze({ path: '/career-guides/retail-banking-operations/', mappedKeywords: 18, topPriority: 78, wave: 'Wave 3', pageType: 'Career guide', status: 'ready-to-build', currentRoute: true, requirements: ['Original retail-banking role and workflow content.'] }),
+  Object.freeze({ path: '/courses/retail-banking/', mappedKeywords: 6, topPriority: 78, wave: 'Wave 3', pageType: 'Module page', status: 'ready-to-build', currentRoute: true, requirements: ['Keep module relationship clear; do not create a separate program promise.'] }),
+  Object.freeze({ path: '/career-guides/digital-payments-operations/', mappedKeywords: 21, topPriority: 76, wave: 'Wave 3', pageType: 'Knowledge guide', status: 'ready-to-build', currentRoute: true, requirements: ['Original payments workflow and career content.'] }),
+  Object.freeze({ path: '/courses/digital-payments/', mappedKeywords: 4, topPriority: 76, wave: 'Wave 3', pageType: 'Module guide', status: 'ready-to-build', currentRoute: true, requirements: ['Publish as a Masterclass module guide, not a separate course or certificate.'] }),
+  Object.freeze({ path: '/career-guides/fintech-operations/', mappedKeywords: 16, topPriority: 72, wave: 'Wave 4', pageType: 'Career guide', status: 'ready-to-build', currentRoute: true, requirements: ['Use RBI and NPCI primary references for general concepts.', 'Describe career directions without salary or vacancy claims.'] }),
+  Object.freeze({ path: '/courses/fintech/', mappedKeywords: 4, topPriority: 72, wave: 'Wave 4', pageType: 'Module guide', status: 'ready-to-build', currentRoute: true, requirements: ['Publish as a Masterclass module guide, not a separate course or credential.'] }),
+  Object.freeze({ path: '/compare/investment-banking-operations-courses/', mappedKeywords: 12, topPriority: 65, wave: 'Wave 4', pageType: 'Comparison guide', status: 'ready-to-build', currentRoute: true, requirements: ['Use dated public facts only from the official-source register.', 'Keep the tone neutral and clearly distinguish provider claims from Centaur facts.', 'Do not publish rankings, accusations, logos, copied text, salary claims, or unverified commercial claims.'] }),
+]);
+
+export const DO_NOT_BUILD_RULES = Object.freeze([
+  Object.freeze({ pattern: '/state-or-city/*', reason: 'No automatic state, city, or district pages without demand, evidence, and unique content.' }),
+  Object.freeze({ pattern: '/?keyword=, /?city=, /?seo=, /?course=', reason: 'No query-parameter SEO landing pages.' }),
+  Object.freeze({ pattern: 'one URL per workbook keyword', reason: 'Consolidate related keywords into authoritative pages.' }),
+  Object.freeze({ pattern: 'standalone module Course entities', reason: 'Modules are subordinate to the Financial Operations Masterclass unless business facts explicitly change.' }),
+  Object.freeze({ pattern: 'unsupported employer, salary, placement, or testimonial claims', reason: 'Require evidence and permission before publication.' }),
+]);
+
+export function getContentFact(id) {
+  return CONTENT_FACTS.find((fact) => fact.id === id) || null;
+}
+
+export function getPageReadiness(path) {
+  return PROPOSED_PAGE_READINESS.find((page) => page.path === path) || null;
+}

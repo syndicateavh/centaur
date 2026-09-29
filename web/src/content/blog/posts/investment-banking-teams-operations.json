@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "id": "investment-banking-teams-operations",
+  "slug": "investment-banking-teams-operations",
+  "status": "published",
+  "title": "Investment Banking Teams: Where Operations Fits",
+  "excerpt": "Understand broad investment banking team roles and how operations supports controlled handoffs across a transaction lifecycle.",
+  "category": "investment-banking",
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Publisher",
+    "profilePath": "/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "If you are asking what is investment banking, the useful starting point is that investment banking is a broad industry label, not one job with one workflow. Depending on the firm and product, teams may work on corporate advice and capital raising, sales and trading, research, risk, technology, compliance, finance and operations. Operations helps transactions and records move through controlled processes; it is not the same as giving corporate-finance advice or making an investment decision for a client. Team names and responsibilities vary by institution, market and legal structure."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A simple map of teams and responsibilities"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Corporate advisory teams may support activities such as mergers, acquisitions or capital-raising mandates, subject to the firm's permissions and applicable rules.",
+        "Markets teams may execute or support activity in securities or other products. Exact client-facing, trading and control responsibilities differ across organisations.",
+        "Research teams produce analysis under their own controls and applicable rules; their work is distinct from operational processing.",
+        "Risk, compliance, legal and control functions monitor defined risks, policies and obligations. They may challenge or stop a process rather than simply pass it forward.",
+        "Operations teams support activities such as confirmations, settlement coordination, reconciliations, static-data checks, event processing and exception tracking. The exact scope depends on the business."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Front office, middle office, and back office: where is operations?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Front-office teams usually own client or market activity; middle-office teams commonly check risk, controls, and trade information; back-office teams commonly process confirmations, settlements, reconciliations, and records. A firm may assign trade support or controls across these labels differently. For a career decision, compare the actual queue, handoff, decision rights, and evidence expected in a job description rather than relying on the office label alone."
+    },
+    {
+      "type": "link",
+      "label": "See what investment banking operations analysts do",
+      "href": "/career-guides/investment-banking-operations/",
+      "routeId": "career-guide-investment-banking-operations"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Where operations appears in a transaction workflow"
+    },
+    {
+      "type": "paragraph",
+      "text": "Consider a simplified securities transaction. An authorised business team agrees or executes a transaction under the applicable process. Its details are captured and checked; relevant parties confirm the terms; settlement instructions and cash or securities movements are coordinated; records are reconciled; and exceptions are investigated and escalated. This is a high-level learning map, not a universal workflow. Products, venues, custodians, clearing arrangements, legal entities and market rules can add or change steps. Operations staff should follow the employer's approved procedures and escalation paths."
+    },
+    {
+      "type": "paragraph",
+      "text": "In India, securities-market regulation is activity-specific. For example, SEBI's merchant banker regulations address defined merchant-banking activities and obligations; that does not mean every function called investment banking is legally identical or covered by one simple team chart. Use the applicable current regulation and authorised compliance guidance for real work."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Skills to investigate for operations roles"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Careful data handling, reconciliations and evidence-based exception investigation.",
+        "Clear written handoffs, record keeping and deadline management.",
+        "Comfort with spreadsheets and learning controlled systems without exposing confidential data.",
+        "Judgement to follow maker-checker controls, ask when uncertain and escalate unresolved risk."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "These are general skills to research, not a guarantee of hiring criteria or a promise that a short course qualifies a reader for a role. Compare actual job descriptions and confirm prerequisites directly with employers."
+    },
+    {
+      "type": "link",
+      "label": "See the investment banking operations module in the current masterclass",
+      "href": "/courses/investment-banking-operations/",
+      "routeId": "investment-banking-operations"
+    },
+    {
+      "type": "link",
+      "label": "Read NISM's securities-market operations overview",
+      "href": "https://www.nism.ac.in/knowledge_base/an-insight-into-various-back-office-operations-activities-in-securities-markets"
+    },
+    {
+      "type": "link",
+      "label": "Review SEBI's merchant bankers regulations",
+      "href": "https://www.sebi.gov.in/acts/act09main.html"
+    },
+    {
+      "type": "paragraph",
+      "text": "Centaur Careers publishes this general industry explainer. It is educational, does not provide investment or legal advice, and does not claim that every described function is part of the current Financial Operations Masterclass. The linked program page describes the current investment banking operations module; check its scope directly."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/investment-banking-teams-operations.png",
+    "alt": "Illustration connecting investment banking analysis, client work, transaction documents and operations checks.",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-24",
+  "updatedAt": "2026-09-26",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Investment Banking Teams: Where Operations Fits",
+    "description": "See how advisory, markets, control and operations teams differ, with a simple transaction workflow and India-specific source links.",
+    "canonicalPath": "/blog/investment-banking-teams-operations/",
+    "noindex": false
+  },
+  "tags": ["Investment Banking", "Investment Banking Operations", "Securities Operations", "Finance Careers"],
+  "relatedRouteIds": ["blog", "career-guides", "career-guide-investment-banking-operations", "investment-banking-operations", "courses"],
+  "redirects": [],
+  "evidenceNotes": [
+    "NISM securities-market back-office operations overview: https://www.nism.ac.in/knowledge_base/an-insight-into-various-back-office-operations-activities-in-securities-markets",
+    "SEBI merchant bankers regulations: https://www.sebi.gov.in/acts/act09main.html; cited only as a specific Indian regulatory example, not as a complete definition of investment banking.",
+    "Team labels and transaction steps are broad illustrative descriptions and can differ across firms, products, markets and applicable rules.",
+    "No employment outcomes, salaries, legal advice or unsupported curriculum coverage are claimed."
+  ]
+}

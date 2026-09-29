@@ -1,7 +1,11 @@
 import React from 'react';
 import { Mail } from 'lucide-react';
+import { Link } from 'react-router';
+import InternalLinkGroup from '@/components/InternalLinkGroup.jsx';
 import { CtaSection, PageHero, SectionHeading } from '@/components/PageShell.jsx';
+import { DOWNLOAD_ASSETS } from '@/content/downloads.js';
 import { ABOUT_SUMMARY, LEADERSHIP, LEADERSHIP_INTRO, PROGRAM } from '@/content/sourceContent.js';
+import { getInternalLinks } from '@/seo/internalLinks.js';
 import { getSeoRoute } from '@/seo/seoRoutes.js';
 
 export default function AboutPage() {
@@ -48,7 +52,7 @@ export default function AboutPage() {
                 <p className="mt-1 text-sm text-muted-foreground">{organization}</p>
                 <p className="mt-5 text-sm leading-relaxed text-foreground/75">{experience}</p>
                 <a href={`mailto:${email}`} className="mt-5 flex items-start gap-2 break-all text-sm font-semibold text-primary">
-                  <Mail className="mt-0.5 h-4 w-4 shrink-0 text-accent" /> {email}
+                  <Mail className="mt-0.5 h-4 w-4 shrink-0 text-accent-ink" aria-hidden="true" /> {email}
                 </a>
               </article>
             ))}
@@ -56,7 +60,32 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <CtaSection title="Start Your Application" description="Free counselling call with our advisor" />
+      <section data-trust-evidence className="bg-white py-16 sm:py-20" aria-labelledby="trust-evidence-title">
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 id="trust-evidence-title" className="text-3xl font-bold text-primary">Check the program evidence yourself</h2>
+          <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">Our published guide pages show an author and update date. For an enrolment decision, use the current program summary, example work, and written cohort terms. Ask the team to identify the trainer and confirm any detail that matters to you before paying.</p>
+          <div className="mt-8 grid gap-5 md:grid-cols-3">
+            <article className="rounded-2xl border border-border bg-muted/30 p-6">
+              <h3 className="text-xl font-bold text-primary">Curriculum and delivery</h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">The dated syllabus summary lists the six subject areas, online and Lucknow access, and details to reconfirm for the current cohort.</p>
+              <a href={DOWNLOAD_ASSETS.syllabus.path} download={DOWNLOAD_ASSETS.syllabus.filename} className="mt-5 inline-block font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">Download syllabus summary</a>
+            </article>
+            <article className="rounded-2xl border border-border bg-muted/30 p-6">
+              <h3 className="text-xl font-bold text-primary">Original practice examples</h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">The trade-break and KYC examples use fictional records. They show the reasoning a learner can practise; they are not learner outcome claims.</p>
+              <Link to="/blog/settlement-trade-break-worked-example/" className="mt-5 inline-block font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">Open a worked example</Link>
+            </article>
+            <article className="rounded-2xl border border-border bg-muted/30 p-6">
+              <h3 className="text-xl font-bold text-primary">Placement conditions</h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">Read the published guarantee summary, then request the written terms for your cohort, including eligibility, scope, and exclusions.</p>
+              <Link to="/placements/#job-guarantee-terms" className="mt-5 inline-block font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">Read placement summary</Link>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <InternalLinkGroup links={getInternalLinks('about')} />
+      <CtaSection title="Ask about the current program" description="Contact the team to confirm cohort details, fees, and learning modes." />
     </>
   );
 }

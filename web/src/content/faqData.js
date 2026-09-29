@@ -1,33 +1,27 @@
 export const GENERAL_FAQS = Object.freeze([
   Object.freeze({
-    question: 'Who is eligible for the program?',
-    answer: "This program is open to graduates from any field, including BBA, BCom, BA, BSc, BTech, and MBA (final-year students can also apply). You don't need a finance background — we start from fundamentals and train you to become job-ready for finance roles.",
+    question: 'Who can join the program?',
+    answer: 'The program is open to graduates and job switchers from any academic background across India. Previous finance education or work experience is not required.',
   }),
   Object.freeze({
-    question: 'What is the placement guarantee exactly?',
-    answer: 'If you meet Platinum/Gold criteria (85%+ attendance, all assessments, all mock interviews, attend drives) but are not placed within 180 days of completion, we refund 100% of your fee as per the Guarantee Terms.',
+    question: 'Is this a 100% Job Guarantee Program?',
+    answer: 'Yes. Centaur Careers guarantees a finance job to graduates and job switchers who complete the six-week Financial Operations Masterclass.',
   }),
   Object.freeze({
     question: 'What is the difference between Online and Offline modes?',
-    answer: `Both Online and Offline programs are LIVE, instructor-led training with the same curriculum, mentorship, and placement support.
-
-The Online program (₹35,000) is designed for flexibility — you can attend live classes from anywhere without compromising on learning or outcomes.
-
-The Offline program (₹50,000) offers the same live training in an in-person environment at Mindsprout Careers Hub, Lucknow, with added benefits like face-to-face interaction, structured routine, and peer networking.
-
-No matter which mode you choose, the training quality, support, and career outcomes remain the same — only the learning experience differs.`,
+    answer: 'The public program information describes a live online option for learners across India and an in-person option at Mindsprout Career Hub in Lucknow. Ask the team to confirm the current cohort schedule, fees, facilities, included activities, and whether the curriculum or support differs by mode.',
   }),
   Object.freeze({
-    question: 'How many interview opportunities do I get?',
-    answer: 'Up to 8 distinct interview opportunities. If all 8 are exhausted without placement, a remock assessment is conducted to identify gaps and resume the process.',
+    question: 'How does the job guarantee work?',
+    answer: 'After completing the six-week Financial Operations Masterclass, graduates and job switchers get a finance job through the 100% Job Guarantee Program. Interview preparation and role guidance support that process.',
   }),
   Object.freeze({
-    question: 'Can I choose which city I want to work in?',
-    answer: 'Yes. We support placements across Mumbai, Bengaluru, Pune, Delhi/NCR, and Hyderabad. Lucknow students can also access hometown Retail Banking and NBFC roles.',
+    question: 'Does the guarantee cover every job, employer, salary, and city?',
+    answer: 'The program guarantees a finance job after completion. The complete scope is published in the Job Guarantee Terms on the Placements page.',
   }),
   Object.freeze({
-    question: 'What happens after I get placed?',
-    answer: 'Your placement journey does not end at offer acceptance. We provide onboarding guidance, post-placement check-ins, and access to our alumni network for continued career growth.',
+    question: 'How can I confirm current course details before enrolling?',
+    answer: 'Contact Centaur Careers to request the current cohort schedule, fees, learning-mode details, and certificate wording before enrolling.',
   }),
 ]);
 

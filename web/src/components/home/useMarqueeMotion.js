@@ -7,6 +7,8 @@ export function useMarqueeMotion(marqueeRef, trackRef) {
     let stopMotion = () => {};
 
     const loadMotion = async () => {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
       const [{ gsap }] = await Promise.all([import('gsap')]);
       if (cancelled || !marqueeRef.current || !trackRef.current) return;
 

@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "neo-banking-products-controls",
+  "slug": "neo-banking-products-controls",
+  "status": "published",
+  "title": "Neo-Banking Explained: Products and Controls",
+  "excerpt": "Learn what neo-banking means through digital products, partner-led services, customer journeys, controls, reconciliation and operations roles.",
+  "category": "retail-banking",
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Finance education editorial team",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Neo-banking usually describes a digital-first way of delivering or managing banking-related services. A neo-bank may use technology, a regulated banking partner or another permitted structure to provide accounts, payments, cards, savings, lending or financial-management features. The legal entity, permissions, product terms and customer protections matter more than the label. This article explains the operating model for learners and does not endorse a provider, product or financial decision."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What neo-banking can include"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Digital onboarding and account or profile servicing.",
+        "Payments, transfers, cards and transaction notifications.",
+        "Personal or business finance tools that organise balances, spending or cash flow.",
+        "Credit or savings journeys delivered through a digital interface, subject to the provider's terms.",
+        "APIs, partner connections and data services that link customer experiences to financial infrastructure."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The controls behind a digital product"
+    },
+    {
+      "type": "paragraph",
+      "text": "A smooth interface does not remove the need for control. Identity and access, authentication, transaction limits, data protection, KYC and AML, fraud monitoring, reconciliation, incident management, complaint handling and audit logs all contribute to reliable operations. If a product is delivered through partners, ownership and escalation across the parties must be clear. Customers should read the current provider terms and regulator information rather than infer protection or responsibility from the brand label."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fictional product-operations case"
+    },
+    {
+      "type": "paragraph",
+      "text": "A fictional digital account shows a completed card refund in the user interface, but the ledger has not received the expected entry. The operations analyst checks the transaction reference, refund event, ledger status, partner response and reconciliation queue. They record the customer impact and avoid promising finality until the authorised source confirms it. If the issue is a partner handoff, the case needs an owner, evidence and a defined update time."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Neo-banking operations roles"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Payments or card operations analysts monitor statuses, settlement, refunds, disputes and exceptions.",
+        "Customer operations analysts resolve process questions while protecting personal data.",
+        "Risk and compliance analysts review onboarding, monitoring and control evidence.",
+        "Product operations analysts define workflows, metrics, ownership and partner handoffs.",
+        "Data operations analysts improve reporting definitions, completeness, lineage and reconciliation."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Skills to build"
+    },
+    {
+      "type": "paragraph",
+      "text": "Practise mapping a customer journey to system states and accounting records. Learn how to describe a control, write an exception note, compare two datasets and ask which party owns the next action. Keep examples synthetic and label what you cannot know from the available evidence. These habits transfer across banking operations, FinTech and digital product teams."
+    },
+    {
+      "type": "link",
+      "label": "Explore the Digital Payments module",
+      "href": "/courses/digital-payments/",
+      "routeId": "digital-payments"
+    },
+    {
+      "type": "link",
+      "label": "Read the FinTech and Neo-Banking module",
+      "href": "/courses/fintech/",
+      "routeId": "fintech-neo-banking"
+    },
+    {
+      "type": "link",
+      "label": "Follow the Digital Payment Operations career guide",
+      "href": "/career-guides/digital-payments-operations/",
+      "routeId": "career-guide-digital-payments-operations"
+    },
+    {
+      "type": "link",
+      "label": "Contact the team about current cohort coverage",
+      "href": "/contact/",
+      "routeId": "contact"
+    },
+    {
+      "type": "link",
+      "label": "Browse all finance career insights",
+      "href": "/blog/",
+      "routeId": "blog"
+    },
+    {
+      "type": "link",
+      "label": "Review RBI payment-system information",
+      "href": "https://rbi.org.in/scripts/RTGS_Notification.aspx?Id=12133"
+    },
+    {
+      "type": "link",
+      "label": "Check NPCI UPI product statistics",
+      "href": "https://www.npci.org.in/product/upi/product-statistics"
+    },
+    {
+      "type": "paragraph",
+      "text": "Neo-banking is a changing category. Verify the current legal entity, product terms, support route and regulatory information with the provider and relevant authority. This article is educational and does not make a partnership or financial-protection claim."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/neo-banking-products-controls.png",
+    "alt": "Editorial illustration of neo-banking products connected to identity, payment, and monitoring controls",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-27",
+  "updatedAt": "2026-09-27",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Neo-Banking Products and Controls | Centaur Careers",
+    "description": "Learn what neo-banking means through digital products, partner services, customer journeys, controls and operations roles.",
+    "canonicalPath": "/blog/neo-banking-products-controls/",
+    "noindex": false,
+    "focusKeyword": "neo banking",
+    "secondaryKeywords": ["neo banking products", "digital banking controls", "fintech operations"]
+  },
+  "tags": ["Neo Banking", "Neo Banking Products", "Digital Banking Controls", "FinTech", "Payments Operations"],
+  "relatedRouteIds": ["blog", "digital-payments", "fintech-neo-banking", "career-guide-digital-payments-operations", "contact"],
+  "redirects": [],
+  "evidenceNotes": [
+    "RBI payment and settlement systems information: https://rbi.org.in/scripts/RTGS_Notification.aspx?Id=12133",
+    "NPCI UPI product statistics: https://www.npci.org.in/product/upi/product-statistics",
+    "The case is fictional and current provider, partner and regulatory terms must be checked."
+  ]
+}

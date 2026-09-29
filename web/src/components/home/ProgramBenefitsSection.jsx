@@ -7,7 +7,7 @@ import {
   MapPin,
   Users,
 } from 'lucide-react';
-import { SectionHeading } from '@/components/PageShell.jsx';
+import { SectionHeading } from '@/components/SectionHeading.jsx';
 import { HOME_COPY, PROGRAM_BENEFITS } from '@/content/sourceContent.js';
 import { HomeSection } from './HomeSection.jsx';
 
@@ -23,7 +23,7 @@ export function ProgramBenefitsSection() {
             const Icon = BENEFIT_ICONS[index];
             return (
               <article data-home-reveal key={title} className="rounded-2xl border border-border bg-white p-6 transition hover:border-accent/40 hover:shadow-md">
-                <Icon className="h-6 w-6 text-accent" aria-hidden="true" />
+                <Icon className="h-6 w-6 text-accent-ink" aria-hidden="true" />
                 <h2 className="mt-5 text-xl font-bold text-primary">{title}</h2>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{description}</p>
               </article>

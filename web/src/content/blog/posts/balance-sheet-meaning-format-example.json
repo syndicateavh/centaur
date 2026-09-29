@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "balance-sheet-meaning-format-example",
+  "slug": "balance-sheet-meaning-format-example",
+  "status": "published",
+  "title": "Balance Sheet: Meaning, Format and a Worked Example",
+  "excerpt": "Learn what a balance sheet shows with a fictional statement, the assets-equal-liabilities-plus-equity equation and a practical review checklist.",
+  "category": "finance-operations",
+  "author": { "type": "Organization", "id": "centaur-careers", "name": "Centaur Careers", "role": "Publisher", "profilePath": "/" },
+  "body": [
+    { "type": "paragraph", "text": "Balance sheet meaning: it is a statement, also called a statement of financial position in some reporting frameworks, that presents an entity's assets liabilities and equity at a particular date. Its core relationship is Assets = Liabilities + Equity. A balance sheet format and its line items, disclosures and terminology depend on the entity and applicable accounting framework. The figures below are invented and simplified for learning; they are not a statutory template or a real company's financial information." },
+    { "type": "heading", "level": 2, "text": "The three parts of a balance sheet" },
+    { "type": "list", "items": [
+      "Assets are resources recognised by the entity under the applicable framework, such as cash, receivables, inventory or equipment.",
+      "Liabilities are obligations recognised by the entity, such as amounts payable or borrowings, subject to the applicable recognition rules.",
+      "Equity represents the residual interest after liabilities are deducted from assets; its composition and presentation vary by entity type and framework."
+    ] },
+    { "type": "heading", "level": 2, "text": "A fictional balance sheet example" },
+    { "type": "paragraph", "text": "Imagine a fictional small business at 31 March. It has cash of ₹40,000, inventory of ₹20,000, receivables of ₹30,000 and equipment of ₹110,000. Total illustrative assets are ₹200,000. It owes ₹70,000 to suppliers and lenders combined, and has equity of ₹130,000. Liabilities plus equity total ₹200,000, matching assets. A simple learning worksheet could show each line, its supporting schedule, the statement date, the currency and a review status. This example leaves out many real-world recognition, valuation, classification and disclosure questions." },
+    { "type": "list", "items": [
+      "Cash — ₹40,000: a fictional cash balance at the statement date.",
+      "Inventory — ₹20,000: an illustrative recognised balance; real valuation follows the entity's accounting framework and policy.",
+      "Receivables — ₹30,000: fictional amounts due, subject to applicable recognition and measurement rules.",
+      "Equipment — ₹110,000: an illustrative asset amount; real statements may include depreciation and other adjustments.",
+      "Liabilities — ₹70,000 combined: a simplified total for amounts owed to suppliers and lenders.",
+      "Equity — ₹130,000: the balancing residual in this example, not a valuation of an owner's interest."
+    ] },
+    { "type": "paragraph", "text": "A balance sheet is a snapshot at a date, not a complete explanation of performance or cash movement. An income statement reports results over a period, while a cash-flow statement reports cash flows under the applicable rules. To understand a business, readers generally need the statements together, their notes, comparative information and relevant context. A balanced equation alone does not show whether assets are recoverable, obligations are complete or classifications are appropriate." },
+    { "type": "heading", "level": 2, "text": "Checklist for reading a statement" },
+    { "type": "list", "items": [
+      "Confirm the reporting entity, statement date, currency, accounting framework and whether figures are standalone or consolidated.",
+      "Read the notes and accounting policies for material balances, estimates, commitments and classifications.",
+      "Compare periods carefully and investigate large movements instead of assuming that a change is automatically good or bad.",
+      "Check how figures connect to supporting ledgers or schedules and whether appropriate review and approval occurred.",
+      "Do not treat this simplified example as an investment signal, credit assessment or substitute for professional advice."
+    ] },
+    { "type": "link", "label": "Review accounting basics and statement concepts", "href": "/resources/accounting-basics/", "routeId": "resource-accounting-basics" },
+    { "type": "link", "label": "Explore finance career paths after graduation", "href": "/career-guides/finance-careers-after-graduation/", "routeId": "career-guide-finance-careers-after-graduation" },
+    { "type": "link", "label": "Read the ICAI Ind AS reference", "href": "https://indasaccess.icai.org/Volume-III/AS/asb.html?a=101" },
+    { "type": "paragraph", "text": "Centaur Careers publishes this educational example using fictional figures. It is not accounting, investment, tax or legal advice. For real financial statements, use the entity's applicable standards, current disclosures and qualified professional guidance." }
+  ],
+  "coverImage": {
+    "src": "/images/blog/balance-sheet-worked-example.png",
+    "alt": "Illustration of a balance sheet grouping cash, equipment, obligations and owner equity around a balance scale.",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-24",
+  "updatedAt": "2026-09-24",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Balance Sheet: Meaning, Format and a Worked Example",
+    "description": "Understand balance sheet meaning and format with a fictional example, the accounting equation and a careful checklist for reading statements.",
+    "canonicalPath": "/blog/balance-sheet-meaning-format-example/",
+    "noindex": false
+  },
+  "tags": ["Balance Sheet", "Balance Sheet Format", "Financial Statements", "Accounting Basics"],
+  "relatedRouteIds": ["blog", "resources", "resource-accounting-basics", "career-guides", "career-guide-finance-careers-after-graduation"],
+  "redirects": [],
+  "evidenceNotes": [
+    "ICAI Ind AS access reference for financial reporting context: https://indasaccess.icai.org/Volume-III/AS/asb.html?a=101",
+    "Worked figures are fictional and simplified; they do not represent a prescribed format or real entity.",
+    "A balanced accounting equation does not establish asset recoverability, completeness, fair value or investment merit."
+  ]
+}

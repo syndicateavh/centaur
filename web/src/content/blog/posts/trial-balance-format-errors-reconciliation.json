@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "trial-balance-format-errors-reconciliation",
+  "slug": "trial-balance-format-errors-reconciliation",
+  "status": "published",
+  "title": "Trial Balance: Format, Errors and Practical Checks",
+  "excerpt": "Understand a trial balance with an ungated fictional example, common error types and checks that explain why equal totals are not proof of accuracy.",
+  "category": "finance-operations",
+  "author": { "type": "Organization", "id": "centaur-careers", "name": "Centaur Careers", "role": "Publisher", "profilePath": "/" },
+  "body": [
+    { "type": "paragraph", "text": "A trial balance is a listing of ledger account balances, usually arranged into debit and credit columns, prepared to compare the totals at a point in the accounting process. If you are asking what is trial balance, its main classroom purpose is to help check that debit and credit balances agree before further review. Trial balance errors can still exist when totals match, so a balanced trial balance does not prove that all transactions were recorded, classified or valued correctly. The fictional example and worksheet ideas here are educational, not a substitute for an entity's accounting policy or review controls." },
+    { "type": "heading", "level": 2, "text": "A small fictional trial balance format" },
+    { "type": "paragraph", "text": "Suppose a fictional sole proprietor has these simplified balances after posting: Cash ₹40,000 debit; Equipment ₹20,000 debit; Rent expense ₹5,000 debit; Service revenue ₹15,000 credit; and Owner capital ₹50,000 credit. Debit balances total ₹65,000 and credit balances total ₹65,000. A basic worksheet can show account name, debit balance, credit balance, period, preparation date and reviewer or status fields, following the organisation's approved format. The figures are made up and are not a prescribed Indian statutory format." },
+    { "type": "heading", "level": 2, "text": "What a balanced total can and cannot tell you" },
+    { "type": "paragraph", "text": "Equal debit and credit totals show that the two columns agree arithmetically under the balances included. They do not reveal every possible error. A transaction can be omitted entirely; the same wrong amount can be posted to both sides; an entry can use the wrong but equal-value accounts; or a classification can be inappropriate while totals still agree. Some errors create a difference, while others do not. Reconciliation to evidence and review of account meaning remain necessary." },
+    { "type": "heading", "level": 2, "text": "A practical trial-balance error checklist" },
+    { "type": "list", "items": [
+      "Recalculate column totals and confirm the period, ledger scope and sign convention.",
+      "Trace a sample of balances to the ledger and supporting schedules or statements.",
+      "Review unusual, stale, suspense or unexpectedly zero balances and ask whether the account description fits its activity.",
+      "If totals differ, check arithmetic, omitted postings, one-sided entries, transposition or digit errors, and entries posted to the wrong account.",
+      "Record each investigation and adjustment with evidence, approval and a clear audit trail; do not plug a difference to force agreement."
+    ] },
+    { "type": "paragraph", "text": "A suspense account or temporary hold should only be used under the entity's approved policy and should have an owner, reason, age and resolution plan. In a learning worksheet, make errors visible and explain how you found them. In real work, follow delegated authority and escalation rules before changing any ledger balance." },
+    { "type": "link", "label": "Download the ungated trial-balance review worksheet (CSV)", "href": "/downloads/trial-balance-review-worksheet.csv" },
+    { "type": "paragraph", "text": "The worksheet is an empty practice template, not a prescribed accounting format. Use fictional learning data only; never enter or upload customer, employer or other confidential records into a public practice file." },
+    { "type": "link", "label": "Read ICAI's accounting-process material on trial balances", "href": "https://live.icai.org/bos/vcc/pdf/Accounting_Process.pdf" },
+    { "type": "link", "label": "Review accounting basics and ledger concepts", "href": "/resources/accounting-basics/", "routeId": "resource-accounting-basics" },
+    { "type": "link", "label": "Use our reconciliation workflow guide", "href": "/resources/reconciliation-in-finance/", "routeId": "resource-reconciliation-in-finance" },
+    { "type": "paragraph", "text": "Centaur Careers publishes this educational explainer with fictional data. It is not accounting, tax, audit or legal advice. Use the current framework, records and review procedures that apply to the organisation." }
+  ],
+  "coverImage": {
+    "src": "/images/blog/trial-balance-check-example.png",
+    "alt": "Illustration of debit and credit ledger columns being checked for an error during reconciliation.",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-24",
+  "updatedAt": "2026-09-26",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Trial Balance: Format, Errors and Practical Checks",
+    "description": "Learn trial balance meaning and format through fictional debit-credit totals, common errors and a checklist that goes beyond arithmetic agreement.",
+    "canonicalPath": "/blog/trial-balance-format-errors-reconciliation/",
+    "noindex": false
+  },
+  "tags": ["Trial Balance", "Trial Balance Format", "Accounting Errors", "Reconciliation"],
+  "relatedRouteIds": ["blog", "resources", "resource-accounting-basics", "resource-reconciliation-in-finance"],
+  "redirects": [],
+  "evidenceNotes": [
+    "ICAI accounting-process material, Topic 4 Trial Balance; verified live 2026-09-26: https://live.icai.org/bos/vcc/pdf/Accounting_Process.pdf",
+    "All balances in the worked example are invented; equal totals are not represented as proof of complete accounting accuracy.",
+    "No fixed statutory trial-balance format is claimed."
+  ]
+}

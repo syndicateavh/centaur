@@ -1,0 +1,7 @@
+item_id,fictional_record,observed_detail,review_status,learner_question
+SIM-KYC-01,Application,Practice Entity K-27 requests a business account for software consulting; declared owners Role A 60 percent and Role B 40 percent; proposed signatory Role C,Submitted,What can be checked against independent or approved records?
+SIM-KYC-02,Entity registration extract,Practice Entity K-27 and simulated registration reference SIM-REG-27 match the application,Available,Is the entity identity consistent with the application?
+SIM-KYC-03,Ownership declaration,Role A 60 percent and Role B 40 percent are listed but the declaration is unsigned,Incomplete,What evidence is needed before ownership can be treated as verified?
+SIM-KYC-04,Owner verification queue,Role A review is marked complete; Role B review has no attached verification evidence,Incomplete,Which review remains open under the applicable policy?
+SIM-KYC-05,Authorised signatory record,The submitted mandate names Role D; the application names Role C,Conflict,Who can resolve the authority mismatch and what evidence is needed?
+SIM-KYC-06,Screening and risk-review queue,No screening result or final risk assessment is recorded in the practice packet,Not completed,Can the analyst mark these checks clear or approve onboarding?

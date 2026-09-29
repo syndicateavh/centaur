@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "accounting-principles-explained",
+  "slug": "accounting-principles-explained",
+  "status": "published",
+  "title": "Accounting Principles Explained",
+  "excerpt": "Learn the core accounting principles through recognition, consistency, accrual, matching, evidence, fictional examples and finance operations use cases.",
+  "category": "finance-operations",
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Finance education editorial team",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Accounting principles are the ideas and conventions that help an organisation recognise, measure, classify, present and review financial information consistently. The exact reporting framework, policy and legal requirements depend on the entity and jurisdiction, so a short list of principles cannot replace the applicable standards. For learners, the useful question is how a principle changes a transaction record, what evidence supports it and what a reviewer should challenge. The examples below are fictional and simplified."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Core accounting principles to understand"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Accrual thinking asks when income or expense is earned or incurred, not only when cash moves.",
+        "Consistency supports comparison by applying a policy in a stable way unless a justified change is required.",
+        "Matching connects relevant costs with the income or activity they help generate, subject to the applicable framework.",
+        "Prudence and faithful representation encourage careful, supportable reporting rather than optimistic or unsupported numbers.",
+        "Materiality helps focus review on information that could influence a user's understanding or decision.",
+        "Going concern and period concepts provide context for how information is prepared and compared."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How principles affect a transaction"
+    },
+    {
+      "type": "paragraph",
+      "text": "Suppose a fictional business receives an annual software invoice of Rs 120,000 in April, with service covering April through March. Recording the whole amount as one month's expense may not represent the service period. A simplified learning approach could recognise the relevant monthly expense and track the remaining amount as a prepaid balance, subject to the entity's policy and applicable standard. The principle points the analyst toward timing, evidence and review; it does not authorise a journal entry without approval."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A practical review checklist"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Identify the transaction, period, account owner and reporting purpose.",
+        "Read the source document and confirm the amount, currency, dates and approval.",
+        "Ask which principle or policy drives recognition and classification.",
+        "Check whether the treatment is consistent with comparable items and prior periods.",
+        "Test the calculation, trace the posting and document any estimate or judgement.",
+        "Escalate uncertainty instead of choosing an entry simply because it balances."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why accounting principles matter in operations"
+    },
+    {
+      "type": "paragraph",
+      "text": "Finance operations teams work with reconciliations, ledgers, invoices, payments, accruals, controls and reporting schedules. Principles help an analyst understand why two records may differ, why a timing difference should not be written off, and why an unusual manual entry needs evidence. A good operations note explains the source, the expected treatment, the check completed, the open question and the approver. That is more valuable than repeating a definition without applying it."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Common learner mistakes"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Treating cash received as identical to income in every situation.",
+        "Assuming a previous-period entry is correct without checking current facts.",
+        "Using the word material without explaining the decision context or evidence.",
+        "Ignoring estimates, reversals, cut-off or the source document behind a balance.",
+        "Quoting a standard without checking the current framework and entity policy."
+      ]
+    },
+    {
+      "type": "link",
+      "label": "Study accounting basics and debit-credit logic",
+      "href": "/resources/accounting-basics/",
+      "routeId": "resource-accounting-basics"
+    },
+    {
+      "type": "link",
+      "label": "Learn reconciliation in finance",
+      "href": "/resources/reconciliation-in-finance/",
+      "routeId": "resource-reconciliation-in-finance"
+    },
+    {
+      "type": "link",
+      "label": "Explore Finance Operations training",
+      "href": "/courses/finance-operations-training/",
+      "routeId": "courses-finance-operations-training"
+    },
+    {
+      "type": "link",
+      "label": "Practise accounting interview questions",
+      "href": "/resources/accounting-interview-questions/",
+      "routeId": "resource-accounting-interview-questions"
+    },
+    {
+      "type": "link",
+      "label": "Browse all finance career insights",
+      "href": "/blog/",
+      "routeId": "blog"
+    },
+    {
+      "type": "link",
+      "label": "Use the IFRS Accounting Standards Navigator as a primary reference",
+      "href": "https://www.ifrs.org/issued-standards/list-of-standards/"
+    },
+    {
+      "type": "paragraph",
+      "text": "Accounting principles become useful when they change how you read evidence and explain a decision. Always follow the current framework, organisation policy and authorised review process for real work."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/accounting-principles-explained.png",
+    "alt": "Editorial illustration of accounting principles represented by a balanced ledger and review controls",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-27",
+  "updatedAt": "2026-09-27",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Accounting Principles Explained | Centaur Careers",
+    "description": "Learn accounting principles through recognition, accrual, consistency, fictional examples, review checks and finance operations use cases.",
+    "canonicalPath": "/blog/accounting-principles-explained/",
+    "noindex": false,
+    "focusKeyword": "accounting principles",
+    "secondaryKeywords": ["accounting basics", "debit and credit", "finance operations"]
+  },
+  "tags": ["Accounting Principles", "Accounting Basics", "Debit and Credit", "Financial Accounting", "Finance Operations"],
+  "relatedRouteIds": ["blog", "resource-accounting-basics", "resource-reconciliation-in-finance", "courses-finance-operations-training", "resource-accounting-interview-questions"],
+  "redirects": [],
+  "evidenceNotes": [
+    "IFRS Accounting Standards Navigator: https://www.ifrs.org/issued-standards/list-of-standards/",
+    "Examples are fictional and do not prescribe an entity's accounting treatment.",
+    "Current standards, policy and authorised review must be checked for real work."
+  ]
+}

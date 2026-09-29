@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "id": "placement-support-eligibility-and-terms",
+  "slug": "placement-support-eligibility-and-terms",
+  "status": "review",
+  "title": "How Centaur Careers Placement Support Works",
+  "excerpt": "Understand Centaur Careers placement support, eligibility criteria, interview opportunities, the support window, and terms to review before applying.",
+  "category": "career-guides",
+  "author": {
+    "id": "bharat-singh",
+    "name": "Bharat Singh",
+    "role": "Founder & Director",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Choosing a finance career program is an important decision, especially when placement support is part of the conversation. Centaur Careers describes a structured support process: learners who complete the program, meet the published eligibility criteria, and participate in the required process receive preparation and guidance for relevant opportunities. Candidates should understand the criteria, timeline, role expectations, and terms before applying."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What the placement support includes"
+    },
+    {
+      "type": "paragraph",
+      "text": "The placement pathway begins with the six-week Finance Career Program and continues through preparation and interview support. The program combines practical BFSI training with career-track guidance, projects, case studies, mock interviews, and access to hiring opportunities. The placement team works alongside eligible learners from training through the offer process, while candidates remain responsible for completing the required work and participating professionally."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "A structured training path across banking, financial services, investment operations, KYC and AML, retail banking, digital payments, and finance operations.",
+        "Interview preparation and up to 8 direct interview opportunities with hiring partners, subject to the placement process and available opportunities.",
+        "Continued support when a learner needs additional preparation before moving forward.",
+        "A 180-day placement window after the applicable program and eligibility requirements are completed.",
+        "A 180-day support window after the applicable program and eligibility requirements are completed, subject to the full terms."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Eligibility criteria candidates should understand"
+    },
+    {
+      "type": "paragraph",
+      "text": "The support process depends on consistent participation. Candidates must complete all six weeks with at least 80% attendance, achieve the minimum Bronze-tier score, submit assessments and practical projects, participate in scheduled mock interviews, consider suitable opportunities, and maintain professional conduct throughout the process. These requirements connect the support available to actions that are within the learner's responsibility."
+    },
+    {
+      "type": "link",
+      "label": "Review the complete placement eligibility criteria",
+      "href": "/placements/",
+      "routeId": "placements"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How assessment tiers affect placement support"
+    },
+    {
+      "type": "paragraph",
+      "text": "Centaur Careers uses weekly assessments, mock interviews, and practical project evaluations to calculate an overall score across the six-week program. The result places a learner into an assessment tier. Higher tiers receive earlier role selection and broader access, while Bronze and Silver learners receive extended training, gap assessment, mentoring, and additional mock interviews before placement activity continues. The tier system is intended to identify preparation needs rather than treat one assessment as the whole career outcome."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What candidates should confirm before applying"
+    },
+    {
+      "type": "paragraph",
+      "text": "Before enrolling, ask the Centaur Careers team to explain the current program details, the placement process, role expectations, interview participation, and any refund conditions. Also compare the available career tracks and choose a learning format that allows you to attend sessions, complete projects, and participate in interviews consistently."
+    },
+    {
+      "type": "link",
+      "label": "Explore the Finance Career Program tracks",
+      "href": "/courses/",
+      "routeId": "courses"
+    },
+    {
+      "type": "link",
+      "label": "See what Centaur Careers provides for finance careers",
+      "href": "/blog/what-centaur-careers-provides-for-finance-careers/"
+    },
+    {
+      "type": "link",
+      "label": "Explore independent jobseeker resources from India's National Career Service",
+      "href": "https://ncs.gov.in/"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A placement promise works best as a shared commitment"
+    },
+    {
+      "type": "paragraph",
+      "text": "The placement support process creates accountability on both sides. Centaur Careers provides structured training, preparation, interview access, and continued career guidance. The learner brings attendance, completed work, interview readiness, professional conduct, and a willingness to consider suitable roles. If you are comparing finance career programs, understand the participation requirements and terms—not a headline alone—to decide whether the support matches your goals and circumstances."
+    },
+    {
+      "type": "link",
+      "label": "Contact Centaur Careers about placement support",
+      "href": "/contact/",
+      "routeId": "contact"
+    },
+    {
+      "type": "faq",
+      "question": "Is Centaur Careers placement support conditional?",
+      "answer": "Yes. Placement support includes learner participation, suitable-opportunity expectations, and professional conduct. The single official Job Guarantee Terms reference is published on the Placements page."
+    },
+    {
+      "type": "faq",
+      "question": "How long is the placement window?",
+      "answer": "The placement promise describes a 180-day placement window after the applicable program and eligibility requirements are completed. Confirm the latest terms and the exact start date with the Centaur Careers team."
+    },
+    {
+      "type": "faq",
+      "question": "What happens if a learner needs more preparation?",
+      "answer": "Bronze and Silver tier learners receive extended training, gap assessment, mentoring, and additional mock interviews before placement activity continues."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/placement-support-career-counselling-india.jpg",
+    "alt": "Indian finance graduate reviewing an interview preparation checklist with a career counsellor",
+    "width": 1673,
+    "height": 940
+  },
+  "publishedAt": "2026-09-11",
+  "updatedAt": "2026-09-15",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Centaur Careers Placement Support: Eligibility & Terms",
+    "description": "Understand Centaur Careers placement support, eligibility criteria, interview preparation, the 180-day support window, and terms before applying.",
+    "canonicalPath": "/blog/placement-support-eligibility-and-terms/",
+    "noindex": false
+  },
+  "tags": [
+    "Placement Support",
+    "Finance Careers",
+    "Interview Preparation",
+    "Job Search India",
+    "Centaur Careers"
+  ],
+  "relatedRouteIds": [
+    "blog",
+    "placements",
+    "courses",
+    "faqs",
+    "contact",
+    "about"
+  ],
+  "redirects": [
+    "/blog/placement-guarantee-eligibility-and-terms/"
+  ],
+  "evidenceNotes": [
+    "Placement support description, 180-day support window, and terms note sourced from src/content/sourceContent.js PLACEMENT_PROMISE.",
+    "Attendance, Bronze-tier score, assessments, projects, mock interviews, suitable opportunities, and professional conduct sourced from src/content/sourceContent.js PLACEMENT_ELIGIBILITY.",
+    "Interview opportunity and extended-support language sourced from src/content/sourceContent.js PLACEMENT_PROMISE cards.",
+    "Assessment scoring and tier behavior sourced from src/content/sourceContent.js PLACEMENT_PROMISE scoreNote and PLACEMENT_TIERS.",
+    "Independent jobseeker and career-counselling resource: National Career Service, Ministry of Labour & Employment, Government of India: https://ncs.gov.in/",
+    "Article directs candidates to confirm current program details before applying; it does not create a new legal or financial promise."
+  ]
+}

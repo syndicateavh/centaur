@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "accounts-receivable-vs-payable",
+  "slug": "accounts-receivable-vs-payable",
+  "status": "published",
+  "title": "Accounts Receivable vs Accounts Payable",
+  "excerpt": "Compare accounts receivable and accounts payable with debit-credit logic, process steps, fictional examples, controls and finance operations skills.",
+  "category": "finance-operations",
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Finance education editorial team",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Accounts receivable and accounts payable are both working-capital processes, but they represent opposite sides of a business relationship. Accounts receivable tracks amounts customers or other parties owe the organisation. Accounts payable tracks amounts the organisation owes suppliers or other parties. The exact accounting treatment, controls, tax and payment steps depend on the entity and policy. This guide uses simple fictional examples to explain the workflow, not to prescribe a posting or payment."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Accounts receivable vs payable"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Accounts receivable begins with a sale or service delivered on credit and ends with collection, adjustment or approved write-off.",
+        "Accounts payable begins with an approved purchase or expense and ends with payment, credit, dispute or other authorised resolution.",
+        "Receivable teams focus on billing, customer balances, ageing, cash application and collection evidence.",
+        "Payable teams focus on supplier invoices, purchase approval, matching, payment controls and duplicate prevention.",
+        "Both processes need complete source documents, accurate coding, segregation of duties and reconciliation."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Accounts receivable process"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Confirm the customer, contract or order, service date, price, tax and billing approval.",
+        "Issue the invoice or record the receivable under the approved process.",
+        "Monitor due dates, disputes, unapplied cash and ageing.",
+        "Match receipts to invoices, investigate short or unidentified payments and document action.",
+        "Escalate disputes, overdue balances or adjustments according to authority and policy."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Accounts payable process"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Validate the supplier, purchase request, goods or service evidence and invoice details.",
+        "Match the invoice to the approved order or receipt where the process requires it.",
+        "Check coding, amount, currency, tax, duplicate risk and payment terms.",
+        "Route for approval and release payment through the authorised control model.",
+        "Reconcile supplier statements, investigate credits or missing invoices and keep the evidence trail."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fictional comparison example"
+    },
+    {
+      "type": "paragraph",
+      "text": "A fictional consulting business issues a Rs 30,000 invoice to a customer, creating a receivable that should be tracked until collection or approved resolution. The same business receives a Rs 12,000 supplier invoice for software, creating a payable after the purchase and invoice checks pass. If the customer pays Rs 29,500, the 500 difference needs evidence and an approved treatment. If the supplier invoice appears twice, the payable team should hold the duplicate risk and investigate before payment."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Skills for finance operations"
+    },
+    {
+      "type": "paragraph",
+      "text": "The most transferable skills are document matching, ageing analysis, reconciliation, spreadsheet checks, neutral communication and escalation. Practise by creating synthetic invoice, receipt, customer and supplier records with one exact match, one short payment, one duplicate and one missing approval. Explain which evidence you need before closing an item. Never use public practice files for confidential data."
+    },
+    {
+      "type": "link",
+      "label": "Read accounting basics and debit-credit logic",
+      "href": "/resources/accounting-basics/",
+      "routeId": "resource-accounting-basics"
+    },
+    {
+      "type": "link",
+      "label": "Learn reconciliation in finance",
+      "href": "/resources/reconciliation-in-finance/",
+      "routeId": "resource-reconciliation-in-finance"
+    },
+    {
+      "type": "link",
+      "label": "Explore Finance Operations training",
+      "href": "/courses/finance-operations-training/",
+      "routeId": "courses-finance-operations-training"
+    },
+    {
+      "type": "link",
+      "label": "Practise accounting interview questions",
+      "href": "/resources/accounting-interview-questions/",
+      "routeId": "resource-accounting-interview-questions"
+    },
+    {
+      "type": "link",
+      "label": "Browse all finance career insights",
+      "href": "/blog/",
+      "routeId": "blog"
+    },
+    {
+      "type": "link",
+      "label": "Review the IFRS Accounting Standards Navigator",
+      "href": "https://www.ifrs.org/issued-standards/list-of-standards/"
+    },
+    {
+      "type": "paragraph",
+      "text": "Receivable and payable processes can have tax, contractual, privacy and approval consequences. Use the current entity policy, applicable standards and authorised reviewer for real work."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/accounts-receivable-vs-payable.png",
+    "alt": "Editorial illustration comparing customer receivables and supplier payables through a finance ledger",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-27",
+  "updatedAt": "2026-09-27",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Accounts Receivable vs Payable | Centaur Careers",
+    "description": "Compare accounts receivable and payable with process steps, fictional examples, controls, reconciliation and finance operations skills.",
+    "canonicalPath": "/blog/accounts-receivable-vs-payable/",
+    "noindex": false,
+    "focusKeyword": "accounts receivable vs accounts payable",
+    "secondaryKeywords": ["accounts receivable", "accounts payable", "reconciliation process"]
+  },
+  "tags": ["Accounts Receivable vs Accounts Payable", "Accounts Receivable", "Accounts Payable", "Reconciliation", "Finance Operations"],
+  "relatedRouteIds": ["blog", "resource-accounting-basics", "resource-reconciliation-in-finance", "courses-finance-operations-training", "resource-accounting-interview-questions"],
+  "redirects": [],
+  "evidenceNotes": [
+    "IFRS Accounting Standards Navigator: https://www.ifrs.org/issued-standards/list-of-standards/",
+    "All invoice, receipt and payment examples are fictional.",
+    "No tax, accounting, audit or payment instruction is provided."
+  ]
+}

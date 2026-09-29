@@ -1,0 +1,57 @@
+name: LMS foundation CI
+
+on:
+  push:
+    paths:
+      - "certification/_lms/**"
+      - ".github/workflows/lms-ci.yml"
+  pull_request:
+    paths:
+      - "certification/_lms/**"
+      - ".github/workflows/lms-ci.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: certification/_lms
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_DB: centaur_lms
+          POSTGRES_USER: lms_ci
+          POSTGRES_PASSWORD: lms_ci_local_only
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U lms_ci -d centaur_lms"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      DATABASE_URL: postgresql://lms_app:local_app_only@127.0.0.1:5432/centaur_lms
+      MIGRATION_DATABASE_URL: postgresql://lms_ci:lms_ci_local_only@127.0.0.1:5432/centaur_lms
+      LMS_APP_USER: lms_app
+      LMS_APP_PASSWORD: local_app_only
+      LMS_AUTHZ_TESTS: "true"
+      NEXT_TELEMETRY_DISABLED: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: certification/_lms/package-lock.json
+      - run: npm ci
+      - run: npm run db:migrate
+      - run: npm run db:migrate:check
+      - run: npm run db:authz:check
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm run build
+      - run: npm run auth:routes:check

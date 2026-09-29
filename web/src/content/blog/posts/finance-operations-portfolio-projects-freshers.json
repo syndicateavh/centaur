@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 1,
+  "id": "finance-operations-portfolio-projects-freshers",
+  "slug": "finance-operations-portfolio-projects-freshers",
+  "status": "published",
+  "title": "Finance Operations Portfolio: 5 Safe Projects for Freshers",
+  "excerpt": "Build a finance operations portfolio with five safe, fictional-data projects covering reconciliation, NAV, lending, KYC and corporate actions workflows.",
+  "category": "finance-operations",
+  "author": {
+    "id": "bharat-singh",
+    "name": "Bharat Singh",
+    "role": "Founder & Director",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "A strong finance operations portfolio does not need confidential employer files, complex software, or an impressive-looking dashboard with no explanation. It needs a small set of well-documented projects that show how you organise data, follow a workflow, check exceptions, communicate uncertainty, and protect sensitive information. For a fresher, five focused fictional-data projects can demonstrate more job-ready thinking than a folder of disconnected certificates."
+    },
+    {
+      "type": "paragraph",
+      "text": "This guide gives you five safe finance operations portfolio projects: reconciliation, a simplified fund-accounting NAV workflow, loan-processing controls, a KYC and AML case review, and a corporate-actions event tracker. They are learning exercises, not simulations of a particular employer's system. Use invented names, identifiers, dates, prices, balances, and transactions, and clearly label every assumption."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What makes a finance operations project credible?"
+    },
+    {
+      "type": "paragraph",
+      "text": "A portfolio project should answer five questions: What process are you modelling? What inputs did you use? Which checks did you perform? What exception did you find? How would another person review or continue the work? The deliverable should make the answer visible instead of relying on a colourful chart or a claim that the file is error-free."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Use fictional data only. Never copy customer records, account numbers, identity documents, fund holdings, employer screenshots, or proprietary templates.",
+        "Write a short scope note that names the process, the inputs, the assumptions, the exclusions, and the person who would approve the next step.",
+        "Keep an exception log. A controlled workflow is allowed to contain a mismatch; what matters is whether you record evidence, owner, priority, next action, and status.",
+        "Show the source-to-output trail. A reviewer should be able to trace an input row to a check, a calculation, a decision field, and a final report.",
+        "Add a README with screenshots or sample rows that contain no sensitive information, plus a short reflection on what you would improve with more time."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Project 1: Reconciliation and exception-management workbook"
+    },
+    {
+      "type": "paragraph",
+      "text": "Reconciliation is a foundation skill across banking, payments, investment operations, lending, and finance teams. Build two fictional source files, such as an internal transaction register and an external statement. Give each row a reference, date, value, currency, account or product code, and status. Then design a controlled comparison that identifies matched items, missing items, duplicates, amount differences, date differences, and items that need manual review."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Create a matching key and document why it is reliable or where it can fail.",
+        "Use spreadsheet formulas, filters, and conditional checks to separate exact matches from probable matches and exceptions.",
+        "Add an exception log with reference, issue type, evidence, owner, priority, ageing, next action, and closure date.",
+        "Prepare a one-page summary showing opening items, new breaks, resolved breaks, and items carried forward."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The project demonstrates data quality, investigation, controls, and communication. It does not prove that you have used a bank's reconciliation platform. Say exactly what you built and which parts are simplified."
+    },
+    {
+      "type": "link",
+      "label": "Use this finance reconciliation workflow as a reference",
+      "href": "/resources/reconciliation-in-finance/",
+      "routeId": "resource-reconciliation-in-finance"
+    },
+    {
+      "type": "link",
+      "label": "See a completed fictional trade-break dataset and investigation note",
+      "href": "/blog/settlement-trade-break-worked-example/"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Project 2: Simplified fund-accounting NAV workflow"
+    },
+    {
+      "type": "paragraph",
+      "text": "A fund-accounting project can show how controlled inputs flow into a valuation report. Create a fictional portfolio with units, prices, cash, receivables, payables, and a small fee assumption. Calculate gross assets, liabilities, net assets, and a simplified NAV per unit. Include a price date, source field, reviewer field, and a check that prevents the report from using an outdated or missing price."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Keep holdings, prices, cash, expenses, and summary calculations in separate tabs or tables.",
+        "Use a valuation date and make the unit count and fee assumptions easy to inspect.",
+        "Add a second check that compares the total to an independent calculation or a manually recomputed sample.",
+        "Create one deliberate break, such as a missing price or a unit mismatch, and show how you would hold the report for review.",
+        "State clearly that the model is educational, simplified, and not a live fund valuation or investment recommendation."
+      ]
+    },
+    {
+      "type": "link",
+      "label": "Read the fund-accounting and NAV workflow guide",
+      "href": "/blog/fund-accounting-nav-workflow-career-skills/"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Project 3: Loan-processing document and disbursement checklist"
+    },
+    {
+      "type": "paragraph",
+      "text": "Model the operations around a fictional loan application without pretending to approve credit. Create an application register, a document checklist, a conditions tracker, a disbursement-readiness sheet, and an exception log. Use invented applicant IDs and sample documents such as an identity check, address proof, income summary, bank statement status, approval condition, and payment instruction status."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Mark each document as received, missing, inconsistent, expired, or ready for authorised review.",
+        "Separate an operations completeness check from a credit decision. A processor can identify missing evidence without deciding whether a borrower should receive a loan.",
+        "Track approval conditions, responsible owner, due date, evidence received, reviewer, and final status.",
+        "Add a maker-checker or second-review field to show where a release control would sit.",
+        "Write a short note explaining why the case should be held when a condition or account detail is unresolved."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the applicable lender procedure in a real role. RBI fair-practice material is useful background for understanding why transparent terms, complete processing records, and clear communication matter, but a classroom checklist is not a substitute for current policy or regulatory advice."
+    },
+    {
+      "type": "link",
+      "label": "Read the RBI Fair Practices Code reference",
+      "href": "https://www.rbi.org.in/scripts/bs_circularindexdisplay.aspx/BS_CircularIndexDisplay.aspx?Id=12678"
+    },
+    {
+      "type": "link",
+      "label": "Read the full loan-operations career guide",
+      "href": "/blog/loan-operations-banking-roles-skills-career-path/"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Project 4: KYC and AML fictional case-review pack"
+    },
+    {
+      "type": "paragraph",
+      "text": "Create two fictional customer profiles and one fictional transaction-monitoring alert. Include a customer-information sheet, document checklist, ownership or relationship map, permitted-source log, alert history, facts-versus-assumptions table, and escalation note. The goal is to demonstrate careful review, not to label a real person or business as suspicious."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Use invented names, dates, identifiers, locations, occupations, businesses, and transaction values.",
+        "Include one incomplete document, one possible screening match, and one transaction pattern with at least two plausible explanations.",
+        "Record the evidence checked, the information still needed, the reason for escalation, and the decision owner.",
+        "Write a neutral case note that separates verified facts from hypotheses and does not claim a legal conclusion.",
+        "Add a privacy note explaining that no real customer or employer data was used."
+      ]
+    },
+    {
+      "type": "link",
+      "label": "Read the financial crime analyst career guide",
+      "href": "/blog/financial-crime-analyst-kyc-aml-career-guide/"
+    },
+    {
+      "type": "link",
+      "label": "Study a fictional KYC onboarding file and case-note rubric",
+      "href": "/blog/kyc-onboarding-case-file-example/"
+    },
+    {
+      "type": "link",
+      "label": "Review the RBI KYC Master Direction",
+      "href": "https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=11566"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Project 5: Corporate-actions event tracker"
+    },
+    {
+      "type": "paragraph",
+      "text": "Build a fictional event tracker for dividends, a stock split, a bonus issue, or another simple corporate action. Start with an invented announcement, then map event type, security identifier, key dates, ratio or rate, affected holdings, expected entitlement, processing status, reconciliation result, and unresolved exception. Keep the event notice and the internal processing table separate so a reviewer can compare the source with the output."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Add source, announcement date, record date, ex-date or election deadline where relevant, payment or processing date, and timezone assumptions.",
+        "Create a position or holdings table with fictional accounts and show how eligibility is determined in the simplified model.",
+        "Calculate an expected cash or securities outcome, then reconcile the result to a fictional processed report.",
+        "Include a voluntary-election scenario with a missing instruction and show the escalation or hold status.",
+        "Explain that the project models operations and entitlement controls, not a recommendation to buy or sell a security."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Official investor and exchange materials can help you learn the vocabulary of events, but do not copy a live notice into a public portfolio. Use a link for context and build your own fictional event data."
+    },
+    {
+      "type": "link",
+      "label": "Review SEBI investor material on corporate actions",
+      "href": "https://investor.sebi.gov.in/iematerial.html"
+    },
+    {
+      "type": "link",
+      "label": "See the NSE corporate-actions reference",
+      "href": "https://www.nseindia.com/static/investor-relations/corporate-actions"
+    },
+    {
+      "type": "link",
+      "label": "Read the corporate-actions analyst career guide",
+      "href": "/blog/corporate-actions-analyst-career-path/"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to package the five projects"
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not upload five unexplained spreadsheets. Give every project the same simple structure: README, data dictionary, fictional input data, calculations or workflow, exception log, output summary, and limitations. Use consistent filenames and version dates. A recruiter should understand the project in three minutes and be able to ask a deeper question in the interview."
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Write the business question in one sentence.",
+        "Describe the process and the handoff that your project models.",
+        "List the fields, assumptions, formulas, checks, and fictional-data rules.",
+        "Show one normal case and one exception case.",
+        "End with three interview talking points: what you built, what you found, and what you would improve."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A practical four-week portfolio plan"
+    },
+    {
+      "type": "paragraph",
+      "text": "Start with reconciliation because it teaches source comparison and exception ownership. Add the NAV workflow next if you want accounting and valuation practice. Choose loan operations or KYC and AML based on the roles you are researching, then finish with corporate actions if you want a securities-operations example. In the final week, clean the README files, test every formula, remove accidental private data, and practise explaining each project without overselling its scope."
+    },
+    {
+      "type": "callout",
+      "title": "Safe portfolio rule",
+      "text": "If a project requires real customer information, a live employer system, a non-public market notice, or a credential you do not hold, redesign it with fictional data and state the limitation. Demonstrating judgement is part of the portfolio."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Finance operations interviews: use the portfolio well"
+    },
+    {
+      "type": "paragraph",
+      "text": "Expect questions about your data design, checks, formulas, exceptions, and handoffs. Be ready to explain what you would do if two files did not match, a price was missing, a document was inconsistent, an alert had a reasonable alternative explanation, or a corporate-action instruction arrived after the cut-off. Do not say that your project proves you can run a live production process. Say which transferable skill it demonstrates and where supervised training would begin."
+    },
+    {
+      "type": "link",
+      "label": "Practise finance-operations interview questions",
+      "href": "/resources/investment-banking-interview-questions/",
+      "routeId": "resource-investment-banking-interview-questions"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Finance operations training and the 100% Job Guarantee Program"
+    },
+    {
+      "type": "paragraph",
+      "text": "Centaur Careers covers investment banking operations, KYC/AML, retail banking, finance operations, and related BFSI workflows inside its Financial Operations Masterclass and its 100% Job Guarantee Program. Centaur Careers states that graduates and job switchers who complete the six-week program get a finance job through the 100% Job Guarantee Program. Review the current published terms, eligibility, completion requirements, and support details directly before enrolling; this statement does not guarantee a particular role, employer, salary, city, vacancy, or outcome."
+    },
+    {
+      "type": "link",
+      "label": "Explore Centaur Careers' Finance Operations training and 100% Job Guarantee Program",
+      "href": "/courses/finance-operations/",
+      "routeId": "finance-operations"
+    },
+    {
+      "type": "link",
+      "label": "Review Centaur Careers' 100% Job Guarantee Program terms",
+      "href": "/placements/",
+      "routeId": "placements"
+    },
+    {
+      "type": "faq",
+      "question": "What is a good finance operations portfolio project for a fresher?",
+      "answer": "Start with a fictional reconciliation and exception-management workbook. Then add a project that matches the role you want, such as NAV workflow, loan processing, KYC and AML review, payments, or corporate actions. Document the inputs, checks, exception, and limitation."
+    },
+    {
+      "type": "faq",
+      "question": "Can I use real customer or employer data in my portfolio?",
+      "answer": "No. Use invented identifiers, dates, balances, documents, transactions, and screenshots. A portfolio should demonstrate process thinking without exposing personal, confidential, proprietary, or non-public information."
+    },
+    {
+      "type": "faq",
+      "question": "Which project should I build first?",
+      "answer": "Build reconciliation first because it teaches source comparison, data quality, exception ownership, and reporting. After that, choose the workflow that matches the job descriptions you are targeting."
+    },
+    {
+      "type": "faq",
+      "question": "Does Centaur Careers' 100% Job Guarantee Program guarantee a finance operations job?",
+      "answer": "Centaur Careers states that graduates and job switchers who complete its six-week program get a finance job through the 100% Job Guarantee Program. The statement does not guarantee a particular finance-operations role, employer, salary, city, vacancy, or outcome; review the current published terms before enrolling."
+    },
+    {
+      "type": "link",
+      "label": "Read the finance operations career guide",
+      "href": "/career-guides/finance-operations/",
+      "routeId": "career-guide-finance-operations"
+    },
+    {
+      "type": "link",
+      "label": "Compare retail banking operations roles",
+      "href": "/career-guides/retail-banking-operations/",
+      "routeId": "career-guide-retail-banking-operations"
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/finance-operations-portfolio-projects-freshers.png",
+    "alt": "Finance fresher reviewing fictional operations portfolio projects and workflow spreadsheets",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-22",
+  "updatedAt": "2026-09-26",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Finance Operations Portfolio: 5 Safe Projects for Freshers",
+    "description": "Build a finance operations portfolio with five fictional-data projects covering reconciliation, NAV, lending, KYC and corporate actions workflows.",
+    "canonicalPath": "/blog/finance-operations-portfolio-projects-freshers/",
+    "noindex": false
+  },
+  "tags": [
+    "Finance Operations",
+    "Portfolio Projects",
+    "Finance Jobs India",
+    "Excel Projects",
+    "Banking Operations"
+  ],
+  "relatedRouteIds": [
+    "blog",
+    "career-guides",
+    "career-guide-finance-operations",
+    "career-guide-kyc-aml-analyst",
+    "career-guide-retail-banking-operations",
+    "resource-reconciliation-in-finance",
+    "resource-investment-banking-interview-questions",
+    "investment-banking-operations",
+    "finance-operations",
+    "retail-banking",
+    "courses",
+    "placements",
+    "contact"
+  ],
+  "redirects": [],
+  "evidenceNotes": [
+    "RBI Fair Practices Code for Lenders – Charging of Interest, April 29, 2024: https://www.rbi.org.in/scripts/bs_circularindexdisplay.aspx/BS_CircularIndexDisplay.aspx?Id=12678",
+    "RBI Master Direction - Know Your Customer (KYC) Direction, 2016, updated as on August 14, 2025; checked 2026-09-26: https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=11566",
+    "SEBI Investor education material on corporate actions: https://investor.sebi.gov.in/iematerial.html",
+    "NSE corporate-actions reference page: https://www.nseindia.com/static/investor-relations/corporate-actions",
+    "The project guidance is educational, uses fictional data, and does not claim access to any employer system, confidential record, live portfolio, or production control environment.",
+    "The Centaur Careers 100% Job Guarantee Program wording is presented with the published graduates-and-job-switchers qualifier and terms-review instruction; no particular finance-operations role, employer, salary, city, vacancy, or outcome is guaranteed by this article."
+  ]
+}

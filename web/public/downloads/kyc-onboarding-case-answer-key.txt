@@ -1,0 +1,20 @@
+FICTIONAL KYC ONBOARDING CASE — PRACTICE ANSWER KEY
+Centaur Careers | 26 September 2026
+
+Practice Entity K-27, SIM-REG-27 and Roles A-D are invented labels. They identify no real company or person. This case is for learning how to read a file, not a legal checklist or a substitute for the current policy of a regulated entity.
+
+1. Start with facts. The application and simulated registration extract show the same entity label and reference. The applicant declares a software-consulting purpose, a 60/40 ownership split and proposed signatory Role C. These statements are not all independently verified merely because they appear in the application.
+
+2. Name each unresolved item. SIM-KYC-03 is unsigned, so the ownership declaration is incomplete. SIM-KYC-04 lacks verification evidence for Role B. SIM-KYC-05 names Role D as the authorised signatory while the application names Role C; do not silently change either. SIM-KYC-06 has no recorded screening result or final risk assessment; an absent result is not a clear result.
+
+3. Separate request from decision. Request or route a completed ownership declaration and the relevant verification evidence under the employer's current procedure. Refer the signatory mismatch to the authorised owner for clarification and supporting authority. Complete or route screening and risk review through approved systems and delegated staff. The analyst records the gaps and holds or escalates the case according to the applicable workflow; this learning packet cannot establish a final onboarding decision.
+
+4. Preserve a case note. Record each source ID, the fact observed, the missing or conflicting evidence, who owns the next action, and the status/date. Avoid assumptions about criminal activity, beneficial ownership thresholds, sanctions results, or regulatory reporting that the case file does not support.
+
+MODEL NOTE
+Practice Entity K-27: application SIM-KYC-01 and extract SIM-KYC-02 match on entity label and simulated registration reference. Ownership declaration SIM-KYC-03 is unsigned; verification evidence for declared owner Role B is absent in SIM-KYC-04. Signatory Role C in application conflicts with Role D in mandate SIM-KYC-05. Screening and final risk review are not recorded in SIM-KYC-06. Status: incomplete, referred for authorised review; no approval or adverse conclusion made. Next actions: obtain/verify the required ownership evidence, resolve signatory authority, complete approved screening/risk steps, document reviewer decisions and retain the trail.
+
+SELF-CHECK: Score one point each for (a) verified facts vs declarations, (b) unsigned ownership document, (c) missing Role B evidence, (d) signatory conflict, (e) missing screening/risk result without inventing an outcome, and (f) neutral case note with owner, escalation and status. Six points is a practice aid, not a compliance certification or hiring assessment.
+
+SOURCE CONTEXT
+The RBI Master Direction on KYC and the FATF Recommendations describe customer due diligence and risk-based controls. The exact evidence, thresholds, decision rights and timing for a real file depend on the current law and regulated entity's approved procedures.

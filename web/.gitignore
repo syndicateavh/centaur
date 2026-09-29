@@ -4,3 +4,11 @@ dist/
 .env
 .env.*
 !.env.example
+src/content/seo/measurements/*.json
+src/content/seo/measurements/history/*.json
+src/content/seo/measurements/SEO_MEASUREMENT_REPORT.md
+data/seo/indexing/inspections/*.json
+data/seo/indexing/inspections/history/*.json
+data/seo/indexing/public-checks/*.json
+data/seo/indexing/submissions/*.json
+data/seo/indexing/INDEXING_REPORT.md

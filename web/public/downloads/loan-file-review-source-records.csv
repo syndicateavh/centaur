@@ -1,0 +1,5 @@
+source,record_id,application_id,event_date,facility_amount_inr,tenor_months,status,observed_fact
+approved_sanction,SA-501,LN-501,2026-09-17,500000,36,approved,Approved terms shown for practice
+booking_screen,BK-501,LN-501,2026-09-19,600000,36,draft,Amount differs from sanction by INR 100000
+disbursement_request,DR-501,LN-501,2026-09-20,600000,36,unsigned,No authorised request signature in packet
+amendment_register,AM-501,LN-501,2026-09-20,,,none_found,Search limited to supplied training packet

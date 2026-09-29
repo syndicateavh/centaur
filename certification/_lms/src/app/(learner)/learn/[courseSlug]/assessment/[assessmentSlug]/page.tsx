@@ -1,0 +1,55 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { z } from "zod";
+import { requireLearner } from "@/lib/learner";
+import { getAssessmentView } from "@/lib/course-assessments";
+import { saveAssessmentAnswers, startAssessment, submitAssessment } from "@/app/(learner)/assessment-actions";
+
+export const dynamic = "force-dynamic";
+export const metadata: Metadata = { title: "Course assessment", robots: { index: false, follow: false } };
+
+const objectiveNames: Record<string, string> = {
+  O1: "KYC/AML purpose, role boundaries, and evidence discipline",
+  O2: "Customer identification, authority, and ownership",
+  O3: "Risk-based due diligence and ongoing review",
+  O4: "Screening, transaction alerts, and case notes",
+  O5: "Confidentiality, safe handling, and escalation",
+};
+
+export default async function AssessmentPage({ params, searchParams }: { params: Promise<{ courseSlug: string; assessmentSlug: string }>; searchParams: Promise<{ attempt?: string; state?: string }> }) {
+  const learner = await requireLearner();
+  const { courseSlug, assessmentSlug } = await params;
+  const query = await searchParams;
+  const parsedAttemptId = query.attempt ? z.string().uuid().safeParse(query.attempt) : null;
+  const assessment = await getAssessmentView(learner.id, courseSlug, assessmentSlug, parsedAttemptId?.success ? parsedAttemptId.data : undefined);
+  if (!assessment) notFound();
+  const { attempt } = assessment;
+  const isFinal = assessment.rules.kind === "final";
+  const remaining = Math.max(0, assessment.rules.max_attempts - assessment.attemptCount);
+  const requirementsMet = assessment.requiredLessons > 0 && assessment.completedRequiredLessons === assessment.requiredLessons;
+  const hasPassed = isFinal && attempt?.passed === true;
+  const canStart = assessment.enrollmentStatus === "active" && requirementsMet && !hasPassed && remaining > 0;
+  const warning = query.state === "lessons-required" ? "Complete the required lessons before starting this assessment." : query.state === "attempt-limit" ? "You have used all attempts for this assessment." : query.state === "already-passed" ? "A passing attempt is already recorded." : query.state === "invalid-answers" ? "Please answer every question using one of the listed options." : query.state === "unavailable" ? "This assessment is not ready. Contact the course team." : "";
+  const savedMessage = query.state === "progress-saved" ? "Your in-progress answers were saved. You can return to this attempt later." : "";
+  return <main id="main-content" className="mx-auto w-full max-w-4xl flex-1 px-5 py-9 sm:px-8">
+    <p className="text-sm text-slate-600"><Link className="underline" href="/dashboard">Dashboard</Link><span aria-hidden="true"> / </span><Link className="underline" href={`/learn/${assessment.courseSlug}`}>{assessment.courseTitle}</Link></p>
+    <div className="mt-5 rounded-2xl border border-amber-300 bg-amber-50 p-5 sm:p-7">
+      <p className="text-xs font-extrabold uppercase tracking-widest text-amber-900">{isFinal ? "Final assessment" : "Formative knowledge check"} · Course version {assessment.versionNumber} · Assessment v{assessment.version}</p>
+      <h1 className="mt-2 text-3xl font-bold tracking-tight">{assessment.title}</h1>
+      <p className="mt-3 text-sm leading-6 text-slate-700">{isFinal ? `${assessment.questions.length} questions · ${assessment.passPercent}% to pass · Up to ${assessment.rules.max_attempts} attempts · No timer.` : `${assessment.questions.length} questions · Practice check · ${assessment.rules.max_attempts} attempts · Explanations shown after submission.`}</p>
+      <p className="mt-2 text-xs font-semibold text-amber-950">Local draft assessment — subject-matter review is pending. This preview is not an approved qualification.</p>
+    </div>
+    {warning && <p role="alert" className="mt-5 rounded-lg border border-amber-300 bg-amber-50 p-4 text-sm text-amber-950">{warning}</p>}
+    {savedMessage && <p role="status" className="mt-5 rounded-lg bg-emerald-50 p-4 text-sm font-semibold text-emerald-900">{savedMessage}</p>}
+    <section className="mt-7 rounded-xl border border-slate-200 bg-white p-5 sm:p-7">
+      <div className="flex flex-wrap justify-between gap-2 text-sm"><p><strong>Required lessons:</strong> {assessment.completedRequiredLessons} / {assessment.requiredLessons} complete</p><p><strong>Attempts used:</strong> {assessment.attemptCount} / {assessment.rules.max_attempts}</p></div>
+      {assessment.attemptHistory.length > 0 && <details className="mt-4 rounded-lg border border-slate-200 p-3"><summary className="cursor-pointer text-sm font-semibold">Attempt history</summary><ol className="mt-3 space-y-2">{assessment.attemptHistory.map((item) => <li key={item.id}><Link className="text-sm text-teal-900 underline" href={`/learn/${courseSlug}/assessment/${assessmentSlug}?attempt=${item.id}`}>Attempt {item.attempt_number} · {item.status === "submitted" ? `${item.score_percent}% · ${item.passed ? "passed" : "not passed"}` : item.status}</Link></li>)}</ol></details>}
+      {attempt?.status === "submitted" && <div className={`mt-5 rounded-xl p-5 ${attempt.passed ? "bg-emerald-50 text-emerald-950" : "bg-slate-50 text-slate-900"}`} role="status"><h2 className="text-xl font-bold">{attempt.passed ? (isFinal ? "Assessment passed" : "Knowledge check passed") : (isFinal ? "Assessment not passed" : "Knowledge check submitted")}</h2><p className="mt-2 text-sm">Attempt {attempt.attempt_number} · Score {Number(attempt.score_percent ?? 0)}%{isFinal && !attempt.passed ? ` · ${remaining} attempt${remaining === 1 ? "" : "s"} remaining` : ""}</p>{isFinal && attempt.passed && <p className="mt-2 text-sm">{assessment.enrollmentStatus === "completed" ? "Course requirements are complete. Certificate issuance is a later phase." : "Your result is recorded. The server will mark course completion once all required lesson and assessment conditions are met."}</p>}</div>}
+      {attempt?.status === "submitted" && isFinal && attempt.feedback.topics && <section className="mt-5" aria-labelledby="feedback-heading"><h2 id="feedback-heading" className="font-bold">Topics to review</h2><ul className="mt-3 space-y-3">{attempt.feedback.topics.map((topic) => <li key={topic.objective} className="rounded-lg border border-slate-200 p-3"><p className="text-sm font-semibold">{objectiveNames[topic.objective] ?? "Course objective"}</p><p className="mt-1 text-sm text-slate-600">{topic.correct} of {topic.total} correct</p>{topic.correct < topic.total && <div className="mt-2 flex flex-wrap gap-3">{topic.lessons?.map((lessonSlug) => <Link key={lessonSlug} className="text-sm font-semibold text-teal-900 underline" href={`/learn/${assessment.courseSlug}/${lessonSlug}`}>Review related lesson</Link>)}</div>}</li>)}</ul><p className="mt-3 text-xs text-slate-500">Final assessment answer keys are not shown.</p></section>}
+      {attempt?.status === "submitted" && !isFinal && <section className="mt-5 space-y-4" aria-labelledby="explanations-heading"><h2 id="explanations-heading" className="font-bold">Answer explanations</h2>{assessment.formativeResults.map((item, index) => { const correctText = assessment.questions.find((question) => question.id === item.questionId)?.choices.find((choice) => choice.id === item.correctChoice)?.text; return <article key={item.questionId} className="rounded-lg border border-slate-200 p-4"><h3 className="font-semibold">{index + 1}. {item.prompt}</h3><p className={`mt-2 text-sm font-semibold ${item.correct ? "text-emerald-800" : "text-amber-900"}`}>{item.correct ? "Correct" : "Review this topic"}</p>{!item.correct && <p className="mt-1 text-sm text-slate-700">Correct option: {correctText}</p>}<p className="mt-2 text-sm leading-6 text-slate-600">{item.explanation}</p></article>;})}</section>}
+      {attempt?.status === "in_progress" ? <form action={submitAssessment} className="mt-7"><input type="hidden" name="courseSlug" value={assessment.courseSlug} /><input type="hidden" name="attemptId" value={attempt.id} /><ol className="space-y-6">{assessment.questions.map((question, index) => <li key={question.id}><fieldset><legend className="font-semibold leading-6"><span className="mr-2 text-teal-800">{index + 1}.</span>{question.text}</legend><div className="mt-3 space-y-2">{question.choices.map((choice) => <label key={choice.id} className="flex cursor-pointer gap-3 rounded-lg border border-slate-200 p-3 text-sm leading-6 hover:bg-slate-50"><input className="mt-1 size-4 shrink-0 accent-teal-800" type="radio" name={`q-${question.id}`} value={choice.id} defaultChecked={attempt.answers[question.id] === choice.id} /> <span>{choice.text}</span></label>)}</div></fieldset></li>)}</ol><p className="mt-6 text-sm text-slate-600">No timer. Save your answers to return later, or submit when you are ready. Every question must be answered to submit.</p><div className="mt-5 flex flex-wrap gap-3"><button formAction={saveAssessmentAnswers} className="rounded-lg border border-slate-300 px-4 py-3 text-sm font-bold text-slate-800">Save and leave</button><button className="rounded-lg bg-teal-900 px-5 py-3 text-sm font-bold text-white">Submit assessment</button></div></form> : canStart ? <form action={startAssessment} className="mt-6"><input type="hidden" name="courseSlug" value={assessment.courseSlug} /><input type="hidden" name="assessmentSlug" value={assessment.slug} /><button className="rounded-lg bg-teal-900 px-5 py-3 text-sm font-bold text-white">{assessment.attemptCount ? "Start next attempt" : isFinal ? "Start final assessment" : "Start knowledge check"}</button><p className="mt-3 text-xs leading-5 text-slate-500">No timer. The assessment records your submitted answers and result. Formative checks explain each answer; final feedback is grouped by objective.</p></form> : <p className="mt-6 rounded-lg bg-slate-50 p-4 text-sm text-slate-600">{!requirementsMet ? "Complete the required lessons to unlock this assessment." : remaining === 0 ? "No attempts remain." : "This assessment is not currently available."}</p>}
+    </section>
+    <p className="mt-6 text-sm"><Link className="font-semibold text-teal-900 underline" href={`/learn/${assessment.courseSlug}`}>Return to course</Link></p>
+  </main>;
+}

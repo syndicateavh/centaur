@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "derivatives-meaning-types-operations",
+  "slug": "derivatives-meaning-types-operations",
+  "status": "published",
+  "title": "Derivatives Meaning, Types and Operations",
+  "excerpt": "Learn derivatives meaning and common types through contract, lifecycle, margin, settlement, controls and operations examples without trading advice.",
+  "category": "investment-banking",
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Finance education editorial team",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "A derivative is a financial contract whose value or obligation is linked to an underlying reference such as an asset, rate, index or price. Common categories include forwards, futures, options and swaps, but the legal terms, market structure, collateral, margin, clearing and settlement rules differ. The important operations question is not only what the contract means. It is how the contract is captured, confirmed, valued or reported under the applicable process, and how exceptions are controlled. This article is educational and not trading or investment advice."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Derivatives meaning in simple language"
+    },
+    {
+      "type": "paragraph",
+      "text": "Two parties agree terms whose financial result depends on something else. The underlying reference can be a commodity, currency, interest rate, security or index. A derivative may be used for risk management, price exposure, financing or other purposes, but the purpose cannot be inferred from the contract name alone. A learner should read the notional amount, reference, dates, price or strike, settlement terms, counterparty and governing documents before describing it."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Common types of derivatives"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Forward: a bilateral agreement for a future transaction under agreed terms, commonly subject to counterparty and settlement considerations.",
+        "Future: a standardised contract traded or cleared through a market structure with defined contract terms.",
+        "Option: a contract that gives a right, but not necessarily an obligation, subject to its terms; the seller's obligation and premium are important details.",
+        "Swap: an agreement to exchange defined cash-flow streams or exposures, with terms that depend on the product and parties."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The derivatives operations lifecycle"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Capture the contract with the correct product, reference, counterparty, dates, notional and economic terms.",
+        "Confirm the trade or agreement and investigate differences between internal and external records.",
+        "Apply the approved valuation, margin, collateral or reporting process where relevant.",
+        "Monitor events, payment dates, exercise or expiry conditions and settlement instructions.",
+        "Reconcile positions, cash, collateral and statements, then record and age exceptions.",
+        "Escalate breaks or control failures to the authorised owner before making a correction."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fictional operations example"
+    },
+    {
+      "type": "paragraph",
+      "text": "A fictional internal record shows a forward contract with a notional of 1,000,000 units, but the confirmation shows 900,000. The analyst checks the reference, amendment history, currency, effective date, confirmation and the authorised source of truth. They do not assume the difference is a harmless rounding issue. The break note states the two values, possible impact, evidence checked, deadline, owner and escalation. The example teaches record control; it does not recommend entering a derivative."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Skills for derivatives operations"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Careful reading of terms, identifiers, dates, units and cash-flow definitions.",
+        "Reconciliation across internal records, confirmations, statements and collateral or settlement files.",
+        "Spreadsheet and data-quality checks that make assumptions visible.",
+        "Deadline management, evidence writing and escalation when a contractual or control point is unclear.",
+        "Respect for confidentiality and the difference between educational content and an authorised market activity."
+      ]
+    },
+    {
+      "type": "link",
+      "label": "Explore Investment Banking Operations training",
+      "href": "/courses/investment-banking-operations/",
+      "routeId": "investment-banking-operations"
+    },
+    {
+      "type": "link",
+      "label": "Read the Investment Banking Operations career guide",
+      "href": "/career-guides/investment-banking-operations/",
+      "routeId": "career-guide-investment-banking-operations"
+    },
+    {
+      "type": "link",
+      "label": "Follow the Trade Lifecycle guide",
+      "href": "/career-guides/trade-lifecycle/",
+      "routeId": "career-guide-trade-lifecycle"
+    },
+    {
+      "type": "link",
+      "label": "Use the reconciliation resource",
+      "href": "/resources/reconciliation-in-finance/",
+      "routeId": "resource-reconciliation-in-finance"
+    },
+    {
+      "type": "link",
+      "label": "Browse all finance career insights",
+      "href": "/blog/",
+      "routeId": "blog"
+    },
+    {
+      "type": "link",
+      "label": "Review SEBI investor education material",
+      "href": "https://investor.sebi.gov.in/iematerial.html"
+    },
+    {
+      "type": "paragraph",
+      "text": "Derivative contracts are specialised and can involve significant risk. Use the current official source, product documents and authorised procedures for any real activity. Centaur Careers publishes this article for finance learning and does not provide investment advice."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/derivatives-meaning-types-operations.png",
+    "alt": "Editorial illustration of derivative contracts branching into connected market operations workflows",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-27",
+  "updatedAt": "2026-09-27",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Derivatives Meaning, Types and Operations | Centaur Careers",
+    "description": "Learn derivatives meaning and common types through contract lifecycle, settlement, reconciliation and operations controls.",
+    "canonicalPath": "/blog/derivatives-meaning-types-operations/",
+    "noindex": false,
+    "focusKeyword": "derivatives meaning",
+    "secondaryKeywords": ["types of derivatives", "derivatives operations", "financial markets"]
+  },
+  "tags": ["Derivatives Meaning", "Types of Derivatives", "Derivatives Operations", "Securities Operations", "Financial Markets"],
+  "relatedRouteIds": ["blog", "investment-banking-operations", "career-guide-investment-banking-operations", "career-guide-trade-lifecycle", "resource-reconciliation-in-finance"],
+  "redirects": [],
+  "evidenceNotes": [
+    "SEBI investor education material: https://investor.sebi.gov.in/iematerial.html",
+    "Derivative examples and contract differences are educational summaries, not trading guidance.",
+    "The operations case is fictional and current product rules must be checked before use."
+  ]
+}

@@ -1,0 +1,3005 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "country": "IN",
+    "language": "en-IN",
+    "routeRegistry": "src/seo/seoRoutes.js",
+    "blogKeywordMap": "src/content/seo/blogKeywordOwnership.js"
+  },
+  "summary": {
+    "pageCount": 185,
+    "siteRouteCount": 93,
+    "blogCategoryCount": 6,
+    "blogArticleCount": 86,
+    "pagesWithPrimaryKeyword": 185
+  },
+  "pages": [
+    {
+      "kind": "site-route",
+      "id": "home",
+      "path": "/",
+      "canonicalUrl": "https://centaurcareers.in/",
+      "primaryKeyword": "Centaur Careers finance training",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Brand/entity and Financial Operations Masterclass overview",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "blog",
+      "path": "/blog/",
+      "canonicalUrl": "https://centaurcareers.in/blog/",
+      "primaryKeyword": "finance career insights",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Finance career learning, industry updates, and interview resources",
+      "lastModified": "2026-09-13"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guides",
+      "path": "/career-guides/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/",
+      "primaryKeyword": "finance operations career guide",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Career-guide information cluster hub",
+      "lastModified": "2026-09-13"
+    },
+    {
+      "kind": "site-route",
+      "id": "resources",
+      "path": "/resources/",
+      "canonicalUrl": "https://centaurcareers.in/resources/",
+      "primaryKeyword": "finance career resources",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Finance interview preparation and career resource hub",
+      "lastModified": "2026-09-13"
+    },
+    {
+      "kind": "site-route",
+      "id": "resource-investment-banking-interview-questions",
+      "path": "/resources/investment-banking-interview-questions/",
+      "canonicalUrl": "https://centaurcareers.in/resources/investment-banking-interview-questions/",
+      "primaryKeyword": "investment banking operations interview questions for freshers",
+      "secondaryKeywords": [
+        "investment banking operations interview preparation",
+        "investment banking operations mock interview",
+        "trade lifecycle interview questions for freshers",
+        "settlement interview questions banking",
+        "reconciliation interview questions finance",
+        "KYC analyst interview questions for freshers",
+        "AML analyst interview questions for freshers",
+        "client onboarding interview questions",
+        "finance operations interview questions for freshers",
+        "banking operations interview questions for freshers",
+        "BFSI interview questions for freshers",
+        "finance resume for freshers",
+        "investment banking operations resume for freshers",
+        "KYC analyst resume for freshers",
+        "AML analyst resume for freshers",
+        "finance operations resume keywords",
+        "LinkedIn profile for finance freshers",
+        "how to prepare for investment banking operations interview",
+        "how to crack KYC analyst interview",
+        "how to crack AML analyst interview",
+        "finance course with mock interviews",
+        "finance course with resume building",
+        "finance course with placement support in India",
+        "investment banking course placement support India"
+      ],
+      "keywordPurpose": "First-party finance interview preparation resource",
+      "lastModified": "2026-09-26"
+    },
+    {
+      "kind": "site-route",
+      "id": "resource-accounting-interview-questions",
+      "path": "/resources/accounting-interview-questions/",
+      "canonicalUrl": "https://centaurcareers.in/resources/accounting-interview-questions/",
+      "primaryKeyword": "accounting interview questions and answers",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party finance interview preparation resource",
+      "lastModified": "2026-09-26"
+    },
+    {
+      "kind": "site-route",
+      "id": "resource-finance-gk",
+      "path": "/resources/finance-gk/",
+      "canonicalUrl": "https://centaurcareers.in/resources/finance-gk/",
+      "primaryKeyword": "finance and BFSI concepts for beginners",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party finance and BFSI learning resource",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "site-route",
+      "id": "resource-accounting-basics",
+      "path": "/resources/accounting-basics/",
+      "canonicalUrl": "https://centaurcareers.in/resources/accounting-basics/",
+      "primaryKeyword": "accounting basics for finance operations",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party finance and BFSI learning resource",
+      "lastModified": "2026-09-24"
+    },
+    {
+      "kind": "site-route",
+      "id": "resource-reconciliation-in-finance",
+      "path": "/resources/reconciliation-in-finance/",
+      "canonicalUrl": "https://centaurcareers.in/resources/reconciliation-in-finance/",
+      "primaryKeyword": "reconciliation meaning",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party finance and BFSI learning resource",
+      "lastModified": "2026-09-26"
+    },
+    {
+      "kind": "site-route",
+      "id": "resource-bank-reconciliation-process",
+      "path": "/resources/bank-reconciliation-process/",
+      "canonicalUrl": "https://centaurcareers.in/resources/bank-reconciliation-process/",
+      "primaryKeyword": "bank reconciliation",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party finance and BFSI learning resource",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "site-route",
+      "id": "resource-cost-accounting-finance-operations",
+      "path": "/resources/cost-accounting-finance-operations/",
+      "canonicalUrl": "https://centaurcareers.in/resources/cost-accounting-finance-operations/",
+      "primaryKeyword": "cost accounting",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party finance and BFSI learning resource",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "site-route",
+      "id": "resource-financial-accounting-banking",
+      "path": "/resources/financial-accounting-banking/",
+      "canonicalUrl": "https://centaurcareers.in/resources/financial-accounting-banking/",
+      "primaryKeyword": "financial accounting",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party finance and BFSI learning resource",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "site-route",
+      "id": "resource-financial-statement-analysis",
+      "path": "/resources/financial-statement-analysis/",
+      "canonicalUrl": "https://centaurcareers.in/resources/financial-statement-analysis/",
+      "primaryKeyword": "financial statement analysis",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party finance and BFSI learning resource",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "site-route",
+      "id": "resource-corporate-actions-workflow",
+      "path": "/resources/corporate-actions-workflow/",
+      "canonicalUrl": "https://centaurcareers.in/resources/corporate-actions-workflow/",
+      "primaryKeyword": "corporate actions workflow",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party finance and BFSI learning resource",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "site-route",
+      "id": "resource-capital-market-operations",
+      "path": "/resources/capital-market-operations/",
+      "canonicalUrl": "https://centaurcareers.in/resources/capital-market-operations/",
+      "primaryKeyword": "capital market operations",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party finance and BFSI learning resource",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "site-route",
+      "id": "resource-financial-system-india",
+      "path": "/resources/financial-system-india/",
+      "canonicalUrl": "https://centaurcareers.in/resources/financial-system-india/",
+      "primaryKeyword": "financial system in India",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party finance and BFSI learning resource",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "site-route",
+      "id": "resource-kyc-aml-compliance-guide",
+      "path": "/resources/kyc-aml-compliance-guide/",
+      "canonicalUrl": "https://centaurcareers.in/resources/kyc-aml-compliance-guide/",
+      "primaryKeyword": "KYC and AML compliance guide",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party finance and BFSI learning resource",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "site-route",
+      "id": "quiz",
+      "path": "/quiz/",
+      "canonicalUrl": "https://centaurcareers.in/quiz/",
+      "primaryKeyword": "banking and finance quiz",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Large first-party banking and finance self-assessment question bank",
+      "lastModified": "2026-09-22"
+    },
+    {
+      "kind": "site-route",
+      "id": "courses",
+      "path": "/courses/",
+      "canonicalUrl": "https://centaurcareers.in/courses/",
+      "primaryKeyword": "investment banking operations course",
+      "secondaryKeywords": [
+        "investment banking course",
+        "investment banking course in India",
+        "investment banking course with placement assistance",
+        "investment banking operations course with placement assistance",
+        "job oriented investment banking course",
+        "short term investment banking course",
+        "online investment banking operations course",
+        "offline investment banking operations course",
+        "live investment banking course",
+        "investment banking certification course",
+        "best investment banking operations course",
+        "best investment banking course in India",
+        "investment banking course for freshers",
+        "investment banking course after graduation",
+        "investment banking course after BCom",
+        "investment banking course after BBA",
+        "investment banking course after MBA",
+        "investment banking operations course for graduates",
+        "financial operations course",
+        "banking and financial operations course",
+        "investment banking back office course",
+        "investment banking middle office course",
+        "practical investment banking course",
+        "investment banking operations training",
+        "investment banking operations certification",
+        "investment banking operations classes",
+        "investment banking operations program",
+        "investment banking operations institute",
+        "certificate in investment banking operations",
+        "finance operations course",
+        "financial operations training",
+        "finance operations certification",
+        "financial operations masterclass",
+        "financial operations masterclass India",
+        "finance career course",
+        "finance career training",
+        "job ready finance course",
+        "finance course with placement assistance",
+        "BFSI operations course",
+        "banking operations course",
+        "global banking operations course",
+        "global finance operations course",
+        "financial services operations course",
+        "investment operations course",
+        "investment operations training",
+        "capital markets operations course",
+        "middle office operations course",
+        "back office banking course",
+        "trade operations course",
+        "securities operations course",
+        "post trade operations course",
+        "financial markets operations course",
+        "finance operations training institute",
+        "investment banking training institute India",
+        "investment banking operations institute India",
+        "hands on investment banking operations training",
+        "industry ready finance course",
+        "placement assistance finance course",
+        "6 week finance course",
+        "short duration finance course India",
+        "finance operations training",
+        "investment banking course fees",
+        "investment banking operations course fees",
+        "investment banking course fees in India",
+        "investment banking course duration",
+        "investment banking operations course duration",
+        "investment banking course eligibility",
+        "investment banking operations eligibility",
+        "investment banking course syllabus",
+        "investment banking course online vs offline",
+        "investment banking course under 50000",
+        "investment banking course under 1 lakh",
+        "affordable investment banking course India",
+        "KYC AML course fees",
+        "KYC AML course duration",
+        "finance operations course fees",
+        "finance operations course duration",
+        "financial operations masterclass fees",
+        "financial operations masterclass duration",
+        "online finance course with live classes",
+        "offline finance classes with placement assistance",
+        "weekend finance course India",
+        "weekday finance classes India",
+        "live online finance training India"
+      ],
+      "keywordPurpose": "Primary commercial finance course and Financial Operations Masterclass hub",
+      "lastModified": "2026-09-26"
+    },
+    {
+      "kind": "site-route",
+      "id": "investment-banking-operations",
+      "path": "/courses/investment-banking-operations/",
+      "canonicalUrl": "https://centaurcareers.in/courses/investment-banking-operations/",
+      "primaryKeyword": "investment banking operations module",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Supporting Investment Banking Operations module page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "retail-banking",
+      "path": "/courses/retail-banking/",
+      "canonicalUrl": "https://centaurcareers.in/courses/retail-banking/",
+      "primaryKeyword": "retail banking operations course",
+      "secondaryKeywords": [
+        "retail banking course",
+        "retail banking operations training",
+        "retail banking certification",
+        "bank branch operations course",
+        "banking operations training for freshers"
+      ],
+      "keywordPurpose": "Supporting Retail Banking module page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "finance-operations",
+      "path": "/courses/finance-operations/",
+      "canonicalUrl": "https://centaurcareers.in/courses/finance-operations/",
+      "primaryKeyword": "finance operations module",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Supporting Finance Operations module page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "kyc-aml-compliance",
+      "path": "/courses/kyc-aml/",
+      "canonicalUrl": "https://centaurcareers.in/courses/kyc-aml/",
+      "primaryKeyword": "KYC AML course",
+      "secondaryKeywords": [
+        "KYC AML certification course",
+        "KYC AML training",
+        "KYC AML course in India",
+        "KYC AML course online",
+        "KYC AML course with placement assistance",
+        "AML KYC analyst course",
+        "KYC analyst course",
+        "AML analyst course",
+        "compliance analyst course",
+        "CDD analyst course",
+        "EDD analyst course",
+        "transaction monitoring course",
+        "financial crime compliance course",
+        "anti money laundering course India",
+        "know your customer training",
+        "KYC compliance training",
+        "AML compliance training"
+      ],
+      "keywordPurpose": "Informational guide to a subject taught within the Financial Operations Masterclass",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "digital-payments",
+      "path": "/courses/digital-payments/",
+      "canonicalUrl": "https://centaurcareers.in/courses/digital-payments/",
+      "primaryKeyword": "digital payments course",
+      "secondaryKeywords": [
+        "digital payments training",
+        "digital payments certification",
+        "digital payments operations course"
+      ],
+      "keywordPurpose": "Informational guide to a subject taught within the Financial Operations Masterclass",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "fintech-neo-banking",
+      "path": "/courses/fintech/",
+      "canonicalUrl": "https://centaurcareers.in/courses/fintech/",
+      "primaryKeyword": "fintech course for graduates",
+      "secondaryKeywords": [
+        "fintech operations course",
+        "fintech training for freshers",
+        "fintech certification India"
+      ],
+      "keywordPurpose": "Informational guide to a subject taught within the Financial Operations Masterclass",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "placements",
+      "path": "/placements/",
+      "canonicalUrl": "https://centaurcareers.in/placements/",
+      "primaryKeyword": "finance course with job guarantee",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Finance job guarantee program, placement process, and published guarantee details",
+      "lastModified": "2026-09-13"
+    },
+    {
+      "kind": "site-route",
+      "id": "about",
+      "path": "/about/",
+      "canonicalUrl": "https://centaurcareers.in/about/",
+      "primaryKeyword": "Centaur Careers",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Centaur Careers organization and leadership entity page",
+      "lastModified": "2026-09-13"
+    },
+    {
+      "kind": "site-route",
+      "id": "contact",
+      "path": "/contact/",
+      "canonicalUrl": "https://centaurcareers.in/contact/",
+      "primaryKeyword": "Centaur Careers contact",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Contact and enrolment access for Centaur Careers in Lucknow",
+      "lastModified": "2026-09-13"
+    },
+    {
+      "kind": "site-route",
+      "id": "privacy-policy",
+      "path": "/privacy-policy/",
+      "canonicalUrl": "https://centaurcareers.in/privacy-policy/",
+      "primaryKeyword": "Centaur Careers privacy policy",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Privacy information for website visitors and advertising enquiries",
+      "lastModified": "2026-09-23"
+    },
+    {
+      "kind": "site-route",
+      "id": "india",
+      "path": "/india/",
+      "canonicalUrl": "https://centaurcareers.in/india/",
+      "primaryKeyword": "investment banking operations course India",
+      "secondaryKeywords": [
+        "online investment banking operations course India",
+        "finance operations training India",
+        "financial operations course India",
+        "finance training institute India",
+        "finance career training India",
+        "job oriented finance course India",
+        "banking operations training India",
+        "KYC AML training India",
+        "digital payments course India",
+        "fintech operations course India",
+        "BFSI training institute India",
+        "finance course for graduates India",
+        "finance course for freshers India",
+        "online finance course India with placement assistance",
+        "short term finance course India",
+        "best finance career program India",
+        "finance operations jobs India for freshers",
+        "global banking operations training India",
+        "financial services operations training India",
+        "investment banking course in Chennai",
+        "investment banking operations course in Chennai",
+        "investment banking classes in Chennai",
+        "investment banking institute in Chennai",
+        "finance operations course in Chennai",
+        "KYC AML course in Chennai",
+        "finance course with placement assistance in Chennai",
+        "best investment banking course in Chennai",
+        "investment banking course in Kolkata",
+        "investment banking operations course in Kolkata",
+        "investment banking classes in Kolkata",
+        "investment banking institute in Kolkata",
+        "finance operations course in Kolkata",
+        "KYC AML course in Kolkata",
+        "finance course with placement assistance in Kolkata",
+        "best investment banking course in Kolkata",
+        "investment banking course in Ahmedabad",
+        "investment banking operations course in Ahmedabad",
+        "investment banking classes in Ahmedabad",
+        "investment banking institute in Ahmedabad",
+        "finance operations course in Ahmedabad",
+        "KYC AML course in Ahmedabad",
+        "finance course with placement assistance in Ahmedabad",
+        "best investment banking course in Ahmedabad",
+        "investment banking course in Jaipur",
+        "investment banking operations course in Jaipur",
+        "investment banking classes in Jaipur",
+        "investment banking institute in Jaipur",
+        "finance operations course in Jaipur",
+        "KYC AML course in Jaipur",
+        "finance course with placement assistance in Jaipur",
+        "best investment banking course in Jaipur",
+        "investment banking course in Patna",
+        "investment banking operations course in Patna",
+        "investment banking classes in Patna",
+        "investment banking institute in Patna",
+        "finance operations course in Patna",
+        "KYC AML course in Patna",
+        "finance course with placement assistance in Patna",
+        "best investment banking course in Patna",
+        "investment banking course in Bhubaneswar",
+        "investment banking operations course in Bhubaneswar",
+        "investment banking classes in Bhubaneswar",
+        "investment banking institute in Bhubaneswar",
+        "finance operations course in Bhubaneswar",
+        "KYC AML course in Bhubaneswar",
+        "finance course with placement assistance in Bhubaneswar",
+        "best investment banking course in Bhubaneswar",
+        "investment banking course in Kochi",
+        "investment banking operations course in Kochi",
+        "investment banking classes in Kochi",
+        "investment banking institute in Kochi",
+        "finance operations course in Kochi",
+        "KYC AML course in Kochi",
+        "finance course with placement assistance in Kochi",
+        "best investment banking course in Kochi",
+        "investment banking course in Chandigarh",
+        "investment banking operations course in Chandigarh",
+        "investment banking classes in Chandigarh",
+        "investment banking institute in Chandigarh",
+        "finance operations course in Chandigarh",
+        "KYC AML course in Chandigarh",
+        "finance course with placement assistance in Chandigarh",
+        "best investment banking course in Chandigarh",
+        "investment banking course in Indore",
+        "investment banking operations course in Indore",
+        "investment banking classes in Indore",
+        "investment banking institute in Indore",
+        "finance operations course in Indore",
+        "KYC AML course in Indore",
+        "finance course with placement assistance in Indore",
+        "best investment banking course in Indore",
+        "investment banking course in Nagpur",
+        "investment banking operations course in Nagpur",
+        "investment banking classes in Nagpur",
+        "investment banking institute in Nagpur",
+        "finance operations course in Nagpur",
+        "KYC AML course in Nagpur",
+        "finance course with placement assistance in Nagpur",
+        "best investment banking course in Nagpur",
+        "investment banking course in Dehradun",
+        "investment banking operations course in Dehradun",
+        "investment banking classes in Dehradun",
+        "investment banking institute in Dehradun",
+        "finance operations course in Dehradun",
+        "KYC AML course in Dehradun",
+        "finance course with placement assistance in Dehradun",
+        "best investment banking course in Dehradun"
+      ],
+      "keywordPurpose": "India-wide online finance operations training access",
+      "lastModified": "2026-09-26"
+    },
+    {
+      "kind": "site-route",
+      "id": "india-delhi-ncr",
+      "path": "/india/delhi-ncr/",
+      "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/",
+      "primaryKeyword": "investment banking course in Delhi",
+      "secondaryKeywords": [
+        "investment banking operations course in Delhi",
+        "investment banking classes in Delhi",
+        "investment banking institute in Delhi",
+        "finance operations course in Delhi",
+        "KYC AML course in Delhi",
+        "finance course with placement assistance in Delhi",
+        "best investment banking course in Delhi",
+        "investment banking course in Noida",
+        "investment banking operations course in Noida",
+        "investment banking classes in Noida",
+        "investment banking institute in Noida",
+        "finance operations course in Noida",
+        "KYC AML course in Noida",
+        "finance course with placement assistance in Noida",
+        "best investment banking course in Noida",
+        "investment banking course in Gurgaon",
+        "investment banking operations course in Gurgaon",
+        "investment banking classes in Gurgaon",
+        "investment banking institute in Gurgaon",
+        "finance operations course in Gurgaon",
+        "KYC AML course in Gurgaon",
+        "finance course with placement assistance in Gurgaon",
+        "best investment banking course in Gurgaon"
+      ],
+      "keywordPurpose": "Selective regional finance-career market and access guide",
+      "lastModified": "2026-09-26"
+    },
+    {
+      "kind": "site-route",
+      "id": "india-bengaluru",
+      "path": "/india/bengaluru/",
+      "canonicalUrl": "https://centaurcareers.in/india/bengaluru/",
+      "primaryKeyword": "investment banking course in Bangalore",
+      "secondaryKeywords": [
+        "investment banking operations course in Bangalore",
+        "investment banking classes in Bangalore",
+        "investment banking institute in Bangalore",
+        "finance operations course in Bangalore",
+        "KYC AML course in Bangalore",
+        "finance course with placement assistance in Bangalore",
+        "best investment banking course in Bangalore",
+        "investment banking course in Bengaluru",
+        "investment banking operations course in Bengaluru",
+        "investment banking classes in Bengaluru",
+        "investment banking institute in Bengaluru",
+        "finance operations course in Bengaluru",
+        "KYC AML course in Bengaluru",
+        "finance course with placement assistance in Bengaluru",
+        "best investment banking course in Bengaluru"
+      ],
+      "keywordPurpose": "Selective regional finance-career market and access guide",
+      "lastModified": "2026-09-26"
+    },
+    {
+      "kind": "site-route",
+      "id": "india-mumbai",
+      "path": "/india/mumbai/",
+      "canonicalUrl": "https://centaurcareers.in/india/mumbai/",
+      "primaryKeyword": "investment banking course in Mumbai",
+      "secondaryKeywords": [
+        "investment banking operations course in Mumbai",
+        "investment banking classes in Mumbai",
+        "investment banking institute in Mumbai",
+        "finance operations course in Mumbai",
+        "KYC AML course in Mumbai",
+        "finance course with placement assistance in Mumbai",
+        "best investment banking course in Mumbai"
+      ],
+      "keywordPurpose": "Selective regional finance-career market and access guide",
+      "lastModified": "2026-09-26"
+    },
+    {
+      "kind": "site-route",
+      "id": "india-pune",
+      "path": "/india/pune/",
+      "canonicalUrl": "https://centaurcareers.in/india/pune/",
+      "primaryKeyword": "investment banking course in Pune",
+      "secondaryKeywords": [
+        "investment banking operations course in Pune",
+        "investment banking classes in Pune",
+        "investment banking institute in Pune",
+        "finance operations course in Pune",
+        "KYC AML course in Pune",
+        "finance course with placement assistance in Pune",
+        "best investment banking course in Pune"
+      ],
+      "keywordPurpose": "Selective regional finance-career market and access guide",
+      "lastModified": "2026-09-26"
+    },
+    {
+      "kind": "site-route",
+      "id": "india-hyderabad",
+      "path": "/india/hyderabad/",
+      "canonicalUrl": "https://centaurcareers.in/india/hyderabad/",
+      "primaryKeyword": "investment banking course in Hyderabad",
+      "secondaryKeywords": [
+        "investment banking operations course in Hyderabad",
+        "investment banking classes in Hyderabad",
+        "investment banking institute in Hyderabad",
+        "finance operations course in Hyderabad",
+        "KYC AML course in Hyderabad",
+        "finance course with placement assistance in Hyderabad",
+        "best investment banking course in Hyderabad"
+      ],
+      "keywordPurpose": "Selective regional finance-career market and access guide",
+      "lastModified": "2026-09-26"
+    },
+    {
+      "kind": "site-route",
+      "id": "lucknow-location",
+      "path": "/locations/lucknow/",
+      "canonicalUrl": "https://centaurcareers.in/locations/lucknow/",
+      "primaryKeyword": "investment banking course in Lucknow",
+      "secondaryKeywords": [
+        "investment banking operations course in Lucknow",
+        "investment banking classes in Lucknow",
+        "investment banking institute in Lucknow",
+        "finance operations course in Lucknow",
+        "KYC AML course in Lucknow",
+        "finance course with placement assistance in Lucknow",
+        "best investment banking course in Lucknow"
+      ],
+      "keywordPurpose": "Evidence-backed local Lucknow acquisition page",
+      "lastModified": "2026-09-26"
+    },
+    {
+      "kind": "site-route",
+      "id": "faqs",
+      "path": "/faqs/",
+      "canonicalUrl": "https://centaurcareers.in/faqs/",
+      "primaryKeyword": "finance career program FAQs",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Finance career program questions and answer support",
+      "lastModified": "2026-09-13"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-investment-banking-operations",
+      "path": "/career-guides/investment-banking-operations/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/investment-banking-operations/",
+      "primaryKeyword": "what is investment banking operations",
+      "secondaryKeywords": [
+        "investment banking operations meaning",
+        "investment banking operations explained",
+        "investment banking operations process",
+        "investment banking operations functions",
+        "investment banking operations department",
+        "investment banking operations workflow",
+        "investment banking operations lifecycle",
+        "investment banking operations examples",
+        "investment banking operations responsibilities",
+        "investment banking operations roles",
+        "investment banking operations job role",
+        "investment banking operations skills",
+        "investment banking operations syllabus",
+        "investment banking operations modules",
+        "investment banking operations interview questions",
+        "investment banking operations for beginners",
+        "how investment banking operations work",
+        "front office middle office back office investment banking",
+        "middle office vs back office investment banking",
+        "investment banking operations vs investment banking",
+        "investment banking operations vs financial analyst",
+        "investment banking operations vs investment banker",
+        "investment banking operations career path",
+        "scope of investment banking operations in India",
+        "future of investment banking operations in India",
+        "investment banking operations jobs in India",
+        "investment banking operations salary in India",
+        "investment banking operations analyst salary",
+        "investment banking operations analyst skills",
+        "investment banking operations analyst responsibilities",
+        "how to become investment banking operations analyst",
+        "investment banking operations fresher jobs",
+        "investment banking operations jobs for BCom graduates",
+        "investment banking operations jobs for BBA graduates",
+        "investment banking operations jobs for MBA finance",
+        "investment banking operations certification worth it",
+        "is investment banking operations a good career",
+        "investment banking operations career for freshers",
+        "investment banking operations career after BCom"
+      ],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-kyc-aml-analyst",
+      "path": "/career-guides/kyc-aml-analyst/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/kyc-aml-analyst/",
+      "primaryKeyword": "what is KYC in banking",
+      "secondaryKeywords": [
+        "what is AML in banking",
+        "KYC and AML difference",
+        "KYC AML process",
+        "KYC onboarding process",
+        "customer due diligence process",
+        "enhanced due diligence meaning",
+        "transaction monitoring in AML",
+        "sanctions screening process",
+        "PEP screening meaning",
+        "adverse media screening",
+        "KYC risk rating",
+        "AML red flags",
+        "money laundering stages",
+        "KYC analyst roles and responsibilities",
+        "AML analyst roles and responsibilities",
+        "KYC analyst salary in India",
+        "AML analyst salary in India",
+        "how to become KYC analyst",
+        "how to become AML analyst",
+        "KYC analyst jobs for freshers",
+        "AML analyst jobs for freshers",
+        "KYC jobs after BCom",
+        "AML jobs after BCom",
+        "KYC interview questions",
+        "AML interview questions",
+        "KYC AML interview questions and answers",
+        "client onboarding analyst career",
+        "KYC remediation analyst",
+        "KYC operations analyst",
+        "financial crime analyst career",
+        "AML transaction monitoring analyst",
+        "KYC analyst career",
+        "KYC analyst interview questions",
+        "AML analyst career",
+        "AML analyst interview questions",
+        "client onboarding analyst salary in India",
+        "client onboarding analyst roles and responsibilities",
+        "how to become client onboarding analyst",
+        "client onboarding analyst jobs for freshers",
+        "client onboarding analyst interview questions",
+        "CDD analyst career",
+        "CDD analyst salary in India",
+        "CDD analyst roles and responsibilities",
+        "how to become CDD analyst",
+        "CDD analyst jobs for freshers",
+        "CDD analyst interview questions",
+        "transaction monitoring analyst career",
+        "transaction monitoring analyst salary in India",
+        "transaction monitoring analyst roles and responsibilities",
+        "how to become transaction monitoring analyst",
+        "transaction monitoring analyst jobs for freshers",
+        "transaction monitoring analyst interview questions"
+      ],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-finance-operations",
+      "path": "/career-guides/finance-operations/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/finance-operations/",
+      "primaryKeyword": "finance operations career",
+      "secondaryKeywords": [
+        "finance operations jobs",
+        "finance operations jobs in India",
+        "finance operations analyst",
+        "finance operations analyst salary India",
+        "finance operations analyst skills",
+        "finance operations analyst responsibilities",
+        "how to become finance operations analyst",
+        "global finance operations",
+        "global finance operations careers",
+        "financial operations analyst",
+        "financial operations analyst career",
+        "financial operations jobs",
+        "banking operations analyst",
+        "banking operations analyst career",
+        "banking operations analyst salary",
+        "BFSI operations jobs",
+        "BFSI operations career",
+        "BFSI jobs for freshers",
+        "GCC finance jobs India",
+        "GCC finance operations jobs",
+        "global capability centre finance jobs",
+        "KPO finance jobs India",
+        "KPO finance operations",
+        "shared services finance operations",
+        "finance operations jobs for BCom freshers",
+        "finance operations jobs for BBA freshers",
+        "finance operations jobs for MBA finance freshers",
+        "finance operations career after graduation",
+        "finance operations interview questions",
+        "finance operations skills for freshers",
+        "finance operations resume for freshers",
+        "finance operations job description",
+        "finance operations vs financial analyst",
+        "finance operations vs accounting",
+        "finance operations vs investment banking operations",
+        "investment banking operations analyst career",
+        "investment banking operations analyst salary in India",
+        "investment banking operations analyst roles and responsibilities",
+        "investment banking operations analyst jobs for freshers",
+        "investment banking operations analyst interview questions",
+        "finance operations analyst career",
+        "finance operations analyst salary in India",
+        "finance operations analyst roles and responsibilities",
+        "finance operations analyst jobs for freshers",
+        "finance operations analyst interview questions",
+        "banking operations analyst salary in India",
+        "banking operations analyst roles and responsibilities",
+        "how to become banking operations analyst",
+        "banking operations analyst jobs for freshers",
+        "banking operations analyst interview questions",
+        "payments operations analyst career",
+        "payments operations analyst salary in India",
+        "payments operations analyst roles and responsibilities",
+        "how to become payments operations analyst",
+        "payments operations analyst jobs for freshers",
+        "payments operations analyst interview questions"
+      ],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-trade-lifecycle",
+      "path": "/career-guides/trade-lifecycle/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/trade-lifecycle/",
+      "primaryKeyword": "trade lifecycle in investment banking",
+      "secondaryKeywords": [
+        "trade support analyst roles and responsibilities",
+        "how to become trade support analyst",
+        "trade support analyst jobs for freshers",
+        "middle office analyst salary in India",
+        "middle office analyst roles and responsibilities",
+        "how to become middle office analyst",
+        "middle office analyst jobs for freshers",
+        "settlement analyst salary in India",
+        "settlement analyst roles and responsibilities",
+        "how to become settlement analyst",
+        "settlement analyst jobs for freshers",
+        "settlement analyst interview questions",
+        "reconciliation analyst salary in India",
+        "reconciliation analyst roles and responsibilities",
+        "how to become reconciliation analyst",
+        "reconciliation analyst jobs for freshers",
+        "reconciliation analyst interview questions",
+        "corporate actions analyst salary in India",
+        "corporate actions analyst roles and responsibilities",
+        "how to become corporate actions analyst",
+        "corporate actions analyst jobs for freshers",
+        "corporate actions analyst interview questions",
+        "reference data analyst salary in India",
+        "reference data analyst roles and responsibilities",
+        "how to become reference data analyst",
+        "reference data analyst jobs for freshers",
+        "reference data analyst interview questions",
+        "collateral management analyst salary in India",
+        "collateral management analyst roles and responsibilities",
+        "how to become collateral management analyst",
+        "collateral management analyst jobs for freshers",
+        "collateral management analyst interview questions",
+        "trade lifecycle in investment banking",
+        "trade life cycle explained",
+        "trade lifecycle steps",
+        "trade lifecycle interview questions",
+        "trade lifecycle settlement process",
+        "front to back trade lifecycle",
+        "equity trade lifecycle",
+        "bond trade lifecycle",
+        "derivatives trade lifecycle",
+        "OTC derivatives trade lifecycle",
+        "trade confirmation process",
+        "trade affirmation process",
+        "trade settlement process",
+        "clearing and settlement in investment banking",
+        "T+1 settlement process India",
+        "trade settlement failure",
+        "failed trade management",
+        "settlement instructions banking",
+        "custodian role in trade settlement",
+        "reconciliation in investment banking",
+        "cash reconciliation process",
+        "position reconciliation process",
+        "nostro reconciliation",
+        "trade reconciliation interview questions",
+        "reconciliation analyst career",
+        "reconciliation analyst salary India",
+        "settlement analyst career",
+        "settlements associate job role",
+        "trade support analyst career",
+        "trade support analyst interview questions",
+        "middle office analyst career",
+        "middle office analyst interview questions",
+        "corporate actions meaning",
+        "corporate actions types",
+        "corporate actions in investment banking",
+        "corporate actions analyst career",
+        "corporate actions interview questions",
+        "dividend corporate action process",
+        "stock split corporate action process",
+        "rights issue corporate action",
+        "SWIFT in investment banking operations",
+        "SWIFT message types settlement",
+        "reference data analyst career",
+        "static data in investment banking",
+        "securities lending and borrowing operations",
+        "collateral management operations",
+        "collateral management analyst career",
+        "operational risk in investment banking",
+        "post trade processing",
+        "post trade operations career"
+      ],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-finance-careers-after-graduation",
+      "path": "/career-guides/finance-careers-after-graduation/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/finance-careers-after-graduation/",
+      "primaryKeyword": "best finance course after BCom",
+      "secondaryKeywords": [
+        "investment banking operations after BCom",
+        "finance jobs after BCom",
+        "banking jobs after BCom",
+        "finance operations career after BCom",
+        "KYC AML career after BCom",
+        "short term finance course after BCom",
+        "best finance course after BBA",
+        "investment banking operations after BBA",
+        "finance jobs after BBA",
+        "banking jobs after BBA",
+        "finance operations career after BBA",
+        "KYC AML career after BBA",
+        "short term finance course after BBA",
+        "best finance course after MCom",
+        "investment banking course after MCom",
+        "investment banking operations after MCom",
+        "finance jobs after MCom",
+        "banking jobs after MCom",
+        "finance operations career after MCom",
+        "KYC AML career after MCom",
+        "short term finance course after MCom",
+        "best finance course after MBA finance",
+        "investment banking course after MBA finance",
+        "investment banking operations after MBA finance",
+        "finance jobs after MBA finance",
+        "banking jobs after MBA finance",
+        "finance operations career after MBA finance",
+        "KYC AML career after MBA finance",
+        "short term finance course after MBA finance",
+        "best finance course after BA economics",
+        "investment banking course after BA economics",
+        "investment banking operations after BA economics",
+        "finance jobs after BA economics",
+        "banking jobs after BA economics",
+        "finance operations career after BA economics",
+        "KYC AML career after BA economics",
+        "short term finance course after BA economics",
+        "best finance course after BSc",
+        "investment banking course after BSc",
+        "investment banking operations after BSc",
+        "finance jobs after BSc",
+        "banking jobs after BSc",
+        "finance operations career after BSc",
+        "KYC AML career after BSc",
+        "short term finance course after BSc",
+        "best finance course after engineering",
+        "investment banking course after engineering",
+        "investment banking operations after engineering",
+        "finance jobs after engineering",
+        "banking jobs after engineering",
+        "finance operations career after engineering",
+        "KYC AML career after engineering",
+        "short term finance course after engineering",
+        "best finance course after graduates",
+        "investment banking course after graduates",
+        "investment banking operations after graduates",
+        "finance jobs after graduates",
+        "banking jobs after graduates",
+        "finance operations career after graduates",
+        "KYC AML career after graduates",
+        "short term finance course after graduates"
+      ],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-retail-banking-operations",
+      "path": "/career-guides/retail-banking-operations/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/retail-banking-operations/",
+      "primaryKeyword": "retail banking operations meaning",
+      "secondaryKeywords": [
+        "retail banking operations process",
+        "retail banking operations jobs",
+        "retail banking operations career",
+        "retail banking analyst",
+        "banking operations jobs for graduates",
+        "retail banking interview questions",
+        "bank operations interview questions",
+        "customer onboarding in retail banking",
+        "account opening process in banking",
+        "bank KYC process",
+        "loan operations in retail banking",
+        "deposit operations in banking",
+        "bank reconciliation process",
+        "retail banking vs corporate banking",
+        "retail banking vs investment banking",
+        "retail banking career after BCom",
+        "retail banking career after BBA"
+      ],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-digital-payments-operations",
+      "path": "/career-guides/digital-payments-operations/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/digital-payments-operations/",
+      "primaryKeyword": "digital payment operations",
+      "secondaryKeywords": [
+        "payments operations career",
+        "payments analyst career",
+        "payment operations analyst",
+        "payments operations jobs India",
+        "digital payments jobs for freshers",
+        "UPI operations",
+        "UPI payment process",
+        "NEFT RTGS IMPS difference",
+        "payment reconciliation",
+        "payment reconciliation analyst",
+        "merchant payments operations",
+        "card payments operations",
+        "payment gateway operations",
+        "chargeback operations",
+        "payment fraud operations",
+        "digital payments risk management",
+        "fintech payments career",
+        "payments operations interview questions",
+        "payment operations salary India",
+        "digital payments career after BCom"
+      ],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-financial-operations-faq",
+      "path": "/career-guides/financial-operations-faq/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/financial-operations-faq/",
+      "primaryKeyword": "which course is best for investment banking operations in India",
+      "secondaryKeywords": [
+        "which short term finance course can help me get a job",
+        "what should I learn for investment banking operations jobs",
+        "can a BCom graduate get into investment banking operations",
+        "can a BBA graduate work in investment banking operations",
+        "is KYC AML a good career for freshers",
+        "is finance operations a good career in India",
+        "what skills do banks look for in operations freshers",
+        "what is the difference between investment banking and investment banking operations",
+        "what is the difference between KYC analyst and AML analyst",
+        "what is the difference between trade support and settlement analyst",
+        "how long does it take to learn investment banking operations",
+        "how much does an investment banking operations course cost in India",
+        "what jobs can I get after investment banking operations training",
+        "what jobs can I get after a KYC AML course",
+        "what finance jobs can I get after BCom without MBA",
+        "what are the best finance careers after graduation",
+        "what is the easiest way to enter BFSI operations",
+        "do I need CFA for investment banking operations",
+        "do I need MBA for investment banking operations",
+        "can I learn investment banking operations online",
+        "where can I learn investment banking operations in Lucknow",
+        "which finance course is best under 50000",
+        "which finance course includes KYC AML and investment banking operations",
+        "which course teaches trade lifecycle settlements and reconciliation",
+        "which course teaches digital payments and finance operations",
+        "how to prepare for a KYC analyst interview",
+        "how to prepare for an investment banking operations interview",
+        "what is a trade lifecycle in simple words",
+        "what does a finance operations analyst do daily"
+      ],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-choosing-finance-career-course",
+      "path": "/career-guides/choosing-finance-career-course/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/choosing-finance-career-course/",
+      "primaryKeyword": "investment banking course with placement support",
+      "secondaryKeywords": [
+        "investment banking course with interview preparation",
+        "best short term investment banking course",
+        "best job oriented finance course",
+        "best finance course for freshers in India",
+        "best finance operations course in India",
+        "best KYC AML course in India",
+        "best banking operations course in India",
+        "best course for finance jobs after graduation",
+        "investment banking certification vs MBA",
+        "investment banking operations course vs CFA",
+        "investment banking operations course vs financial modelling",
+        "investment banking operations vs CFA",
+        "investment banking operations vs financial modelling"
+      ],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-26"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-fintech-operations",
+      "path": "/career-guides/fintech-operations/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/fintech-operations/",
+      "primaryKeyword": "fintech career for BCom graduates",
+      "secondaryKeywords": [
+        "fintech jobs for commerce graduates",
+        "fintech operations jobs",
+        "fintech analyst career",
+        "fintech operations analyst",
+        "what is fintech operations",
+        "fintech banking operations",
+        "fintech and digital payments",
+        "neo banking meaning",
+        "neo banking operations",
+        "fintech compliance jobs",
+        "fintech KYC AML jobs",
+        "fintech operations interview questions",
+        "fintech career after BBA",
+        "fintech career after MBA finance",
+        "fintech jobs in India for freshers"
+      ],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-24"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-reconciliation-analyst",
+      "path": "/career-guides/reconciliation-analyst/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/reconciliation-analyst/",
+      "primaryKeyword": "reconciliation analyst",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-investment-banking-operations-roles",
+      "path": "/career-guides/investment-banking-operations-roles/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/investment-banking-operations-roles/",
+      "primaryKeyword": "investment banking roles",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-trade-support-analyst",
+      "path": "/career-guides/trade-support-analyst/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/trade-support-analyst/",
+      "primaryKeyword": "trade support analyst",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-securities-operations",
+      "path": "/career-guides/securities-operations/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/securities-operations/",
+      "primaryKeyword": "securities operations",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-what-is-investment-banking",
+      "path": "/career-guides/what-is-investment-banking/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/what-is-investment-banking/",
+      "primaryKeyword": "what is investment banking",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-risk-operations-analyst",
+      "path": "/career-guides/risk-operations-analyst/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/risk-operations-analyst/",
+      "primaryKeyword": "risk operations analyst",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-credit-analyst",
+      "path": "/career-guides/credit-analyst/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/credit-analyst/",
+      "primaryKeyword": "credit analyst career",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-business-analyst-in-banking",
+      "path": "/career-guides/business-analyst-in-banking/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/business-analyst-in-banking/",
+      "primaryKeyword": "business analyst in banking",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-custody-operations",
+      "path": "/career-guides/custody-operations/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/custody-operations/",
+      "primaryKeyword": "custody operations career",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-credit-operations-analyst",
+      "path": "/career-guides/credit-operations-analyst/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/credit-operations-analyst/",
+      "primaryKeyword": "credit operations analyst",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-transaction-monitoring-analyst",
+      "path": "/career-guides/transaction-monitoring-analyst/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/transaction-monitoring-analyst/",
+      "primaryKeyword": "transaction monitoring analyst",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-middle-office-operations",
+      "path": "/career-guides/middle-office-operations/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/middle-office-operations/",
+      "primaryKeyword": "middle office operations career",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-back-office-banking-jobs",
+      "path": "/career-guides/back-office-banking-jobs/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/back-office-banking-jobs/",
+      "primaryKeyword": "back office banking jobs",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-settlement-analyst",
+      "path": "/career-guides/settlement-analyst/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/settlement-analyst/",
+      "primaryKeyword": "trade settlement analyst career",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-finance-learning-roadmap",
+      "path": "/career-guides/finance-learning-roadmap/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/finance-learning-roadmap/",
+      "primaryKeyword": "finance learning roadmap for graduates",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-operations-analyst-banking",
+      "path": "/career-guides/operations-analyst-banking/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/operations-analyst-banking/",
+      "primaryKeyword": "operations analyst in banking",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "site-route",
+      "id": "courses-banking-courses",
+      "path": "/courses/banking-courses/",
+      "canonicalUrl": "https://centaurcareers.in/courses/banking-courses/",
+      "primaryKeyword": "banking courses",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Commercial topic and career-direction landing page",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "site-route",
+      "id": "courses-banking-and-finance",
+      "path": "/courses/banking-and-finance/",
+      "canonicalUrl": "https://centaurcareers.in/courses/banking-and-finance/",
+      "primaryKeyword": "banking and finance course",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Commercial topic and career-direction landing page",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "site-route",
+      "id": "courses-finance-operations-training",
+      "path": "/courses/finance-operations-training/",
+      "canonicalUrl": "https://centaurcareers.in/courses/finance-operations-training/",
+      "primaryKeyword": "finance operations training topics",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Commercial topic and career-direction landing page",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "site-route",
+      "id": "lead-best-finance-course-placement",
+      "path": "/best-finance-course-in-india-with-placement/",
+      "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-india-with-placement/",
+      "primaryKeyword": "finance course placement comparison checklist India",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Commercial topic and career-direction landing page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "lead-best-investment-banking-course-india",
+      "path": "/best-investment-banking-course-india/",
+      "canonicalUrl": "https://centaurcareers.in/best-investment-banking-course-india/",
+      "primaryKeyword": "best investment banking course in India comparison",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Commercial topic and career-direction landing page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "lead-best-finance-course-after-graduation",
+      "path": "/best-finance-course-after-graduation/",
+      "canonicalUrl": "https://centaurcareers.in/best-finance-course-after-graduation/",
+      "primaryKeyword": "graduate finance course shortlist checklist",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Commercial topic and career-direction landing page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "lead-best-finance-course-after-bcom",
+      "path": "/best-finance-course-after-bcom/",
+      "canonicalUrl": "https://centaurcareers.in/best-finance-course-after-bcom/",
+      "primaryKeyword": "BCom finance course comparison checklist",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Commercial topic and career-direction landing page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "lead-finance-course-placement",
+      "path": "/finance-course-with-placement/",
+      "canonicalUrl": "https://centaurcareers.in/finance-course-with-placement/",
+      "primaryKeyword": "finance course placement support verification checklist",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Commercial topic and career-direction landing page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "lead-finance-course-job-guarantee",
+      "path": "/finance-course-with-job-guarantee/",
+      "canonicalUrl": "https://centaurcareers.in/finance-course-with-job-guarantee/",
+      "primaryKeyword": "finance course job guarantee terms checklist",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Commercial topic and career-direction landing page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "lead-finance-course-fees-india",
+      "path": "/finance-course-fees-in-india/",
+      "canonicalUrl": "https://centaurcareers.in/finance-course-fees-in-india/",
+      "primaryKeyword": "finance course total cost comparison checklist India",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Commercial topic and career-direction landing page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "lead-finance-course-duration",
+      "path": "/finance-course-duration/",
+      "canonicalUrl": "https://centaurcareers.in/finance-course-duration/",
+      "primaryKeyword": "finance course duration and study workload checklist",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Commercial topic and career-direction landing page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "lead-finance-course-eligibility",
+      "path": "/finance-course-eligibility/",
+      "canonicalUrl": "https://centaurcareers.in/finance-course-eligibility/",
+      "primaryKeyword": "finance course entry versus job eligibility checklist",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Commercial topic and career-direction landing page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "lead-online-finance-course-placement",
+      "path": "/online-finance-course-with-placement/",
+      "canonicalUrl": "https://centaurcareers.in/online-finance-course-with-placement/",
+      "primaryKeyword": "online finance course with placement in India",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Commercial topic and career-direction landing page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "lead-job-oriented-finance-course-india",
+      "path": "/job-oriented-finance-course-india/",
+      "canonicalUrl": "https://centaurcareers.in/job-oriented-finance-course-india/",
+      "primaryKeyword": "job oriented finance course role fit checklist",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Commercial topic and career-direction landing page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "lead-banking-finance-course-placement",
+      "path": "/banking-finance-course-with-placement/",
+      "canonicalUrl": "https://centaurcareers.in/banking-finance-course-with-placement/",
+      "primaryKeyword": "banking and finance placement support checklist",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Commercial topic and career-direction landing page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "lead-investment-banking-operations-course-placement",
+      "path": "/investment-banking-operations-course-with-placement/",
+      "canonicalUrl": "https://centaurcareers.in/investment-banking-operations-course-with-placement/",
+      "primaryKeyword": "investment banking operations placement readiness checklist",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Commercial topic and career-direction landing page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "lead-finance-institute-lucknow-placement",
+      "path": "/finance-institute-lucknow-with-placement/",
+      "canonicalUrl": "https://centaurcareers.in/finance-institute-lucknow-with-placement/",
+      "primaryKeyword": "Lucknow finance classroom and placement checklist",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Commercial topic and career-direction landing page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "lead-finance-course-cities-india",
+      "path": "/finance-course-cities-india/",
+      "canonicalUrl": "https://centaurcareers.in/finance-course-cities-india/",
+      "primaryKeyword": "finance course city access comparison checklist India",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Commercial topic and career-direction landing page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "lead-finance-course-vs-mba-cfa-modelling",
+      "path": "/finance-course-vs-mba-cfa-financial-modelling/",
+      "canonicalUrl": "https://centaurcareers.in/finance-course-vs-mba-cfa-financial-modelling/",
+      "primaryKeyword": "finance career path role fit worksheet MBA CFA modelling",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Commercial topic and career-direction landing page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "lead-which-finance-course-right",
+      "path": "/which-finance-course-is-right-for-me/",
+      "canonicalUrl": "https://centaurcareers.in/which-finance-course-is-right-for-me/",
+      "primaryKeyword": "finance course self assessment worksheet",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Commercial topic and career-direction landing page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "courses-finance-operations-syllabus",
+      "path": "/courses/finance-operations-syllabus/",
+      "canonicalUrl": "https://centaurcareers.in/courses/finance-operations-syllabus/",
+      "primaryKeyword": "finance operations syllabus",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Commercial topic and career-direction landing page",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "site-route",
+      "id": "courses-finance-course-fees-eligibility",
+      "path": "/courses/finance-course-fees-eligibility/",
+      "canonicalUrl": "https://centaurcareers.in/courses/finance-course-fees-eligibility/",
+      "primaryKeyword": "finance course fees and eligibility",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Commercial topic and career-direction landing page",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "site-route",
+      "id": "courses-finance-course-for-graduates",
+      "path": "/courses/finance-course-for-graduates/",
+      "canonicalUrl": "https://centaurcareers.in/courses/finance-course-for-graduates/",
+      "primaryKeyword": "finance course for graduates",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Commercial topic and career-direction landing page",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "site-route",
+      "id": "comparison-best-finance-institutes-india",
+      "path": "/compare/best-finance-institutes-india/",
+      "canonicalUrl": "https://centaurcareers.in/compare/best-finance-institutes-india/",
+      "primaryKeyword": "best finance institute in India",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Decision-support comparison page",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "site-route",
+      "id": "comparison-finance-operations-vs-financial-modelling-cfa",
+      "path": "/compare/finance-operations-vs-financial-modelling-cfa/",
+      "canonicalUrl": "https://centaurcareers.in/compare/finance-operations-vs-financial-modelling-cfa/",
+      "primaryKeyword": "financial modelling course",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Decision-support comparison page",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "site-route",
+      "id": "comparison-online-vs-offline-finance-training",
+      "path": "/compare/online-vs-offline-finance-training/",
+      "canonicalUrl": "https://centaurcareers.in/compare/online-vs-offline-finance-training/",
+      "primaryKeyword": "online finance course",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Decision-support comparison page",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "site-route",
+      "id": "comparison-investment-banking-operations-vs-financial-analyst",
+      "path": "/compare/investment-banking-operations-vs-financial-analyst/",
+      "canonicalUrl": "https://centaurcareers.in/compare/investment-banking-operations-vs-financial-analyst/",
+      "primaryKeyword": "investment banking operations and financial analyst comparison",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Decision-support comparison page",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "site-route",
+      "id": "comparison-banking-vs-finance-careers",
+      "path": "/compare/banking-vs-finance-careers/",
+      "canonicalUrl": "https://centaurcareers.in/compare/banking-vs-finance-careers/",
+      "primaryKeyword": "banking vs finance careers",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Decision-support comparison page",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "site-route",
+      "id": "faqs-finance-program",
+      "path": "/faqs/finance-program/",
+      "canonicalUrl": "https://centaurcareers.in/faqs/finance-program/",
+      "primaryKeyword": "finance course FAQ",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Program trust and decision-support FAQ page",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "site-route",
+      "id": "comparison-investment-banking-operations",
+      "path": "/compare/investment-banking-operations-courses/",
+      "canonicalUrl": "https://centaurcareers.in/compare/investment-banking-operations-courses/",
+      "primaryKeyword": "Imarticus investment banking course alternative",
+      "secondaryKeywords": [
+        "Imarticus CIBOP alternative",
+        "Imarticus vs other investment banking courses",
+        "Proschool investment banking alternative",
+        "IMS Proschool investment banking course alternative",
+        "Proschool vs Imarticus investment banking",
+        "upGrad investment banking operations alternative",
+        "TimesPro investment banking operations alternative",
+        "MentorMeCareers investment banking alternative",
+        "SmartSteps finance operations alternative",
+        "best alternatives to Imarticus CIBOP",
+        "best alternatives to Proschool investment banking course"
+      ],
+      "keywordPurpose": "Factual comparison framework for investment banking operations courses",
+      "lastModified": "2026-09-26"
+    },
+    {
+      "kind": "blog-category",
+      "id": "blog-category-career-guides",
+      "path": "/blog/category/career-guides/",
+      "canonicalUrl": "https://centaurcareers.in/blog/category/career-guides/",
+      "primaryKeyword": "finance career blog",
+      "secondaryKeywords": [
+        "finance career guides",
+        "finance career advice",
+        "banking career blog"
+      ],
+      "keywordPurpose": "Published article category archive",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-category",
+      "id": "blog-category-finance-operations",
+      "path": "/blog/category/finance-operations/",
+      "canonicalUrl": "https://centaurcareers.in/blog/category/finance-operations/",
+      "primaryKeyword": "finance operations blog",
+      "secondaryKeywords": [
+        "finance operations careers",
+        "finance operations skills",
+        "banking operations blog"
+      ],
+      "keywordPurpose": "Published article category archive",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-category",
+      "id": "blog-category-industry-updates",
+      "path": "/blog/category/industry-updates/",
+      "canonicalUrl": "https://centaurcareers.in/blog/category/industry-updates/",
+      "primaryKeyword": "finance industry updates",
+      "secondaryKeywords": [
+        "banking industry news",
+        "finance industry insights",
+        "BFSI updates"
+      ],
+      "keywordPurpose": "Published article category archive",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "blog-category",
+      "id": "blog-category-interview-preparation",
+      "path": "/blog/category/interview-preparation/",
+      "canonicalUrl": "https://centaurcareers.in/blog/category/interview-preparation/",
+      "primaryKeyword": "finance interview preparation",
+      "secondaryKeywords": [
+        "banking interview preparation",
+        "finance interview questions",
+        "BFSI interview guide"
+      ],
+      "keywordPurpose": "Published article category archive",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-category",
+      "id": "blog-category-investment-banking",
+      "path": "/blog/category/investment-banking/",
+      "canonicalUrl": "https://centaurcareers.in/blog/category/investment-banking/",
+      "primaryKeyword": "investment banking blog",
+      "secondaryKeywords": [
+        "investment banking insights",
+        "investment banking operations",
+        "investment banking careers"
+      ],
+      "keywordPurpose": "Published article category archive",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-category",
+      "id": "blog-category-retail-banking",
+      "path": "/blog/category/retail-banking/",
+      "canonicalUrl": "https://centaurcareers.in/blog/category/retail-banking/",
+      "primaryKeyword": "retail banking blog",
+      "secondaryKeywords": [
+        "retail banking operations",
+        "retail banking careers",
+        "banking services explained"
+      ],
+      "keywordPurpose": "Published article category archive",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-article",
+      "id": "accrual-vs-deferral-accounting",
+      "path": "/blog/accrual-vs-deferral-accounting/",
+      "canonicalUrl": "https://centaurcareers.in/blog/accrual-vs-deferral-accounting/",
+      "primaryKeyword": "accrual vs deferral",
+      "secondaryKeywords": [
+        "accrual accounting",
+        "deferral accounting",
+        "adjusting entries",
+        "accounting timing"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-article",
+      "id": "asset-servicing-operations-corporate-actions",
+      "path": "/blog/asset-servicing-operations-corporate-actions/",
+      "canonicalUrl": "https://centaurcareers.in/blog/asset-servicing-operations-corporate-actions/",
+      "primaryKeyword": "asset servicing operations",
+      "secondaryKeywords": [
+        "corporate actions operations",
+        "asset servicing workflow",
+        "income events",
+        "securities operations"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-article",
+      "id": "cash-flow-statement-direct-vs-indirect",
+      "path": "/blog/cash-flow-statement-direct-vs-indirect/",
+      "canonicalUrl": "https://centaurcareers.in/blog/cash-flow-statement-direct-vs-indirect/",
+      "primaryKeyword": "cash flow statement direct vs indirect",
+      "secondaryKeywords": [
+        "direct method cash flow statement",
+        "indirect method cash flow statement",
+        "cash flow statement example",
+        "financial statements"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-article",
+      "id": "chargeback-process-evidence-operations",
+      "path": "/blog/chargeback-process-evidence-operations/",
+      "canonicalUrl": "https://centaurcareers.in/blog/chargeback-process-evidence-operations/",
+      "primaryKeyword": "chargeback process",
+      "secondaryKeywords": [
+        "chargeback operations",
+        "chargeback evidence",
+        "payment dispute process",
+        "dispute review"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-article",
+      "id": "enhanced-due-diligence-edd-process",
+      "path": "/blog/enhanced-due-diligence-edd-process/",
+      "canonicalUrl": "https://centaurcareers.in/blog/enhanced-due-diligence-edd-process/",
+      "primaryKeyword": "enhanced due diligence process",
+      "secondaryKeywords": [
+        "EDD in KYC",
+        "enhanced customer due diligence",
+        "CDD and EDD",
+        "AML controls"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-article",
+      "id": "finance-operations-vs-accounting",
+      "path": "/blog/finance-operations-vs-accounting/",
+      "canonicalUrl": "https://centaurcareers.in/blog/finance-operations-vs-accounting/",
+      "primaryKeyword": "finance operations vs accounting",
+      "secondaryKeywords": [
+        "finance operations careers",
+        "accounting careers",
+        "finance operations skills",
+        "accounting vs finance operations"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-article",
+      "id": "general-ledger-vs-subledger",
+      "path": "/blog/general-ledger-vs-subledger/",
+      "canonicalUrl": "https://centaurcareers.in/blog/general-ledger-vs-subledger/",
+      "primaryKeyword": "general ledger vs subledger",
+      "secondaryKeywords": [
+        "subledger reconciliation",
+        "general ledger reconciliation",
+        "control account",
+        "accounting controls"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-article",
+      "id": "how-to-evaluate-finance-institute-reviews",
+      "path": "/blog/how-to-evaluate-finance-institute-reviews/",
+      "canonicalUrl": "https://centaurcareers.in/blog/how-to-evaluate-finance-institute-reviews/",
+      "primaryKeyword": "finance institute reviews",
+      "secondaryKeywords": [
+        "finance course reviews India",
+        "best finance institute reviews",
+        "finance course placement reviews",
+        "how to choose a finance institute"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-article",
+      "id": "maker-checker-controls-banking-operations",
+      "path": "/blog/maker-checker-controls-banking-operations/",
+      "canonicalUrl": "https://centaurcareers.in/blog/maker-checker-controls-banking-operations/",
+      "primaryKeyword": "maker checker in banking",
+      "secondaryKeywords": [
+        "maker checker control",
+        "four eyes principle",
+        "banking operations controls",
+        "segregation of duties"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-article",
+      "id": "month-end-close-process-finance-operations",
+      "path": "/blog/month-end-close-process-finance-operations/",
+      "canonicalUrl": "https://centaurcareers.in/blog/month-end-close-process-finance-operations/",
+      "primaryKeyword": "month end close process",
+      "secondaryKeywords": [
+        "month end close checklist",
+        "financial close process",
+        "record to report",
+        "finance operations"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-article",
+      "id": "nbfc-vs-bank-difference-india",
+      "path": "/blog/nbfc-vs-bank-difference-india/",
+      "canonicalUrl": "https://centaurcareers.in/blog/nbfc-vs-bank-difference-india/",
+      "primaryKeyword": "NBFC vs bank",
+      "secondaryKeywords": [
+        "difference between bank and NBFC",
+        "NBFC meaning India",
+        "banking institutions",
+        "Indian financial system"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-article",
+      "id": "payment-gateway-process-settlement",
+      "path": "/blog/payment-gateway-process-settlement/",
+      "canonicalUrl": "https://centaurcareers.in/blog/payment-gateway-process-settlement/",
+      "primaryKeyword": "payment gateway process",
+      "secondaryKeywords": [
+        "payment processing flow",
+        "payment gateway settlement",
+        "payment operations",
+        "payment exceptions"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-article",
+      "id": "payment-reconciliation-process-breaks-controls",
+      "path": "/blog/payment-reconciliation-process-breaks-controls/",
+      "canonicalUrl": "https://centaurcareers.in/blog/payment-reconciliation-process-breaks-controls/",
+      "primaryKeyword": "payment reconciliation",
+      "secondaryKeywords": [
+        "payment reconciliation process",
+        "settlement reconciliation",
+        "payment breaks",
+        "digital payments operations"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-article",
+      "id": "procure-to-pay-process-controls",
+      "path": "/blog/procure-to-pay-process-controls/",
+      "canonicalUrl": "https://centaurcareers.in/blog/procure-to-pay-process-controls/",
+      "primaryKeyword": "procure to pay process",
+      "secondaryKeywords": [
+        "procure to pay steps",
+        "accounts payable process",
+        "P2P controls",
+        "invoice matching"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-article",
+      "id": "questions-to-ask-finance-institute-before-enrolling",
+      "path": "/blog/questions-to-ask-finance-institute-before-enrolling/",
+      "canonicalUrl": "https://centaurcareers.in/blog/questions-to-ask-finance-institute-before-enrolling/",
+      "primaryKeyword": "questions to ask finance institute",
+      "secondaryKeywords": [
+        "finance course checklist",
+        "questions before joining finance course",
+        "finance institute placement questions",
+        "finance course eligibility and fees"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-article",
+      "id": "r2r-p2p-o2c-finance-processes",
+      "path": "/blog/r2r-p2p-o2c-finance-processes/",
+      "canonicalUrl": "https://centaurcareers.in/blog/r2r-p2p-o2c-finance-processes/",
+      "primaryKeyword": "R2R P2P O2C finance processes",
+      "secondaryKeywords": [
+        "record to report",
+        "procure to pay",
+        "order to cash",
+        "shared services finance"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-article",
+      "id": "retail-vs-commercial-banking",
+      "path": "/blog/retail-vs-commercial-banking/",
+      "canonicalUrl": "https://centaurcareers.in/blog/retail-vs-commercial-banking/",
+      "primaryKeyword": "retail banking vs commercial banking",
+      "secondaryKeywords": [
+        "retail banking and commercial banking",
+        "commercial banking roles",
+        "retail banking operations",
+        "banking products"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-article",
+      "id": "rtgs-neft-imps-upi-difference",
+      "path": "/blog/rtgs-neft-imps-upi-difference/",
+      "canonicalUrl": "https://centaurcareers.in/blog/rtgs-neft-imps-upi-difference/",
+      "primaryKeyword": "RTGS NEFT IMPS UPI difference",
+      "secondaryKeywords": [
+        "RTGS vs NEFT",
+        "IMPS vs UPI",
+        "Indian payment rails",
+        "digital payments operations"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-article",
+      "id": "sanctions-screening-process-banking",
+      "path": "/blog/sanctions-screening-process-banking/",
+      "canonicalUrl": "https://centaurcareers.in/blog/sanctions-screening-process-banking/",
+      "primaryKeyword": "sanctions screening process",
+      "secondaryKeywords": [
+        "sanctions screening alerts",
+        "compliance operations",
+        "false positive review",
+        "AML screening"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-article",
+      "id": "trade-capture-process-controls",
+      "path": "/blog/trade-capture-process-controls/",
+      "canonicalUrl": "https://centaurcareers.in/blog/trade-capture-process-controls/",
+      "primaryKeyword": "trade capture process",
+      "secondaryKeywords": [
+        "trade capture",
+        "trade data validation",
+        "securities operations",
+        "trade operations controls"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-article",
+      "id": "trade-confirmation-vs-affirmation",
+      "path": "/blog/trade-confirmation-vs-affirmation/",
+      "canonicalUrl": "https://centaurcareers.in/blog/trade-confirmation-vs-affirmation/",
+      "primaryKeyword": "trade confirmation vs affirmation",
+      "secondaryKeywords": [
+        "trade affirmation",
+        "trade confirmation process",
+        "middle office operations",
+        "trade matching"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-article",
+      "id": "working-capital-cycle-explained",
+      "path": "/blog/working-capital-cycle-explained/",
+      "canonicalUrl": "https://centaurcareers.in/blog/working-capital-cycle-explained/",
+      "primaryKeyword": "working capital cycle",
+      "secondaryKeywords": [
+        "cash conversion cycle",
+        "working capital formula",
+        "days inventory outstanding",
+        "finance operations"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-article",
+      "id": "accounting-conventions-principles-examples",
+      "path": "/blog/accounting-conventions-principles-examples/",
+      "canonicalUrl": "https://centaurcareers.in/blog/accounting-conventions-principles-examples/",
+      "primaryKeyword": "accounting conventions",
+      "secondaryKeywords": [
+        "accounting principles and conventions",
+        "accounting concepts with examples",
+        "accounting conventions examples",
+        "basic accounting principles"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "blog-article",
+      "id": "ai-in-banking-use-cases-risks",
+      "path": "/blog/ai-in-banking-use-cases-risks/",
+      "canonicalUrl": "https://centaurcareers.in/blog/ai-in-banking-use-cases-risks/",
+      "primaryKeyword": "ai in banking",
+      "secondaryKeywords": [
+        "artificial intelligence in banking",
+        "AI banking use cases",
+        "AI risks in financial services",
+        "banking AI governance"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "blog-article",
+      "id": "banking-sector-india-structure-operations",
+      "path": "/blog/banking-sector-india-structure-operations/",
+      "canonicalUrl": "https://centaurcareers.in/blog/banking-sector-india-structure-operations/",
+      "primaryKeyword": "banking sector",
+      "secondaryKeywords": [
+        "banking sector in India",
+        "Indian banking system structure",
+        "banking operations in India",
+        "types of banks in India"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "blog-article",
+      "id": "bfsi-domain-banking-financial-services-insurance",
+      "path": "/blog/bfsi-domain-banking-financial-services-insurance/",
+      "canonicalUrl": "https://centaurcareers.in/blog/bfsi-domain-banking-financial-services-insurance/",
+      "primaryKeyword": "bfsi domain",
+      "secondaryKeywords": [
+        "BFSI meaning",
+        "banking financial services and insurance",
+        "BFSI sector in India",
+        "BFSI jobs and roles"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "blog-article",
+      "id": "clearing-and-settlement-explained",
+      "path": "/blog/clearing-and-settlement-explained/",
+      "canonicalUrl": "https://centaurcareers.in/blog/clearing-and-settlement-explained/",
+      "primaryKeyword": "clearing settlement",
+      "secondaryKeywords": [
+        "clearing and settlement explained",
+        "clearing vs settlement",
+        "securities settlement process",
+        "post trade operations"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "blog-article",
+      "id": "cost-accounting-vs-management-accounting",
+      "path": "/blog/cost-accounting-vs-management-accounting/",
+      "canonicalUrl": "https://centaurcareers.in/blog/cost-accounting-vs-management-accounting/",
+      "primaryKeyword": "cost and management accounting",
+      "secondaryKeywords": [
+        "cost accounting vs management accounting",
+        "management accounting meaning",
+        "cost accounting purpose",
+        "cost accounting and management accounting differences"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "blog-article",
+      "id": "credit-analysis-basics-beginners",
+      "path": "/blog/credit-analysis-basics-beginners/",
+      "canonicalUrl": "https://centaurcareers.in/blog/credit-analysis-basics-beginners/",
+      "primaryKeyword": "credit analysis",
+      "secondaryKeywords": [
+        "credit analysis for beginners",
+        "credit analysis process",
+        "financial statement credit analysis",
+        "credit analyst basics"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "blog-article",
+      "id": "credit-risk-management-banking",
+      "path": "/blog/credit-risk-management-banking/",
+      "canonicalUrl": "https://centaurcareers.in/blog/credit-risk-management-banking/",
+      "primaryKeyword": "credit risk",
+      "secondaryKeywords": [
+        "credit risk management in banking",
+        "bank credit risk process",
+        "credit risk controls",
+        "credit risk analyst"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "blog-article",
+      "id": "failed-settlement-reasons-resolution",
+      "path": "/blog/failed-settlement-reasons-resolution/",
+      "canonicalUrl": "https://centaurcareers.in/blog/failed-settlement-reasons-resolution/",
+      "primaryKeyword": "failed settlement",
+      "secondaryKeywords": [
+        "failed settlement reasons",
+        "settlement failure resolution",
+        "securities settlement break",
+        "settlement exception process"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "blog-article",
+      "id": "financial-reporting-process-controls",
+      "path": "/blog/financial-reporting-process-controls/",
+      "canonicalUrl": "https://centaurcareers.in/blog/financial-reporting-process-controls/",
+      "primaryKeyword": "financial reporting",
+      "secondaryKeywords": [
+        "financial reporting process",
+        "financial reporting controls",
+        "month end close process",
+        "financial reporting roles"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "blog-article",
+      "id": "front-middle-back-office-investment-banking",
+      "path": "/blog/front-middle-back-office-investment-banking/",
+      "canonicalUrl": "https://centaurcareers.in/blog/front-middle-back-office-investment-banking/",
+      "primaryKeyword": "front middle back office",
+      "secondaryKeywords": [
+        "front office vs middle office vs back office",
+        "investment banking front office roles",
+        "middle office banking jobs",
+        "back office investment banking operations"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "blog-article",
+      "id": "investment-banking-skills-graduates",
+      "path": "/blog/investment-banking-skills-graduates/",
+      "canonicalUrl": "https://centaurcareers.in/blog/investment-banking-skills-graduates/",
+      "primaryKeyword": "investment banking skills",
+      "secondaryKeywords": [
+        "investment banking skills for graduates",
+        "investment banking operations skills",
+        "investment banking skills for freshers",
+        "trade operations analyst skills"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "blog-article",
+      "id": "investment-management-meaning-process-roles",
+      "path": "/blog/investment-management-meaning-process-roles/",
+      "canonicalUrl": "https://centaurcareers.in/blog/investment-management-meaning-process-roles/",
+      "primaryKeyword": "investment management",
+      "secondaryKeywords": [
+        "investment management meaning",
+        "investment management process",
+        "investment operations roles",
+        "portfolio operations workflow"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "blog-article",
+      "id": "loan-processing-steps-workflow",
+      "path": "/blog/loan-processing-steps-workflow/",
+      "canonicalUrl": "https://centaurcareers.in/blog/loan-processing-steps-workflow/",
+      "primaryKeyword": "loan processing",
+      "secondaryKeywords": [
+        "loan processing steps",
+        "loan processing workflow in banking",
+        "bank loan application process",
+        "loan operations process"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "blog-article",
+      "id": "money-market-instruments-operations",
+      "path": "/blog/money-market-instruments-operations/",
+      "canonicalUrl": "https://centaurcareers.in/blog/money-market-instruments-operations/",
+      "primaryKeyword": "money market",
+      "secondaryKeywords": [
+        "money market instruments",
+        "money market operations",
+        "Treasury Bills operations",
+        "repo transaction process"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "blog-article",
+      "id": "transaction-monitoring-alerts-escalation",
+      "path": "/blog/transaction-monitoring-alerts-escalation/",
+      "canonicalUrl": "https://centaurcareers.in/blog/transaction-monitoring-alerts-escalation/",
+      "primaryKeyword": "transaction monitoring",
+      "secondaryKeywords": [
+        "transaction monitoring alerts",
+        "transaction monitoring process",
+        "AML alert review",
+        "financial crime analyst escalation"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "blog-article",
+      "id": "treasury-operations-roles-workflow",
+      "path": "/blog/treasury-operations-roles-workflow/",
+      "canonicalUrl": "https://centaurcareers.in/blog/treasury-operations-roles-workflow/",
+      "primaryKeyword": "treasury operations",
+      "secondaryKeywords": [
+        "treasury operations roles",
+        "treasury operations workflow",
+        "bank treasury operations",
+        "treasury analyst skills"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "blog-article",
+      "id": "upi-payment-lifecycle",
+      "path": "/blog/upi-payment-lifecycle/",
+      "canonicalUrl": "https://centaurcareers.in/blog/upi-payment-lifecycle/",
+      "primaryKeyword": "upi payment lifecycle",
+      "secondaryKeywords": [
+        "UPI payment process",
+        "UPI transaction lifecycle",
+        "how UPI payments work",
+        "UPI payment operations"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "blog-article",
+      "id": "what-is-aml-controls-workflow",
+      "path": "/blog/what-is-aml-controls-workflow/",
+      "canonicalUrl": "https://centaurcareers.in/blog/what-is-aml-controls-workflow/",
+      "primaryKeyword": "aml meaning",
+      "secondaryKeywords": [
+        "what is AML",
+        "anti money laundering meaning",
+        "AML controls workflow",
+        "AML process in banking"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "blog-article",
+      "id": "what-is-kyc-process-documents",
+      "path": "/blog/what-is-kyc-process-documents/",
+      "canonicalUrl": "https://centaurcareers.in/blog/what-is-kyc-process-documents/",
+      "primaryKeyword": "kyc meaning",
+      "secondaryKeywords": [
+        "what is KYC",
+        "KYC process in banking",
+        "KYC documents in India",
+        "customer due diligence process"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "blog-article",
+      "id": "accounting-principles-explained",
+      "path": "/blog/accounting-principles-explained/",
+      "canonicalUrl": "https://centaurcareers.in/blog/accounting-principles-explained/",
+      "primaryKeyword": "accounting principles",
+      "secondaryKeywords": [
+        "accounting basics",
+        "debit and credit",
+        "finance operations"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "accounts-receivable-vs-payable",
+      "path": "/blog/accounts-receivable-vs-payable/",
+      "canonicalUrl": "https://centaurcareers.in/blog/accounts-receivable-vs-payable/",
+      "primaryKeyword": "accounts receivable vs accounts payable",
+      "secondaryKeywords": [
+        "accounts receivable",
+        "accounts payable",
+        "reconciliation process"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "banking-interview-questions-freshers",
+      "path": "/blog/banking-interview-questions-freshers/",
+      "canonicalUrl": "https://centaurcareers.in/blog/banking-interview-questions-freshers/",
+      "primaryKeyword": "banking interview questions for freshers",
+      "secondaryKeywords": [
+        "banking interview questions",
+        "KYC interview questions",
+        "banking careers"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "bonds-vs-equities-difference",
+      "path": "/blog/bonds-vs-equities-difference/",
+      "canonicalUrl": "https://centaurcareers.in/blog/bonds-vs-equities-difference/",
+      "primaryKeyword": "bonds vs equities",
+      "secondaryKeywords": [
+        "bond vs equity",
+        "fixed income",
+        "securities operations"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "business-analyst-vs-financial-analyst-finance",
+      "path": "/blog/business-analyst-vs-financial-analyst-finance/",
+      "canonicalUrl": "https://centaurcareers.in/blog/business-analyst-vs-financial-analyst-finance/",
+      "primaryKeyword": "business analyst vs financial analyst",
+      "secondaryKeywords": [
+        "financial analyst roles",
+        "financial analysis",
+        "finance careers"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "compliance-analyst-duties-career-path",
+      "path": "/blog/compliance-analyst-duties-career-path/",
+      "canonicalUrl": "https://centaurcareers.in/blog/compliance-analyst-duties-career-path/",
+      "primaryKeyword": "compliance analyst duties",
+      "secondaryKeywords": [
+        "compliance analyst career path",
+        "KYC analyst",
+        "AML analyst"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "derivatives-meaning-types-operations",
+      "path": "/blog/derivatives-meaning-types-operations/",
+      "canonicalUrl": "https://centaurcareers.in/blog/derivatives-meaning-types-operations/",
+      "primaryKeyword": "derivatives meaning",
+      "secondaryKeywords": [
+        "types of derivatives",
+        "derivatives operations",
+        "financial markets"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "digital-banking-services-operations",
+      "path": "/blog/digital-banking-services-operations/",
+      "canonicalUrl": "https://centaurcareers.in/blog/digital-banking-services-operations/",
+      "primaryKeyword": "digital banking services",
+      "secondaryKeywords": [
+        "digital banking operations",
+        "payments operations",
+        "banking services"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "finance-operations-resume-skills-examples",
+      "path": "/blog/finance-operations-resume-skills-examples/",
+      "canonicalUrl": "https://centaurcareers.in/blog/finance-operations-resume-skills-examples/",
+      "primaryKeyword": "finance operations resume",
+      "secondaryKeywords": [
+        "finance operations skills",
+        "finance resume skills",
+        "finance jobs"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "finance-process-associate-role",
+      "path": "/blog/finance-process-associate-role/",
+      "canonicalUrl": "https://centaurcareers.in/blog/finance-process-associate-role/",
+      "primaryKeyword": "finance process associate",
+      "secondaryKeywords": [
+        "finance process associate role",
+        "finance process associate skills",
+        "banking process associate"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "financial-market-intermediaries",
+      "path": "/blog/financial-market-intermediaries/",
+      "canonicalUrl": "https://centaurcareers.in/blog/financial-market-intermediaries/",
+      "primaryKeyword": "financial market intermediaries",
+      "secondaryKeywords": [
+        "financial intermediaries",
+        "types of financial intermediaries",
+        "market intermediary roles"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "financial-products-and-services-banking",
+      "path": "/blog/financial-products-and-services-banking/",
+      "canonicalUrl": "https://centaurcareers.in/blog/financial-products-and-services-banking/",
+      "primaryKeyword": "financial products and services",
+      "secondaryKeywords": [
+        "banking products and services",
+        "types of financial products",
+        "financial services explained"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "fintech-operations-roles-workflows",
+      "path": "/blog/fintech-operations-roles-workflows/",
+      "canonicalUrl": "https://centaurcareers.in/blog/fintech-operations-roles-workflows/",
+      "primaryKeyword": "fintech operations roles",
+      "secondaryKeywords": [
+        "fintech operations",
+        "payments operations",
+        "digital banking"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "golden-rules-of-accounting",
+      "path": "/blog/golden-rules-of-accounting/",
+      "canonicalUrl": "https://centaurcareers.in/blog/golden-rules-of-accounting/",
+      "primaryKeyword": "golden rules of accounting",
+      "secondaryKeywords": [
+        "debit and credit rules",
+        "accounting basics",
+        "journal entries"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "investment-banking-career-path-india",
+      "path": "/blog/investment-banking-career-path-india/",
+      "canonicalUrl": "https://centaurcareers.in/blog/investment-banking-career-path-india/",
+      "primaryKeyword": "investment banking career path in India",
+      "secondaryKeywords": [
+        "investment banking jobs",
+        "investment banking operations",
+        "finance careers"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "investment-banking-roles-teams",
+      "path": "/blog/investment-banking-roles-teams/",
+      "canonicalUrl": "https://centaurcareers.in/blog/investment-banking-roles-teams/",
+      "primaryKeyword": "investment banking roles and teams",
+      "secondaryKeywords": [
+        "investment banking jobs",
+        "investment banking operations",
+        "finance careers"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "investment-banks-in-india-functions-roles",
+      "path": "/blog/investment-banks-in-india-functions-roles/",
+      "canonicalUrl": "https://centaurcareers.in/blog/investment-banks-in-india-functions-roles/",
+      "primaryKeyword": "investment banks in India",
+      "secondaryKeywords": [
+        "investment banking functions",
+        "investment banking roles",
+        "finance careers"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "neo-banking-products-controls",
+      "path": "/blog/neo-banking-products-controls/",
+      "canonicalUrl": "https://centaurcareers.in/blog/neo-banking-products-controls/",
+      "primaryKeyword": "neo banking",
+      "secondaryKeywords": [
+        "neo banking products",
+        "digital banking controls",
+        "fintech operations"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "reconciliation-process-steps-finance",
+      "path": "/blog/reconciliation-process-steps-finance/",
+      "canonicalUrl": "https://centaurcareers.in/blog/reconciliation-process-steps-finance/",
+      "primaryKeyword": "reconciliation process",
+      "secondaryKeywords": [
+        "reconciliation steps",
+        "bank reconciliation",
+        "finance operations"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "risk-management-in-banking",
+      "path": "/blog/risk-management-in-banking/",
+      "canonicalUrl": "https://centaurcareers.in/blog/risk-management-in-banking/",
+      "primaryKeyword": "risk management in banking",
+      "secondaryKeywords": [
+        "banking risk management types",
+        "banking risk controls",
+        "risk analyst banking"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "securities-operations-workflow-roles",
+      "path": "/blog/securities-operations-workflow-roles/",
+      "canonicalUrl": "https://centaurcareers.in/blog/securities-operations-workflow-roles/",
+      "primaryKeyword": "securities operations workflow",
+      "secondaryKeywords": [
+        "trade lifecycle",
+        "settlement operations"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "trade-support-analyst-duties-skills",
+      "path": "/blog/trade-support-analyst-duties-skills/",
+      "canonicalUrl": "https://centaurcareers.in/blog/trade-support-analyst-duties-skills/",
+      "primaryKeyword": "trade support analyst duties",
+      "secondaryKeywords": [
+        "trade support duties",
+        "securities operations",
+        "trade lifecycle"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "trial-balance-format-purpose-example",
+      "path": "/blog/trial-balance-format-purpose-example/",
+      "canonicalUrl": "https://centaurcareers.in/blog/trial-balance-format-purpose-example/",
+      "primaryKeyword": "trial balance format",
+      "secondaryKeywords": [
+        "trial balance meaning",
+        "trial balance example",
+        "accounting basics"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "kyc-onboarding-case-file-example",
+      "path": "/blog/kyc-onboarding-case-file-example/",
+      "canonicalUrl": "https://centaurcareers.in/blog/kyc-onboarding-case-file-example/",
+      "primaryKeyword": "KYC onboarding process",
+      "secondaryKeywords": [
+        "KYC case study",
+        "customer due diligence process",
+        "KYC analyst workflow"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-26"
+    },
+    {
+      "kind": "blog-article",
+      "id": "settlement-trade-break-worked-example",
+      "path": "/blog/settlement-trade-break-worked-example/",
+      "canonicalUrl": "https://centaurcareers.in/blog/settlement-trade-break-worked-example/",
+      "primaryKeyword": "trade settlement break",
+      "secondaryKeywords": [
+        "settlement break investigation",
+        "trade settlement operations",
+        "trade break resolution"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-26"
+    },
+    {
+      "kind": "blog-article",
+      "id": "balance-sheet-meaning-format-example",
+      "path": "/blog/balance-sheet-meaning-format-example/",
+      "canonicalUrl": "https://centaurcareers.in/blog/balance-sheet-meaning-format-example/",
+      "primaryKeyword": "balance sheet meaning",
+      "secondaryKeywords": [
+        "balance sheet format",
+        "balance sheet example",
+        "assets liabilities and equity"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-24"
+    },
+    {
+      "kind": "blog-article",
+      "id": "career-options-in-commerce-decision-map",
+      "path": "/blog/career-options-in-commerce-decision-map/",
+      "canonicalUrl": "https://centaurcareers.in/blog/career-options-in-commerce-decision-map/",
+      "primaryKeyword": "career options in commerce",
+      "secondaryKeywords": [
+        "commerce career options",
+        "commerce careers",
+        "finance career paths"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-26"
+    },
+    {
+      "kind": "blog-article",
+      "id": "commercial-banks-services-operations",
+      "path": "/blog/commercial-banks-services-operations/",
+      "canonicalUrl": "https://centaurcareers.in/blog/commercial-banks-services-operations/",
+      "primaryKeyword": "commercial bank services",
+      "secondaryKeywords": [
+        "commercial bank meaning",
+        "commercial banking operations",
+        "commercial bank functions"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-24"
+    },
+    {
+      "kind": "blog-article",
+      "id": "cost-accounting-methods-examples",
+      "path": "/blog/cost-accounting-methods-examples/",
+      "canonicalUrl": "https://centaurcareers.in/blog/cost-accounting-methods-examples/",
+      "primaryKeyword": "cost accounting methods",
+      "secondaryKeywords": [
+        "cost accounting examples",
+        "cost allocation methods",
+        "cost and management accounting"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "finance-interview-questions-freshers",
+      "path": "/blog/finance-interview-questions-freshers/",
+      "canonicalUrl": "https://centaurcareers.in/blog/finance-interview-questions-freshers/",
+      "primaryKeyword": "finance interview questions for freshers",
+      "secondaryKeywords": [
+        "finance interview preparation",
+        "banking interview questions",
+        "finance jobs"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "financial-accounting-statements-process-examples",
+      "path": "/blog/financial-accounting-statements-process-examples/",
+      "canonicalUrl": "https://centaurcareers.in/blog/financial-accounting-statements-process-examples/",
+      "primaryKeyword": "financial accounting process",
+      "secondaryKeywords": [
+        "financial accounting statements",
+        "accounting cycle steps",
+        "financial accounting example"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "financial-management-decisions-controls",
+      "path": "/blog/financial-management-decisions-controls/",
+      "canonicalUrl": "https://centaurcareers.in/blog/financial-management-decisions-controls/",
+      "primaryKeyword": "financial management",
+      "secondaryKeywords": [
+        "financial management functions",
+        "financial management decisions",
+        "financial controls"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-24"
+    },
+    {
+      "kind": "blog-article",
+      "id": "financial-markets-instruments-participants-operations",
+      "path": "/blog/financial-markets-instruments-participants-operations/",
+      "canonicalUrl": "https://centaurcareers.in/blog/financial-markets-instruments-participants-operations/",
+      "primaryKeyword": "financial markets and instruments",
+      "secondaryKeywords": [
+        "financial market participants",
+        "types of financial instruments",
+        "financial market operations"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "investment-banking-teams-operations",
+      "path": "/blog/investment-banking-teams-operations/",
+      "canonicalUrl": "https://centaurcareers.in/blog/investment-banking-teams-operations/",
+      "primaryKeyword": "investment banking teams",
+      "secondaryKeywords": [
+        "investment banking departments",
+        "investment banking operations",
+        "investment banking roles"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-26"
+    },
+    {
+      "kind": "blog-article",
+      "id": "trial-balance-format-errors-reconciliation",
+      "path": "/blog/trial-balance-format-errors-reconciliation/",
+      "canonicalUrl": "https://centaurcareers.in/blog/trial-balance-format-errors-reconciliation/",
+      "primaryKeyword": "trial balance errors",
+      "secondaryKeywords": [
+        "trial balance format",
+        "trial balance mistakes",
+        "trial balance reconciliation"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-26"
+    },
+    {
+      "kind": "blog-article",
+      "id": "corporate-actions-analyst-career-path",
+      "path": "/blog/corporate-actions-analyst-career-path/",
+      "canonicalUrl": "https://centaurcareers.in/blog/corporate-actions-analyst-career-path/",
+      "primaryKeyword": "corporate actions analyst",
+      "secondaryKeywords": [
+        "corporate actions operations",
+        "corporate actions career",
+        "corporate actions process"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-27"
+    },
+    {
+      "kind": "blog-article",
+      "id": "finance-operations-portfolio-projects-freshers",
+      "path": "/blog/finance-operations-portfolio-projects-freshers/",
+      "canonicalUrl": "https://centaurcareers.in/blog/finance-operations-portfolio-projects-freshers/",
+      "primaryKeyword": "finance operations projects for freshers",
+      "secondaryKeywords": [
+        "finance portfolio projects",
+        "finance projects for graduates",
+        "operations analyst projects"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-26"
+    },
+    {
+      "kind": "blog-article",
+      "id": "financial-crime-analyst-kyc-aml-career-guide",
+      "path": "/blog/financial-crime-analyst-kyc-aml-career-guide/",
+      "canonicalUrl": "https://centaurcareers.in/blog/financial-crime-analyst-kyc-aml-career-guide/",
+      "primaryKeyword": "financial crime analyst",
+      "secondaryKeywords": [
+        "financial crime analyst career",
+        "KYC AML analyst roles",
+        "financial crime jobs"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-26"
+    },
+    {
+      "kind": "blog-article",
+      "id": "loan-operations-banking-roles-skills-career-path",
+      "path": "/blog/loan-operations-banking-roles-skills-career-path/",
+      "canonicalUrl": "https://centaurcareers.in/blog/loan-operations-banking-roles-skills-career-path/",
+      "primaryKeyword": "loan operations in banking",
+      "secondaryKeywords": [
+        "loan operations roles",
+        "loan processing jobs",
+        "loan operations analyst skills"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-article",
+      "id": "fund-accounting-nav-workflow-career-skills",
+      "path": "/blog/fund-accounting-nav-workflow-career-skills/",
+      "canonicalUrl": "https://centaurcareers.in/blog/fund-accounting-nav-workflow-career-skills/",
+      "primaryKeyword": "fund accounting NAV",
+      "secondaryKeywords": [
+        "fund accounting workflow",
+        "NAV calculation process",
+        "fund accounting career"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-29"
+    },
+    {
+      "kind": "blog-article",
+      "id": "digital-payments-operations-career-india",
+      "path": "/blog/digital-payments-operations-career-india/",
+      "canonicalUrl": "https://centaurcareers.in/blog/digital-payments-operations-career-india/",
+      "primaryKeyword": "digital payments operations career",
+      "secondaryKeywords": [
+        "digital payments jobs",
+        "payment operations analyst",
+        "digital payments career in India"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-15"
+    },
+    {
+      "kind": "blog-article",
+      "id": "fintech-operations-careers-after-graduation",
+      "path": "/blog/fintech-operations-careers-after-graduation/",
+      "canonicalUrl": "https://centaurcareers.in/blog/fintech-operations-careers-after-graduation/",
+      "primaryKeyword": "fintech careers after graduation",
+      "secondaryKeywords": [
+        "fintech jobs for graduates",
+        "fintech operations career",
+        "fintech career in India"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-15"
+    },
+    {
+      "kind": "blog-article",
+      "id": "how-to-choose-kyc-aml-course-india",
+      "path": "/blog/how-to-choose-kyc-aml-course-india/",
+      "canonicalUrl": "https://centaurcareers.in/blog/how-to-choose-kyc-aml-course-india/",
+      "primaryKeyword": "best KYC AML course in India",
+      "secondaryKeywords": [
+        "KYC AML course",
+        "AML training in India",
+        "KYC analyst course"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-26"
+    },
+    {
+      "kind": "blog-article",
+      "id": "investment-banking-operations-vs-cfa-financial-modelling",
+      "path": "/blog/investment-banking-operations-vs-cfa-financial-modelling/",
+      "canonicalUrl": "https://centaurcareers.in/blog/investment-banking-operations-vs-cfa-financial-modelling/",
+      "primaryKeyword": "investment banking vs CFA",
+      "secondaryKeywords": [
+        "investment banking operations vs financial modelling",
+        "CFA vs investment banking",
+        "finance career comparison"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-26"
+    }
+  ]
+}

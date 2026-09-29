@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "id": "finance-interview-questions-freshers",
+  "slug": "finance-interview-questions-freshers",
+  "status": "published",
+  "title": "Finance Interview Questions for Freshers: 15 to Practise",
+  "excerpt": "Practise 15 finance interview questions with a reusable answer framework, role-specific prompts and a self-scoring rubric for freshers.",
+  "category": "interview-preparation",
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Publisher",
+    "profilePath": "/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Finance interview questions for freshers often test clear thinking more than specialist jargon. A search for interview questions with answers for freshers should lead to answer reasoning, not scripts to memorise; bank interview questions for freshers also vary by role and employer. Prepare to explain basic accounting, accuracy checks, customer or transaction handling, teamwork and how you respond when information is incomplete. The 15 prompts below are practice questions, not a prediction of what a particular employer will ask. Build honest answers from coursework, projects, volunteering or other real experience; never claim production-system or employer experience you do not have."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A simple framework for stronger answers"
+    },
+    {
+      "type": "paragraph",
+      "text": "For a behavioural question, use Situation, Task, Action and Result (STAR), keeping the situation brief and your own actions specific. For a process question, use a different sequence: define the objective, describe the checks, explain how you would record an exception, and say who should approve or receive an escalation. If you do not know an answer, state what you know, identify the uncertainty and explain how you would verify it. That is more credible than guessing."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "15 finance interview questions to practise"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Tell me about yourself. Connect your education and one relevant example to the work; avoid reciting your whole CV.",
+        "Why are you interested in this role? Refer to the actual duties in the job description and what you want to learn.",
+        "What is the difference between revenue and profit? Define each and use a small example without confusing cash with profit.",
+        "What does a balance sheet show? Explain assets, liabilities and equity at a point in time.",
+        "How would you check a spreadsheet before sharing it? Mention source, formulas, totals, sample rows, date/version and a second review where required.",
+        "What would you do if two records do not match? Preserve both sources, quantify the difference, investigate, document and escalate; do not force a match.",
+        "How do you prioritise work with a deadline? Explain risk, dependencies, communication and how you would confirm priorities.",
+        "Tell me about a mistake you found. Describe the evidence, correction path and prevention step without blaming others.",
+        "How do you protect confidential information? Follow access rules, use approved channels and report suspected exposure promptly.",
+        "What would you do if a document were missing? Check the procedure, record the gap, request it through the authorised channel and hold dependent processing if required.",
+        "How would you explain a finance process to a non-finance colleague? Use plain language, a small example and a check for understanding.",
+        "Describe a time you learned something difficult. Show the practice method and how you checked your understanding.",
+        "How would you handle a request to bypass a control? Explain the policy, document the request and escalate to the authorised owner.",
+        "What would you do when a task is unfamiliar? Clarify scope, consult approved guidance, ask a precise question and confirm your next step.",
+        "What questions do you have for us? Ask about day-to-day work, training, review controls, tools and what success looks like in the role."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Score your practice without memorising scripts"
+    },
+    {
+      "type": "paragraph",
+      "text": "After each answer, score yourself from zero to two on five points: relevance to the question, a concrete example, accurate finance language, sound checking or escalation judgement, and concise delivery. Zero means absent or unclear, one means partial, and two means specific and understandable. A high score is a practice aid, not an employer assessment or guarantee. Ask a peer to identify one unsupported claim and one sentence that could be clearer. Rehearse the idea, not a word-for-word script, so you can respond naturally to follow-up questions."
+    },
+    {
+      "type": "paragraph",
+      "text": "Role matters. Operations interview preparation should include reconciliation, documentation, deadlines and exception handling. For accounting support, practise transaction logic and careful terminology. For customer-facing work, practise listening, clear explanations and appropriate escalation. This article is intentionally broader than the existing investment-banking-operations interview resource, which covers more role-specific prompts."
+    },
+    {
+      "type": "link",
+      "label": "Open the investment banking operations interview resource",
+      "href": "/resources/investment-banking-interview-questions/",
+      "routeId": "resource-investment-banking-interview-questions"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "When to practise technical accounting separately"
+    },
+    {
+      "type": "paragraph",
+      "text": "The 15 prompts above cover broad fresher and role-fit interviews. If a job description asks for journal entries, trial balances or bank reconciliation, use the worked accounting case below. Write your own entries first, check the answer key, then explain the reason for each debit, credit and unresolved difference."
+    },
+    {
+      "type": "link",
+      "label": "Practise technical accounting questions with a worked answer key",
+      "href": "/resources/accounting-interview-questions/",
+      "routeId": "resource-accounting-interview-questions"
+    },
+    {
+      "type": "link",
+      "label": "Explore finance operations roles and skills",
+      "href": "/career-guides/finance-operations/",
+      "routeId": "career-guide-finance-operations"
+    },
+    {
+      "type": "link",
+      "label": "Explore the Financial Operations Masterclass",
+      "href": "/courses/",
+      "routeId": "courses"
+    },
+    {
+      "type": "link",
+      "label": "Review current career-support terms",
+      "href": "/placements/",
+      "routeId": "placements"
+    },
+    {
+      "type": "paragraph",
+      "text": "Centaur Careers publishes this general practice guide. Sample prompts are educational and are not sourced from or attributed to a specific employer. Use only truthful examples from your own experience and check the current job description for role-specific requirements."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/finance-interview-questions-freshers-prep.png",
+    "alt": "Editorial illustration of a graduate preparing for a finance interview with accounting and banking concepts",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-24",
+  "updatedAt": "2026-09-27",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Finance Interview Questions for Freshers: 15 to Practise",
+    "description": "Practise 15 finance interview questions for freshers with answer structures and a self-review rubric. Questions are practice, not predictions.",
+    "canonicalPath": "/blog/finance-interview-questions-freshers/",
+    "noindex": false,
+    "focusKeyword": "finance interview questions for freshers",
+    "secondaryKeywords": ["finance interview preparation", "banking interview questions", "finance jobs"]
+  },
+  "tags": ["Finance Interview Questions for Freshers", "Finance Interview Questions", "Interview Preparation", "Banking Interview Questions", "Finance Jobs"],
+  "relatedRouteIds": ["blog", "career-guides", "career-guide-finance-operations", "resources", "resource-investment-banking-interview-questions", "resource-accounting-interview-questions"],
+  "redirects": [],
+  "evidenceNotes": [
+    "Questions and scoring rubric are original educational practice material, not employer interview questions or a validated hiring rubric.",
+    "Semrush volume and difficulty in the internal queue are export-reported estimates; India-specific database and SERP settings are not verified.",
+    "No hiring, job, salary, or interview outcome is promised."
+  ]
+}

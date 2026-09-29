@@ -1,90 +1,316 @@
 import { BUSINESS_DATA, ORGANIZATION_ID, WEBSITE_ID } from '../content/businessData.js';
+import { CAREER_GUIDE_HUB, CAREER_GUIDES, getCareerGuide } from '../content/careerGuides.js';
+import { INFORMATIONAL_MODULES } from '../content/informationalModules.js';
+import { COMPARISON_PAGE } from '../content/comparisonPage.js';
 import { GENERAL_FAQS } from '../content/faqData.js';
-import { CAREER_TRACKS, LEADERSHIP, PROGRAM } from '../content/sourceContent.js';
+import { INDIA_PAGE } from '../content/indiaPage.js';
+import { LEGAL_PAGES } from '../content/legalContent.js';
+import { REGIONAL_PAGES } from '../content/regionalPages.js';
+import { RESOURCE_HUB, RESOURCES, getResource } from '../content/resources.js';
+import { FINANCE_QUIZ_DOMAINS, FINANCE_QUIZ_TOTAL } from '../content/quizLibrary.js';
+import { PRIORITY_NON_ARTICLE_ROUTES } from '../content/prioritySeoContent.js';
+import { CAREER_TRACKS, LEADERSHIP, LEARNING_MODES, PROGRAM } from '../content/sourceContent.js';
+import { TOPIC_PROGRAM_REVIEW_DATE } from '../content/topicProgramPaths.js';
 import {
   DEFAULT_OG_IMAGE,
   DEFAULT_OG_IMAGE_HEIGHT,
   DEFAULT_OG_IMAGE_WIDTH,
   SITE_ORIGIN,
 } from './siteConfig.js';
+import { createOrganizationSchema, createWebsiteSchema } from './entitySeo.js';
 
 export { DEFAULT_OG_IMAGE, SITE_ORIGIN } from './siteConfig.js';
+export {
+  ORGANIZATION_DISAMBIGUATING_DESCRIPTION,
+  ORGANIZATION_KNOWS_ABOUT,
+  createOrganizationSchema,
+  createWebsiteSchema,
+} from './entitySeo.js';
 
-const LAST_MEANINGFUL_UPDATE = '2026-08-31';
+const LAST_MEANINGFUL_UPDATE = '2026-09-13';
+const PAGE_IMAGES = Object.freeze({
+  courses: Object.freeze({ path: '/images/courses/investment-banking-operations.jpg', alt: 'Investment banking operations and finance training topics', width: 1536, height: 1024 }),
+  'investment-banking-operations': Object.freeze({ path: '/images/courses/investment-banking-operations.jpg', alt: 'Investment banking operations training topics', width: 1536, height: 1024 }),
+  'retail-banking': Object.freeze({ path: '/images/courses/retail-banking.jpg', alt: 'Retail banking operations training topics', width: 1536, height: 1024 }),
+  'career-guide-investment-banking-operations': Object.freeze({ path: '/images/blog/investment-banking-teams-operations.png', alt: 'Investment banking operations career workflow', width: 1672, height: 941 }),
+  'career-guide-finance-operations': Object.freeze({ path: '/images/courses/finance-operations.jpg', alt: 'Finance operations and credit training topics', width: 1536, height: 1024 }),
+  'resource-reconciliation-in-finance': Object.freeze({ path: '/images/blog/settlement-trade-break-worked-example.png', alt: 'Reconciliation and settlement break workflow', width: 1672, height: 941 }),
+});
+const KEYWORD_OWNED_CAREER_GUIDE_PATHS = new Set([
+  '/career-guides/choosing-finance-career-course/',
+  '/career-guides/finance-careers-after-graduation/',
+  '/career-guides/investment-banking-operations/',
+  '/career-guides/trade-lifecycle/',
+  '/career-guides/finance-operations/',
+  '/career-guides/kyc-aml-analyst/',
+  '/career-guides/financial-operations-faq/',
+  '/career-guides/retail-banking-operations/',
+  '/career-guides/digital-payments-operations/',
+  '/career-guides/fintech-operations/',
+]);
+
+const CAREER_GUIDE_ROUTES = CAREER_GUIDES.map((guide) => ({
+  id: guide.routeId,
+  parentId: 'career-guides',
+  path: guide.path,
+  title: guide.title,
+  description: guide.description,
+  h1: guide.h1,
+  breadcrumbLabel: guide.breadcrumbLabel,
+  schemaType: 'WebPage',
+  careerGuideId: guide.id,
+  keywordPurpose: 'First-party career-guide information page',
+  primaryKeyword: guide.primaryKeyword,
+  keywordOwnerUrl: guide.keywordOwnerUrl ?? (KEYWORD_OWNED_CAREER_GUIDE_PATHS.has(guide.path) ? guide.path : null),
+  image: guide.image || PAGE_IMAGES[guide.routeId]?.path,
+  imageAlt: guide.imageAlt || PAGE_IMAGES[guide.routeId]?.alt,
+  imageWidth: guide.imageWidth || PAGE_IMAGES[guide.routeId]?.width,
+  imageHeight: guide.imageHeight || PAGE_IMAGES[guide.routeId]?.height,
+  indexable: true,
+  lastModified: guide.updatedAt,
+}));
+
+const INFORMATIONAL_MODULE_ROUTES = INFORMATIONAL_MODULES.map((module) => ({
+  id: module.routeId,
+  parentId: 'courses',
+  path: module.path,
+  title: module.title,
+  description: module.description,
+  h1: module.h1,
+  breadcrumbLabel: module.breadcrumbLabel,
+  schemaType: 'WebPage',
+  informationalModuleId: module.id,
+  keywordPurpose: 'Informational guide to a subject taught within the Financial Operations Masterclass',
+  primaryKeyword: module.primaryKeyword,
+  keywordOwnerUrl: module.path,
+  indexable: true,
+  lastModified: module.updatedAt,
+}));
+
+const RESOURCE_ROUTES = RESOURCES.map((resource) => ({
+  id: resource.routeId,
+  parentId: 'resources',
+  path: resource.path,
+  title: resource.title,
+  description: resource.description,
+  h1: resource.h1,
+  breadcrumbLabel: resource.breadcrumbLabel,
+  schemaType: 'WebPage',
+  resourceId: resource.id,
+  keywordPurpose: resource.kind === 'learning'
+    ? 'First-party finance and BFSI learning resource'
+    : 'First-party finance interview preparation resource',
+  primaryKeyword: resource.primaryKeyword,
+  keywordOwnerUrl: resource.keywordOwnerUrl,
+  image: resource.image || PAGE_IMAGES[resource.routeId]?.path,
+  imageAlt: resource.imageAlt || PAGE_IMAGES[resource.routeId]?.alt,
+  imageWidth: resource.imageWidth || PAGE_IMAGES[resource.routeId]?.width,
+  imageHeight: resource.imageHeight || PAGE_IMAGES[resource.routeId]?.height,
+  indexable: true,
+  lastModified: resource.updatedAt,
+}));
+
+const REGIONAL_ROUTES = REGIONAL_PAGES.map((page) => ({
+  id: page.routeId,
+  parentId: INDIA_PAGE.id,
+  path: page.path,
+  title: page.title,
+  description: page.description,
+  h1: page.h1,
+  breadcrumbLabel: page.breadcrumbLabel,
+  schemaType: 'WebPage',
+  regional: true,
+  regionalPageId: page.id,
+  keywordPurpose: 'Selective regional finance-career market and access guide',
+  primaryKeyword: page.primaryKeyword,
+  keywordOwnerUrl: page.path,
+  indexable: true,
+  lastModified: page.updatedAt,
+}));
 
 export const SEO_ROUTES = Object.freeze([
   {
     id: 'home',
     path: '/',
-    title: 'Finance Career Training Lucknow | Centaur Careers | Investment Banking, Retail Banking & NBFC Jobs | Alambagh & Krishna Nagar',
-    description: PROGRAM.metaDescription,
-    h1: PROGRAM.headline,
+    title: 'Finance Career Training in India | Centaur Careers',
+    description: 'Six-week Financial Operations Masterclass for graduates and job switchers, covering banking operations, KYC, AML, payments, credit and FinTech across India.',
+    h1: 'Financial Operations Masterclass with a 100% Job Guarantee',
     breadcrumbLabel: 'Home',
     schemaType: 'WebPage',
+    keywordPurpose: 'Brand/entity and Financial Operations Masterclass overview',
+    primaryKeyword: 'Centaur Careers finance training',
+    keywordOwnerUrl: null,
+    indexable: true,
+    lastModified: '2026-09-29',
+  },
+  {
+    id: 'blog',
+    parentId: 'home',
+    path: '/blog/',
+    title: 'Finance Career Insights & Industry Updates | Centaur Careers',
+    description: 'Practical finance-career learning, banking operations explainers, industry updates, and interview resources from Centaur Careers.',
+    h1: 'Finance Career Insights & Industry Updates',
+    breadcrumbLabel: 'Blog',
+    schemaType: 'CollectionPage',
+    keywordPurpose: 'Finance career learning, industry updates, and interview resources',
+    primaryKeyword: 'finance career insights',
+    keywordOwnerUrl: null,
     indexable: true,
     lastModified: LAST_MEANINGFUL_UPDATE,
+  },
+  {
+    id: CAREER_GUIDE_HUB.id,
+    parentId: 'home',
+    path: CAREER_GUIDE_HUB.path,
+    title: CAREER_GUIDE_HUB.title,
+    description: CAREER_GUIDE_HUB.description,
+    h1: CAREER_GUIDE_HUB.h1,
+    breadcrumbLabel: CAREER_GUIDE_HUB.breadcrumbLabel,
+    schemaType: 'CollectionPage',
+    keywordPurpose: 'Career-guide information cluster hub',
+    primaryKeyword: 'finance operations career guide',
+    keywordOwnerUrl: null,
+    indexable: true,
+    lastModified: LAST_MEANINGFUL_UPDATE,
+  },
+  {
+    id: RESOURCE_HUB.id,
+    parentId: 'home',
+    path: RESOURCE_HUB.path,
+    title: RESOURCE_HUB.title,
+    description: RESOURCE_HUB.description,
+    h1: RESOURCE_HUB.h1,
+    breadcrumbLabel: RESOURCE_HUB.breadcrumbLabel,
+    schemaType: 'CollectionPage',
+    keywordPurpose: 'Finance interview preparation and career resource hub',
+    primaryKeyword: 'finance career resources',
+    keywordOwnerUrl: null,
+    indexable: true,
+    lastModified: LAST_MEANINGFUL_UPDATE,
+  },
+  ...RESOURCE_ROUTES,
+  {
+    id: 'quiz',
+    parentId: 'home',
+    path: '/quiz/',
+    title: 'Banking & Finance Career Quiz | Centaur Careers',
+    description: 'Practise 1,000+ banking and finance quiz questions across investment banking, retail banking, KYC, AML, payments, credit, risk, accounting and FinTech.',
+    h1: 'Banking & Finance Career Quiz',
+    breadcrumbLabel: 'Banking and Finance Quiz',
+    schemaType: 'WebPage',
+    quiz: true,
+    keywordPurpose: 'Large first-party banking and finance self-assessment question bank',
+    primaryKeyword: 'banking and finance quiz',
+    keywords: Object.freeze([
+      'banking and finance quiz',
+      'finance quiz for freshers',
+      'BFSI quiz questions',
+      'investment banking operations quiz',
+      'KYC AML quiz',
+      'digital payments quiz',
+      'credit analyst quiz',
+      'finance operations interview questions',
+      'banking career assessment',
+    ]),
+    hashtags: Object.freeze(['#BankingQuiz', '#FinanceQuiz', '#BFSICareers', '#FinanceOperations']),
+    quizQuestionCount: FINANCE_QUIZ_TOTAL,
+    quizDomainCount: FINANCE_QUIZ_DOMAINS.length,
+    indexable: true,
+    lastModified: '2026-09-22',
   },
   {
     id: 'courses',
     parentId: 'home',
     path: '/courses/',
-    title: 'Financial Operations Masterclass | Centaur Careers',
-    description: PROGRAM.trainingDescription,
+    title: 'Investment Banking Operations Course | Centaur Careers',
+    description: 'Study investment banking operations in a six-week Masterclass with settlements, reconciliation, live online access across India and a Lucknow option.',
     h1: PROGRAM.name,
     breadcrumbLabel: 'Financial Operations Masterclass',
     schemaType: 'CollectionPage',
     program: true,
+    keywordPurpose: 'Primary commercial finance course and Financial Operations Masterclass hub',
+    primaryKeyword: 'investment banking operations course',
+    keywordOwnerUrl: '/courses/',
+    image: PAGE_IMAGES.courses.path,
+    imageAlt: PAGE_IMAGES.courses.alt,
+    imageWidth: PAGE_IMAGES.courses.width,
+    imageHeight: PAGE_IMAGES.courses.height,
     indexable: true,
-    lastModified: LAST_MEANINGFUL_UPDATE,
+    lastModified: '2026-09-26',
   },
   {
     id: 'investment-banking-operations',
     parentId: 'courses',
     path: '/courses/investment-banking-operations/',
-    title: 'Investment Banking Operations Career Track | Centaur Careers',
-    description: 'Trade Settlements, Reconciliation, Corporate Actions, Fund Accounting. Target CTC ₹6–12 LPA.',
-    h1: 'Investment Banking Ops',
+    title: 'Investment Banking Operations Training | Centaur Careers',
+    description: 'Explore investment banking operations training topics including trade settlements, reconciliation, corporate actions and fund accounting within the masterclass.',
+    h1: 'Investment Banking Operations Training',
     breadcrumbLabel: 'Investment Banking Operations',
     schemaType: 'WebPage',
     trackId: 'investment-banking-operations',
+    keywordPurpose: 'Supporting Investment Banking Operations module page',
+    primaryKeyword: 'investment banking operations module',
+    keywordOwnerUrl: null,
+    image: PAGE_IMAGES['investment-banking-operations'].path,
+    imageAlt: PAGE_IMAGES['investment-banking-operations'].alt,
+    imageWidth: PAGE_IMAGES['investment-banking-operations'].width,
+    imageHeight: PAGE_IMAGES['investment-banking-operations'].height,
     indexable: true,
-    lastModified: LAST_MEANINGFUL_UPDATE,
+    lastModified: TOPIC_PROGRAM_REVIEW_DATE,
   },
   {
     id: 'retail-banking',
     parentId: 'courses',
     path: '/courses/retail-banking/',
-    title: 'Retail Banking Career Track | Centaur Careers',
-    description: 'Relationship Manager, Branch Ops, Loan Officer, NRI Banking. Target CTC ₹3–6 LPA.',
+    title: 'Retail Banking Operations Module | Centaur Careers',
+    description: 'Explore retail banking topics: relationship management, branch operations, loan officer work, and NRI banking in the Financial Operations Masterclass.',
     h1: 'Retail Banking',
     breadcrumbLabel: 'Retail Banking',
     schemaType: 'WebPage',
     trackId: 'retail-banking',
+    keywordPurpose: 'Supporting Retail Banking module page',
+    primaryKeyword: 'retail banking operations course',
+    keywordOwnerUrl: '/courses/retail-banking/',
+    image: PAGE_IMAGES['retail-banking'].path,
+    imageAlt: PAGE_IMAGES['retail-banking'].alt,
+    imageWidth: PAGE_IMAGES['retail-banking'].width,
+    imageHeight: PAGE_IMAGES['retail-banking'].height,
     indexable: true,
-    lastModified: LAST_MEANINGFUL_UPDATE,
+    lastModified: TOPIC_PROGRAM_REVIEW_DATE,
   },
   {
     id: 'finance-operations',
     parentId: 'courses',
     path: '/courses/finance-operations/',
-    title: 'Finance Operations Career Track | Centaur Careers',
-    description: 'NBFC, Loan Processing, Credit Analysis, Risk Management. Target CTC ₹3–6 LPA.',
-    h1: 'Finance Operations',
+    title: 'Finance Operations and Credit Training | Centaur Careers',
+    description: 'Explore finance operations, loan processing, credit analysis and risk management within the Financial Operations Masterclass.',
+    h1: 'Finance Operations and Credit Analysis Training',
     breadcrumbLabel: 'Finance Operations',
     schemaType: 'WebPage',
     trackId: 'finance-operations',
+    keywordPurpose: 'Supporting Finance Operations module page',
+    primaryKeyword: 'finance operations module',
+    keywordOwnerUrl: null,
+    image: PAGE_IMAGES['career-guide-finance-operations'].path,
+    imageAlt: PAGE_IMAGES['career-guide-finance-operations'].alt,
+    imageWidth: PAGE_IMAGES['career-guide-finance-operations'].width,
+    imageHeight: PAGE_IMAGES['career-guide-finance-operations'].height,
     indexable: true,
-    lastModified: LAST_MEANINGFUL_UPDATE,
+    lastModified: TOPIC_PROGRAM_REVIEW_DATE,
   },
+  ...INFORMATIONAL_MODULE_ROUTES,
   {
     id: 'placements',
     parentId: 'home',
     path: '/placements/',
-    title: 'Placement Guarantee & Student Promise | Centaur Careers',
-    description: "Every student who meets program criteria is supported until they secure the right role, or we return their fee in full.",
-    h1: 'Placement Guarantee & Student Promise',
-    breadcrumbLabel: 'Placement Guarantee',
+    title: 'Finance Course with 100% Job Guarantee | Centaur Careers',
+    description: 'Centaur Careers guarantees a finance job to graduates and job switchers who complete the six-week Financial Operations Masterclass.',
+    h1: '100% Job Guarantee Program',
+    breadcrumbLabel: 'Job Guarantee',
     schemaType: 'WebPage',
+    keywordPurpose: 'Finance job guarantee program, placement process, and published guarantee details',
+    primaryKeyword: 'finance course with job guarantee',
+    keywordOwnerUrl: null,
     indexable: true,
     lastModified: LAST_MEANINGFUL_UPDATE,
   },
@@ -93,10 +319,13 @@ export const SEO_ROUTES = Object.freeze([
     parentId: 'home',
     path: '/about/',
     title: 'About Centaur Careers | Banking & Finance Training',
-    description: 'Founded by banking veterans with 15+ years of industry experience, Centaur Careers has placed 100+ graduates across Investment Banking, Retail Banking, NBFCs, and FinTech.',
+    description: 'Learn about Centaur Careers and its finance-operations training, course topics, learning access, and current support information for prospective learners.',
     h1: 'About Centaur Careers',
     breadcrumbLabel: 'About',
     schemaType: 'AboutPage',
+    keywordPurpose: 'Centaur Careers organization and leadership entity page',
+    primaryKeyword: 'Centaur Careers',
+    keywordOwnerUrl: null,
     indexable: true,
     lastModified: LAST_MEANINGFUL_UPDATE,
   },
@@ -105,36 +334,156 @@ export const SEO_ROUTES = Object.freeze([
     parentId: 'home',
     path: '/contact/',
     title: 'Contact Centaur Careers in Lucknow',
-    description: 'Fill out the enrollment form and the Centaur Careers team will reach out within 24 hours. Phone, email, WhatsApp and Lucknow address.',
+    description: 'Contact Centaur Careers in Lucknow to ask about current finance-course cohorts, fees, learning modes, the 100% Job Guarantee Program, and support terms.',
     h1: 'Contact Centaur Careers',
     breadcrumbLabel: 'Contact',
     schemaType: 'ContactPage',
+    keywordPurpose: 'Contact and enrolment access for Centaur Careers in Lucknow',
+    primaryKeyword: 'Centaur Careers contact',
+    keywordOwnerUrl: null,
     indexable: true,
     lastModified: LAST_MEANINGFUL_UPDATE,
   },
   {
+    id: 'privacy-policy',
+    parentId: 'home',
+    path: '/privacy-policy/',
+    title: 'Privacy Policy | Centaur Careers',
+    description: LEGAL_PAGES['privacy-policy'].intro,
+    h1: LEGAL_PAGES['privacy-policy'].title,
+    breadcrumbLabel: 'Privacy Policy',
+    schemaType: 'WebPage',
+    keywordPurpose: 'Privacy information for website visitors and advertising enquiries',
+    primaryKeyword: 'Centaur Careers privacy policy',
+    keywordOwnerUrl: null,
+    indexable: true,
+    lastModified: '2026-09-23',
+  },
+  {
+    id: 'terms-and-conditions',
+    parentId: 'home',
+    path: '/terms-and-conditions/',
+    title: 'Terms and Conditions | Centaur Careers',
+    description: LEGAL_PAGES['terms-and-conditions'].intro,
+    h1: LEGAL_PAGES['terms-and-conditions'].title,
+    breadcrumbLabel: 'Terms and Conditions',
+    schemaType: 'WebPage',
+    keywordPurpose: 'Website and program-use terms for Centaur Careers',
+    primaryKeyword: 'Centaur Careers terms and conditions',
+    keywordOwnerUrl: null,
+    indexable: false,
+    lastModified: '2026-09-23',
+  },
+  {
+    id: 'cookie-policy',
+    parentId: 'home',
+    path: '/cookie-policy/',
+    title: 'Cookie Policy | Centaur Careers',
+    description: LEGAL_PAGES['cookie-policy'].intro,
+    h1: LEGAL_PAGES['cookie-policy'].title,
+    breadcrumbLabel: 'Cookie Policy',
+    schemaType: 'WebPage',
+    keywordPurpose: 'Cookie, analytics, and advertising technology disclosure',
+    primaryKeyword: 'Centaur Careers cookie policy',
+    keywordOwnerUrl: null,
+    indexable: false,
+    lastModified: '2026-09-23',
+  },
+  {
+    id: 'refund-cancellation-policy',
+    parentId: 'home',
+    path: '/refund-cancellation-policy/',
+    title: 'Refund and Cancellation Policy | Centaur Careers',
+    description: LEGAL_PAGES['refund-cancellation-policy'].intro,
+    h1: LEGAL_PAGES['refund-cancellation-policy'].title,
+    breadcrumbLabel: 'Refund and Cancellation Policy',
+    schemaType: 'WebPage',
+    keywordPurpose: 'Refund and cancellation information for paid program enquiries',
+    primaryKeyword: 'Centaur Careers refund policy',
+    keywordOwnerUrl: null,
+    indexable: false,
+    lastModified: '2026-09-23',
+  },
+  {
+    id: 'disclaimer',
+    parentId: 'home',
+    path: '/disclaimer/',
+    title: 'Disclaimer | Centaur Careers',
+    description: LEGAL_PAGES.disclaimer.intro,
+    h1: LEGAL_PAGES.disclaimer.title,
+    breadcrumbLabel: 'Disclaimer',
+    schemaType: 'WebPage',
+    keywordPurpose: 'Education, career, and program information disclaimer',
+    primaryKeyword: 'Centaur Careers disclaimer',
+    keywordOwnerUrl: null,
+    indexable: false,
+    lastModified: '2026-09-23',
+  },
+  {
+    id: INDIA_PAGE.id,
+    parentId: 'home',
+    path: INDIA_PAGE.path,
+    title: INDIA_PAGE.title,
+    description: INDIA_PAGE.description,
+    h1: INDIA_PAGE.h1,
+    breadcrumbLabel: INDIA_PAGE.breadcrumbLabel,
+    schemaType: 'WebPage',
+    national: true,
+    keywordPurpose: 'India-wide online finance operations training access',
+    primaryKeyword: INDIA_PAGE.primaryKeyword,
+    keywordOwnerUrl: INDIA_PAGE.path,
+    indexable: true,
+    lastModified: '2026-09-26',
+  },
+  ...REGIONAL_ROUTES,
+  {
     id: 'lucknow-location',
     parentId: 'home',
     path: '/locations/lucknow/',
-    title: 'Mindsprout Careers Hub Lucknow | Centaur Careers',
-    description: 'In-person sessions at Mindsprout Careers Hub, R K Tower, 70/2, Sector B, Badabirwa, Alambagh, Lucknow, Uttar Pradesh 226005.',
-    h1: 'Mindsprout Careers Hub, Lucknow',
-    breadcrumbLabel: 'Mindsprout Careers Hub',
+    title: 'Finance and Investment Banking Course in Lucknow',
+    description: 'Centaur Careers in-person sessions at Mindsprout Career Hub, R K Tower, 70/2, Sector B, Barabirwa, Alambagh, Lucknow, Uttar Pradesh 226005.',
+    h1: 'Finance and Investment Banking Course in Lucknow',
+    breadcrumbLabel: 'Mindsprout Career Hub',
     schemaType: 'WebPage',
+    keywordPurpose: 'Evidence-backed local Lucknow acquisition page',
+    primaryKeyword: 'investment banking course in Lucknow',
+    keywordOwnerUrl: '/locations/lucknow/',
     indexable: true,
-    lastModified: LAST_MEANINGFUL_UPDATE,
+    lastModified: '2026-09-26',
   },
   {
     id: 'faqs',
     parentId: 'home',
     path: '/faqs/',
     title: 'Finance Career Program FAQs | Centaur Careers',
-    description: 'Answers about program eligibility, the placement guarantee, online and offline modes, interview opportunities, placement cities and post-placement support.',
+    description: 'Answers about the guaranteed finance job, who can join, learning modes, and terms for the Financial Operations Masterclass.',
     h1: 'Finance Career Program FAQs',
     breadcrumbLabel: 'FAQs',
     schemaType: 'FAQPage',
+    keywordPurpose: 'Finance career program questions and answer support',
+    primaryKeyword: 'finance career program FAQs',
+    keywordOwnerUrl: null,
     indexable: true,
     lastModified: LAST_MEANINGFUL_UPDATE,
+  },
+  ...CAREER_GUIDE_ROUTES,
+  ...PRIORITY_NON_ARTICLE_ROUTES,
+  {
+    id: COMPARISON_PAGE.routeId,
+    parentId: 'home',
+    path: COMPARISON_PAGE.path,
+    title: COMPARISON_PAGE.title,
+    description: COMPARISON_PAGE.description,
+    h1: COMPARISON_PAGE.h1,
+    breadcrumbLabel: COMPARISON_PAGE.breadcrumbLabel,
+    schemaType: 'WebPage',
+    comparison: true,
+    comparisonPageId: COMPARISON_PAGE.id,
+    keywordPurpose: 'Factual comparison framework for investment banking operations courses',
+    primaryKeyword: COMPARISON_PAGE.primaryKeyword,
+    keywordOwnerUrl: COMPARISON_PAGE.path,
+    indexable: true,
+    lastModified: COMPARISON_PAGE.updatedAt,
   },
   {
     id: 'not-found',
@@ -146,6 +495,9 @@ export const SEO_ROUTES = Object.freeze([
     h1: 'Page Not Found',
     breadcrumbLabel: 'Page Not Found',
     schemaType: 'WebPage',
+    keywordPurpose: 'Non-indexable missing-page recovery',
+    primaryKeyword: null,
+    keywordOwnerUrl: null,
     indexable: false,
   },
 ]);
@@ -203,6 +555,9 @@ export const INDEXABLE_ROUTES = Object.freeze(
   SEO_ROUTES.filter((route) => route.indexable),
 );
 
+export const TRAINING_LOCATION_ID = `${SITE_ORIGIN}/locations/lucknow/#place`;
+export const PRIMARY_COURSE_ID = `${SITE_ORIGIN}/courses/#course`;
+
 // React Router treats slash-terminated prerender inputs as redirect requests
 // for route definitions without a trailing slash. Public URLs remain canonical
 // with trailing slashes while build-time requests use route pathnames.
@@ -248,48 +603,6 @@ export function getVisibleBreadcrumbs(routeOrId) {
   }));
 }
 
-function createOrganizationSchema() {
-  return {
-    '@type': ['EducationalOrganization', 'LocalBusiness'],
-    '@id': ORGANIZATION_ID,
-    name: BUSINESS_DATA.name,
-    description: BUSINESS_DATA.description,
-    url: BUSINESS_DATA.url,
-    logo: {
-      '@type': 'ImageObject',
-      '@id': `${SITE_ORIGIN}/#logo`,
-      url: BUSINESS_DATA.logoUrl,
-      contentUrl: BUSINESS_DATA.logoUrl,
-      width: Number(DEFAULT_OG_IMAGE_WIDTH),
-      height: Number(DEFAULT_OG_IMAGE_HEIGHT),
-      caption: BUSINESS_DATA.name,
-    },
-    image: { '@id': `${SITE_ORIGIN}/#logo` },
-    telephone: BUSINESS_DATA.telephone,
-    email: BUSINESS_DATA.email,
-    address: {
-      '@type': 'PostalAddress',
-      ...BUSINESS_DATA.address,
-    },
-    areaServed: [
-      { '@type': 'City', name: 'Lucknow' },
-      { '@type': 'Country', name: 'India' },
-    ],
-    sameAs: [...BUSINESS_DATA.sameAs],
-  };
-}
-
-function createWebsiteSchema() {
-  return {
-    '@type': 'WebSite',
-    '@id': WEBSITE_ID,
-    url: `${SITE_ORIGIN}/`,
-    name: BUSINESS_DATA.name,
-    inLanguage: 'en-IN',
-    publisher: { '@id': ORGANIZATION_ID },
-  };
-}
-
 function createBreadcrumbSchema(route) {
   const trail = getBreadcrumbTrail(route);
   if (trail.length < 2) {
@@ -308,29 +621,221 @@ function createBreadcrumbSchema(route) {
   };
 }
 
-function createCourseSchema(route) {
-  if (!route.program) {
+function createRegionalCoverageSchema(route) {
+  const regionalPage = route.regionalPageId
+    ? REGIONAL_PAGES.find((page) => page.id === route.regionalPageId)
+    : null;
+  if (!regionalPage) return null;
+
+  return {
+    '@type': regionalPage.regionSchemaType || 'Place',
+    '@id': `${canonicalUrl(route)}#regional-coverage`,
+    name: regionalPage.regionName,
+    ...(regionalPage.regionAlternateName ? { alternateName: regionalPage.regionAlternateName } : {}),
+  };
+}
+
+function createTrainingLocationSchema(route) {
+  if (route.id !== 'lucknow-location') {
     return null;
   }
 
   return {
-    '@type': 'Course',
-    '@id': `${canonicalUrl(route)}#course`,
+    '@type': 'Place',
+    '@id': TRAINING_LOCATION_ID,
     url: canonicalUrl(route),
+    name: BUSINESS_DATA.trainingLocation.name,
+    address: {
+      '@type': 'PostalAddress',
+      ...BUSINESS_DATA.trainingLocation.address,
+    },
+    hasMap: BUSINESS_DATA.trainingLocation.mapUrl,
+    containedInPlace: {
+      '@type': 'City',
+      name: BUSINESS_DATA.trainingLocation.address.addressLocality,
+      containedInPlace: {
+        '@type': 'AdministrativeArea',
+        name: BUSINESS_DATA.trainingLocation.address.addressRegion,
+      },
+    },
+  };
+}
+
+function createCareerGuideSchema(route) {
+  const guide = route.careerGuideId ? getCareerGuide(route.careerGuideId) : null;
+  if (!guide) return null;
+
+  const canonical = canonicalUrl(route);
+  return {
+    '@type': 'Article',
+    '@id': `${canonical}#article`,
+    url: canonical,
+    headline: guide.h1,
+    description: guide.description,
+    author: {
+      '@type': 'Person',
+      '@id': `${SITE_ORIGIN}/about/#${guide.author.id}`,
+      name: guide.author.name,
+      url: `${SITE_ORIGIN}${guide.author.profilePath}`,
+      jobTitle: guide.author.role,
+      worksFor: { '@id': ORGANIZATION_ID },
+    },
+    publisher: { '@id': ORGANIZATION_ID },
+    datePublished: `${guide.publishedAt}T00:00:00Z`,
+    dateModified: `${guide.updatedAt}T00:00:00Z`,
+    mainEntityOfPage: { '@id': `${canonical}#webpage` },
+    isPartOf: { '@id': WEBSITE_ID },
+    inLanguage: BUSINESS_DATA.language,
+    articleSection: CAREER_GUIDE_HUB.breadcrumbLabel,
+  };
+}
+
+function createResourceSchema(route) {
+  const resource = route.resourceId ? getResource(route.resourceId) : null;
+  if (!resource) return null;
+
+  const canonical = canonicalUrl(route);
+  return {
+    '@type': 'Article',
+    '@id': `${canonical}#article`,
+    url: canonical,
+    headline: resource.h1,
+    description: resource.description,
+    author: resource.author.type === 'Organization'
+      ? { '@id': ORGANIZATION_ID }
+      : {
+        '@type': 'Person',
+        '@id': `${SITE_ORIGIN}/about/#${resource.author.id}`,
+        name: resource.author.name,
+        url: `${SITE_ORIGIN}${resource.author.profilePath}`,
+        jobTitle: resource.author.role,
+        worksFor: { '@id': ORGANIZATION_ID },
+      },
+    publisher: { '@id': ORGANIZATION_ID },
+    datePublished: `${resource.publishedAt}T00:00:00Z`,
+    dateModified: `${resource.updatedAt}T00:00:00Z`,
+    mainEntityOfPage: { '@id': `${canonical}#webpage` },
+    isPartOf: { '@id': WEBSITE_ID },
+    inLanguage: BUSINESS_DATA.language,
+    articleSection: RESOURCE_HUB.breadcrumbLabel,
+  };
+}
+
+export function createCourseOffersSchema() {
+  return LEARNING_MODES.map((mode) => ({
+    '@type': 'Offer',
+    name: mode.name,
+    description: mode.description,
+    price: mode.price.replace(/[^0-9]/g, ''),
+    priceCurrency: 'INR',
+    availability: 'https://schema.org/InStock',
+    url: `${SITE_ORIGIN}/courses/`,
+  }));
+}
+
+export function createCourseInstancesSchema() {
+  return [
+    {
+      '@type': 'CourseInstance',
+      name: 'Online Mode — Live Interactive Sessions Across India',
+      courseMode: 'online',
+      courseWorkload: 'P6W',
+      inLanguage: BUSINESS_DATA.language,
+    },
+    {
+      '@type': 'CourseInstance',
+      name: 'Offline Mode — Classroom Sessions at Lucknow Partner Location',
+      courseMode: 'onsite',
+      courseWorkload: 'P6W',
+      inLanguage: BUSINESS_DATA.language,
+      location: {
+        '@type': 'Place',
+        name: BUSINESS_DATA.trainingLocation.name,
+        address: {
+          '@type': 'PostalAddress',
+          ...BUSINESS_DATA.trainingLocation.address,
+        },
+      },
+    },
+  ];
+}
+
+function createLearningEntity(route) {
+  const trackId = route.trackId || route.informationalModuleId;
+  const track = trackId
+    ? CAREER_TRACKS.find((candidate) => candidate.id === trackId)
+    : null;
+
+  if (!route.program && !track) {
+    return null;
+  }
+
+  if (track) {
+    return {
+      '@type': 'LearningResource',
+      '@id': `${canonicalUrl(route)}#learning-resource`,
+      url: canonicalUrl(route),
+      name: `${track.title} module`,
+      description: `${track.description}. This is a module within the ${PROGRAM.name}.`,
+      provider: { '@id': ORGANIZATION_ID },
+      isPartOf: { '@id': PRIMARY_COURSE_ID },
+      inLanguage: BUSINESS_DATA.language,
+      teaches: track.description.split(', '),
+    };
+  }
+
+  return {
+    '@type': 'Course',
+    '@id': PRIMARY_COURSE_ID,
+    url: `${SITE_ORIGIN}/courses/`,
     name: PROGRAM.name,
     alternateName: PROGRAM.alternateName,
     description: PROGRAM.trainingDescription,
     provider: { '@id': ORGANIZATION_ID },
-    inLanguage: 'en-IN',
+    inLanguage: BUSINESS_DATA.language,
     timeRequired: 'P6W',
+    educationalCredentialAwarded: 'Course Completion Certificate',
     teaches: CAREER_TRACKS.flatMap((track) => [track.title, track.description]),
+    offers: createCourseOffersSchema(),
+    hasCourseInstance: createCourseInstancesSchema(),
+  };
+}
+
+export function personSchemaId(person) {
+  return `${SITE_ORIGIN}/about/#${person.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+}
+
+function routeImageUrl(route) {
+  const image = route.image || DEFAULT_OG_IMAGE;
+  return image.startsWith('http') ? image : `${SITE_ORIGIN}${image}`;
+}
+
+function routeImageType(route) {
+  const image = route.image || DEFAULT_OG_IMAGE;
+  if (image.endsWith('.png')) return 'image/png';
+  if (image.endsWith('.webp')) return 'image/webp';
+  if (image.endsWith('.avif')) return 'image/avif';
+  return 'image/jpeg';
+}
+
+function createRouteImageSchema(route) {
+  const canonical = canonicalUrl(route);
+  const imageUrl = routeImageUrl(route);
+  return {
+    '@type': 'ImageObject',
+    '@id': `${canonical}#primary-image`,
+    url: imageUrl,
+    contentUrl: imageUrl,
+    caption: route.imageAlt || `${route.title} image`,
+    ...(route.imageWidth ? { width: Number(route.imageWidth) } : {}),
+    ...(route.imageHeight ? { height: Number(route.imageHeight) } : {}),
   };
 }
 
 function createPeopleSchema() {
   return LEADERSHIP.map((person) => ({
     '@type': 'Person',
-    '@id': `${SITE_ORIGIN}/about/#${person.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
+    '@id': personSchemaId(person),
     name: person.name,
     jobTitle: person.role,
     worksFor: person.organization === BUSINESS_DATA.name
@@ -360,25 +865,44 @@ export function createStructuredData(routeOrId) {
 
   const canonical = canonicalUrl(route);
   const breadcrumb = createBreadcrumbSchema(route);
-  const course = createCourseSchema(route);
+  const regionalCoverage = createRegionalCoverageSchema(route);
+  const learningEntity = createLearningEntity(route);
+  const trainingLocation = createTrainingLocationSchema(route);
+  const careerGuide = createCareerGuideSchema(route);
+  const resource = createResourceSchema(route);
+  const routeImage = createRouteImageSchema(route);
   const webPage = {
     '@type': route.schemaType || 'WebPage',
     '@id': `${canonical}#webpage`,
     url: canonical,
     name: route.title,
     description: route.description,
-    inLanguage: 'en-IN',
+    inLanguage: BUSINESS_DATA.language,
     isPartOf: { '@id': WEBSITE_ID },
     about: { '@id': ORGANIZATION_ID },
+    primaryImageOfPage: { '@id': routeImage['@id'] },
+    ...(regionalCoverage ? { spatialCoverage: { '@id': regionalCoverage['@id'] } } : {}),
     ...(breadcrumb ? { breadcrumb: { '@id': breadcrumb['@id'] } } : {}),
   };
 
-  if (route.id === 'home' || route.id === 'contact' || route.id === 'lucknow-location') {
+  if (route.id === 'home' || route.id === 'contact') {
     webPage.mainEntity = { '@id': ORGANIZATION_ID };
   }
 
-  if (course) {
-    webPage.mainEntity = { '@id': course['@id'] };
+  if (trainingLocation) {
+    webPage.mainEntity = { '@id': TRAINING_LOCATION_ID };
+  }
+
+  if (learningEntity) {
+    webPage.mainEntity = { '@id': learningEntity['@id'] };
+  }
+
+  if (careerGuide) {
+    webPage.mainEntity = { '@id': careerGuide['@id'] };
+  }
+
+  if (resource) {
+    webPage.mainEntity = { '@id': resource['@id'] };
   }
 
   if (route.id === 'faqs') {
@@ -389,9 +913,13 @@ export function createStructuredData(routeOrId) {
     webPage.mainEntity = createPeopleSchema().map((person) => ({ '@id': person['@id'] }));
   }
 
-  const graph = [createOrganizationSchema(), createWebsiteSchema(), webPage];
+  const graph = [createOrganizationSchema(), createWebsiteSchema(), webPage, routeImage];
   if (breadcrumb) graph.push(breadcrumb);
-  if (course) graph.push(course);
+  if (regionalCoverage) graph.push(regionalCoverage);
+  if (learningEntity) graph.push(learningEntity);
+  if (trainingLocation) graph.push(trainingLocation);
+  if (careerGuide) graph.push(careerGuide);
+  if (resource) graph.push(resource);
   if (route.id === 'about') graph.push(...createPeopleSchema());
 
   return {
@@ -405,28 +933,45 @@ export function createRouteMeta(id) {
   const canonical = canonicalUrl(route);
   const robots = route.indexable ? 'index,follow' : 'noindex,follow';
   const structuredData = createStructuredData(route);
+  const imageUrl = routeImageUrl(route);
+  const imageType = routeImageType(route);
+  const imageAlt = route.imageAlt || `${BUSINESS_DATA.name} logo`;
+  const authoredContent = route.careerGuideId
+    ? getCareerGuide(route.careerGuideId)
+    : route.resourceId
+      ? getResource(route.resourceId)
+      : null;
 
   return [
     { title: route.title },
     { name: 'description', content: route.description },
     { name: 'robots', content: robots },
     { tagName: 'link', rel: 'canonical', href: canonical },
-    { property: 'og:type', content: 'website' },
-    { property: 'og:locale', content: 'en_IN' },
+    { property: 'og:type', content: route.careerGuideId || route.resourceId ? 'article' : 'website' },
+    { property: 'og:locale', content: BUSINESS_DATA.locale },
     { property: 'og:site_name', content: BUSINESS_DATA.name },
     { property: 'og:title', content: route.title },
     { property: 'og:description', content: route.description },
     { property: 'og:url', content: canonical },
-    { property: 'og:image', content: DEFAULT_OG_IMAGE },
-    { property: 'og:image:type', content: 'image/jpeg' },
-    { property: 'og:image:width', content: DEFAULT_OG_IMAGE_WIDTH },
-    { property: 'og:image:height', content: DEFAULT_OG_IMAGE_HEIGHT },
-    { property: 'og:image:alt', content: `${BUSINESS_DATA.name} logo` },
+    { property: 'og:image', content: imageUrl },
+    ...(imageUrl.startsWith('https://') ? [{ property: 'og:image:secure_url', content: imageUrl }] : []),
+    { property: 'og:image:type', content: imageType },
+    ...(route.imageWidth ? [{ property: 'og:image:width', content: String(route.imageWidth) }] : route.image ? [] : [{ property: 'og:image:width', content: DEFAULT_OG_IMAGE_WIDTH }]),
+    ...(route.imageHeight ? [{ property: 'og:image:height', content: String(route.imageHeight) }] : route.image ? [] : [{ property: 'og:image:height', content: DEFAULT_OG_IMAGE_HEIGHT }]),
+    { property: 'og:image:alt', content: imageAlt },
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: route.title },
     { name: 'twitter:description', content: route.description },
-    { name: 'twitter:image', content: DEFAULT_OG_IMAGE },
-    { name: 'twitter:image:alt', content: `${BUSINESS_DATA.name} logo` },
+    { name: 'twitter:url', content: canonical },
+    { name: 'twitter:image', content: imageUrl },
+    { name: 'twitter:image:alt', content: imageAlt },
+    ...(authoredContent ? [
+      { name: 'author', content: authoredContent.author.name },
+      { property: 'article:author', content: authoredContent.author.profilePath ? `${SITE_ORIGIN}${authoredContent.author.profilePath}` : authoredContent.author.name },
+      { property: 'article:published_time', content: `${authoredContent.publishedAt}T00:00:00Z` },
+      { property: 'article:modified_time', content: `${authoredContent.updatedAt}T00:00:00Z` },
+      { property: 'article:section', content: route.parentId ? getSeoRoute(route.parentId).breadcrumbLabel : route.breadcrumbLabel },
+    ] : []),
     ...(structuredData ? [{ 'script:ld+json': structuredData }] : []),
   ];
 }

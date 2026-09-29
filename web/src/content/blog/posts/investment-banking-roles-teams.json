@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "id": "investment-banking-roles-teams",
+  "slug": "investment-banking-roles-teams",
+  "status": "published",
+  "title": "Investment Banking Roles and Teams",
+  "excerpt": "Compare investment banking roles and teams, see where operations fits in the transaction lifecycle, and identify practical skills for entry-level work.",
+  "category": "investment-banking",
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Finance education editorial team",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Investment banking roles are organised differently across firms, products and markets. A useful team map separates client or market activity from control, technology, finance and operations responsibilities without assuming that every firm uses the same front-office, middle-office and back-office labels. Operations is often the function that helps records, instructions, confirmations, settlements and exceptions move through controlled handoffs. It is a real finance career pathway, but it is not identical to advisory, research or trading."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The main investment banking team groups"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Advisory and capital-raising teams may support defined corporate transactions, subject to the firm's permissions and applicable rules.",
+        "Markets teams may support activity in securities or other products; client, execution and control duties can differ by organisation.",
+        "Research teams prepare analysis under their own review and disclosure controls; their work is distinct from operational processing.",
+        "Risk, compliance, legal and control teams challenge, monitor or stop activity when a policy, risk or obligation requires it.",
+        "Finance and technology teams support reporting, valuation, systems, data and infrastructure that other teams depend on.",
+        "Operations teams coordinate records, confirmations, settlement, reconciliations, static data and exception management."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How operations connects the teams"
+    },
+    {
+      "type": "paragraph",
+      "text": "A simplified transaction lifecycle might begin with an authorised decision or execution, followed by capture of the terms, confirmation with relevant parties, preparation of settlement instructions, movement of cash or securities, reconciliation and exception closure. Different teams own different points in that sequence. An operations analyst should be able to say which record is being checked, what evidence is expected, what happens when values disagree and who can approve a correction. That is more useful than memorising a team chart."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A fictional handoff example"
+    },
+    {
+      "type": "paragraph",
+      "text": "Suppose a fictional markets team records a bond purchase with a settlement date of 12 October, while the custodian file shows 13 October. The operations analyst checks the trade reference, confirms whether an approved amendment exists, reviews the time zone and market calendar used by the system, and records the evidence. They do not decide that one date is correct because it looks more convenient. If the mismatch could affect a deadline, the analyst escalates it through the documented control route and records the owner and expected response."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Skills by role family"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Operations: reconciliation, process controls, data quality, deadline management and exception writing.",
+        "Risk and compliance: policy interpretation, evidence review, monitoring and escalation judgement.",
+        "Finance: accounting logic, reporting controls, variance analysis and clear documentation.",
+        "Technology and data: system thinking, requirements, data lineage and controlled change.",
+        "Client or market roles: product knowledge, communication and activity-specific rules."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to evaluate a job description"
+    },
+    {
+      "type": "paragraph",
+      "text": "Look for the actual daily work: the queue or portfolio, systems used, service-level expectations, reviewer model, shift pattern, required product knowledge and the decisions the role may make. Ask how quality is measured and what an analyst does when a break cannot be resolved. Treat salary, placement and employer claims as items to verify directly, not as a reason to infer that one title is better than another."
+    },
+    {
+      "type": "link",
+      "label": "See the Investment Banking Operations career guide",
+      "href": "/career-guides/investment-banking-operations/",
+      "routeId": "career-guide-investment-banking-operations"
+    },
+    {
+      "type": "link",
+      "label": "Explore Investment Banking Operations training",
+      "href": "/courses/investment-banking-operations/",
+      "routeId": "investment-banking-operations"
+    },
+    {
+      "type": "link",
+      "label": "Learn the trade lifecycle step by step",
+      "href": "/career-guides/trade-lifecycle/",
+      "routeId": "career-guide-trade-lifecycle"
+    },
+    {
+      "type": "link",
+      "label": "Read the reconciliation resource",
+      "href": "/resources/reconciliation-in-finance/",
+      "routeId": "resource-reconciliation-in-finance"
+    },
+    {
+      "type": "link",
+      "label": "Browse all finance career insights",
+      "href": "/blog/",
+      "routeId": "blog"
+    },
+    {
+      "type": "link",
+      "label": "Read SEBI investor education material",
+      "href": "https://investor.sebi.gov.in/iematerial.html"
+    },
+    {
+      "type": "paragraph",
+      "text": "The best preparation is a small, honest demonstration: map a fictional transaction, name each handoff, show one control, investigate one exception and write the escalation note. This article is educational and does not provide investment, legal or career advice."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/investment-banking-roles-teams.png",
+    "alt": "Editorial illustration of investment banking advisory, markets, and operations teams working together",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-27",
+  "updatedAt": "2026-09-27",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Investment Banking Roles and Teams | Centaur Careers",
+    "description": "Compare investment banking roles and teams, where operations fits in the lifecycle, and the practical skills entry-level analysts use.",
+    "canonicalPath": "/blog/investment-banking-roles-teams/",
+    "noindex": false,
+    "focusKeyword": "investment banking roles and teams",
+    "secondaryKeywords": ["investment banking jobs", "investment banking operations", "finance careers"]
+  },
+  "tags": ["Investment Banking Roles and Teams", "Investment Banking Roles", "Investment Banking Teams", "Operations Careers", "Finance Careers"],
+  "relatedRouteIds": ["blog", "investment-banking-operations", "career-guide-investment-banking-operations", "career-guide-trade-lifecycle", "resource-reconciliation-in-finance"],
+  "redirects": [],
+  "evidenceNotes": [
+    "SEBI investor education material: https://investor.sebi.gov.in/iematerial.html",
+    "Team boundaries are broad educational descriptions and can vary by firm, product, market and legal entity.",
+    "The handoff example is fictional and does not describe a specific employer workflow."
+  ]
+}

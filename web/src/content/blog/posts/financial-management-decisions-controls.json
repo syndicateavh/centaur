@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "financial-management-decisions-controls",
+  "slug": "financial-management-decisions-controls",
+  "status": "published",
+  "title": "Financial Management: Core Decisions and Controls",
+  "excerpt": "Understand key financial management decisions through a fictional business case, with practical controls and clear limits on the illustration.",
+  "category": "finance-operations",
+  "author": { "type": "Organization", "id": "centaur-careers", "name": "Centaur Careers", "role": "Publisher", "profilePath": "/" },
+  "body": [
+    { "type": "paragraph", "text": "Financial management functions include how an organisation plans, obtains, uses and monitors financial resources in support of its objectives. Financial planning connects those choices: an investment decision affects funding needs, liquidity, risk, reporting and controls. The framework below is a learning aid, not a recommendation for a real company. Actual decisions depend on current facts, governance, applicable rules and qualified professional judgement." },
+    { "type": "heading", "level": 2, "text": "Four connected decision areas" },
+    { "type": "list", "items": [
+      "Investment: Which long-term assets, projects or capabilities should be considered, and what assumptions, alternatives and risks need review?",
+      "Financing: How might the organisation fund its needs, and what are the costs, obligations, timing and risks of available sources?",
+      "Working capital management and liquidity: How will expected receipts, payments, inventory and short-term obligations be monitored so the organisation can meet commitments?",
+      "Distribution and retention: What resources may be retained for operations or future plans, and what distributions can be considered under governance and legal requirements?"
+    ] },
+    { "type": "heading", "level": 2, "text": "A clearly fictional decision case" },
+    { "type": "paragraph", "text": "Imagine a fictional small manufacturer deciding whether to buy a machine. Before approval, its team could define the business need, compare purchase and other feasible options, estimate cash timing and operating costs, document assumptions, consider implementation and supplier risks, identify who can approve the spend, and set a way to compare actual results with the plan. The example intentionally supplies no price, return forecast or recommendation: those would require evidence and organisation-specific analysis." },
+    { "type": "paragraph", "text": "A sound control process separates proposal, review, approval, payment and recording according to the organisation's authority matrix. Useful controls can include documented assumptions, budget checks, independent review, supplier verification, segregation of duties, reconciliations and follow-up on material variances. Controls should be proportionate and designed for the actual risks; a checklist alone does not establish that a decision is correct or compliant." },
+    { "type": "heading", "level": 2, "text": "A practical decision-and-control checklist" },
+    { "type": "list", "ordered": true, "items": [
+      "State the objective and the decision owner; distinguish facts, assumptions and unresolved questions.",
+      "Compare realistic alternatives using consistent inputs and explain material limitations.",
+      "Assess funding, cash timing, operational capacity, risks and relevant legal or policy requirements.",
+      "Obtain review and approval at the appropriate authority level before committing resources.",
+      "Record the decision, retain supporting evidence, monitor actual performance and escalate significant exceptions."
+    ] },
+    { "type": "paragraph", "text": "Financial management is broader than bookkeeping or one formula. Good analysis depends on reliable information, clear accountability and review of uncertainty. Readers should consult the organisation's current policies, applicable accounting and legal requirements, and qualified advisers for real decisions." },
+    { "type": "link", "label": "Explore finance operations roles and responsibilities", "href": "/career-guides/finance-operations/", "routeId": "career-guide-finance-operations" },
+    { "type": "link", "label": "Review the ICAI financial management learning resources", "href": "https://www.icai.org/post/17776" },
+    { "type": "paragraph", "text": "Centaur Careers publishes this general educational overview with a fictional case. It does not provide financial, investment, accounting, tax or legal advice, and it does not claim that financial management is a separate course or a guaranteed component of the current Financial Operations Masterclass." }
+  ],
+  "coverImage": {
+    "src": "/images/blog/financial-management-decision-framework.png",
+    "alt": "Illustration of a business owner reviewing investment choices, cash resources and financial controls.",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-24",
+  "updatedAt": "2026-09-24",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Financial Management: Core Decisions and Controls",
+    "description": "Explore investment, financing, liquidity and distribution decisions through a fictional case and a practical financial-control checklist.",
+    "canonicalPath": "/blog/financial-management-decisions-controls/",
+    "noindex": false
+  },
+  "tags": ["Financial Management", "Financial Planning", "Working Capital", "Financial Controls"],
+  "relatedRouteIds": ["blog", "career-guides", "career-guide-finance-operations"],
+  "redirects": [],
+  "evidenceNotes": [
+    "ICAI financial management learning-resource index: https://www.icai.org/post/17776",
+    "The decision case is fictional and has no supplied project figures, forecast, recommendation or claimed outcome.",
+    "The post is general education and does not present financial management as a separate Centaur Careers course or unverified curriculum topic."
+  ]
+}

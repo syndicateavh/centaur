@@ -1,0 +1,28 @@
+// Curated logo artwork supplied for the home and placements pages. Keeping the
+// paths in one place ensures both pages display the same approved partner set.
+export const HIRING_PARTNER_LOGOS = Object.freeze([
+  Object.freeze({ name: 'Axis Bank', src: '/images/ogpartners/Axis_Bank_logo.svg.webp' }),
+  Object.freeze({ name: 'Bank of America', src: '/images/ogpartners/Bank_america_logo18.png' }),
+  Object.freeze({ name: 'Barclays', src: '/images/ogpartners/Barclays-Logo.svg.webp' }),
+  Object.freeze({ name: 'BNP Paribas', src: '/images/ogpartners/BNP_Paribas.png' }),
+  Object.freeze({ name: 'Citi', src: '/images/ogpartners/Citi.svg.webp' }),
+  Object.freeze({ name: 'Deutsche Bank', src: '/images/ogpartners/Deutsche_Bank-Logo.svg.webp' }),
+  Object.freeze({ name: 'Genpact', src: '/images/ogpartners/Genpact_Logo_Black_(3).png' }),
+  Object.freeze({ name: 'Goldman Sachs', src: '/images/ogpartners/Goldman_Sachs.svg.webp' }),
+  Object.freeze({ name: 'HDFC Bank', src: '/images/ogpartners/HDFC_Bank_Logo.svg.webp' }),
+  Object.freeze({ name: 'HSBC', src: '/images/ogpartners/HSBC_logo_(2018).svg.webp' }),
+  Object.freeze({ name: 'ICICI Bank', src: '/images/ogpartners/ICICI_Bank_Logo.svg.webp' }),
+  Object.freeze({ name: 'J.P. Morgan', src: '/images/ogpartners/J_P_Morgan_Logo_2008_1.svg.webp' }),
+  Object.freeze({ name: 'KPMG', src: '/images/ogpartners/KPMG_blue_logo.svg.webp' }),
+  Object.freeze({ name: 'Deloitte', src: '/images/ogpartners/Logo_of_Deloitte.svg.webp' }),
+  Object.freeze({ name: 'Morgan Stanley', src: '/images/ogpartners/Morgan_Stanley_Logo_1.svg.webp' }),
+  Object.freeze({ name: 'Nomura', src: '/images/ogpartners/Nomura_Holdings_logo.png' }),
+  Object.freeze({ name: 'PwC', src: '/images/ogpartners/PwC_2025_Logo.svg.webp' }),
+  Object.freeze({ name: 'Razorpay', src: '/images/ogpartners/Razorpay_logo.svg.webp' }),
+  Object.freeze({ name: 'SBI Capital Markets', src: '/images/ogpartners/SBI_Capital_Markets_Logo.png' }),
+  Object.freeze({ name: 'Société Générale', src: '/images/ogpartners/Société_Générale.svg.webp' }),
+  Object.freeze({ name: 'Standard Chartered', src: '/images/ogpartners/Standard_Chartered_(2021).svg.webp' }),
+  Object.freeze({ name: 'State Street', src: '/images/ogpartners/State-street-logo-final.svg.webp' }),
+  Object.freeze({ name: 'UBS', src: '/images/ogpartners/UBS_Logo.png' }),
+  Object.freeze({ name: 'Wells Fargo', src: '/images/ogpartners/Wells_Fargo_Bank.svg.webp' }),
+]);

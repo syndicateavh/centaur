@@ -1,0 +1,154 @@
+{
+  "course": {
+    "slug": "kyc-aml-operations-pilot",
+    "title": "KYC & AML Operations Foundations (Pilot)",
+    "summary": "A practical, text-first introduction to customer due diligence, risk awareness, screening, monitoring, and clear case documentation for entry-level banking operations learners.",
+    "overview": "This internal pilot introduces a careful, evidence-led approach to KYC and AML operations in an Indian banking context. It uses fictional cases and focuses on recognizing issues, recording facts, and escalating through approved channels. It is educational material, not legal advice, bank policy, or authorization to make regulated decisions.",
+    "estimatedMinutes": 265,
+    "contentStatus": "Internal pilot draft — subject-matter review required",
+    "reviewDate": "2026-09-29",
+    "reviewer": null,
+    "learningObjectives": [
+      "Explain the purpose of KYC and AML controls and identify where institutional policy governs a task.",
+      "Describe the evidence-led steps used to identify a customer and understand a stated relationship purpose.",
+      "Recognize risk indicators, screening uncertainty, and activity that may need escalation.",
+      "Write a neutral case note that separates verified facts, customer statements, and open questions.",
+      "Protect customer information and follow internal escalation and confidentiality procedures."
+    ],
+    "glossary": [
+      {"term":"AML","definition":"Anti-money laundering controls, laws, and procedures intended to help prevent and detect money laundering."},
+      {"term":"CDD","definition":"Customer due diligence: measures used to identify and verify a customer, understand the relationship, and keep information appropriately current."},
+      {"term":"CIP","definition":"Customer identification procedure: the identity-identification and verification steps prescribed for a regulated entity and relationship."},
+      {"term":"Beneficial owner","definition":"The natural person(s) who ultimately own or control a customer, determined under the applicable rules and institutional process."},
+      {"term":"PEP","definition":"A politically exposed person as defined by applicable rules; status calls for the relevant prescribed controls and is not itself proof of wrongdoing."},
+      {"term":"EDD","definition":"Enhanced due diligence: additional measures applied when required by law, risk assessment, or institutional policy."},
+      {"term":"False positive","definition":"A screening match that, after approved review, is determined not to be the same person or entity."},
+      {"term":"Ongoing due diligence","definition":"Review of a relationship and its activity over time against available customer, business, and risk information."},
+      {"term":"Case note","definition":"A clear, dated record of what was checked, what was observed, the evidence source, the reasoning, and the next action."},
+      {"term":"FIU-IND","definition":"The Financial Intelligence Unit-India, the national agency that receives, processes, analyses, and disseminates information relating to suspect financial transactions."}
+    ],
+    "references": [
+      {"title":"RBI Master Direction — Know Your Customer (KYC) Direction, 2016 (updated 14 August 2025)","url":"https://old.rbi.org.in/commonman/English/Scripts/MasterDirection.aspx","accessed":"2026-09-29","note":"Use the latest RBI text and applicable amendments when reviewing this course; the institution's approved policy controls operational work."},
+      {"title":"RBI KYC Amendment Directions, 2025 (12 June 2025)","url":"https://www.rbi.org.in/scripts/NotificationUser.aspx/searchnew/searchnew/NotificationUser.aspx?Id=12866","accessed":"2026-09-29","note":"Included to demonstrate that amendments have dates and scope. Do not rely on time-limited provisions without checking current direction text."},
+      {"title":"Prevention of Money-Laundering Act, 2002 — India Code","url":"https://www.indiacode.nic.in/indiacode/handle/123456789/2036?view_type=browse","accessed":"2026-09-29","note":"Check the current consolidated Act and rules for legal interpretation."},
+      {"title":"Prevention of Money-Laundering (Maintenance of Records) Rules, 2005 — FIU-IND","url":"https://fiuindia.gov.in/pdfs/AML_legislation/PMLA_2005.pdf","accessed":"2026-09-29","note":"Use the latest amendments and institution-approved procedures."}
+    ],
+    "casePacket": {
+      "title":"Riverstone Textiles — fictional practice packet",
+      "notice":"Every person, business, date, reference, and amount in this exercise is invented. Identifiers are deliberately non-real labels. Do not use real customer information in learning exercises.",
+      "facts":[
+        "Riverstone Textiles Private Limited is a fictional small business seeking a current account for domestic wholesale operations.",
+        "The application lists two directors and states that the business buys fabric from suppliers in three Indian states and sells to retailers.",
+        "The ownership chart supplied in the exercise names two fictional shareholders; one branch of the chart ends at an unnamed holding company, so control is not yet clear.",
+        "A fictional authorized representative submits a board authorization marked DEMO-DOC-17. The copy is readable, but the authority record has not been checked in the approved system.",
+        "The expected activity note says 20–30 domestic supplier and retailer payments per month. A later fictional alert shows several incoming transfers from a newly introduced counterparty with no matching invoice in the sample file.",
+        "A screening tool returns a possible name similarity for one director. The available fictional date-of-birth field differs; the approved reviewer has not completed the match review."
+      ],
+      "questions":[
+        "What facts are verified, what are only stated, and what remains unknown?",
+        "What additional ownership or authority information should be requested through the approved process?",
+        "What can and cannot be concluded from a possible name match?",
+        "How would you document the alert and escalate it without tipping off a customer?"
+      ]
+    }
+  },
+  "modules": [
+    {"slug":"foundations","title":"1. KYC and AML foundations","summary":"Purpose, roles, and the boundary between a fact and a conclusion.","lessons":[
+      {"slug":"why-controls-matter","title":"Why these controls matter","minutes":15,"blocks":[
+        {"type":"lead","text":"Good KYC work helps an institution understand who it serves, why an account is needed, and whether activity remains consistent with that understanding."},
+        {"type":"heading","text":"A control system, not a form-filling task"},
+        {"type":"paragraph","text":"India's AML framework includes the Prevention of Money-Laundering Act and Rules. RBI's KYC Direction applies to RBI-regulated entities within its stated scope. Together with an institution's approved risk assessment and policies, these sources shape customer identification, due diligence, record keeping, and ongoing review. The precise requirement depends on the entity, customer, product, channel, and current rules."},
+        {"type":"paragraph","text":"For an entry-level operations learner, the job is to follow assigned procedures, use approved systems, preserve evidence, and raise uncertainty. A document or system result is evidence to assess under procedure; it is not permission to improvise an exception."},
+        {"type":"callout","title":"Role boundary","text":"This course does not authorize you to approve customers, decide that a person is suspicious, file a report, or override a control. Follow your employer's current policy and escalation route."},
+        {"type":"activity","title":"Fact or conclusion?","text":"Sort these notes: (A) 'The sample file contains no invoice for the three transfers.' (B) 'The business is laundering money.' Explain which is an observed fact and why the second statement is an unsupported conclusion."},
+        {"type":"takeaways","items":["KYC is part of a continuing relationship, not just onboarding.","Rules and institutional procedures can change; check the current approved source.","Record evidence and escalate gaps instead of guessing."]}
+      ]},
+      {"slug":"the-operations-role","title":"The operations role and safe handling","minutes":15,"blocks":[
+        {"type":"lead","text":"Careful operations work is accurate, limited to assigned authority, and respectful of customer confidentiality."},
+        {"type":"heading","text":"A repeatable work pattern"},
+        {"type":"list","items":["Confirm the task, customer or case reference, and your authority in the approved system.","Use only approved records and tools; note the source and time of each relevant check.","Compare information using the prescribed process. Distinguish a missing item from an inconsistent item.","Record what you observed in plain language and identify unresolved points.","Route the case to the designated reviewer and retain records as policy requires."]},
+        {"type":"paragraph","text":"Access customer data only when needed for assigned work. Do not copy it into personal notes, public AI tools, messaging apps, or training exercises. This course's scenarios use invented information so learners can practise without exposing anyone's data."},
+        {"type":"callout","title":"Confidentiality","text":"Do not disclose an internal alert, review, or reporting decision to a customer or an unauthorized colleague. Follow the institution's approved communication and escalation procedure."},
+        {"type":"activity","title":"Choose the next action","text":"You notice an account reference in a screenshot shared in a class chat. Do not forward it. Stop sharing, notify the designated privacy or security contact using the approved route, and follow their instructions. Write down which data-minimization rule this illustrates."},
+        {"type":"takeaways","items":["Use least-necessary access and approved channels.","Escalate uncertainty; do not make decisions outside your authority.","Keep notes neutral, attributable, and useful to the next reviewer."]}
+      ]}
+    ]},
+    {"slug":"customer-due-diligence","title":"2. Customer due diligence","summary":"Identity, relationship purpose, authority, and ownership evidence.","lessons":[
+      {"slug":"identify-and-understand","title":"Identify the customer and understand the relationship","minutes":25,"blocks":[
+        {"type":"lead","text":"CDD connects an identity to an intended relationship through evidence gathered and checked using the applicable procedure."},
+        {"type":"heading","text":"A structured review"},
+        {"type":"list","items":["Establish which customer type and product process applies.","Identify the customer and verify the prescribed particulars using permitted documents or approved digital methods.","Understand the purpose and intended nature of the relationship, including expected activity where the process requires it.","Check whether a person acting for the customer is authorized and record the basis for that authority.","Resolve missing or inconsistent information through the approved workflow before the case moves forward."]},
+        {"type":"paragraph","text":"The record checklist differs for an individual, a sole proprietorship, a company, a trust, or another legal arrangement. Do not reuse a checklist from a different customer type. Do not collect extra personal information merely because it might be useful; use the minimum required under current rules and policy."},
+        {"type":"callout","title":"Evidence discipline","text":"A copy received is not automatically a verified record. Record which permitted source or verification step was used, what result it returned, and any exception routed for review."},
+        {"type":"activity","title":"Practice: relationship purpose","text":"For Riverstone Textiles, compare the stated wholesale activity with the supplied sample records. List three questions that clarify the business purpose without assuming wrongdoing."},
+        {"type":"takeaways","items":["Apply the workflow for the customer type and relationship.","Verify through permitted sources and record the step.","Treat unclear or contradictory information as an open item to resolve."]}
+      ]},
+      {"slug":"authority-and-ownership","title":"Authority, legal entities, and beneficial ownership","minutes":25,"blocks":[
+        {"type":"lead","text":"For an organization, understanding the entity includes checking who may act for it and who ultimately owns or controls it under the applicable rules."},
+        {"type":"heading","text":"Follow the ownership chain"},
+        {"type":"paragraph","text":"Start with the legal entity's prescribed formation and identity information, then follow the current institution checklist for directors, authorized representatives, and beneficial ownership. The exact threshold, documentation, and steps are legal and policy questions that must be checked in the current applicable source. A chart that stops at another entity leaves a question to resolve; it does not prove concealment."},
+        {"type":"list","items":["Confirm the entity's identity from approved records.","Check that the person giving instructions has authority under the accepted evidence and workflow.","Map ownership and control through each entity layer until the required natural-person information is established or an approved escalation is recorded.","Compare names and roles consistently across sources; document differences without silently correcting them.","Ask for missing information through approved channels and record the response and reviewer decision."]},
+        {"type":"callout","title":"Do not infer control","text":"A job title, family relationship, or signature alone may not establish beneficial ownership or authority. Use the legal definition and the institution's current procedure."},
+        {"type":"activity","title":"Practice: incomplete chain","text":"The Riverstone ownership chart ends at an unnamed holding company. Draft a neutral note describing the gap and list the records or clarification to request under the approved legal-entity checklist."},
+        {"type":"takeaways","items":["Separate identity, authority, ownership, and control checks.","Trace the ownership chain using the applicable definitions.","An unresolved gap should be documented and routed, not filled by assumption."]}
+      ]}
+    ]},
+    {"slug":"risk-and-review","title":"3. Risk-based due diligence","summary":"Risk factors, enhanced review, and keeping the customer picture current.","lessons":[
+      {"slug":"risk-based-approach","title":"Risk assessment and enhanced review","minutes":25,"blocks":[
+        {"type":"lead","text":"Risk-based work applies controls in proportion to the risk identified under the institution's approved framework."},
+        {"type":"paragraph","text":"A risk assessment can consider customer, product, geography, delivery channel, and transaction context. A single attribute rarely tells the whole story. Staff should apply the institution's defined categories and required approvals, not create personal scoring rules or use stereotypes as proxies for risk."},
+        {"type":"heading","text":"When additional review is needed"},
+        {"type":"paragraph","text":"Enhanced due diligence means additional measures required by applicable law, risk assessment, or policy. Depending on the case, the approved workflow may call for more information about ownership, source of funds, source of wealth, purpose, or expected activity and a higher level of approval. The correct scope and evidence are policy-specific."},
+        {"type":"callout","title":"Risk is not a finding of guilt","text":"A higher-risk classification is a control decision, not proof that a customer has committed wrongdoing. Use neutral language and provide a clear basis."},
+        {"type":"activity","title":"Practice: choose evidence","text":"Riverstone has an incomplete ownership chain and activity that differs from its stated expectation. Identify which information is missing, what approved control might apply, and who should review it. Do not assign a risk score."},
+        {"type":"takeaways","items":["Use approved risk factors and decision authority.","Explain why a measure applies and what evidence supports the decision.","Avoid stereotypes and unsupported allegations."]}
+      ]},
+      {"slug":"ongoing-due-diligence","title":"Ongoing due diligence and periodic review","minutes":20,"blocks":[
+        {"type":"lead","text":"Customer understanding must remain current enough to interpret activity and meet the institution's ongoing obligations."},
+        {"type":"paragraph","text":"Ongoing due diligence includes reviewing activity against what is known about the customer, business, and risk profile. A change in ownership, contact information, business model, or transaction pattern may require an update under the current process. Periodic KYC update timing and permitted channels depend on the latest regulation and institutional policy."},
+        {"type":"list","items":["Compare observed activity with the current customer profile and expected purpose.","Check whether profile changes or outdated records need the approved update workflow.","Record the alert trigger, relevant transactions or dates, sources reviewed, and unresolved questions.","Escalate using the route and timeframe specified by policy.","Do not delay or close an alert solely because one supporting record is absent; seek reviewer direction."]},
+        {"type":"callout","title":"Time-sensitive rules","text":"Regulatory amendments may include dates, conditions, and limited scope. Never carry a dated relief or deadline into current work without checking the latest official text."},
+        {"type":"activity","title":"Practice: compare expected activity","text":"The fictional case shows several transfers from a new counterparty and no matching invoice in the sample file. List the transaction facts you would preserve and the questions you would send to an authorized reviewer."},
+        {"type":"takeaways","items":["Use the customer's current profile as context, not as a rigid prediction.","Document both the alert and the steps taken to understand it.","Check the current version of dated requirements."]}
+      ]}
+    ]},
+    {"slug":"screening-and-monitoring","title":"4. Screening and transaction review","summary":"Handle possible matches and alerts carefully and consistently.","lessons":[
+      {"slug":"screening-review","title":"Screening results and possible matches","minutes":25,"blocks":[
+        {"type":"lead","text":"A screening result is a prompt for controlled review. Similar names alone do not establish identity or wrongdoing."},
+        {"type":"paragraph","text":"Follow the institution's current screening procedure, approved data sources, matching fields, escalation levels, and recordkeeping requirements. Reviewers may compare identifiers and context available under the approved process. A mismatch can support a false-positive disposition only when the authorized reviewer follows required criteria and records the rationale."},
+        {"type":"list","items":["Preserve the system result and the time it was generated.","Compare only the permitted identifiers and source records.","Record both similarities and differences; do not omit a conflicting field.","Route uncertain or potential matches to the designated reviewer.","Do not tell the customer or an unauthorized person about a sensitive screening review."]},
+        {"type":"callout","title":"PEP status","text":"PEP status is not an accusation. Apply the legally required and institution-approved measures, and distinguish the status from any separate concern about activity."},
+        {"type":"activity","title":"Practice: possible name match","text":"The fictional screening result has a similar name but a different date-of-birth field. Write a neutral note with the comparison result and state that an authorized reviewer must determine disposition under policy."},
+        {"type":"takeaways","items":["Do not decide a match from name similarity alone.","A possible match and a confirmed match are different states.","Keep the review confidential and preserve the rationale."]}
+      ]},
+      {"slug":"alert-review-and-case-notes","title":"Transaction alerts and clear case notes","minutes":25,"blocks":[
+        {"type":"lead","text":"An alert identifies activity for review; it is not itself a conclusion about intent or criminality."},
+        {"type":"heading","text":"Write for the next reviewer"},
+        {"type":"list","items":["State the alert trigger, date range, and relevant transactions using approved references.","Describe the customer profile and expected activity relevant to the review.","Identify records checked and their source; distinguish system facts from customer statements.","Explain what is consistent, inconsistent, or still unknown.","Record actions taken, escalation destination, and pending follow-up."]},
+        {"type":"paragraph","text":"Avoid vague labels such as 'suspicious customer' or unsupported explanations such as 'probably fraud'. A good note is factual, concise, reproducible, and limited to people who need it. Reporting decisions belong to the designated officer or role under applicable law and institutional policy."},
+        {"type":"callout","title":"Confidential reporting","text":"Applicable rules restrict disclosure of certain reporting information. Follow the institution's confidentiality and escalation procedures; never signal a filing or investigation to the customer."},
+        {"type":"activity","title":"Practice: draft a neutral note","text":"Using the case packet, draft 4–6 sentences. Include the stated expected activity, the transfer pattern in the fictional sample, the absent invoice, what has not yet been verified, and the escalation needed. Do not state that a crime occurred."},
+        {"type":"takeaways","items":["Alerts initiate review; they do not settle the case.","Separate sourced facts, customer statements, analysis, and next steps.","Use authorized channels and preserve confidentiality."]}
+      ]}
+    ]},
+    {"slug":"integrated-practice","title":"5. Integrated fictional case and wrap-up","summary":"Apply the workflow to Riverstone Textiles and check your readiness.","lessons":[
+      {"slug":"riverstone-case","title":"Integrated case: Riverstone Textiles","minutes":35,"blocks":[
+        {"type":"lead","text":"Bring identity, ownership, screening, expected activity, documentation, and escalation together in one careful review."},
+        {"type":"paragraph","text":"Read the fictional packet in the course workbook. Riverstone's application has an incomplete ownership chain, an authority record not yet checked in an approved system, a possible name match with a differing field, and transfers for which the sample file has no matching invoice. Each point is an open task or review trigger; none alone establishes wrongdoing."},
+        {"type":"heading","text":"Your analyst handoff"},
+        {"type":"list","items":["Create a fact / customer-statement / unknown table.","List the ownership and authority checks still needed under the legal-entity procedure.","Record screening similarities and differences without deciding the match.","Compare the observed activity with the stated profile and identify missing context.","Draft a neutral handoff with evidence sources, actions, owner, and next step."]},
+        {"type":"activity","title":"Submit your own practice note","text":"Use the downloadable workbook to complete the checklist and draft note. This is a self-check exercise; it is not submitted to the LMS and should not contain real customer data. Compare your answer with the standard: every conclusion should point to evidence, every unknown should remain labelled, and every decision should be routed to an authorized role."},
+        {"type":"callout","title":"Model handoff structure","text":"Trigger and date range → profile context → records and sources reviewed → facts and differences → unresolved questions → actions taken → authorized owner and next step."},
+        {"type":"takeaways","items":["The case remains unresolved until prescribed checks and authorized decisions are complete.","Write so another reviewer can reproduce the reasoning.","Protect confidentiality throughout the handoff."]}
+      ]},
+      {"slug":"glossary-and-readiness","title":"Glossary, references, and readiness checklist","minutes":10,"blocks":[
+        {"type":"lead","text":"Use this final checklist to decide whether you can follow the process safely, not whether you can replace a trained reviewer."},
+        {"type":"heading","text":"Before you handle live work"},
+        {"type":"list","items":["I know where to find my employer's current KYC/AML procedure and escalation contacts.","I can separate identity, authority, beneficial ownership, and transaction review.","I can distinguish an observed fact from a customer statement and an inference.","I know not to decide a screening match or suspicious activity outside my authority.","I can write a neutral note with source, date, rationale, and next step.","I will not place customer information in personal notes or unapproved tools."]},
+        {"type":"paragraph","text":"The glossary and official references are available on the course overview page. Regulatory sources can change after this pilot's review date. Before this material is approved or reused, a qualified reviewer should verify every legal statement and update the source register."},
+        {"type":"callout","title":"Course completion","text":"Completing these lessons marks the lesson checklist only. It is not a professional qualification, assessment pass, bank authorization, or certificate. A later approved course version may add reviewed assessments and certificate rules."},
+        {"type":"takeaways","items":["Use current official sources and current institutional procedure.","Ask an authorized reviewer when you are unsure.","This pilot requires subject-matter signoff before public release."]}
+      ]}
+    ]}
+  ]
+}

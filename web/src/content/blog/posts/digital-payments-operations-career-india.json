@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "id": "digital-payments-operations-career-india",
+  "slug": "digital-payments-operations-career-india",
+  "status": "published",
+  "title": "Digital Payments Operations Career Guide for India",
+  "excerpt": "Learn what digital payments operations teams do in India, the skills beginners need and how to prepare for workflow-based interviews.",
+  "category": "finance-operations",
+  "author": {
+    "id": "bharat-singh",
+    "name": "Bharat Singh",
+    "role": "Founder & Director",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Digital payments operations sits behind the customer experience of sending and receiving money. Teams help transactions move through defined workflows, monitor queues, reconcile records, investigate exceptions and coordinate the resolution of failed, delayed or disputed payments. In India, a beginner may encounter terminology connected with UPI, IMPS, NEFT, RTGS, cards, wallets or merchant payments, depending on the organisation and role."
+    },
+    {
+      "type": "paragraph",
+      "text": "The exact process differs across banks, payment service providers, fintech companies and outsourced operations teams. This guide explains transferable work concepts rather than one institution's procedure. It is suitable for graduates across India who want to understand the field before applying or choosing a course."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Understand the payments ecosystem first"
+    },
+    {
+      "type": "paragraph",
+      "text": "A payment is not simply a message from one phone to another. Depending on the payment rail, several participants may support initiation, routing, authorisation, clearing, settlement and customer servicing. Operations analysts need a high-level map of these participants so they can locate where an exception occurred and which team owns the next action."
+    },
+    {
+      "type": "paragraph",
+      "text": "NPCI's official UPI overview describes the platform and its participant roles, while the Reserve Bank of India publishes information about regulated payment and settlement systems. These primary sources are better starting points than memorising an undated diagram from social media."
+    },
+    {
+      "type": "link",
+      "label": "Read NPCI's official overview of UPI",
+      "href": "https://www.npci.org.in/product/upi/about-upi"
+    },
+    {
+      "type": "link",
+      "label": "Review RBI information on payment and settlement systems",
+      "href": "https://m.rbi.org.in/scripts/paymentsystems.aspx"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What a payments operations analyst may do"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Monitor transaction or service queues and identify items requiring action.",
+        "Compare transaction records across internal and external reports.",
+        "Investigate failed, timed-out, duplicated, reversed or unmatched transactions.",
+        "Track disputes, refunds, chargebacks or customer-service escalations within defined timelines.",
+        "Prepare reconciliation summaries and escalate unresolved differences.",
+        "Follow maker-checker, access-control and data-handling procedures.",
+        "Record actions clearly so another analyst or auditor can reconstruct the case.",
+        "Coordinate with technology, product, customer-service, risk or partner teams."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Some roles are more technical, while others focus on reconciliation, dispute handling or customer-facing support. Read job descriptions carefully. A title containing payments can refer to very different work, and the most useful preparation comes from matching your examples to the stated responsibilities."
+    },
+    {
+      "type": "link",
+      "label": "Study the digital payments operations workflow in more detail",
+      "href": "/career-guides/digital-payments-operations/",
+      "routeId": "career-guide-digital-payments-operations"
+    },
+    {
+      "type": "link",
+      "label": "See where payments fits within FinTech operations careers",
+      "href": "/blog/fintech-operations-careers-after-graduation/"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Skills to build for an entry-level role"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Process thinking and investigation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn to trace a transaction through stages, separate facts from assumptions and identify the next control point. In an interview, explain how you would handle a mismatch: confirm identifiers, compare source records, check status and timestamps, document findings, follow the procedure and escalate when authority or information is missing."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Excel and reconciliation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Excel remains useful for organising data and investigating differences. Practise clean tables, sorting, filtering, conditional checks, lookup functions, pivot tables and reconciliation logic. Accuracy matters more than using the largest number of formulas. You should be able to explain how you validated the data and protected the original source."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Communication, controls and customer impact"
+    },
+    {
+      "type": "paragraph",
+      "text": "A clear case note should state what happened, what you checked, what evidence you found, what action you took and what remains open. Payments work can involve sensitive information and strict timelines, so disciplined access, escalation and documentation are core skills rather than administrative extras."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Build a small practice portfolio"
+    },
+    {
+      "type": "paragraph",
+      "text": "You do not need real customer data to demonstrate operations thinking. Create a fictional transaction file with success, failure, reversal and duplicate scenarios. Reconcile it against a second fictional report, write a short exception summary and describe the controls you used. Never copy or publish confidential employer or customer information."
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Draw a simple payment flow showing participants and status changes.",
+        "Create a reconciliation sheet using invented transaction references and amounts.",
+        "Investigate five exceptions and record a reasoned next action for each.",
+        "Write one escalation email that is factual, concise and free of unnecessary customer data.",
+        "Prepare a two-minute explanation of the project for an interview."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Prepare for payments operations interviews"
+    },
+    {
+      "type": "paragraph",
+      "text": "Expect questions that test workflow awareness and judgement: what would you do if records disagree, how would you prioritise ageing cases, when would you escalate, and how would you reduce repeat errors? Structure answers around the process, control, evidence, communication and customer impact. If you do not know an organisation's exact procedure, say so and explain the safe principles you would follow."
+    },
+    {
+      "type": "link",
+      "label": "Use these finance operations interview questions for practice",
+      "href": "/resources/investment-banking-interview-questions/",
+      "routeId": "resource-investment-banking-interview-questions"
+    },
+    {
+      "type": "callout",
+      "title": "Keep your knowledge current",
+      "text": "Payment products, participant rules and operating procedures can change. Use official RBI, NPCI and employer sources for current requirements, and date any notes or statistics you use in an interview."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Frequently asked questions"
+    },
+    {
+      "type": "faq",
+      "question": "Can a commerce graduate work in digital payments operations?",
+      "answer": "Commerce graduates can be relevant candidates when they build payment-workflow knowledge, reconciliation ability, Excel skills and clear communication. Every employer sets its own education and experience criteria."
+    },
+    {
+      "type": "faq",
+      "question": "Do payments operations roles require coding?",
+      "answer": "Not every role requires coding. Many entry-level operations jobs focus on workflows, controls, reconciliation and case handling. Technical support, data and product roles may ask for SQL, APIs or programming, so check the specific job description."
+    },
+    {
+      "type": "faq",
+      "question": "Is UPI knowledge enough for a payments career?",
+      "answer": "UPI knowledge is useful for relevant roles, but operations work also requires investigation, documentation, reconciliation, risk awareness and communication. Broader payment-system knowledge can make your foundation more adaptable."
+    },
+    {
+      "type": "link",
+      "label": "Explore finance career learning options available across India",
+      "href": "/india/",
+      "routeId": "india"
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/digital-payments-operations-career-india.jpg",
+    "alt": "Indian digital payments operations analyst reviewing transaction flows and exception dashboards",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-15",
+  "updatedAt": "2026-09-15",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Digital Payments Operations Career Guide India",
+    "description": "Explore digital payments operations careers in India, including UPI workflows, reconciliation skills, analyst tasks and interview preparation.",
+    "canonicalPath": "/blog/digital-payments-operations-career-india/",
+    "noindex": false
+  },
+  "tags": [
+    "Digital Payments",
+    "Payments Operations",
+    "UPI",
+    "Finance Careers",
+    "Centaur Careers"
+  ],
+  "relatedRouteIds": [
+    "courses",
+    "career-guides",
+    "career-guide-digital-payments-operations",
+    "career-guide-finance-operations",
+    "resource-investment-banking-interview-questions",
+    "india",
+    "contact"
+  ],
+  "redirects": [],
+  "evidenceNotes": [
+    "NPCI UPI product overview: https://www.npci.org.in/product/upi/about-upi",
+    "RBI payment and settlement systems overview: https://m.rbi.org.in/scripts/paymentsystems.aspx",
+    "No time-sensitive transaction-volume, salary or hiring-volume claims are included.",
+    "Role descriptions are presented as examples because responsibilities vary by employer and payment rail."
+  ]
+}

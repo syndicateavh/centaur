@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "id": "career-options-in-commerce-decision-map",
+  "slug": "career-options-in-commerce-decision-map",
+  "status": "published",
+  "title": "Career Options in Commerce: A Practical Decision Map",
+  "excerpt": "Compare commerce career options by day-to-day work, skills, entry requirements and next research steps—not by unsupported salary promises.",
+  "category": "career-guides",
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Publisher",
+    "profilePath": "/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Career options in commerce are easier to compare when you start with the work you want to do, not a list of fashionable job titles. Commerce can lead toward accounting, audit and tax, banking operations, investment operations, financial analysis, business operations, or further professional study. These commerce careers and broader finance career paths differ in daily tasks, qualification requirements and the amount of customer, data or control work involved. This guide is a decision map for research; it is not a promise of admission, employment, salary or a particular outcome."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Start with the kind of work you enjoy"
+    },
+    {
+      "type": "list",
+      "items": [
+        "If you like structured records and checking details, investigate accounting, bookkeeping, audit support and financial reporting roles. Learn what qualifications are required for each role; regulated professional titles have specific routes.",
+        "If you like process steps, exception handling and careful handoffs, look into banking, payments, lending and investment operations. These jobs can involve reconciliations, documentation, controls and service-level deadlines.",
+        "If you like explaining numbers and comparing options, research financial planning and analysis, credit analysis or business analysis. Check actual job descriptions for spreadsheet, accounting and communication expectations.",
+        "If you like customer conversations, compare relationship, branch-service and client-support work with back-office processing. Similar business areas can have very different customer-facing responsibilities.",
+        "If you prefer a longer specialist route, compare recognised professional qualifications and postgraduate study by entry criteria, cost, syllabus, time commitment and the work each route prepares you to pursue."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "These are role families, not guaranteed destinations for every commerce graduate. Employers set their own requirements, and requirements change by location, seniority and business. A course, short certificate or degree should not be described as a guaranteed job qualification unless the relevant regulator or employer says so."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Use this decision map to shortlist a path"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Choose two tasks you would willingly practise every week: for example, reconciling records, explaining a report, checking documents or speaking with customers.",
+        "Find five current job descriptions for each role family in your target city or remote-work market. Record the repeated skills and qualifications instead of relying on one advertisement.",
+        "Mark each requirement as already demonstrated, learnable with practice, or requiring a formal qualification. Verify regulated requirements with the relevant official body.",
+        "Build one small, clearly labelled practice exercise with fictional data, then ask a knowledgeable person to review your work and explain what you would improve.",
+        "Compare study routes only after checking total fees, teaching format, schedule, prerequisites, assessment and written support terms directly with the provider."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "A useful shortlist has a reason for each option: the tasks fit your interests, you understand the entry requirements, and you know the next evidence or skill to build. Do not select a path solely because a social post lists a high salary or says a certificate guarantees a role. Salary varies with employer, experience, role, location and many other factors; verify it through current, credible sources rather than treating an estimate as a promise."
+    },
+    {
+      "type": "link",
+      "label": "Explore finance careers after graduation",
+      "href": "/career-guides/finance-careers-after-graduation/",
+      "routeId": "career-guide-finance-careers-after-graduation"
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, if two operations job descriptions repeatedly ask for reconciliation, first practise an explained mismatch and compare that skill with the published syllabus. If the course teaches only market terminology, keep looking or ask the provider how reconciliation practice is assessed. Make the same check for any career family on your shortlist."
+    },
+    {
+      "type": "link",
+      "label": "Use the checklist for choosing a finance career course",
+      "href": "/career-guides/choosing-finance-career-course/",
+      "routeId": "career-guide-choosing-finance-career-course"
+    },
+    {
+      "type": "link",
+      "label": "Read our finance operations career guide",
+      "href": "/career-guides/finance-operations/",
+      "routeId": "career-guide-finance-operations"
+    },
+    {
+      "type": "paragraph",
+      "text": "Centaur Careers publishes this educational overview for general career research. The examples are illustrative, not individual career advice. The current Centaur program is the Financial Operations Masterclass; this article does not claim that it teaches every commerce subject or guarantees employment or outcomes. Check current program details directly before making a decision."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/career-options-commerce-header.png",
+    "alt": "Illustration of a commerce graduate exploring accounting, banking, finance analysis and client-service career paths.",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-24",
+  "updatedAt": "2026-09-26",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Career Options in Commerce: A Practical Decision Map",
+    "description": "Compare commerce career options by everyday work, skills, entry requirements and research steps, with a practical map for choosing what to explore next.",
+    "canonicalPath": "/blog/career-options-in-commerce-decision-map/",
+    "noindex": false
+  },
+  "tags": ["Career Options in Commerce", "Commerce Careers", "Finance Careers", "Graduate Career Planning"],
+  "relatedRouteIds": ["blog", "career-guides", "career-guide-finance-careers-after-graduation", "career-guide-choosing-finance-career-course", "career-guide-finance-operations"],
+  "redirects": [],
+  "evidenceNotes": [
+    "Semrush figures in the internal queue are export-reported; locale, database, device, and India-specific SERP intent have not been independently verified.",
+    "Career paths and requirements are described as general role families; readers should verify qualification rules and current job criteria with official bodies and employers.",
+    "No salary, job, placement, course-coverage, or employment outcome is promised."
+  ]
+}

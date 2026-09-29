@@ -1,0 +1,3072 @@
+{
+  "schemaVersion": 1,
+  "sourceOfTruth": [
+    "src/content/seo/siteArchitecture.js",
+    "src/seo/internalLinks.js",
+    "src/seo/seoRoutes.js"
+  ],
+  "summary": {
+    "indexableNodeCount": 93,
+    "hubCount": 11,
+    "requiredHubEdgeCount": 151,
+    "reciprocalGroupCount": 5,
+    "authorityTargetCount": 12,
+    "authorityJourneyCount": 13,
+    "keywordDestinationCount": 24,
+    "discoveryRootCount": 5,
+    "discoveryReachableNodeCount": 93,
+    "discoveryUnreachableNodeCount": 0,
+    "discoveryReachableKeywordDestinationCount": 24,
+    "discoveryUnreachableKeywordDestinationCount": 0
+  },
+  "discoveryRoots": [
+    "home",
+    "courses",
+    "career-guides",
+    "resources",
+    "india"
+  ],
+  "discoveryReachability": {
+    "roots": [
+      "home",
+      "courses",
+      "career-guides",
+      "resources",
+      "india"
+    ],
+    "reachableRouteIds": [
+      "home",
+      "courses",
+      "career-guides",
+      "resources",
+      "india",
+      "courses-banking-courses",
+      "courses-banking-and-finance",
+      "career-guide-reconciliation-analyst",
+      "resource-bank-reconciliation-process",
+      "placements",
+      "comparison-best-finance-institutes-india",
+      "lead-best-investment-banking-course-india",
+      "lead-online-finance-course-placement",
+      "blog",
+      "faqs",
+      "lucknow-location",
+      "contact",
+      "privacy-policy",
+      "investment-banking-operations",
+      "courses-finance-operations-training",
+      "courses-finance-operations-syllabus",
+      "courses-finance-course-fees-eligibility",
+      "courses-finance-course-for-graduates",
+      "lead-job-oriented-finance-course-india",
+      "lead-investment-banking-operations-course-placement",
+      "retail-banking",
+      "finance-operations",
+      "kyc-aml-compliance",
+      "digital-payments",
+      "fintech-neo-banking",
+      "comparison-investment-banking-operations",
+      "comparison-finance-operations-vs-financial-modelling-cfa",
+      "comparison-online-vs-offline-finance-training",
+      "comparison-investment-banking-operations-vs-financial-analyst",
+      "comparison-banking-vs-finance-careers",
+      "faqs-finance-program",
+      "career-guide-choosing-finance-career-course",
+      "career-guide-investment-banking-operations",
+      "career-guide-retail-banking-operations",
+      "career-guide-finance-operations",
+      "career-guide-kyc-aml-analyst",
+      "career-guide-digital-payments-operations",
+      "career-guide-fintech-operations",
+      "career-guide-finance-careers-after-graduation",
+      "resource-investment-banking-interview-questions",
+      "resource-finance-gk",
+      "resource-financial-accounting-banking",
+      "resource-financial-statement-analysis",
+      "career-guide-investment-banking-operations-roles",
+      "career-guide-trade-support-analyst",
+      "career-guide-securities-operations",
+      "career-guide-what-is-investment-banking",
+      "career-guide-trade-lifecycle",
+      "career-guide-financial-operations-faq",
+      "career-guide-risk-operations-analyst",
+      "career-guide-credit-analyst",
+      "career-guide-business-analyst-in-banking",
+      "career-guide-custody-operations",
+      "career-guide-credit-operations-analyst",
+      "career-guide-transaction-monitoring-analyst",
+      "career-guide-middle-office-operations",
+      "career-guide-back-office-banking-jobs",
+      "career-guide-settlement-analyst",
+      "career-guide-finance-learning-roadmap",
+      "career-guide-operations-analyst-banking",
+      "resource-accounting-basics",
+      "resource-accounting-interview-questions",
+      "resource-reconciliation-in-finance",
+      "resource-cost-accounting-finance-operations",
+      "resource-corporate-actions-workflow",
+      "resource-capital-market-operations",
+      "resource-financial-system-india",
+      "resource-kyc-aml-compliance-guide",
+      "quiz",
+      "lead-finance-course-cities-india",
+      "india-delhi-ncr",
+      "india-bengaluru",
+      "india-mumbai",
+      "india-pune",
+      "india-hyderabad",
+      "lead-banking-finance-course-placement",
+      "lead-finance-course-placement",
+      "lead-finance-course-job-guarantee",
+      "about",
+      "lead-best-finance-course-placement",
+      "lead-finance-institute-lucknow-placement",
+      "lead-finance-course-duration",
+      "lead-finance-course-fees-india",
+      "lead-finance-course-eligibility",
+      "lead-best-finance-course-after-graduation",
+      "lead-finance-course-vs-mba-cfa-modelling",
+      "lead-which-finance-course-right",
+      "lead-best-finance-course-after-bcom"
+    ],
+    "unreachableRouteIds": [],
+    "reachableKeywordDestinations": [
+      "/courses/",
+      "/locations/lucknow/",
+      "/courses/kyc-aml/",
+      "/india/",
+      "/career-guides/choosing-finance-career-course/",
+      "/india/delhi-ncr/",
+      "/india/bengaluru/",
+      "/india/mumbai/",
+      "/india/pune/",
+      "/india/hyderabad/",
+      "/resources/investment-banking-interview-questions/",
+      "/career-guides/finance-careers-after-graduation/",
+      "/career-guides/investment-banking-operations/",
+      "/career-guides/trade-lifecycle/",
+      "/career-guides/finance-operations/",
+      "/career-guides/kyc-aml-analyst/",
+      "/career-guides/financial-operations-faq/",
+      "/career-guides/retail-banking-operations/",
+      "/courses/retail-banking/",
+      "/career-guides/digital-payments-operations/",
+      "/courses/digital-payments/",
+      "/career-guides/fintech-operations/",
+      "/courses/fintech/",
+      "/compare/investment-banking-operations-courses/"
+    ],
+    "unreachableKeywordDestinations": []
+  },
+  "hubs": [
+    {
+      "routeId": "home",
+      "role": "discovery-hub",
+      "requiredTargetIds": [
+        "courses",
+        "career-guides",
+        "resources",
+        "india",
+        "placements",
+        "blog",
+        "faqs",
+        "contact"
+      ]
+    },
+    {
+      "routeId": "blog",
+      "role": "editorial-hub",
+      "requiredTargetIds": [
+        "career-guides",
+        "resources",
+        "india",
+        "courses",
+        "placements",
+        "faqs",
+        "contact"
+      ]
+    },
+    {
+      "routeId": "career-guides",
+      "role": "career-information-hub",
+      "requiredTargetIds": [
+        "courses",
+        "resources",
+        "india",
+        "placements",
+        "faqs",
+        "contact",
+        "career-guide-investment-banking-operations",
+        "career-guide-kyc-aml-analyst",
+        "career-guide-finance-operations",
+        "career-guide-trade-lifecycle",
+        "career-guide-finance-careers-after-graduation",
+        "career-guide-retail-banking-operations",
+        "career-guide-digital-payments-operations",
+        "career-guide-financial-operations-faq",
+        "career-guide-choosing-finance-career-course",
+        "career-guide-fintech-operations",
+        "career-guide-reconciliation-analyst",
+        "career-guide-investment-banking-operations-roles",
+        "career-guide-trade-support-analyst",
+        "career-guide-securities-operations",
+        "career-guide-what-is-investment-banking",
+        "career-guide-risk-operations-analyst",
+        "career-guide-credit-analyst",
+        "career-guide-business-analyst-in-banking",
+        "career-guide-custody-operations",
+        "career-guide-credit-operations-analyst",
+        "career-guide-transaction-monitoring-analyst",
+        "career-guide-middle-office-operations",
+        "career-guide-back-office-banking-jobs",
+        "career-guide-settlement-analyst",
+        "career-guide-finance-learning-roadmap",
+        "career-guide-operations-analyst-banking"
+      ]
+    },
+    {
+      "routeId": "resources",
+      "role": "learning-resource-hub",
+      "requiredTargetIds": [
+        "courses",
+        "career-guides",
+        "india",
+        "quiz",
+        "placements",
+        "faqs",
+        "contact",
+        "resource-investment-banking-interview-questions",
+        "resource-accounting-interview-questions",
+        "resource-finance-gk",
+        "resource-accounting-basics",
+        "resource-reconciliation-in-finance",
+        "resource-bank-reconciliation-process",
+        "resource-cost-accounting-finance-operations",
+        "resource-financial-accounting-banking",
+        "resource-financial-statement-analysis",
+        "resource-corporate-actions-workflow",
+        "resource-capital-market-operations",
+        "resource-financial-system-india",
+        "resource-kyc-aml-compliance-guide"
+      ]
+    },
+    {
+      "routeId": "quiz",
+      "role": "learning-assessment-hub",
+      "requiredTargetIds": [
+        "resources",
+        "courses",
+        "career-guides",
+        "india",
+        "placements",
+        "contact"
+      ]
+    },
+    {
+      "routeId": "courses",
+      "role": "commercial-hub",
+      "requiredTargetIds": [
+        "investment-banking-operations",
+        "retail-banking",
+        "finance-operations",
+        "kyc-aml-compliance",
+        "digital-payments",
+        "fintech-neo-banking",
+        "courses-banking-courses",
+        "courses-banking-and-finance",
+        "courses-finance-operations-training",
+        "courses-finance-operations-syllabus",
+        "courses-finance-course-fees-eligibility",
+        "courses-finance-course-for-graduates",
+        "career-guides",
+        "career-guide-choosing-finance-career-course",
+        "career-guide-finance-careers-after-graduation",
+        "career-guide-investment-banking-operations",
+        "career-guide-retail-banking-operations",
+        "career-guide-finance-operations",
+        "career-guide-kyc-aml-analyst",
+        "career-guide-digital-payments-operations",
+        "career-guide-fintech-operations",
+        "comparison-investment-banking-operations",
+        "placements",
+        "india",
+        "resources",
+        "faqs",
+        "contact"
+      ]
+    },
+    {
+      "routeId": "placements",
+      "role": "commercial-support-hub",
+      "requiredTargetIds": [
+        "courses",
+        "career-guides",
+        "resources",
+        "india",
+        "faqs",
+        "contact"
+      ]
+    },
+    {
+      "routeId": "india",
+      "role": "national-discovery-hub",
+      "requiredTargetIds": [
+        "courses",
+        "career-guides",
+        "resources",
+        "placements",
+        "faqs",
+        "lucknow-location",
+        "contact",
+        "investment-banking-operations",
+        "retail-banking",
+        "finance-operations",
+        "kyc-aml-compliance",
+        "digital-payments",
+        "fintech-neo-banking",
+        "courses-banking-courses",
+        "courses-banking-and-finance",
+        "courses-finance-operations-training",
+        "courses-finance-operations-syllabus",
+        "courses-finance-course-fees-eligibility",
+        "courses-finance-course-for-graduates",
+        "india-delhi-ncr",
+        "india-bengaluru",
+        "india-mumbai",
+        "india-pune",
+        "india-hyderabad"
+      ]
+    },
+    {
+      "routeId": "lucknow-location",
+      "role": "local-commercial-hub",
+      "requiredTargetIds": [
+        "contact",
+        "courses",
+        "career-guides",
+        "resources",
+        "india",
+        "placements",
+        "faqs"
+      ]
+    },
+    {
+      "routeId": "contact",
+      "role": "conversion-hub",
+      "requiredTargetIds": [
+        "lucknow-location",
+        "courses",
+        "career-guides",
+        "resources",
+        "india",
+        "placements",
+        "faqs"
+      ]
+    },
+    {
+      "routeId": "faqs",
+      "role": "decision-support-hub",
+      "requiredTargetIds": [
+        "courses",
+        "career-guides",
+        "resources",
+        "india",
+        "placements",
+        "lucknow-location",
+        "contact"
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "routeId": "home",
+      "path": "/",
+      "parentId": null,
+      "role": "discovery-hub",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "blog",
+      "path": "/blog/",
+      "parentId": "home",
+      "role": "editorial-hub",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "career-guides",
+      "path": "/career-guides/",
+      "parentId": "home",
+      "role": "career-information-hub",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "resources",
+      "path": "/resources/",
+      "parentId": "home",
+      "role": "learning-resource-hub",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "resource-investment-banking-interview-questions",
+      "path": "/resources/investment-banking-interview-questions/",
+      "parentId": "resources",
+      "role": "learning-resource",
+      "keywordOwnerUrl": "/resources/investment-banking-interview-questions/",
+      "indexable": true
+    },
+    {
+      "routeId": "resource-accounting-interview-questions",
+      "path": "/resources/accounting-interview-questions/",
+      "parentId": "resources",
+      "role": "learning-resource",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "resource-finance-gk",
+      "path": "/resources/finance-gk/",
+      "parentId": "resources",
+      "role": "learning-resource",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "resource-accounting-basics",
+      "path": "/resources/accounting-basics/",
+      "parentId": "resources",
+      "role": "learning-resource",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "resource-reconciliation-in-finance",
+      "path": "/resources/reconciliation-in-finance/",
+      "parentId": "resources",
+      "role": "learning-resource",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "resource-bank-reconciliation-process",
+      "path": "/resources/bank-reconciliation-process/",
+      "parentId": "resources",
+      "role": "learning-resource",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "resource-cost-accounting-finance-operations",
+      "path": "/resources/cost-accounting-finance-operations/",
+      "parentId": "resources",
+      "role": "learning-resource",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "resource-financial-accounting-banking",
+      "path": "/resources/financial-accounting-banking/",
+      "parentId": "resources",
+      "role": "learning-resource",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "resource-financial-statement-analysis",
+      "path": "/resources/financial-statement-analysis/",
+      "parentId": "resources",
+      "role": "learning-resource",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "resource-corporate-actions-workflow",
+      "path": "/resources/corporate-actions-workflow/",
+      "parentId": "resources",
+      "role": "learning-resource",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "resource-capital-market-operations",
+      "path": "/resources/capital-market-operations/",
+      "parentId": "resources",
+      "role": "learning-resource",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "resource-financial-system-india",
+      "path": "/resources/financial-system-india/",
+      "parentId": "resources",
+      "role": "learning-resource",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "resource-kyc-aml-compliance-guide",
+      "path": "/resources/kyc-aml-compliance-guide/",
+      "parentId": "resources",
+      "role": "learning-resource",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "quiz",
+      "path": "/quiz/",
+      "parentId": "home",
+      "role": "learning-assessment-hub",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "courses",
+      "path": "/courses/",
+      "parentId": "home",
+      "role": "commercial-hub",
+      "keywordOwnerUrl": "/courses/",
+      "indexable": true
+    },
+    {
+      "routeId": "investment-banking-operations",
+      "path": "/courses/investment-banking-operations/",
+      "parentId": "courses",
+      "role": "commercial-module",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "retail-banking",
+      "path": "/courses/retail-banking/",
+      "parentId": "courses",
+      "role": "commercial-module",
+      "keywordOwnerUrl": "/courses/retail-banking/",
+      "indexable": true
+    },
+    {
+      "routeId": "finance-operations",
+      "path": "/courses/finance-operations/",
+      "parentId": "courses",
+      "role": "commercial-module",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "kyc-aml-compliance",
+      "path": "/courses/kyc-aml/",
+      "parentId": "courses",
+      "role": "informational-module",
+      "keywordOwnerUrl": "/courses/kyc-aml/",
+      "indexable": true
+    },
+    {
+      "routeId": "digital-payments",
+      "path": "/courses/digital-payments/",
+      "parentId": "courses",
+      "role": "informational-module",
+      "keywordOwnerUrl": "/courses/digital-payments/",
+      "indexable": true
+    },
+    {
+      "routeId": "fintech-neo-banking",
+      "path": "/courses/fintech/",
+      "parentId": "courses",
+      "role": "informational-module",
+      "keywordOwnerUrl": "/courses/fintech/",
+      "indexable": true
+    },
+    {
+      "routeId": "placements",
+      "path": "/placements/",
+      "parentId": "home",
+      "role": "commercial-support-hub",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "about",
+      "path": "/about/",
+      "parentId": "home",
+      "role": "entity-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "contact",
+      "path": "/contact/",
+      "parentId": "home",
+      "role": "conversion-hub",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "privacy-policy",
+      "path": "/privacy-policy/",
+      "parentId": "home",
+      "role": "legal-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "india",
+      "path": "/india/",
+      "parentId": "home",
+      "role": "national-discovery-hub",
+      "keywordOwnerUrl": "/india/",
+      "indexable": true
+    },
+    {
+      "routeId": "india-delhi-ncr",
+      "path": "/india/delhi-ncr/",
+      "parentId": "india",
+      "role": "regional-guide",
+      "keywordOwnerUrl": "/india/delhi-ncr/",
+      "indexable": true
+    },
+    {
+      "routeId": "india-bengaluru",
+      "path": "/india/bengaluru/",
+      "parentId": "india",
+      "role": "regional-guide",
+      "keywordOwnerUrl": "/india/bengaluru/",
+      "indexable": true
+    },
+    {
+      "routeId": "india-mumbai",
+      "path": "/india/mumbai/",
+      "parentId": "india",
+      "role": "regional-guide",
+      "keywordOwnerUrl": "/india/mumbai/",
+      "indexable": true
+    },
+    {
+      "routeId": "india-pune",
+      "path": "/india/pune/",
+      "parentId": "india",
+      "role": "regional-guide",
+      "keywordOwnerUrl": "/india/pune/",
+      "indexable": true
+    },
+    {
+      "routeId": "india-hyderabad",
+      "path": "/india/hyderabad/",
+      "parentId": "india",
+      "role": "regional-guide",
+      "keywordOwnerUrl": "/india/hyderabad/",
+      "indexable": true
+    },
+    {
+      "routeId": "lucknow-location",
+      "path": "/locations/lucknow/",
+      "parentId": "home",
+      "role": "local-commercial-hub",
+      "keywordOwnerUrl": "/locations/lucknow/",
+      "indexable": true
+    },
+    {
+      "routeId": "faqs",
+      "path": "/faqs/",
+      "parentId": "home",
+      "role": "decision-support-hub",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-investment-banking-operations",
+      "path": "/career-guides/investment-banking-operations/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": "/career-guides/investment-banking-operations/",
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-kyc-aml-analyst",
+      "path": "/career-guides/kyc-aml-analyst/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": "/career-guides/kyc-aml-analyst/",
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-finance-operations",
+      "path": "/career-guides/finance-operations/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": "/career-guides/finance-operations/",
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-trade-lifecycle",
+      "path": "/career-guides/trade-lifecycle/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": "/career-guides/trade-lifecycle/",
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-finance-careers-after-graduation",
+      "path": "/career-guides/finance-careers-after-graduation/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": "/career-guides/finance-careers-after-graduation/",
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-retail-banking-operations",
+      "path": "/career-guides/retail-banking-operations/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": "/career-guides/retail-banking-operations/",
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-digital-payments-operations",
+      "path": "/career-guides/digital-payments-operations/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": "/career-guides/digital-payments-operations/",
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-financial-operations-faq",
+      "path": "/career-guides/financial-operations-faq/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": "/career-guides/financial-operations-faq/",
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-choosing-finance-career-course",
+      "path": "/career-guides/choosing-finance-career-course/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": "/career-guides/choosing-finance-career-course/",
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-fintech-operations",
+      "path": "/career-guides/fintech-operations/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": "/career-guides/fintech-operations/",
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-reconciliation-analyst",
+      "path": "/career-guides/reconciliation-analyst/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-investment-banking-operations-roles",
+      "path": "/career-guides/investment-banking-operations-roles/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-trade-support-analyst",
+      "path": "/career-guides/trade-support-analyst/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-securities-operations",
+      "path": "/career-guides/securities-operations/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-what-is-investment-banking",
+      "path": "/career-guides/what-is-investment-banking/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-risk-operations-analyst",
+      "path": "/career-guides/risk-operations-analyst/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-credit-analyst",
+      "path": "/career-guides/credit-analyst/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-business-analyst-in-banking",
+      "path": "/career-guides/business-analyst-in-banking/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-custody-operations",
+      "path": "/career-guides/custody-operations/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-credit-operations-analyst",
+      "path": "/career-guides/credit-operations-analyst/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-transaction-monitoring-analyst",
+      "path": "/career-guides/transaction-monitoring-analyst/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-middle-office-operations",
+      "path": "/career-guides/middle-office-operations/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-back-office-banking-jobs",
+      "path": "/career-guides/back-office-banking-jobs/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-settlement-analyst",
+      "path": "/career-guides/settlement-analyst/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-finance-learning-roadmap",
+      "path": "/career-guides/finance-learning-roadmap/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-operations-analyst-banking",
+      "path": "/career-guides/operations-analyst-banking/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "courses-banking-courses",
+      "path": "/courses/banking-courses/",
+      "parentId": "courses",
+      "role": "supporting-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "courses-banking-and-finance",
+      "path": "/courses/banking-and-finance/",
+      "parentId": "courses",
+      "role": "supporting-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "courses-finance-operations-training",
+      "path": "/courses/finance-operations-training/",
+      "parentId": "courses",
+      "role": "supporting-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "lead-best-finance-course-placement",
+      "path": "/best-finance-course-in-india-with-placement/",
+      "parentId": "home",
+      "role": "supporting-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "lead-best-investment-banking-course-india",
+      "path": "/best-investment-banking-course-india/",
+      "parentId": "home",
+      "role": "supporting-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "lead-best-finance-course-after-graduation",
+      "path": "/best-finance-course-after-graduation/",
+      "parentId": "home",
+      "role": "supporting-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "lead-best-finance-course-after-bcom",
+      "path": "/best-finance-course-after-bcom/",
+      "parentId": "home",
+      "role": "supporting-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "lead-finance-course-placement",
+      "path": "/finance-course-with-placement/",
+      "parentId": "home",
+      "role": "supporting-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "lead-finance-course-job-guarantee",
+      "path": "/finance-course-with-job-guarantee/",
+      "parentId": "home",
+      "role": "supporting-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "lead-finance-course-fees-india",
+      "path": "/finance-course-fees-in-india/",
+      "parentId": "home",
+      "role": "supporting-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "lead-finance-course-duration",
+      "path": "/finance-course-duration/",
+      "parentId": "home",
+      "role": "supporting-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "lead-finance-course-eligibility",
+      "path": "/finance-course-eligibility/",
+      "parentId": "home",
+      "role": "supporting-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "lead-online-finance-course-placement",
+      "path": "/online-finance-course-with-placement/",
+      "parentId": "home",
+      "role": "supporting-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "lead-job-oriented-finance-course-india",
+      "path": "/job-oriented-finance-course-india/",
+      "parentId": "home",
+      "role": "supporting-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "lead-banking-finance-course-placement",
+      "path": "/banking-finance-course-with-placement/",
+      "parentId": "home",
+      "role": "supporting-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "lead-investment-banking-operations-course-placement",
+      "path": "/investment-banking-operations-course-with-placement/",
+      "parentId": "home",
+      "role": "supporting-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "lead-finance-institute-lucknow-placement",
+      "path": "/finance-institute-lucknow-with-placement/",
+      "parentId": "home",
+      "role": "supporting-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "lead-finance-course-cities-india",
+      "path": "/finance-course-cities-india/",
+      "parentId": "home",
+      "role": "supporting-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "lead-finance-course-vs-mba-cfa-modelling",
+      "path": "/finance-course-vs-mba-cfa-financial-modelling/",
+      "parentId": "home",
+      "role": "supporting-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "lead-which-finance-course-right",
+      "path": "/which-finance-course-is-right-for-me/",
+      "parentId": "home",
+      "role": "supporting-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "courses-finance-operations-syllabus",
+      "path": "/courses/finance-operations-syllabus/",
+      "parentId": "courses",
+      "role": "supporting-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "courses-finance-course-fees-eligibility",
+      "path": "/courses/finance-course-fees-eligibility/",
+      "parentId": "courses",
+      "role": "supporting-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "courses-finance-course-for-graduates",
+      "path": "/courses/finance-course-for-graduates/",
+      "parentId": "courses",
+      "role": "supporting-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "comparison-best-finance-institutes-india",
+      "path": "/compare/best-finance-institutes-india/",
+      "parentId": "home",
+      "role": "comparison",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "comparison-finance-operations-vs-financial-modelling-cfa",
+      "path": "/compare/finance-operations-vs-financial-modelling-cfa/",
+      "parentId": "home",
+      "role": "comparison",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "comparison-online-vs-offline-finance-training",
+      "path": "/compare/online-vs-offline-finance-training/",
+      "parentId": "home",
+      "role": "comparison",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "comparison-investment-banking-operations-vs-financial-analyst",
+      "path": "/compare/investment-banking-operations-vs-financial-analyst/",
+      "parentId": "home",
+      "role": "comparison",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "comparison-banking-vs-finance-careers",
+      "path": "/compare/banking-vs-finance-careers/",
+      "parentId": "home",
+      "role": "comparison",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "faqs-finance-program",
+      "path": "/faqs/finance-program/",
+      "parentId": "home",
+      "role": "supporting-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "comparison-investment-banking-operations",
+      "path": "/compare/investment-banking-operations-courses/",
+      "parentId": "home",
+      "role": "comparison",
+      "keywordOwnerUrl": "/compare/investment-banking-operations-courses/",
+      "indexable": true
+    }
+  ],
+  "reciprocalGroups": [
+    {
+      "id": "course-module-parent-paths",
+      "pairs": [
+        {
+          "sourceId": "courses",
+          "targetId": "investment-banking-operations"
+        },
+        {
+          "sourceId": "courses",
+          "targetId": "retail-banking"
+        },
+        {
+          "sourceId": "courses",
+          "targetId": "finance-operations"
+        },
+        {
+          "sourceId": "courses",
+          "targetId": "kyc-aml-compliance"
+        },
+        {
+          "sourceId": "courses",
+          "targetId": "digital-payments"
+        },
+        {
+          "sourceId": "courses",
+          "targetId": "fintech-neo-banking"
+        },
+        {
+          "sourceId": "courses",
+          "targetId": "courses-banking-courses"
+        },
+        {
+          "sourceId": "courses",
+          "targetId": "courses-banking-and-finance"
+        },
+        {
+          "sourceId": "courses",
+          "targetId": "courses-finance-operations-training"
+        },
+        {
+          "sourceId": "courses",
+          "targetId": "courses-finance-operations-syllabus"
+        },
+        {
+          "sourceId": "courses",
+          "targetId": "courses-finance-course-fees-eligibility"
+        },
+        {
+          "sourceId": "courses",
+          "targetId": "courses-finance-course-for-graduates"
+        }
+      ],
+      "reciprocal": true
+    },
+    {
+      "id": "career-guide-parent-paths",
+      "pairs": [
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-investment-banking-operations"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-kyc-aml-analyst"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-finance-operations"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-trade-lifecycle"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-finance-careers-after-graduation"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-retail-banking-operations"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-digital-payments-operations"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-financial-operations-faq"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-choosing-finance-career-course"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-fintech-operations"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-reconciliation-analyst"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-investment-banking-operations-roles"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-trade-support-analyst"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-securities-operations"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-what-is-investment-banking"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-risk-operations-analyst"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-credit-analyst"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-business-analyst-in-banking"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-custody-operations"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-credit-operations-analyst"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-transaction-monitoring-analyst"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-middle-office-operations"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-back-office-banking-jobs"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-settlement-analyst"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-finance-learning-roadmap"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-operations-analyst-banking"
+        }
+      ],
+      "reciprocal": true
+    },
+    {
+      "id": "resource-parent-paths",
+      "pairs": [
+        {
+          "sourceId": "resources",
+          "targetId": "resource-investment-banking-interview-questions"
+        },
+        {
+          "sourceId": "resources",
+          "targetId": "resource-accounting-interview-questions"
+        },
+        {
+          "sourceId": "resources",
+          "targetId": "resource-finance-gk"
+        },
+        {
+          "sourceId": "resources",
+          "targetId": "resource-accounting-basics"
+        },
+        {
+          "sourceId": "resources",
+          "targetId": "resource-reconciliation-in-finance"
+        },
+        {
+          "sourceId": "resources",
+          "targetId": "resource-bank-reconciliation-process"
+        },
+        {
+          "sourceId": "resources",
+          "targetId": "resource-cost-accounting-finance-operations"
+        },
+        {
+          "sourceId": "resources",
+          "targetId": "resource-financial-accounting-banking"
+        },
+        {
+          "sourceId": "resources",
+          "targetId": "resource-financial-statement-analysis"
+        },
+        {
+          "sourceId": "resources",
+          "targetId": "resource-corporate-actions-workflow"
+        },
+        {
+          "sourceId": "resources",
+          "targetId": "resource-capital-market-operations"
+        },
+        {
+          "sourceId": "resources",
+          "targetId": "resource-financial-system-india"
+        },
+        {
+          "sourceId": "resources",
+          "targetId": "resource-kyc-aml-compliance-guide"
+        }
+      ],
+      "reciprocal": true
+    },
+    {
+      "id": "regional-parent-paths",
+      "pairs": [
+        {
+          "sourceId": "india",
+          "targetId": "india-delhi-ncr"
+        },
+        {
+          "sourceId": "india",
+          "targetId": "india-bengaluru"
+        },
+        {
+          "sourceId": "india",
+          "targetId": "india-mumbai"
+        },
+        {
+          "sourceId": "india",
+          "targetId": "india-pune"
+        },
+        {
+          "sourceId": "india",
+          "targetId": "india-hyderabad"
+        }
+      ],
+      "reciprocal": true
+    },
+    {
+      "id": "module-career-topic-paths",
+      "pairs": [
+        {
+          "sourceId": "investment-banking-operations",
+          "targetId": "career-guide-investment-banking-operations"
+        },
+        {
+          "sourceId": "career-guide-investment-banking-operations",
+          "targetId": "investment-banking-operations"
+        },
+        {
+          "sourceId": "retail-banking",
+          "targetId": "career-guide-retail-banking-operations"
+        },
+        {
+          "sourceId": "career-guide-retail-banking-operations",
+          "targetId": "retail-banking"
+        },
+        {
+          "sourceId": "finance-operations",
+          "targetId": "career-guide-finance-operations"
+        },
+        {
+          "sourceId": "career-guide-finance-operations",
+          "targetId": "finance-operations"
+        },
+        {
+          "sourceId": "kyc-aml-compliance",
+          "targetId": "career-guide-kyc-aml-analyst"
+        },
+        {
+          "sourceId": "career-guide-kyc-aml-analyst",
+          "targetId": "kyc-aml-compliance"
+        },
+        {
+          "sourceId": "digital-payments",
+          "targetId": "career-guide-digital-payments-operations"
+        },
+        {
+          "sourceId": "career-guide-digital-payments-operations",
+          "targetId": "digital-payments"
+        },
+        {
+          "sourceId": "fintech-neo-banking",
+          "targetId": "career-guide-fintech-operations"
+        },
+        {
+          "sourceId": "career-guide-fintech-operations",
+          "targetId": "fintech-neo-banking"
+        }
+      ],
+      "reciprocal": false
+    }
+  ],
+  "authorityTargets": [
+    {
+      "routeId": "courses",
+      "tier": "priority-commercial",
+      "purpose": "Primary Financial Operations Masterclass destination.",
+      "requiredInboundRouteIds": [
+        "home",
+        "blog",
+        "career-guides",
+        "resources",
+        "india",
+        "placements",
+        "faqs",
+        "lucknow-location"
+      ],
+      "minimumInbound": 8
+    },
+    {
+      "routeId": "india",
+      "tier": "national-hub",
+      "purpose": "National online availability and regional discovery hub.",
+      "requiredInboundRouteIds": [
+        "home",
+        "blog",
+        "career-guides",
+        "resources",
+        "courses",
+        "placements",
+        "faqs",
+        "lucknow-location"
+      ],
+      "minimumInbound": 8
+    },
+    {
+      "routeId": "career-guides",
+      "tier": "information-hub",
+      "purpose": "Career-intent hub that introduces the authored guide cluster.",
+      "requiredInboundRouteIds": [
+        "home",
+        "blog",
+        "resources",
+        "courses",
+        "india",
+        "placements",
+        "faqs"
+      ],
+      "minimumInbound": 7
+    },
+    {
+      "routeId": "resources",
+      "tier": "information-hub",
+      "purpose": "Practical finance-career resource hub.",
+      "requiredInboundRouteIds": [
+        "home",
+        "blog",
+        "career-guides",
+        "courses",
+        "india"
+      ],
+      "minimumInbound": 5
+    },
+    {
+      "routeId": "placements",
+      "tier": "commercial-support",
+      "purpose": "Placement-support terms and eligibility destination.",
+      "requiredInboundRouteIds": [
+        "home",
+        "blog",
+        "career-guides",
+        "resources",
+        "courses",
+        "india",
+        "faqs"
+      ],
+      "minimumInbound": 7
+    },
+    {
+      "routeId": "lucknow-location",
+      "tier": "local-commercial",
+      "purpose": "Lucknow offline availability and local entity destination.",
+      "requiredInboundRouteIds": [
+        "home",
+        "career-guides",
+        "resources",
+        "courses",
+        "india",
+        "faqs",
+        "contact"
+      ],
+      "minimumInbound": 7
+    },
+    {
+      "routeId": "investment-banking-operations",
+      "tier": "commercial-module",
+      "purpose": "Investment banking operations module destination.",
+      "requiredInboundRouteIds": [
+        "courses",
+        "india",
+        "career-guide-investment-banking-operations",
+        "resource-investment-banking-interview-questions"
+      ],
+      "minimumInbound": 4
+    },
+    {
+      "routeId": "retail-banking",
+      "tier": "commercial-module",
+      "purpose": "Retail banking module destination.",
+      "requiredInboundRouteIds": [
+        "courses",
+        "career-guide-retail-banking-operations",
+        "india"
+      ],
+      "minimumInbound": 3
+    },
+    {
+      "routeId": "finance-operations",
+      "tier": "commercial-module",
+      "purpose": "Finance operations module destination.",
+      "requiredInboundRouteIds": [
+        "courses",
+        "career-guide-finance-operations",
+        "india"
+      ],
+      "minimumInbound": 3
+    },
+    {
+      "routeId": "kyc-aml-compliance",
+      "tier": "informational-module",
+      "purpose": "KYC / AML module guide connected to the current Masterclass and relevant career guidance.",
+      "requiredInboundRouteIds": [
+        "courses",
+        "india",
+        "career-guide-kyc-aml-analyst"
+      ],
+      "minimumInbound": 3
+    },
+    {
+      "routeId": "digital-payments",
+      "tier": "informational-module",
+      "purpose": "Digital Payments module guide connected to the current Masterclass and relevant career guidance.",
+      "requiredInboundRouteIds": [
+        "courses",
+        "india",
+        "career-guide-digital-payments-operations"
+      ],
+      "minimumInbound": 3
+    },
+    {
+      "routeId": "fintech-neo-banking",
+      "tier": "informational-module",
+      "purpose": "FinTech module guide connected to the current Masterclass and related FinTech career guidance.",
+      "requiredInboundRouteIds": [
+        "courses",
+        "india",
+        "career-guide-fintech-operations"
+      ],
+      "minimumInbound": 3
+    }
+  ],
+  "authorityJourneys": [
+    {
+      "id": "commercial-enrollment-journey",
+      "routeIds": [
+        "home",
+        "courses",
+        "investment-banking-operations",
+        "placements",
+        "contact"
+      ]
+    },
+    {
+      "id": "career-to-course-journey",
+      "routeIds": [
+        "home",
+        "career-guides",
+        "career-guide-finance-operations",
+        "finance-operations",
+        "courses"
+      ]
+    },
+    {
+      "id": "resource-to-module-journey",
+      "routeIds": [
+        "home",
+        "resources",
+        "resource-investment-banking-interview-questions",
+        "investment-banking-operations",
+        "placements"
+      ]
+    },
+    {
+      "id": "national-regional-journey",
+      "routeIds": [
+        "home",
+        "india",
+        "india-delhi-ncr",
+        "career-guides",
+        "courses"
+      ]
+    },
+    {
+      "id": "lucknow-local-journey",
+      "routeIds": [
+        "home",
+        "india",
+        "lucknow-location",
+        "contact"
+      ]
+    },
+    {
+      "id": "kyc-aml-learning-journey",
+      "routeIds": [
+        "home",
+        "india",
+        "kyc-aml-compliance",
+        "career-guide-kyc-aml-analyst",
+        "courses"
+      ]
+    },
+    {
+      "id": "digital-payments-learning-journey",
+      "routeIds": [
+        "home",
+        "courses",
+        "digital-payments",
+        "career-guide-digital-payments-operations",
+        "india"
+      ]
+    },
+    {
+      "id": "fintech-learning-journey",
+      "routeIds": [
+        "home",
+        "career-guides",
+        "career-guide-fintech-operations",
+        "fintech-neo-banking",
+        "courses"
+      ]
+    },
+    {
+      "id": "delhi-ncr-regional-journey",
+      "routeIds": [
+        "home",
+        "india",
+        "india-delhi-ncr",
+        "career-guide-kyc-aml-analyst",
+        "courses"
+      ]
+    },
+    {
+      "id": "bengaluru-regional-journey",
+      "routeIds": [
+        "home",
+        "india",
+        "india-bengaluru",
+        "career-guide-digital-payments-operations",
+        "courses"
+      ]
+    },
+    {
+      "id": "mumbai-regional-journey",
+      "routeIds": [
+        "home",
+        "india",
+        "india-mumbai",
+        "career-guide-trade-lifecycle",
+        "courses"
+      ]
+    },
+    {
+      "id": "pune-regional-journey",
+      "routeIds": [
+        "home",
+        "india",
+        "india-pune",
+        "career-guide-finance-operations",
+        "courses"
+      ]
+    },
+    {
+      "id": "hyderabad-regional-journey",
+      "routeIds": [
+        "home",
+        "india",
+        "india-hyderabad",
+        "career-guide-kyc-aml-analyst",
+        "courses"
+      ]
+    }
+  ],
+  "keywordDestinations": [
+    {
+      "targetUrl": "/courses/",
+      "primaryPurpose": "Primary commercial program hub",
+      "mappedKeywordCount": 85,
+      "topPriority": 98,
+      "mainClusters": "Core Commercial, Fees & Comparison, Finance Operations & GCC",
+      "recommendedWave": "Wave 1",
+      "pageType": "Program hub, Program hub / comparison guide",
+      "buildGuidance": "Consolidate related queries; unique human-first content; strong internal links; FAQ sections where useful.",
+      "sampleKeywords": "investment banking operations course; investment banking operations training; investment banking operations certification; investment banking operations classes; investment banking operations program; investment banking operations institute; investment banking course; investment banking course in India"
+    },
+    {
+      "targetUrl": "/locations/lucknow/",
+      "primaryPurpose": "Local Lucknow acquisition page",
+      "mappedKeywordCount": 8,
+      "topPriority": 97,
+      "mainClusters": "Local / Regional",
+      "recommendedWave": "Wave 1",
+      "pageType": "Real local page",
+      "buildGuidance": "Consolidate related queries; unique human-first content; strong internal links; FAQ sections where useful.",
+      "sampleKeywords": "investment banking course in Lucknow; investment banking operations course in Lucknow; investment banking classes in Lucknow; investment banking institute in Lucknow; finance operations course in Lucknow; KYC AML course in Lucknow; finance course with placement assistance in Lucknow; best investment banking course in Lucknow"
+    },
+    {
+      "targetUrl": "/courses/kyc-aml/",
+      "primaryPurpose": "Supporting module, career or regional page",
+      "mappedKeywordCount": 18,
+      "topPriority": 94,
+      "mainClusters": "KYC & AML",
+      "recommendedWave": "Wave 1",
+      "pageType": "Module page",
+      "buildGuidance": "Consolidate related queries; unique human-first content; strong internal links; FAQ sections where useful.",
+      "sampleKeywords": "KYC AML course; KYC AML certification course; KYC AML training; KYC AML course in India; KYC AML course online; KYC AML course with placement assistance; AML KYC analyst course; KYC analyst course"
+    },
+    {
+      "targetUrl": "/india/",
+      "primaryPurpose": "Pan-India access and regional career hub",
+      "mappedKeywordCount": 108,
+      "topPriority": 90,
+      "mainClusters": "Local / Regional, Pan-India",
+      "recommendedWave": "Wave 3",
+      "pageType": "National hub initially, National landing page",
+      "buildGuidance": "Consolidate related queries; unique human-first content; strong internal links; FAQ sections where useful.",
+      "sampleKeywords": "investment banking course in Chennai; investment banking operations course in Chennai; investment banking classes in Chennai; investment banking institute in Chennai; finance operations course in Chennai; KYC AML course in Chennai; finance course with placement assistance in Chennai; best investment banking course in Chennai"
+    },
+    {
+      "targetUrl": "/career-guides/choosing-finance-career-course/",
+      "primaryPurpose": "Supporting module, career or regional page",
+      "mappedKeywordCount": 14,
+      "topPriority": 90,
+      "mainClusters": "Fees & Comparison",
+      "recommendedWave": "Wave 1",
+      "pageType": "Program hub / comparison guide",
+      "buildGuidance": "Consolidate related queries; unique human-first content; strong internal links; FAQ sections where useful.",
+      "sampleKeywords": "investment banking course with placement support; investment banking course with interview preparation; best short term investment banking course; best job oriented finance course; best finance course for freshers in India; best finance operations course in India; best KYC AML course in India; best banking operations course in India"
+    },
+    {
+      "targetUrl": "/india/delhi-ncr/",
+      "primaryPurpose": "Supporting module, career or regional page",
+      "mappedKeywordCount": 24,
+      "topPriority": 88,
+      "mainClusters": "Local / Regional",
+      "recommendedWave": "Wave 2",
+      "pageType": "Regional guide",
+      "buildGuidance": "Publish only with unique regional career data and student-access information. Never imply a physical branch unless real.",
+      "sampleKeywords": "investment banking course in Delhi; investment banking operations course in Delhi; investment banking classes in Delhi; investment banking institute in Delhi; finance operations course in Delhi; KYC AML course in Delhi; finance course with placement assistance in Delhi; best investment banking course in Delhi"
+    },
+    {
+      "targetUrl": "/india/bengaluru/",
+      "primaryPurpose": "Supporting module, career or regional page",
+      "mappedKeywordCount": 16,
+      "topPriority": 88,
+      "mainClusters": "Local / Regional",
+      "recommendedWave": "Wave 2",
+      "pageType": "Regional guide",
+      "buildGuidance": "Publish only with unique regional career data and student-access information. Never imply a physical branch unless real.",
+      "sampleKeywords": "investment banking course in Bangalore; investment banking operations course in Bangalore; investment banking classes in Bangalore; investment banking institute in Bangalore; finance operations course in Bangalore; KYC AML course in Bangalore; finance course with placement assistance in Bangalore; best investment banking course in Bangalore"
+    },
+    {
+      "targetUrl": "/india/mumbai/",
+      "primaryPurpose": "Supporting module, career or regional page",
+      "mappedKeywordCount": 8,
+      "topPriority": 88,
+      "mainClusters": "Local / Regional",
+      "recommendedWave": "Wave 2",
+      "pageType": "Regional guide",
+      "buildGuidance": "Publish only with unique regional career data and student-access information. Never imply a physical branch unless real.",
+      "sampleKeywords": "investment banking course in Mumbai; investment banking operations course in Mumbai; investment banking classes in Mumbai; investment banking institute in Mumbai; finance operations course in Mumbai; KYC AML course in Mumbai; finance course with placement assistance in Mumbai; best investment banking course in Mumbai"
+    },
+    {
+      "targetUrl": "/india/pune/",
+      "primaryPurpose": "Supporting module, career or regional page",
+      "mappedKeywordCount": 8,
+      "topPriority": 88,
+      "mainClusters": "Local / Regional",
+      "recommendedWave": "Wave 2",
+      "pageType": "Regional guide",
+      "buildGuidance": "Publish only with unique regional career data and student-access information. Never imply a physical branch unless real.",
+      "sampleKeywords": "investment banking course in Pune; investment banking operations course in Pune; investment banking classes in Pune; investment banking institute in Pune; finance operations course in Pune; KYC AML course in Pune; finance course with placement assistance in Pune; best investment banking course in Pune"
+    },
+    {
+      "targetUrl": "/india/hyderabad/",
+      "primaryPurpose": "Supporting module, career or regional page",
+      "mappedKeywordCount": 8,
+      "topPriority": 88,
+      "mainClusters": "Local / Regional",
+      "recommendedWave": "Wave 2",
+      "pageType": "Regional guide",
+      "buildGuidance": "Publish only with unique regional career data and student-access information. Never imply a physical branch unless real.",
+      "sampleKeywords": "investment banking course in Hyderabad; investment banking operations course in Hyderabad; investment banking classes in Hyderabad; investment banking institute in Hyderabad; finance operations course in Hyderabad; KYC AML course in Hyderabad; finance course with placement assistance in Hyderabad; best investment banking course in Hyderabad"
+    },
+    {
+      "targetUrl": "/resources/investment-banking-interview-questions/",
+      "primaryPurpose": "Supporting module, career or regional page",
+      "mappedKeywordCount": 25,
+      "topPriority": 85,
+      "mainClusters": "Interview & Employability",
+      "recommendedWave": "Wave 2",
+      "pageType": "Resource hub",
+      "buildGuidance": "Consolidate related queries; unique human-first content; strong internal links; FAQ sections where useful.",
+      "sampleKeywords": "investment banking operations interview questions for freshers; investment banking operations interview preparation; investment banking operations mock interview; trade lifecycle interview questions for freshers; settlement interview questions banking; reconciliation interview questions finance; KYC analyst interview questions for freshers; AML analyst interview questions for freshers"
+    },
+    {
+      "targetUrl": "/career-guides/finance-careers-after-graduation/",
+      "primaryPurpose": "Supporting module, career or regional page",
+      "mappedKeywordCount": 62,
+      "topPriority": 84,
+      "mainClusters": "Graduate Intent",
+      "recommendedWave": "Wave 2",
+      "pageType": "Pillar guide",
+      "buildGuidance": "Consolidate related queries; unique human-first content; strong internal links; FAQ sections where useful.",
+      "sampleKeywords": "best finance course after BCom; investment banking operations after BCom; finance jobs after BCom; banking jobs after BCom; finance operations career after BCom; KYC AML career after BCom; short term finance course after BCom; best finance course after BBA"
+    },
+    {
+      "targetUrl": "/career-guides/investment-banking-operations/",
+      "primaryPurpose": "Core IBO informational pillar",
+      "mappedKeywordCount": 40,
+      "topPriority": 84,
+      "mainClusters": "IB Operations Knowledge",
+      "recommendedWave": "Wave 1",
+      "pageType": "Pillar career guide",
+      "buildGuidance": "Consolidate related queries; unique human-first content; strong internal links; FAQ sections where useful.",
+      "sampleKeywords": "what is investment banking operations; investment banking operations meaning; investment banking operations explained; investment banking operations process; investment banking operations functions; investment banking operations department; investment banking operations workflow; investment banking operations lifecycle"
+    },
+    {
+      "targetUrl": "/career-guides/trade-lifecycle/",
+      "primaryPurpose": "Trade/post-trade workflow pillar",
+      "mappedKeywordCount": 83,
+      "topPriority": 82,
+      "mainClusters": "Role & Career, Trade & Post-Trade",
+      "recommendedWave": "Wave 2",
+      "pageType": "Career guide / role hub, Pillar / supporting guides",
+      "buildGuidance": "Consolidate related queries; unique human-first content; strong internal links; FAQ sections where useful.",
+      "sampleKeywords": "trade lifecycle in investment banking; trade life cycle explained; trade lifecycle steps; trade lifecycle interview questions; trade lifecycle settlement process; front to back trade lifecycle; equity trade lifecycle; bond trade lifecycle"
+    },
+    {
+      "targetUrl": "/career-guides/finance-operations/",
+      "primaryPurpose": "Finance operations / GCC career pillar",
+      "mappedKeywordCount": 57,
+      "topPriority": 82,
+      "mainClusters": "Finance Operations & GCC, Role & Career",
+      "recommendedWave": "Wave 1",
+      "pageType": "Career guide / role hub, Pillar career guide",
+      "buildGuidance": "Consolidate related queries; unique human-first content; strong internal links; FAQ sections where useful.",
+      "sampleKeywords": "finance operations career; finance operations jobs; finance operations jobs in India; finance operations analyst; finance operations analyst salary India; finance operations analyst skills; finance operations analyst responsibilities; how to become finance operations analyst"
+    },
+    {
+      "targetUrl": "/career-guides/kyc-aml-analyst/",
+      "primaryPurpose": "KYC/AML career and knowledge pillar",
+      "mappedKeywordCount": 53,
+      "topPriority": 82,
+      "mainClusters": "KYC & AML, Role & Career",
+      "recommendedWave": "Wave 1",
+      "pageType": "Career / knowledge guide, Career guide / role hub",
+      "buildGuidance": "Consolidate related queries; unique human-first content; strong internal links; FAQ sections where useful.",
+      "sampleKeywords": "what is KYC in banking; what is AML in banking; KYC and AML difference; KYC AML process; KYC onboarding process; customer due diligence process; enhanced due diligence meaning; transaction monitoring in AML"
+    },
+    {
+      "targetUrl": "/career-guides/financial-operations-faq/",
+      "primaryPurpose": "Supporting module, career or regional page",
+      "mappedKeywordCount": 30,
+      "topPriority": 78,
+      "mainClusters": "Conversational / AI Search",
+      "recommendedWave": "Wave 3",
+      "pageType": "FAQ / answer hub",
+      "buildGuidance": "Consolidate related queries; unique human-first content; strong internal links; FAQ sections where useful.",
+      "sampleKeywords": "which course is best for investment banking operations in India; which short term finance course can help me get a job; what should I learn for investment banking operations jobs; can a BCom graduate get into investment banking operations; can a BBA graduate work in investment banking operations; is KYC AML a good career for freshers; is finance operations a good career in India; what skills do banks look for in operations freshers"
+    },
+    {
+      "targetUrl": "/career-guides/retail-banking-operations/",
+      "primaryPurpose": "Supporting module, career or regional page",
+      "mappedKeywordCount": 18,
+      "topPriority": 78,
+      "mainClusters": "Retail Banking",
+      "recommendedWave": "Wave 3",
+      "pageType": "Career guide",
+      "buildGuidance": "Consolidate related queries; unique human-first content; strong internal links; FAQ sections where useful.",
+      "sampleKeywords": "retail banking operations meaning; retail banking operations process; retail banking operations jobs; retail banking operations career; retail banking analyst; banking operations jobs for graduates; retail banking interview questions; bank operations interview questions"
+    },
+    {
+      "targetUrl": "/courses/retail-banking/",
+      "primaryPurpose": "Supporting module, career or regional page",
+      "mappedKeywordCount": 6,
+      "topPriority": 78,
+      "mainClusters": "Retail Banking",
+      "recommendedWave": "Wave 3",
+      "pageType": "Module page",
+      "buildGuidance": "Consolidate related queries; unique human-first content; strong internal links; FAQ sections where useful.",
+      "sampleKeywords": "retail banking operations course; retail banking course; retail banking operations training; retail banking certification; bank branch operations course; banking operations training for freshers"
+    },
+    {
+      "targetUrl": "/career-guides/digital-payments-operations/",
+      "primaryPurpose": "Supporting module, career or regional page",
+      "mappedKeywordCount": 21,
+      "topPriority": 76,
+      "mainClusters": "Digital Payments",
+      "recommendedWave": "Wave 3",
+      "pageType": "Knowledge guide",
+      "buildGuidance": "Consolidate related queries; unique human-first content; strong internal links; FAQ sections where useful.",
+      "sampleKeywords": "digital payment operations; payments operations career; payments analyst career; payment operations analyst; payments operations jobs India; digital payments jobs for freshers; UPI operations; UPI payment process"
+    },
+    {
+      "targetUrl": "/courses/digital-payments/",
+      "primaryPurpose": "Supporting module, career or regional page",
+      "mappedKeywordCount": 4,
+      "topPriority": 76,
+      "mainClusters": "Digital Payments",
+      "recommendedWave": "Wave 3",
+      "pageType": "Module page",
+      "buildGuidance": "Consolidate related queries; unique human-first content; strong internal links; FAQ sections where useful.",
+      "sampleKeywords": "digital payments course; digital payments training; digital payments certification; digital payments operations course"
+    },
+    {
+      "targetUrl": "/career-guides/fintech-operations/",
+      "primaryPurpose": "Supporting module, career or regional page",
+      "mappedKeywordCount": 16,
+      "topPriority": 72,
+      "mainClusters": "FinTech",
+      "recommendedWave": "Wave 4",
+      "pageType": "Career guide",
+      "buildGuidance": "Consolidate related queries; unique human-first content; strong internal links; FAQ sections where useful.",
+      "sampleKeywords": "fintech career for BCom graduates; fintech jobs for commerce graduates; fintech operations jobs; fintech analyst career; fintech operations analyst; what is fintech operations; fintech banking operations; fintech and digital payments"
+    },
+    {
+      "targetUrl": "/courses/fintech/",
+      "primaryPurpose": "Supporting module, career or regional page",
+      "mappedKeywordCount": 4,
+      "topPriority": 72,
+      "mainClusters": "FinTech",
+      "recommendedWave": "Wave 4",
+      "pageType": "Module page",
+      "buildGuidance": "Consolidate related queries; unique human-first content; strong internal links; FAQ sections where useful.",
+      "sampleKeywords": "fintech course for graduates; fintech operations course; fintech training for freshers; fintech certification India"
+    },
+    {
+      "targetUrl": "/compare/investment-banking-operations-courses/",
+      "primaryPurpose": "Supporting module, career or regional page",
+      "mappedKeywordCount": 12,
+      "topPriority": 65,
+      "mainClusters": "Competitor Comparison",
+      "recommendedWave": "Wave 4",
+      "pageType": "Comparison guide",
+      "buildGuidance": "Consolidate related queries; unique human-first content; strong internal links; FAQ sections where useful.",
+      "sampleKeywords": "Imarticus investment banking course alternative; Imarticus CIBOP alternative; Imarticus vs other investment banking courses; Proschool investment banking alternative; IMS Proschool investment banking course alternative; Proschool vs Imarticus investment banking; upGrad investment banking operations alternative; TimesPro investment banking operations alternative"
+    }
+  ],
+  "registeredContextualEdges": {
+    "home": [
+      "courses",
+      "courses-banking-courses",
+      "courses-banking-and-finance",
+      "career-guides",
+      "career-guide-reconciliation-analyst",
+      "resources",
+      "resource-bank-reconciliation-process",
+      "india",
+      "placements",
+      "comparison-best-finance-institutes-india",
+      "lead-best-investment-banking-course-india",
+      "lead-online-finance-course-placement",
+      "blog",
+      "faqs",
+      "lucknow-location",
+      "contact",
+      "privacy-policy"
+    ],
+    "blog": [
+      "career-guides",
+      "resources",
+      "india",
+      "courses",
+      "placements",
+      "comparison-best-finance-institutes-india",
+      "faqs",
+      "contact"
+    ],
+    "career-guides": [
+      "courses",
+      "courses-banking-courses",
+      "blog",
+      "resources",
+      "india",
+      "comparison-investment-banking-operations",
+      "comparison-best-finance-institutes-india",
+      "comparison-finance-operations-vs-financial-modelling-cfa",
+      "comparison-investment-banking-operations-vs-financial-analyst",
+      "comparison-banking-vs-finance-careers",
+      "placements",
+      "faqs",
+      "lucknow-location",
+      "contact",
+      "career-guide-investment-banking-operations",
+      "career-guide-investment-banking-operations-roles",
+      "career-guide-trade-support-analyst",
+      "career-guide-securities-operations",
+      "career-guide-reconciliation-analyst",
+      "career-guide-what-is-investment-banking",
+      "career-guide-kyc-aml-analyst",
+      "career-guide-finance-operations",
+      "career-guide-trade-lifecycle",
+      "career-guide-finance-careers-after-graduation",
+      "career-guide-retail-banking-operations",
+      "career-guide-digital-payments-operations",
+      "career-guide-financial-operations-faq",
+      "career-guide-choosing-finance-career-course",
+      "career-guide-fintech-operations",
+      "career-guide-risk-operations-analyst",
+      "career-guide-credit-analyst",
+      "career-guide-business-analyst-in-banking",
+      "career-guide-custody-operations",
+      "career-guide-credit-operations-analyst",
+      "career-guide-transaction-monitoring-analyst",
+      "career-guide-middle-office-operations",
+      "career-guide-back-office-banking-jobs",
+      "career-guide-settlement-analyst",
+      "career-guide-finance-learning-roadmap",
+      "career-guide-operations-analyst-banking",
+      "resource-investment-banking-interview-questions"
+    ],
+    "resources": [
+      "courses",
+      "courses-finance-operations-training",
+      "career-guides",
+      "career-guide-reconciliation-analyst",
+      "india",
+      "comparison-investment-banking-operations",
+      "comparison-best-finance-institutes-india",
+      "comparison-finance-operations-vs-financial-modelling-cfa",
+      "resource-investment-banking-interview-questions",
+      "resource-finance-gk",
+      "resource-accounting-basics",
+      "resource-accounting-interview-questions",
+      "resource-reconciliation-in-finance",
+      "resource-bank-reconciliation-process",
+      "resource-cost-accounting-finance-operations",
+      "resource-financial-accounting-banking",
+      "resource-financial-statement-analysis",
+      "resource-corporate-actions-workflow",
+      "resource-capital-market-operations",
+      "resource-financial-system-india",
+      "resource-kyc-aml-compliance-guide",
+      "quiz",
+      "placements",
+      "faqs",
+      "lucknow-location",
+      "contact"
+    ],
+    "quiz": [
+      "resources",
+      "courses",
+      "career-guides",
+      "resource-investment-banking-interview-questions",
+      "resource-finance-gk",
+      "comparison-best-finance-institutes-india",
+      "india",
+      "faqs",
+      "placements",
+      "contact"
+    ],
+    "courses": [
+      "investment-banking-operations",
+      "courses-banking-courses",
+      "courses-banking-and-finance",
+      "courses-finance-operations-training",
+      "courses-finance-operations-syllabus",
+      "courses-finance-course-fees-eligibility",
+      "courses-finance-course-for-graduates",
+      "lead-job-oriented-finance-course-india",
+      "lead-investment-banking-operations-course-placement",
+      "retail-banking",
+      "finance-operations",
+      "kyc-aml-compliance",
+      "digital-payments",
+      "fintech-neo-banking",
+      "placements",
+      "faqs",
+      "lucknow-location",
+      "career-guides",
+      "comparison-investment-banking-operations",
+      "comparison-best-finance-institutes-india",
+      "comparison-finance-operations-vs-financial-modelling-cfa",
+      "comparison-online-vs-offline-finance-training",
+      "comparison-investment-banking-operations-vs-financial-analyst",
+      "comparison-banking-vs-finance-careers",
+      "faqs-finance-program",
+      "career-guide-choosing-finance-career-course",
+      "career-guide-investment-banking-operations",
+      "career-guide-retail-banking-operations",
+      "career-guide-finance-operations",
+      "career-guide-kyc-aml-analyst",
+      "career-guide-digital-payments-operations",
+      "career-guide-fintech-operations",
+      "career-guide-finance-careers-after-graduation",
+      "resources",
+      "india",
+      "resource-investment-banking-interview-questions",
+      "resource-finance-gk",
+      "resource-bank-reconciliation-process",
+      "resource-financial-accounting-banking",
+      "resource-financial-statement-analysis",
+      "contact",
+      "privacy-policy"
+    ],
+    "investment-banking-operations": [
+      "courses",
+      "courses-banking-courses",
+      "retail-banking",
+      "finance-operations",
+      "placements",
+      "faqs",
+      "lucknow-location",
+      "career-guides",
+      "career-guide-investment-banking-operations",
+      "career-guide-investment-banking-operations-roles",
+      "career-guide-trade-support-analyst",
+      "career-guide-securities-operations",
+      "resources",
+      "india",
+      "resource-investment-banking-interview-questions",
+      "resource-finance-gk",
+      "contact"
+    ],
+    "retail-banking": [
+      "courses",
+      "investment-banking-operations",
+      "finance-operations",
+      "placements",
+      "faqs",
+      "lucknow-location",
+      "career-guides",
+      "career-guide-retail-banking-operations",
+      "resources",
+      "india",
+      "resource-investment-banking-interview-questions",
+      "contact"
+    ],
+    "finance-operations": [
+      "courses",
+      "courses-finance-operations-training",
+      "investment-banking-operations",
+      "retail-banking",
+      "placements",
+      "faqs",
+      "lucknow-location",
+      "career-guides",
+      "career-guide-finance-operations",
+      "career-guide-reconciliation-analyst",
+      "resource-financial-accounting-banking",
+      "resource-financial-statement-analysis",
+      "resources",
+      "india",
+      "resource-investment-banking-interview-questions",
+      "contact"
+    ],
+    "kyc-aml-compliance": [
+      "courses",
+      "career-guide-kyc-aml-analyst",
+      "career-guide-fintech-operations",
+      "resources",
+      "resource-investment-banking-interview-questions",
+      "placements",
+      "faqs",
+      "contact"
+    ],
+    "digital-payments": [
+      "courses",
+      "career-guide-digital-payments-operations",
+      "career-guide-fintech-operations",
+      "resources",
+      "india",
+      "placements",
+      "faqs",
+      "contact"
+    ],
+    "fintech-neo-banking": [
+      "courses",
+      "career-guide-fintech-operations",
+      "career-guide-digital-payments-operations",
+      "career-guide-finance-careers-after-graduation",
+      "resources",
+      "placements",
+      "faqs",
+      "contact"
+    ],
+    "placements": [
+      "courses",
+      "career-guides",
+      "resources",
+      "india",
+      "comparison-best-finance-institutes-india",
+      "lead-finance-course-placement",
+      "lead-finance-course-job-guarantee",
+      "about",
+      "faqs",
+      "contact"
+    ],
+    "about": [
+      "courses",
+      "career-guides",
+      "resources",
+      "india",
+      "placements",
+      "lucknow-location",
+      "contact"
+    ],
+    "contact": [
+      "lucknow-location",
+      "courses",
+      "career-guides",
+      "resources",
+      "india",
+      "placements",
+      "faqs",
+      "privacy-policy"
+    ],
+    "lucknow-location": [
+      "contact",
+      "courses",
+      "career-guides",
+      "resources",
+      "india",
+      "placements",
+      "lead-finance-institute-lucknow-placement",
+      "faqs"
+    ],
+    "faqs": [
+      "courses",
+      "faqs-finance-program",
+      "career-guides",
+      "resources",
+      "india",
+      "resource-investment-banking-interview-questions",
+      "placements",
+      "lucknow-location",
+      "contact"
+    ],
+    "india": [
+      "courses",
+      "courses-banking-courses",
+      "courses-banking-and-finance",
+      "courses-finance-operations-training",
+      "courses-finance-operations-syllabus",
+      "courses-finance-course-fees-eligibility",
+      "courses-finance-course-for-graduates",
+      "investment-banking-operations",
+      "retail-banking",
+      "finance-operations",
+      "kyc-aml-compliance",
+      "digital-payments",
+      "fintech-neo-banking",
+      "career-guides",
+      "comparison-investment-banking-operations",
+      "comparison-best-finance-institutes-india",
+      "lead-finance-course-cities-india",
+      "resources",
+      "resource-investment-banking-interview-questions",
+      "resource-finance-gk",
+      "placements",
+      "faqs",
+      "lucknow-location",
+      "contact",
+      "india-delhi-ncr",
+      "india-bengaluru",
+      "india-mumbai",
+      "india-pune",
+      "india-hyderabad"
+    ],
+    "india-delhi-ncr": [
+      "india",
+      "courses",
+      "career-guides",
+      "career-guide-finance-operations",
+      "career-guide-kyc-aml-analyst",
+      "resources",
+      "resource-investment-banking-interview-questions",
+      "lucknow-location",
+      "faqs",
+      "contact"
+    ],
+    "india-bengaluru": [
+      "india",
+      "courses",
+      "career-guides",
+      "career-guide-digital-payments-operations",
+      "career-guide-finance-operations",
+      "resources",
+      "resource-investment-banking-interview-questions",
+      "lucknow-location",
+      "faqs",
+      "contact"
+    ],
+    "india-mumbai": [
+      "india",
+      "courses",
+      "career-guides",
+      "career-guide-investment-banking-operations",
+      "career-guide-trade-lifecycle",
+      "resources",
+      "resource-investment-banking-interview-questions",
+      "lucknow-location",
+      "faqs",
+      "contact"
+    ],
+    "india-pune": [
+      "india",
+      "courses",
+      "career-guides",
+      "career-guide-finance-operations",
+      "career-guide-fintech-operations",
+      "career-guide-digital-payments-operations",
+      "resources",
+      "placements",
+      "faqs",
+      "contact"
+    ],
+    "india-hyderabad": [
+      "india",
+      "courses",
+      "career-guides",
+      "career-guide-fintech-operations",
+      "career-guide-kyc-aml-analyst",
+      "resources",
+      "placements",
+      "faqs",
+      "contact"
+    ],
+    "privacy-policy": [
+      "home",
+      "contact",
+      "courses"
+    ],
+    "comparison-investment-banking-operations": [
+      "courses",
+      "courses-banking-and-finance",
+      "career-guides",
+      "resources",
+      "comparison-best-finance-institutes-india",
+      "comparison-finance-operations-vs-financial-modelling-cfa",
+      "comparison-online-vs-offline-finance-training",
+      "india",
+      "resource-investment-banking-interview-questions",
+      "placements",
+      "faqs",
+      "contact"
+    ],
+    "comparison-best-finance-institutes-india": [
+      "courses",
+      "courses-banking-courses",
+      "courses-banking-and-finance",
+      "lead-best-finance-course-placement",
+      "courses-finance-course-for-graduates",
+      "courses-finance-course-fees-eligibility",
+      "career-guide-choosing-finance-career-course",
+      "placements",
+      "india",
+      "resources",
+      "contact"
+    ],
+    "career-guide-investment-banking-operations": [
+      "career-guides",
+      "courses",
+      "investment-banking-operations",
+      "resources",
+      "india",
+      "resource-investment-banking-interview-questions",
+      "career-guide-trade-lifecycle",
+      "career-guide-finance-operations",
+      "career-guide-finance-careers-after-graduation",
+      "placements"
+    ],
+    "career-guide-kyc-aml-analyst": [
+      "career-guides",
+      "courses",
+      "kyc-aml-compliance",
+      "resources",
+      "india",
+      "resource-investment-banking-interview-questions",
+      "career-guide-finance-operations",
+      "career-guide-retail-banking-operations",
+      "career-guide-digital-payments-operations",
+      "placements",
+      "faqs"
+    ],
+    "career-guide-finance-operations": [
+      "career-guides",
+      "courses",
+      "courses-finance-operations-training",
+      "finance-operations",
+      "resources",
+      "resource-financial-accounting-banking",
+      "resource-financial-statement-analysis",
+      "india",
+      "resource-investment-banking-interview-questions",
+      "career-guide-reconciliation-analyst",
+      "career-guide-investment-banking-operations",
+      "career-guide-kyc-aml-analyst",
+      "career-guide-finance-careers-after-graduation",
+      "placements"
+    ],
+    "career-guide-trade-lifecycle": [
+      "career-guides",
+      "courses",
+      "investment-banking-operations",
+      "resources",
+      "india",
+      "resource-investment-banking-interview-questions",
+      "career-guide-investment-banking-operations",
+      "career-guide-finance-operations",
+      "career-guide-digital-payments-operations",
+      "faqs"
+    ],
+    "career-guide-finance-careers-after-graduation": [
+      "career-guides",
+      "courses",
+      "lead-best-finance-course-after-bcom",
+      "resources",
+      "india",
+      "resource-investment-banking-interview-questions",
+      "career-guide-investment-banking-operations",
+      "career-guide-finance-operations",
+      "career-guide-kyc-aml-analyst",
+      "career-guide-retail-banking-operations",
+      "contact"
+    ],
+    "career-guide-retail-banking-operations": [
+      "career-guides",
+      "courses",
+      "retail-banking",
+      "resources",
+      "india",
+      "resource-investment-banking-interview-questions",
+      "career-guide-kyc-aml-analyst",
+      "career-guide-finance-operations",
+      "career-guide-finance-careers-after-graduation",
+      "faqs"
+    ],
+    "career-guide-digital-payments-operations": [
+      "career-guides",
+      "courses",
+      "digital-payments",
+      "career-guide-fintech-operations",
+      "resources",
+      "india",
+      "resource-investment-banking-interview-questions",
+      "career-guide-kyc-aml-analyst",
+      "career-guide-trade-lifecycle",
+      "career-guide-retail-banking-operations",
+      "faqs",
+      "contact"
+    ],
+    "career-guide-financial-operations-faq": [
+      "career-guides",
+      "courses",
+      "resources",
+      "india",
+      "resource-investment-banking-interview-questions",
+      "career-guide-finance-careers-after-graduation",
+      "career-guide-investment-banking-operations",
+      "career-guide-kyc-aml-analyst",
+      "career-guide-finance-operations",
+      "placements"
+    ],
+    "career-guide-choosing-finance-career-course": [
+      "career-guides",
+      "courses",
+      "lead-which-finance-course-right",
+      "comparison-investment-banking-operations",
+      "comparison-best-finance-institutes-india",
+      "career-guide-finance-careers-after-graduation",
+      "career-guide-investment-banking-operations",
+      "career-guide-kyc-aml-analyst",
+      "resource-investment-banking-interview-questions",
+      "placements",
+      "faqs",
+      "contact"
+    ],
+    "career-guide-fintech-operations": [
+      "career-guides",
+      "courses",
+      "fintech-neo-banking",
+      "digital-payments",
+      "career-guide-digital-payments-operations",
+      "career-guide-finance-careers-after-graduation",
+      "career-guide-finance-operations",
+      "resources",
+      "india",
+      "resource-investment-banking-interview-questions",
+      "placements",
+      "contact"
+    ],
+    "resource-investment-banking-interview-questions": [
+      "resources",
+      "courses",
+      "investment-banking-operations",
+      "career-guides",
+      "india",
+      "career-guide-investment-banking-operations",
+      "career-guide-trade-lifecycle",
+      "career-guide-kyc-aml-analyst",
+      "career-guide-finance-operations",
+      "resource-finance-gk",
+      "resource-accounting-basics",
+      "resource-reconciliation-in-finance",
+      "faqs",
+      "placements",
+      "contact"
+    ],
+    "resource-finance-gk": [
+      "resources",
+      "courses",
+      "india",
+      "career-guides",
+      "career-guide-finance-operations",
+      "career-guide-digital-payments-operations",
+      "career-guide-trade-lifecycle",
+      "resource-investment-banking-interview-questions",
+      "resource-accounting-basics",
+      "resource-reconciliation-in-finance",
+      "placements",
+      "contact"
+    ],
+    "resource-accounting-basics": [
+      "resources",
+      "courses",
+      "india",
+      "career-guides",
+      "career-guide-finance-operations",
+      "resource-finance-gk",
+      "resource-reconciliation-in-finance",
+      "resource-accounting-interview-questions",
+      "resource-investment-banking-interview-questions",
+      "placements",
+      "contact"
+    ],
+    "resource-accounting-interview-questions": [
+      "resources",
+      "resource-accounting-basics",
+      "resource-reconciliation-in-finance",
+      "resource-investment-banking-interview-questions",
+      "career-guide-finance-operations",
+      "courses",
+      "contact"
+    ],
+    "resource-reconciliation-in-finance": [
+      "resources",
+      "resource-bank-reconciliation-process",
+      "courses",
+      "india",
+      "career-guides",
+      "career-guide-reconciliation-analyst",
+      "career-guide-finance-operations",
+      "career-guide-trade-lifecycle",
+      "resource-finance-gk",
+      "resource-accounting-basics",
+      "resource-accounting-interview-questions",
+      "resource-investment-banking-interview-questions",
+      "placements",
+      "contact"
+    ],
+    "career-guide-reconciliation-analyst": [
+      "career-guides",
+      "courses",
+      "courses-finance-operations-training",
+      "resources",
+      "resource-bank-reconciliation-process",
+      "resource-reconciliation-in-finance",
+      "career-guide-finance-operations",
+      "resource-investment-banking-interview-questions",
+      "placements",
+      "contact"
+    ],
+    "career-guide-investment-banking-operations-roles": [
+      "career-guides",
+      "courses",
+      "investment-banking-operations",
+      "career-guide-trade-support-analyst",
+      "career-guide-securities-operations",
+      "career-guide-what-is-investment-banking",
+      "resource-investment-banking-interview-questions",
+      "resources",
+      "placements",
+      "contact"
+    ],
+    "career-guide-trade-support-analyst": [
+      "career-guides",
+      "courses",
+      "investment-banking-operations",
+      "career-guide-investment-banking-operations-roles",
+      "career-guide-securities-operations",
+      "career-guide-trade-lifecycle",
+      "resource-reconciliation-in-finance",
+      "resource-investment-banking-interview-questions",
+      "placements"
+    ],
+    "career-guide-securities-operations": [
+      "career-guides",
+      "courses",
+      "investment-banking-operations",
+      "career-guide-investment-banking-operations-roles",
+      "career-guide-trade-support-analyst",
+      "career-guide-trade-lifecycle",
+      "resource-reconciliation-in-finance",
+      "resource-investment-banking-interview-questions",
+      "placements"
+    ],
+    "career-guide-what-is-investment-banking": [
+      "career-guides",
+      "courses",
+      "investment-banking-operations",
+      "career-guide-investment-banking-operations-roles",
+      "comparison-finance-operations-vs-financial-modelling-cfa",
+      "resource-investment-banking-interview-questions",
+      "contact"
+    ],
+    "resource-bank-reconciliation-process": [
+      "resources",
+      "resource-reconciliation-in-finance",
+      "resource-accounting-basics",
+      "career-guide-reconciliation-analyst",
+      "career-guide-finance-operations",
+      "courses-finance-operations-training",
+      "courses",
+      "contact"
+    ],
+    "resource-cost-accounting-finance-operations": [
+      "resources",
+      "resource-financial-accounting-banking",
+      "resource-financial-statement-analysis",
+      "career-guide-finance-operations",
+      "courses-finance-operations-training",
+      "courses",
+      "contact"
+    ],
+    "resource-financial-accounting-banking": [
+      "resources",
+      "resource-bank-reconciliation-process",
+      "resource-accounting-basics",
+      "career-guide-finance-operations",
+      "courses-finance-operations-training",
+      "resource-financial-statement-analysis",
+      "courses",
+      "contact"
+    ],
+    "resource-financial-statement-analysis": [
+      "resources",
+      "resource-financial-accounting-banking",
+      "career-guide-finance-operations",
+      "courses-finance-operations-training",
+      "comparison-finance-operations-vs-financial-modelling-cfa",
+      "courses",
+      "contact"
+    ],
+    "courses-banking-courses": [
+      "courses",
+      "courses-banking-and-finance",
+      "retail-banking",
+      "investment-banking-operations",
+      "career-guide-investment-banking-operations-roles",
+      "career-guide-finance-operations",
+      "placements",
+      "faqs-finance-program",
+      "contact"
+    ],
+    "courses-banking-and-finance": [
+      "courses",
+      "courses-banking-courses",
+      "lead-banking-finance-course-placement",
+      "courses-finance-operations-training",
+      "career-guides",
+      "comparison-finance-operations-vs-financial-modelling-cfa",
+      "faqs-finance-program",
+      "placements",
+      "contact"
+    ],
+    "courses-finance-operations-training": [
+      "courses",
+      "courses-banking-and-finance",
+      "finance-operations",
+      "career-guide-finance-operations",
+      "career-guide-reconciliation-analyst",
+      "resource-financial-accounting-banking",
+      "resource-financial-statement-analysis",
+      "resource-cost-accounting-finance-operations",
+      "placements",
+      "contact"
+    ],
+    "comparison-finance-operations-vs-financial-modelling-cfa": [
+      "courses",
+      "courses-finance-operations-training",
+      "lead-finance-course-vs-mba-cfa-modelling",
+      "courses-banking-and-finance",
+      "career-guide-finance-operations",
+      "resource-financial-statement-analysis",
+      "faqs-finance-program",
+      "contact"
+    ],
+    "comparison-online-vs-offline-finance-training": [
+      "courses",
+      "lead-online-finance-course-placement",
+      "india",
+      "lucknow-location",
+      "faqs-finance-program",
+      "placements",
+      "contact"
+    ],
+    "faqs-finance-program": [
+      "courses",
+      "courses-banking-and-finance",
+      "courses-banking-courses",
+      "placements",
+      "comparison-online-vs-offline-finance-training",
+      "contact"
+    ],
+    "career-guide-risk-operations-analyst": [
+      "career-guides",
+      "courses",
+      "finance-operations",
+      "career-guide-finance-operations",
+      "career-guide-reconciliation-analyst",
+      "career-guide-operations-analyst-banking",
+      "resources",
+      "contact"
+    ],
+    "career-guide-credit-analyst": [
+      "career-guides",
+      "courses",
+      "finance-operations",
+      "career-guide-credit-operations-analyst",
+      "resource-financial-statement-analysis",
+      "resource-financial-accounting-banking",
+      "contact"
+    ],
+    "career-guide-business-analyst-in-banking": [
+      "career-guides",
+      "courses",
+      "retail-banking",
+      "career-guide-retail-banking-operations",
+      "career-guide-operations-analyst-banking",
+      "comparison-banking-vs-finance-careers",
+      "contact"
+    ],
+    "career-guide-custody-operations": [
+      "career-guides",
+      "courses",
+      "investment-banking-operations",
+      "career-guide-securities-operations",
+      "career-guide-settlement-analyst",
+      "resource-capital-market-operations",
+      "resource-corporate-actions-workflow",
+      "contact"
+    ],
+    "career-guide-credit-operations-analyst": [
+      "career-guides",
+      "courses",
+      "finance-operations",
+      "career-guide-credit-analyst",
+      "career-guide-finance-operations",
+      "resource-financial-statement-analysis",
+      "contact"
+    ],
+    "career-guide-transaction-monitoring-analyst": [
+      "career-guides",
+      "courses",
+      "kyc-aml-compliance",
+      "career-guide-kyc-aml-analyst",
+      "resource-kyc-aml-compliance-guide",
+      "career-guide-risk-operations-analyst",
+      "contact"
+    ],
+    "career-guide-middle-office-operations": [
+      "career-guides",
+      "courses",
+      "investment-banking-operations",
+      "career-guide-trade-support-analyst",
+      "career-guide-back-office-banking-jobs",
+      "career-guide-investment-banking-operations-roles",
+      "contact"
+    ],
+    "career-guide-back-office-banking-jobs": [
+      "career-guides",
+      "courses",
+      "career-guide-finance-operations",
+      "career-guide-middle-office-operations",
+      "career-guide-operations-analyst-banking",
+      "comparison-banking-vs-finance-careers",
+      "resources",
+      "contact"
+    ],
+    "career-guide-settlement-analyst": [
+      "career-guides",
+      "courses",
+      "investment-banking-operations",
+      "career-guide-trade-lifecycle",
+      "career-guide-custody-operations",
+      "career-guide-trade-support-analyst",
+      "resource-capital-market-operations",
+      "contact"
+    ],
+    "career-guide-finance-learning-roadmap": [
+      "career-guides",
+      "courses",
+      "courses-finance-operations-syllabus",
+      "courses-finance-course-for-graduates",
+      "career-guide-finance-careers-after-graduation",
+      "career-guide-choosing-finance-career-course",
+      "resources",
+      "contact"
+    ],
+    "career-guide-operations-analyst-banking": [
+      "career-guides",
+      "courses",
+      "retail-banking",
+      "finance-operations",
+      "career-guide-finance-operations",
+      "career-guide-retail-banking-operations",
+      "career-guide-back-office-banking-jobs",
+      "contact"
+    ],
+    "resource-corporate-actions-workflow": [
+      "resources",
+      "courses",
+      "investment-banking-operations",
+      "career-guide-investment-banking-operations",
+      "career-guide-custody-operations",
+      "career-guide-trade-lifecycle",
+      "resource-capital-market-operations",
+      "contact"
+    ],
+    "resource-capital-market-operations": [
+      "resources",
+      "courses",
+      "investment-banking-operations",
+      "career-guide-securities-operations",
+      "career-guide-settlement-analyst",
+      "career-guide-custody-operations",
+      "resource-corporate-actions-workflow",
+      "contact"
+    ],
+    "resource-financial-system-india": [
+      "resources",
+      "courses",
+      "india",
+      "resource-finance-gk",
+      "resource-capital-market-operations",
+      "career-guides",
+      "contact"
+    ],
+    "resource-kyc-aml-compliance-guide": [
+      "resources",
+      "courses",
+      "kyc-aml-compliance",
+      "career-guide-kyc-aml-analyst",
+      "career-guide-transaction-monitoring-analyst",
+      "career-guide-risk-operations-analyst",
+      "contact"
+    ],
+    "courses-finance-operations-syllabus": [
+      "courses",
+      "lead-finance-course-duration",
+      "courses-finance-course-for-graduates",
+      "courses-finance-course-fees-eligibility",
+      "career-guide-finance-learning-roadmap",
+      "career-guide-finance-operations",
+      "resource-financial-accounting-banking",
+      "faqs-finance-program",
+      "contact"
+    ],
+    "courses-finance-course-fees-eligibility": [
+      "courses",
+      "lead-finance-course-fees-india",
+      "lead-finance-course-eligibility",
+      "courses-finance-operations-syllabus",
+      "courses-finance-course-for-graduates",
+      "faqs-finance-program",
+      "placements",
+      "comparison-best-finance-institutes-india",
+      "comparison-online-vs-offline-finance-training",
+      "contact"
+    ],
+    "courses-finance-course-for-graduates": [
+      "courses",
+      "lead-best-finance-course-after-graduation",
+      "courses-finance-operations-syllabus",
+      "courses-finance-course-fees-eligibility",
+      "career-guide-finance-learning-roadmap",
+      "career-guide-finance-careers-after-graduation",
+      "courses-banking-and-finance",
+      "contact"
+    ],
+    "comparison-investment-banking-operations-vs-financial-analyst": [
+      "courses",
+      "investment-banking-operations",
+      "career-guide-investment-banking-operations",
+      "career-guide-finance-operations",
+      "resource-financial-statement-analysis",
+      "comparison-finance-operations-vs-financial-modelling-cfa",
+      "contact"
+    ],
+    "comparison-banking-vs-finance-careers": [
+      "courses",
+      "courses-banking-and-finance",
+      "career-guide-finance-careers-after-graduation",
+      "career-guide-retail-banking-operations",
+      "career-guide-finance-operations",
+      "resource-financial-system-india",
+      "contact"
+    ],
+    "lead-best-finance-course-placement": [
+      "comparison-best-finance-institutes-india",
+      "courses",
+      "placements",
+      "courses-finance-course-fees-eligibility",
+      "career-guide-choosing-finance-career-course",
+      "contact"
+    ],
+    "lead-best-investment-banking-course-india": [
+      "courses",
+      "investment-banking-operations",
+      "comparison-investment-banking-operations",
+      "career-guide-investment-banking-operations",
+      "placements",
+      "contact"
+    ],
+    "lead-best-finance-course-after-graduation": [
+      "courses-finance-course-for-graduates",
+      "courses",
+      "career-guide-finance-careers-after-graduation",
+      "career-guide-choosing-finance-career-course",
+      "contact"
+    ],
+    "lead-best-finance-course-after-bcom": [
+      "career-guide-finance-careers-after-graduation",
+      "courses-finance-course-for-graduates",
+      "courses",
+      "courses-finance-operations-training",
+      "placements",
+      "contact"
+    ],
+    "lead-finance-course-placement": [
+      "placements",
+      "courses",
+      "comparison-online-vs-offline-finance-training",
+      "faqs-finance-program",
+      "contact"
+    ],
+    "lead-finance-course-job-guarantee": [
+      "placements",
+      "courses",
+      "faqs-finance-program",
+      "courses-finance-course-fees-eligibility",
+      "contact"
+    ],
+    "lead-finance-course-fees-india": [
+      "courses-finance-course-fees-eligibility",
+      "courses",
+      "comparison-online-vs-offline-finance-training",
+      "faqs-finance-program",
+      "contact"
+    ],
+    "lead-finance-course-duration": [
+      "courses-finance-operations-syllabus",
+      "courses",
+      "comparison-online-vs-offline-finance-training",
+      "contact"
+    ],
+    "lead-finance-course-eligibility": [
+      "courses-finance-course-fees-eligibility",
+      "courses-finance-course-for-graduates",
+      "courses",
+      "comparison-online-vs-offline-finance-training",
+      "contact"
+    ],
+    "lead-online-finance-course-placement": [
+      "courses",
+      "india",
+      "placements",
+      "comparison-online-vs-offline-finance-training",
+      "contact"
+    ],
+    "lead-job-oriented-finance-course-india": [
+      "courses",
+      "courses-finance-operations-training",
+      "career-guide-finance-operations",
+      "career-guide-choosing-finance-career-course",
+      "placements",
+      "contact"
+    ],
+    "lead-banking-finance-course-placement": [
+      "courses-banking-and-finance",
+      "courses-banking-courses",
+      "placements",
+      "comparison-best-finance-institutes-india",
+      "contact"
+    ],
+    "lead-investment-banking-operations-course-placement": [
+      "courses",
+      "investment-banking-operations",
+      "comparison-investment-banking-operations",
+      "career-guide-trade-lifecycle",
+      "placements",
+      "contact"
+    ],
+    "lead-finance-institute-lucknow-placement": [
+      "lucknow-location",
+      "placements",
+      "comparison-online-vs-offline-finance-training",
+      "courses",
+      "contact"
+    ],
+    "lead-finance-course-cities-india": [
+      "india",
+      "india-delhi-ncr",
+      "india-bengaluru",
+      "comparison-online-vs-offline-finance-training",
+      "placements",
+      "contact"
+    ],
+    "lead-finance-course-vs-mba-cfa-modelling": [
+      "comparison-finance-operations-vs-financial-modelling-cfa",
+      "courses-finance-operations-training",
+      "resource-financial-statement-analysis",
+      "career-guide-choosing-finance-career-course",
+      "contact"
+    ],
+    "lead-which-finance-course-right": [
+      "career-guide-choosing-finance-career-course",
+      "quiz",
+      "comparison-best-finance-institutes-india",
+      "courses",
+      "contact"
+    ]
+  }
+}

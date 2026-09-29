@@ -1,0 +1,1489 @@
+{
+  "schemaVersion": 1,
+  "siteOrigin": "https://centaurcareers.in",
+  "sitemapUrl": "https://centaurcareers.in/sitemap.xml",
+  "sourceFile": "public/sitemap.xml",
+  "urlCount": 185,
+  "urls": [
+    {
+      "url": "https://centaurcareers.in/",
+      "path": "/",
+      "kind": "site-route",
+      "routeId": "home",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/",
+      "path": "/blog/",
+      "kind": "site-route",
+      "routeId": "blog",
+      "lastModified": "2026-09-13",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/",
+      "path": "/career-guides/",
+      "kind": "site-route",
+      "routeId": "career-guides",
+      "lastModified": "2026-09-13",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/resources/",
+      "path": "/resources/",
+      "kind": "site-route",
+      "routeId": "resources",
+      "lastModified": "2026-09-13",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/resources/investment-banking-interview-questions/",
+      "path": "/resources/investment-banking-interview-questions/",
+      "kind": "site-route",
+      "routeId": "resource-investment-banking-interview-questions",
+      "lastModified": "2026-09-26",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/resources/accounting-interview-questions/",
+      "path": "/resources/accounting-interview-questions/",
+      "kind": "site-route",
+      "routeId": "resource-accounting-interview-questions",
+      "lastModified": "2026-09-26",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/resources/finance-gk/",
+      "path": "/resources/finance-gk/",
+      "kind": "site-route",
+      "routeId": "resource-finance-gk",
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/resources/accounting-basics/",
+      "path": "/resources/accounting-basics/",
+      "kind": "site-route",
+      "routeId": "resource-accounting-basics",
+      "lastModified": "2026-09-24",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/resources/reconciliation-in-finance/",
+      "path": "/resources/reconciliation-in-finance/",
+      "kind": "site-route",
+      "routeId": "resource-reconciliation-in-finance",
+      "lastModified": "2026-09-26",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/resources/bank-reconciliation-process/",
+      "path": "/resources/bank-reconciliation-process/",
+      "kind": "site-route",
+      "routeId": "resource-bank-reconciliation-process",
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/resources/cost-accounting-finance-operations/",
+      "path": "/resources/cost-accounting-finance-operations/",
+      "kind": "site-route",
+      "routeId": "resource-cost-accounting-finance-operations",
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/resources/financial-accounting-banking/",
+      "path": "/resources/financial-accounting-banking/",
+      "kind": "site-route",
+      "routeId": "resource-financial-accounting-banking",
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/resources/financial-statement-analysis/",
+      "path": "/resources/financial-statement-analysis/",
+      "kind": "site-route",
+      "routeId": "resource-financial-statement-analysis",
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/resources/corporate-actions-workflow/",
+      "path": "/resources/corporate-actions-workflow/",
+      "kind": "site-route",
+      "routeId": "resource-corporate-actions-workflow",
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/resources/capital-market-operations/",
+      "path": "/resources/capital-market-operations/",
+      "kind": "site-route",
+      "routeId": "resource-capital-market-operations",
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/resources/financial-system-india/",
+      "path": "/resources/financial-system-india/",
+      "kind": "site-route",
+      "routeId": "resource-financial-system-india",
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/resources/kyc-aml-compliance-guide/",
+      "path": "/resources/kyc-aml-compliance-guide/",
+      "kind": "site-route",
+      "routeId": "resource-kyc-aml-compliance-guide",
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/quiz/",
+      "path": "/quiz/",
+      "kind": "site-route",
+      "routeId": "quiz",
+      "lastModified": "2026-09-22",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/courses/",
+      "path": "/courses/",
+      "kind": "site-route",
+      "routeId": "courses",
+      "lastModified": "2026-09-26",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/courses/investment-banking-operations/",
+      "path": "/courses/investment-banking-operations/",
+      "kind": "site-route",
+      "routeId": "investment-banking-operations",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/courses/retail-banking/",
+      "path": "/courses/retail-banking/",
+      "kind": "site-route",
+      "routeId": "retail-banking",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/courses/finance-operations/",
+      "path": "/courses/finance-operations/",
+      "kind": "site-route",
+      "routeId": "finance-operations",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/courses/kyc-aml/",
+      "path": "/courses/kyc-aml/",
+      "kind": "site-route",
+      "routeId": "kyc-aml-compliance",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/courses/digital-payments/",
+      "path": "/courses/digital-payments/",
+      "kind": "site-route",
+      "routeId": "digital-payments",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/courses/fintech/",
+      "path": "/courses/fintech/",
+      "kind": "site-route",
+      "routeId": "fintech-neo-banking",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/placements/",
+      "path": "/placements/",
+      "kind": "site-route",
+      "routeId": "placements",
+      "lastModified": "2026-09-13",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/about/",
+      "path": "/about/",
+      "kind": "site-route",
+      "routeId": "about",
+      "lastModified": "2026-09-13",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/contact/",
+      "path": "/contact/",
+      "kind": "site-route",
+      "routeId": "contact",
+      "lastModified": "2026-09-13",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/privacy-policy/",
+      "path": "/privacy-policy/",
+      "kind": "site-route",
+      "routeId": "privacy-policy",
+      "lastModified": "2026-09-23",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/india/",
+      "path": "/india/",
+      "kind": "site-route",
+      "routeId": "india",
+      "lastModified": "2026-09-26",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/india/delhi-ncr/",
+      "path": "/india/delhi-ncr/",
+      "kind": "site-route",
+      "routeId": "india-delhi-ncr",
+      "lastModified": "2026-09-26",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/india/bengaluru/",
+      "path": "/india/bengaluru/",
+      "kind": "site-route",
+      "routeId": "india-bengaluru",
+      "lastModified": "2026-09-26",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/india/mumbai/",
+      "path": "/india/mumbai/",
+      "kind": "site-route",
+      "routeId": "india-mumbai",
+      "lastModified": "2026-09-26",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/india/pune/",
+      "path": "/india/pune/",
+      "kind": "site-route",
+      "routeId": "india-pune",
+      "lastModified": "2026-09-26",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/india/hyderabad/",
+      "path": "/india/hyderabad/",
+      "kind": "site-route",
+      "routeId": "india-hyderabad",
+      "lastModified": "2026-09-26",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/locations/lucknow/",
+      "path": "/locations/lucknow/",
+      "kind": "site-route",
+      "routeId": "lucknow-location",
+      "lastModified": "2026-09-26",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/faqs/",
+      "path": "/faqs/",
+      "kind": "site-route",
+      "routeId": "faqs",
+      "lastModified": "2026-09-13",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/investment-banking-operations/",
+      "path": "/career-guides/investment-banking-operations/",
+      "kind": "site-route",
+      "routeId": "career-guide-investment-banking-operations",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/kyc-aml-analyst/",
+      "path": "/career-guides/kyc-aml-analyst/",
+      "kind": "site-route",
+      "routeId": "career-guide-kyc-aml-analyst",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/finance-operations/",
+      "path": "/career-guides/finance-operations/",
+      "kind": "site-route",
+      "routeId": "career-guide-finance-operations",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/trade-lifecycle/",
+      "path": "/career-guides/trade-lifecycle/",
+      "kind": "site-route",
+      "routeId": "career-guide-trade-lifecycle",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/finance-careers-after-graduation/",
+      "path": "/career-guides/finance-careers-after-graduation/",
+      "kind": "site-route",
+      "routeId": "career-guide-finance-careers-after-graduation",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/retail-banking-operations/",
+      "path": "/career-guides/retail-banking-operations/",
+      "kind": "site-route",
+      "routeId": "career-guide-retail-banking-operations",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/digital-payments-operations/",
+      "path": "/career-guides/digital-payments-operations/",
+      "kind": "site-route",
+      "routeId": "career-guide-digital-payments-operations",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/financial-operations-faq/",
+      "path": "/career-guides/financial-operations-faq/",
+      "kind": "site-route",
+      "routeId": "career-guide-financial-operations-faq",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/choosing-finance-career-course/",
+      "path": "/career-guides/choosing-finance-career-course/",
+      "kind": "site-route",
+      "routeId": "career-guide-choosing-finance-career-course",
+      "lastModified": "2026-09-26",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/fintech-operations/",
+      "path": "/career-guides/fintech-operations/",
+      "kind": "site-route",
+      "routeId": "career-guide-fintech-operations",
+      "lastModified": "2026-09-24",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/reconciliation-analyst/",
+      "path": "/career-guides/reconciliation-analyst/",
+      "kind": "site-route",
+      "routeId": "career-guide-reconciliation-analyst",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/investment-banking-operations-roles/",
+      "path": "/career-guides/investment-banking-operations-roles/",
+      "kind": "site-route",
+      "routeId": "career-guide-investment-banking-operations-roles",
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/trade-support-analyst/",
+      "path": "/career-guides/trade-support-analyst/",
+      "kind": "site-route",
+      "routeId": "career-guide-trade-support-analyst",
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/securities-operations/",
+      "path": "/career-guides/securities-operations/",
+      "kind": "site-route",
+      "routeId": "career-guide-securities-operations",
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/what-is-investment-banking/",
+      "path": "/career-guides/what-is-investment-banking/",
+      "kind": "site-route",
+      "routeId": "career-guide-what-is-investment-banking",
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/risk-operations-analyst/",
+      "path": "/career-guides/risk-operations-analyst/",
+      "kind": "site-route",
+      "routeId": "career-guide-risk-operations-analyst",
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/credit-analyst/",
+      "path": "/career-guides/credit-analyst/",
+      "kind": "site-route",
+      "routeId": "career-guide-credit-analyst",
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/business-analyst-in-banking/",
+      "path": "/career-guides/business-analyst-in-banking/",
+      "kind": "site-route",
+      "routeId": "career-guide-business-analyst-in-banking",
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/custody-operations/",
+      "path": "/career-guides/custody-operations/",
+      "kind": "site-route",
+      "routeId": "career-guide-custody-operations",
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/credit-operations-analyst/",
+      "path": "/career-guides/credit-operations-analyst/",
+      "kind": "site-route",
+      "routeId": "career-guide-credit-operations-analyst",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/transaction-monitoring-analyst/",
+      "path": "/career-guides/transaction-monitoring-analyst/",
+      "kind": "site-route",
+      "routeId": "career-guide-transaction-monitoring-analyst",
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/middle-office-operations/",
+      "path": "/career-guides/middle-office-operations/",
+      "kind": "site-route",
+      "routeId": "career-guide-middle-office-operations",
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/back-office-banking-jobs/",
+      "path": "/career-guides/back-office-banking-jobs/",
+      "kind": "site-route",
+      "routeId": "career-guide-back-office-banking-jobs",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/settlement-analyst/",
+      "path": "/career-guides/settlement-analyst/",
+      "kind": "site-route",
+      "routeId": "career-guide-settlement-analyst",
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/finance-learning-roadmap/",
+      "path": "/career-guides/finance-learning-roadmap/",
+      "kind": "site-route",
+      "routeId": "career-guide-finance-learning-roadmap",
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/career-guides/operations-analyst-banking/",
+      "path": "/career-guides/operations-analyst-banking/",
+      "kind": "site-route",
+      "routeId": "career-guide-operations-analyst-banking",
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/courses/banking-courses/",
+      "path": "/courses/banking-courses/",
+      "kind": "site-route",
+      "routeId": "courses-banking-courses",
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/courses/banking-and-finance/",
+      "path": "/courses/banking-and-finance/",
+      "kind": "site-route",
+      "routeId": "courses-banking-and-finance",
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/courses/finance-operations-training/",
+      "path": "/courses/finance-operations-training/",
+      "kind": "site-route",
+      "routeId": "courses-finance-operations-training",
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/best-finance-course-in-india-with-placement/",
+      "path": "/best-finance-course-in-india-with-placement/",
+      "kind": "site-route",
+      "routeId": "lead-best-finance-course-placement",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/best-investment-banking-course-india/",
+      "path": "/best-investment-banking-course-india/",
+      "kind": "site-route",
+      "routeId": "lead-best-investment-banking-course-india",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/best-finance-course-after-graduation/",
+      "path": "/best-finance-course-after-graduation/",
+      "kind": "site-route",
+      "routeId": "lead-best-finance-course-after-graduation",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/best-finance-course-after-bcom/",
+      "path": "/best-finance-course-after-bcom/",
+      "kind": "site-route",
+      "routeId": "lead-best-finance-course-after-bcom",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/finance-course-with-placement/",
+      "path": "/finance-course-with-placement/",
+      "kind": "site-route",
+      "routeId": "lead-finance-course-placement",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/finance-course-with-job-guarantee/",
+      "path": "/finance-course-with-job-guarantee/",
+      "kind": "site-route",
+      "routeId": "lead-finance-course-job-guarantee",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/finance-course-fees-in-india/",
+      "path": "/finance-course-fees-in-india/",
+      "kind": "site-route",
+      "routeId": "lead-finance-course-fees-india",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/finance-course-duration/",
+      "path": "/finance-course-duration/",
+      "kind": "site-route",
+      "routeId": "lead-finance-course-duration",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/finance-course-eligibility/",
+      "path": "/finance-course-eligibility/",
+      "kind": "site-route",
+      "routeId": "lead-finance-course-eligibility",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/online-finance-course-with-placement/",
+      "path": "/online-finance-course-with-placement/",
+      "kind": "site-route",
+      "routeId": "lead-online-finance-course-placement",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/job-oriented-finance-course-india/",
+      "path": "/job-oriented-finance-course-india/",
+      "kind": "site-route",
+      "routeId": "lead-job-oriented-finance-course-india",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/banking-finance-course-with-placement/",
+      "path": "/banking-finance-course-with-placement/",
+      "kind": "site-route",
+      "routeId": "lead-banking-finance-course-placement",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/investment-banking-operations-course-with-placement/",
+      "path": "/investment-banking-operations-course-with-placement/",
+      "kind": "site-route",
+      "routeId": "lead-investment-banking-operations-course-placement",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/finance-institute-lucknow-with-placement/",
+      "path": "/finance-institute-lucknow-with-placement/",
+      "kind": "site-route",
+      "routeId": "lead-finance-institute-lucknow-placement",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/finance-course-cities-india/",
+      "path": "/finance-course-cities-india/",
+      "kind": "site-route",
+      "routeId": "lead-finance-course-cities-india",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/finance-course-vs-mba-cfa-financial-modelling/",
+      "path": "/finance-course-vs-mba-cfa-financial-modelling/",
+      "kind": "site-route",
+      "routeId": "lead-finance-course-vs-mba-cfa-modelling",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/which-finance-course-is-right-for-me/",
+      "path": "/which-finance-course-is-right-for-me/",
+      "kind": "site-route",
+      "routeId": "lead-which-finance-course-right",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/courses/finance-operations-syllabus/",
+      "path": "/courses/finance-operations-syllabus/",
+      "kind": "site-route",
+      "routeId": "courses-finance-operations-syllabus",
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/courses/finance-course-fees-eligibility/",
+      "path": "/courses/finance-course-fees-eligibility/",
+      "kind": "site-route",
+      "routeId": "courses-finance-course-fees-eligibility",
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/courses/finance-course-for-graduates/",
+      "path": "/courses/finance-course-for-graduates/",
+      "kind": "site-route",
+      "routeId": "courses-finance-course-for-graduates",
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/compare/best-finance-institutes-india/",
+      "path": "/compare/best-finance-institutes-india/",
+      "kind": "site-route",
+      "routeId": "comparison-best-finance-institutes-india",
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/compare/finance-operations-vs-financial-modelling-cfa/",
+      "path": "/compare/finance-operations-vs-financial-modelling-cfa/",
+      "kind": "site-route",
+      "routeId": "comparison-finance-operations-vs-financial-modelling-cfa",
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/compare/online-vs-offline-finance-training/",
+      "path": "/compare/online-vs-offline-finance-training/",
+      "kind": "site-route",
+      "routeId": "comparison-online-vs-offline-finance-training",
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/compare/investment-banking-operations-vs-financial-analyst/",
+      "path": "/compare/investment-banking-operations-vs-financial-analyst/",
+      "kind": "site-route",
+      "routeId": "comparison-investment-banking-operations-vs-financial-analyst",
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/compare/banking-vs-finance-careers/",
+      "path": "/compare/banking-vs-finance-careers/",
+      "kind": "site-route",
+      "routeId": "comparison-banking-vs-finance-careers",
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/faqs/finance-program/",
+      "path": "/faqs/finance-program/",
+      "kind": "site-route",
+      "routeId": "faqs-finance-program",
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/compare/investment-banking-operations-courses/",
+      "path": "/compare/investment-banking-operations-courses/",
+      "kind": "site-route",
+      "routeId": "comparison-investment-banking-operations",
+      "lastModified": "2026-09-26",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/category/career-guides/",
+      "path": "/blog/category/career-guides/",
+      "kind": "blog-category",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/category/finance-operations/",
+      "path": "/blog/category/finance-operations/",
+      "kind": "blog-category",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/category/industry-updates/",
+      "path": "/blog/category/industry-updates/",
+      "kind": "blog-category",
+      "routeId": null,
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/category/interview-preparation/",
+      "path": "/blog/category/interview-preparation/",
+      "kind": "blog-category",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/category/investment-banking/",
+      "path": "/blog/category/investment-banking/",
+      "kind": "blog-category",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/category/retail-banking/",
+      "path": "/blog/category/retail-banking/",
+      "kind": "blog-category",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/accrual-vs-deferral-accounting/",
+      "path": "/blog/accrual-vs-deferral-accounting/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/asset-servicing-operations-corporate-actions/",
+      "path": "/blog/asset-servicing-operations-corporate-actions/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/cash-flow-statement-direct-vs-indirect/",
+      "path": "/blog/cash-flow-statement-direct-vs-indirect/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/chargeback-process-evidence-operations/",
+      "path": "/blog/chargeback-process-evidence-operations/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/enhanced-due-diligence-edd-process/",
+      "path": "/blog/enhanced-due-diligence-edd-process/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/finance-operations-vs-accounting/",
+      "path": "/blog/finance-operations-vs-accounting/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/general-ledger-vs-subledger/",
+      "path": "/blog/general-ledger-vs-subledger/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/how-to-evaluate-finance-institute-reviews/",
+      "path": "/blog/how-to-evaluate-finance-institute-reviews/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/maker-checker-controls-banking-operations/",
+      "path": "/blog/maker-checker-controls-banking-operations/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/month-end-close-process-finance-operations/",
+      "path": "/blog/month-end-close-process-finance-operations/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/nbfc-vs-bank-difference-india/",
+      "path": "/blog/nbfc-vs-bank-difference-india/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/payment-gateway-process-settlement/",
+      "path": "/blog/payment-gateway-process-settlement/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/payment-reconciliation-process-breaks-controls/",
+      "path": "/blog/payment-reconciliation-process-breaks-controls/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/procure-to-pay-process-controls/",
+      "path": "/blog/procure-to-pay-process-controls/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/questions-to-ask-finance-institute-before-enrolling/",
+      "path": "/blog/questions-to-ask-finance-institute-before-enrolling/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/r2r-p2p-o2c-finance-processes/",
+      "path": "/blog/r2r-p2p-o2c-finance-processes/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/retail-vs-commercial-banking/",
+      "path": "/blog/retail-vs-commercial-banking/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/rtgs-neft-imps-upi-difference/",
+      "path": "/blog/rtgs-neft-imps-upi-difference/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/sanctions-screening-process-banking/",
+      "path": "/blog/sanctions-screening-process-banking/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/trade-capture-process-controls/",
+      "path": "/blog/trade-capture-process-controls/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/trade-confirmation-vs-affirmation/",
+      "path": "/blog/trade-confirmation-vs-affirmation/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/working-capital-cycle-explained/",
+      "path": "/blog/working-capital-cycle-explained/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/accounting-conventions-principles-examples/",
+      "path": "/blog/accounting-conventions-principles-examples/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/ai-in-banking-use-cases-risks/",
+      "path": "/blog/ai-in-banking-use-cases-risks/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/banking-sector-india-structure-operations/",
+      "path": "/blog/banking-sector-india-structure-operations/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/bfsi-domain-banking-financial-services-insurance/",
+      "path": "/blog/bfsi-domain-banking-financial-services-insurance/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/clearing-and-settlement-explained/",
+      "path": "/blog/clearing-and-settlement-explained/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/cost-accounting-vs-management-accounting/",
+      "path": "/blog/cost-accounting-vs-management-accounting/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/credit-analysis-basics-beginners/",
+      "path": "/blog/credit-analysis-basics-beginners/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/credit-risk-management-banking/",
+      "path": "/blog/credit-risk-management-banking/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/failed-settlement-reasons-resolution/",
+      "path": "/blog/failed-settlement-reasons-resolution/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/financial-reporting-process-controls/",
+      "path": "/blog/financial-reporting-process-controls/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/front-middle-back-office-investment-banking/",
+      "path": "/blog/front-middle-back-office-investment-banking/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/investment-banking-skills-graduates/",
+      "path": "/blog/investment-banking-skills-graduates/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/investment-management-meaning-process-roles/",
+      "path": "/blog/investment-management-meaning-process-roles/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/loan-processing-steps-workflow/",
+      "path": "/blog/loan-processing-steps-workflow/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/money-market-instruments-operations/",
+      "path": "/blog/money-market-instruments-operations/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/transaction-monitoring-alerts-escalation/",
+      "path": "/blog/transaction-monitoring-alerts-escalation/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/treasury-operations-roles-workflow/",
+      "path": "/blog/treasury-operations-roles-workflow/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/upi-payment-lifecycle/",
+      "path": "/blog/upi-payment-lifecycle/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/what-is-aml-controls-workflow/",
+      "path": "/blog/what-is-aml-controls-workflow/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/what-is-kyc-process-documents/",
+      "path": "/blog/what-is-kyc-process-documents/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-28",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/accounting-principles-explained/",
+      "path": "/blog/accounting-principles-explained/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/accounts-receivable-vs-payable/",
+      "path": "/blog/accounts-receivable-vs-payable/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/banking-interview-questions-freshers/",
+      "path": "/blog/banking-interview-questions-freshers/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/bonds-vs-equities-difference/",
+      "path": "/blog/bonds-vs-equities-difference/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/business-analyst-vs-financial-analyst-finance/",
+      "path": "/blog/business-analyst-vs-financial-analyst-finance/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/compliance-analyst-duties-career-path/",
+      "path": "/blog/compliance-analyst-duties-career-path/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/derivatives-meaning-types-operations/",
+      "path": "/blog/derivatives-meaning-types-operations/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/digital-banking-services-operations/",
+      "path": "/blog/digital-banking-services-operations/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/finance-operations-resume-skills-examples/",
+      "path": "/blog/finance-operations-resume-skills-examples/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/finance-process-associate-role/",
+      "path": "/blog/finance-process-associate-role/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/financial-market-intermediaries/",
+      "path": "/blog/financial-market-intermediaries/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/financial-products-and-services-banking/",
+      "path": "/blog/financial-products-and-services-banking/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/fintech-operations-roles-workflows/",
+      "path": "/blog/fintech-operations-roles-workflows/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/golden-rules-of-accounting/",
+      "path": "/blog/golden-rules-of-accounting/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/investment-banking-career-path-india/",
+      "path": "/blog/investment-banking-career-path-india/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/investment-banking-roles-teams/",
+      "path": "/blog/investment-banking-roles-teams/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/investment-banks-in-india-functions-roles/",
+      "path": "/blog/investment-banks-in-india-functions-roles/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/neo-banking-products-controls/",
+      "path": "/blog/neo-banking-products-controls/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/reconciliation-process-steps-finance/",
+      "path": "/blog/reconciliation-process-steps-finance/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/risk-management-in-banking/",
+      "path": "/blog/risk-management-in-banking/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/securities-operations-workflow-roles/",
+      "path": "/blog/securities-operations-workflow-roles/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/trade-support-analyst-duties-skills/",
+      "path": "/blog/trade-support-analyst-duties-skills/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/trial-balance-format-purpose-example/",
+      "path": "/blog/trial-balance-format-purpose-example/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/kyc-onboarding-case-file-example/",
+      "path": "/blog/kyc-onboarding-case-file-example/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-26",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/settlement-trade-break-worked-example/",
+      "path": "/blog/settlement-trade-break-worked-example/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-26",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/balance-sheet-meaning-format-example/",
+      "path": "/blog/balance-sheet-meaning-format-example/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-24",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/career-options-in-commerce-decision-map/",
+      "path": "/blog/career-options-in-commerce-decision-map/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-26",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/commercial-banks-services-operations/",
+      "path": "/blog/commercial-banks-services-operations/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-24",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/cost-accounting-methods-examples/",
+      "path": "/blog/cost-accounting-methods-examples/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/finance-interview-questions-freshers/",
+      "path": "/blog/finance-interview-questions-freshers/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/financial-accounting-statements-process-examples/",
+      "path": "/blog/financial-accounting-statements-process-examples/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/financial-management-decisions-controls/",
+      "path": "/blog/financial-management-decisions-controls/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-24",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/financial-markets-instruments-participants-operations/",
+      "path": "/blog/financial-markets-instruments-participants-operations/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/investment-banking-teams-operations/",
+      "path": "/blog/investment-banking-teams-operations/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-26",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/trial-balance-format-errors-reconciliation/",
+      "path": "/blog/trial-balance-format-errors-reconciliation/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-26",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/corporate-actions-analyst-career-path/",
+      "path": "/blog/corporate-actions-analyst-career-path/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-27",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/finance-operations-portfolio-projects-freshers/",
+      "path": "/blog/finance-operations-portfolio-projects-freshers/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-26",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/financial-crime-analyst-kyc-aml-career-guide/",
+      "path": "/blog/financial-crime-analyst-kyc-aml-career-guide/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-26",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/loan-operations-banking-roles-skills-career-path/",
+      "path": "/blog/loan-operations-banking-roles-skills-career-path/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/fund-accounting-nav-workflow-career-skills/",
+      "path": "/blog/fund-accounting-nav-workflow-career-skills/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-29",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/digital-payments-operations-career-india/",
+      "path": "/blog/digital-payments-operations-career-india/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-15",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/fintech-operations-careers-after-graduation/",
+      "path": "/blog/fintech-operations-careers-after-graduation/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-15",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/how-to-choose-kyc-aml-course-india/",
+      "path": "/blog/how-to-choose-kyc-aml-course-india/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-26",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/investment-banking-operations-vs-cfa-financial-modelling/",
+      "path": "/blog/investment-banking-operations-vs-cfa-financial-modelling/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-26",
+      "eligibility": "sitemap"
+    }
+  ]
+}

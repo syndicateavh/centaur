@@ -14,6 +14,60 @@ type Pages = {
   "/": {
     params: {};
   };
+  "/blog-portal": {
+    params: {};
+  };
+  "/blog": {
+    params: {};
+  };
+  "/career-guides": {
+    params: {};
+  };
+  "/resources": {
+    params: {};
+  };
+  "/resources/investment-banking-interview-questions": {
+    params: {};
+  };
+  "/resources/accounting-interview-questions": {
+    params: {};
+  };
+  "/resources/finance-gk": {
+    params: {};
+  };
+  "/resources/accounting-basics": {
+    params: {};
+  };
+  "/resources/reconciliation-in-finance": {
+    params: {};
+  };
+  "/resources/bank-reconciliation-process": {
+    params: {};
+  };
+  "/resources/cost-accounting-finance-operations": {
+    params: {};
+  };
+  "/resources/financial-accounting-banking": {
+    params: {};
+  };
+  "/resources/financial-statement-analysis": {
+    params: {};
+  };
+  "/resources/corporate-actions-workflow": {
+    params: {};
+  };
+  "/resources/capital-market-operations": {
+    params: {};
+  };
+  "/resources/financial-system-india": {
+    params: {};
+  };
+  "/resources/kyc-aml-compliance-guide": {
+    params: {};
+  };
+  "/quiz": {
+    params: {};
+  };
   "/courses": {
     params: {};
   };
@@ -26,6 +80,15 @@ type Pages = {
   "/courses/finance-operations": {
     params: {};
   };
+  "/courses/kyc-aml": {
+    params: {};
+  };
+  "/courses/digital-payments": {
+    params: {};
+  };
+  "/courses/fintech": {
+    params: {};
+  };
   "/placements": {
     params: {};
   };
@@ -35,14 +98,174 @@ type Pages = {
   "/contact": {
     params: {};
   };
+  "/privacy-policy": {
+    params: {};
+  };
+  "/terms-and-conditions": {
+    params: {};
+  };
+  "/cookie-policy": {
+    params: {};
+  };
+  "/refund-cancellation-policy": {
+    params: {};
+  };
+  "/disclaimer": {
+    params: {};
+  };
+  "/india": {
+    params: {};
+  };
+  "/india/delhi-ncr": {
+    params: {};
+  };
+  "/india/bengaluru": {
+    params: {};
+  };
+  "/india/mumbai": {
+    params: {};
+  };
+  "/india/pune": {
+    params: {};
+  };
+  "/india/hyderabad": {
+    params: {};
+  };
   "/locations/lucknow": {
     params: {};
   };
   "/faqs": {
     params: {};
   };
+  "/career-guides/investment-banking-operations": {
+    params: {};
+  };
+  "/career-guides/kyc-aml-analyst": {
+    params: {};
+  };
+  "/career-guides/finance-operations": {
+    params: {};
+  };
+  "/career-guides/trade-lifecycle": {
+    params: {};
+  };
+  "/career-guides/finance-careers-after-graduation": {
+    params: {};
+  };
+  "/career-guides/retail-banking-operations": {
+    params: {};
+  };
+  "/career-guides/digital-payments-operations": {
+    params: {};
+  };
+  "/career-guides/financial-operations-faq": {
+    params: {};
+  };
+  "/career-guides/choosing-finance-career-course": {
+    params: {};
+  };
+  "/career-guides/fintech-operations": {
+    params: {};
+  };
+  "/career-guides/reconciliation-analyst": {
+    params: {};
+  };
+  "/career-guides/investment-banking-operations-roles": {
+    params: {};
+  };
+  "/career-guides/trade-support-analyst": {
+    params: {};
+  };
+  "/career-guides/securities-operations": {
+    params: {};
+  };
+  "/career-guides/what-is-investment-banking": {
+    params: {};
+  };
+  "/career-guides/risk-operations-analyst": {
+    params: {};
+  };
+  "/career-guides/credit-analyst": {
+    params: {};
+  };
+  "/career-guides/business-analyst-in-banking": {
+    params: {};
+  };
+  "/career-guides/custody-operations": {
+    params: {};
+  };
+  "/career-guides/credit-operations-analyst": {
+    params: {};
+  };
+  "/career-guides/transaction-monitoring-analyst": {
+    params: {};
+  };
+  "/career-guides/middle-office-operations": {
+    params: {};
+  };
+  "/career-guides/back-office-banking-jobs": {
+    params: {};
+  };
+  "/career-guides/settlement-analyst": {
+    params: {};
+  };
+  "/career-guides/finance-learning-roadmap": {
+    params: {};
+  };
+  "/career-guides/operations-analyst-banking": {
+    params: {};
+  };
+  "/courses/banking-courses": {
+    params: {};
+  };
+  "/courses/banking-and-finance": {
+    params: {};
+  };
+  "/courses/finance-operations-training": {
+    params: {};
+  };
+  "/courses/finance-operations-syllabus": {
+    params: {};
+  };
+  "/courses/finance-course-fees-eligibility": {
+    params: {};
+  };
+  "/courses/finance-course-for-graduates": {
+    params: {};
+  };
+  "/compare/best-finance-institutes-india": {
+    params: {};
+  };
+  "/compare/finance-operations-vs-financial-modelling-cfa": {
+    params: {};
+  };
+  "/compare/online-vs-offline-finance-training": {
+    params: {};
+  };
+  "/compare/investment-banking-operations-vs-financial-analyst": {
+    params: {};
+  };
+  "/compare/banking-vs-finance-careers": {
+    params: {};
+  };
+  "/faqs/finance-program": {
+    params: {};
+  };
+  "/compare/investment-banking-operations-courses": {
+    params: {};
+  };
   "/404": {
     params: {};
+  };
+  "/blog/category/:category": {
+    params: {
+      "category": string;
+    };
+  };
+  "/blog/:slug": {
+    params: {
+      "slug": string;
+    };
   };
   "/*": {
     params: {
@@ -54,11 +277,83 @@ type Pages = {
 type RouteFiles = {
   "root.jsx": {
     id: "root";
-    page: "/" | "/courses" | "/courses/investment-banking-operations" | "/courses/retail-banking" | "/courses/finance-operations" | "/placements" | "/about" | "/contact" | "/locations/lucknow" | "/faqs" | "/404" | "/*";
+    page: "/" | "/blog-portal" | "/blog" | "/career-guides" | "/resources" | "/resources/investment-banking-interview-questions" | "/resources/accounting-interview-questions" | "/resources/finance-gk" | "/resources/accounting-basics" | "/resources/reconciliation-in-finance" | "/resources/bank-reconciliation-process" | "/resources/cost-accounting-finance-operations" | "/resources/financial-accounting-banking" | "/resources/financial-statement-analysis" | "/resources/corporate-actions-workflow" | "/resources/capital-market-operations" | "/resources/financial-system-india" | "/resources/kyc-aml-compliance-guide" | "/quiz" | "/courses" | "/courses/investment-banking-operations" | "/courses/retail-banking" | "/courses/finance-operations" | "/courses/kyc-aml" | "/courses/digital-payments" | "/courses/fintech" | "/placements" | "/about" | "/contact" | "/privacy-policy" | "/terms-and-conditions" | "/cookie-policy" | "/refund-cancellation-policy" | "/disclaimer" | "/india" | "/india/delhi-ncr" | "/india/bengaluru" | "/india/mumbai" | "/india/pune" | "/india/hyderabad" | "/locations/lucknow" | "/faqs" | "/career-guides/investment-banking-operations" | "/career-guides/kyc-aml-analyst" | "/career-guides/finance-operations" | "/career-guides/trade-lifecycle" | "/career-guides/finance-careers-after-graduation" | "/career-guides/retail-banking-operations" | "/career-guides/digital-payments-operations" | "/career-guides/financial-operations-faq" | "/career-guides/choosing-finance-career-course" | "/career-guides/fintech-operations" | "/career-guides/reconciliation-analyst" | "/career-guides/investment-banking-operations-roles" | "/career-guides/trade-support-analyst" | "/career-guides/securities-operations" | "/career-guides/what-is-investment-banking" | "/career-guides/risk-operations-analyst" | "/career-guides/credit-analyst" | "/career-guides/business-analyst-in-banking" | "/career-guides/custody-operations" | "/career-guides/credit-operations-analyst" | "/career-guides/transaction-monitoring-analyst" | "/career-guides/middle-office-operations" | "/career-guides/back-office-banking-jobs" | "/career-guides/settlement-analyst" | "/career-guides/finance-learning-roadmap" | "/career-guides/operations-analyst-banking" | "/courses/banking-courses" | "/courses/banking-and-finance" | "/courses/finance-operations-training" | "/courses/finance-operations-syllabus" | "/courses/finance-course-fees-eligibility" | "/courses/finance-course-for-graduates" | "/compare/best-finance-institutes-india" | "/compare/finance-operations-vs-financial-modelling-cfa" | "/compare/online-vs-offline-finance-training" | "/compare/investment-banking-operations-vs-financial-analyst" | "/compare/banking-vs-finance-careers" | "/faqs/finance-program" | "/compare/investment-banking-operations-courses" | "/404" | "/blog/category/:category" | "/blog/:slug" | "/*";
+  };
+  "routes/blog-portal.jsx": {
+    id: "routes/blog-portal";
+    page: "/blog-portal";
   };
   "routes/home.jsx": {
     id: "routes/home";
     page: "/";
+  };
+  "routes/blog.jsx": {
+    id: "routes/blog";
+    page: "/blog";
+  };
+  "routes/career-guides.jsx": {
+    id: "routes/career-guides";
+    page: "/career-guides";
+  };
+  "routes/resources.jsx": {
+    id: "routes/resources";
+    page: "/resources";
+  };
+  "routes/resource-investment-banking-interview-questions.jsx": {
+    id: "routes/resource-investment-banking-interview-questions";
+    page: "/resources/investment-banking-interview-questions";
+  };
+  "routes/resource-accounting-interview-questions.jsx": {
+    id: "routes/resource-accounting-interview-questions";
+    page: "/resources/accounting-interview-questions";
+  };
+  "routes/resource-finance-gk.jsx": {
+    id: "routes/resource-finance-gk";
+    page: "/resources/finance-gk";
+  };
+  "routes/resource-accounting-basics.jsx": {
+    id: "routes/resource-accounting-basics";
+    page: "/resources/accounting-basics";
+  };
+  "routes/resource-reconciliation-in-finance.jsx": {
+    id: "routes/resource-reconciliation-in-finance";
+    page: "/resources/reconciliation-in-finance";
+  };
+  "routes/resource-bank-reconciliation-process.jsx": {
+    id: "routes/resource-bank-reconciliation-process";
+    page: "/resources/bank-reconciliation-process";
+  };
+  "routes/resource-cost-accounting-finance-operations.jsx": {
+    id: "routes/resource-cost-accounting-finance-operations";
+    page: "/resources/cost-accounting-finance-operations";
+  };
+  "routes/resource-financial-accounting-banking.jsx": {
+    id: "routes/resource-financial-accounting-banking";
+    page: "/resources/financial-accounting-banking";
+  };
+  "routes/resource-financial-statement-analysis.jsx": {
+    id: "routes/resource-financial-statement-analysis";
+    page: "/resources/financial-statement-analysis";
+  };
+  "routes/resource-corporate-actions-workflow.jsx": {
+    id: "routes/resource-corporate-actions-workflow";
+    page: "/resources/corporate-actions-workflow";
+  };
+  "routes/resource-capital-market-operations.jsx": {
+    id: "routes/resource-capital-market-operations";
+    page: "/resources/capital-market-operations";
+  };
+  "routes/resource-financial-system-india.jsx": {
+    id: "routes/resource-financial-system-india";
+    page: "/resources/financial-system-india";
+  };
+  "routes/resource-kyc-aml-compliance-guide.jsx": {
+    id: "routes/resource-kyc-aml-compliance-guide";
+    page: "/resources/kyc-aml-compliance-guide";
+  };
+  "routes/quiz.jsx": {
+    id: "routes/quiz";
+    page: "/quiz";
   };
   "routes/courses.jsx": {
     id: "routes/courses";
@@ -76,6 +371,18 @@ type RouteFiles = {
     id: "routes/finance-operations";
     page: "/courses/finance-operations";
   };
+  "routes/kyc-aml-compliance.jsx": {
+    id: "routes/kyc-aml-compliance";
+    page: "/courses/kyc-aml";
+  };
+  "routes/digital-payments.jsx": {
+    id: "routes/digital-payments";
+    page: "/courses/digital-payments";
+  };
+  "routes/fintech-neo-banking.jsx": {
+    id: "routes/fintech-neo-banking";
+    page: "/courses/fintech";
+  };
   "routes/placements.jsx": {
     id: "routes/placements";
     page: "/placements";
@@ -88,6 +395,50 @@ type RouteFiles = {
     id: "routes/contact";
     page: "/contact";
   };
+  "routes/privacy-policy.jsx": {
+    id: "routes/privacy-policy";
+    page: "/privacy-policy";
+  };
+  "routes/terms-and-conditions.jsx": {
+    id: "routes/terms-and-conditions";
+    page: "/terms-and-conditions";
+  };
+  "routes/cookie-policy.jsx": {
+    id: "routes/cookie-policy";
+    page: "/cookie-policy";
+  };
+  "routes/refund-cancellation-policy.jsx": {
+    id: "routes/refund-cancellation-policy";
+    page: "/refund-cancellation-policy";
+  };
+  "routes/disclaimer.jsx": {
+    id: "routes/disclaimer";
+    page: "/disclaimer";
+  };
+  "routes/india.jsx": {
+    id: "routes/india";
+    page: "/india";
+  };
+  "routes/india-delhi-ncr.jsx": {
+    id: "routes/india-delhi-ncr";
+    page: "/india/delhi-ncr";
+  };
+  "routes/india-bengaluru.jsx": {
+    id: "routes/india-bengaluru";
+    page: "/india/bengaluru";
+  };
+  "routes/india-mumbai.jsx": {
+    id: "routes/india-mumbai";
+    page: "/india/mumbai";
+  };
+  "routes/india-pune.jsx": {
+    id: "routes/india-pune";
+    page: "/india/pune";
+  };
+  "routes/india-hyderabad.jsx": {
+    id: "routes/india-hyderabad";
+    page: "/india/hyderabad";
+  };
   "routes/lucknow-location.jsx": {
     id: "routes/lucknow-location";
     page: "/locations/lucknow";
@@ -96,9 +447,173 @@ type RouteFiles = {
     id: "routes/faqs";
     page: "/faqs";
   };
+  "routes/career-guide-investment-banking-operations.jsx": {
+    id: "routes/career-guide-investment-banking-operations";
+    page: "/career-guides/investment-banking-operations";
+  };
+  "routes/career-guide-kyc-aml-analyst.jsx": {
+    id: "routes/career-guide-kyc-aml-analyst";
+    page: "/career-guides/kyc-aml-analyst";
+  };
+  "routes/career-guide-finance-operations.jsx": {
+    id: "routes/career-guide-finance-operations";
+    page: "/career-guides/finance-operations";
+  };
+  "routes/career-guide-trade-lifecycle.jsx": {
+    id: "routes/career-guide-trade-lifecycle";
+    page: "/career-guides/trade-lifecycle";
+  };
+  "routes/career-guide-finance-careers-after-graduation.jsx": {
+    id: "routes/career-guide-finance-careers-after-graduation";
+    page: "/career-guides/finance-careers-after-graduation";
+  };
+  "routes/career-guide-retail-banking-operations.jsx": {
+    id: "routes/career-guide-retail-banking-operations";
+    page: "/career-guides/retail-banking-operations";
+  };
+  "routes/career-guide-digital-payments-operations.jsx": {
+    id: "routes/career-guide-digital-payments-operations";
+    page: "/career-guides/digital-payments-operations";
+  };
+  "routes/career-guide-financial-operations-faq.jsx": {
+    id: "routes/career-guide-financial-operations-faq";
+    page: "/career-guides/financial-operations-faq";
+  };
+  "routes/career-guide-choosing-finance-career-course.jsx": {
+    id: "routes/career-guide-choosing-finance-career-course";
+    page: "/career-guides/choosing-finance-career-course";
+  };
+  "routes/career-guide-fintech-operations.jsx": {
+    id: "routes/career-guide-fintech-operations";
+    page: "/career-guides/fintech-operations";
+  };
+  "routes/career-guide-reconciliation-analyst.jsx": {
+    id: "routes/career-guide-reconciliation-analyst";
+    page: "/career-guides/reconciliation-analyst";
+  };
+  "routes/career-guide-investment-banking-operations-roles.jsx": {
+    id: "routes/career-guide-investment-banking-operations-roles";
+    page: "/career-guides/investment-banking-operations-roles";
+  };
+  "routes/career-guide-trade-support-analyst.jsx": {
+    id: "routes/career-guide-trade-support-analyst";
+    page: "/career-guides/trade-support-analyst";
+  };
+  "routes/career-guide-securities-operations.jsx": {
+    id: "routes/career-guide-securities-operations";
+    page: "/career-guides/securities-operations";
+  };
+  "routes/career-guide-what-is-investment-banking.jsx": {
+    id: "routes/career-guide-what-is-investment-banking";
+    page: "/career-guides/what-is-investment-banking";
+  };
+  "routes/career-guide-risk-operations-analyst.jsx": {
+    id: "routes/career-guide-risk-operations-analyst";
+    page: "/career-guides/risk-operations-analyst";
+  };
+  "routes/career-guide-credit-analyst.jsx": {
+    id: "routes/career-guide-credit-analyst";
+    page: "/career-guides/credit-analyst";
+  };
+  "routes/career-guide-business-analyst-in-banking.jsx": {
+    id: "routes/career-guide-business-analyst-in-banking";
+    page: "/career-guides/business-analyst-in-banking";
+  };
+  "routes/career-guide-custody-operations.jsx": {
+    id: "routes/career-guide-custody-operations";
+    page: "/career-guides/custody-operations";
+  };
+  "routes/career-guide-credit-operations-analyst.jsx": {
+    id: "routes/career-guide-credit-operations-analyst";
+    page: "/career-guides/credit-operations-analyst";
+  };
+  "routes/career-guide-transaction-monitoring-analyst.jsx": {
+    id: "routes/career-guide-transaction-monitoring-analyst";
+    page: "/career-guides/transaction-monitoring-analyst";
+  };
+  "routes/career-guide-middle-office-operations.jsx": {
+    id: "routes/career-guide-middle-office-operations";
+    page: "/career-guides/middle-office-operations";
+  };
+  "routes/career-guide-back-office-banking-jobs.jsx": {
+    id: "routes/career-guide-back-office-banking-jobs";
+    page: "/career-guides/back-office-banking-jobs";
+  };
+  "routes/career-guide-settlement-analyst.jsx": {
+    id: "routes/career-guide-settlement-analyst";
+    page: "/career-guides/settlement-analyst";
+  };
+  "routes/career-guide-finance-learning-roadmap.jsx": {
+    id: "routes/career-guide-finance-learning-roadmap";
+    page: "/career-guides/finance-learning-roadmap";
+  };
+  "routes/career-guide-operations-analyst-banking.jsx": {
+    id: "routes/career-guide-operations-analyst-banking";
+    page: "/career-guides/operations-analyst-banking";
+  };
+  "routes/courses-banking-courses.jsx": {
+    id: "routes/courses-banking-courses";
+    page: "/courses/banking-courses";
+  };
+  "routes/courses-banking-and-finance.jsx": {
+    id: "routes/courses-banking-and-finance";
+    page: "/courses/banking-and-finance";
+  };
+  "routes/courses-finance-operations-training.jsx": {
+    id: "routes/courses-finance-operations-training";
+    page: "/courses/finance-operations-training";
+  };
+  "routes/courses-finance-operations-syllabus.jsx": {
+    id: "routes/courses-finance-operations-syllabus";
+    page: "/courses/finance-operations-syllabus";
+  };
+  "routes/courses-finance-course-fees-eligibility.jsx": {
+    id: "routes/courses-finance-course-fees-eligibility";
+    page: "/courses/finance-course-fees-eligibility";
+  };
+  "routes/courses-finance-course-for-graduates.jsx": {
+    id: "routes/courses-finance-course-for-graduates";
+    page: "/courses/finance-course-for-graduates";
+  };
+  "routes/comparison-best-finance-institutes-india.jsx": {
+    id: "routes/comparison-best-finance-institutes-india";
+    page: "/compare/best-finance-institutes-india";
+  };
+  "routes/comparison-finance-operations-vs-financial-modelling-cfa.jsx": {
+    id: "routes/comparison-finance-operations-vs-financial-modelling-cfa";
+    page: "/compare/finance-operations-vs-financial-modelling-cfa";
+  };
+  "routes/comparison-online-vs-offline-finance-training.jsx": {
+    id: "routes/comparison-online-vs-offline-finance-training";
+    page: "/compare/online-vs-offline-finance-training";
+  };
+  "routes/comparison-investment-banking-operations-vs-financial-analyst.jsx": {
+    id: "routes/comparison-investment-banking-operations-vs-financial-analyst";
+    page: "/compare/investment-banking-operations-vs-financial-analyst";
+  };
+  "routes/comparison-banking-vs-finance-careers.jsx": {
+    id: "routes/comparison-banking-vs-finance-careers";
+    page: "/compare/banking-vs-finance-careers";
+  };
+  "routes/faqs-finance-program.jsx": {
+    id: "routes/faqs-finance-program";
+    page: "/faqs/finance-program";
+  };
+  "routes/comparison-investment-banking-operations.jsx": {
+    id: "routes/comparison-investment-banking-operations";
+    page: "/compare/investment-banking-operations-courses";
+  };
   "routes/not-found.jsx": {
     id: "routes/not-found";
     page: "/404";
+  };
+  "routes/blog-category.jsx": {
+    id: "routes/blog-category";
+    page: "/blog/category/:category";
+  };
+  "routes/blog-post.jsx": {
+    id: "routes/blog-post";
+    page: "/blog/:slug";
   };
   "routes/catch-all.jsx": {
     id: "routes/catch-all";
@@ -108,16 +623,89 @@ type RouteFiles = {
 
 type RouteModules = {
   "root": typeof import("./src/root.jsx");
+  "routes/blog-portal": typeof import("./src/routes/blog-portal.jsx");
   "routes/home": typeof import("./src/routes/home.jsx");
+  "routes/blog": typeof import("./src/routes/blog.jsx");
+  "routes/career-guides": typeof import("./src/routes/career-guides.jsx");
+  "routes/resources": typeof import("./src/routes/resources.jsx");
+  "routes/resource-investment-banking-interview-questions": typeof import("./src/routes/resource-investment-banking-interview-questions.jsx");
+  "routes/resource-accounting-interview-questions": typeof import("./src/routes/resource-accounting-interview-questions.jsx");
+  "routes/resource-finance-gk": typeof import("./src/routes/resource-finance-gk.jsx");
+  "routes/resource-accounting-basics": typeof import("./src/routes/resource-accounting-basics.jsx");
+  "routes/resource-reconciliation-in-finance": typeof import("./src/routes/resource-reconciliation-in-finance.jsx");
+  "routes/resource-bank-reconciliation-process": typeof import("./src/routes/resource-bank-reconciliation-process.jsx");
+  "routes/resource-cost-accounting-finance-operations": typeof import("./src/routes/resource-cost-accounting-finance-operations.jsx");
+  "routes/resource-financial-accounting-banking": typeof import("./src/routes/resource-financial-accounting-banking.jsx");
+  "routes/resource-financial-statement-analysis": typeof import("./src/routes/resource-financial-statement-analysis.jsx");
+  "routes/resource-corporate-actions-workflow": typeof import("./src/routes/resource-corporate-actions-workflow.jsx");
+  "routes/resource-capital-market-operations": typeof import("./src/routes/resource-capital-market-operations.jsx");
+  "routes/resource-financial-system-india": typeof import("./src/routes/resource-financial-system-india.jsx");
+  "routes/resource-kyc-aml-compliance-guide": typeof import("./src/routes/resource-kyc-aml-compliance-guide.jsx");
+  "routes/quiz": typeof import("./src/routes/quiz.jsx");
   "routes/courses": typeof import("./src/routes/courses.jsx");
   "routes/investment-banking-operations": typeof import("./src/routes/investment-banking-operations.jsx");
   "routes/retail-banking": typeof import("./src/routes/retail-banking.jsx");
   "routes/finance-operations": typeof import("./src/routes/finance-operations.jsx");
+  "routes/kyc-aml-compliance": typeof import("./src/routes/kyc-aml-compliance.jsx");
+  "routes/digital-payments": typeof import("./src/routes/digital-payments.jsx");
+  "routes/fintech-neo-banking": typeof import("./src/routes/fintech-neo-banking.jsx");
   "routes/placements": typeof import("./src/routes/placements.jsx");
   "routes/about": typeof import("./src/routes/about.jsx");
   "routes/contact": typeof import("./src/routes/contact.jsx");
+  "routes/privacy-policy": typeof import("./src/routes/privacy-policy.jsx");
+  "routes/terms-and-conditions": typeof import("./src/routes/terms-and-conditions.jsx");
+  "routes/cookie-policy": typeof import("./src/routes/cookie-policy.jsx");
+  "routes/refund-cancellation-policy": typeof import("./src/routes/refund-cancellation-policy.jsx");
+  "routes/disclaimer": typeof import("./src/routes/disclaimer.jsx");
+  "routes/india": typeof import("./src/routes/india.jsx");
+  "routes/india-delhi-ncr": typeof import("./src/routes/india-delhi-ncr.jsx");
+  "routes/india-bengaluru": typeof import("./src/routes/india-bengaluru.jsx");
+  "routes/india-mumbai": typeof import("./src/routes/india-mumbai.jsx");
+  "routes/india-pune": typeof import("./src/routes/india-pune.jsx");
+  "routes/india-hyderabad": typeof import("./src/routes/india-hyderabad.jsx");
   "routes/lucknow-location": typeof import("./src/routes/lucknow-location.jsx");
   "routes/faqs": typeof import("./src/routes/faqs.jsx");
+  "routes/career-guide-investment-banking-operations": typeof import("./src/routes/career-guide-investment-banking-operations.jsx");
+  "routes/career-guide-kyc-aml-analyst": typeof import("./src/routes/career-guide-kyc-aml-analyst.jsx");
+  "routes/career-guide-finance-operations": typeof import("./src/routes/career-guide-finance-operations.jsx");
+  "routes/career-guide-trade-lifecycle": typeof import("./src/routes/career-guide-trade-lifecycle.jsx");
+  "routes/career-guide-finance-careers-after-graduation": typeof import("./src/routes/career-guide-finance-careers-after-graduation.jsx");
+  "routes/career-guide-retail-banking-operations": typeof import("./src/routes/career-guide-retail-banking-operations.jsx");
+  "routes/career-guide-digital-payments-operations": typeof import("./src/routes/career-guide-digital-payments-operations.jsx");
+  "routes/career-guide-financial-operations-faq": typeof import("./src/routes/career-guide-financial-operations-faq.jsx");
+  "routes/career-guide-choosing-finance-career-course": typeof import("./src/routes/career-guide-choosing-finance-career-course.jsx");
+  "routes/career-guide-fintech-operations": typeof import("./src/routes/career-guide-fintech-operations.jsx");
+  "routes/career-guide-reconciliation-analyst": typeof import("./src/routes/career-guide-reconciliation-analyst.jsx");
+  "routes/career-guide-investment-banking-operations-roles": typeof import("./src/routes/career-guide-investment-banking-operations-roles.jsx");
+  "routes/career-guide-trade-support-analyst": typeof import("./src/routes/career-guide-trade-support-analyst.jsx");
+  "routes/career-guide-securities-operations": typeof import("./src/routes/career-guide-securities-operations.jsx");
+  "routes/career-guide-what-is-investment-banking": typeof import("./src/routes/career-guide-what-is-investment-banking.jsx");
+  "routes/career-guide-risk-operations-analyst": typeof import("./src/routes/career-guide-risk-operations-analyst.jsx");
+  "routes/career-guide-credit-analyst": typeof import("./src/routes/career-guide-credit-analyst.jsx");
+  "routes/career-guide-business-analyst-in-banking": typeof import("./src/routes/career-guide-business-analyst-in-banking.jsx");
+  "routes/career-guide-custody-operations": typeof import("./src/routes/career-guide-custody-operations.jsx");
+  "routes/career-guide-credit-operations-analyst": typeof import("./src/routes/career-guide-credit-operations-analyst.jsx");
+  "routes/career-guide-transaction-monitoring-analyst": typeof import("./src/routes/career-guide-transaction-monitoring-analyst.jsx");
+  "routes/career-guide-middle-office-operations": typeof import("./src/routes/career-guide-middle-office-operations.jsx");
+  "routes/career-guide-back-office-banking-jobs": typeof import("./src/routes/career-guide-back-office-banking-jobs.jsx");
+  "routes/career-guide-settlement-analyst": typeof import("./src/routes/career-guide-settlement-analyst.jsx");
+  "routes/career-guide-finance-learning-roadmap": typeof import("./src/routes/career-guide-finance-learning-roadmap.jsx");
+  "routes/career-guide-operations-analyst-banking": typeof import("./src/routes/career-guide-operations-analyst-banking.jsx");
+  "routes/courses-banking-courses": typeof import("./src/routes/courses-banking-courses.jsx");
+  "routes/courses-banking-and-finance": typeof import("./src/routes/courses-banking-and-finance.jsx");
+  "routes/courses-finance-operations-training": typeof import("./src/routes/courses-finance-operations-training.jsx");
+  "routes/courses-finance-operations-syllabus": typeof import("./src/routes/courses-finance-operations-syllabus.jsx");
+  "routes/courses-finance-course-fees-eligibility": typeof import("./src/routes/courses-finance-course-fees-eligibility.jsx");
+  "routes/courses-finance-course-for-graduates": typeof import("./src/routes/courses-finance-course-for-graduates.jsx");
+  "routes/comparison-best-finance-institutes-india": typeof import("./src/routes/comparison-best-finance-institutes-india.jsx");
+  "routes/comparison-finance-operations-vs-financial-modelling-cfa": typeof import("./src/routes/comparison-finance-operations-vs-financial-modelling-cfa.jsx");
+  "routes/comparison-online-vs-offline-finance-training": typeof import("./src/routes/comparison-online-vs-offline-finance-training.jsx");
+  "routes/comparison-investment-banking-operations-vs-financial-analyst": typeof import("./src/routes/comparison-investment-banking-operations-vs-financial-analyst.jsx");
+  "routes/comparison-banking-vs-finance-careers": typeof import("./src/routes/comparison-banking-vs-finance-careers.jsx");
+  "routes/faqs-finance-program": typeof import("./src/routes/faqs-finance-program.jsx");
+  "routes/comparison-investment-banking-operations": typeof import("./src/routes/comparison-investment-banking-operations.jsx");
   "routes/not-found": typeof import("./src/routes/not-found.jsx");
+  "routes/blog-category": typeof import("./src/routes/blog-category.jsx");
+  "routes/blog-post": typeof import("./src/routes/blog-post.jsx");
   "routes/catch-all": typeof import("./src/routes/catch-all.jsx");
 };

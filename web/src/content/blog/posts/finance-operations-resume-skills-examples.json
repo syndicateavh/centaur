@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "finance-operations-resume-skills-examples",
+  "slug": "finance-operations-resume-skills-examples",
+  "status": "published",
+  "title": "Finance Operations Resume: Skills and Examples",
+  "excerpt": "Build a finance operations resume with accurate skills, project examples, control language, measurable evidence and interview-ready explanations.",
+  "category": "career-guides",
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Finance education editorial team",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "A finance operations resume should make it easy to see what process you understand, what evidence you handled, which checks you performed and how you communicated an exception. A list of generic traits such as hardworking or detail-oriented is weaker than a truthful project example that shows a reconciliation, control check, spreadsheet or documented handoff. Use the language of the role description, but never claim production-system, client or employer experience that you do not have."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A practical resume structure"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Headline and summary: name the target area, such as finance operations, reconciliations, payments or KYC support.",
+        "Skills: group accounting, Excel or spreadsheet work, reconciliation, documentation, controls and communication.",
+        "Projects or experience: describe the input, process, checks, output and result with honest scope.",
+        "Education and learning: list relevant coursework, projects and certificates accurately without implying a guarantee.",
+        "Evidence: link to a safe, synthetic portfolio only when it contains no confidential or personal data."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Resume bullet formula"
+    },
+    {
+      "type": "paragraph",
+      "text": "A useful bullet can follow action, object, method and outcome. For example: Built a fictional reconciliation workbook for 120 synthetic records, matched by reference and amount, logged four breaks with root-cause notes, and presented the review steps to a peer. The wording is credible because it says the records were synthetic and explains what was done. If you have a real result, state the measured improvement and how it was measured."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Skills employers can understand"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Reconciliation: source-to-ledger matching, break identification, ageing and escalation.",
+        "Accounting: debit-credit logic, trial balance, receivables, payables and evidence review.",
+        "Operations: queue prioritisation, service-level awareness, controlled handoffs and documentation.",
+        "Data: spreadsheets, formulas, validation, version control, filters and readable reporting.",
+        "Risk and controls: maker-checker, access discipline, confidentiality and neutral case notes.",
+        "Communication: concise updates that state issue, evidence, owner, deadline and next step."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Three project examples"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Reconciliation project: compare two synthetic datasets, classify exact matches and breaks, then write an escalation note.",
+        "Accounting review project: prepare a fictional trial balance, trace sample entries and explain why equal totals are not proof of accuracy.",
+        "Payments operations project: map a synthetic payment journey from request to status, reconciliation and incident escalation."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Resume mistakes to avoid"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Claiming a job, salary, placement, employer access or system experience that is not verified.",
+        "Listing tools without showing what you did with them.",
+        "Using confidential data, personal information or copied employer work in a public portfolio.",
+        "Writing one generic resume for accounting, payments, KYC and investment-operations roles.",
+        "Overloading the page with keywords while hiding the evidence behind each skill."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Turn the resume into interview stories"
+    },
+    {
+      "type": "paragraph",
+      "text": "For each important bullet, prepare a short explanation: what was the source, what did you check, what did you find, what limitation remained and what would you do next? This helps an interviewer test whether you understand the process rather than whether you memorised a phrase. If a project was part of a course, say so. Honest scope increases trust and gives the interviewer a useful basis for follow-up questions."
+    },
+    {
+      "type": "link",
+      "label": "Explore the Financial Operations Masterclass",
+      "href": "/courses/",
+      "routeId": "courses"
+    },
+    {
+      "type": "link",
+      "label": "Browse finance career guides",
+      "href": "/career-guides/",
+      "routeId": "career-guides"
+    },
+    {
+      "type": "link",
+      "label": "Practise finance interview questions",
+      "href": "/resources/investment-banking-interview-questions/",
+      "routeId": "resource-investment-banking-interview-questions"
+    },
+    {
+      "type": "link",
+      "label": "Review current career-support terms",
+      "href": "/placements/",
+      "routeId": "placements"
+    },
+    {
+      "type": "link",
+      "label": "Browse all finance career insights",
+      "href": "/blog/",
+      "routeId": "blog"
+    },
+    {
+      "type": "link",
+      "label": "Read National Career Service information",
+      "href": "https://www.ncs.gov.in/"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use current, approved wording for any course or career-support offer and verify it directly before publishing or applying. Centaur Careers does not promise a job, salary or employer outcome; this guide is a practical resume-writing resource."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/finance-operations-resume-skills-examples.png",
+    "alt": "Editorial illustration of a finance candidate organizing resume skills and operations projects",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-27",
+  "updatedAt": "2026-09-27",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Finance Operations Resume Skills | Centaur Careers",
+    "description": "Build a finance operations resume with accurate skills, project examples, control language and evidence-based interview stories.",
+    "canonicalPath": "/blog/finance-operations-resume-skills-examples/",
+    "noindex": false,
+    "focusKeyword": "finance operations resume",
+    "secondaryKeywords": ["finance operations skills", "finance resume skills", "finance jobs"]
+  },
+  "tags": ["Finance Operations Resume", "Finance Operations Skills", "Resume Skills", "Finance Jobs", "Finance Careers"],
+  "relatedRouteIds": ["blog", "courses", "career-guides", "resource-investment-banking-interview-questions", "placements"],
+  "redirects": [],
+  "evidenceNotes": [
+    "National Career Service: https://www.ncs.gov.in/",
+    "All portfolio examples use synthetic records and are labelled as such.",
+    "No job, salary, placement or employer outcome is promised."
+  ]
+}

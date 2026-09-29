@@ -1,0 +1,35 @@
+FICTIONAL CARD DISPUTE CASE: CB-81
+All names, case references, events, dates and amounts are invented.
+This is a card-dispute training example, not a UPI failed-transaction case.
+
+QUESTION: Can the associate conclude that the merchant wins the case?
+ANSWER: No. The order status and one access event do not by themselves
+prove delivery under the applicable card-network reason and evidence
+rules. The pending refund is not a posted refund. The analyst also
+cannot promise the cardholder a reversal from these records.
+
+MODEL EVIDENCE REGISTER
+- Notice DN-81: allegation, amount and case status; confirm applicable
+  reason, response channel and deadline from the acquirer/provider.
+- Order OR-81: completed status; locate underlying service terms and
+  independent delivery or usage evidence before describing fulfilment.
+- Service log SV-81: one access event; verify whose event it was and
+  whether it is relevant under the applicable rule. Minimise personal data.
+- Refund queue RF-81: request pending. Check whether any refund actually
+  posted, and prevent duplicate action through the authorised workflow.
+- Settlement ST-81: original transaction settled. Track the dispute and
+  any later reversal separately in reconciliation.
+
+MODEL CASE NOTE
+CB-81, INR 1,200: dispute notice alleges service not received. Order
+system shows completed and service log records one access event, but
+delivery relevance is unverified. Refund request pending; no posted
+refund evidence in this packet. Status: open. Send source IDs and
+timeline to the authorised dispute reviewer; confirm network reason,
+deadline and permitted evidence with the acquirer. Reconcile any later
+refund/reversal after it is confirmed. No outcome promised.
+
+SELF-CHECK: identify the notice and deadline, distinguish status from
+proof, distinguish request from posted refund, avoid unsupported outcome,
+protect data, and name reviewer plus reconciliation step. One point
+each; six points is a learning aid only.

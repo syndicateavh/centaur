@@ -1,0 +1,28 @@
+FICTIONAL LOAN FILE REVIEW: LN-501
+All records, amounts, dates and references are invented. No credit
+decision or real lender procedure is represented.
+
+1. The sanction states INR 500,000 for 36 months.
+2. The draft booking screen states INR 600,000 for 36 months.
+   Amount difference: INR 100,000. Tenor agrees.
+3. The disbursement request is unsigned. An approved amendment is not
+   present in the supplied packet; absence here does not prove that no
+   amendment exists elsewhere.
+4. Keep booking and disbursement pending under the employer's process.
+   Check the authoritative sanction and any approved amendment through
+   the designated credit/loan owner. Do not change the sanction or
+   release money simply to clear the queue.
+5. After authorised correction or confirmation, compare the booking
+   screen and request with the approved terms and record reviewer signoff.
+
+MODEL CASE NOTE
+LN-501: Sanction SA-501 shows INR 500,000/36 months. Draft booking
+BK-501 and unsigned request DR-501 show INR 600,000/36 months. Amount
+differs by INR 100,000; amendment not found in the provided packet.
+Status: pending verification. Refer to authorised credit/loan owner
+for sanctioned terms and signatory evidence. No booking or release
+approval implied. Recheck after the authorised decision.
+
+SELF-CHECK: sanction terms, arithmetic, unsigned request, limited
+amendment evidence, correct owner/hold, and post-decision verification.
+One point each; six points is a learning aid only.

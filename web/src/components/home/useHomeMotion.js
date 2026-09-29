@@ -1,12 +1,62 @@
 import { useEffect } from 'react';
 import { scheduleAfterPaint } from './motionUtils.js';
 
+function restoreHomeMotionStyles(homeElement) {
+  if (!homeElement) return;
+
+  const animatedElements = homeElement.querySelectorAll([
+    '.home-hero-grid',
+    '[data-home-hero-particles]',
+    '[data-home-hero-glow]',
+    '[data-home-hero-orbit]',
+    '[data-home-hero-reveal]',
+    '.home-hero-flow-item',
+    '.home-hero-flow-line',
+    '.home-hero-flow-index',
+    '.home-hero-flow-border',
+    '.home-hero-flow-border rect',
+    '.home-hero-flow-arrow',
+    '[data-home-process-step]',
+    '[data-home-process-media]',
+    '[data-home-image-reveal] img',
+    '[data-home-final-cta-media]',
+  ].join(','));
+
+  animatedElements.forEach((element) => {
+    [
+      'opacity',
+      'visibility',
+      'transform',
+      'translate',
+      'rotate',
+      'scale',
+      'transform-origin',
+      'stroke-dashoffset',
+      'top',
+      'background-position',
+      'will-change',
+    ].forEach((property) => element.style.removeProperty(property));
+  });
+
+  const processSection = homeElement.querySelector('[data-home-process-scroll]');
+  if (processSection) {
+    delete processSection.dataset.homeProcessEnhanced;
+    processSection.querySelectorAll('[data-home-process-progress-item]').forEach((item, index) => {
+      item.dataset.state = index === 0 ? 'active' : 'upcoming';
+      if (index === 0) item.setAttribute('aria-current', 'step');
+      else item.removeAttribute('aria-current');
+    });
+  }
+}
+
 export function useHomeMotion(homeRef) {
   useEffect(() => {
     let cancelled = false;
     let stopMotion = () => {};
 
     const loadMotion = async () => {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
       const [{ gsap }, { ScrollTrigger }] = await Promise.all([
         import('gsap'),
         import('gsap/ScrollTrigger'),
@@ -30,15 +80,236 @@ export function useHomeMotion(homeRef) {
           const homeElement = homeRef.current;
           if (!homeElement) return undefined;
 
-          const heroItems = homeElement.querySelectorAll('[data-home-hero-reveal]');
-          const heroTimeline = gsap.timeline({ defaults: { ease: 'power2.out' } });
-          heroTimeline.from(heroItems, {
-            duration: 0.48,
-            stagger: 0.09,
-            y: desktop ? 18 : 12,
-          });
+          const hero = homeElement.querySelector('[data-home-hero]');
+          const heroGrid = hero?.querySelector('.home-hero-grid');
+          const heroParticles = hero?.querySelector('[data-home-hero-particles]');
+          const heroGlow = hero?.querySelector('[data-home-hero-glow]');
+          const heroOrbit = hero?.querySelector('[data-home-hero-orbit]');
+          const heroPanel = hero?.querySelector('[data-home-hero-panel]');
+          const heroItems = homeElement.querySelectorAll('[data-home-hero-reveal]:not([data-home-hero-panel]):not([data-home-lcp])');
+          const heroDetails = hero?.querySelectorAll('[data-home-hero-detail]:not([data-home-hero-flow-item])') ?? [];
+          const heroFlowItems = hero?.querySelectorAll('[data-home-hero-flow-item]') ?? [];
+          const heroFlowLines = hero?.querySelectorAll('[data-home-hero-flow-line]') ?? [];
+          const heroFlowIndexes = hero?.querySelectorAll('[data-home-hero-flow-item] .home-hero-flow-index') ?? [];
+          const heroFlowBorders = hero?.querySelectorAll('.home-hero-flow-border') ?? [];
+          const heroFlowBorderRects = hero?.querySelectorAll('.home-hero-flow-border rect') ?? [];
+          const heroFlowArrows = hero?.querySelectorAll('.home-hero-flow-arrow') ?? [];
+          const flowSequenceStart = 1.18;
+          const flowStepInterval = desktop ? 0.58 : 0.5;
+          const flowSequenceEnd = heroFlowItems.length
+            ? flowSequenceStart + ((heroFlowItems.length - 1) * flowStepInterval) + 0.48
+            : 0.78;
+
+          const setHeroFlowState = (activeIndex) => {
+            heroFlowItems.forEach((flowItem, itemIndex) => {
+              flowItem.dataset.state = itemIndex === activeIndex
+                ? 'active'
+                : itemIndex < activeIndex ? 'complete' : 'upcoming';
+
+              if (itemIndex === activeIndex) flowItem.setAttribute('aria-current', 'step');
+              else flowItem.removeAttribute('aria-current');
+            });
+
+            heroFlowLines.forEach((flowLine, lineIndex) => {
+              flowLine.dataset.state = lineIndex < activeIndex
+                ? 'complete'
+                : lineIndex === activeIndex ? 'active' : 'upcoming';
+            });
+          };
+
+          if (desktop && heroFlowItems.length) {
+            gsap.set(heroFlowItems, { autoAlpha: 0, y: desktop ? 20 : 14 });
+            gsap.set(heroFlowLines, { autoAlpha: 0, scaleY: 0, transformOrigin: 'top center' });
+            gsap.set(heroFlowIndexes, { autoAlpha: 0, scale: 0.78 });
+            gsap.set(heroFlowBorders, { autoAlpha: 0 });
+            gsap.set(heroFlowBorderRects, { strokeDashoffset: 0 });
+            gsap.set(heroFlowArrows, { autoAlpha: 0, top: '0%' });
+            setHeroFlowState(0);
+          }
 
           const sectionCleanups = [];
+          const heroTimeline = gsap.timeline({ defaults: { ease: 'power2.out' } });
+          heroTimeline
+            .fromTo(heroGrid, { opacity: 0.08, scale: 1.08 }, { opacity: 0.4, scale: 1, duration: 1.2, ease: 'power2.out' }, 0)
+            .fromTo(heroParticles, { autoAlpha: 0, scale: 1.04 }, { autoAlpha: desktop ? 0.74 : 0.56, scale: 1, duration: 1.5, ease: 'power2.out' }, 0.05)
+            .fromTo(heroGlow, { autoAlpha: 0, scale: 0.6 }, { autoAlpha: 0.7, scale: 1, duration: 1.3, ease: 'power3.out' }, 0)
+            .fromTo(heroOrbit, { autoAlpha: 0, scale: 0.65, rotation: -18 }, { autoAlpha: 0.65, scale: 1, rotation: 0, duration: 1.1, ease: 'power2.out' }, 0.08)
+            .from(heroItems, {
+              duration: 0.55,
+              stagger: 0.1,
+              autoAlpha: 0,
+              y: desktop ? 24 : 14,
+            }, 0.18)
+            .fromTo(heroPanel, { autoAlpha: 0, y: 32, scale: 0.96, rotationX: 3 }, { autoAlpha: 1, y: 0, scale: 1, rotationX: 0, duration: 0.8, ease: 'power3.out' }, 0.35)
+            .from(heroDetails, { autoAlpha: 0, y: 12, duration: 0.4, stagger: 0.08 }, flowSequenceEnd);
+
+          if (desktop) heroFlowItems.forEach((flowItem, index) => {
+            const stepStart = flowSequenceStart + (index * flowStepInterval);
+            const flowIndex = flowItem.querySelector('.home-hero-flow-index');
+            const flowLine = heroFlowLines[index];
+
+            heroTimeline.to(flowItem, {
+              autoAlpha: 1,
+              y: 0,
+              duration: desktop ? 0.42 : 0.36,
+              ease: 'power3.out',
+            }, stepStart);
+
+            if (flowIndex) {
+              heroTimeline.to(flowIndex, {
+                autoAlpha: 1,
+                scale: 1,
+                duration: desktop ? 0.36 : 0.3,
+                ease: 'back.out(1.7)',
+              }, stepStart + 0.05);
+            }
+
+            if (flowLine) {
+              heroTimeline.to(flowLine, {
+                autoAlpha: 1,
+                scaleY: 1,
+                duration: desktop ? 0.26 : 0.22,
+                ease: 'power2.out',
+              }, stepStart + 0.32);
+            }
+          });
+
+          let heroFlowLoop;
+          if (desktop && heroFlowItems.length > 1) {
+            const flowBorderDuration = 3.8;
+            const flowArrowDuration = 1.25;
+            const flowStepPause = 0.3;
+            heroFlowLoop = gsap.timeline({ paused: true, repeat: -1, repeatDelay: 0.7 });
+
+            const resetHeroFlowVisuals = () => {
+              gsap.set(heroFlowBorders, { autoAlpha: 0 });
+              gsap.set(heroFlowBorderRects, { strokeDashoffset: 0 });
+              gsap.set(heroFlowArrows, { autoAlpha: 0, top: '0%' });
+            };
+
+            heroFlowItems.forEach((_, index) => {
+              const flowBorder = heroFlowBorders[index];
+              const flowBorderRect = heroFlowBorderRects[index];
+              const flowArrow = heroFlowArrows[index];
+
+              heroFlowLoop.call(() => {
+                resetHeroFlowVisuals();
+                setHeroFlowState(index);
+                if (flowBorder) gsap.set(flowBorder, { autoAlpha: 1 });
+              });
+
+              if (flowBorderRect) {
+                heroFlowLoop.to(flowBorderRect, {
+                  strokeDashoffset: -100,
+                  duration: flowBorderDuration,
+                  ease: 'none',
+                });
+                if (flowBorder) {
+                  heroFlowLoop.to(flowBorder, {
+                    autoAlpha: 0,
+                    duration: 0.2,
+                    ease: 'power1.out',
+                  }, `>-0.2`);
+                }
+              } else {
+                heroFlowLoop.to({}, { duration: flowBorderDuration });
+              }
+
+              if (flowArrow) {
+                heroFlowLoop.to(flowArrow, {
+                  autoAlpha: 1,
+                  top: '100%',
+                  duration: flowArrowDuration,
+                  ease: 'power1.inOut',
+                });
+                heroFlowLoop.to(flowArrow, {
+                  autoAlpha: 0,
+                  duration: 0.12,
+                  ease: 'power1.out',
+                }, '>-0.12');
+              } else {
+                heroFlowLoop.to({}, { duration: flowArrowDuration });
+              }
+
+              heroFlowLoop.to({}, { duration: flowStepPause });
+            });
+
+            heroTimeline.eventCallback('onComplete', () => {
+              if (!cancelled) heroFlowLoop.restart(true);
+            });
+
+            sectionCleanups.push(() => {
+              heroFlowLoop.kill();
+              setHeroFlowState(0);
+            });
+          }
+
+          if (heroGrid) {
+            const gridDrift = gsap.to(heroGrid, {
+              backgroundPosition: '52px 52px',
+              duration: 18,
+              repeat: -1,
+              ease: 'none',
+            });
+            sectionCleanups.push(() => gridDrift.kill());
+          }
+
+          if (heroGlow) {
+            const glowPulse = gsap.to(heroGlow, {
+              scale: 1.08,
+              opacity: 0.55,
+              duration: 5,
+              repeat: -1,
+              yoyo: true,
+              ease: 'sine.inOut',
+            });
+            sectionCleanups.push(() => glowPulse.kill());
+          }
+
+          if (heroOrbit) {
+            const orbitSpin = gsap.to(heroOrbit, {
+              rotation: 360,
+              duration: 38,
+              repeat: -1,
+              ease: 'none',
+            });
+            sectionCleanups.push(() => orbitSpin.kill());
+          }
+
+          if (heroPanel) {
+            const panelFloat = gsap.to(heroPanel, {
+              rotation: 0.22,
+              duration: 4.5,
+              repeat: -1,
+              yoyo: true,
+              ease: 'sine.inOut',
+              delay: 1.3,
+            });
+            sectionCleanups.push(() => panelFloat.kill());
+          }
+
+          if (hero) {
+            const heroScrollTimeline = gsap.timeline({
+              scrollTrigger: {
+                id: 'home-hero-depth',
+                trigger: hero,
+                start: 'top top',
+                end: 'bottom top',
+                scrub: 0.6,
+              },
+            });
+
+            if (heroGrid) heroScrollTimeline.to(heroGrid, { yPercent: 14, ease: 'none' }, 0);
+            if (heroParticles) heroScrollTimeline.to(heroParticles, { yPercent: 11, ease: 'none' }, 0);
+            if (heroGlow) heroScrollTimeline.to(heroGlow, { yPercent: 18, ease: 'none' }, 0);
+            if (heroPanel) heroScrollTimeline.to(heroPanel, { yPercent: -4, ease: 'none' }, 0);
+
+            sectionCleanups.push(() => {
+              heroScrollTimeline.scrollTrigger?.kill();
+              heroScrollTimeline.kill();
+            });
+          }
+
           let revealObserver;
 
           const processSection = homeElement.querySelector('[data-home-process-scroll]');
@@ -51,9 +322,12 @@ export function useHomeMotion(homeRef) {
           const processProgressItems = processSection
             ? Array.from(processSection.querySelectorAll('[data-home-process-progress-item]'))
             : [];
+          const processStepMedia = processSteps.map((step) => (
+            step.querySelector('[data-home-process-media]')
+          ));
 
           if (desktop && processPin && processViewport && processTrack && processSteps.length > 1) {
-            const stickyHeader = document.querySelector('header.sticky');
+            const stickyHeader = document.querySelector('[data-site-header]');
             const getStickyHeaderHeight = () => Math.round(stickyHeader?.getBoundingClientRect().height ?? 0);
             const getProcessScrollDistance = () => (
               Math.max(window.innerHeight * 0.72, 520) * (processSteps.length - 1)
@@ -79,6 +353,30 @@ export function useHomeMotion(homeRef) {
             gsap.set(processSteps[0], { opacity: 1, y: 0, scale: 1, zIndex: 1 });
             setActiveProcessStep(0);
 
+            if (processStepMedia[0]) {
+              const firstProcessMediaReveal = gsap.fromTo(processStepMedia[0], {
+                autoAlpha: 0,
+                y: 12,
+                scale: 1.025,
+              }, {
+                autoAlpha: 1,
+                y: 0,
+                scale: 1,
+                duration: 0.7,
+                ease: 'power2.out',
+                scrollTrigger: {
+                  trigger: processViewport,
+                  start: 'top 84%',
+                  once: true,
+                },
+              });
+
+              sectionCleanups.push(() => {
+                firstProcessMediaReveal.scrollTrigger?.kill();
+                firstProcessMediaReveal.kill();
+              });
+            }
+
             const processTimeline = gsap.timeline({
               scrollTrigger: {
                 id: 'home-process-vertical-scroll',
@@ -98,6 +396,7 @@ export function useHomeMotion(homeRef) {
             processTimeline.addLabel('process-step-1', 0);
             processSteps.slice(1).forEach((step, index) => {
               const previousStep = processSteps[index];
+              const nextMedia = processStepMedia[index + 1];
               const transitionStart = index;
 
               processTimeline
@@ -120,20 +419,106 @@ export function useHomeMotion(homeRef) {
                   y: 0,
                   scale: 1,
                   zIndex: index + 2,
-                }, transitionStart + 0.2)
-                .addLabel(`process-step-${index + 2}`, transitionStart + 0.65);
+                }, transitionStart + 0.2);
+
+              if (nextMedia) {
+                processTimeline.fromTo(nextMedia, {
+                  autoAlpha: 0,
+                  y: 12,
+                  scale: 1.025,
+                }, {
+                  autoAlpha: 1,
+                  y: 0,
+                  scale: 1,
+                  duration: 0.52,
+                  ease: 'power2.out',
+                }, transitionStart + 0.28);
+              }
+
+              processTimeline.addLabel(`process-step-${index + 2}`, transitionStart + 0.65);
             });
 
             sectionCleanups.push(() => {
               processTimeline.scrollTrigger?.kill();
               processTimeline.kill();
               gsap.set(processSteps, { clearProps: 'opacity,transform,zIndex,willChange' });
+              gsap.set(processStepMedia.filter(Boolean), { clearProps: 'opacity,visibility,transform' });
               processProgressItems.forEach((item, index) => {
                 item.dataset.state = index === 0 ? 'active' : 'upcoming';
                 if (index === 0) item.setAttribute('aria-current', 'step');
                 else item.removeAttribute('aria-current');
               });
               delete processSection.dataset.homeProcessEnhanced;
+            });
+          } else {
+            processStepMedia.filter(Boolean).forEach((mediaElement) => {
+              const mediaReveal = gsap.fromTo(mediaElement, {
+                autoAlpha: 0,
+                y: 12,
+              }, {
+                autoAlpha: 1,
+                y: 0,
+                duration: 0.58,
+                ease: 'power2.out',
+                scrollTrigger: {
+                  trigger: mediaElement,
+                  start: 'top 88%',
+                  once: true,
+                },
+              });
+
+              sectionCleanups.push(() => {
+                mediaReveal.scrollTrigger?.kill();
+                mediaReveal.kill();
+                gsap.set(mediaElement, { clearProps: 'opacity,visibility,transform' });
+              });
+            });
+          }
+
+          const editorialImages = Array.from(homeElement.querySelectorAll('[data-home-image-reveal] img'));
+          editorialImages.forEach((image) => {
+            const imageReveal = gsap.fromTo(image, {
+              scale: 1.045,
+            }, {
+              scale: 1,
+              duration: 1.1,
+              ease: 'power2.out',
+              scrollTrigger: {
+                trigger: image.closest('[data-home-image-reveal]'),
+                start: 'top 86%',
+                once: true,
+              },
+            });
+
+            sectionCleanups.push(() => {
+              imageReveal.scrollTrigger?.kill();
+              imageReveal.kill();
+              gsap.set(image, { clearProps: 'transform' });
+            });
+          });
+
+          const finalCta = homeElement.querySelector('[data-home-section="final-cta"]');
+          const finalCtaMedia = finalCta?.querySelector('[data-home-final-cta-media]');
+          if (desktop && finalCta && finalCtaMedia) {
+            const finalCtaDepth = gsap.fromTo(finalCtaMedia, {
+              yPercent: -3,
+              scale: 1.06,
+            }, {
+              yPercent: 3,
+              scale: 1.02,
+              ease: 'none',
+              scrollTrigger: {
+                trigger: finalCta,
+                start: 'top bottom',
+                end: 'bottom top',
+                scrub: 0.6,
+              },
+            });
+
+            sectionCleanups.push(() => {
+              finalCtaDepth.scrollTrigger?.kill();
+              finalCtaDepth.kill();
+              gsap.set(finalCtaMedia, { clearProps: 'transform' });
             });
           }
 
@@ -232,6 +617,57 @@ export function useHomeMotion(homeRef) {
           ];
 
           if (finePointer) {
+            if (hero) {
+              if (heroPanel) gsap.set(heroPanel, { transformPerspective: 900, transformOrigin: 'center center' });
+              const panelRotateXTo = heroPanel ? gsap.quickTo(heroPanel, 'rotationX', { duration: 0.55, ease: 'power3.out' }) : null;
+              const panelRotateYTo = heroPanel ? gsap.quickTo(heroPanel, 'rotationY', { duration: 0.55, ease: 'power3.out' }) : null;
+              const panelXTo = heroPanel ? gsap.quickTo(heroPanel, 'x', { duration: 0.65, ease: 'power3.out' }) : null;
+              const panelYTo = heroPanel ? gsap.quickTo(heroPanel, 'y', { duration: 0.65, ease: 'power3.out' }) : null;
+              const gridXTo = heroGrid ? gsap.quickTo(heroGrid, 'x', { duration: 0.9, ease: 'power3.out' }) : null;
+              const gridYTo = heroGrid ? gsap.quickTo(heroGrid, 'y', { duration: 0.9, ease: 'power3.out' }) : null;
+              const particlesXTo = heroParticles ? gsap.quickTo(heroParticles, 'x', { duration: 1, ease: 'power3.out' }) : null;
+              const particlesYTo = heroParticles ? gsap.quickTo(heroParticles, 'y', { duration: 1, ease: 'power3.out' }) : null;
+              const glowXTo = heroGlow ? gsap.quickTo(heroGlow, 'x', { duration: 1.1, ease: 'power3.out' }) : null;
+              const glowYTo = heroGlow ? gsap.quickTo(heroGlow, 'y', { duration: 1.1, ease: 'power3.out' }) : null;
+
+              const resetHeroPointer = () => {
+                panelRotateXTo?.(0);
+                panelRotateYTo?.(0);
+                panelXTo?.(0);
+                panelYTo?.(0);
+                gridXTo?.(0);
+                gridYTo?.(0);
+                particlesXTo?.(0);
+                particlesYTo?.(0);
+                glowXTo?.(0);
+                glowYTo?.(0);
+              };
+
+              const onHeroPointerMove = (event) => {
+                const bounds = hero.getBoundingClientRect();
+                const x = (event.clientX - bounds.left) / bounds.width * 2 - 1;
+                const y = (event.clientY - bounds.top) / bounds.height * 2 - 1;
+                panelRotateXTo?.(y * -2.5);
+                panelRotateYTo?.(x * 3);
+                panelXTo?.(x * 4);
+                panelYTo?.(y * 4);
+                gridXTo?.(x * 12);
+                gridYTo?.(y * 8);
+                particlesXTo?.(x * 9);
+                particlesYTo?.(y * 6);
+                glowXTo?.(x * 28);
+                glowYTo?.(y * 22);
+              };
+
+              hero.addEventListener('pointermove', onHeroPointerMove);
+              hero.addEventListener('pointerleave', resetHeroPointer);
+              cleanups.push(() => {
+                hero.removeEventListener('pointermove', onHeroPointerMove);
+                hero.removeEventListener('pointerleave', resetHeroPointer);
+                resetHeroPointer();
+              });
+            }
+
             const magneticButtons = homeElement.querySelectorAll('[data-home-magnetic]');
             magneticButtons.forEach((button) => {
               const xTo = gsap.quickTo(button, 'x', { duration: 0.32, ease: 'power3.out' });
@@ -258,6 +694,21 @@ export function useHomeMotion(homeRef) {
             cleanups.forEach((cleanup) => cleanup());
             heroTimeline.kill();
             gsap.set(heroItems, { clearProps: 'transform,opacity,visibility' });
+            gsap.set([
+              heroPanel,
+              heroGrid,
+              heroParticles,
+              heroGlow,
+              heroOrbit,
+              ...heroDetails,
+              ...heroFlowItems,
+              ...heroFlowLines,
+              ...heroFlowIndexes,
+              ...heroFlowBorders,
+              ...heroFlowBorderRects,
+              ...heroFlowArrows,
+            ].filter(Boolean), { clearProps: 'strokeDashoffset,top,transform,opacity,visibility,transformOrigin' });
+            if (heroGrid) gsap.set(heroGrid, { clearProps: 'backgroundPosition' });
           };
         },
       );
@@ -267,7 +718,10 @@ export function useHomeMotion(homeRef) {
 
     const cancelScheduledLoad = scheduleAfterPaint(() => {
       loadMotion().catch(() => {
-        // Motion is optional. The page remains fully usable if the enhancement fails.
+        // Motion is optional. If an enhancement fails after applying an
+        // initial state, restore the normal visible page instead of leaving
+        // process steps or hero content hidden.
+        restoreHomeMotionStyles(homeRef.current);
       });
     });
 

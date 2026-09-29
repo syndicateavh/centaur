@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "id": "how-to-choose-kyc-aml-course-india",
+  "slug": "how-to-choose-kyc-aml-course-india",
+  "status": "published",
+  "title": "How to Choose a KYC and AML Course in India",
+  "excerpt": "A practical checklist for comparing KYC and AML courses in India by syllabus, case practice, trainer support and career relevance.",
+  "category": "career-guides",
+  "author": {
+    "id": "bharat-singh",
+    "name": "Bharat Singh",
+    "role": "Founder & Director",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Choosing a KYC and AML course in India should begin with the work you want to understand, not with a certificate title. KYC teams collect and verify customer information, assess risk, document decisions and escalate concerns. AML work can also involve transaction monitoring, alert review, sanctions or screening workflows, and clear case notes. A useful course should connect these concepts to realistic analyst tasks while making it clear that policies vary by employer and regulated activity."
+    },
+    {
+      "type": "paragraph",
+      "text": "This guide is designed for graduates and early-career professionals comparing learning options across India. It is an educational checklist, not legal or regulatory advice. Always verify current rules through the relevant regulator and the procedures of the institution where you work."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Start with the role, not the course name"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ask which entry-level role the syllabus is built around. Customer onboarding, periodic review, remediation, screening and transaction-monitoring support use overlapping knowledge, but their daily work is not identical. A provider should be able to explain the workflow, the documents a learner will handle and the decisions a beginner will practise. Broad promises such as becoming a compliance expert are less useful than a clear description of role-level outcomes."
+    },
+    {
+      "type": "link",
+      "label": "Understand the KYC and AML analyst role before comparing courses",
+      "href": "/career-guides/kyc-aml-analyst/",
+      "routeId": "career-guide-kyc-aml-analyst"
+    },
+    {
+      "type": "link",
+      "label": "See how KYC work connects with FinTech operations careers",
+      "href": "/blog/fintech-operations-careers-after-graduation/"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Use this KYC and AML syllabus checklist"
+    },
+    {
+      "type": "paragraph",
+      "text": "A career-focused foundation should explain why controls exist and how analysts apply them. Look for coverage of the following areas, supported by examples rather than definitions alone."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Customer identification, verification and customer due diligence basics.",
+        "Customer acceptance, risk classification and the purpose of risk-based controls.",
+        "Beneficial ownership concepts for non-individual customers.",
+        "Enhanced due diligence and situations that may require additional review.",
+        "Ongoing due diligence, periodic review and record maintenance.",
+        "Screening and transaction-monitoring concepts, including alert handling and escalation.",
+        "Writing concise case notes, maintaining an audit trail and protecting customer data.",
+        "Quality checks, maker-checker controls and handling incomplete or inconsistent information."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The Reserve Bank of India's KYC direction and the FATF Recommendations are useful primary references for understanding the regulatory vocabulary behind many of these topics. A training provider should teach learners how to consult current sources instead of treating a slide deck as permanent law."
+    },
+    {
+      "type": "link",
+      "label": "Read the RBI Master Direction on KYC",
+      "href": "https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=11566"
+    },
+    {
+      "type": "link",
+      "label": "Review the FATF Recommendations",
+      "href": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Check how practical learning is delivered"
+    },
+    {
+      "type": "paragraph",
+      "text": "Practical learning does not require access to confidential bank systems. It can use fictional customer profiles, redacted sample documents and simulated queues. Ask whether you will identify missing information, compare data across documents, assign a reasoned risk level, record a decision and decide when to escalate. The feedback should explain both what was missed and why it matters."
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Request a module-by-module syllabus and sample class before paying.",
+        "Ask how many cases, exercises or assessments are included.",
+        "Check whether feedback is individual, automated or only discussed in a group.",
+        "Confirm the trainer's relevant work or teaching experience.",
+        "Ask how regulatory updates are reflected in course material.",
+        "Verify the exact scope of interview, resume and placement support in writing."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Evaluate certificates and career support carefully"
+    },
+    {
+      "type": "paragraph",
+      "text": "A completion certificate shows that you finished a provider's programme; it is not automatically a regulator-issued licence or an industry-wide credential. Ask who issues it, what assessment is required and whether the wording is verifiable. If a provider refers to an external certification, confirm the exam, fee, eligibility and current status on the awarding body's official website. NISM's official certifications directory is one example of a primary source for checking securities-market credentials in India."
+    },
+    {
+      "type": "link",
+      "label": "Check current certifications on the official NISM website",
+      "href": "https://www.nism.ac.in/certifications"
+    },
+    {
+      "type": "paragraph",
+      "text": "Career support should also be specific. Resume reviews, mock interviews, vacancy sharing and interview referrals are different services. None guarantees a job. Compare participation conditions, attendance requirements, timelines and exclusions before enrolment, and ask the provider to clarify any terms you do not understand."
+    },
+    {
+      "type": "link",
+      "label": "Review Centaur Careers placement support and eligibility terms",
+      "href": "/placements/",
+      "routeId": "placements"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Make a final comparison scorecard"
+    },
+    {
+      "type": "paragraph",
+      "text": "Score each option on role fit, syllabus depth, case practice, trainer access, assessment quality, schedule, total cost and support terms. Give extra weight to the factors that solve your actual gap. A commerce graduate who knows financial products but lacks case-writing practice may need something different from an operations professional moving into compliance. The best choice is the one whose evidence matches your starting point and intended role."
+    },
+    {
+      "type": "link",
+      "label": "Compare the available finance learning tracks",
+      "href": "/courses/",
+      "routeId": "courses"
+    },
+    {
+      "type": "callout",
+      "title": "Before you enrol",
+      "text": "Ask for the current syllabus, trainer profile, practical-work sample, complete fee, refund rules, certificate wording and placement-support terms. Treat any promised employment, salary or promotion claim as a reason to investigate further."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Frequently asked questions"
+    },
+    {
+      "type": "faq",
+      "question": "Can a fresher learn KYC and AML?",
+      "answer": "Yes. Graduates can build a foundation in customer due diligence, risk concepts, documentation and escalation. Entry requirements still vary by employer, so learning should be paired with role research and interview preparation."
+    },
+    {
+      "type": "faq",
+      "question": "How long should a KYC and AML course take?",
+      "answer": "There is no universal duration. Compare guided learning hours, case practice, assessment and feedback instead of choosing by calendar length alone. A shorter intensive course and a longer part-time course can cover very different amounts of practical work."
+    },
+    {
+      "type": "faq",
+      "question": "Does a KYC and AML certificate guarantee employment?",
+      "answer": "No. A certificate can document learning, but hiring depends on the role, employer criteria, skills, interview performance and vacancies. Ask the provider to explain any placement-support terms before enrolling."
+    },
+    {
+      "type": "link",
+      "label": "Contact Centaur Careers with your course questions",
+      "href": "/contact/",
+      "routeId": "contact"
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/kyc-aml-course-india-guide.jpg",
+    "alt": "Indian KYC and AML analyst reviewing customer due diligence documents and a risk dashboard",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-15",
+  "updatedAt": "2026-09-26",
+  "scheduledAt": null,
+  "seo": {
+    "title": "How to Choose a KYC and AML Course in India",
+    "description": "Compare KYC and AML courses in India using a practical checklist for syllabus, case work, certificates, trainer support and career relevance.",
+    "canonicalPath": "/blog/how-to-choose-kyc-aml-course-india/",
+    "noindex": false
+  },
+  "tags": [
+    "KYC",
+    "AML",
+    "Compliance Careers",
+    "Finance Jobs India",
+    "Centaur Careers"
+  ],
+  "relatedRouteIds": [
+    "courses",
+    "career-guides",
+    "career-guide-kyc-aml-analyst",
+    "career-guide-financial-operations-faq",
+    "placements",
+    "contact"
+  ],
+  "redirects": [],
+  "evidenceNotes": [
+    "RBI Master Direction - Know Your Customer (KYC) Direction, updated as on August 14, 2025; checked 2026-09-26: https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=11566",
+    "FATF Recommendations: https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html",
+    "NISM certifications directory: https://www.nism.ac.in/certifications",
+    "Provider-specific course and placement references are limited to current Centaur Careers pages; no employment outcome is promised."
+  ]
+}

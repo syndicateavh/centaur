@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "id": "trial-balance-format-purpose-example",
+  "slug": "trial-balance-format-purpose-example",
+  "status": "published",
+  "title": "Trial Balance: Format, Purpose and Example",
+  "excerpt": "Learn trial balance meaning, format and purpose through a fictional debit-credit example, error checks, controls and finance operations context.",
+  "category": "finance-operations",
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Finance education editorial team",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "A trial balance is a listing of ledger account balances arranged into debit and credit columns so the totals can be compared for a defined period or point in the accounting process. Its purpose is an arithmetic and review checkpoint, not proof that every transaction is complete, correctly classified or properly valued. A trial balance format varies by organisation, system and reporting purpose. The example in this article is fictional and is not a prescribed statutory template."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A simple trial balance format"
+    },
+    {
+      "type": "paragraph",
+      "text": "A learning worksheet can include account name, account code, debit balance, credit balance, reporting period, preparation date, source or ledger, preparer, reviewer and status. The debit and credit columns should use a clear sign convention and a consistent population. Before comparing totals, define whether the file includes posted entries only, a particular entity, one currency or a selected ledger range. A neat table with an unclear scope can create false confidence."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fictional trial balance example"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Cash: Rs 40,000 debit",
+        "Equipment: Rs 20,000 debit",
+        "Rent expense: Rs 5,000 debit",
+        "Service revenue: Rs 15,000 credit",
+        "Owner capital: Rs 50,000 credit"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The fictional debit total is Rs 65,000 and the fictional credit total is Rs 65,000. That arithmetic agreement is useful, but it does not prove that the cash exists, that the equipment was classified correctly, that revenue was recorded in the right period or that an entire transaction was not omitted. The reviewer still needs to trace balances to the ledger and supporting evidence under the applicable policy."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What a balanced trial balance can and cannot show"
+    },
+    {
+      "type": "paragraph",
+      "text": "Equal totals show that the included debit and credit balances agree arithmetically. They do not reveal an omitted transaction, a wrong but equal posting, a debit and credit posted to the wrong accounts, an incorrect date, an unsupported estimate or an error repeated on both sides. When totals differ, investigate arithmetic, one-sided entries, transposition, omitted postings and mapping. When totals agree, continue with reasonableness, reconciliation and evidence review."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Trial balance review checklist"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Confirm the period, entity, ledger scope, currency and extraction date.",
+        "Recalculate debit and credit totals and check the sign convention.",
+        "Trace a sample of balances to the ledger and supporting schedules.",
+        "Investigate suspense, stale, unusual, zero or unexpectedly large balances.",
+        "Compare relevant balances with reconciliations, prior periods or approved expectations.",
+        "Record issues, owners, evidence, approvals and adjustments; never plug a difference just to force agreement."
+      ]
+    },
+    {
+      "type": "link",
+      "label": "Read accounting basics and ledger concepts",
+      "href": "/resources/accounting-basics/",
+      "routeId": "resource-accounting-basics"
+    },
+    {
+      "type": "link",
+      "label": "Use the reconciliation workflow guide",
+      "href": "/resources/reconciliation-in-finance/",
+      "routeId": "resource-reconciliation-in-finance"
+    },
+    {
+      "type": "link",
+      "label": "Explore Finance Operations training",
+      "href": "/courses/finance-operations-training/",
+      "routeId": "courses-finance-operations-training"
+    },
+    {
+      "type": "link",
+      "label": "Practise technical accounting interview questions",
+      "href": "/resources/accounting-interview-questions/",
+      "routeId": "resource-accounting-interview-questions"
+    },
+    {
+      "type": "link",
+      "label": "Browse all finance career insights",
+      "href": "/blog/",
+      "routeId": "blog"
+    },
+    {
+      "type": "link",
+      "label": "Read ICAI accounting-process material",
+      "href": "https://live.icai.org/bos/vcc/pdf/Accounting_Process.pdf"
+    },
+    {
+      "type": "paragraph",
+      "text": "A trial balance is a checkpoint within a wider accounting process. Use fictional learning data in public practice files, follow the current accounting framework and organisation policy in real work, and ask an authorised reviewer when the evidence or treatment is unclear."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/trial-balance-format-purpose-example.png",
+    "alt": "Editorial illustration of a trial balance with debit and credit columns checked for accuracy",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-27",
+  "updatedAt": "2026-09-27",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Trial Balance: Format, Purpose and Example | Centaur Careers",
+    "description": "Learn trial balance meaning, format and purpose with a fictional debit-credit example and a checklist that goes beyond totals.",
+    "canonicalPath": "/blog/trial-balance-format-purpose-example/",
+    "noindex": false,
+    "focusKeyword": "trial balance format",
+    "secondaryKeywords": ["trial balance meaning", "trial balance example", "accounting basics"]
+  },
+  "tags": ["Trial Balance Format", "Trial Balance Meaning", "Trial Balance Example", "Accounting", "Finance Operations"],
+  "relatedRouteIds": ["blog", "resource-accounting-basics", "resource-reconciliation-in-finance", "courses-finance-operations-training", "resource-accounting-interview-questions"],
+  "redirects": [],
+  "evidenceNotes": [
+    "ICAI accounting-process material: https://live.icai.org/bos/vcc/pdf/Accounting_Process.pdf",
+    "All balances in the worked example are invented; equal totals are not proof of complete accuracy.",
+    "No fixed statutory format is claimed."
+  ]
+}

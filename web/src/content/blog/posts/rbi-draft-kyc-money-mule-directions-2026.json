@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": "rbi-draft-kyc-money-mule-directions-2026",
+  "slug": "rbi-draft-kyc-money-mule-directions-2026",
+  "status": "review",
+  "title": "RBI Draft: KYC and Money-Mule Controls",
+  "excerpt": "A review of the RBI's draft KYC changes, consultation deadline and possible relevance to bank KYC and transaction-monitoring work.",
+  "category": "industry-updates",
+  "author": {
+    "id": "bharat-singh",
+    "name": "Bharat Singh",
+    "role": "Founder & Director",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "The Reserve Bank of India (RBI) issued a draft amendment to its Know Your Customer (KYC) Directions on 11 September 2026 and invited comments through 2 October 2026. The proposal concerns suspected money-mule accounts and cyber-enabled financial fraud, including a standard operating procedure (SOP) for temporary debit holds. It remains a draft: learners and institutions should check the RBI source for the consultation outcome and any final directions."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What the draft proposes"
+    },
+    {
+      "type": "paragraph",
+      "text": "The RBI press release says the draft proposes instructions for banks on temporary debit holds on amounts or accounts linked to money-mule activity and cyber-enabled fraud. It describes a consultation draft applicable to commercial banks and urban co-operative banks, with final directions to be issued separately after feedback is examined. This summary does not replace the full draft or later RBI publications."
+    },
+    {
+      "type": "list",
+      "items": [
+        "The announcement is a proposal for consultation, not a statement that the draft is already final or in force.",
+        "The stated consultation deadline is 2 October 2026; verify any later RBI notice before relying on that date.",
+        "The draft describes a time-bound process for holds, customer notification, review, escalation, record keeping, and grievance handling.",
+        "The exact requirements, scope, and effective date must be read from the final applicable direction and an institution's approved procedures."
+      ]
+    },
+    {
+      "type": "link",
+      "label": "Read the RBI announcement inviting comments",
+      "href": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63587"
+    },
+    {
+      "type": "link",
+      "label": "Read the RBI draft KYC amendment",
+      "href": "https://www.rbi.org.in/scripts/bs_viewcontent.aspx?Id=5170"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why this is relevant to operations learners"
+    },
+    {
+      "type": "paragraph",
+      "text": "The draft is useful for understanding how customer due diligence, transaction monitoring, fraud-risk controls, customer communication, case records, and escalation can intersect in banking operations. These are general learning themes—not instructions for handling a live case. Banks define their own authorised procedures, systems, decision rights, and escalation paths."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A safe way to read a regulatory update"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Identify whether the document is a consultation draft, final direction, clarification, or press release.",
+        "Check its publication date, consultation deadline, applicability, and any stated commencement date.",
+        "Separate what the document says from what it may mean for a specific institution or job.",
+        "Use current official sources and the organisation's approved procedures for operational decisions."
+      ]
+    },
+    {
+      "type": "faq",
+      "question": "Did the RBI announcement make the proposed KYC amendment final?",
+      "answer": "No. The 11 September 2026 announcement invited comments on a draft and said final directions would be issued after feedback was examined. Check the RBI for subsequent notices before treating any proposal as current requirements."
+    },
+    {
+      "type": "faq",
+      "question": "Is this article legal or compliance advice?",
+      "answer": "No. It is a short educational summary of an RBI consultation announcement. It does not interpret obligations for a particular bank or case; use the full official documents and authorised procedures."
+    },
+    {
+      "type": "paragraph",
+      "text": "This article is an editorial draft for review. Before publication, recheck the RBI consultation outcome, the final status and effective date of any directions, and the accuracy of this learner-focused summary."
+    },
+    {
+      "type": "link",
+      "label": "Learn KYC and AML concepts for finance careers",
+      "href": "/career-guides/kyc-aml-analyst/",
+      "routeId": "career-guide-kyc-aml-analyst"
+    },
+    {
+      "type": "link",
+      "label": "Study foundational finance and BFSI concepts",
+      "href": "/resources/finance-gk/",
+      "routeId": "resource-finance-gk"
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/kyc-onboarding-case-file-example.png",
+    "alt": "Illustration of a KYC case file, transaction review and controlled escalation workflow",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": null,
+  "updatedAt": "2026-09-26",
+  "scheduledAt": null,
+  "seo": {
+    "title": "RBI Draft KYC and Money-Mule Rules | Centaur Careers",
+    "description": "A sourced, educational summary of the RBI's September 2026 draft KYC amendment on suspected money-mule accounts. The proposal is not final advice.",
+    "canonicalPath": "/blog/rbi-draft-kyc-money-mule-directions-2026/",
+    "noindex": true
+  },
+  "tags": [
+    "RBI",
+    "KYC",
+    "banking operations",
+    "financial crime"
+  ],
+  "relatedRouteIds": [
+    "career-guide-kyc-aml-analyst",
+    "resource-finance-gk",
+    "courses"
+  ],
+  "evidenceNotes": [
+    "RBI press release 2026-2027/1109, dated 2026-09-11: https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63587",
+    "RBI Draft Reserve Bank of India (Know Your Customer) Amendment Directions, 2026: https://www.rbi.org.in/scripts/bs_viewcontent.aspx?Id=5170",
+    "Editorial review required before publication: re-check consultation outcome, final direction status, and effective date."
+  ]
+}

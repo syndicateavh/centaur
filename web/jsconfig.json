@@ -1,6 +1,7 @@
 {
 	"compilerOptions": {
 		"baseUrl": "/apps/web",
+		"ignoreDeprecations": "6.0",
 		"paths": {
 			"@/*": ["./src/*"]
 		}

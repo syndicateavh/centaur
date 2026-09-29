@@ -1,0 +1,28 @@
+FICTIONAL PAYMENT RECONCILIATION CASE: PX204
+All records, dates, amounts and references are invented for practice.
+
+1. Scope: INR payment PX204 across gateway, bank and ledger extracts.
+2. Gateway gross: INR 2,500. Bank net credit: INR 2,475.
+   Difference: INR 25. A fee is a hypothesis, not a proven cause.
+3. Ledger line: absent from the defined extract. This is a separate
+   posting break; it is not resolved by explaining the INR 25 difference.
+4. Check settlement detail, approved fee terms, bank value date,
+   posting queue, reference mapping and whether another ledger period
+   contains the line. Preserve each original record.
+5. Open two linked exception items: amount difference and missing
+   ledger posting. Assign owner, evidence request, deadline and reviewer.
+6. Close only after an authorised action and a fresh reconciliation
+   independently confirm the bank, settlement and ledger positions.
+
+MODEL CASE NOTE
+PX204: Gateway GW-204 reports INR 2,500 success on 21 Sep 2026.
+Bank BK-204 shows INR 2,475 credit on 22 Sep. Ledger extract LD-204
+has no matching line. INR 25 net difference may reflect a fee but
+support is pending. Status: open. Request settlement fee detail and
+posting-queue evidence; route to payment reconciliation owner. No
+ledger change or customer outcome is asserted.
+
+SELF-CHECK: one point each for scope/source IDs, INR 25 arithmetic,
+separate missing-posting break, unproven fee hypothesis, controlled
+owner/escalation, and independent closure verification. Six points is
+only a learning aid, not a hiring or professional assessment.

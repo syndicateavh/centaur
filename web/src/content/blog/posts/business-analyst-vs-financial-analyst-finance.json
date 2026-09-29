@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "id": "business-analyst-vs-financial-analyst-finance",
+  "slug": "business-analyst-vs-financial-analyst-finance",
+  "status": "published",
+  "title": "Business Analyst vs Financial Analyst in Finance",
+  "excerpt": "Compare business analyst and financial analyst work in finance, including questions, outputs, controls, skills, workflow context and career fit.",
+  "category": "investment-banking",
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Finance education editorial team",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Business analyst and financial analyst are related but not interchangeable job families. A business analyst often clarifies business problems, requirements, processes and decisions. A financial analyst may focus on financial data, performance, forecasts, valuation inputs, reporting or management analysis. In finance organisations, the boundaries can overlap, and the title alone does not define the role. Compare the work product, data, stakeholders, controls and decision rights before choosing a path. This article is educational and does not provide investment advice or a hiring prediction."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Business analyst vs financial analyst: the short answer"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Business analysts translate a problem into requirements, process changes, acceptance criteria or an operating decision.",
+        "Financial analysts interpret financial information, performance drivers, assumptions, forecasts or reporting outputs.",
+        "Both roles need structured thinking, clear questions, data-quality checks and communication with non-specialists.",
+        "Some finance teams combine the roles, while others separate analysis, operations, finance control and technology responsibilities."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How the work differs in a workflow"
+    },
+    {
+      "type": "paragraph",
+      "text": "A business analyst might map how a payment exception moves between teams, identify the root cause of a manual step, and define a requirement for a controlled workflow. A financial analyst might examine transaction volumes, revenue, cost, balance-sheet movement or a variance against plan and explain the drivers. Both must confirm the source, period, definitions and assumptions before presenting a conclusion. A polished chart built from the wrong population is still a weak analysis."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fictional example: one problem, two lenses"
+    },
+    {
+      "type": "paragraph",
+      "text": "Imagine a fictional finance team whose payment exception queue has doubled. The business analyst asks where the process breaks, which handoff creates rework, what evidence is required and which control must remain. The financial analyst asks how the extra exceptions affect processing cost, service levels, aged balances and operational risk reporting. Their outputs are different, but they depend on the same trusted data and a shared definition of an exception. Neither should claim causation until the evidence supports it."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Skills to compare"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Business analysis: process mapping, requirements, stakeholder questions, acceptance criteria and change communication.",
+        "Financial analysis: accounting logic, variance analysis, spreadsheet modelling, assumptions and financial storytelling.",
+        "Shared foundation: data validation, documentation, confidentiality, presentation and the judgement to escalate uncertainty.",
+        "Operations bridge: reconciliation, controls, exception analysis and understanding how a process creates a record."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to choose a starting path"
+    },
+    {
+      "type": "paragraph",
+      "text": "Choose the type of problem you want to practise. If you enjoy asking how work should flow, reducing ambiguity and connecting people to systems, business analysis may be a better starting point. If you enjoy explaining what financial data means, tracing drivers and testing assumptions, financial analysis may be a better fit. Many roles value both. Build a small portfolio that labels the source data, shows your calculation or process map, states the assumptions and explains the limitation."
+    },
+    {
+      "type": "link",
+      "label": "Explore Investment Banking Operations training",
+      "href": "/courses/investment-banking-operations/",
+      "routeId": "investment-banking-operations"
+    },
+    {
+      "type": "link",
+      "label": "Read the Investment Banking Operations career guide",
+      "href": "/career-guides/investment-banking-operations/",
+      "routeId": "career-guide-investment-banking-operations"
+    },
+    {
+      "type": "link",
+      "label": "Learn the trade lifecycle context",
+      "href": "/career-guides/trade-lifecycle/",
+      "routeId": "career-guide-trade-lifecycle"
+    },
+    {
+      "type": "link",
+      "label": "Use the reconciliation resource to practise data checks",
+      "href": "/resources/reconciliation-in-finance/",
+      "routeId": "resource-reconciliation-in-finance"
+    },
+    {
+      "type": "link",
+      "label": "Browse all finance career insights",
+      "href": "/blog/",
+      "routeId": "blog"
+    },
+    {
+      "type": "link",
+      "label": "Read SEBI investor education material",
+      "href": "https://investor.sebi.gov.in/iematerial.html"
+    },
+    {
+      "type": "paragraph",
+      "text": "Job titles and requirements change across employers. Verify the current responsibilities, tools, qualifications and working pattern in the specific job description, and keep market content educational rather than treating it as an investment recommendation."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/business-analyst-vs-financial-analyst-finance.png",
+    "alt": "Editorial illustration comparing business analysis and financial analysis workflows",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-27",
+  "updatedAt": "2026-09-27",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Business Analyst vs Financial Analyst | Centaur Careers",
+    "description": "Compare business analyst and financial analyst roles in finance, including outputs, skills, controls, workflow context and career fit.",
+    "canonicalPath": "/blog/business-analyst-vs-financial-analyst-finance/",
+    "noindex": false,
+    "focusKeyword": "business analyst vs financial analyst",
+    "secondaryKeywords": ["financial analyst roles", "financial analysis", "finance careers"]
+  },
+  "tags": ["Business Analyst vs Financial Analyst", "Business Analyst", "Financial Analyst", "Financial Analysis", "Finance Careers"],
+  "relatedRouteIds": ["blog", "investment-banking-operations", "career-guide-investment-banking-operations", "career-guide-trade-lifecycle", "resource-reconciliation-in-finance"],
+  "redirects": [],
+  "evidenceNotes": [
+    "SEBI investor education material: https://investor.sebi.gov.in/iematerial.html",
+    "Role boundaries are a general educational comparison and vary by employer and job description.",
+    "No trading call, investment advice or hiring outcome is provided."
+  ]
+}

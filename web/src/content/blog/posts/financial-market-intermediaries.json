@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 1,
+  "id": "financial-market-intermediaries",
+  "slug": "financial-market-intermediaries",
+  "status": "published",
+  "title": "Financial Market Intermediaries: Roles and Workflow",
+  "excerpt": "Map brokers, exchanges, clearing corporations, depositories, custodians and registrars across a simplified securities-market workflow.",
+  "category": "investment-banking",
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Publisher",
+    "profilePath": "/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Financial market intermediaries are organisations or professionals that connect participants, provide access, maintain records, process transactions, safeguard assets, support issuance, or perform other defined functions in a financial market. Examples in the securities ecosystem can include brokers, depository participants, custodians, merchant bankers, registrars and transfer agents, and other registered entities. Market infrastructure institutions such as stock exchanges, clearing corporations, and depositories provide core market facilities but are not interchangeable with every intermediary."
+    },
+    {
+      "type": "paragraph",
+      "text": "This guide focuses on roles and operational hand-offs in India at a high level. The applicable entity, responsibility, registration, transaction path, and investor protection depend on the product and current rules. The guide does not recommend an intermediary, a security, or an investment strategy."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Intermediary, market institution, and participant"
+    },
+    {
+      "type": "list",
+      "items": [
+        "A market participant is a broad term for an entity taking part in market activity, such as an issuer, investor, lender, borrower, or service provider.",
+        "An intermediary performs a defined connecting or service role between participants or between a participant and market infrastructure.",
+        "A market infrastructure institution provides a core facility for trading, clearing, settlement, or securities records, subject to its applicable framework.",
+        "A regulator establishes and enforces applicable requirements but does not perform the same operating role as a broker, depository, custodian, or clearing corporation."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "These labels help a learner build a map, but the official registration category and governing documents are the source of truth. The same group can contain different regulated entities, and the same transaction can involve several organisations with separate responsibilities."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Key institutions and intermediaries in a securities workflow"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stock exchanges"
+    },
+    {
+      "type": "paragraph",
+      "text": "A recognised stock exchange provides a trading venue and rule-based framework through which eligible orders can be matched or transactions executed. It connects approved participants but does not replace the investor's broker, the clearing and settlement process, or the depository record. Operations learners should distinguish an order, an execution, a clearing obligation, and a final securities or cash movement."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stock brokers"
+    },
+    {
+      "type": "paragraph",
+      "text": "A stock broker provides authorised access and executes transactions under the applicable account, exchange, and regulatory framework. Related operations can include account setup, order and trade records, contract notes, margins or funds processes, client communication, settlement instructions, and exception handling. A learner should not assume that every broker provides the same services or that a broker's role is identical to an investment adviser or research analyst."
+    },
+    {
+      "type": "link",
+      "label": "Read SEBI Investor guidance about brokers",
+      "href": "https://investor.sebi.gov.in/Brokers.html"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Clearing corporations"
+    },
+    {
+      "type": "paragraph",
+      "text": "A clearing corporation stands within the post-trade process and determines or manages settlement obligations under the applicable market arrangement. Its role is different from the exchange where the transaction was executed and from the depository where securities are recorded. Operations teams monitor obligations, instructions, available cash or securities, statuses, deadlines, and unresolved items rather than treating execution as the end of the lifecycle."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Depositories and depository participants"
+    },
+    {
+      "type": "paragraph",
+      "text": "A depository supports electronic securities records and transfers within its system. Investors generally interact through a depository participant for account and service access. The depository and participant therefore have related but distinct roles. Operations can involve account records, instructions, balances, corporate actions, statements, pledges or other permitted services, with current requirements defined by official documents and procedures."
+    },
+    {
+      "type": "link",
+      "label": "Review SEBI Investor guidance on depositories",
+      "href": "https://investor.sebi.gov.in/depositories.html"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Custodians"
+    },
+    {
+      "type": "paragraph",
+      "text": "A custodian provides safekeeping and connected asset-servicing functions for eligible clients under its mandate. Depending on the arrangement, work can include settlement support, position and cash records, income and corporate-action processing, reporting, and reconciliation. Custody is not simply physical storage, and the custodian's record should not be assumed to replace every book, depository, broker, or fund-accounting record. Those records may need to be compared and differences investigated."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Registrars and transfer agents"
+    },
+    {
+      "type": "paragraph",
+      "text": "Registrars and transfer agents support defined issuer, investor-record, transaction, and service processes. SEBI Investor material describes activities such as maintaining records and supporting requests or updates in the securities and mutual-fund ecosystem. Their responsibilities are different from those of the exchange, broker, custodian, or depository, even where the same investor event passes information among several parties."
+    },
+    {
+      "type": "link",
+      "label": "Read SEBI Investor guidance about registrars and transfer agents",
+      "href": "https://investor.sebi.gov.in/registrar_and_transfer_agents.html"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Merchant bankers and other specialised intermediaries"
+    },
+    {
+      "type": "paragraph",
+      "text": "Issuance, corporate transactions, portfolio services, research, advisory, and other market activities can involve additional regulated categories with specialised responsibilities. A category name should never be used as proof that an entity is authorised for a particular activity. Check the relevant official register, investor charter, and current service document before relying on a firm or person."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A simplified trade-to-settlement hand-off"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "An eligible investor makes a decision under their own mandate and submits an instruction through an authorised broker or channel.",
+        "The order reaches the relevant market venue and, if executed, creates a trade record with product, quantity, price, account, party, and date information.",
+        "The broker and connected systems create or receive confirmations, allocations, and obligations according to the applicable process.",
+        "Clearing arrangements determine settlement obligations and statuses, while participants prepare the required cash and securities instructions.",
+        "Depository, bank, custodian, and participant records are updated through their respective processes when settlement completes.",
+        "Operations teams reconcile trades, cash, positions, and statuses; they investigate unmatched, late, rejected, or incomplete items and retain evidence of closure."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This sequence is intentionally broad. Product type, venue, account structure, clearing model, settlement cycle, market holiday, and current rules can change the exact parties and timing. The learning goal is to identify the hand-off and record at each stage, not to memorise one diagram as universal."
+    },
+    {
+      "type": "link",
+      "label": "Follow the trade lifecycle in more detail",
+      "href": "/career-guides/trade-lifecycle/",
+      "routeId": "career-guide-trade-lifecycle"
+    },
+    {
+      "type": "link",
+      "label": "Review financial markets, instruments and participants",
+      "href": "/blog/financial-markets-instruments-participants-operations/"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fictional exception: one trade, two quantities"
+    },
+    {
+      "type": "paragraph",
+      "text": "Assume a fictional broker record shows 100 units while a downstream confirmation shows 10. The difference does not prove which record is wrong. An operations analyst confirms the transaction and account identifiers, checks whether there was an allocation or amendment, compares the approved execution source and version history, and records the deadline and potential settlement impact. The case is assigned to the authorised owner for confirmation. After the approved correction or new record arrives, the analyst rechecks the status and preserves the evidence."
+    },
+    {
+      "type": "paragraph",
+      "text": "The example shows why intermediaries exchange information but keep separate records and controls. Reconciliation is not an attempt to make every file look identical; it is a controlled explanation of why records agree or differ and what authorised action follows."
+    },
+    {
+      "type": "link",
+      "label": "Learn the reconciliation process in finance",
+      "href": "/resources/reconciliation-in-finance/",
+      "routeId": "resource-reconciliation-in-finance"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Controls across intermediary hand-offs"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Authorisation: only permitted people, accounts, and systems can submit, approve, or alter an instruction.",
+        "Completeness: expected files, trades, cash movements, positions, and status messages arrive for the correct scope and period.",
+        "Accuracy: identifiers, quantity, price, currency, account, party, and dates agree with the authoritative source.",
+        "Timeliness: exceptions are identified before relevant cut-offs, ageing limits, reports, or client commitments.",
+        "Segregation and review: preparation, approval, release, and reconciliation responsibilities follow the organisation's control design.",
+        "Evidence: source records, case notes, approvals, communications, and final verification remain traceable."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Career directions connected with intermediaries"
+    },
+    {
+      "type": "paragraph",
+      "text": "Intermediary and infrastructure workflows can create role families in trade support, settlements, custody operations, reconciliation, corporate actions, fund operations, client onboarding, account servicing, reporting, and controls. Titles vary across employers. A useful job-description review identifies the product, market, system, shift, output, authority, and exception type rather than relying on the word analyst or associate."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Market vocabulary and the ability to place a task in the transaction lifecycle.",
+        "Accurate comparison of identifiers, dates, quantities, cash, positions, and status fields.",
+        "Clear exception notes that separate evidence from assumptions.",
+        "Spreadsheet and workflow-system discipline without exposing confidential records.",
+        "Awareness of deadlines, ageing, escalation, and the limits of delegated authority.",
+        "Professional communication across teams that may own different parts of the same transaction."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How a corporate action crosses intermediary records"
+    },
+    {
+      "type": "paragraph",
+      "text": "A dividend, split, rights issue, or other issuer event can create information and record changes across exchanges or issuer sources, depositories, custodians, registrars, brokers, funds, and client-service teams. Each party may receive the event through a different authorised channel and hold a record for its own responsibility. Operations teams therefore validate the notice and dates, identify affected positions, calculate or review expected entitlements under the approved method, process instructions where relevant, and reconcile the resulting cash or securities."
+    },
+    {
+      "type": "paragraph",
+      "text": "A difference between an announcement, position file, custodian record, and final credit should remain visible until its timing, eligibility, calculation, or processing cause is evidenced. The analyst should not assume that the first or newest record is automatically correct. Event deadlines and ownership must be recorded clearly because a late election or unresolved position can require a different response from a routine timing difference."
+    },
+    {
+      "type": "link",
+      "label": "Read the corporate actions analyst workflow guide",
+      "href": "/blog/corporate-actions-analyst-career-path/"
+    },
+    {
+      "type": "link",
+      "label": "Explore investment banking operations careers",
+      "href": "/career-guides/investment-banking-operations/",
+      "routeId": "career-guide-investment-banking-operations"
+    },
+    {
+      "type": "link",
+      "label": "Practise investment banking operations interview questions",
+      "href": "/resources/investment-banking-interview-questions/",
+      "routeId": "resource-investment-banking-interview-questions"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Official checks for learners and investors"
+    },
+    {
+      "type": "paragraph",
+      "text": "SEBI publishes investor education, registration information, and investor charters for market infrastructure institutions and registered intermediaries. Use those official sources to understand the entity category, services, responsibilities, complaint route, and current warnings. A logo, social profile, application listing, or informal recommendation is not a substitute for registration and official product information."
+    },
+    {
+      "type": "link",
+      "label": "Review SEBI's Investor Charter and intermediary guidance",
+      "href": "https://investor.sebi.gov.in/Investor-charter.html"
+    },
+    {
+      "type": "link",
+      "label": "Check SEBI Investor support and registration resources",
+      "href": "https://investor.sebi.gov.in/Investor-support.html"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How this topic relates to Centaur Careers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Market participants, trade settlement, reconciliation, corporate actions, and fund accounting connect with the Investment Banking Operations module inside Centaur Careers' Financial Operations Masterclass. This article remains a general market-structure guide; it does not create a separate intermediary certification or claim that the Masterclass licenses a learner for a regulated activity. Confirm the current curriculum and program terms on the canonical course page."
+    },
+    {
+      "type": "link",
+      "label": "Explore the Investment Banking Operations module",
+      "href": "/courses/investment-banking-operations/",
+      "routeId": "investment-banking-operations"
+    },
+    {
+      "type": "faq",
+      "question": "What is a financial market intermediary?",
+      "answer": "It is an organisation or professional that performs a defined connecting or service role in a financial market, such as access, execution, record keeping, custody, issuance support, or investor servicing. The official registration category determines the authorised scope."
+    },
+    {
+      "type": "faq",
+      "question": "Is a stock exchange a broker?",
+      "answer": "No. An exchange provides a market venue and framework, while a registered broker provides authorised access and execution services for clients or other eligible activity. Their responsibilities and records are different."
+    },
+    {
+      "type": "faq",
+      "question": "Why are clearing corporations and depositories different?",
+      "answer": "Clearing corporations manage clearing and settlement obligations under the applicable market arrangement. Depositories maintain electronic securities records and support transfers through their framework. They connect in the lifecycle but do not perform the same function."
+    },
+    {
+      "type": "faq",
+      "question": "Does this article recommend any intermediary?",
+      "answer": "No. It is an educational workflow map. Verify registration, services, terms, risks, and investor protections through current official sources before making a decision."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/financial-markets-participant-map.png",
+    "alt": "Illustration mapping financial market intermediaries across trading, clearing, depository, custody and record-keeping workflows",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-27",
+  "updatedAt": "2026-09-27",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Financial Market Intermediaries: Roles and Workflow",
+    "description": "Understand brokers, exchanges, clearing corporations, depositories, custodians and registrars through a simplified securities workflow.",
+    "canonicalPath": "/blog/financial-market-intermediaries/",
+    "noindex": false
+  },
+  "tags": [
+    "Financial Market Intermediaries",
+    "Securities Operations",
+    "Clearing and Settlement",
+    "Depositories",
+    "Investment Banking Operations"
+  ],
+  "relatedRouteIds": [
+    "blog",
+    "career-guides",
+    "career-guide-trade-lifecycle",
+    "career-guide-investment-banking-operations",
+    "resource-reconciliation-in-finance",
+    "resource-investment-banking-interview-questions",
+    "investment-banking-operations",
+    "courses",
+    "contact"
+  ],
+  "redirects": [],
+  "evidenceNotes": [
+    "SEBI Investor guidance on brokers: https://investor.sebi.gov.in/Brokers.html",
+    "SEBI Investor guidance on depositories: https://investor.sebi.gov.in/depositories.html",
+    "SEBI Investor guidance on registrars and transfer agents: https://investor.sebi.gov.in/registrar_and_transfer_agents.html",
+    "SEBI Investor Charter and intermediary registration guidance: https://investor.sebi.gov.in/Investor-charter.html and https://investor.sebi.gov.in/Investor-support.html",
+    "The trade lifecycle and exception example are intentionally simplified, use fictional records, and do not provide investment, legal, regulatory, or employer-specific advice.",
+    "This article does not recommend an intermediary or claim a separate Centaur Careers certification."
+  ]
+}

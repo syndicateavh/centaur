@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "id": "financial-accounting-statements-process-examples",
+  "slug": "financial-accounting-statements-process-examples",
+  "status": "published",
+  "title": "Financial Accounting: Process, Statements and Example",
+  "excerpt": "Follow a fictional business transaction through journals, ledgers, a trial balance and financial statements, with clear limits on the example.",
+  "category": "finance-operations",
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Publisher",
+    "profilePath": "/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Financial accounting records and summarises an organisation's transactions so that financial information can be presented for a defined period or date. The financial accounting process, often taught as the accounting cycle, is easier to understand by following a transaction from supporting evidence into accounts and then into statements. The example here is deliberately small and fictional; real reporting depends on the entity's applicable accounting framework, policies, tax treatment and reporting requirements."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The accounting process from source to statements"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Identify and retain appropriate source evidence, such as an invoice, receipt, contract or bank record, subject to the organisation's document controls.",
+        "Analyse which accounts changed and record the transaction in a journal using the applicable accounting policy and debit-credit logic.",
+        "Post journal entries to the ledger so that activity is grouped by account rather than only by date.",
+        "Prepare a trial balance to compare debit and credit totals and investigate differences. Equal totals do not prove that every entry is complete or correct.",
+        "Review required adjustments, reconciliations, estimates and cut-off items under the applicable framework and approved process.",
+        "Prepare and review financial statements, then retain a clear trail from reported figures back to supporting records."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A fictional transaction-to-statement example"
+    },
+    {
+      "type": "paragraph",
+      "text": "Imagine a small fictional service business during its first month. Its owner contributes ₹100,000 cash. It then buys equipment for ₹20,000 in cash, earns ₹30,000 of service revenue in cash, and pays ₹5,000 rent. Before considering tax, depreciation, accruals or other adjustments, the simplified records show cash of ₹105,000, equipment of ₹20,000, and total assets of ₹125,000. The income statement shows revenue of ₹30,000, rent expense of ₹5,000 and illustrative profit of ₹25,000. The balance-sheet equation is also consistent: assets of ₹125,000 equal owner capital of ₹100,000 plus retained result of ₹25,000."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is a teaching illustration, not a set of accounting instructions for a real business. It omits transaction taxes, depreciation, receivables, payables, inventory, financing, owner withdrawals, applicable reporting rules and many other possible facts. In practice, each entry needs evidence and review, and a business should follow its current accounting policies and obtain qualified advice where needed."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What to review before relying on a statement"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Check the reporting entity, period or statement date, currency and accounting basis.",
+        "Trace material figures to ledgers and supporting evidence; investigate unusual movements and unreconciled balances.",
+        "Confirm that required adjustments, classifications, disclosures and approvals were considered under the applicable framework.",
+        "Keep the original record and correction trail; do not change an entry simply to make totals appear reasonable."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How the three main financial statements connect"
+    },
+    {
+      "type": "paragraph",
+      "text": "The income statement summarises income and expenses over a period. The balance sheet presents assets, liabilities, and equity at a date. The cash-flow statement explains cash movements through the categories required by the applicable framework. They answer different questions, but they are connected. A transaction can affect profit without creating cash in the same period, or move cash without creating income. That is why a reviewer should understand the accounting event rather than compare only headline totals."
+    },
+    {
+      "type": "paragraph",
+      "text": "Consider a simplified credit sale. Revenue and a receivable may be recorded when the applicable recognition conditions are met, even though the customer has not yet paid. Profit can therefore change before cash changes. When the customer later pays, cash increases and the receivable decreases; that later collection does not normally create the same revenue again. The exact recognition and presentation depend on the relevant facts and framework, so this example teaches the relationship rather than prescribing a real entry."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Income statement: review the period, revenue and expense classifications, unusual movements, and required adjustments.",
+        "Balance sheet: review existence, rights or obligations, classification, valuation basis, and reconciliation of material balances.",
+        "Cash-flow statement: understand which cash movements are included and how they reconcile to opening and closing cash under the applicable framework.",
+        "Notes and disclosures: read the accounting policies, estimates, commitments, contingencies, and explanations needed to understand the figures."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Controls across the accounting cycle"
+    },
+    {
+      "type": "paragraph",
+      "text": "Financial accounting is not only a sequence of entries. A reliable process defines who can create, approve, post, change, and review a record; which evidence is required; and how exceptions are tracked. Controls should protect completeness, accuracy, cut-off, classification, authorisation, and the audit trail. Their design varies by organisation, but a learner can still explain the purpose of each checkpoint."
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Source control: confirm that the document or system record belongs to the entity, transaction, and reporting period.",
+        "Entry control: use the approved accounts, date, amount, narration, and supporting reference, with required review or approval.",
+        "Posting control: verify that the complete authorised entry reached the intended ledger and was not duplicated or rejected.",
+        "Reconciliation control: compare relevant ledger, sub-ledger, bank, system, or external records and investigate differences.",
+        "Close control: review estimates, accruals, cut-off, classifications, unusual balances, and open exceptions before reporting.",
+        "Reporting control: trace material statement figures to reviewed records and retain evidence of preparation and approval."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "A control total or balanced trial balance is useful, but neither proves that every transaction is real, complete, correctly classified, or recorded in the right period. For example, an equal debit and credit can still use the wrong expense account. A bank balance can still include an unexplained old item. Review therefore combines arithmetic checks with source evidence and business understanding."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Reconciliation and exception handling"
+    },
+    {
+      "type": "paragraph",
+      "text": "Reconciliation connects accounting records with other evidence. The preparer defines the scope, period, currency, source files, control total, and matching basis before investigating individual items. Differences can reflect timing, a missing or duplicate record, an amount or reference variance, an incorrect classification, or insufficient evidence. The right outcome is an explained and authorised resolution, not an overwritten source file."
+    },
+    {
+      "type": "paragraph",
+      "text": "A useful exception note states what should agree, what actually differed, which sources were checked, how the item was classified, who owns the next action, and how closure will be verified. If an adjustment is required, it should follow the entity's approved process and retain the original record, evidence, approval, and final review."
+    },
+    {
+      "type": "link",
+      "label": "Work through the reconciliation process in finance",
+      "href": "/resources/reconciliation-in-finance/",
+      "routeId": "resource-reconciliation-in-finance"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How statement analysis differs from statement preparation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Statement preparation organises approved accounting records into the required report. Financial statement analysis asks what the reported relationships, movements, and limitations may indicate for a defined purpose. An analyst may compare periods, common-size figures, working-capital movements, leverage, margins, or cash generation, but a ratio is not a conclusion by itself. Definitions, accounting policies, one-off events, seasonality, group structure, and data quality can change the interpretation."
+    },
+    {
+      "type": "link",
+      "label": "Study financial statement analysis in a banking context",
+      "href": "/resources/financial-statement-analysis/",
+      "routeId": "resource-financial-statement-analysis"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Where financial accounting appears in finance operations"
+    },
+    {
+      "type": "paragraph",
+      "text": "Finance operations roles can use accounting information in reconciliations, reporting, loan or credit support, expense and invoice processes, cash operations, fund records, controls, and period-close tasks. The employee's responsibility may be to prepare, validate, compare, investigate, or report rather than to approve an accounting policy or sign a financial statement. Job descriptions should be read for the exact output and authority."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Trace one figure from source evidence to journal, ledger, trial balance, statement, and reconciliation.",
+        "Explain the difference between a routine entry, an estimate, a correction, and a reclassification.",
+        "Use spreadsheet checks without changing or hiding source data.",
+        "Write an exception note that another reviewer can reproduce.",
+        "State when a question requires a policy owner, qualified accountant, auditor, tax adviser, or other authorised specialist."
+      ]
+    },
+    {
+      "type": "link",
+      "label": "Explore financial accounting for banking operations",
+      "href": "/resources/financial-accounting-banking/",
+      "routeId": "resource-financial-accounting-banking"
+    },
+    {
+      "type": "link",
+      "label": "Read the Finance Operations career guide",
+      "href": "/career-guides/finance-operations/",
+      "routeId": "career-guide-finance-operations"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Common mistakes when learning financial accounting"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Treating debit as bad and credit as good instead of identifying the account and transaction.",
+        "Assuming a balanced entry or trial balance proves that the transaction is valid and complete.",
+        "Mixing cash movement with income or expense recognition without checking the applicable basis.",
+        "Ignoring period cut-off, supporting evidence, estimates, tax, foreign currency, or later adjustments.",
+        "Using a classroom example as a template for a real entity without reviewing policy and standards.",
+        "Changing a number to produce an expected total instead of documenting and investigating the difference."
+      ]
+    },
+    {
+      "type": "faq",
+      "question": "What is financial accounting in simple words?",
+      "answer": "Financial accounting records and summarises an organisation's transactions so that financial information can be presented for a defined period or date under an applicable framework."
+    },
+    {
+      "type": "faq",
+      "question": "What is the accounting cycle?",
+      "answer": "It is a learning term for the flow from source evidence and transaction analysis through journal entries, ledgers, a trial balance, adjustments, financial statements, review, and period closure. Actual systems and responsibilities vary."
+    },
+    {
+      "type": "faq",
+      "question": "Why can profit and cash be different?",
+      "answer": "Income and expenses may be recognised in a different period from the related cash receipt or payment. Receivables, payables, non-cash charges, financing, and other events can therefore make profit and cash movement differ."
+    },
+    {
+      "type": "faq",
+      "question": "Does this article provide accounting advice?",
+      "answer": "No. It is an educational explanation using simplified fictional examples. Real accounting follows the entity's current policies, applicable standards, evidence, approvals, and qualified professional review."
+    },
+    {
+      "type": "callout",
+      "title": "Keep the example reproducible",
+      "text": "When practising, keep source events, assumptions, journal entries, ledger balances, adjustments, reconciliations, and final statements in separate labelled sections. A reviewer should be able to trace every figure without relying on memory or a hidden formula."
+    },
+    {
+      "type": "link",
+      "label": "Review accounting basics and debit-credit examples",
+      "href": "/resources/accounting-basics/",
+      "routeId": "resource-accounting-basics"
+    },
+    {
+      "type": "link",
+      "label": "Learn how finance reconciliation works",
+      "href": "/resources/reconciliation-in-finance/",
+      "routeId": "resource-reconciliation-in-finance"
+    },
+    {
+      "type": "link",
+      "label": "Read the ICAI accounting-process learning material",
+      "href": "https://live.icai.org/bos/vcc/pdf/Accounting_Process.pdf"
+    },
+    {
+      "type": "paragraph",
+      "text": "Centaur Careers publishes this educational explainer. The example uses invented figures and is not accounting, tax, audit or legal advice. Follow the current standards and authorised procedures that apply to the specific entity and jurisdiction."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/financial-accounting-cycle.png",
+    "alt": "Illustration of financial accounting work moving from records and calculations through review to financial statements.",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-24",
+  "updatedAt": "2026-09-27",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Financial Accounting: Process, Statements and Example",
+    "description": "Understand financial accounting through the transaction cycle, a fictional worked example, statement basics and practical checks before relying on figures.",
+    "canonicalPath": "/blog/financial-accounting-statements-process-examples/",
+    "noindex": false
+  },
+  "tags": ["Financial Accounting", "Accounting Process", "Financial Statements", "Accounting Basics"],
+  "relatedRouteIds": ["blog", "resources", "resource-accounting-basics", "resource-reconciliation-in-finance"],
+  "redirects": [],
+  "evidenceNotes": [
+    "ICAI accounting-process learning resource: https://live.icai.org/bos/vcc/pdf/Accounting_Process.pdf",
+    "Example is entirely fictional, simplified and excludes multiple accounting, tax, reporting and policy considerations; it is not professional advice.",
+    "Semrush volume and difficulty are export-reported only; the source export's locale, database and device settings are unknown."
+  ]
+}

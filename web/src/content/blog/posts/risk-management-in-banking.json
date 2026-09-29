@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "id": "risk-management-in-banking",
+  "slug": "risk-management-in-banking",
+  "status": "published",
+  "title": "Risk Management in Banking: Types, Controls and Roles",
+  "excerpt": "Understand major banking-risk categories, a practical risk-and-control workflow, operational examples and entry-level role connections.",
+  "category": "finance-operations",
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Publisher",
+    "profilePath": "/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Risk management in banking is the structured work of identifying uncertainty or potential loss, assessing exposure, applying approved controls, monitoring outcomes, and escalating matters that exceed authority or tolerance. Banks face different risks across products, customers, markets, people, processes, systems, third parties, and external events. The framework, terminology, ownership, and regulatory requirements depend on the institution and activity."
+    },
+    {
+      "type": "paragraph",
+      "text": "For an entry-level learner, risk management is best understood as a connection between an objective, a possible failure, a preventive or detective control, evidence that the control operated, and a clear response when it did not. This article is educational and does not replace a bank's current policies, regulatory interpretation, professional advice, or authorised decision-making."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Risk, control, incident, and issue"
+    },
+    {
+      "type": "list",
+      "items": [
+        "A risk is uncertainty that can affect an objective, obligation, customer, asset, process, or organisation.",
+        "A control is an approved action or mechanism designed to prevent, detect, limit, or respond to a defined risk.",
+        "An incident is an event that has occurred and may cause harm, loss, disruption, error, or breach.",
+        "An issue is a weakness, exception, or unresolved condition that requires ownership, action, and tracking.",
+        "Evidence shows what was checked, by whom, when, against which source, and with what result."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "These terms are related but should not be collapsed into one label. A late file can be an exception; repeated late files may reveal a control issue; an incorrect payment can be an incident; and the possibility of future incorrect payments is a risk to manage. The organisation's classification process remains authoritative."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Major types of risk in banking"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Credit risk"
+    },
+    {
+      "type": "paragraph",
+      "text": "Credit risk concerns the possibility that a borrower or other counterparty does not meet an obligation as agreed. Banking work can include application information, assessment, approval, limits, documentation, disbursement, monitoring, repayment, classification, and recovery processes. An operations employee may prepare or validate information but should not imply authority to approve credit or change a risk decision. Real assessments use the bank's approved methods and current requirements."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Operational risk"
+    },
+    {
+      "type": "paragraph",
+      "text": "RBI's 2023 Master Direction describes operational risk as the risk of loss resulting from inadequate or failed internal processes, people and systems, or external events, and notes that the definition includes legal risk while excluding strategic and reputational risk for that Direction. A learning example might involve a duplicate payment, missing approval, system outage, data-entry error, cyber event, or failed hand-off. The exact regulatory application and incident taxonomy must be checked against current official material and the institution's framework."
+    },
+    {
+      "type": "link",
+      "label": "Read RBI's Master Direction on operational risk",
+      "href": "https://www.rbi.org.in/scripts/FS_Notification.aspx?Id=12520"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Market risk"
+    },
+    {
+      "type": "paragraph",
+      "text": "Market risk relates to adverse changes in market variables such as interest rates, prices, foreign-exchange rates, or other relevant factors, depending on the position and framework. Market-risk measurement is a specialist area. Operations learners should understand that accurate position, price, trade, and reference data are important inputs without presenting themselves as authorised to set limits, value complex instruments, or make trading decisions."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Liquidity risk"
+    },
+    {
+      "type": "paragraph",
+      "text": "Liquidity risk can concern the ability to meet obligations when due or to obtain funds without unacceptable cost, under the applicable definition. Operations contributes through accurate cash, settlement, funding, maturity, and exception information. A missing or late operational record can distort the view, which is why reconciliations, cut-offs, and escalation matter even when the associate does not make the liquidity decision."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Compliance, conduct, and financial-crime risk"
+    },
+    {
+      "type": "paragraph",
+      "text": "Banks operate under laws, regulations, internal policies, customer commitments, and ethical standards. KYC, AML, sanctions, privacy, disclosures, complaints, sales practices, and conflicts can create specialised compliance or conduct responsibilities. An employee should follow the current policy, preserve confidentiality, and escalate indicators through the approved route rather than making unsupported accusations or disclosing a case."
+    },
+    {
+      "type": "link",
+      "label": "Explore the KYC and AML analyst career guide",
+      "href": "/career-guides/kyc-aml-analyst/",
+      "routeId": "career-guide-kyc-aml-analyst"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Technology, cyber, third-party, and resilience risk"
+    },
+    {
+      "type": "paragraph",
+      "text": "Banking depends on technology, data, vendors, facilities, communication networks, and people. Access failures, cyber incidents, data problems, unavailable systems, supplier disruption, or concentration can affect critical operations. Business continuity and operational resilience address the ability to prepare for, respond to, and recover from disruption according to the bank's framework. Entry-level staff contribute by following access controls, incident procedures, tested workarounds, communication rules, and evidence requirements."
+    },
+    {
+      "type": "link",
+      "label": "Review the Basel Committee's operational-risk principles",
+      "href": "https://www.bis.org/publications/202103-guidelines-revisions-principles-sound-management-operational-risk"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A practical risk-management workflow"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Define the objective and scope: product, process, customer, system, entity, period, and responsible owner.",
+        "Identify what could fail, why it could fail, and which records or obligations would be affected.",
+        "Assess the risk using the institution's approved likelihood, impact, materiality, and prioritisation method.",
+        "Identify existing preventive, detective, corrective, and recovery controls, including the authority and evidence for each control.",
+        "Evaluate whether the design addresses the risk and whether the control actually operated for the required scope and period.",
+        "Record gaps, incidents, exceptions, or residual exposure with an owner, action, due date, and escalation path.",
+        "Monitor indicators and control results, verify completed actions, and reassess when products, systems, people, third parties, or external conditions change."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "A checklist cannot replace judgement, but it prevents risk language from becoming vague. Every risk statement should identify the event and impact; every control should identify the action, owner, frequency or trigger, evidence, and response to failure."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Preventive, detective, and corrective controls"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Preventive controls aim to stop or limit an error before it enters the process, such as access restrictions, validation rules, approval limits, or required fields.",
+        "Detective controls identify an error or unexpected outcome, such as reconciliation, exception reporting, review, monitoring, or an alert.",
+        "Corrective controls address an identified problem through an authorised adjustment, reprocessing step, recovery action, or process repair.",
+        "Recovery controls support continued or restored operations after disruption, such as tested continuity procedures, backups, or alternate arrangements.",
+        "Governance controls define accountability, reporting, escalation, challenge, and review across the framework."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "One activity can support more than one purpose, and labels differ by organisation. The important question is whether the control addresses the stated risk, can be performed consistently, produces reviewable evidence, and has a clear response when it fails."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fictional operational-risk case: duplicate payment"
+    },
+    {
+      "type": "paragraph",
+      "text": "A fictional payment file contains two rows with the same transaction reference and amount. A validation rule flags the duplicate before release. The operations associate confirms that both rows belong to the same account and date, checks the approved source and file version, records the exception, and prevents the flagged row from moving forward under the documented process. The authorised owner confirms that one row was uploaded twice. The corrected file is independently reviewed, released, and later reconciled to the settlement and account records."
+    },
+    {
+      "type": "paragraph",
+      "text": "The preventive validation reduced the chance of duplicate processing, the review supported segregation of duties, and reconciliation verified the outcome. The incident or near-miss record can also support root-cause analysis: how did the duplicate enter the file, could the source control be improved, and are similar processes exposed? The example is invented and does not describe a bank's actual procedure."
+    },
+    {
+      "type": "link",
+      "label": "Learn how reconciliation supports financial controls",
+      "href": "/resources/reconciliation-in-finance/",
+      "routeId": "resource-reconciliation-in-finance"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fictional credit-operations case: missing evidence"
+    },
+    {
+      "type": "paragraph",
+      "text": "A fictional loan-processing case reaches the review queue without one required document. The associate does not mark the document complete or infer the applicant's eligibility. They confirm the checklist version, record the missing item, stop the affected step, notify the responsible owner through the approved channel, and retain the case status. Once valid evidence is received, the case returns to the authorised assessment or approval path. The control protects the process without turning the associate into the credit decision-maker."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Risk-management roles in banking"
+    },
+    {
+      "type": "paragraph",
+      "text": "Risk work can appear in credit risk, operational risk, market risk, liquidity, compliance, financial crime, information security, model risk, third-party risk, business continuity, internal control, audit, and frontline operations. Some roles design frameworks and challenge decisions; others own processes, perform controls, monitor indicators, investigate cases, prepare reports, or remediate issues. The organisational model and independence requirements vary, so candidates should read the reporting line and responsibilities carefully."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Risk identification and the ability to write a clear event-cause-impact statement.",
+        "Control mapping that explains purpose, owner, evidence, frequency, and response to failure.",
+        "Data literacy for trends, ageing, exceptions, thresholds, reconciliations, and reporting quality.",
+        "Investigation that follows evidence without hiding an issue or assuming a cause too early.",
+        "Written communication that states severity, scope, dependency, action, due date, and escalation clearly.",
+        "Professional scepticism combined with respect for authority, confidentiality, and documented procedure."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How a fresher can practise risk thinking"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Choose a fictional process such as a payment file, loan-document queue, or account reconciliation.",
+        "Write the objective, inputs, outputs, owners, systems, deadlines, and sensitive information involved.",
+        "List five plausible failure events and state the operational or customer impact without exaggeration.",
+        "Map one preventive and one detective control to each material risk, then state the evidence produced.",
+        "Create two exceptions and write the investigation, owner, escalation, authorised action, and closure test.",
+        "Review whether any control is vague, impossible to evidence, dependent on one person, or disconnected from the risk."
+      ]
+    },
+    {
+      "type": "callout",
+      "title": "Keep practice data fictional",
+      "text": "Do not use real customer, employer, account, transaction, incident, vulnerability, or confidential control information in a portfolio or interview example. Demonstrate the method using invented records."
+    },
+    {
+      "type": "link",
+      "label": "Read the Finance Operations career guide",
+      "href": "/career-guides/finance-operations/",
+      "routeId": "career-guide-finance-operations"
+    },
+    {
+      "type": "link",
+      "label": "Study financial statement analysis in a banking context",
+      "href": "/resources/financial-statement-analysis/",
+      "routeId": "resource-financial-statement-analysis"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How this topic relates to Centaur Careers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Risk context appears within the Finance Operations learning area of Centaur Careers' Financial Operations Masterclass, alongside loan processing and credit analysis. KYC, AML, payments, and other modules also connect with controls and escalation. This article does not create a separate risk-management or FRM course, claim an external credential, or promise a risk job. Use the course page for the published curriculum and confirm current terms before enrolling."
+    },
+    {
+      "type": "link",
+      "label": "Explore the Finance Operations module",
+      "href": "/courses/finance-operations/",
+      "routeId": "finance-operations"
+    },
+    {
+      "type": "link",
+      "label": "Review the Financial Operations Masterclass",
+      "href": "/courses/",
+      "routeId": "courses"
+    },
+    {
+      "type": "faq",
+      "question": "What is risk management in banking?",
+      "answer": "It is the structured process of identifying banking risks, assessing exposure, applying approved controls, monitoring outcomes, and escalating matters that exceed authority or tolerance. The exact framework depends on the bank, activity, and current requirements."
+    },
+    {
+      "type": "faq",
+      "question": "What are the main types of banking risk?",
+      "answer": "Common categories include credit, operational, market, liquidity, compliance, conduct, financial-crime, technology, cyber, and third-party risk. Definitions and ownership vary, so use the institution's current framework for real work."
+    },
+    {
+      "type": "faq",
+      "question": "Is reconciliation a risk-management control?",
+      "answer": "Reconciliation can be a detective control when it compares records that should agree and makes differences visible for investigation. Its effectiveness depends on scope, frequency, matching logic, evidence, ownership, and escalation."
+    },
+    {
+      "type": "faq",
+      "question": "Does Centaur Careers offer FRM preparation or a separate risk-management course?",
+      "answer": "No such offering is claimed here. Risk concepts are discussed in connection with the published Finance Operations module inside the Financial Operations Masterclass."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/financial-management-decision-framework.png",
+    "alt": "Banking risk-management illustration connecting risk events, controls, monitoring, escalation and review",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-27",
+  "updatedAt": "2026-09-27",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Risk Management in Banking: Types, Controls and Roles",
+    "description": "Learn banking-risk types, risk and control workflows, practical operational examples, career skills and the limits of an educational guide.",
+    "canonicalPath": "/blog/risk-management-in-banking/",
+    "noindex": false
+  },
+  "tags": [
+    "Risk Management in Banking",
+    "Operational Risk",
+    "Banking Controls",
+    "Finance Operations",
+    "Banking Careers"
+  ],
+  "relatedRouteIds": [
+    "blog",
+    "career-guides",
+    "career-guide-finance-operations",
+    "career-guide-kyc-aml-analyst",
+    "resource-reconciliation-in-finance",
+    "resource-financial-statement-analysis",
+    "finance-operations",
+    "kyc-aml-compliance",
+    "courses",
+    "contact"
+  ],
+  "redirects": [],
+  "evidenceNotes": [
+    "RBI Master Direction on Minimum Capital Requirements for Operational Risk, 26 June 2023: https://www.rbi.org.in/scripts/FS_Notification.aspx?Id=12520",
+    "Basel Committee Revisions to the Principles for the Sound Management of Operational Risk, current 2021 version: https://www.bis.org/publications/202103-guidelines-revisions-principles-sound-management-operational-risk",
+    "Risk categories and role descriptions are educational summaries; official definitions, applicability, ownership, and current requirements must be checked against the institution's framework and primary sources.",
+    "All cases use fictional data and make no regulatory, legal, investment, credit-decision, employment, salary, or credential claim.",
+    "The article does not claim FRM preparation or a standalone Centaur Careers risk-management course."
+  ]
+}

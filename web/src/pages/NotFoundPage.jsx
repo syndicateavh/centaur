@@ -7,11 +7,11 @@ export default function NotFoundPage() {
   const seo = getSeoRoute('not-found');
 
   return (
-    <section className="flex min-h-[65vh] items-center bg-muted py-20">
+    <section aria-labelledby="not-found-page-title" className="flex min-h-[65vh] items-center bg-muted py-20">
       <div className="container mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-        <Compass className="mx-auto h-14 w-14 text-accent" aria-hidden="true" />
-        <p className="mt-6 text-sm font-bold uppercase tracking-[0.2em] text-accent">404 error</p>
-        <h1 className="mt-3 text-4xl font-black text-primary sm:text-5xl">{seo.h1}</h1>
+        <Compass className="mx-auto h-14 w-14 text-accent-ink" aria-hidden="true" />
+        <p className="mt-6 text-sm font-bold uppercase tracking-[0.2em] text-accent-ink">404 error</p>
+        <h1 id="not-found-page-title" className="mt-3 text-4xl font-black text-primary sm:text-5xl">{seo.h1}</h1>
         <p className="mx-auto mt-5 text-lg text-muted-foreground">
           The address may be incorrect or the page may have moved. Use one of the links below to continue.
         </p>

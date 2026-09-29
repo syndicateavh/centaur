@@ -1,0 +1,5 @@
+source_id,record_type,trade_ref,instrument,side,trade_date,exercise_settlement_date,quantity,price_inr,gross_amount_inr,record_status,exercise_note
+SIM-EX-01,execution_note,SIM-1042,Practice Share P,Buy,2026-09-22,2026-09-24,100,250,25000,Recorded,Fictional execution-team note; original approval still needs checking
+SIM-INT-02,internal_trade_capture,SIM-1042,Practice Share P,Buy,2026-09-22,2026-09-24,100,250,25000,Pending confirmation,Internal system record
+SIM-CP-03,counterparty_confirmation,SIM-1042,Practice Share P,Buy,2026-09-22,2026-09-24,10,250,2500,Unmatched,Counterparty-supplied record
+SIM-SET-04,settlement_instruction,SIM-1042,Practice Share P,Buy,2026-09-22,2026-09-24,100,250,25000,Queued,Instruction must be checked against an agreed trade before release

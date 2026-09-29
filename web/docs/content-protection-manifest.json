@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "baselineDate": "2026-09-27",
+  "purpose": "Protect approved original literature and business-fact source files from accidental SEO rewrites.",
+  "approvalRequired": true,
+  "approvedOriginalSource": {
+    "path": "dist/assets/index-Dkrbbp0A.js",
+    "description": "Original Centaur Careers production bundle",
+    "sha256": "53d4f5f975e2336fc091cb2439370b0664e0349b5f0098e93e43310906419ad8"
+  },
+  "protectedFiles": [
+    {
+      "path": "src/content/sourceContent.js",
+      "sha256": "75fb268ee3ff82b99899d07f21d259cd425cda4e1cb1587532c30e35cdca62b5"
+    },
+    {
+      "path": "src/content/businessData.js",
+      "sha256": "bcfb22a04113b884f4f87e60ea82624aed1806731c4f6f89dd09002026352e34"
+    },
+    {
+      "path": "src/content/courseData.js",
+      "sha256": "58d5ed314c95a49c71bc8649355ff1e4d4db0dc0b823921e6b4c5272e2e3a7e9"
+    },
+    {
+      "path": "src/content/faqData.js",
+      "sha256": "3ace3c1b482877234819da745861b5c1f47886643dfd457ae35e7c93c9f506a9"
+    }
+  ]
+}

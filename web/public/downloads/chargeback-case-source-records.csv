@@ -1,0 +1,6 @@
+source,record_id,case_reference,event_date,amount_inr,status,observed_fact
+dispute_notice,DN-81,CB-81,2026-09-18,1200,open,Customer states online service was not received
+order_system,OR-81,CB-81,2026-09-16,1200,completed,Order marked completed; delivery evidence not attached
+service_log,SV-81,CB-81,2026-09-16,1200,access_event,One access event; identity and service completion require review
+refund_queue,RF-81,CB-81,2026-09-19,1200,pending,Refund request exists; no posted refund in this packet
+settlement_file,ST-81,CB-81,2026-09-17,1200,settled,Original transaction settled before notice

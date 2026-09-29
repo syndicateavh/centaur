@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "fintech-operations-roles-workflows",
+  "slug": "fintech-operations-roles-workflows",
+  "status": "published",
+  "title": "FinTech Operations: Roles and Workflows",
+  "excerpt": "Explore FinTech operations roles through payment, onboarding, product, data and control workflows, with a fictional exception case and skill checklist.",
+  "category": "retail-banking",
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Finance education editorial team",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "FinTech operations connects a technology-enabled financial product to the processes that keep it accurate, safe and usable. The work may cover digital payments, onboarding, customer operations, lending operations, fraud or risk queues, reconciliation, data quality, product support and incident response. A FinTech operations role is not just technical support and it is not automatically a software-engineering role. It is a process-and-controls pathway where the exact responsibilities depend on the product, licence, provider and team design."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Common FinTech operations workflows"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Customer onboarding: collect required information, validate identity, record status and route exceptions.",
+        "Payments operations: monitor transactions, network responses, settlement, refunds, disputes and reconciliation.",
+        "Product operations: translate policy and customer needs into controlled workflows, definitions and service rules.",
+        "Risk operations: review alerts, document decisions and escalate cases within the approved control model.",
+        "Data operations: monitor completeness, ownership, lineage, reporting definitions and corrections.",
+        "Incident operations: coordinate impact assessment, communication, recovery evidence and post-incident learning."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A simple FinTech operating model"
+    },
+    {
+      "type": "paragraph",
+      "text": "A customer action usually creates a request, transaction or case. A system validates it, routes it and creates records. Operations teams monitor the expected state, compare sources, respond to exceptions and make sure the right owner is involved. The control goal is not to remove every manual step at any cost. It is to make decisions traceable, access appropriate, customer communication accurate and unresolved risk visible."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fictional case: payment status mismatch"
+    },
+    {
+      "type": "paragraph",
+      "text": "In a fictional payment workflow, the user interface says a transfer is complete, but the ledger and network response show different statuses. The operations analyst captures the reference, route, timestamp, response code and account state, then checks the reconciliation queue and current incident procedure. They avoid telling the customer that funds are final until the approved source confirms it. The case record states the customer impact, what is known, the next check and the owner. This is the kind of reasoning employers may test in an operations interview."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Skills for FinTech operations roles"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Process mapping and the ability to explain a system outcome in plain language.",
+        "Spreadsheet, data-quality and reconciliation discipline.",
+        "Comfort with queues, service levels, root-cause notes and incident communication.",
+        "Awareness of privacy, access, fraud, customer-protection and escalation controls.",
+        "Curiosity about APIs, events and system states without pretending to be a developer.",
+        "The judgement to stop, ask and escalate when a control or customer outcome is unclear."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A safe portfolio project"
+    },
+    {
+      "type": "paragraph",
+      "text": "Build a fictional payment-operations dashboard with a small dataset. Show transaction status, an exception queue, a reconciliation result, ageing and a short escalation note. Keep every record synthetic and label assumptions. Explain what the dashboard cannot prove. A project that shows careful definitions and limitations is stronger than a colourful dashboard that hides missing data."
+    },
+    {
+      "type": "link",
+      "label": "Read the Digital Payments learning module",
+      "href": "/courses/digital-payments/",
+      "routeId": "digital-payments"
+    },
+    {
+      "type": "link",
+      "label": "Explore the FinTech and Neo-Banking module",
+      "href": "/courses/fintech/",
+      "routeId": "fintech-neo-banking"
+    },
+    {
+      "type": "link",
+      "label": "Follow the Digital Payment Operations career guide",
+      "href": "/career-guides/digital-payments-operations/",
+      "routeId": "career-guide-digital-payments-operations"
+    },
+    {
+      "type": "link",
+      "label": "Ask the team about current cohort coverage",
+      "href": "/contact/",
+      "routeId": "contact"
+    },
+    {
+      "type": "link",
+      "label": "Browse all finance career insights",
+      "href": "/blog/",
+      "routeId": "blog"
+    },
+    {
+      "type": "link",
+      "label": "Review RBI payment-system information",
+      "href": "https://rbi.org.in/scripts/RTGS_Notification.aspx?Id=12133"
+    },
+    {
+      "type": "link",
+      "label": "Check NPCI UPI product statistics",
+      "href": "https://www.npci.org.in/product/upi/product-statistics"
+    },
+    {
+      "type": "paragraph",
+      "text": "FinTech changes quickly, so confirm current product, regulatory and employer requirements before relying on a workflow description. This article is an educational overview and does not claim a partnership, licence, product access or employment result."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/fintech-operations-roles-workflows.png",
+    "alt": "Editorial illustration of a fintech operations control room connecting payments and workflows",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-27",
+  "updatedAt": "2026-09-27",
+  "scheduledAt": null,
+  "seo": {
+    "title": "FinTech Operations: Roles and Workflows | Centaur Careers",
+    "description": "Explore FinTech operations roles across payments, onboarding, data, product and controls with a fictional exception case and skills.",
+    "canonicalPath": "/blog/fintech-operations-roles-workflows/",
+    "noindex": false,
+    "focusKeyword": "fintech operations roles",
+    "secondaryKeywords": ["fintech operations", "payments operations", "digital banking"]
+  },
+  "tags": ["FinTech Operations Roles", "FinTech Operations", "Payments Operations", "Digital Banking", "Finance Careers"],
+  "relatedRouteIds": ["blog", "digital-payments", "fintech-neo-banking", "career-guide-digital-payments-operations", "contact"],
+  "redirects": [],
+  "evidenceNotes": [
+    "RBI payment and settlement systems information: https://rbi.org.in/scripts/RTGS_Notification.aspx?Id=12133",
+    "NPCI UPI product statistics: https://www.npci.org.in/product/upi/product-statistics",
+    "All project records and exception cases are fictional; current product and regulatory requirements must be verified."
+  ]
+}

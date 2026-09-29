@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "banking-interview-questions-freshers",
+  "slug": "banking-interview-questions-freshers",
+  "status": "published",
+  "title": "Banking Interview Questions for Freshers",
+  "excerpt": "Prepare for banking interview questions as a fresher with customer, KYC, payments, operations and control prompts plus an honest answer method.",
+  "category": "interview-preparation",
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Finance education editorial team",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Banking interview questions for freshers can cover customer service, account and transaction basics, KYC, AML, payments, documentation, accuracy and how you handle an exception. The right preparation depends on the role: a branch, operations, compliance, payments or credit interview will test different situations. Use the prompts below to practise reasoning rather than memorising a guaranteed answer. Current regulatory requirements and employer procedures should always be checked from the relevant authority or job description."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to answer banking questions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Start with a plain-language definition, then give a small example and name the control or escalation point. If the question involves a customer, protect confidentiality and do not promise an outcome you cannot authorise. If it involves KYC or AML, explain that you would follow the current procedure, preserve evidence and escalate a concern rather than making an unsupported accusation. If you do not know a rule, say how you would verify it."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Questions to practise"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Why do you want to work in banking? Connect your interest to the actual role and learning requirements.",
+        "How would you handle an upset customer whose transaction is pending? Confirm identity, explain what is known and use the approved route.",
+        "What is KYC and why does it matter? Explain identity and customer information controls without treating it as a one-time formality.",
+        "What would you do if a document did not match the application? Stop the dependent step, record the gap and escalate.",
+        "What is the difference between a payment failure and a delayed status? Use the source system and response evidence.",
+        "How do you protect customer data? Follow access, storage, communication and incident-reporting rules.",
+        "What would you do if a colleague asked you to skip a check? Explain the control and involve the authorised owner.",
+        "How would you reconcile two banking records? Define scope, match sources, investigate breaks and document closure.",
+        "How do you prioritise a queue? Consider risk, ageing, deadline, customer impact and dependencies.",
+        "What is an escalation? Describe when a case exceeds your authority or could create risk.",
+        "How do you learn a new banking product? Use approved material, ask focused questions and test your understanding.",
+        "Describe a time you found an error. Explain the evidence, correction and prevention step.",
+        "What would you do if a customer asked for a service you could not approve? Be transparent and route it correctly.",
+        "How would you explain a process to someone with no finance background? Use simple language and confirm understanding.",
+        "What questions would you ask the interviewer? Ask about daily tasks, training, controls, tools and review."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A fictional KYC case"
+    },
+    {
+      "type": "paragraph",
+      "text": "Suppose a fictional business onboarding file contains an ownership diagram that does not agree with the submitted registration document. A careful answer is not to approve or reject the customer from the interview chair. The analyst records the mismatch, checks the current procedure, requests the authorised evidence through the approved channel and escalates if the case meets the defined risk criteria. The case note should be factual, neutral and specific."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What to avoid"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Promising a bank job, promotion or salary because you completed a course.",
+        "Quoting an old regulatory rule without checking the current official source.",
+        "Sharing customer information in an unauthorised channel.",
+        "Calling a customer suspicious without evidence or the required review process.",
+        "Giving a memorised answer that ignores the actual job duties."
+      ]
+    },
+    {
+      "type": "link",
+      "label": "Review finance and BFSI basics",
+      "href": "/resources/finance-gk/",
+      "routeId": "resource-finance-gk"
+    },
+    {
+      "type": "link",
+      "label": "Explore the KYC and AML compliance module",
+      "href": "/courses/kyc-aml/",
+      "routeId": "kyc-aml-compliance"
+    },
+    {
+      "type": "link",
+      "label": "Read the KYC and AML analyst career guide",
+      "href": "/career-guides/kyc-aml-analyst/",
+      "routeId": "career-guide-kyc-aml-analyst"
+    },
+    {
+      "type": "link",
+      "label": "Practise finance interview questions",
+      "href": "/resources/investment-banking-interview-questions/",
+      "routeId": "resource-investment-banking-interview-questions"
+    },
+    {
+      "type": "link",
+      "label": "Browse all finance career insights",
+      "href": "/blog/",
+      "routeId": "blog"
+    },
+    {
+      "type": "link",
+      "label": "Check current RBI KYC directions",
+      "href": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=12866"
+    },
+    {
+      "type": "link",
+      "label": "Review the FATF Recommendations",
+      "href": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the current official source and employer procedure for real customer or compliance work. This article is interview preparation, not legal advice, compliance approval or a promise of bank employment."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/banking-interview-questions-freshers.png",
+    "alt": "Editorial illustration of a graduate preparing for a banking interview in a modern branch",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-27",
+  "updatedAt": "2026-09-27",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Banking Interview Questions for Freshers | Centaur Careers",
+    "description": "Prepare for banking interview questions for freshers with practice prompts on customer service, KYC, payments, controls, and banking operations.",
+    "canonicalPath": "/blog/banking-interview-questions-freshers/",
+    "noindex": false,
+    "focusKeyword": "banking interview questions for freshers",
+    "secondaryKeywords": ["banking interview questions", "KYC interview questions", "banking careers"]
+  },
+  "tags": ["Banking Interview Questions for Freshers", "Banking Interview Questions", "KYC Interview Questions", "Banking Careers", "Interview Preparation"],
+  "relatedRouteIds": ["blog", "kyc-aml-compliance", "career-guide-kyc-aml-analyst", "resource-finance-gk", "resource-investment-banking-interview-questions"],
+  "redirects": [],
+  "evidenceNotes": [
+    "RBI KYC Directions / amendment: https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=12866",
+    "FATF Recommendations: https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html",
+    "The case is fictional; this article is not legal advice or an employer interview prediction."
+  ]
+}

@@ -1,0 +1,4 @@
+source,record_id,payment_reference,event_date,currency,gross_amount,net_amount,status,notes
+gateway,GW-204,PX204,2026-09-21,INR,2500,2500,success,Gateway status is not bank or ledger proof
+bank,BK-204,PX204,2026-09-22,INR,2500,2475,credit,INR 25 difference requires approved settlement detail
+ledger,LD-204,PX204,2026-09-22,INR,,,missing,No matching line in the defined extract

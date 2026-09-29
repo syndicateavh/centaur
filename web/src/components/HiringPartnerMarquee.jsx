@@ -1,44 +1,80 @@
-import React, { useRef } from 'react';
-import { useMarqueeMotion } from '@/components/home/useMarqueeMotion.js';
+import React, { useMemo, useState } from 'react';
 
-function PartnerLogo({ partner, duplicate = false }) {
+export const HIRING_PARTNER_MARQUEE_SPEED_SECONDS = 36;
+
+function PartnerLogo({ partner }) {
+  const logoSrc = partner.src ?? (partner.logo ? `/images/partners/${partner.logo}` : null);
+  const logoScale = partner.homeScale ?? 1;
   const handleImageError = (event) => {
     event.currentTarget.classList.add('hidden');
-    event.currentTarget.nextElementSibling?.classList.remove('hidden');
   };
 
   return (
-    <li className="flex h-20 w-44 shrink-0 items-center justify-center rounded-2xl border border-border bg-white px-6 py-4 shadow-sm transition-colors hover:border-accent/50 hover:bg-[#fffdf5] sm:h-24 sm:w-52">
-      <img
-        src={`https://www.google.com/s2/favicons?domain_url=${encodeURIComponent(partner.domain)}&sz=128`}
-        alt={duplicate ? '' : `${partner.name} logo`}
-        aria-hidden={duplicate || undefined}
-        className="h-12 max-w-full object-contain sm:h-14"
-        decoding="async"
-        loading="lazy"
-        onError={handleImageError}
-      />
-      <span className="hidden text-center text-xs font-bold leading-tight text-primary">{partner.name}</span>
+    <li className="home-partner-marquee-card group flex shrink-0 items-center justify-center">
+      {logoSrc && (
+        <span
+          className="home-partner-marquee-logo-frame"
+          style={{ '--home-partner-logo-scale': logoScale }}
+        >
+          <img
+            src={logoSrc}
+            alt={`${partner.name} logo`}
+            width="160"
+            height="72"
+            className="home-partner-marquee-logo max-w-full object-contain"
+            decoding="async"
+            loading="lazy"
+            onError={handleImageError}
+          />
+        </span>
+      )}
     </li>
   );
 }
 
-export function HiringPartnerMarquee({ partners }) {
-  const marqueeRef = useRef(null);
-  const trackRef = useRef(null);
+function PartnerSet({ partners, duplicate = false }) {
+  return (
+    <ul className="home-partner-marquee-set" aria-hidden={duplicate || undefined}>
+      {partners.map((partner) => (
+        <PartnerLogo key={`${partner.name}-${duplicate ? 'duplicate' : 'primary'}`} partner={partner} />
+      ))}
+    </ul>
+  );
+}
 
-  useMarqueeMotion(marqueeRef, trackRef);
+export function HiringPartnerMarquee({ partners }) {
+  const [isPaused, setIsPaused] = useState(false);
+  const rows = useMemo(() => {
+    const groupedPartners = [[], [], []];
+    partners.forEach((partner, index) => groupedPartners[index % groupedPartners.length].push(partner));
+    return groupedPartners.filter((row) => row.length > 0);
+  }, [partners]);
+
+  const handleBlur = (event) => {
+    if (!event.currentTarget.contains(event.relatedTarget)) setIsPaused(false);
+  };
 
   return (
-    <div ref={marqueeRef} role="region" className="home-partner-marquee relative overflow-hidden border-y border-border py-4" aria-label="Hiring partner logos">
-      <div ref={trackRef} className="flex w-max will-change-transform">
-        <ul data-marquee-set className="flex gap-3 pr-3">
-          {partners.map((partner) => <PartnerLogo key={partner.name} partner={partner} />)}
-        </ul>
-        <ul className="flex gap-3 pr-3" aria-hidden="true">
-          {partners.map((partner) => <PartnerLogo key={`${partner.name}-duplicate`} partner={partner} duplicate />)}
-        </ul>
-      </div>
+    <div
+      role="region"
+      aria-label="Hiring partner logos"
+      className={`home-partner-marquee${isPaused ? ' is-paused' : ''}`}
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+      onFocus={() => setIsPaused(true)}
+      onBlur={handleBlur}
+    >
+      {rows.map((row, rowIndex) => (
+        <div
+          key={`partner-marquee-row-${rowIndex + 1}`}
+          className={`home-partner-marquee-row ${rowIndex % 2 ? 'is-reversed' : ''}`}
+        >
+          <div className="home-partner-marquee-track">
+            <PartnerSet partners={row} />
+            <PartnerSet partners={row} duplicate />
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

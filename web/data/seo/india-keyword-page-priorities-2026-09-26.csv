@@ -1,0 +1,25 @@
+priority,owner_url,approved_primary_keyword,approved_keyword_count,page_role,next_action,claim_guardrail
+P0,/career-guides/finance-careers-after-graduation/,best finance course after BCom,62,graduate career decision guide,"Answer finance careers and jobs after BCom, then link to the programme",Do not promise an outcome without published terms
+P0,/career-guides/investment-banking-operations/,what is investment banking operations,40,investment banking operations role explainer,"Explain the role, tasks and route into operations",Distinguish operations roles from front-office investment banking
+P0,/career-guides/kyc-aml-analyst/,what is KYC in banking,53,KYC and AML role explainer,Explain analyst tasks and entry requirements,Do not imply a guaranteed KYC analyst role
+P0,/career-guides/trade-lifecycle/,trade lifecycle in investment banking,83,trade lifecycle learning guide,Give a clear step-by-step operations explanation,Describe learning content without implying a separate course
+P0,/courses/,investment banking operations course,85,single Masterclass enrolment page,Strengthen the one programme answer and enquiry path,"One Financial Operations Masterclass; subjects are modules, not separate courses"
+P1,/career-guides/choosing-finance-career-course/,investment banking course with placement support,14,course-selection decision guide,Give a factual selection checklist and link to published terms,No unsupported placement or guarantee comparisons
+P1,/career-guides/finance-operations/,finance operations career,57,finance operations career guide,Clarify tasks and career fit for graduates,Keep informational intent distinct from the programme page
+P1,/career-guides/financial-operations-faq/,which course is best for investment banking operations in India,30,programme question guide,Answer common eligibility and learning-mode questions,Keep answers consistent with current published programme terms
+P1,/compare/investment-banking-operations-courses/,Imarticus investment banking course alternative,12,factual course comparison,Review competitor facts and explain scope and delivery clearly,Date and source every mutable competitor claim
+P1,/india/,investment banking operations course India,108,national access and study-mode hub,Explain live online access across India and link to the single programme,Avoid duplicating the programme sales page or claiming national classrooms
+P1,/locations/lucknow/,investment banking course in Lucknow,8,verified Lucknow location guide,Explain the verified local learning access and programme,"Use only verified address, facility and delivery claims"
+P1,/resources/investment-banking-interview-questions/,investment banking operations interview questions for freshers,25,operations interview preparation,Improve practical answers and link to relevant role guides,"Keep scope to investment banking operations, not generic accounting"
+P2,/career-guides/digital-payments-operations/,digital payment operations,21,payments operations career explainer,Explain payments operations tasks,No standalone payments course claim
+P2,/career-guides/fintech-operations/,fintech career for BCom graduates,16,fintech operations career explainer,Explain operations roles and transferable skills,No standalone fintech course claim
+P2,/career-guides/retail-banking-operations/,retail banking operations meaning,18,retail banking career explainer,Clarify the work and entry route,Keep guide distinct from a course offer
+P2,/india/bengaluru/,investment banking course in Bangalore,16,regional online-access guide,Review page-level GSC demand before a focused update,Live online outside Lucknow; no Bengaluru classroom claim
+P2,/india/delhi-ncr/,investment banking course in Delhi,24,regional online-access guide,Review page-level GSC demand before a focused update,Live online outside Lucknow; no Delhi classroom claim
+P2,/india/hyderabad/,investment banking course in Hyderabad,8,regional online-access guide,Review page-level GSC demand before a focused update,Live online outside Lucknow; no Hyderabad classroom claim
+P2,/india/mumbai/,investment banking course in Mumbai,8,regional online-access guide,Review page-level GSC demand before a focused update,Live online outside Lucknow; no Mumbai classroom claim
+P2,/india/pune/,investment banking course in Pune,8,regional online-access guide,Review page-level GSC demand before a focused update,Live online outside Lucknow; no Pune classroom claim
+P3,/courses/digital-payments/,digital payments course,4,digital payments module guide,Audit wording for a module within the Masterclass,Do not sell a standalone digital payments course
+P3,/courses/fintech/,fintech course for graduates,4,fintech module guide,Audit wording for a module within the Masterclass,Do not sell a standalone fintech course
+P3,/courses/kyc-aml/,KYC AML course,18,KYC and AML module guide,Audit wording for a module within the Masterclass,Do not sell a standalone KYC AML course
+P3,/courses/retail-banking/,retail banking operations course,6,retail banking module guide,Audit wording for a module within the Masterclass,Do not sell a standalone retail banking course

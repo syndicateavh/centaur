@@ -1,0 +1,43 @@
+{
+  "reviewedOn": "2026-09-26",
+  "market": "India",
+  "metricMarket": "unverified in Semrush export",
+  "pages": [
+    { "path": "/courses/", "priority": "P0", "role": "single Masterclass enrolment page", "action": "Strengthen the one programme answer and enquiry path", "guardrail": "One Financial Operations Masterclass; subjects are modules, not separate courses" },
+    { "path": "/career-guides/finance-careers-after-graduation/", "priority": "P0", "role": "graduate career decision guide", "action": "Answer finance careers and jobs after BCom, then link to the programme", "guardrail": "Do not promise an outcome without published terms" },
+    { "path": "/career-guides/investment-banking-operations/", "priority": "P0", "role": "investment banking operations role explainer", "action": "Explain the role, tasks and route into operations", "guardrail": "Distinguish operations roles from front-office investment banking" },
+    { "path": "/career-guides/trade-lifecycle/", "priority": "P0", "role": "trade lifecycle learning guide", "action": "Give a clear step-by-step operations explanation", "guardrail": "Describe learning content without implying a separate course" },
+    { "path": "/career-guides/kyc-aml-analyst/", "priority": "P0", "role": "KYC and AML role explainer", "action": "Explain analyst tasks and entry requirements", "guardrail": "Do not imply a guaranteed KYC analyst role" },
+    { "path": "/resources/investment-banking-interview-questions/", "priority": "P1", "role": "operations interview preparation", "action": "Improve practical answers and link to relevant role guides", "guardrail": "Keep scope to investment banking operations, not generic accounting" },
+    { "path": "/india/", "priority": "P1", "role": "national access and study-mode hub", "action": "Explain live online access across India and link to the single programme", "guardrail": "Avoid duplicating the programme sales page or claiming national classrooms" },
+    { "path": "/locations/lucknow/", "priority": "P1", "role": "verified Lucknow location guide", "action": "Explain the verified local learning access and programme", "guardrail": "Use only verified address, facility and delivery claims" },
+    { "path": "/career-guides/finance-operations/", "priority": "P1", "role": "finance operations career guide", "action": "Clarify tasks and career fit for graduates", "guardrail": "Keep informational intent distinct from the programme page" },
+    { "path": "/career-guides/choosing-finance-career-course/", "priority": "P1", "role": "course-selection decision guide", "action": "Give a factual selection checklist and link to published terms", "guardrail": "No unsupported placement or guarantee comparisons" },
+    { "path": "/compare/investment-banking-operations-courses/", "priority": "P1", "role": "factual course comparison", "action": "Review competitor facts and explain scope and delivery clearly", "guardrail": "Date and source every mutable competitor claim" },
+    { "path": "/career-guides/financial-operations-faq/", "priority": "P1", "role": "programme question guide", "action": "Answer common eligibility and learning-mode questions", "guardrail": "Keep answers consistent with current published programme terms" },
+    { "path": "/india/delhi-ncr/", "priority": "P2", "role": "regional online-access guide", "action": "Review page-level GSC demand before a focused update", "guardrail": "Live online outside Lucknow; no Delhi classroom claim" },
+    { "path": "/india/bengaluru/", "priority": "P2", "role": "regional online-access guide", "action": "Review page-level GSC demand before a focused update", "guardrail": "Live online outside Lucknow; no Bengaluru classroom claim" },
+    { "path": "/india/mumbai/", "priority": "P2", "role": "regional online-access guide", "action": "Review page-level GSC demand before a focused update", "guardrail": "Live online outside Lucknow; no Mumbai classroom claim" },
+    { "path": "/india/pune/", "priority": "P2", "role": "regional online-access guide", "action": "Review page-level GSC demand before a focused update", "guardrail": "Live online outside Lucknow; no Pune classroom claim" },
+    { "path": "/india/hyderabad/", "priority": "P2", "role": "regional online-access guide", "action": "Review page-level GSC demand before a focused update", "guardrail": "Live online outside Lucknow; no Hyderabad classroom claim" },
+    { "path": "/career-guides/retail-banking-operations/", "priority": "P2", "role": "retail banking career explainer", "action": "Clarify the work and entry route", "guardrail": "Keep guide distinct from a course offer" },
+    { "path": "/career-guides/digital-payments-operations/", "priority": "P2", "role": "payments operations career explainer", "action": "Explain payments operations tasks", "guardrail": "No standalone payments course claim" },
+    { "path": "/career-guides/fintech-operations/", "priority": "P2", "role": "fintech operations career explainer", "action": "Explain operations roles and transferable skills", "guardrail": "No standalone fintech course claim" },
+    { "path": "/courses/kyc-aml/", "priority": "P3", "role": "KYC and AML module guide", "action": "Audit wording for a module within the Masterclass", "guardrail": "Do not sell a standalone KYC AML course" },
+    { "path": "/courses/retail-banking/", "priority": "P3", "role": "retail banking module guide", "action": "Audit wording for a module within the Masterclass", "guardrail": "Do not sell a standalone retail banking course" },
+    { "path": "/courses/digital-payments/", "priority": "P3", "role": "digital payments module guide", "action": "Audit wording for a module within the Masterclass", "guardrail": "Do not sell a standalone digital payments course" },
+    { "path": "/courses/fintech/", "priority": "P3", "role": "fintech module guide", "action": "Audit wording for a module within the Masterclass", "guardrail": "Do not sell a standalone fintech course" }
+  ],
+  "reviewedQueries": [
+    { "keyword": "investment banking operations courses", "decision": "existing", "owner": "/courses/", "reason": "Plural comparison intent can be answered on the single programme page with clear scope" },
+    { "keyword": "finance careers", "decision": "existing", "owner": "/career-guides/finance-careers-after-graduation/", "reason": "Graduates' career exploration fits the existing guide" },
+    { "keyword": "jobs after bcom", "decision": "existing", "owner": "/career-guides/finance-careers-after-graduation/", "reason": "The guide addresses finance options after graduation; do not claim all BCom jobs" },
+    { "keyword": "investment banking operations", "decision": "existing", "owner": "/career-guides/investment-banking-operations/", "reason": "Broad informational role intent" },
+    { "keyword": "trade lifecycle", "decision": "existing", "owner": "/career-guides/trade-lifecycle/", "reason": "Matches the existing explainer" },
+    { "keyword": "kyc analyst job description", "decision": "existing", "owner": "/career-guides/kyc-aml-analyst/", "reason": "Matches the existing role guide" },
+    { "keyword": "investment banking interview questions", "decision": "existing", "owner": "/resources/investment-banking-interview-questions/", "reason": "Answer operations interview questions and qualify scope" },
+    { "keyword": "accounting interview questions and answers", "decision": "existing", "owner": "/resources/accounting-interview-questions/", "reason": "Published technical accounting interview resource with a fictional transaction set, answer key, and rubric; India demand still needs Search Console validation" },
+    { "keyword": "basic accounting interview questions", "decision": "existing", "owner": "/resources/accounting-interview-questions/", "reason": "Same published technical accounting question cluster; no second page for this variant" },
+    { "keyword": "career options in commerce", "decision": "existing", "owner": "/blog/career-options-in-commerce-decision-map/", "reason": "Published decision-map article owns this broad intent; hold further expansion until GSC and enquiries show qualified demand" }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "id": "investment-banks-in-india-functions-roles",
+  "slug": "investment-banks-in-india-functions-roles",
+  "status": "published",
+  "title": "Investment Banks in India: Functions and Operations Roles",
+  "excerpt": "Learn what investment banks in India do at a high level, how functions differ, where operations fits and which workflow skills support entry-level roles.",
+  "category": "investment-banking",
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Finance education editorial team",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Investment banks in India can support different activities, including corporate finance, capital markets, securities markets, research, risk, technology, compliance, finance and operations. The term does not describe one identical business model or one universal team chart. Firms may have global, domestic, captive, advisory, broker, asset-management or other structures, and the applicable permissions and rules differ. This article gives a high-level career and workflow explanation; it is not a directory, endorsement, investment recommendation or promise of employer access."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Functions commonly associated with investment banking"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Advisory and corporate finance work can support defined transactions such as mergers, acquisitions or capital raising.",
+        "Markets teams can support securities activity, sales, execution, trading or client service under the relevant structure.",
+        "Research teams prepare analysis and communicate it under applicable controls and disclosures.",
+        "Risk, compliance and legal teams provide oversight, challenge, monitoring and escalation.",
+        "Finance and technology teams support financial reporting, systems, data, valuation and infrastructure.",
+        "Operations teams help process confirmations, settlements, reconciliations, events, records and exceptions."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Where operations roles fit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Operations is the controlled process layer between business activity and reliable records. A team may check that a transaction was captured correctly, compare a confirmation, coordinate settlement, process an event, reconcile a statement or monitor an exception queue. The analyst is usually not deciding whether a client should buy a security. They are making sure the authorised activity is represented, checked, communicated and escalated correctly. Titles such as trade support, settlements, reconciliations, corporate actions and operations control may overlap."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fictional workflow example"
+    },
+    {
+      "type": "paragraph",
+      "text": "A fictional desk records a securities transaction, but the external statement contains a different settlement account. The operations analyst verifies the trade reference, instruction date, account details, amendment trail and approval. They preserve both source records and raise an exception with a deadline and owner. A safe learning answer says what evidence is needed and who can approve the next step. It does not make a settlement decision from incomplete information."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Skills that transfer across functions"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Accounting and financial-market vocabulary.",
+        "Reconciliation, data-quality checks and spreadsheet discipline.",
+        "Clear written handoffs and evidence-based exception notes.",
+        "Confidentiality, access control and maker-checker awareness.",
+        "The ability to learn a product without overstating experience or making market claims."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to research an employer responsibly"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the employer's official careers and regulatory disclosures to understand the business, then read the specific job description closely. Check the process, shift, location, tools, qualification, communication and review expectations. Do not assume that an employer name guarantees a role, salary or placement. A portfolio using synthetic records can demonstrate workflow thinking without exposing confidential data."
+    },
+    {
+      "type": "link",
+      "label": "Explore Investment Banking Operations training",
+      "href": "/courses/investment-banking-operations/",
+      "routeId": "investment-banking-operations"
+    },
+    {
+      "type": "link",
+      "label": "Read the Investment Banking Operations career guide",
+      "href": "/career-guides/investment-banking-operations/",
+      "routeId": "career-guide-investment-banking-operations"
+    },
+    {
+      "type": "link",
+      "label": "Follow the Trade Lifecycle guide",
+      "href": "/career-guides/trade-lifecycle/",
+      "routeId": "career-guide-trade-lifecycle"
+    },
+    {
+      "type": "link",
+      "label": "Learn reconciliation in finance",
+      "href": "/resources/reconciliation-in-finance/",
+      "routeId": "resource-reconciliation-in-finance"
+    },
+    {
+      "type": "link",
+      "label": "Browse all finance career insights",
+      "href": "/blog/",
+      "routeId": "blog"
+    },
+    {
+      "type": "link",
+      "label": "Review SEBI investor education material",
+      "href": "https://investor.sebi.gov.in/iematerial.html"
+    },
+    {
+      "type": "paragraph",
+      "text": "India's financial-services landscape and rules evolve. Verify current firm activities, role requirements and regulatory material from the relevant official sources before acting on any conclusion."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/investment-banks-in-india-functions-roles.png",
+    "alt": "Editorial illustration of investment banking functions and roles in an Indian financial district",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-27",
+  "updatedAt": "2026-09-27",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Investment Banks in India: Roles | Centaur Careers",
+    "description": "Learn what investment banks in India do, how functions differ, where operations fits and which workflow skills matter for careers.",
+    "canonicalPath": "/blog/investment-banks-in-india-functions-roles/",
+    "noindex": false,
+    "focusKeyword": "investment banks in India",
+    "secondaryKeywords": ["investment banking functions", "investment banking roles", "finance careers"]
+  },
+  "tags": ["Investment Banks in India", "Investment Banking Functions", "Investment Banking Roles", "Operations Roles", "Finance Careers"],
+  "relatedRouteIds": ["blog", "investment-banking-operations", "career-guide-investment-banking-operations", "career-guide-trade-lifecycle", "resource-reconciliation-in-finance"],
+  "redirects": [],
+  "evidenceNotes": [
+    "SEBI investor education material: https://investor.sebi.gov.in/iematerial.html",
+    "Functions and team boundaries are high-level descriptions that vary by organisation and legal activity.",
+    "No employer access, salary, investment recommendation or employment outcome is promised."
+  ]
+}

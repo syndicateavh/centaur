@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "id": "investment-banking-career-path-india",
+  "slug": "investment-banking-career-path-india",
+  "status": "published",
+  "title": "Investment Banking Career Path in India",
+  "excerpt": "Understand an investment banking career path in India through transaction stages, operations roles, control skills, fictional examples and interview preparation.",
+  "category": "investment-banking",
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Finance education editorial team",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "An investment banking career path is not one fixed ladder. It can include advisory, capital markets, sales and trading, research, risk, technology, compliance, finance and operations. In India, the day-to-day work depends on the employer, product, legal entity, market and role description. For a graduate or career switcher, the practical starting point is to understand a workflow, identify where a role owns a decision, and show how you would protect accuracy across handoffs. This guide focuses on operations and control-oriented pathways; it does not promise certification, employer access or a particular job outcome."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What the investment banking path can include"
+    },
+    {
+      "type": "paragraph",
+      "text": "A broad map starts with entry-level analyst work, then develops toward senior analyst, associate, manager or specialist responsibilities. Some people build depth in trade support, confirmations, settlements, reconciliations or client reporting. Others move into controls, risk, product operations, technology or a client-facing function. Titles vary widely, so compare the actual queue, systems, deadlines, evidence requirements and escalation authority in a job description rather than relying on the title alone."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A workflow-based career map"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Build foundations in accounting, financial markets vocabulary, spreadsheets, documentation and professional communication.",
+        "Learn one workflow end to end, such as trade capture, confirmation, settlement, reconciliation and exception closure.",
+        "Develop role-level control judgement: identify a break, preserve evidence, quantify risk and escalate through the approved route.",
+        "Expand product or process depth while learning how metrics, service levels and operational risk are measured.",
+        "Choose a next step based on demonstrated skills and the requirements of real roles, not on a generic salary or placement claim."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Where operations roles fit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Operations may support confirmations, settlement instructions, static data, corporate actions, reconciliations, cash or securities movements, reporting and exception queues. A trade support analyst may coordinate information between a business team, control function, custodian or settlement team. The operations role does not automatically make an investment decision or provide investment advice. In a learning case, the strongest answer explains the handoff, the control, the evidence and the escalation point."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fictional example: learning from a settlement exception"
+    },
+    {
+      "type": "paragraph",
+      "text": "Consider a fictional equity transaction where the internal record says 10,000 shares but the settlement instruction says 9,900. A careful analyst does not change either record just to clear the queue. They confirm the trade reference, check amendments and timestamps, identify the authorised source of truth, record the 100-share difference, assess the deadline and notify the owner through the defined escalation path. The learning objective is the reasoning process: source control, materiality, communication and evidence. It is not a recommendation to trade or settle a real security."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Skills that compound over time"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Accounting and market basics that help you understand what a record represents.",
+        "Spreadsheet discipline: source labels, formulas, version control, checks and readable outputs.",
+        "Written communication that states the issue, evidence, impact, owner and due date.",
+        "Process discipline: maker-checker review, access controls, escalation and documentation.",
+        "Curiosity about systems and data without exposing confidential client or employer information."
+      ]
+    },
+    {
+      "type": "link",
+      "label": "Explore Investment Banking Operations training",
+      "href": "/courses/investment-banking-operations/",
+      "routeId": "investment-banking-operations"
+    },
+    {
+      "type": "link",
+      "label": "Read the Investment Banking Operations career guide",
+      "href": "/career-guides/investment-banking-operations/",
+      "routeId": "career-guide-investment-banking-operations"
+    },
+    {
+      "type": "link",
+      "label": "Follow the trade lifecycle guide",
+      "href": "/career-guides/trade-lifecycle/",
+      "routeId": "career-guide-trade-lifecycle"
+    },
+    {
+      "type": "link",
+      "label": "Practise investment banking interview questions",
+      "href": "/resources/investment-banking-interview-questions/",
+      "routeId": "resource-investment-banking-interview-questions"
+    },
+    {
+      "type": "link",
+      "label": "Browse all finance career insights",
+      "href": "/blog/",
+      "routeId": "blog"
+    },
+    {
+      "type": "link",
+      "label": "Review SEBI investor education material",
+      "href": "https://investor.sebi.gov.in/iematerial.html"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use this article as a map for investigation, not a substitute for the current job description or the employer's procedures. A credible portfolio can show a fictional workflow, a reconciled dataset, a clear exception note and the checks used to reach a conclusion. Verify current program scope, access and career-support terms directly with Centaur Careers before making a decision."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/investment-banking-career-path-india.png",
+    "alt": "Editorial illustration of an investment banking career progression in an Indian finance setting",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-27",
+  "updatedAt": "2026-09-27",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Investment Banking Career Path in India | Centaur Careers",
+    "description": "Learn an investment banking career path in India through workflow stages, operations roles, skills, a fictional case and interview preparation.",
+    "canonicalPath": "/blog/investment-banking-career-path-india/",
+    "noindex": false,
+    "focusKeyword": "investment banking career path in India",
+    "secondaryKeywords": ["investment banking jobs", "investment banking operations", "finance careers"]
+  },
+  "tags": ["Investment Banking Career Path in India", "Investment Banking Career", "Investment Banking Operations", "Finance Careers", "Trade Lifecycle"],
+  "relatedRouteIds": ["blog", "investment-banking-operations", "career-guide-investment-banking-operations", "career-guide-trade-lifecycle", "resource-investment-banking-interview-questions"],
+  "redirects": [],
+  "evidenceNotes": [
+    "SEBI investor education material: https://investor.sebi.gov.in/iematerial.html",
+    "The workflow and example are fictional and distinguish operations from front-office or advisory activity.",
+    "No certification, employer access, salary or employment outcome is promised."
+  ]
+}

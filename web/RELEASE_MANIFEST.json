@@ -1,0 +1,4017 @@
+{
+  "schemaVersion": 1,
+  "status": "local-qa-passed",
+  "generatedAt": "2026-09-29T10:52:23.018Z",
+  "repository": "centaur/web",
+  "gitCommit": "89d3a2b781131c711afc3646a8c9f0b33da50c56",
+  "nodeVersion": "v22.23.1",
+  "platform": "win32 arm64",
+  "siteOrigin": "https://centaurcareers.in",
+  "buildDirectory": "build/client",
+  "uploadBoundary": "Upload the contents of build/client/ into the hosting document root; do not upload the build/client directory itself.",
+  "releaseReadyForUpload": true,
+  "indexableRouteCount": 93,
+  "routeDocumentCount": 98,
+  "sitemapUrlCount": 185,
+  "routes": [
+    {
+      "id": "home",
+      "path": "/",
+      "canonical": "https://centaurcareers.in/",
+      "indexable": true,
+      "prerenderPath": "/"
+    },
+    {
+      "id": "blog",
+      "path": "/blog/",
+      "canonical": "https://centaurcareers.in/blog/",
+      "indexable": true,
+      "prerenderPath": "/blog"
+    },
+    {
+      "id": "career-guides",
+      "path": "/career-guides/",
+      "canonical": "https://centaurcareers.in/career-guides/",
+      "indexable": true,
+      "prerenderPath": "/career-guides"
+    },
+    {
+      "id": "resources",
+      "path": "/resources/",
+      "canonical": "https://centaurcareers.in/resources/",
+      "indexable": true,
+      "prerenderPath": "/resources"
+    },
+    {
+      "id": "resource-investment-banking-interview-questions",
+      "path": "/resources/investment-banking-interview-questions/",
+      "canonical": "https://centaurcareers.in/resources/investment-banking-interview-questions/",
+      "indexable": true,
+      "prerenderPath": "/resources/investment-banking-interview-questions"
+    },
+    {
+      "id": "resource-accounting-interview-questions",
+      "path": "/resources/accounting-interview-questions/",
+      "canonical": "https://centaurcareers.in/resources/accounting-interview-questions/",
+      "indexable": true,
+      "prerenderPath": "/resources/accounting-interview-questions"
+    },
+    {
+      "id": "resource-finance-gk",
+      "path": "/resources/finance-gk/",
+      "canonical": "https://centaurcareers.in/resources/finance-gk/",
+      "indexable": true,
+      "prerenderPath": "/resources/finance-gk"
+    },
+    {
+      "id": "resource-accounting-basics",
+      "path": "/resources/accounting-basics/",
+      "canonical": "https://centaurcareers.in/resources/accounting-basics/",
+      "indexable": true,
+      "prerenderPath": "/resources/accounting-basics"
+    },
+    {
+      "id": "resource-reconciliation-in-finance",
+      "path": "/resources/reconciliation-in-finance/",
+      "canonical": "https://centaurcareers.in/resources/reconciliation-in-finance/",
+      "indexable": true,
+      "prerenderPath": "/resources/reconciliation-in-finance"
+    },
+    {
+      "id": "resource-bank-reconciliation-process",
+      "path": "/resources/bank-reconciliation-process/",
+      "canonical": "https://centaurcareers.in/resources/bank-reconciliation-process/",
+      "indexable": true,
+      "prerenderPath": "/resources/bank-reconciliation-process"
+    },
+    {
+      "id": "resource-cost-accounting-finance-operations",
+      "path": "/resources/cost-accounting-finance-operations/",
+      "canonical": "https://centaurcareers.in/resources/cost-accounting-finance-operations/",
+      "indexable": true,
+      "prerenderPath": "/resources/cost-accounting-finance-operations"
+    },
+    {
+      "id": "resource-financial-accounting-banking",
+      "path": "/resources/financial-accounting-banking/",
+      "canonical": "https://centaurcareers.in/resources/financial-accounting-banking/",
+      "indexable": true,
+      "prerenderPath": "/resources/financial-accounting-banking"
+    },
+    {
+      "id": "resource-financial-statement-analysis",
+      "path": "/resources/financial-statement-analysis/",
+      "canonical": "https://centaurcareers.in/resources/financial-statement-analysis/",
+      "indexable": true,
+      "prerenderPath": "/resources/financial-statement-analysis"
+    },
+    {
+      "id": "resource-corporate-actions-workflow",
+      "path": "/resources/corporate-actions-workflow/",
+      "canonical": "https://centaurcareers.in/resources/corporate-actions-workflow/",
+      "indexable": true,
+      "prerenderPath": "/resources/corporate-actions-workflow"
+    },
+    {
+      "id": "resource-capital-market-operations",
+      "path": "/resources/capital-market-operations/",
+      "canonical": "https://centaurcareers.in/resources/capital-market-operations/",
+      "indexable": true,
+      "prerenderPath": "/resources/capital-market-operations"
+    },
+    {
+      "id": "resource-financial-system-india",
+      "path": "/resources/financial-system-india/",
+      "canonical": "https://centaurcareers.in/resources/financial-system-india/",
+      "indexable": true,
+      "prerenderPath": "/resources/financial-system-india"
+    },
+    {
+      "id": "resource-kyc-aml-compliance-guide",
+      "path": "/resources/kyc-aml-compliance-guide/",
+      "canonical": "https://centaurcareers.in/resources/kyc-aml-compliance-guide/",
+      "indexable": true,
+      "prerenderPath": "/resources/kyc-aml-compliance-guide"
+    },
+    {
+      "id": "quiz",
+      "path": "/quiz/",
+      "canonical": "https://centaurcareers.in/quiz/",
+      "indexable": true,
+      "prerenderPath": "/quiz"
+    },
+    {
+      "id": "courses",
+      "path": "/courses/",
+      "canonical": "https://centaurcareers.in/courses/",
+      "indexable": true,
+      "prerenderPath": "/courses"
+    },
+    {
+      "id": "investment-banking-operations",
+      "path": "/courses/investment-banking-operations/",
+      "canonical": "https://centaurcareers.in/courses/investment-banking-operations/",
+      "indexable": true,
+      "prerenderPath": "/courses/investment-banking-operations"
+    },
+    {
+      "id": "retail-banking",
+      "path": "/courses/retail-banking/",
+      "canonical": "https://centaurcareers.in/courses/retail-banking/",
+      "indexable": true,
+      "prerenderPath": "/courses/retail-banking"
+    },
+    {
+      "id": "finance-operations",
+      "path": "/courses/finance-operations/",
+      "canonical": "https://centaurcareers.in/courses/finance-operations/",
+      "indexable": true,
+      "prerenderPath": "/courses/finance-operations"
+    },
+    {
+      "id": "kyc-aml-compliance",
+      "path": "/courses/kyc-aml/",
+      "canonical": "https://centaurcareers.in/courses/kyc-aml/",
+      "indexable": true,
+      "prerenderPath": "/courses/kyc-aml"
+    },
+    {
+      "id": "digital-payments",
+      "path": "/courses/digital-payments/",
+      "canonical": "https://centaurcareers.in/courses/digital-payments/",
+      "indexable": true,
+      "prerenderPath": "/courses/digital-payments"
+    },
+    {
+      "id": "fintech-neo-banking",
+      "path": "/courses/fintech/",
+      "canonical": "https://centaurcareers.in/courses/fintech/",
+      "indexable": true,
+      "prerenderPath": "/courses/fintech"
+    },
+    {
+      "id": "placements",
+      "path": "/placements/",
+      "canonical": "https://centaurcareers.in/placements/",
+      "indexable": true,
+      "prerenderPath": "/placements"
+    },
+    {
+      "id": "about",
+      "path": "/about/",
+      "canonical": "https://centaurcareers.in/about/",
+      "indexable": true,
+      "prerenderPath": "/about"
+    },
+    {
+      "id": "contact",
+      "path": "/contact/",
+      "canonical": "https://centaurcareers.in/contact/",
+      "indexable": true,
+      "prerenderPath": "/contact"
+    },
+    {
+      "id": "privacy-policy",
+      "path": "/privacy-policy/",
+      "canonical": "https://centaurcareers.in/privacy-policy/",
+      "indexable": true,
+      "prerenderPath": "/privacy-policy"
+    },
+    {
+      "id": "terms-and-conditions",
+      "path": "/terms-and-conditions/",
+      "canonical": "https://centaurcareers.in/terms-and-conditions/",
+      "indexable": false,
+      "prerenderPath": "/terms-and-conditions"
+    },
+    {
+      "id": "cookie-policy",
+      "path": "/cookie-policy/",
+      "canonical": "https://centaurcareers.in/cookie-policy/",
+      "indexable": false,
+      "prerenderPath": "/cookie-policy"
+    },
+    {
+      "id": "refund-cancellation-policy",
+      "path": "/refund-cancellation-policy/",
+      "canonical": "https://centaurcareers.in/refund-cancellation-policy/",
+      "indexable": false,
+      "prerenderPath": "/refund-cancellation-policy"
+    },
+    {
+      "id": "disclaimer",
+      "path": "/disclaimer/",
+      "canonical": "https://centaurcareers.in/disclaimer/",
+      "indexable": false,
+      "prerenderPath": "/disclaimer"
+    },
+    {
+      "id": "india",
+      "path": "/india/",
+      "canonical": "https://centaurcareers.in/india/",
+      "indexable": true,
+      "prerenderPath": "/india"
+    },
+    {
+      "id": "india-delhi-ncr",
+      "path": "/india/delhi-ncr/",
+      "canonical": "https://centaurcareers.in/india/delhi-ncr/",
+      "indexable": true,
+      "prerenderPath": "/india/delhi-ncr"
+    },
+    {
+      "id": "india-bengaluru",
+      "path": "/india/bengaluru/",
+      "canonical": "https://centaurcareers.in/india/bengaluru/",
+      "indexable": true,
+      "prerenderPath": "/india/bengaluru"
+    },
+    {
+      "id": "india-mumbai",
+      "path": "/india/mumbai/",
+      "canonical": "https://centaurcareers.in/india/mumbai/",
+      "indexable": true,
+      "prerenderPath": "/india/mumbai"
+    },
+    {
+      "id": "india-pune",
+      "path": "/india/pune/",
+      "canonical": "https://centaurcareers.in/india/pune/",
+      "indexable": true,
+      "prerenderPath": "/india/pune"
+    },
+    {
+      "id": "india-hyderabad",
+      "path": "/india/hyderabad/",
+      "canonical": "https://centaurcareers.in/india/hyderabad/",
+      "indexable": true,
+      "prerenderPath": "/india/hyderabad"
+    },
+    {
+      "id": "lucknow-location",
+      "path": "/locations/lucknow/",
+      "canonical": "https://centaurcareers.in/locations/lucknow/",
+      "indexable": true,
+      "prerenderPath": "/locations/lucknow"
+    },
+    {
+      "id": "faqs",
+      "path": "/faqs/",
+      "canonical": "https://centaurcareers.in/faqs/",
+      "indexable": true,
+      "prerenderPath": "/faqs"
+    },
+    {
+      "id": "career-guide-investment-banking-operations",
+      "path": "/career-guides/investment-banking-operations/",
+      "canonical": "https://centaurcareers.in/career-guides/investment-banking-operations/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/investment-banking-operations"
+    },
+    {
+      "id": "career-guide-kyc-aml-analyst",
+      "path": "/career-guides/kyc-aml-analyst/",
+      "canonical": "https://centaurcareers.in/career-guides/kyc-aml-analyst/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/kyc-aml-analyst"
+    },
+    {
+      "id": "career-guide-finance-operations",
+      "path": "/career-guides/finance-operations/",
+      "canonical": "https://centaurcareers.in/career-guides/finance-operations/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/finance-operations"
+    },
+    {
+      "id": "career-guide-trade-lifecycle",
+      "path": "/career-guides/trade-lifecycle/",
+      "canonical": "https://centaurcareers.in/career-guides/trade-lifecycle/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/trade-lifecycle"
+    },
+    {
+      "id": "career-guide-finance-careers-after-graduation",
+      "path": "/career-guides/finance-careers-after-graduation/",
+      "canonical": "https://centaurcareers.in/career-guides/finance-careers-after-graduation/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/finance-careers-after-graduation"
+    },
+    {
+      "id": "career-guide-retail-banking-operations",
+      "path": "/career-guides/retail-banking-operations/",
+      "canonical": "https://centaurcareers.in/career-guides/retail-banking-operations/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/retail-banking-operations"
+    },
+    {
+      "id": "career-guide-digital-payments-operations",
+      "path": "/career-guides/digital-payments-operations/",
+      "canonical": "https://centaurcareers.in/career-guides/digital-payments-operations/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/digital-payments-operations"
+    },
+    {
+      "id": "career-guide-financial-operations-faq",
+      "path": "/career-guides/financial-operations-faq/",
+      "canonical": "https://centaurcareers.in/career-guides/financial-operations-faq/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/financial-operations-faq"
+    },
+    {
+      "id": "career-guide-choosing-finance-career-course",
+      "path": "/career-guides/choosing-finance-career-course/",
+      "canonical": "https://centaurcareers.in/career-guides/choosing-finance-career-course/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/choosing-finance-career-course"
+    },
+    {
+      "id": "career-guide-fintech-operations",
+      "path": "/career-guides/fintech-operations/",
+      "canonical": "https://centaurcareers.in/career-guides/fintech-operations/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/fintech-operations"
+    },
+    {
+      "id": "career-guide-reconciliation-analyst",
+      "path": "/career-guides/reconciliation-analyst/",
+      "canonical": "https://centaurcareers.in/career-guides/reconciliation-analyst/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/reconciliation-analyst"
+    },
+    {
+      "id": "career-guide-investment-banking-operations-roles",
+      "path": "/career-guides/investment-banking-operations-roles/",
+      "canonical": "https://centaurcareers.in/career-guides/investment-banking-operations-roles/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/investment-banking-operations-roles"
+    },
+    {
+      "id": "career-guide-trade-support-analyst",
+      "path": "/career-guides/trade-support-analyst/",
+      "canonical": "https://centaurcareers.in/career-guides/trade-support-analyst/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/trade-support-analyst"
+    },
+    {
+      "id": "career-guide-securities-operations",
+      "path": "/career-guides/securities-operations/",
+      "canonical": "https://centaurcareers.in/career-guides/securities-operations/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/securities-operations"
+    },
+    {
+      "id": "career-guide-what-is-investment-banking",
+      "path": "/career-guides/what-is-investment-banking/",
+      "canonical": "https://centaurcareers.in/career-guides/what-is-investment-banking/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/what-is-investment-banking"
+    },
+    {
+      "id": "career-guide-risk-operations-analyst",
+      "path": "/career-guides/risk-operations-analyst/",
+      "canonical": "https://centaurcareers.in/career-guides/risk-operations-analyst/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/risk-operations-analyst"
+    },
+    {
+      "id": "career-guide-credit-analyst",
+      "path": "/career-guides/credit-analyst/",
+      "canonical": "https://centaurcareers.in/career-guides/credit-analyst/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/credit-analyst"
+    },
+    {
+      "id": "career-guide-business-analyst-in-banking",
+      "path": "/career-guides/business-analyst-in-banking/",
+      "canonical": "https://centaurcareers.in/career-guides/business-analyst-in-banking/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/business-analyst-in-banking"
+    },
+    {
+      "id": "career-guide-custody-operations",
+      "path": "/career-guides/custody-operations/",
+      "canonical": "https://centaurcareers.in/career-guides/custody-operations/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/custody-operations"
+    },
+    {
+      "id": "career-guide-credit-operations-analyst",
+      "path": "/career-guides/credit-operations-analyst/",
+      "canonical": "https://centaurcareers.in/career-guides/credit-operations-analyst/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/credit-operations-analyst"
+    },
+    {
+      "id": "career-guide-transaction-monitoring-analyst",
+      "path": "/career-guides/transaction-monitoring-analyst/",
+      "canonical": "https://centaurcareers.in/career-guides/transaction-monitoring-analyst/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/transaction-monitoring-analyst"
+    },
+    {
+      "id": "career-guide-middle-office-operations",
+      "path": "/career-guides/middle-office-operations/",
+      "canonical": "https://centaurcareers.in/career-guides/middle-office-operations/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/middle-office-operations"
+    },
+    {
+      "id": "career-guide-back-office-banking-jobs",
+      "path": "/career-guides/back-office-banking-jobs/",
+      "canonical": "https://centaurcareers.in/career-guides/back-office-banking-jobs/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/back-office-banking-jobs"
+    },
+    {
+      "id": "career-guide-settlement-analyst",
+      "path": "/career-guides/settlement-analyst/",
+      "canonical": "https://centaurcareers.in/career-guides/settlement-analyst/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/settlement-analyst"
+    },
+    {
+      "id": "career-guide-finance-learning-roadmap",
+      "path": "/career-guides/finance-learning-roadmap/",
+      "canonical": "https://centaurcareers.in/career-guides/finance-learning-roadmap/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/finance-learning-roadmap"
+    },
+    {
+      "id": "career-guide-operations-analyst-banking",
+      "path": "/career-guides/operations-analyst-banking/",
+      "canonical": "https://centaurcareers.in/career-guides/operations-analyst-banking/",
+      "indexable": true,
+      "prerenderPath": "/career-guides/operations-analyst-banking"
+    },
+    {
+      "id": "courses-banking-courses",
+      "path": "/courses/banking-courses/",
+      "canonical": "https://centaurcareers.in/courses/banking-courses/",
+      "indexable": true,
+      "prerenderPath": "/courses/banking-courses"
+    },
+    {
+      "id": "courses-banking-and-finance",
+      "path": "/courses/banking-and-finance/",
+      "canonical": "https://centaurcareers.in/courses/banking-and-finance/",
+      "indexable": true,
+      "prerenderPath": "/courses/banking-and-finance"
+    },
+    {
+      "id": "courses-finance-operations-training",
+      "path": "/courses/finance-operations-training/",
+      "canonical": "https://centaurcareers.in/courses/finance-operations-training/",
+      "indexable": true,
+      "prerenderPath": "/courses/finance-operations-training"
+    },
+    {
+      "id": "lead-best-finance-course-placement",
+      "path": "/best-finance-course-in-india-with-placement/",
+      "canonical": "https://centaurcareers.in/best-finance-course-in-india-with-placement/",
+      "indexable": true,
+      "prerenderPath": "/best-finance-course-in-india-with-placement"
+    },
+    {
+      "id": "lead-best-investment-banking-course-india",
+      "path": "/best-investment-banking-course-india/",
+      "canonical": "https://centaurcareers.in/best-investment-banking-course-india/",
+      "indexable": true,
+      "prerenderPath": "/best-investment-banking-course-india"
+    },
+    {
+      "id": "lead-best-finance-course-after-graduation",
+      "path": "/best-finance-course-after-graduation/",
+      "canonical": "https://centaurcareers.in/best-finance-course-after-graduation/",
+      "indexable": true,
+      "prerenderPath": "/best-finance-course-after-graduation"
+    },
+    {
+      "id": "lead-best-finance-course-after-bcom",
+      "path": "/best-finance-course-after-bcom/",
+      "canonical": "https://centaurcareers.in/best-finance-course-after-bcom/",
+      "indexable": true,
+      "prerenderPath": "/best-finance-course-after-bcom"
+    },
+    {
+      "id": "lead-finance-course-placement",
+      "path": "/finance-course-with-placement/",
+      "canonical": "https://centaurcareers.in/finance-course-with-placement/",
+      "indexable": true,
+      "prerenderPath": "/finance-course-with-placement"
+    },
+    {
+      "id": "lead-finance-course-job-guarantee",
+      "path": "/finance-course-with-job-guarantee/",
+      "canonical": "https://centaurcareers.in/finance-course-with-job-guarantee/",
+      "indexable": true,
+      "prerenderPath": "/finance-course-with-job-guarantee"
+    },
+    {
+      "id": "lead-finance-course-fees-india",
+      "path": "/finance-course-fees-in-india/",
+      "canonical": "https://centaurcareers.in/finance-course-fees-in-india/",
+      "indexable": true,
+      "prerenderPath": "/finance-course-fees-in-india"
+    },
+    {
+      "id": "lead-finance-course-duration",
+      "path": "/finance-course-duration/",
+      "canonical": "https://centaurcareers.in/finance-course-duration/",
+      "indexable": true,
+      "prerenderPath": "/finance-course-duration"
+    },
+    {
+      "id": "lead-finance-course-eligibility",
+      "path": "/finance-course-eligibility/",
+      "canonical": "https://centaurcareers.in/finance-course-eligibility/",
+      "indexable": true,
+      "prerenderPath": "/finance-course-eligibility"
+    },
+    {
+      "id": "lead-online-finance-course-placement",
+      "path": "/online-finance-course-with-placement/",
+      "canonical": "https://centaurcareers.in/online-finance-course-with-placement/",
+      "indexable": true,
+      "prerenderPath": "/online-finance-course-with-placement"
+    },
+    {
+      "id": "lead-job-oriented-finance-course-india",
+      "path": "/job-oriented-finance-course-india/",
+      "canonical": "https://centaurcareers.in/job-oriented-finance-course-india/",
+      "indexable": true,
+      "prerenderPath": "/job-oriented-finance-course-india"
+    },
+    {
+      "id": "lead-banking-finance-course-placement",
+      "path": "/banking-finance-course-with-placement/",
+      "canonical": "https://centaurcareers.in/banking-finance-course-with-placement/",
+      "indexable": true,
+      "prerenderPath": "/banking-finance-course-with-placement"
+    },
+    {
+      "id": "lead-investment-banking-operations-course-placement",
+      "path": "/investment-banking-operations-course-with-placement/",
+      "canonical": "https://centaurcareers.in/investment-banking-operations-course-with-placement/",
+      "indexable": true,
+      "prerenderPath": "/investment-banking-operations-course-with-placement"
+    },
+    {
+      "id": "lead-finance-institute-lucknow-placement",
+      "path": "/finance-institute-lucknow-with-placement/",
+      "canonical": "https://centaurcareers.in/finance-institute-lucknow-with-placement/",
+      "indexable": true,
+      "prerenderPath": "/finance-institute-lucknow-with-placement"
+    },
+    {
+      "id": "lead-finance-course-cities-india",
+      "path": "/finance-course-cities-india/",
+      "canonical": "https://centaurcareers.in/finance-course-cities-india/",
+      "indexable": true,
+      "prerenderPath": "/finance-course-cities-india"
+    },
+    {
+      "id": "lead-finance-course-vs-mba-cfa-modelling",
+      "path": "/finance-course-vs-mba-cfa-financial-modelling/",
+      "canonical": "https://centaurcareers.in/finance-course-vs-mba-cfa-financial-modelling/",
+      "indexable": true,
+      "prerenderPath": "/finance-course-vs-mba-cfa-financial-modelling"
+    },
+    {
+      "id": "lead-which-finance-course-right",
+      "path": "/which-finance-course-is-right-for-me/",
+      "canonical": "https://centaurcareers.in/which-finance-course-is-right-for-me/",
+      "indexable": true,
+      "prerenderPath": "/which-finance-course-is-right-for-me"
+    },
+    {
+      "id": "courses-finance-operations-syllabus",
+      "path": "/courses/finance-operations-syllabus/",
+      "canonical": "https://centaurcareers.in/courses/finance-operations-syllabus/",
+      "indexable": true,
+      "prerenderPath": "/courses/finance-operations-syllabus"
+    },
+    {
+      "id": "courses-finance-course-fees-eligibility",
+      "path": "/courses/finance-course-fees-eligibility/",
+      "canonical": "https://centaurcareers.in/courses/finance-course-fees-eligibility/",
+      "indexable": true,
+      "prerenderPath": "/courses/finance-course-fees-eligibility"
+    },
+    {
+      "id": "courses-finance-course-for-graduates",
+      "path": "/courses/finance-course-for-graduates/",
+      "canonical": "https://centaurcareers.in/courses/finance-course-for-graduates/",
+      "indexable": true,
+      "prerenderPath": "/courses/finance-course-for-graduates"
+    },
+    {
+      "id": "comparison-best-finance-institutes-india",
+      "path": "/compare/best-finance-institutes-india/",
+      "canonical": "https://centaurcareers.in/compare/best-finance-institutes-india/",
+      "indexable": true,
+      "prerenderPath": "/compare/best-finance-institutes-india"
+    },
+    {
+      "id": "comparison-finance-operations-vs-financial-modelling-cfa",
+      "path": "/compare/finance-operations-vs-financial-modelling-cfa/",
+      "canonical": "https://centaurcareers.in/compare/finance-operations-vs-financial-modelling-cfa/",
+      "indexable": true,
+      "prerenderPath": "/compare/finance-operations-vs-financial-modelling-cfa"
+    },
+    {
+      "id": "comparison-online-vs-offline-finance-training",
+      "path": "/compare/online-vs-offline-finance-training/",
+      "canonical": "https://centaurcareers.in/compare/online-vs-offline-finance-training/",
+      "indexable": true,
+      "prerenderPath": "/compare/online-vs-offline-finance-training"
+    },
+    {
+      "id": "comparison-investment-banking-operations-vs-financial-analyst",
+      "path": "/compare/investment-banking-operations-vs-financial-analyst/",
+      "canonical": "https://centaurcareers.in/compare/investment-banking-operations-vs-financial-analyst/",
+      "indexable": true,
+      "prerenderPath": "/compare/investment-banking-operations-vs-financial-analyst"
+    },
+    {
+      "id": "comparison-banking-vs-finance-careers",
+      "path": "/compare/banking-vs-finance-careers/",
+      "canonical": "https://centaurcareers.in/compare/banking-vs-finance-careers/",
+      "indexable": true,
+      "prerenderPath": "/compare/banking-vs-finance-careers"
+    },
+    {
+      "id": "faqs-finance-program",
+      "path": "/faqs/finance-program/",
+      "canonical": "https://centaurcareers.in/faqs/finance-program/",
+      "indexable": true,
+      "prerenderPath": "/faqs/finance-program"
+    },
+    {
+      "id": "comparison-investment-banking-operations",
+      "path": "/compare/investment-banking-operations-courses/",
+      "canonical": "https://centaurcareers.in/compare/investment-banking-operations-courses/",
+      "indexable": true,
+      "prerenderPath": "/compare/investment-banking-operations-courses"
+    },
+    {
+      "id": "not-found",
+      "path": "/404/",
+      "canonical": "https://centaurcareers.in/404/",
+      "indexable": false,
+      "prerenderPath": "/404"
+    }
+  ],
+  "package": {
+    "fileCount": 653,
+    "totalBytes": 131650006,
+    "files": [
+      {
+        "path": ".htaccess",
+        "bytes": 2542,
+        "sha256": "223a7e00df8d3fa49c63a6c8740f2f772cbaf49611f67fe1f52d629d90f499b1"
+      },
+      {
+        "path": "404/index.html",
+        "bytes": 26634,
+        "sha256": "c4897250e06d3d0f7fb9e81bdb3ddd1dcee35dbc9d4d0cbb85079501997c402c"
+      },
+      {
+        "path": "about/index.html",
+        "bytes": 45281,
+        "sha256": "6d0c3cd8772349bea61049416b107bc157c6310c7bfff3ad52ca37df48f146ec"
+      },
+      {
+        "path": "assets/BlogContentRenderer-Dp9UT0iE.js",
+        "bytes": 2544,
+        "sha256": "0b6785c565b66be4a701b159f9b94616075bed1adb9a74d383e66d7413771cd6"
+      },
+      {
+        "path": "assets/BlogPostCard-DiCQMdoT.js",
+        "bytes": 1620,
+        "sha256": "ac6b38c993b14620046ad9b832a17ae80085424214340005707b018c481e3257"
+      },
+      {
+        "path": "assets/CallToAction-DRieCxvd.js",
+        "bytes": 2543,
+        "sha256": "dcdb3ea798c0abc7b119479ccfcbfb9b62e3e1f33e4f8d2b6a1089f5f1fb2e7c"
+      },
+      {
+        "path": "assets/CareerGuidePage-C1m-ifCU.js",
+        "bytes": 2758,
+        "sha256": "902cc306732b9848b16672807e063a6e7afc914866751b2d7c9d7ff702d9afda"
+      },
+      {
+        "path": "assets/CommercialDecisionChecklist-N4ypn1ci.js",
+        "bytes": 3351,
+        "sha256": "35adb3bddc3a97baf5de3bdfc01e7a1d4bb1f3524f1aba7a6fe9d7bbabae6789"
+      },
+      {
+        "path": "assets/CourseDetailPage-ib65ZjIk.js",
+        "bytes": 8256,
+        "sha256": "43391f51660fd1b67cd842cf87e17bc21dd966dd5e20dee7e8804d730b736f88"
+      },
+      {
+        "path": "assets/InformationalModulePage-DW1fxi8e.js",
+        "bytes": 3694,
+        "sha256": "357b1ac1cbff0c650f5ecc36b84a59f079fb02d8b4d19297db3b2b04200a5fd9"
+      },
+      {
+        "path": "assets/InternalLinkGroup-DLW2L6sP.js",
+        "bytes": 1052,
+        "sha256": "8fa00060989818970a5cc430cd600961e67e6ec52382ff39d798a95004712832"
+      },
+      {
+        "path": "assets/LegalPage-BDRSdGRs.js",
+        "bytes": 2043,
+        "sha256": "64395407296ae6f902d93902d23f9127c6d9be09c81efeb7b7115d972041cf58"
+      },
+      {
+        "path": "assets/NotFoundPage-BEcFzItD.js",
+        "bytes": 1694,
+        "sha256": "fdbaf79b8d72bd80e512be33e0cf82a2aa55d4067e362e1e8445e5f976562806"
+      },
+      {
+        "path": "assets/PageShell-CW0rNu1u.js",
+        "bytes": 1630,
+        "sha256": "3f2dfe3fae541fdb83a40f2b01f082ab12a37d0f49a059cb324848bbe8eb64c4"
+      },
+      {
+        "path": "assets/PriorityComparisonPage-CH9--kUd.js",
+        "bytes": 4353,
+        "sha256": "0008f4796f1deb0485f3d6fc0144b60407d8bbc3c4ae77ab9971f3df1fcc747c"
+      },
+      {
+        "path": "assets/PriorityLandingPage-Bzc2scGW.js",
+        "bytes": 2187,
+        "sha256": "d24ba3a979ee7bccee6f4013cd4a09df84b2ed684536f21da86f2552d1d9bfb5"
+      },
+      {
+        "path": "assets/RegionalPage-5t99WhZh.js",
+        "bytes": 14772,
+        "sha256": "5da6157000b093db5477ff17b54e0a8c8e7fd4aa8ad310dafb057f1a4da438f3"
+      },
+      {
+        "path": "assets/ResourcePage-BA1nn4rp.js",
+        "bytes": 9688,
+        "sha256": "e32c912207becf7c30bbed8464ada9f45b3e5f068a9f224d3ed66769e01063b0"
+      },
+      {
+        "path": "assets/RoleIntentPathway-BkQoHmEy.js",
+        "bytes": 3292,
+        "sha256": "942926c2c368664639953189fc1625c9df7c0113f40a90f88ef2ea18480c1a7a"
+      },
+      {
+        "path": "assets/ScrollTrigger-BrDuEirF.js",
+        "bytes": 43547,
+        "sha256": "873b6d349c436877cd1273ead35533511d547061840e0d7fc3d00f5440bee2c5"
+      },
+      {
+        "path": "assets/SectionHeading-CWf74frs.js",
+        "bytes": 652,
+        "sha256": "971092766229318d8dde1f82c0faaa8cf0c2c768d90802ef613a15ebcc4ac268"
+      },
+      {
+        "path": "assets/about-DZfyAg8v.js",
+        "bytes": 2515,
+        "sha256": "65ea7d61a2a07e532ae053291d1b81fbbeccd84428f47b9348b1b1076c0604c0"
+      },
+      {
+        "path": "assets/arrow-right-D80Zzi_k.js",
+        "bytes": 169,
+        "sha256": "423aae129f32827becb4a6a03927d4334aca6f478716298c3fdb944d0107767f"
+      },
+      {
+        "path": "assets/blog-DtG30-jv.js",
+        "bytes": 4210,
+        "sha256": "a53e7080915337f2b016c6ba5d8f4961ea87bef6b6cd92068a31445172db377e"
+      },
+      {
+        "path": "assets/blog-category-twt4sT4v.js",
+        "bytes": 3791,
+        "sha256": "aa36bb2ceda05ca619e9588b472ed2224ffd7781254b079402efe10913dd179a"
+      },
+      {
+        "path": "assets/blog-portal-DA3wgEan.js",
+        "bytes": 37959,
+        "sha256": "ce904f0209ac89ab89ddf79a7ee537d34ee79c45c88078dc62aa5c6f123e5bc8"
+      },
+      {
+        "path": "assets/blog-post-gfK-wage.js",
+        "bytes": 4572,
+        "sha256": "5fe3515a92a0c66bd1a903b0759bc13671e3bc0f8c3811456635b58ddd0d1ff9"
+      },
+      {
+        "path": "assets/blogSeo-C45pEF02.js",
+        "bytes": 11505,
+        "sha256": "def2329a468b1647a29e43ff381c69563756578c645c9f14bc8994d18f9131cd"
+      },
+      {
+        "path": "assets/blogStorage-Um49s8Na.js",
+        "bytes": 909633,
+        "sha256": "6ca86b83f77a8900c8ab0c54d130521aef04d3eba8ab81f03af6ed8ad36b9575"
+      },
+      {
+        "path": "assets/calendar-days-stajitgz.js",
+        "bytes": 498,
+        "sha256": "082c1ded908377820c11a56b47136ee0763a0d999a3b85e09c85a57cbb0ad4bb"
+      },
+      {
+        "path": "assets/career-guide-back-office-banking-jobs-CeC9GJl6.js",
+        "bytes": 747,
+        "sha256": "07bf57c0b9ef615f7b907cfd75ee414ef984709c5611df7adaad9afb6b8a0d3d"
+      },
+      {
+        "path": "assets/career-guide-business-analyst-in-banking-BOEtvLq_.js",
+        "bytes": 753,
+        "sha256": "ca04b7e17a4452afbf282aab1f8f9192728032127aeba7dfa8546ef54803bda1"
+      },
+      {
+        "path": "assets/career-guide-choosing-finance-career-course-hHIueorO.js",
+        "bytes": 754,
+        "sha256": "e22b5f50dc1ab2a432d7a45db97950b82ec8863b5c504c7d462ab048c40c8dd3"
+      },
+      {
+        "path": "assets/career-guide-credit-analyst-M0Stq5an.js",
+        "bytes": 727,
+        "sha256": "59da6223b004dae6fbe6c4262e20b5414940eafbc7a732bf09444eb560a7a49e"
+      },
+      {
+        "path": "assets/career-guide-credit-operations-analyst-phZatUhd.js",
+        "bytes": 749,
+        "sha256": "b70a249ac3863e3b706387a439bf480057b1baf82204ff5d4591d8641e93d51c"
+      },
+      {
+        "path": "assets/career-guide-custody-operations-kP5N1nDm.js",
+        "bytes": 735,
+        "sha256": "82179f48fd226805f86f95a688c234f0e8ff46892ce0ebabe76c146c78b33212"
+      },
+      {
+        "path": "assets/career-guide-digital-payments-operations-BPmOSBWp.js",
+        "bytes": 753,
+        "sha256": "12327e75c5d2a170ec01a1ee92ec3117ee57ac211ff0035ff527ad06f78bab42"
+      },
+      {
+        "path": "assets/career-guide-finance-careers-after-graduation-bnaaU1e6.js",
+        "bytes": 763,
+        "sha256": "0adbe5e4dc27587d0c58c93e4b87f83f26769bcaedbe35bc41bf268174af8920"
+      },
+      {
+        "path": "assets/career-guide-finance-learning-roadmap-BuxK3NJK.js",
+        "bytes": 742,
+        "sha256": "d88a02fd8bd1642d30322c8f52d12ee3e8c318be6b5c20394f5f460808ede59a"
+      },
+      {
+        "path": "assets/career-guide-finance-operations-D_30fRAO.js",
+        "bytes": 730,
+        "sha256": "e7d74a3760124caa9c40b606860508638399e661263a4496d927649998a5b918"
+      },
+      {
+        "path": "assets/career-guide-financial-operations-faq-DSXX0-LA.js",
+        "bytes": 742,
+        "sha256": "a04c212638308e85576c974f8e9fc4a6de82ca7e1534f347f247d3848ace9093"
+      },
+      {
+        "path": "assets/career-guide-fintech-operations-gXgPyc56.js",
+        "bytes": 735,
+        "sha256": "4ab4ec3471c6b3259ce47baf4ba0e5732fb750ec0a40286d76a19315eed311b7"
+      },
+      {
+        "path": "assets/career-guide-investment-banking-operations-CWh3OfZb.js",
+        "bytes": 757,
+        "sha256": "19bebfe4ce707a87c23427c7c67931f1a183c4449fb234f8721a7706ccb6c91a"
+      },
+      {
+        "path": "assets/career-guide-investment-banking-operations-roles-Bne3h0ta.js",
+        "bytes": 769,
+        "sha256": "fe73bbb1b846bdd47f45e70b27445f6b7beb77313e6af6ef7a6cd8b0326eed77"
+      },
+      {
+        "path": "assets/career-guide-kyc-aml-analyst-DXiImYIY.js",
+        "bytes": 729,
+        "sha256": "1f4f9f1d3ae3bdfc931fd42059c438e2ade96f11d7987009e28dd1d4b3ba7a33"
+      },
+      {
+        "path": "assets/career-guide-middle-office-operations-keX2w-w2.js",
+        "bytes": 747,
+        "sha256": "cbebd56587286e8751db7a87e2769990471f5491f5ad64f73c382479feb3ecf9"
+      },
+      {
+        "path": "assets/career-guide-operations-analyst-banking-DMsaGeMw.js",
+        "bytes": 746,
+        "sha256": "314a1776dc3acbcd37143e9be6ba11319646f1df98ddfc513edb0f4dcd12a74c"
+      },
+      {
+        "path": "assets/career-guide-reconciliation-analyst-DZY85NTp.js",
+        "bytes": 738,
+        "sha256": "3a2eddb8ada17c64e4b609395045a3d133e70c26614147493aa5e63c6304f643"
+      },
+      {
+        "path": "assets/career-guide-retail-banking-operations-CDj4MvVx.js",
+        "bytes": 749,
+        "sha256": "8c1596eb68141bf6a954e3ef7f2ad5776191a389db1278b15fe8fdfb9bf3a75c"
+      },
+      {
+        "path": "assets/career-guide-risk-operations-analyst-B25TO5uP.js",
+        "bytes": 745,
+        "sha256": "0cd55567227861faf58ffa038d71989b75a19718f32536cf66ce5a036c932f0b"
+      },
+      {
+        "path": "assets/career-guide-securities-operations-BjupuUCB.js",
+        "bytes": 741,
+        "sha256": "fe6e270b65bc7555638492139c63d86d04d0d11e6d933980553a08efe0f4b0a7"
+      },
+      {
+        "path": "assets/career-guide-settlement-analyst-C2LPxya3.js",
+        "bytes": 735,
+        "sha256": "b98c55c1e2f16c2974936e189486032561445e9f4c95ad1614f712f694732356"
+      },
+      {
+        "path": "assets/career-guide-trade-lifecycle-DbI2OOIj.js",
+        "bytes": 729,
+        "sha256": "d256129ee67d3f1d8940cf529f4f74415bb4ff6073afd66489a4c920a98a9bc4"
+      },
+      {
+        "path": "assets/career-guide-trade-support-analyst-xRfyVYWy.js",
+        "bytes": 741,
+        "sha256": "3b36d66356fcea358f6cc022696636d66cc49513af1c036c34976b21d99b528c"
+      },
+      {
+        "path": "assets/career-guide-transaction-monitoring-analyst-CfN8NnsX.js",
+        "bytes": 754,
+        "sha256": "2d635fcaea7fcdfb0b9eaf8f53ee9a3b6ac462b3f6d80868d2c7dad0b4288ab5"
+      },
+      {
+        "path": "assets/career-guide-what-is-investment-banking-_UrqTXrO.js",
+        "bytes": 751,
+        "sha256": "3fd246ddfba41452acf8a812b9192add6b688866824ccad6dc8e750937d9d0d4"
+      },
+      {
+        "path": "assets/career-guides-ExXzwboI.js",
+        "bytes": 6714,
+        "sha256": "4f47b74cb1a6d2885ecf9e9a2072da537840bdd3c491d2f4be86922362cbeb65"
+      },
+      {
+        "path": "assets/catch-all-Dqkt-jA5.js",
+        "bytes": 242,
+        "sha256": "a5c8c234cd7a94fd30491cfc298af05e0996f220c85e902ab0dd0587a9f35d9c"
+      },
+      {
+        "path": "assets/chunk-62JRHF6Z-DL5htDy3.js",
+        "bytes": 127338,
+        "sha256": "4f8b820f434de66fe207136ba2b0b490e034f5959250457a4cd4841dd17f799f"
+      },
+      {
+        "path": "assets/circle-check-t2m7Bb6T.js",
+        "bytes": 177,
+        "sha256": "e917c70ef933eca41977225111b2fccddabf0a79b5c5f9009cd628e57ef2d78e"
+      },
+      {
+        "path": "assets/comparison-banking-vs-finance-careers-CDkJAlgt.js",
+        "bytes": 677,
+        "sha256": "d4435acc9631f60de7a6af4dd4225c2f8af8aef1f64d349f5c8581cc42cc404f"
+      },
+      {
+        "path": "assets/comparison-best-finance-institutes-india-hKGn4G0z.js",
+        "bytes": 688,
+        "sha256": "f7839d40646b75b5778fc5b7ff8f2cc4e2bb1f4ff18220c463f41699d22bb635"
+      },
+      {
+        "path": "assets/comparison-finance-operations-vs-financial-modelling-cfa-1ZWgpvKK.js",
+        "bytes": 720,
+        "sha256": "5dd88bf95e13a62fe78575a36988a072c376c31818373ff79fac121a35f77a2e"
+      },
+      {
+        "path": "assets/comparison-investment-banking-operations-CGbc3k7W.js",
+        "bytes": 9644,
+        "sha256": "f586de5aa0d1bc6a82a328bc637513948b2508314d09fea814e81d206bee662d"
+      },
+      {
+        "path": "assets/comparison-investment-banking-operations-vs-financial-analyst-CxaVNSK1.js",
+        "bytes": 730,
+        "sha256": "fba1f5b6b9c06117cc41e1a9debf12f29a0222f085d6027096d9de912d8ad312"
+      },
+      {
+        "path": "assets/comparison-online-vs-offline-finance-training-DfYBR2Gp.js",
+        "bytes": 693,
+        "sha256": "71b8739141df5d0900b73528462b741314eb57d24b69d2a9fee286d14e64270a"
+      },
+      {
+        "path": "assets/contact-B7sQEoqg.js",
+        "bytes": 4951,
+        "sha256": "4d16ca78ca1dda77180b053d316da2248a40b926d50adccf568a97e23691f332"
+      },
+      {
+        "path": "assets/cookie-policy-DBfvPRTJ.js",
+        "bytes": 443,
+        "sha256": "5ebfa13c421ccd5eede627dfbdc25b8bc02b44c11bd9d9960005349c21b7c348"
+      },
+      {
+        "path": "assets/courseImages-IYeQMXQ7.js",
+        "bytes": 683,
+        "sha256": "5251004327bf11d28657a164dbbf5baba7c09e0ec86932888d60fbdee374167c"
+      },
+      {
+        "path": "assets/courseModulePaths-BTq0MiIq.js",
+        "bytes": 374,
+        "sha256": "aaba15872aab789c343f5efab2c0f9992b6bbe5c331f6dff2eb9846853715640"
+      },
+      {
+        "path": "assets/courses-banking-and-finance-BWtPUfY-.js",
+        "bytes": 584,
+        "sha256": "aa9554865d1bd0b8a848bb54afca428383a804a1a8f4b70b3edd6ad165247f0b"
+      },
+      {
+        "path": "assets/courses-banking-courses-BvHGG60N.js",
+        "bytes": 581,
+        "sha256": "eb333a7d9a7768d33e91dd7e1bf1585b9177c712a391026f2bae52aa5e3bb36e"
+      },
+      {
+        "path": "assets/courses-finance-course-fees-eligibility-Bb8OBNa5.js",
+        "bytes": 613,
+        "sha256": "d3229f8775e0f2e901f9d3d02cb06d77971b38e3e06c3b9a2af1c91c4d23d65a"
+      },
+      {
+        "path": "assets/courses-finance-course-for-graduates-BFVY8WJE.js",
+        "bytes": 607,
+        "sha256": "f664be865770d6febaf2a3236ef6ecdfc70b18ae99dc1a426b8c7b68067e3775"
+      },
+      {
+        "path": "assets/courses-finance-operations-syllabus-YHQNF5jP.js",
+        "bytes": 605,
+        "sha256": "78d618f4d7e216666bfffb6541519548298e46db7baeca717e9bfce0c60f18dd"
+      },
+      {
+        "path": "assets/courses-finance-operations-training-enaqgYn3.js",
+        "bytes": 600,
+        "sha256": "903624ea8819b744c3a4318ce7317c40248958220567182ce114ed2e8d65cab4"
+      },
+      {
+        "path": "assets/courses-y9O0yUSV.js",
+        "bytes": 25059,
+        "sha256": "c9d209949ca6a02daa055ca982da00848457d7fb6234ff93fba6d05d7e0e37ed"
+      },
+      {
+        "path": "assets/deferredWork-CowTrdqk.js",
+        "bytes": 752,
+        "sha256": "6000f6c13ad31b7c189ea0cdee91a4054568e86f620eeeff45e1e0d017f1fd42"
+      },
+      {
+        "path": "assets/digital-payments-DxvQ_WCo.js",
+        "bytes": 697,
+        "sha256": "ff29043f26fe8e5dabb36ea2d035d0ec6c0caf375d22421443fcac49dbe5fa6d"
+      },
+      {
+        "path": "assets/disclaimer-B3NT6LF3.js",
+        "bytes": 432,
+        "sha256": "562c407034c263f8002f1f6fbfa6e4006f4446e34fdba75ab02a216adbc7fbe8"
+      },
+      {
+        "path": "assets/downloads-Dcy91-gm.js",
+        "bytes": 735,
+        "sha256": "813e7c9750f3418d1f523b372f72673dcd567a7f314037981ec7c5bb4ad0265a"
+      },
+      {
+        "path": "assets/entry.client-DSviY7sr.js",
+        "bytes": 6020,
+        "sha256": "8faf56dc6fd38ba86950700e8c194417920906cac48085c307106d9b3709da7a"
+      },
+      {
+        "path": "assets/external-link-enBNSjqB.js",
+        "bytes": 255,
+        "sha256": "5996bd53abdbcbfe632c92a661a9049688770754f1a03e16123f3f8a07b76f2c"
+      },
+      {
+        "path": "assets/faqs-DlGQ7b_w.js",
+        "bytes": 3417,
+        "sha256": "0d768cfede1a794e621da6cf5fab5dfe6a2a5faf2fef3d7b6dceb3a6116be9dd"
+      },
+      {
+        "path": "assets/faqs-finance-program-ByeC3QLY.js",
+        "bytes": 2814,
+        "sha256": "95abd9dc548e271a9f10faa0830d77301806aa66cbae502cae7fc3e9b49fcd3c"
+      },
+      {
+        "path": "assets/finance-operations-Bny0-81Q.js",
+        "bytes": 756,
+        "sha256": "5bab49b70792db4fabe79e29e32ce5200278829f3acb663f6e9af4450867b4e0"
+      },
+      {
+        "path": "assets/fintech-neo-banking-DyeIHFtU.js",
+        "bytes": 708,
+        "sha256": "655343f6b1f5d3e12a14e45cd2552e45161b0d4774108a0528d955aa8c883381"
+      },
+      {
+        "path": "assets/hiringPartnerLogos-DbWvRf7P.js",
+        "bytes": 2678,
+        "sha256": "28418c7f464c9a8ecc9e5bfe1519a79a58f33a4f5d392de5ed7f79828bd58f3f"
+      },
+      {
+        "path": "assets/home-y8VdvLYz.js",
+        "bytes": 54376,
+        "sha256": "7b503fef79b7c2314d236a2ea68f7373ef3c4cd971c9704f93785258999b029b"
+      },
+      {
+        "path": "assets/ibm-plex-sans-cyrillic-ext-wght-normal-d45eAU9y.woff2",
+        "bytes": 23568,
+        "sha256": "7d0037a170882a49e65a45c38ef195237bb07b1cc791d078379f0ac0d7ae1935"
+      },
+      {
+        "path": "assets/ibm-plex-sans-cyrillic-wght-normal-BAAhND-U.woff2",
+        "bytes": 29512,
+        "sha256": "9409ee21811f0f5272b7e1d828fe8838005b0573481ef906e7e55b63f6610ab0"
+      },
+      {
+        "path": "assets/ibm-plex-sans-greek-wght-normal-CmyJS8uq.woff2",
+        "bytes": 19500,
+        "sha256": "f598dd0700f155e2facfaa8ecfacace397d4c2c153e9ce37ab7ad310e8505bc2"
+      },
+      {
+        "path": "assets/ibm-plex-sans-latin-ext-wght-normal-CIII54If.woff2",
+        "bytes": 30964,
+        "sha256": "d160e20920ae4d6556518d352d3af27a74e9b0de3d8fe17b1c1044fc75aa2f81"
+      },
+      {
+        "path": "assets/ibm-plex-sans-latin-wght-normal-IvpUvPa2.woff2",
+        "bytes": 45712,
+        "sha256": "e2291e842cf5af167122a22881a740c7f2dda7716f1e8cd76680264f4a859470"
+      },
+      {
+        "path": "assets/ibm-plex-sans-vietnamese-wght-normal-Dg1JeJN0.woff2",
+        "bytes": 13160,
+        "sha256": "73e7f7b1c980416ae0c2461268b14c7cfcce0668e683dc43fbb11a82a227b9f2"
+      },
+      {
+        "path": "assets/imagePresets-CL6VS0Kl.js",
+        "bytes": 396,
+        "sha256": "4a3c82f829660379ea9f189d99a36cbc2c545fa46ae1647b9dd0ce8fb1189d99"
+      },
+      {
+        "path": "assets/index-D4-8ALNT.js",
+        "bytes": 70426,
+        "sha256": "86e1aee306e610f5e211c6e3b7a2348050782e9e700a8797a2db42afb451be49"
+      },
+      {
+        "path": "assets/index-DSXzC1sr.css",
+        "bytes": 82384,
+        "sha256": "250d886219a8c7265856ab03eabf5f2bcdec5fcff8e5836061c000fcecd5ede8"
+      },
+      {
+        "path": "assets/index-DidRQKrG.js",
+        "bytes": 134101,
+        "sha256": "6a93aac4701fe60cdad3a811315e0eb20e0339fde6316f3376c429de1bec8ffc"
+      },
+      {
+        "path": "assets/india-DrM174fX.js",
+        "bytes": 14429,
+        "sha256": "42250f6215728f04b98998b91ab4653835044959eace9e19cb32c1abcd4f07b4"
+      },
+      {
+        "path": "assets/india-bengaluru-DNbZ2Idh.js",
+        "bytes": 590,
+        "sha256": "9af8cc768dccc0852c454395e4b433309700cc35d7f7dadebc1ca21563b97568"
+      },
+      {
+        "path": "assets/india-delhi-ncr-B6avCEUy.js",
+        "bytes": 590,
+        "sha256": "53eed68af8edff30b936d2fbbb4a10504c88bea61d866a7c3f1835ebc6024458"
+      },
+      {
+        "path": "assets/india-hyderabad-BQ9ia3i5.js",
+        "bytes": 590,
+        "sha256": "5c03f2632e7e50c2751942b83dca1a88569e6cd1b1edfdc77c62dadb27e62994"
+      },
+      {
+        "path": "assets/india-mumbai-dXR2UYsf.js",
+        "bytes": 584,
+        "sha256": "c0b1400e7a21504b6acbf5428cdb5491bebacf5abd02fa992648cf619d7641ac"
+      },
+      {
+        "path": "assets/india-pune-N5P67-zD.js",
+        "bytes": 580,
+        "sha256": "58968877f0f3c6cd1a5d7d043e2dce1dfed5424f756d623581bacd0cc4e7ee40"
+      },
+      {
+        "path": "assets/internalLinks-54gducx9.js",
+        "bytes": 41330,
+        "sha256": "f0f2a77c3e2d1011c5ed25d2bbd6878ef41cd3c946c18cf4afbde627efffae46"
+      },
+      {
+        "path": "assets/investment-banking-operations--djxxnfB.js",
+        "bytes": 773,
+        "sha256": "1e7b2ff322b7f5cc1a26db78dc5702fcde0c590ca003fb9d3b23fc00395e5b92"
+      },
+      {
+        "path": "assets/kyc-aml-compliance-DNDuFaFo.js",
+        "bytes": 706,
+        "sha256": "b360c427efd7eeb3ebe1807f9490a612a925dd0c814ed89c2ad0bc3d147a727d"
+      },
+      {
+        "path": "assets/lead-banking-finance-course-placement-DYcHGKli.js",
+        "bytes": 617,
+        "sha256": "3bf1c831f6fc61b8d315eef8f588fd5b17f07c3a065f197d110eadd132fa63b0"
+      },
+      {
+        "path": "assets/lead-best-finance-course-after-bcom-CpeKFZ53.js",
+        "bytes": 608,
+        "sha256": "095605013d5455ca0bb5e25b670de48f9c767bf89f7fd9cbb30488430d8f4199"
+      },
+      {
+        "path": "assets/lead-best-finance-course-after-graduation-YJRFjMcl.js",
+        "bytes": 620,
+        "sha256": "2fa2021db5348cf9dd6418e9de4942b7fb84cd325b019df55e5a02b92de4fb22"
+      },
+      {
+        "path": "assets/lead-best-finance-course-placement-BngejHB6.js",
+        "bytes": 611,
+        "sha256": "9e71676e572f185b708fc0c125991768e5e6ff0c84a227c9d92786b4c37f069e"
+      },
+      {
+        "path": "assets/lead-best-investment-banking-course-india-JlQqAJGc.js",
+        "bytes": 625,
+        "sha256": "606e9238dece79399a829d6a7e99e373f8a5e0ec40f50fefa43b594e1a484199"
+      },
+      {
+        "path": "assets/lead-finance-course-cities-india-Yc9pqu9B.js",
+        "bytes": 607,
+        "sha256": "1b09174043f58ee41265cd33ee4c749c3f2cc4e00ef09815690ceab7829df79d"
+      },
+      {
+        "path": "assets/lead-finance-course-duration-CQQoeLrx.js",
+        "bytes": 599,
+        "sha256": "b177f1e839f5c070e20db0c4ffcece4de87621024f8c5bee8c540bc47c19b5b6"
+      },
+      {
+        "path": "assets/lead-finance-course-eligibility-DYwF84fD.js",
+        "bytes": 605,
+        "sha256": "a0f415f99606f106ce69f5383cb9f2e58e78190f5511d326e0ac4b07d5433c35"
+      },
+      {
+        "path": "assets/lead-finance-course-fees-india-Dqt_zvvf.js",
+        "bytes": 598,
+        "sha256": "cfa0ff516bb5a6c0cafec93e936a75f710983395c2b8197c6a9b867408524473"
+      },
+      {
+        "path": "assets/lead-finance-course-job-guarantee-BG7-i3KT.js",
+        "bytes": 609,
+        "sha256": "5ee20b03b692a78d43e25263a88e9e0f8d3dc1b3d8b927d7bd3828b79175d501"
+      },
+      {
+        "path": "assets/lead-finance-course-placement-DcJix7oi.js",
+        "bytes": 601,
+        "sha256": "f17192be14cd0585c2369e6e9acd114a0f8af816866405a18626f1181865c0f1"
+      },
+      {
+        "path": "assets/lead-finance-course-vs-mba-cfa-modelling-R_Dpnf1i.js",
+        "bytes": 623,
+        "sha256": "6325b178b79f706c2272a5ed5bf806beab38a6aa9dcee2ae62339bf992189579"
+      },
+      {
+        "path": "assets/lead-finance-institute-lucknow-placement-SdpSHF5y.js",
+        "bytes": 623,
+        "sha256": "1ad028f1a34aef8f54f8d0aa50b2e2a39ba034924b0914c561223dc27f853ad6"
+      },
+      {
+        "path": "assets/lead-investment-banking-operations-course-placement-Cidcih7D.js",
+        "bytes": 645,
+        "sha256": "507ece7ff1f0c965c3e54c817283591e6f4fb15b14a1ab60b4fe43df9fb6beb3"
+      },
+      {
+        "path": "assets/lead-job-oriented-finance-course-india-D-jkf3IH.js",
+        "bytes": 619,
+        "sha256": "c4123e76970ea8d5a2d7b135d3df1e39753aa5ef8569fc537112bb63ac6026e9"
+      },
+      {
+        "path": "assets/lead-online-finance-course-placement-BpRHIVU4.js",
+        "bytes": 610,
+        "sha256": "ffdfb077c438c395bead6789bebfc6898a6ff880c9498ea9a81d5070f3650e7d"
+      },
+      {
+        "path": "assets/lead-which-finance-course-right-CkK2Nlgp.js",
+        "bytes": 600,
+        "sha256": "2098493d1002ba84ffe2de362ff09f0698a748ed6b75d139ba380741e9fba40b"
+      },
+      {
+        "path": "assets/lucknow-location-BjrdE4_V.js",
+        "bytes": 9689,
+        "sha256": "410c1dc295b0fa1306df752be8bbfa469f5b43d57dfdce25daf0e174588af0d9"
+      },
+      {
+        "path": "assets/mail-B-HlQaq2.js",
+        "bytes": 220,
+        "sha256": "3ab67c3c71bced0d11c730c09daecfc722e399af2517a51c8cdad58adcada4c4"
+      },
+      {
+        "path": "assets/manifest-c761c334.js",
+        "bytes": 85820,
+        "sha256": "9d3fb8ef1ee53e5948384bf8ec8fcd3e97095720937220c9f3aa1731ca96c8c0"
+      },
+      {
+        "path": "assets/map-pin-72NAQhCS.js",
+        "bytes": 258,
+        "sha256": "88b2200f61f0204e66aadb60a35e55b30baecb20bee06d361a153b09e589dafe"
+      },
+      {
+        "path": "assets/measurementTaxonomy-Bzjq_Nl2.js",
+        "bytes": 6391,
+        "sha256": "12c0f4bc5efd787bcf0b2f762a9b69dad1636fb03cb63aba3ab9060b06c9ee28"
+      },
+      {
+        "path": "assets/message-circle-148uSgmx.js",
+        "bytes": 152,
+        "sha256": "1646f26b33a75bd85c9b232aa19f6849a963a5f241db1d7fa6a8db2ad777fee7"
+      },
+      {
+        "path": "assets/not-found-CojjmzTq.js",
+        "bytes": 242,
+        "sha256": "fd5205717d0275b9dde968f831b64cacdc07e382fa07f262bf683b4ae8752f7a"
+      },
+      {
+        "path": "assets/phone-CNp92lS7.js",
+        "bytes": 399,
+        "sha256": "a07a0a6e47ca1ca3a57b456dac55b53842eb1368f0020036f201adb1dd264d8d"
+      },
+      {
+        "path": "assets/placements-Bzo2dRnP.js",
+        "bytes": 22271,
+        "sha256": "7f9ea3af9d8aed21d235efcb28b2152e4531c813937cef2d4125f8645daf05c1"
+      },
+      {
+        "path": "assets/privacy-policy-Clch3LDJ.js",
+        "bytes": 445,
+        "sha256": "9d35503d66ddbb25657c7dbf0400600512def1bd4ad1c9129fd2f83dcbd684fc"
+      },
+      {
+        "path": "assets/quiz-CFv1m__E.js",
+        "bytes": 29483,
+        "sha256": "f9e9bdf5886f5e3103c07c9540dd16c2adacf488da45fcd2e7e17df51cb2eef6"
+      },
+      {
+        "path": "assets/refund-cancellation-policy-Da06gaDw.js",
+        "bytes": 469,
+        "sha256": "248817bca4cfc3390dadf3dbff6a3596112fec17c9c6a00942a25d2c91234685"
+      },
+      {
+        "path": "assets/resource-accounting-basics-2l_vgTqv.js",
+        "bytes": 619,
+        "sha256": "6e99ea0c9ea6048912f9738099bc2df6697922100a4d73a8891e8a49dd9dbf8f"
+      },
+      {
+        "path": "assets/resource-accounting-interview-questions-BVHlp7gQ.js",
+        "bytes": 645,
+        "sha256": "f5756b9c7af116a7b47c82c146bf33775953640bbe9caa2a65cd46acc8972da5"
+      },
+      {
+        "path": "assets/resource-bank-reconciliation-process-DxWoMG8r.js",
+        "bytes": 639,
+        "sha256": "f47bb97b6417583914607f3f44562bf53177fceb6251a04ffe5c8c5f64765d8c"
+      },
+      {
+        "path": "assets/resource-capital-market-operations-hTE2_FA7.js",
+        "bytes": 630,
+        "sha256": "8b28decfdc5474bbd0d1d9a6991486a4b9d580cb062d7b567f8d3908a492e278"
+      },
+      {
+        "path": "assets/resource-corporate-actions-workflow-CMRtn6bD.js",
+        "bytes": 637,
+        "sha256": "07353a54af948dea55ea5c7be97e6966b450bbcbc458b9d24431e109ad0e4ecc"
+      },
+      {
+        "path": "assets/resource-cost-accounting-finance-operations-UQHAUh_I.js",
+        "bytes": 653,
+        "sha256": "5c5e6f752b16b6eb16aea3031a47f254a807286f8a747de2206b2177c37c6631"
+      },
+      {
+        "path": "assets/resource-finance-gk-BX2KsIAn.js",
+        "bytes": 605,
+        "sha256": "be6069243a2dd08d131de420f77eaaeb0225981306489324eb9d6cbc81e1b606"
+      },
+      {
+        "path": "assets/resource-financial-accounting-banking-Yw_ZWWFC.js",
+        "bytes": 641,
+        "sha256": "2054762479b6ee867762ebff1c96347b3c01c7b4873092025e9b02b9498be609"
+      },
+      {
+        "path": "assets/resource-financial-statement-analysis-DLp9RnDz.js",
+        "bytes": 636,
+        "sha256": "db5228639002b5b43400d88a4fca92b54ba4213e6804b62cd38bb3208bc96e84"
+      },
+      {
+        "path": "assets/resource-financial-system-india-ZHC29BxT.js",
+        "bytes": 629,
+        "sha256": "4f3a2acc0496d3644f55df1d353b6029e1065a21910bd9b87d84706479e4dcb6"
+      },
+      {
+        "path": "assets/resource-investment-banking-interview-questions-BbIoS5gP.js",
+        "bytes": 661,
+        "sha256": "5047c08820720409c23387ca883ee9bb06c919ce00de2ada7265a40a19742e1f"
+      },
+      {
+        "path": "assets/resource-kyc-aml-compliance-guide-DBYR6iWN.js",
+        "bytes": 633,
+        "sha256": "c019339432e7b10b00844dea89ae68d4bcf0f4c3286e48fc4da4b92918abb3e6"
+      },
+      {
+        "path": "assets/resource-reconciliation-in-finance-ghXznmpl.js",
+        "bytes": 635,
+        "sha256": "b4b59777a1acb6878ebd1dadf36558855bdd078b17472ed346b9df20aac81e3b"
+      },
+      {
+        "path": "assets/resources-DeacUCKc.js",
+        "bytes": 5798,
+        "sha256": "c4c9e57b556b18f5f303a75e9d2ef6196b12aafe291f9e04cb8cdbb46fc843e8"
+      },
+      {
+        "path": "assets/responsive-image-0oYySbiN.js",
+        "bytes": 961,
+        "sha256": "dd888b3df15b0e30dce180cbaf692d8952e6cd7f4a6cf42a7c3fdc25c43a7e33"
+      },
+      {
+        "path": "assets/retail-banking-qTwL0HT7.js",
+        "bytes": 743,
+        "sha256": "25dec243be324de94617e5acd4c1342e94ec7ab83afa21869b67dad9df436b80"
+      },
+      {
+        "path": "assets/roleIntent-CldA49Kg.js",
+        "bytes": 26922,
+        "sha256": "3c60042429cfc247d030ca921e8c6a6ac361411f90664c904d93d8cb232dd49e"
+      },
+      {
+        "path": "assets/root-BIbuZh_8.js",
+        "bytes": 114957,
+        "sha256": "63955ea1557c77472b4ab4485060bfe2a48677fdcd6929daf189afcf3beeaed0"
+      },
+      {
+        "path": "assets/route-BO9aVUya.js",
+        "bytes": 254,
+        "sha256": "f81a0392cdc520aea0468e93465dd9aeabc39403042b84c3f977cbb5850cd685"
+      },
+      {
+        "path": "assets/seoRoutes-VurQgYjE.js",
+        "bytes": 1184033,
+        "sha256": "bddb6f5484e1d1188e9c649a8ba21a8ba1bc8b38d241c5810cd41df9c6352946"
+      },
+      {
+        "path": "assets/shield-check-Bkmu3Amo.js",
+        "bytes": 324,
+        "sha256": "6e5c071937d49dfecdce2f3767094e1d68aeaf6452136a482f871a81a05af938"
+      },
+      {
+        "path": "assets/source-serif-4-cyrillic-600-normal-BDP5YDHD.woff2",
+        "bytes": 14776,
+        "sha256": "881a5cd61ba36255b82c4e99ca68a21dab3fc62fd91d780501c597f82cae477a"
+      },
+      {
+        "path": "assets/source-serif-4-cyrillic-600-normal-DFnC3vAY.woff",
+        "bytes": 16400,
+        "sha256": "24511459a9f34fbde9ee6a056894728159edec82188b2289e2bf3f8728a138c2"
+      },
+      {
+        "path": "assets/source-serif-4-cyrillic-ext-600-normal-D_E8FDgP.woff2",
+        "bytes": 7288,
+        "sha256": "424aad3c02eafc047e2ed438ef02ddfec38e72e97291865ba27399fc25ef3002"
+      },
+      {
+        "path": "assets/source-serif-4-cyrillic-ext-600-normal-DiT2IGQm.woff",
+        "bytes": 8228,
+        "sha256": "43392576c7c843f29479513d18fcb75084d48801b11d8665fcd2dec845476282"
+      },
+      {
+        "path": "assets/source-serif-4-greek-600-normal-DdRkKr-1.woff2",
+        "bytes": 8132,
+        "sha256": "9682fb04de1d693e4bfc03cec8e847e51e92e77fd8e79c151d0a6f6d7f1fbee6"
+      },
+      {
+        "path": "assets/source-serif-4-greek-600-normal-DhXQw1Kl.woff",
+        "bytes": 9480,
+        "sha256": "ebd852ff220d76958ecc5600c569aabe09b1f12c5bc6c71417cf829ec623d252"
+      },
+      {
+        "path": "assets/source-serif-4-latin-600-normal-DMD1h6_f.woff",
+        "bytes": 25624,
+        "sha256": "3ac34ff6959df1a23563cdf83fb5f532fb3838ca910b400f2e6b1dda0cf3fd48"
+      },
+      {
+        "path": "assets/source-serif-4-latin-600-normal-DouSKlru.woff2",
+        "bytes": 21532,
+        "sha256": "f2b7e1cf1d277b7608231868135648f8ad8e2b58d8e97ca088bee15dc357bee7"
+      },
+      {
+        "path": "assets/source-serif-4-latin-ext-600-normal-0sIUyHMO.woff2",
+        "bytes": 18376,
+        "sha256": "351f7c7a0db5732b008c62d26a8e2b1d2d110449026b8168d4240d07985a7e49"
+      },
+      {
+        "path": "assets/source-serif-4-latin-ext-600-normal-C6NNqpJh.woff",
+        "bytes": 22476,
+        "sha256": "3431d8d75c68a32a4ed6cfe697f2fb4da717674d7abd8eaf2cf70975129fa0a7"
+      },
+      {
+        "path": "assets/source-serif-4-vietnamese-600-normal-B0WJbuqT.woff",
+        "bytes": 8136,
+        "sha256": "d1947b4a1b1f623e90fbd32cdadedc951d1c394c9b47a1b38f8f9ea0fa417103"
+      },
+      {
+        "path": "assets/source-serif-4-vietnamese-600-normal-CznyfUKR.woff2",
+        "bytes": 6444,
+        "sha256": "c42f67589974674a03cd1aece3e18123ad858642ecd8561cedaaeb282dc7a7d1"
+      },
+      {
+        "path": "assets/sourceContent-CqCRrwVG.js",
+        "bytes": 15512,
+        "sha256": "4a8827b913233c9c9382b7da5039eaac8b613b1fdf696593c58226189c44e86b"
+      },
+      {
+        "path": "assets/terms-and-conditions-BqDvQvNp.js",
+        "bytes": 457,
+        "sha256": "ba0f22aa560ad5018c3b91821a5fb7590f4e23a5e0d3f2bda19edd03c1b4445f"
+      },
+      {
+        "path": "banking-finance-course-with-placement/index.html",
+        "bytes": 43985,
+        "sha256": "f5b96ad6b72b9a3f67ab9197fd66d611891c2dd14a915d974adcd34245db07a4"
+      },
+      {
+        "path": "best-finance-course-after-bcom/index.html",
+        "bytes": 44907,
+        "sha256": "d706992c8b45a4e0acfc5a707c0b7721b3b73116e1400c16160f8652552ac9ca"
+      },
+      {
+        "path": "best-finance-course-after-graduation/index.html",
+        "bytes": 44323,
+        "sha256": "6b7845e84dfd003d49c06a3a31392af2aab68da904f1212a70b3e6586f13dd6d"
+      },
+      {
+        "path": "best-finance-course-in-india-with-placement/index.html",
+        "bytes": 45350,
+        "sha256": "a26aa8a922f3a1759cdf5b21347812cde722cb0b8f098d8db3e258c23a851f82"
+      },
+      {
+        "path": "best-investment-banking-course-india/index.html",
+        "bytes": 45269,
+        "sha256": "d41e357cc47d824136f7d04e01ddcb0f60bf1b18ba9600300feb56e42c3273d1"
+      },
+      {
+        "path": "blog/accounting-conventions-principles-examples/index.html",
+        "bytes": 53093,
+        "sha256": "0cc493e1293754d95b53222a723d748a9bcc3653d1c927504d8e3a33d9c39c15"
+      },
+      {
+        "path": "blog/accounting-principles-explained/index.html",
+        "bytes": 44680,
+        "sha256": "ab403b7588ae3cbab852f8d75a3f7867e6c26e88eb9eb396c74dd359aa676950"
+      },
+      {
+        "path": "blog/accounts-receivable-vs-payable/index.html",
+        "bytes": 44404,
+        "sha256": "3570d8743cd08e6c9e1d4431a02bbee826e7b0b7ca966d889ed400ac8682510f"
+      },
+      {
+        "path": "blog/accrual-vs-deferral-accounting/index.html",
+        "bytes": 43889,
+        "sha256": "cfd3b4395c0cec7646bca83b00b7b34429ddb6ce0d8ac81fdeaf1c3d46484d5e"
+      },
+      {
+        "path": "blog/ai-in-banking-use-cases-risks/index.html",
+        "bytes": 53472,
+        "sha256": "afa16a1e43005a7ea184f6d173014d97a8cd11c7249e24906ea4028e5f4b00dc"
+      },
+      {
+        "path": "blog/asset-servicing-operations-corporate-actions/index.html",
+        "bytes": 44428,
+        "sha256": "6dd5466fb1a0ed08cc120142e879846753712aa7f5af871ed85747247adfc610"
+      },
+      {
+        "path": "blog/balance-sheet-meaning-format-example/index.html",
+        "bytes": 43801,
+        "sha256": "194eb55e15694a5ae1fe6f9df3903f94d9c7183403288d67e1bc2115b1d6345e"
+      },
+      {
+        "path": "blog/banking-interview-questions-freshers/index.html",
+        "bytes": 45236,
+        "sha256": "015d48730d4b3cf3948c6e3ebc1bf466bd6ed13c8eedc86dd823a2c7806e9d51"
+      },
+      {
+        "path": "blog/banking-sector-india-structure-operations/index.html",
+        "bytes": 54703,
+        "sha256": "a5c7390aea595db5052fa24fb2d84eb9cda337bb55e924c01ccc058c14482614"
+      },
+      {
+        "path": "blog/bfsi-domain-banking-financial-services-insurance/index.html",
+        "bytes": 55032,
+        "sha256": "2b8f38293bf74f1a9b6a45c0eab0f4c42a17867722e8ed691aa69a1072360d1c"
+      },
+      {
+        "path": "blog/bonds-vs-equities-difference/index.html",
+        "bytes": 43589,
+        "sha256": "7382959c4f27a0843b990ff1c03b48283f596ae0b023bbb7e791ea039c3c3b55"
+      },
+      {
+        "path": "blog/business-analyst-vs-financial-analyst-finance/index.html",
+        "bytes": 44905,
+        "sha256": "aa218432dade19e36a02f9df1236c69e0698c4b06c5a32232c95bd0288662380"
+      },
+      {
+        "path": "blog/career-options-in-commerce-decision-map/index.html",
+        "bytes": 44398,
+        "sha256": "6d604298bbcdc02228a5231fc01a4547038d7e981d25c2115c4c80254a385d15"
+      },
+      {
+        "path": "blog/cash-flow-statement-direct-vs-indirect/index.html",
+        "bytes": 44728,
+        "sha256": "6632a12fb9de84d29046d3f938885d7b36bbd1739182811b0a0ea824aa570e53"
+      },
+      {
+        "path": "blog/category/career-guides/index.html",
+        "bytes": 53760,
+        "sha256": "ae1d201498431a912a0984912f484b45953736ca0a99fbe913efb735ee57c1a7"
+      },
+      {
+        "path": "blog/category/finance-operations/index.html",
+        "bytes": 103118,
+        "sha256": "db265befd44ddfa0c170004a7b4dba8e0ce2427413b3b5b612f066c61fb54c3c"
+      },
+      {
+        "path": "blog/category/industry-updates/index.html",
+        "bytes": 39282,
+        "sha256": "cc3297d3900df788cb08a2cf581f4224ba41ccda69292e4bb8a7f99e732b70a2"
+      },
+      {
+        "path": "blog/category/interview-preparation/index.html",
+        "bytes": 41561,
+        "sha256": "4941555ecfc80807682204d66c0df35751f7f5923f210d68a8fbf7ce11c26749"
+      },
+      {
+        "path": "blog/category/investment-banking/index.html",
+        "bytes": 84893,
+        "sha256": "e614cdd1ac1e0ebf4cf5fd1669716ff78cc45268dffbd0b511f2446d823f5acb"
+      },
+      {
+        "path": "blog/category/retail-banking/index.html",
+        "bytes": 77870,
+        "sha256": "37dd0a6ef2ea1ca9e829b1bef49403174fb3d4216dbeff38ad95c0fd302152c3"
+      },
+      {
+        "path": "blog/chargeback-process-evidence-operations/index.html",
+        "bytes": 44456,
+        "sha256": "40dbfd5d8111ea45b52511e8511fb6ec0e56327376699fca2fad4aac6d8ce407"
+      },
+      {
+        "path": "blog/clearing-and-settlement-explained/index.html",
+        "bytes": 54641,
+        "sha256": "08d5150818d91e5e2b8e1baec31da2828692ae1da05bb544a821d71c80365a4b"
+      },
+      {
+        "path": "blog/commercial-banks-services-operations/index.html",
+        "bytes": 42957,
+        "sha256": "6f999239f6a410352e26a87d86933c9a5d3b885aef632e54bf0c733ba2fa278e"
+      },
+      {
+        "path": "blog/compliance-analyst-duties-career-path/index.html",
+        "bytes": 44752,
+        "sha256": "70004de7dc2ddd4c1e573a51bdee867b055e3c1a5594d2854dd8a416e2fba720"
+      },
+      {
+        "path": "blog/corporate-actions-analyst-career-path/index.html",
+        "bytes": 59541,
+        "sha256": "bae9011f5d425632f34f3be23b185b2fe11c6001cfb16863db9379163f8515c0"
+      },
+      {
+        "path": "blog/cost-accounting-methods-examples/index.html",
+        "bytes": 53664,
+        "sha256": "650bd868ff1841497b5ed3045f18a83ad355026ecb686c856f786313260d7069"
+      },
+      {
+        "path": "blog/cost-accounting-vs-management-accounting/index.html",
+        "bytes": 53312,
+        "sha256": "3ee12fae2f3ee8264ab3ea19c617a59344f05ce8fd79075d9745e87bf5a76314"
+      },
+      {
+        "path": "blog/credit-analysis-basics-beginners/index.html",
+        "bytes": 53853,
+        "sha256": "0ea381a6bea58aa8910b92fc06cf3e4e93c627e713532add7f51bc8f458a753d"
+      },
+      {
+        "path": "blog/credit-risk-management-banking/index.html",
+        "bytes": 52929,
+        "sha256": "f9710e65c65e9db3fdb7c2df704d9840de2fc9563c922afab27692f995ad8c86"
+      },
+      {
+        "path": "blog/derivatives-meaning-types-operations/index.html",
+        "bytes": 44805,
+        "sha256": "f5788229c433b1fe678da8d62cd9462798353c2f3220af0fe0e1b15db27c0d0d"
+      },
+      {
+        "path": "blog/digital-banking-services-operations/index.html",
+        "bytes": 44567,
+        "sha256": "e722694c76150f664ecddafcbf9e083f8d6a70eb1871305e4d8301bc3a22f007"
+      },
+      {
+        "path": "blog/digital-payments-operations-career-india/index.html",
+        "bytes": 48881,
+        "sha256": "a49ba02d25df857c6ab9a1a059f391335b49ae49a86d941f94aaa35820e87917"
+      },
+      {
+        "path": "blog/enhanced-due-diligence-edd-process/index.html",
+        "bytes": 44667,
+        "sha256": "33bd55cab0ec9cbd94b81053f1e87acaf2be8753ab073f6cad69bff7e7fe2bf9"
+      },
+      {
+        "path": "blog/failed-settlement-reasons-resolution/index.html",
+        "bytes": 54870,
+        "sha256": "019d7aa37a5a472c8019af61e2e7094e7114c809ab7b9d7817219315a10440df"
+      },
+      {
+        "path": "blog/finance-interview-questions-freshers/index.html",
+        "bytes": 46341,
+        "sha256": "2ac02f0517fe3586798bd155907b9a92936d2d560117b51a808374913e755d92"
+      },
+      {
+        "path": "blog/finance-operations-portfolio-projects-freshers/index.html",
+        "bytes": 59436,
+        "sha256": "6c96d36511b589dc2993922620456f940e2be45b557dfac892c04e61e96bb32a"
+      },
+      {
+        "path": "blog/finance-operations-resume-skills-examples/index.html",
+        "bytes": 44890,
+        "sha256": "11b69f2dc4df33b6289630acc2e2d7b6c29ebda838f0689bbd66a2660ea9fc94"
+      },
+      {
+        "path": "blog/finance-operations-vs-accounting/index.html",
+        "bytes": 44488,
+        "sha256": "93ee3d9ff698b172b8342a9fd8722eabb91bced15f7bedaf83ee31c68260fe25"
+      },
+      {
+        "path": "blog/finance-process-associate-role/index.html",
+        "bytes": 60056,
+        "sha256": "4cce89cf864f128bae606dc1843f097110c6b2391b34b69f247bd42c050af470"
+      },
+      {
+        "path": "blog/financial-accounting-statements-process-examples/index.html",
+        "bytes": 53946,
+        "sha256": "24db745fdbe45c69398789a1e85af675abcd34149134f2535a0dd34e2059be1c"
+      },
+      {
+        "path": "blog/financial-crime-analyst-kyc-aml-career-guide/index.html",
+        "bytes": 57917,
+        "sha256": "d69cc8693589c900b409230afaa08083970986db5773035aa7c49a7344bed0c0"
+      },
+      {
+        "path": "blog/financial-management-decisions-controls/index.html",
+        "bytes": 42812,
+        "sha256": "448ddbbda0e11802dc4c2335f4aa42bd846f5a958df8cfb9256bdbb0840946b0"
+      },
+      {
+        "path": "blog/financial-market-intermediaries/index.html",
+        "bytes": 58263,
+        "sha256": "bc634123a24aaf773ae8335f0d1df7180b66688f8f8879dd40b85f35ac4fede6"
+      },
+      {
+        "path": "blog/financial-markets-instruments-participants-operations/index.html",
+        "bytes": 55160,
+        "sha256": "248ca927c903a7426252faa0a8f2959e837d8a7345222ecc7153a3b4749c7d32"
+      },
+      {
+        "path": "blog/financial-products-and-services-banking/index.html",
+        "bytes": 56435,
+        "sha256": "323dbd1941f7daf124989ccdb9725f246bf3db98aa690c9b33edcb58257828d5"
+      },
+      {
+        "path": "blog/financial-reporting-process-controls/index.html",
+        "bytes": 53840,
+        "sha256": "a746a2a0f120e3abe1718592caa1adbce84bef969f1f5c58818922087dff477e"
+      },
+      {
+        "path": "blog/fintech-operations-careers-after-graduation/index.html",
+        "bytes": 50260,
+        "sha256": "260391dfb156a3f8b43bf0702366ac79d67895a6e1ff846a5595fa7d5f5e4e9d"
+      },
+      {
+        "path": "blog/fintech-operations-roles-workflows/index.html",
+        "bytes": 44708,
+        "sha256": "15ad493a72173f8d068278cd21f4675239bc2157a3455b8293a066042ad13b38"
+      },
+      {
+        "path": "blog/front-middle-back-office-investment-banking/index.html",
+        "bytes": 54903,
+        "sha256": "8a959fb3e6c72f81123a3b14e1e221632c64a8b101d51f59b906bb6d67980e30"
+      },
+      {
+        "path": "blog/fund-accounting-nav-workflow-career-skills/index.html",
+        "bytes": 58020,
+        "sha256": "64e502ccec0e72f1ac8638624e063940280444c927662ac76bb23a7c1871a41f"
+      },
+      {
+        "path": "blog/general-ledger-vs-subledger/index.html",
+        "bytes": 45254,
+        "sha256": "bb3ea78f2651b15488333edb109259c7a21eadd02f5b2d7d52aa0c6f58936a18"
+      },
+      {
+        "path": "blog/golden-rules-of-accounting/index.html",
+        "bytes": 44715,
+        "sha256": "622a0eb8b95031538fea4112ab8237f3d9eb17f5e79914342736686e4da52c81"
+      },
+      {
+        "path": "blog/how-to-choose-kyc-aml-course-india/index.html",
+        "bytes": 48320,
+        "sha256": "fa6ab829fcef220209c16fd50a3b754a97e379c095bb9f46eb85482d42766fe3"
+      },
+      {
+        "path": "blog/how-to-evaluate-finance-institute-reviews/index.html",
+        "bytes": 45506,
+        "sha256": "32cfae5037664e2440c073a9dd3533bc8988af6241e02d884f1cf5f057977f77"
+      },
+      {
+        "path": "blog/index.html",
+        "bytes": 195639,
+        "sha256": "1e067c2c206c4c781ce7904cfaa7737f0e8335a2b3280c68f7ff58bbdd60c63a"
+      },
+      {
+        "path": "blog/investment-banking-career-path-india/index.html",
+        "bytes": 45315,
+        "sha256": "cbee3bee6b2a1d68dccd72f0d3604a2d16164f1ce618ed9005b3f6532c893977"
+      },
+      {
+        "path": "blog/investment-banking-operations-vs-cfa-financial-modelling/index.html",
+        "bytes": 49987,
+        "sha256": "065fd4600274ad17f20f0e2a62d74d23afed9a0b6d9bee5a8d5ea091d9929031"
+      },
+      {
+        "path": "blog/investment-banking-roles-teams/index.html",
+        "bytes": 44895,
+        "sha256": "e7d8869769e58ed2bc90ab35dac9b12f614373e62626e8cfb6e046f01cfb1dbd"
+      },
+      {
+        "path": "blog/investment-banking-skills-graduates/index.html",
+        "bytes": 53785,
+        "sha256": "ea4d4fa24c79db214f7bea0ab2d43575ce8e0aa5783b836b63f0476ebd54d830"
+      },
+      {
+        "path": "blog/investment-banking-teams-operations/index.html",
+        "bytes": 44727,
+        "sha256": "c6021cd726a9a8e14acd6277efd989127e53f173400cd98e8e2f5c6e9316349d"
+      },
+      {
+        "path": "blog/investment-banks-in-india-functions-roles/index.html",
+        "bytes": 44796,
+        "sha256": "255a83bd3638e223b1aa239257760993bc2ad9f84ba750171ea2c9d2b1dab9ae"
+      },
+      {
+        "path": "blog/investment-management-meaning-process-roles/index.html",
+        "bytes": 55566,
+        "sha256": "0267987d03f4faf7913e2cc4077c39c3df7ad9ee27ecacb93adeb7517059a5cc"
+      },
+      {
+        "path": "blog/kyc-onboarding-case-file-example/index.html",
+        "bytes": 47561,
+        "sha256": "89e25f1f773fa5f9cda441a39fb51987021544387a38c45401e376b51284b441"
+      },
+      {
+        "path": "blog/loan-operations-banking-roles-skills-career-path/index.html",
+        "bytes": 59849,
+        "sha256": "32f1f515f96b3ff997ba2db62f7ef20a51b689d2b722aef0fb87bf84e0f8b959"
+      },
+      {
+        "path": "blog/loan-processing-steps-workflow/index.html",
+        "bytes": 54003,
+        "sha256": "3c18690e3d9ed6f8c871c5e21e5820f4708bae1f9d26ac97fa23269b6d63eff9"
+      },
+      {
+        "path": "blog/maker-checker-controls-banking-operations/index.html",
+        "bytes": 44376,
+        "sha256": "436bf0494e96e141daf743f08a5657c8734e98be0b23f335305d3bdf473447ff"
+      },
+      {
+        "path": "blog/money-market-instruments-operations/index.html",
+        "bytes": 52809,
+        "sha256": "ddb36387b0d797848348715c55f3b63ae74f648c937df8ff07d2968c0c938c4a"
+      },
+      {
+        "path": "blog/month-end-close-process-finance-operations/index.html",
+        "bytes": 45385,
+        "sha256": "3efd04f5b30c150aa54e1f70343d9d24010f750cdd25d0f460f4fb8fa86d9945"
+      },
+      {
+        "path": "blog/nbfc-vs-bank-difference-india/index.html",
+        "bytes": 44512,
+        "sha256": "e1810893bbd7413eb217848448174cb2cc7b7b6594eb60bd1e6d679de7e52c98"
+      },
+      {
+        "path": "blog/neo-banking-products-controls/index.html",
+        "bytes": 44151,
+        "sha256": "f684a897987a1715d05e6dcbe47ff2c13d62346e4a35f9fa6edf2d288e8e0105"
+      },
+      {
+        "path": "blog/payment-gateway-process-settlement/index.html",
+        "bytes": 44281,
+        "sha256": "8506a3fee95b81a7fb35fcd059673f4a6d018f11cfb918ea875e4f259fbd9608"
+      },
+      {
+        "path": "blog/payment-reconciliation-process-breaks-controls/index.html",
+        "bytes": 45132,
+        "sha256": "0b41f6422607f413d086d444fe3018b888a8348f8fe48f824dcf1fc47cec52c9"
+      },
+      {
+        "path": "blog/procure-to-pay-process-controls/index.html",
+        "bytes": 45392,
+        "sha256": "75c2ff37de30b7b454ce701b0751b63f5bb2e730f7ffd09aabfa3a4721cfd980"
+      },
+      {
+        "path": "blog/questions-to-ask-finance-institute-before-enrolling/index.html",
+        "bytes": 46647,
+        "sha256": "21524969adf4cb5df14f2d656917fbb537f9c7567540c535c82cee6c4c80680c"
+      },
+      {
+        "path": "blog/r2r-p2p-o2c-finance-processes/index.html",
+        "bytes": 44715,
+        "sha256": "ad177c1dac90df6d7f116b0f088f3c5857a827c6f6eed26e225288ee4f22c90b"
+      },
+      {
+        "path": "blog/reconciliation-process-steps-finance/index.html",
+        "bytes": 45320,
+        "sha256": "1378d148279ec76f1ff61d1be217a6f01b8037cd32e9aa5fb782b283104edab6"
+      },
+      {
+        "path": "blog/retail-vs-commercial-banking/index.html",
+        "bytes": 44339,
+        "sha256": "98c77e8b08e257d470af49412bd1e6d01d5c63c1be764a7055209d020f5dc891"
+      },
+      {
+        "path": "blog/risk-management-in-banking/index.html",
+        "bytes": 61488,
+        "sha256": "14e99eb95be67ed9aac61c325c46bcbb20a03f2455ee35ab4dfe0fdb03a61f8a"
+      },
+      {
+        "path": "blog/rtgs-neft-imps-upi-difference/index.html",
+        "bytes": 44801,
+        "sha256": "17331f75a63493c78bb125dc4b3532f39179c17ff53a8eb470f2e33392df0d00"
+      },
+      {
+        "path": "blog/sanctions-screening-process-banking/index.html",
+        "bytes": 44698,
+        "sha256": "bec1af8e4d29179303cc10a57ee05541494592dda29f12bafa07494d79110986"
+      },
+      {
+        "path": "blog/securities-operations-workflow-roles/index.html",
+        "bytes": 44960,
+        "sha256": "b35d9a156d135844e9e484131c96d9319b6bd085f935dc48fcf94bfc93933c23"
+      },
+      {
+        "path": "blog/settlement-trade-break-worked-example/index.html",
+        "bytes": 47969,
+        "sha256": "9f62f0cb265677abb68b8212d0d5013318684d7b4bd09c56478de8380df14ccb"
+      },
+      {
+        "path": "blog/trade-capture-process-controls/index.html",
+        "bytes": 44592,
+        "sha256": "9eaa6999c489975dec3d5ce1c15b0fa54cf8c0f86426694b3cc8a7dc44ffb5b5"
+      },
+      {
+        "path": "blog/trade-confirmation-vs-affirmation/index.html",
+        "bytes": 44016,
+        "sha256": "c5805ca60db6ad29eaf8eb8e5141ce763ea45e73733d679c66da56d8123d47b4"
+      },
+      {
+        "path": "blog/trade-support-analyst-duties-skills/index.html",
+        "bytes": 44742,
+        "sha256": "e3a84090628906f32db49c5b048f4f9f3263f9aa0ba28d8a6a53267ca624d4a9"
+      },
+      {
+        "path": "blog/transaction-monitoring-alerts-escalation/index.html",
+        "bytes": 53249,
+        "sha256": "fbce6a81a3ef687596fd67612e10f470a85f8ac0ad29a4b1b0a1749b041416f0"
+      },
+      {
+        "path": "blog/treasury-operations-roles-workflow/index.html",
+        "bytes": 53712,
+        "sha256": "5eeaacfa14c07c260ee6f32c4111f0d98c60d0b49216caab76a7c5edaf788094"
+      },
+      {
+        "path": "blog/trial-balance-format-errors-reconciliation/index.html",
+        "bytes": 43359,
+        "sha256": "a55150e95bb3c027e8813d432a2667b075bd43e5f074f755ceef7832ec79dc32"
+      },
+      {
+        "path": "blog/trial-balance-format-purpose-example/index.html",
+        "bytes": 43998,
+        "sha256": "fa993e14634a094f57e59f01f54e6f142a15e997cfb582ac2350944712368f28"
+      },
+      {
+        "path": "blog/upi-payment-lifecycle/index.html",
+        "bytes": 54668,
+        "sha256": "25e8228aa4e8e8d510c613b0ad62dc5ef852d493c4bbb6dd4ae5226e16f292e9"
+      },
+      {
+        "path": "blog/what-is-aml-controls-workflow/index.html",
+        "bytes": 52922,
+        "sha256": "72e176492acd505ace11da544e5b3519bcf6879bc25532714417da0b61f7b827"
+      },
+      {
+        "path": "blog/what-is-kyc-process-documents/index.html",
+        "bytes": 54434,
+        "sha256": "a56ea3143cb91f9e6d23ddbe8abcfe516d83ca6974a5bcd119921c7ef569fd25"
+      },
+      {
+        "path": "blog/working-capital-cycle-explained/index.html",
+        "bytes": 44192,
+        "sha256": "eb728e2ea76b4dab2abfa96f89ec85a650a1ff9157ace3362e47135718b6282b"
+      },
+      {
+        "path": "career-guides/back-office-banking-jobs/index.html",
+        "bytes": 59979,
+        "sha256": "f0ed74ea5b6ebd2ca0714a1050e391dab79125be7db511cc1d1f133ee8111819"
+      },
+      {
+        "path": "career-guides/business-analyst-in-banking/index.html",
+        "bytes": 58747,
+        "sha256": "4a8f1dbec4bef415b966963bd33e3859edf1068c098237389a07eee97e1c33f9"
+      },
+      {
+        "path": "career-guides/choosing-finance-career-course/index.html",
+        "bytes": 60515,
+        "sha256": "53c497fd9ad5b7abbc81d0667a25703a8902e8e61dd68cbdbc006a02ca22c3d3"
+      },
+      {
+        "path": "career-guides/credit-analyst/index.html",
+        "bytes": 58719,
+        "sha256": "d7eb5fe65c87cceca79f23a809627d3ea3229245d699625aee3f12b8075d2bf6"
+      },
+      {
+        "path": "career-guides/credit-operations-analyst/index.html",
+        "bytes": 59460,
+        "sha256": "11d2442902fd535d76a74ab1f4b1c1163fde9f91ccb9852fd193a0d5053e786d"
+      },
+      {
+        "path": "career-guides/custody-operations/index.html",
+        "bytes": 60036,
+        "sha256": "f33f0827c525b6b62850728c1b733a59a70ee7837abfecbaf58193f7fe186323"
+      },
+      {
+        "path": "career-guides/digital-payments-operations/index.html",
+        "bytes": 59989,
+        "sha256": "5ad096ebb037d841c23151bb2da2fc0c101fdef2fa77a35d5c6d7d62a9aa745b"
+      },
+      {
+        "path": "career-guides/finance-careers-after-graduation/index.html",
+        "bytes": 60806,
+        "sha256": "c93e80faf0a91760aa6fc0b4718768efd69550d2316552468550fc80576eec55"
+      },
+      {
+        "path": "career-guides/finance-learning-roadmap/index.html",
+        "bytes": 59512,
+        "sha256": "b5469e1a61a2f2ce5056b4dcd0a40760dbdefd5c7c324ab5b6130a07a26b776b"
+      },
+      {
+        "path": "career-guides/finance-operations/index.html",
+        "bytes": 72779,
+        "sha256": "48ffa06aa00d9c0f1c3e0ea1cc4a7b0f1bc9a743f54440a6f07bb0c456030910"
+      },
+      {
+        "path": "career-guides/financial-operations-faq/index.html",
+        "bytes": 57683,
+        "sha256": "73f95453f4707a8ad3fc38017c16e9f862273855af3487e7c6d2e5f40ed53d9b"
+      },
+      {
+        "path": "career-guides/fintech-operations/index.html",
+        "bytes": 58592,
+        "sha256": "023d51bea2e4b5e06e1016d41870da32916912d2c2f64cf3d213c60c1cc1c5ec"
+      },
+      {
+        "path": "career-guides/index.html",
+        "bytes": 145212,
+        "sha256": "4ab57f318316fc23c9c879362375a74d6e1cb578acaa0f8a12e565a9159e57fc"
+      },
+      {
+        "path": "career-guides/investment-banking-operations-roles/index.html",
+        "bytes": 62307,
+        "sha256": "558e40a10667e63acc10b470a755cbb4e1350e2edf1ba64e6fd7052e82150a66"
+      },
+      {
+        "path": "career-guides/investment-banking-operations/index.html",
+        "bytes": 62644,
+        "sha256": "1a9a4d3d00eed14bab0b296bd9f9917724514ac8f94b06c530fde883c29f6784"
+      },
+      {
+        "path": "career-guides/kyc-aml-analyst/index.html",
+        "bytes": 60315,
+        "sha256": "263627aa3f2c29febec0090e16838174a3a9f96d25fadeb246370cdaf13f00a2"
+      },
+      {
+        "path": "career-guides/middle-office-operations/index.html",
+        "bytes": 59355,
+        "sha256": "bbb6757f68cdf95d292d602aae069c5d42b15b16799914eb7aadf1f4f6332dab"
+      },
+      {
+        "path": "career-guides/operations-analyst-banking/index.html",
+        "bytes": 59598,
+        "sha256": "fb06f1ec14a6c082ec52b430d64ee714290bece1f7da2b73f2c2d81730369a10"
+      },
+      {
+        "path": "career-guides/reconciliation-analyst/index.html",
+        "bytes": 61299,
+        "sha256": "16cda7e81c573305803238160340aa4bd760b122cd296b15b37be56b15450791"
+      },
+      {
+        "path": "career-guides/retail-banking-operations/index.html",
+        "bytes": 58705,
+        "sha256": "28b013a46dc40cb3c6eed7707be5d927ee9525e9971ba66e5dc0489f01d7ed8a"
+      },
+      {
+        "path": "career-guides/risk-operations-analyst/index.html",
+        "bytes": 58744,
+        "sha256": "3a13dd858fee2327eefa402de5df219cf913c406bfb4185b7ab36d06e54dae56"
+      },
+      {
+        "path": "career-guides/securities-operations/index.html",
+        "bytes": 58939,
+        "sha256": "9c3cc48909005941845f74396878654147e361daa39a17da6cc46f2f58ecf096"
+      },
+      {
+        "path": "career-guides/settlement-analyst/index.html",
+        "bytes": 59538,
+        "sha256": "6ecef02a4966751f3c2068cf0f6a93e5b39966444fc6d18bbfaf9032f74849c9"
+      },
+      {
+        "path": "career-guides/trade-lifecycle/index.html",
+        "bytes": 60438,
+        "sha256": "498b8c92235dcc01f6c4d22adf1d6a1ff7a200caa33d40f54ea9106e95da252c"
+      },
+      {
+        "path": "career-guides/trade-support-analyst/index.html",
+        "bytes": 59084,
+        "sha256": "63009e68a6f62e7c2556a28cee57ba7e3245fb0aa6e90b166c8c1b40ed8149d0"
+      },
+      {
+        "path": "career-guides/transaction-monitoring-analyst/index.html",
+        "bytes": 58960,
+        "sha256": "ca78f9edc115762eb524ebf361997d3a011c3eaa689700effc298e131c1ce865"
+      },
+      {
+        "path": "career-guides/what-is-investment-banking/index.html",
+        "bytes": 58953,
+        "sha256": "70f24995e8c4e668772a23a1500a8e210f5e1e42d3f39d65727457944262b1d1"
+      },
+      {
+        "path": "compare/banking-vs-finance-careers/index.html",
+        "bytes": 56514,
+        "sha256": "8dc17a478c60aa684016374afa93e28f14b229ca4f81a987eac2bcae6f034715"
+      },
+      {
+        "path": "compare/best-finance-institutes-india/index.html",
+        "bytes": 57606,
+        "sha256": "50d73fdb5765d45aa68a7c66d7015d08fe1c7747d95ced14b722a58cef7493eb"
+      },
+      {
+        "path": "compare/finance-operations-vs-financial-modelling-cfa/index.html",
+        "bytes": 52041,
+        "sha256": "f5dac0b7ab5c878015763adf650ad2ad88f6424e9d2c95ec225bf5447c6494ca"
+      },
+      {
+        "path": "compare/investment-banking-operations-courses/index.html",
+        "bytes": 73191,
+        "sha256": "65542467f454a6acf2de3258ba27e3372a6c258f0747f8b2eff87583483d2c9f"
+      },
+      {
+        "path": "compare/investment-banking-operations-vs-financial-analyst/index.html",
+        "bytes": 57278,
+        "sha256": "31c280f2fa6cbb252c57343838b9c722a25c253117efdabc6453bc03021601a6"
+      },
+      {
+        "path": "compare/online-vs-offline-finance-training/index.html",
+        "bytes": 50264,
+        "sha256": "48e308a77e5c2a2d05319e52cb01f319b19bc40b2d72529e214cc5bec93917f3"
+      },
+      {
+        "path": "contact/index.html",
+        "bytes": 43519,
+        "sha256": "1ff5c010f4128922486f56fd394ae28fc3535fa8b9b3a5b0a943b22f7be03e40"
+      },
+      {
+        "path": "cookie-policy/index.html",
+        "bytes": 31447,
+        "sha256": "e0c224ddbe811967c376f6d1b1b7c4d1f375fe9b285031029516506c2cafe9d2"
+      },
+      {
+        "path": "courses/banking-and-finance/index.html",
+        "bytes": 49800,
+        "sha256": "8b93001e82c39aa43fcecc16b338cde9f8f2d6fdd8076e1cd38b57435b0320bd"
+      },
+      {
+        "path": "courses/banking-courses/index.html",
+        "bytes": 51110,
+        "sha256": "a9b78dea2a4c997160044bfea6584cb854e9b8c65c3be6d4f5305d338ffcbee6"
+      },
+      {
+        "path": "courses/digital-payments/index.html",
+        "bytes": 51006,
+        "sha256": "4591d6051ebf72ca3aeb41a4053ada8738831de4c9490558c39c972eca8c7e2c"
+      },
+      {
+        "path": "courses/finance-course-fees-eligibility/index.html",
+        "bytes": 53250,
+        "sha256": "22718d7a72731e34356481f7d0b2cd8569359383be5e4f6696f98fbd44c2e219"
+      },
+      {
+        "path": "courses/finance-course-for-graduates/index.html",
+        "bytes": 52243,
+        "sha256": "5b0d05d9354e401c294500b85b3839258963f90d25a284a2050b75645f152543"
+      },
+      {
+        "path": "courses/finance-operations-syllabus/index.html",
+        "bytes": 53089,
+        "sha256": "1f8fe35628c803f62e173c458ceedf3463d88a196b8d72ba279b7f39874fa4a8"
+      },
+      {
+        "path": "courses/finance-operations-training/index.html",
+        "bytes": 52378,
+        "sha256": "f9daae873357adf06dc75507928037f8a02ed8118a293496d58c7e124e4fb992"
+      },
+      {
+        "path": "courses/finance-operations/index.html",
+        "bytes": 65036,
+        "sha256": "3e9dddcdaa7ced4f3352c90e38caba701dbc9770c92519887a01f190d61aab2f"
+      },
+      {
+        "path": "courses/fintech/index.html",
+        "bytes": 51266,
+        "sha256": "ccde8a62200caa00c006e70ff7f5cdba136cb3cde88d85e87bdf3b974e0089bc"
+      },
+      {
+        "path": "courses/index.html",
+        "bytes": 139892,
+        "sha256": "c330e556132fb88cf3190b49a4f9c0983d63946108343e26c9ed8b97fdd65fca"
+      },
+      {
+        "path": "courses/investment-banking-operations/index.html",
+        "bytes": 66426,
+        "sha256": "ee255a5e19af365727a014759c7ecf5ede8b7606dcd78cd6b48df017e018a5e2"
+      },
+      {
+        "path": "courses/kyc-aml/index.html",
+        "bytes": 54112,
+        "sha256": "cbdd96ca0b4f23d9271ac0b979f9fe4db425e7a3490abd90ff144fc01373a4b2"
+      },
+      {
+        "path": "courses/retail-banking/index.html",
+        "bytes": 61507,
+        "sha256": "acac29f6e5a90048af5ba49d5d6daf7eb927e4cb8e38f61114e9aa1806e8c693"
+      },
+      {
+        "path": "disclaimer/index.html",
+        "bytes": 31315,
+        "sha256": "14c32562d0d098706a2a0f2c2386098f8b45cb17a29f8d9db4da0f35448a08e1"
+      },
+      {
+        "path": "downloads/financial-operations-masterclass-syllabus.txt",
+        "bytes": 1733,
+        "sha256": "a7339db7916dc9111d0ffe460fb6919eb8d53867c01f4333093c97884cb95029"
+      },
+      {
+        "path": "downloads/kyc-onboarding-case-answer-key.txt",
+        "bytes": 3178,
+        "sha256": "952fb3dcfcfe5f313b9aeef30526df7577e74ccc4805c6467046a9fb437743f9"
+      },
+      {
+        "path": "downloads/kyc-onboarding-case-file.csv",
+        "bytes": 1284,
+        "sha256": "e8072cb63659959e64c965ac0476a66b9f642b87a848d046a6bc62933700974c"
+      },
+      {
+        "path": "downloads/placement-support-terms.txt",
+        "bytes": 1470,
+        "sha256": "b83619af6a58c3de9e76d9009260dd557fe686c8b89d12a6edec8bbcc1e69de6"
+      },
+      {
+        "path": "downloads/settlement-trade-break-answer-key.txt",
+        "bytes": 3085,
+        "sha256": "124e0d256cef40ccb55bfb95bda26ad5ab2f656cec5c2625eb8ca272289d98fd"
+      },
+      {
+        "path": "downloads/settlement-trade-break-source-records.csv",
+        "bytes": 775,
+        "sha256": "e71a22dcc93c5b2bf5378e25c1fbc7d3591b854c1e10a68202cdb1f8ff00ef06"
+      },
+      {
+        "path": "downloads/trial-balance-review-worksheet.csv",
+        "bytes": 236,
+        "sha256": "35e02009aff78426f68db40bcd6ae8ea61d2a2b86616e5b0d42f2885a70f0b66"
+      },
+      {
+        "path": "faqs/finance-program/index.html",
+        "bytes": 47325,
+        "sha256": "664d74d4cba19d5086f6c0ba421d133673aa16ebdd007d57a69390d1b45533e2"
+      },
+      {
+        "path": "faqs/index.html",
+        "bytes": 44830,
+        "sha256": "4cea53db69b2674d004ceb3f3f9e892b33111b6187f9fde8e1550bbc36959abe"
+      },
+      {
+        "path": "finance-course-cities-india/index.html",
+        "bytes": 44782,
+        "sha256": "bfd9a5d6b142fd12c16d11581e584ab68d4e63324cf254a9c1cbcbc5d3450e80"
+      },
+      {
+        "path": "finance-course-duration/index.html",
+        "bytes": 42832,
+        "sha256": "eb31d07a211ab8f1b073d81f37ae3cdce95104564491f6603289bd876fed4a61"
+      },
+      {
+        "path": "finance-course-eligibility/index.html",
+        "bytes": 43814,
+        "sha256": "bf49067adf6e7528075f26db995b582522d7597a17e0127bab80fcc8cebd970e"
+      },
+      {
+        "path": "finance-course-fees-in-india/index.html",
+        "bytes": 43885,
+        "sha256": "b093e1b1b5ceddc37a4763d7923b58802b17e760acdd6be02260adf6e2422c7c"
+      },
+      {
+        "path": "finance-course-vs-mba-cfa-financial-modelling/index.html",
+        "bytes": 44411,
+        "sha256": "92fcbeda596945a34f23147359110058edc4b3f1b7ab57aed7f7ba6d6bf5a27a"
+      },
+      {
+        "path": "finance-course-with-job-guarantee/index.html",
+        "bytes": 43861,
+        "sha256": "b7958e521fca1e3af2859316e3747eb5246a384ed994943e4f2a349855407de8"
+      },
+      {
+        "path": "finance-course-with-placement/index.html",
+        "bytes": 43815,
+        "sha256": "3cf90d3f86002d9e8dfecb05b95b2b76db23282ce6fb10150d771b4ee8aa7f74"
+      },
+      {
+        "path": "finance-institute-lucknow-with-placement/index.html",
+        "bytes": 44014,
+        "sha256": "733e4608a4d9e9b770fb73d98ebc76ba274a0db44e3216709b3e16c7778f2702"
+      },
+      {
+        "path": "images/blog/.gitkeep",
+        "bytes": 1,
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+      },
+      {
+        "path": "images/blog/accounting-conventions-principles-examples.png",
+        "bytes": 1914732,
+        "sha256": "deb79003ff415748b32cde72e0a5cc6790bd73d410d4a581bb13d410e110a031"
+      },
+      {
+        "path": "images/blog/accounting-principles-explained.png",
+        "bytes": 1754233,
+        "sha256": "2f298a4b9076741624e77f50950c0ef84af8ee75d647e92c6c76646cbe487f08"
+      },
+      {
+        "path": "images/blog/accounts-receivable-vs-payable.png",
+        "bytes": 1908066,
+        "sha256": "e5d6dac3871dc82009ea836f95b7b311a36e943cacdac4a0e5918f0170dd3609"
+      },
+      {
+        "path": "images/blog/accrual-vs-deferral-accounting.webp",
+        "bytes": 69116,
+        "sha256": "17c02e4945e71654e12f8bd51a0ecf6b533a7444418385c991e0a50f636e3485"
+      },
+      {
+        "path": "images/blog/ai-in-banking-use-cases-risks.png",
+        "bytes": 1829223,
+        "sha256": "3bfa85900573a854229b7632075dcd3fb8aa49bb56b4531a3dbd3119bab98479"
+      },
+      {
+        "path": "images/blog/asset-servicing-operations-corporate-actions.webp",
+        "bytes": 75978,
+        "sha256": "8fc19fe621632c6eeb136ca542ace700b106a20352d3daeeeb360c61004a4baa"
+      },
+      {
+        "path": "images/blog/balance-sheet-worked-example.png",
+        "bytes": 1526876,
+        "sha256": "6e090f293bbc8d06710bf1606feb0bb4d422a0fdfaf93b40e658f195bb1f41e5"
+      },
+      {
+        "path": "images/blog/banking-interview-questions-freshers.png",
+        "bytes": 1844328,
+        "sha256": "8ee66435d72eb2d7276068e06c319f7301b09c311dd994b5d2e5909c3597c1d1"
+      },
+      {
+        "path": "images/blog/banking-sector-india-structure-operations.png",
+        "bytes": 2054172,
+        "sha256": "135d36f6cb679ee955a32f3a62aab02aba605fe82db24ea7023bc70ce0a4a980"
+      },
+      {
+        "path": "images/blog/best-finance-institutes-india.webp",
+        "bytes": 275246,
+        "sha256": "92bf7845062fb31104682bde7536f2411b44b469a80b85cb05c16107f8525716"
+      },
+      {
+        "path": "images/blog/bfsi-domain-banking-financial-services-insurance.png",
+        "bytes": 1894939,
+        "sha256": "4eb471459e362db16a0652164206cdd4e349a8a52c28eb03a6ed1431f3a97329"
+      },
+      {
+        "path": "images/blog/bonds-vs-equities-difference.png",
+        "bytes": 2484700,
+        "sha256": "d4bdd58a694cac896b8c1e99f9caa98257111008a94db8dd1f226f265e83a5e1"
+      },
+      {
+        "path": "images/blog/business-analyst-vs-financial-analyst-finance.png",
+        "bytes": 2027894,
+        "sha256": "f2ff883ee9550a2636d16f64a8a7a8519bbe8b5873c06b2a88eaa2d2964c435e"
+      },
+      {
+        "path": "images/blog/career-options-commerce-header.png",
+        "bytes": 1874153,
+        "sha256": "1eeeac5987cf175bbf9e3386d034311dd5fa93296e4442ec99a24cbf8548f9a1"
+      },
+      {
+        "path": "images/blog/cash-flow-statement-direct-vs-indirect.webp",
+        "bytes": 82522,
+        "sha256": "b2ffa170305b1f3175b9a29e82706bb0f91ae2f07aaeba4a2a18f1c9141a076a"
+      },
+      {
+        "path": "images/blog/centaur-careers-bfsi-training-india.jpg",
+        "bytes": 240605,
+        "sha256": "a67c1ee974c00256b8da6705331fc47402db3ececb15ca20a5be636782cec1c5"
+      },
+      {
+        "path": "images/blog/chargeback-process-evidence-operations.webp",
+        "bytes": 74832,
+        "sha256": "305f3d26190a1b55e58657219a1e8f4a53afd1ced34e9ca1f863d1c2232fe7cb"
+      },
+      {
+        "path": "images/blog/choose-finance-career-course-india.jpg",
+        "bytes": 203003,
+        "sha256": "a3676ec853b69480e87be18240595fb87032c42474b8d40fbb45da2af1fed5d4"
+      },
+      {
+        "path": "images/blog/clearing-and-settlement-explained.png",
+        "bytes": 1873511,
+        "sha256": "bfbc8402952c7ad4caefef21f4e909d211bffcf223aab7a644d7bb8ba09cf07e"
+      },
+      {
+        "path": "images/blog/commercial-bank-service-workflow.png",
+        "bytes": 1732075,
+        "sha256": "e65505e64ffe0f08968e03cbde2e2a4ca820b3eff308b800a263c39ccacb0593"
+      },
+      {
+        "path": "images/blog/compliance-analyst-duties-career-path.png",
+        "bytes": 1877635,
+        "sha256": "02149f420b2ba071272ee7869b900509d311e5ca28600c4e1300e6e8b840b2c8"
+      },
+      {
+        "path": "images/blog/corporate-actions-analyst-career-path.png",
+        "bytes": 1594487,
+        "sha256": "1f826b2873048605f987711e7f7bda362f52d52ceb86ea51d9264ebf06526afa"
+      },
+      {
+        "path": "images/blog/cost-accounting-vs-management-accounting.png",
+        "bytes": 1923801,
+        "sha256": "965d9a4e37da64cbf37ce07fe76f8dd6dc2ab62af30ff3153e83c7163c07def7"
+      },
+      {
+        "path": "images/blog/cost-accounting-worked-example.png",
+        "bytes": 1652608,
+        "sha256": "df258f3801244a7fe8a56826b6d0d770773550c21a366337be54f44c37ed55f5"
+      },
+      {
+        "path": "images/blog/credit-analysis-basics-beginners.png",
+        "bytes": 1986521,
+        "sha256": "799f586e737512597cb885dd7a635c38934297d5241a9c18074ea6cd644ffb2e"
+      },
+      {
+        "path": "images/blog/credit-risk-management-banking.png",
+        "bytes": 1790612,
+        "sha256": "46eb8f233a292a199e8ada7470f049af7340db9b1f5c132fc8434ed9d736c2a9"
+      },
+      {
+        "path": "images/blog/derivatives-meaning-types-operations.png",
+        "bytes": 2123112,
+        "sha256": "f4f26930e3aff3462c162c20abc88b5ed982edf0e229a27564d96ab1567f6b8e"
+      },
+      {
+        "path": "images/blog/digital-banking-services-operations.png",
+        "bytes": 2189448,
+        "sha256": "be1ac7e0a3fa282a6884e9bf727b5d789355203be444b374d9f6955dee3d2848"
+      },
+      {
+        "path": "images/blog/digital-payments-operations-career-india.jpg",
+        "bytes": 263136,
+        "sha256": "c8ba613c32ce4f2667b53f17991360d26ce3c02488ea6f88ae00806133f54da1"
+      },
+      {
+        "path": "images/blog/enhanced-due-diligence-edd-process.webp",
+        "bytes": 109782,
+        "sha256": "b80fa807926d1f32c145988589d26e3909d068f817be7d0fcc7bc0cdcd28d309"
+      },
+      {
+        "path": "images/blog/failed-settlement-reasons-resolution.png",
+        "bytes": 1864676,
+        "sha256": "e649b1f059571b2428e16b46efd8c543469727a0468c70479640d99195bc7afe"
+      },
+      {
+        "path": "images/blog/finance-interview-questions-freshers-prep.png",
+        "bytes": 1914278,
+        "sha256": "bade1462d651cd4e184f3d343274bc299509c82542e5636b1c57e21c58da47ac"
+      },
+      {
+        "path": "images/blog/finance-interview-questions-freshers.png",
+        "bytes": 2031658,
+        "sha256": "540e7ef94675d1bdad4274028329976b4c3dc675d5555524cd78b5d4404613c5"
+      },
+      {
+        "path": "images/blog/finance-operations-portfolio-projects-freshers.png",
+        "bytes": 1714045,
+        "sha256": "3709de6fdddc6e9ddd771ca83a02da4fc7d5a59cec04c9731512a9e0a10719df"
+      },
+      {
+        "path": "images/blog/finance-operations-resume-skills-examples.png",
+        "bytes": 1885916,
+        "sha256": "38027c310d66db5d793efa0783723c4ed69437dbc969260c3395cac080d7805d"
+      },
+      {
+        "path": "images/blog/finance-operations-vs-accounting.webp",
+        "bytes": 96102,
+        "sha256": "b8fa181938c166ead8a07ada27aa6c414572962e0a52e62e3e53f4c51c91c163"
+      },
+      {
+        "path": "images/blog/financial-accounting-cycle.png",
+        "bytes": 1890107,
+        "sha256": "da3e6d06c61144e5c3235a796bab1388ca5e925773584fc22b37d5ff87740d4c"
+      },
+      {
+        "path": "images/blog/financial-crime-analyst-kyc-aml-career-guide.png",
+        "bytes": 1794578,
+        "sha256": "e4f874ec9315fd9b3153fe14ecec6d42dd2069acadde775b6ecad40c894ffef4"
+      },
+      {
+        "path": "images/blog/financial-management-decision-framework.png",
+        "bytes": 1886363,
+        "sha256": "b968b4e64d131c5bd18fb0d18aa7ddac95e65319e8a781fb5276161ba0d68ed1"
+      },
+      {
+        "path": "images/blog/financial-markets-participant-map.png",
+        "bytes": 1680111,
+        "sha256": "8e76ec6c1585c233dffb2ed7d37958e3323335932258ba08509cf6aa62a95333"
+      },
+      {
+        "path": "images/blog/financial-reporting-process-controls.png",
+        "bytes": 2002183,
+        "sha256": "a1c6ec03503063d1eb50c5709451488b6347ea601465000a9722291fe17b801d"
+      },
+      {
+        "path": "images/blog/fintech-operations-careers-india.jpg",
+        "bytes": 244043,
+        "sha256": "26c9389015ad39a4aa778265e4da69b7fc1f1184764d2d8a3e54ee70b6a8a3d7"
+      },
+      {
+        "path": "images/blog/fintech-operations-roles-workflows.png",
+        "bytes": 2044635,
+        "sha256": "f05135fdf1f7147b7ba39a261d51474ad4d4019a541127a4065746dd27b607d3"
+      },
+      {
+        "path": "images/blog/front-middle-back-office-investment-banking.png",
+        "bytes": 1824910,
+        "sha256": "a785ab5f0d0b3e76546a8fa9a165a2f63242cf44a8b6719304d8d52c668b486c"
+      },
+      {
+        "path": "images/blog/fund-accounting-nav-workflow-career-skills.png",
+        "bytes": 1686742,
+        "sha256": "26d66e4a485038a0e26c0fd2bf96d9f321fd46a7d06c171e76c24521a923432b"
+      },
+      {
+        "path": "images/blog/general-ledger-vs-subledger.webp",
+        "bytes": 366326,
+        "sha256": "bbc52c50d0737c01a661709f8a0f2a4242e57f68f75b345e177707bd1eadfa44"
+      },
+      {
+        "path": "images/blog/golden-rules-of-accounting.png",
+        "bytes": 1894516,
+        "sha256": "408dd08d4882eef3c9163d3c57fb9787d2481d4b8b464ac3e03a3c046bc3b9d1"
+      },
+      {
+        "path": "images/blog/investment-banking-career-path-india.png",
+        "bytes": 1998987,
+        "sha256": "e23179f2094e40cb0e05a532f3430e0540af452667f62a9e5dbdb81800f09d84"
+      },
+      {
+        "path": "images/blog/investment-banking-roles-teams.png",
+        "bytes": 2155491,
+        "sha256": "443e98eca2dae346c27810b77061a1deaf2835540f1171252159268eca830495"
+      },
+      {
+        "path": "images/blog/investment-banking-skills-graduates.png",
+        "bytes": 1829562,
+        "sha256": "527d5fb9b0459d96e1f4a5360a612832a7739e1ec0fc731d84042cad6f8639f1"
+      },
+      {
+        "path": "images/blog/investment-banking-teams-operations.png",
+        "bytes": 1605925,
+        "sha256": "de4f22023c6728b6ab8c240f9ca275d890cd5d7f901846ad81104266a33a4d7e"
+      },
+      {
+        "path": "images/blog/investment-banks-in-india-functions-roles.png",
+        "bytes": 2334480,
+        "sha256": "047d993f6c5b73b781f9be292c1533e162e2a8593354e6779e4fcc2257a7ac87"
+      },
+      {
+        "path": "images/blog/investment-management-meaning-process-roles.png",
+        "bytes": 1814848,
+        "sha256": "8221b82ccf78e72c77b92668595de99834e01d28b9a9ff2d5fa00492e61ec06b"
+      },
+      {
+        "path": "images/blog/kyc-aml-course-india-guide.jpg",
+        "bytes": 209427,
+        "sha256": "4b5f3ccd52ac8d16a74a82b7f727072e55e3cde02fc3ee603f4379f825635372"
+      },
+      {
+        "path": "images/blog/kyc-onboarding-case-file-example.png",
+        "bytes": 1610619,
+        "sha256": "7c28545802f018586b2b4376ceecccf1465f4da34a50d999e6d8029c2bb58328"
+      },
+      {
+        "path": "images/blog/loan-operations-banking-career-path.png",
+        "bytes": 1764883,
+        "sha256": "1e6f45a4d526840a77d735635c9908bb7e9dd9031abbd7e885474203ddaa7f93"
+      },
+      {
+        "path": "images/blog/loan-processing-steps-workflow.png",
+        "bytes": 2026017,
+        "sha256": "155adb1d0a0f9b2be30bc45914eb0ed93bfb99d0424d14e6fa1dca446bb8dab2"
+      },
+      {
+        "path": "images/blog/maker-checker-controls-banking-operations.webp",
+        "bytes": 84672,
+        "sha256": "1397fa6f23be774af5cce24b68c5c64c5d394f8f901d77967ac1dd692ba3f98c"
+      },
+      {
+        "path": "images/blog/money-market-instruments-operations.png",
+        "bytes": 1777199,
+        "sha256": "0c9d21ab644baf4ab6e19bf680432fcaa85b10b485ce716ee7936f8cc478c9eb"
+      },
+      {
+        "path": "images/blog/month-end-close-process-finance-operations.webp",
+        "bytes": 81420,
+        "sha256": "5deedaee01170d7519e7d25cbd50be8bfc2cd91337a14c7e7f04be602ed3b07e"
+      },
+      {
+        "path": "images/blog/nbfc-vs-bank-difference-india.webp",
+        "bytes": 114354,
+        "sha256": "fccde065e78917869efefac1e6017e2b8afc1b3e6d22c98aa5a18910558c0c45"
+      },
+      {
+        "path": "images/blog/neo-banking-products-controls.png",
+        "bytes": 1862004,
+        "sha256": "939a56d9163c58d30a33f2cd0646488ca45ee6d08519c22af26a9ad393ff3b71"
+      },
+      {
+        "path": "images/blog/payment-gateway-process-settlement.webp",
+        "bytes": 68280,
+        "sha256": "699da6a84cad3a5f4c5874158f2f01f73f2837c9ef8255ba59b1011a8d8ac3ed"
+      },
+      {
+        "path": "images/blog/payment-reconciliation-process-breaks-controls.webp",
+        "bytes": 72716,
+        "sha256": "16938e30b43ce1af1204c8472e479192ea1eddafd23323f812ef6571a23dea86"
+      },
+      {
+        "path": "images/blog/placement-support-career-counselling-india.jpg",
+        "bytes": 203334,
+        "sha256": "2944d29320b5ba6a7ed8cd9b0504cb04d736b3963ab196f6bf00aca181632cd7"
+      },
+      {
+        "path": "images/blog/procure-to-pay-process-controls.webp",
+        "bytes": 70792,
+        "sha256": "f9de0f5bee7ec4274dad0ea2bc5fcce6e75b2fcaa0bfcbdad9e8e8433c5baa8d"
+      },
+      {
+        "path": "images/blog/questions-to-ask-finance-institute-before-enrolling.webp",
+        "bytes": 105600,
+        "sha256": "81809b51b9840985d5831fdee8f9ac8412f4d80335f415dbde9cf6af64a83599"
+      },
+      {
+        "path": "images/blog/r2r-p2p-o2c-finance-processes.webp",
+        "bytes": 91442,
+        "sha256": "5a0604a4de17ce43810267ffb2bc11abf24881d84314c251b54567ff722df944"
+      },
+      {
+        "path": "images/blog/reconciliation-process-steps-finance.png",
+        "bytes": 1493716,
+        "sha256": "ea099d699b63022b11ff9ca29361ae7738c4df234f375a8256b4dccc969cfaf7"
+      },
+      {
+        "path": "images/blog/retail-vs-commercial-banking.webp",
+        "bytes": 100968,
+        "sha256": "a8c39ded32f9cf0326a385ecc343a1962ef85ce576d4fc3a9d5f8aea54ab0ea2"
+      },
+      {
+        "path": "images/blog/rtgs-neft-imps-upi-difference.webp",
+        "bytes": 134602,
+        "sha256": "e331ded990f90c7cb873b1a44de561c8a93227ecd5ba83b9298ed431270e7de8"
+      },
+      {
+        "path": "images/blog/sanctions-screening-process-banking.webp",
+        "bytes": 71850,
+        "sha256": "35b2e72064d4a4bbc024a1393525cdb0858199ceda3e589d4ce8e70bdab05161"
+      },
+      {
+        "path": "images/blog/securities-operations-workflow-roles.png",
+        "bytes": 2081116,
+        "sha256": "46adabda010380e5948d53e8363b9f12134d9d7d6bfef53a146c1b47246c4daf"
+      },
+      {
+        "path": "images/blog/settlement-trade-break-worked-example.png",
+        "bytes": 1659090,
+        "sha256": "78bbf27a84521c770c8e1c10db09442014875b53d4b92b1a7ac10313b1407ad9"
+      },
+      {
+        "path": "images/blog/trade-capture-process-controls.webp",
+        "bytes": 64490,
+        "sha256": "c70aa51ae2080ffb394eec28365af84432a38802870188df87bb1a17c1721922"
+      },
+      {
+        "path": "images/blog/trade-confirmation-vs-affirmation.webp",
+        "bytes": 73514,
+        "sha256": "243d2d87e316f4f6317148c1a061697ce27f6d8e02074df5c4220308c5021788"
+      },
+      {
+        "path": "images/blog/trade-support-analyst-duties-skills.png",
+        "bytes": 1760892,
+        "sha256": "2fdf4fa588dbbc9eabeda9d45d17c5cdea1b21c1f3a7cc4ed90cda04bcaa000d"
+      },
+      {
+        "path": "images/blog/transaction-monitoring-alerts-escalation.png",
+        "bytes": 1734808,
+        "sha256": "b714e96a7bbbd393dbc138bd800fc98cd3e10be73f650687507da5ee661999ce"
+      },
+      {
+        "path": "images/blog/treasury-operations-roles-workflow.png",
+        "bytes": 1832861,
+        "sha256": "0a7e4b3bc89fa706fc22f153e745c0ee32899d068f436e004f78b41e3eee4bc4"
+      },
+      {
+        "path": "images/blog/trial-balance-check-example.png",
+        "bytes": 1823719,
+        "sha256": "9d662c1e5949371dc826deda344b5112517667cae64aa189492730a87f4941ef"
+      },
+      {
+        "path": "images/blog/trial-balance-format-purpose-example.png",
+        "bytes": 1781730,
+        "sha256": "5ed15cae2bac49b76db0af980530ffe421c5bddacc7f635cb8655e2370d4ca7f"
+      },
+      {
+        "path": "images/blog/upi-payment-lifecycle.png",
+        "bytes": 1789229,
+        "sha256": "da2e6c409673d80a9d3cf7fd83574429fa98d36329bdea6a9c7fb0f1e42e1823"
+      },
+      {
+        "path": "images/blog/what-is-aml-controls-workflow.png",
+        "bytes": 1868908,
+        "sha256": "fce253e66859305e002b1d751e072e93d95ef15e86a33b6c49e09a1758003707"
+      },
+      {
+        "path": "images/blog/what-is-kyc-process-documents.png",
+        "bytes": 1871643,
+        "sha256": "cabb45e78aba219d8d6c075ab1bb6a04c92fd5a7187233614c8bc072934e131b"
+      },
+      {
+        "path": "images/blog/working-capital-cycle-explained.webp",
+        "bytes": 76908,
+        "sha256": "fdbedd97c41902ac9919e9cd0cd7d0b2de97db584b9cf358779bb225a604d8c0"
+      },
+      {
+        "path": "images/brand/axis-bank.svg",
+        "bytes": 2813,
+        "sha256": "78b25a62f908e778a969de2eed5f66388137233e26fc65450b67e074243be376"
+      },
+      {
+        "path": "images/brand/bajaj-finance.svg",
+        "bytes": 2489,
+        "sha256": "4e42e7b274e1df1ee94f9296c4d6c5598644c8875db5ad5e7fb1ee86c602c00f"
+      },
+      {
+        "path": "images/brand/bank-of-america.svg",
+        "bytes": 4739,
+        "sha256": "507ea8a27c8892c5461063d3a2c1534c5c847c48577f60d3a0ffb441c3c518ca"
+      },
+      {
+        "path": "images/brand/barclays.svg",
+        "bytes": 15586,
+        "sha256": "355e22fc64f2481fcbe62572db25793b36e7fd53f95cfec2ca64ced14db34628"
+      },
+      {
+        "path": "images/brand/bnp-paribas.svg",
+        "bytes": 6161,
+        "sha256": "5e2d7093c9dcda9cc0e7418dc1d43bbdef4c0f6d7dc02e83039123288db6504a"
+      },
+      {
+        "path": "images/brand/centaur-careers-logo-144.avif",
+        "bytes": 2132,
+        "sha256": "de185ecb73393c2ed86d8de58cb4d55ac7c240fc8bef3f8e0481bc6a4069b9cb"
+      },
+      {
+        "path": "images/brand/centaur-careers-logo-144.webp",
+        "bytes": 3314,
+        "sha256": "2cdd069da945877f1ab7fd4e53334999d5c7fb0b4d14da5022d142f5d565ca71"
+      },
+      {
+        "path": "images/brand/centaur-careers-logo-48.avif",
+        "bytes": 710,
+        "sha256": "b98bc190693503ccb913585d3c6fbefa82b49e8b24029d9ad558d78eb184c3be"
+      },
+      {
+        "path": "images/brand/centaur-careers-logo-48.png",
+        "bytes": 2826,
+        "sha256": "e4455da230827e2280cc9b91434624fac48546e551b0ad927117b8f0dcf9265c"
+      },
+      {
+        "path": "images/brand/centaur-careers-logo-48.webp",
+        "bytes": 782,
+        "sha256": "d41575e3d1d96eed41721942d663108c02ddea4a0c1b0e4f8fbdf05a29e2cbb6"
+      },
+      {
+        "path": "images/brand/centaur-careers-logo-96.avif",
+        "bytes": 1373,
+        "sha256": "d71d2274d167bf995b70129344a5b501aef7b173ad15d8e5dd29be07bee0fc6c"
+      },
+      {
+        "path": "images/brand/centaur-careers-logo-96.webp",
+        "bytes": 1968,
+        "sha256": "115acf8f5adabd7ad569d2910e758071a82453a1bd69750fd87dc3df06783caa"
+      },
+      {
+        "path": "images/brand/centaur-careers-logo.jpg",
+        "bytes": 103666,
+        "sha256": "7eec2cab9afd9500719d770a28e919caaf187d30e4c9cf39151b50eac12a9437"
+      },
+      {
+        "path": "images/brand/citi.svg",
+        "bytes": 2849,
+        "sha256": "37422118212533398b788a2071e2eab99b108d41ad07b1792428fb77ec835b17"
+      },
+      {
+        "path": "images/brand/credit-suisse.svg",
+        "bytes": 3018,
+        "sha256": "3f94b3464a38a912da7d6fd742588a19366d8ad23388ea75f2f752967002c90d"
+      },
+      {
+        "path": "images/brand/deutsche-bank.svg",
+        "bytes": 3312,
+        "sha256": "e970663af27774283fa12c320b4cddb193570b2704836a894eb46341bc07bded"
+      },
+      {
+        "path": "images/brand/goldman-sachs.svg",
+        "bytes": 4981,
+        "sha256": "9d9c1cea0d6f70d99150d1ecb83a7e457757f9c5fe433cdf404a732bba1dccc6"
+      },
+      {
+        "path": "images/brand/hdfc-bank.svg",
+        "bytes": 2929,
+        "sha256": "294fbb06074246d4cc40e8ca623dfe62c9b2f239121041369c092eb81a4c86db"
+      },
+      {
+        "path": "images/brand/houlihan-lokey.svg",
+        "bytes": 14916,
+        "sha256": "d3aa53e247242a06dc86b8c18b42ac0596038b6a1299ee88c432298dbd74cde4"
+      },
+      {
+        "path": "images/brand/hsbc.svg",
+        "bytes": 3065,
+        "sha256": "de72fa4d04027e1134a4b645fc820c898464e6ca15b7c2685e4b926a328e7dda"
+      },
+      {
+        "path": "images/brand/icici-bank.svg",
+        "bytes": 6018,
+        "sha256": "7214036dcd15f373d3013f546e97f67e690c2609873ed84af23e83d82e6e23eb"
+      },
+      {
+        "path": "images/brand/jefferies.svg",
+        "bytes": 11378,
+        "sha256": "2d20840e139e6d6cbe50acdd259d8e68b5646ea7e914a54446fc94fcdc36ac7e"
+      },
+      {
+        "path": "images/brand/jp-morgan.svg",
+        "bytes": 5714,
+        "sha256": "3ccc6e9b26ab71419ad3e208bdb92e46b98c50d76e4b08b2153c3476a1256459"
+      },
+      {
+        "path": "images/brand/jpmorgan-chase.svg",
+        "bytes": 4089,
+        "sha256": "3a2d2569ea057ed5e229adb3b8ad8cfd31f735661bffb009196c358800b38277"
+      },
+      {
+        "path": "images/brand/macquarie.svg",
+        "bytes": 11351,
+        "sha256": "40976ab5f54a6ff58583027594f7307b976c3b6f7b49bbcd8e4cd74943216bb8"
+      },
+      {
+        "path": "images/brand/merrill-lynch.svg",
+        "bytes": 8180,
+        "sha256": "fb694d8e8f1b362b271ac8786eec7b80f08ce497a46be5539f6a724c5a280fa2"
+      },
+      {
+        "path": "images/brand/morgan-stanley.svg",
+        "bytes": 4563,
+        "sha256": "13527b9a6d0d8e5b946fc052a8ce1bcbf6dfe822bbd931d8c01e834db3e9c0ed"
+      },
+      {
+        "path": "images/brand/nomura.svg",
+        "bytes": 6392,
+        "sha256": "0a0e978527cb29aad10fa426a6e177820b4000948841f0630e7b2672cc35ca90"
+      },
+      {
+        "path": "images/brand/paytm.svg",
+        "bytes": 3083,
+        "sha256": "3f96be939606b225d521fa1aa406406feee9e17ccf2a7a2f7b53dd1bf3138bc1"
+      },
+      {
+        "path": "images/brand/phonepe.svg",
+        "bytes": 3676,
+        "sha256": "4a974c6ef4472a7d3c90cf7e4530f3b224eb61594e0ea5041c948e7a0c3047c2"
+      },
+      {
+        "path": "images/brand/raymond-james.svg",
+        "bytes": 8508,
+        "sha256": "20659a84d0ca5e53fbcd0be280abed86512ee2f180262daf40d5621badb7c87a"
+      },
+      {
+        "path": "images/brand/razorpay.svg",
+        "bytes": 3478,
+        "sha256": "f7c99c990ff7c6b91a06fe4287bcccb46218377c0a8fea1daa4cff6aaed553ac"
+      },
+      {
+        "path": "images/brand/rbc.svg",
+        "bytes": 6613,
+        "sha256": "dd03ac33519e6bade854792c19380c79150dc057c1acbe2acfdcb22db2b22927"
+      },
+      {
+        "path": "images/brand/rothschild.svg",
+        "bytes": 14055,
+        "sha256": "70dd526255109007da10f0ff907d3e488e311075ba065eb3aef862f5e8e327c0"
+      },
+      {
+        "path": "images/brand/santander.svg",
+        "bytes": 19944,
+        "sha256": "a94c46f8c2524d61c6de9d15e253767113e5ecc43a7dc2f404715d169e45301d"
+      },
+      {
+        "path": "images/brand/scotiabank.svg",
+        "bytes": 4309,
+        "sha256": "99d4c52480a8c01710eec293239476ad187e8f67607e2a84691c5d00e50a714e"
+      },
+      {
+        "path": "images/brand/societe-generale.svg",
+        "bytes": 6481,
+        "sha256": "edbd7133ffa1fe699b4c599728b837c009266709ac901c48fa415dfc5657e1da"
+      },
+      {
+        "path": "images/brand/standard-chartered.svg",
+        "bytes": 6080,
+        "sha256": "b92062b48986f0317714d4249f87df9dd06f50c9651782962505a89228c2246d"
+      },
+      {
+        "path": "images/brand/stifel-financial.svg",
+        "bytes": 12012,
+        "sha256": "bb91cf9ae9a6aac9e376f06acc65b2ad0efa9f78f0ee52cc543098b054c71224"
+      },
+      {
+        "path": "images/brand/wells-fargo.svg",
+        "bytes": 3828,
+        "sha256": "eb0dd26d54dc74134bd887cbf4b59f85c42db91a385a6ac0db2b61649be1d171"
+      },
+      {
+        "path": "images/courses/digital-payments-1280.avif",
+        "bytes": 50022,
+        "sha256": "d69a016cd0e822367cd6a19210a4e09847eb4e788da2313aca20026e73944033"
+      },
+      {
+        "path": "images/courses/digital-payments-1280.webp",
+        "bytes": 81094,
+        "sha256": "ba7321d777c613cadbf2adedb52d02fcb2d610490ca66bf8663be46b0a4b1d1f"
+      },
+      {
+        "path": "images/courses/digital-payments-480.avif",
+        "bytes": 16778,
+        "sha256": "c16bebe6abdd75a769e56091a6bd0f58222bace6fde3dc6bdcb978ef3b3a6183"
+      },
+      {
+        "path": "images/courses/digital-payments-480.webp",
+        "bytes": 22810,
+        "sha256": "cf0bbdc8d7a1389b9d60e2f34d34b1d01a69e9dea017619a8900cca72768dcc2"
+      },
+      {
+        "path": "images/courses/digital-payments-768.avif",
+        "bytes": 28172,
+        "sha256": "d351501804940f09cd8622dab577c2a5f6550a4d0245258ec9dbae203593725d"
+      },
+      {
+        "path": "images/courses/digital-payments-768.webp",
+        "bytes": 41170,
+        "sha256": "5bf2ac5e2692e6641b99baba99651e832337b618c4e76cf5b8b63b886710448e"
+      },
+      {
+        "path": "images/courses/digital-payments.jpg",
+        "bytes": 209762,
+        "sha256": "687fb2b072184b65735144381880b65fd209eeedb157ba57893601c85a289f9d"
+      },
+      {
+        "path": "images/courses/finance-operations-1280.avif",
+        "bytes": 52512,
+        "sha256": "3d5f7052203f63e20b21f3dc395413fe4e168835fd29a0a4a94257091d40fbc8"
+      },
+      {
+        "path": "images/courses/finance-operations-1280.webp",
+        "bytes": 86208,
+        "sha256": "87998a9be083d5137f93f39c91eb8dc2673fa095572a4b6886004309d1e5b436"
+      },
+      {
+        "path": "images/courses/finance-operations-480.avif",
+        "bytes": 17850,
+        "sha256": "bff48a652a63b0fdcd2f4800192f7048379f3bc5d38102ee73ac12c359662702"
+      },
+      {
+        "path": "images/courses/finance-operations-480.webp",
+        "bytes": 24420,
+        "sha256": "016ed7228e7484b7cf631edf3f90d981edc662b007833af28f6340916ce97407"
+      },
+      {
+        "path": "images/courses/finance-operations-768.avif",
+        "bytes": 29814,
+        "sha256": "851c8fa4c8dcb72133b59b8276eb6d59811eb150b16500f031966871ac7ccfb2"
+      },
+      {
+        "path": "images/courses/finance-operations-768.webp",
+        "bytes": 44520,
+        "sha256": "f2634654caf410a33050d34c8bbef4353fa6350409eae28aa83d7a2bb985c75e"
+      },
+      {
+        "path": "images/courses/finance-operations.jpg",
+        "bytes": 218568,
+        "sha256": "c965319933b878fc746b48218e6a0968a4ea9c478f2d4da3b7a32d02cea2cf84"
+      },
+      {
+        "path": "images/courses/fintech-neo-banking-1280.avif",
+        "bytes": 50888,
+        "sha256": "ef5e88d630bc88a79f7716d6196216041fce0fcbd7c8714f514de14d9141fe28"
+      },
+      {
+        "path": "images/courses/fintech-neo-banking-1280.webp",
+        "bytes": 81766,
+        "sha256": "ff0224b10e30a3adb386ea84564a2080a10f13c00ae1b0ab486a9780bcd40aec"
+      },
+      {
+        "path": "images/courses/fintech-neo-banking-480.avif",
+        "bytes": 17090,
+        "sha256": "7e6bb43c3b9f13c74d653bb0d34939974a3fd1ab9787c02d376ac64b5cce445f"
+      },
+      {
+        "path": "images/courses/fintech-neo-banking-480.webp",
+        "bytes": 23180,
+        "sha256": "a38d49995e72d612d5ee4826408b26bc869f215d1a0508286f441ab253e03379"
+      },
+      {
+        "path": "images/courses/fintech-neo-banking-768.avif",
+        "bytes": 29289,
+        "sha256": "54c7d4e33e4f49aa4f78c0df949fb152e282d2a4876ef6c6455fed6d1d06ca83"
+      },
+      {
+        "path": "images/courses/fintech-neo-banking-768.webp",
+        "bytes": 42326,
+        "sha256": "d8cb940394210b2517b82603f3dba7e5f53803545320c0b110aa901dee6fcc33"
+      },
+      {
+        "path": "images/courses/fintech-neo-banking.jpg",
+        "bytes": 210002,
+        "sha256": "bf3bab193361fa7fe9aa731a114f7dea7e1b1fa325da59bccc8ca8806a0cf74c"
+      },
+      {
+        "path": "images/courses/investment-banking-operations-1280.avif",
+        "bytes": 48694,
+        "sha256": "5570eb7e9ad6c64ca6f92ac14132dd43571e85ce29e3403921183c67e4498c02"
+      },
+      {
+        "path": "images/courses/investment-banking-operations-1280.webp",
+        "bytes": 81304,
+        "sha256": "4ad124bd1e22c820ec8b012a82253ec1d88c721aa2a25ec9bf774a1961791618"
+      },
+      {
+        "path": "images/courses/investment-banking-operations-480.avif",
+        "bytes": 16778,
+        "sha256": "3cc8894737e3f489bc34844fa60aac69a635f16124d223870acca8f8a36f210b"
+      },
+      {
+        "path": "images/courses/investment-banking-operations-480.webp",
+        "bytes": 22642,
+        "sha256": "84a45f6c5a981c06e14cda22ee6c4dc040b869af95d175964ee60125698bd51d"
+      },
+      {
+        "path": "images/courses/investment-banking-operations-768.avif",
+        "bytes": 28022,
+        "sha256": "4a9d018e392bef89d4be6c5acd762ecbbc2928406e55c52e2b7b8949ed81f1ce"
+      },
+      {
+        "path": "images/courses/investment-banking-operations-768.webp",
+        "bytes": 41896,
+        "sha256": "c6737256da7c1d2993d287224810774e52001f3f5e82996785dcb5fdc26caca3"
+      },
+      {
+        "path": "images/courses/investment-banking-operations.jpg",
+        "bytes": 203487,
+        "sha256": "d231322e8955e59bc77fd5b587a9b5756d72dea68225887d94d3f7fc246bc055"
+      },
+      {
+        "path": "images/courses/kyc-aml-compliance-1280.avif",
+        "bytes": 45560,
+        "sha256": "178a3e6861f138a932d25ea290c6fa8aff43d384e207dba9ed178dbe8de2713f"
+      },
+      {
+        "path": "images/courses/kyc-aml-compliance-1280.webp",
+        "bytes": 73292,
+        "sha256": "948560e7bc03b74ac7a47f79cc27568ebc7c5741b1b9aa5c70833883de8ec71d"
+      },
+      {
+        "path": "images/courses/kyc-aml-compliance-480.avif",
+        "bytes": 15818,
+        "sha256": "dd0d07b031685b1727b72447478379f5f4b6950681a57f5e55de844234393635"
+      },
+      {
+        "path": "images/courses/kyc-aml-compliance-480.webp",
+        "bytes": 20814,
+        "sha256": "5541e9c9cb02c150def35fea527373ac6de4de98d754242890d4f5dfd910be0d"
+      },
+      {
+        "path": "images/courses/kyc-aml-compliance-768.avif",
+        "bytes": 26001,
+        "sha256": "db84e0ef33a4439036e946e671b502a67cb673e66361b65086a23dbe3d1217ad"
+      },
+      {
+        "path": "images/courses/kyc-aml-compliance-768.webp",
+        "bytes": 37332,
+        "sha256": "93c2f06c5121a43b3b6d6b54d3895e5adbac8f17e4e138278c36868e5e70adf7"
+      },
+      {
+        "path": "images/courses/kyc-aml-compliance.jpg",
+        "bytes": 189728,
+        "sha256": "a5fc05e8c2dce340523fe9038b1f4ad2046fdbb1b98e9efc453412ac55739c69"
+      },
+      {
+        "path": "images/courses/retail-banking-1280.avif",
+        "bytes": 42384,
+        "sha256": "92c49d3c638604df9a8ea66d2b1f29e32cd568efb7f23b196e53d5d49b6e0939"
+      },
+      {
+        "path": "images/courses/retail-banking-1280.webp",
+        "bytes": 71766,
+        "sha256": "1a877babfd6f1ad52105f24ae15e4fbb611d18e59a1213ecc5987101598b87b2"
+      },
+      {
+        "path": "images/courses/retail-banking-480.avif",
+        "bytes": 15200,
+        "sha256": "bddab6d0f57992714b09c5ec3e21e6d58ad131716c87db7616cb90da6da623cc"
+      },
+      {
+        "path": "images/courses/retail-banking-480.webp",
+        "bytes": 21092,
+        "sha256": "eb6fca4833017df68b88d768d1af847ecd07877b6362483d6bc1c30c2aa4c714"
+      },
+      {
+        "path": "images/courses/retail-banking-768.avif",
+        "bytes": 25102,
+        "sha256": "ba7662102b8c750a1c48a275414157f6e36047487b49f675cf6bfa66a03a3928"
+      },
+      {
+        "path": "images/courses/retail-banking-768.webp",
+        "bytes": 38202,
+        "sha256": "475d9d33d0fce928d014fde5132d7139635740e9f5e2dc091bdb6a2c7857851f"
+      },
+      {
+        "path": "images/courses/retail-banking.jpg",
+        "bytes": 182612,
+        "sha256": "24f61a5a4583525e7230ca60ba35d27009f7cd354bcdfe9229d25e6cc2a67b2e"
+      },
+      {
+        "path": "images/loading/centaur-run-cycle-logo-style-clean.png",
+        "bytes": 762773,
+        "sha256": "21710e5c315bd2a10b56f3e75e9001da06ba78a6b8e265550d3a853d235897fa"
+      },
+      {
+        "path": "images/loading/centaur-run-cycle-logo-style-clean.webp",
+        "bytes": 364500,
+        "sha256": "4fe9749ef6ed1c24f254c47b46b726297b99af4e66096bd627af41ae9538e86e"
+      },
+      {
+        "path": "images/ogpartners/Axis_Bank_logo.svg.webp",
+        "bytes": 8764,
+        "sha256": "2941f23c65e387f9bcaf9625ef67703c2251d0d3ad2a522b6cf381d169cfc638"
+      },
+      {
+        "path": "images/ogpartners/BNP_Paribas.png",
+        "bytes": 125541,
+        "sha256": "6622d4cef0634af3d4e239148ee21265ca5ba671caa17582b7e3ac967339204f"
+      },
+      {
+        "path": "images/ogpartners/Bank_america_logo18.png",
+        "bytes": 21783,
+        "sha256": "21ef06925d45176614f758696eabd0c35d3eea570b3b07f23f6e0f4ce7d24516"
+      },
+      {
+        "path": "images/ogpartners/Barclays-Logo.svg.webp",
+        "bytes": 19800,
+        "sha256": "e72f9759477dfbb023e77843a2a2abb367777b8f83994317eaf73c58b26cceb0"
+      },
+      {
+        "path": "images/ogpartners/Citi.svg.webp",
+        "bytes": 9362,
+        "sha256": "4cb575982f397e6b6a075c1ea4a8f5aab4889e19ee3ba95c9e579041cc2058e4"
+      },
+      {
+        "path": "images/ogpartners/Deutsche_Bank-Logo.svg.webp",
+        "bytes": 11106,
+        "sha256": "dc085c219eaa44632ac5e3d93d59685c46642535411e2fb58598728269ccda6f"
+      },
+      {
+        "path": "images/ogpartners/Genpact_Logo_Black_(3).png",
+        "bytes": 15547,
+        "sha256": "daca002c3a1282d4aea551da08f6dd14407bacc8d4e2e38726091b590e746884"
+      },
+      {
+        "path": "images/ogpartners/Goldman_Sachs.svg.webp",
+        "bytes": 3052,
+        "sha256": "c873692dd44f6f61e35cef63276dc336b1225b49023a20dea2603045b53d1e45"
+      },
+      {
+        "path": "images/ogpartners/HDFC_Bank_Logo.svg.webp",
+        "bytes": 4586,
+        "sha256": "75203693215c378bda91e48db5f2cc82a42bcdbcd46937f626a585c393da16f0"
+      },
+      {
+        "path": "images/ogpartners/HSBC_logo_(2018).svg.webp",
+        "bytes": 8874,
+        "sha256": "0fd56da686e7bd65d2893b875246ffbec21aa3dffb97d6d65965f97c89533bd0"
+      },
+      {
+        "path": "images/ogpartners/ICICI_Bank_Logo.svg.webp",
+        "bytes": 13348,
+        "sha256": "5477a81b108719f1599a7eea9af0c63028bbf1235177b52b6b351ceb1704a7f4"
+      },
+      {
+        "path": "images/ogpartners/J_P_Morgan_Logo_2008_1.svg.webp",
+        "bytes": 2652,
+        "sha256": "cd76e09db6ae4654d69883e9ba6e75c4d6e1d4df1d13f83551b6eff91ee3828e"
+      },
+      {
+        "path": "images/ogpartners/KPMG_blue_logo.svg.webp",
+        "bytes": 12812,
+        "sha256": "05d4e6a4596460b58f5eafecb6fc4e4e8a8adc2a9e55a5fff10a814751ad5363"
+      },
+      {
+        "path": "images/ogpartners/Logo_of_Deloitte.svg.webp",
+        "bytes": 13510,
+        "sha256": "8a0355a845a019dfcedcbd8138789abfab3b5582883536442867ad5efe741466"
+      },
+      {
+        "path": "images/ogpartners/Morgan_Stanley_Logo_1.svg.webp",
+        "bytes": 7516,
+        "sha256": "db172c084dc638cd4f6028e9495dc00343a82928c355fd15eaada494ceaa91d6"
+      },
+      {
+        "path": "images/ogpartners/Nomura_Holdings_logo.png",
+        "bytes": 1536,
+        "sha256": "57e16a21eedbafd26124c55304f9cee4bcdf19525980a59843f298bc94bbcce6"
+      },
+      {
+        "path": "images/ogpartners/PwC_2025_Logo.svg.webp",
+        "bytes": 1416,
+        "sha256": "b1ad5d4ddcd1987f32c622e77d40909a66dac1e2b895ce3ae09ee846e9360121"
+      },
+      {
+        "path": "images/ogpartners/Razorpay_logo.svg.webp",
+        "bytes": 22184,
+        "sha256": "9d1e64d8301625f3dbcc6cca6162375900df7d8f5bf1e9859ac02db0064b770a"
+      },
+      {
+        "path": "images/ogpartners/SBI_Capital_Markets_Logo.png",
+        "bytes": 13022,
+        "sha256": "18d054bf0bb306622174185a8c76e7590baef755d7b2fbfac12fccbb12070ceb"
+      },
+      {
+        "path": "images/ogpartners/Société_Générale.svg.webp",
+        "bytes": 6332,
+        "sha256": "ba54ce88d08420a3c5c50814cc4d648e8bc56d59497b837cb4ec9fd263680dff"
+      },
+      {
+        "path": "images/ogpartners/Standard_Chartered_(2021).svg.webp",
+        "bytes": 23440,
+        "sha256": "6a5b686086845e06f74529efd9bd37cf3c197ca725bee63225249b9a77d26ae9"
+      },
+      {
+        "path": "images/ogpartners/State-street-logo-final.svg.webp",
+        "bytes": 8712,
+        "sha256": "1bd31bd0a81446723e7b8498160ccf9d018ea6865306c3f6dd0f0d090fb8ced1"
+      },
+      {
+        "path": "images/ogpartners/UBS_Logo.png",
+        "bytes": 45614,
+        "sha256": "0d82aa7178763e34bab0239564f2a741b11657b7ccdc1574e06abe3f66b96229"
+      },
+      {
+        "path": "images/ogpartners/Wells_Fargo_Bank.svg.webp",
+        "bytes": 12142,
+        "sha256": "570d689b362053884776b9034b52e14dc0cb7b5432fb9f014ee40a00ac45059a"
+      },
+      {
+        "path": "images/ogpartners/citi-testimonial.webp",
+        "bytes": 9362,
+        "sha256": "4cb575982f397e6b6a075c1ea4a8f5aab4889e19ee3ba95c9e579041cc2058e4"
+      },
+      {
+        "path": "images/ogpartners/hsbc-testimonial.svg",
+        "bytes": 3046,
+        "sha256": "5785575b98700316e8fad86a0573e802a0ffcb24eff5d0170bea50eb63cd4689"
+      },
+      {
+        "path": "images/ogpartners/hsbc_logo_icon_169028.png",
+        "bytes": 7175,
+        "sha256": "8eb395e0f2040bfac1ef2aeb7e5c710d642db32531e4cce0b46a63e8c34ad020"
+      },
+      {
+        "path": "images/ogpartners/kotak-testimonial.svg",
+        "bytes": 6478,
+        "sha256": "5ff055ed26891d14211b770dfe7bfe6ee0fe72b0bee83e25a01e9c2bd07abc27"
+      },
+      {
+        "path": "images/partners/J_P_Morgan_Logo_2008_1.svg.webp",
+        "bytes": 2652,
+        "sha256": "cd76e09db6ae4654d69883e9ba6e75c4d6e1d4df1d13f83551b6eff91ee3828e"
+      },
+      {
+        "path": "images/partners/axis-bank.svg",
+        "bytes": 2813,
+        "sha256": "78b25a62f908e778a969de2eed5f66388137233e26fc65450b67e074243be376"
+      },
+      {
+        "path": "images/partners/bajaj-finance.svg",
+        "bytes": 2489,
+        "sha256": "4e42e7b274e1df1ee94f9296c4d6c5598644c8875db5ad5e7fb1ee86c602c00f"
+      },
+      {
+        "path": "images/partners/bank-of-america.svg",
+        "bytes": 4739,
+        "sha256": "507ea8a27c8892c5461063d3a2c1534c5c847c48577f60d3a0ffb441c3c518ca"
+      },
+      {
+        "path": "images/partners/barclays.svg",
+        "bytes": 15586,
+        "sha256": "355e22fc64f2481fcbe62572db25793b36e7fd53f95cfec2ca64ced14db34628"
+      },
+      {
+        "path": "images/partners/bnp-paribas.svg",
+        "bytes": 6161,
+        "sha256": "5e2d7093c9dcda9cc0e7418dc1d43bbdef4c0f6d7dc02e83039123288db6504a"
+      },
+      {
+        "path": "images/partners/citi.svg",
+        "bytes": 2849,
+        "sha256": "37422118212533398b788a2071e2eab99b108d41ad07b1792428fb77ec835b17"
+      },
+      {
+        "path": "images/partners/credit-suisse.svg",
+        "bytes": 3018,
+        "sha256": "3f94b3464a38a912da7d6fd742588a19366d8ad23388ea75f2f752967002c90d"
+      },
+      {
+        "path": "images/partners/deloitte.svg",
+        "bytes": 3323,
+        "sha256": "a4aece7882c268d49da5394d41dba9e679458700e2c8ba8f8845a34e7678dfdc"
+      },
+      {
+        "path": "images/partners/deutsche-bank.svg",
+        "bytes": 3312,
+        "sha256": "e970663af27774283fa12c320b4cddb193570b2704836a894eb46341bc07bded"
+      },
+      {
+        "path": "images/partners/goldman-sachs.svg",
+        "bytes": 4981,
+        "sha256": "9d9c1cea0d6f70d99150d1ecb83a7e457757f9c5fe433cdf404a732bba1dccc6"
+      },
+      {
+        "path": "images/partners/hdfc-bank.svg",
+        "bytes": 2929,
+        "sha256": "294fbb06074246d4cc40e8ca623dfe62c9b2f239121041369c092eb81a4c86db"
+      },
+      {
+        "path": "images/partners/houlihan-lokey.svg",
+        "bytes": 14916,
+        "sha256": "d3aa53e247242a06dc86b8c18b42ac0596038b6a1299ee88c432298dbd74cde4"
+      },
+      {
+        "path": "images/partners/hsbc.svg",
+        "bytes": 3065,
+        "sha256": "de72fa4d04027e1134a4b645fc820c898464e6ca15b7c2685e4b926a328e7dda"
+      },
+      {
+        "path": "images/partners/icici-bank.svg",
+        "bytes": 6018,
+        "sha256": "7214036dcd15f373d3013f546e97f67e690c2609873ed84af23e83d82e6e23eb"
+      },
+      {
+        "path": "images/partners/jefferies.svg",
+        "bytes": 11378,
+        "sha256": "2d20840e139e6d6cbe50acdd259d8e68b5646ea7e914a54446fc94fcdc36ac7e"
+      },
+      {
+        "path": "images/partners/jpmorgan-chase.svg",
+        "bytes": 4089,
+        "sha256": "3a2d2569ea057ed5e229adb3b8ad8cfd31f735661bffb009196c358800b38277"
+      },
+      {
+        "path": "images/partners/kpmg.svg",
+        "bytes": 4538,
+        "sha256": "278e5439bde1eaab1822b78f7f349e890985de29e1af71729d805d07d7dc7546"
+      },
+      {
+        "path": "images/partners/macquarie.svg",
+        "bytes": 11351,
+        "sha256": "40976ab5f54a6ff58583027594f7307b976c3b6f7b49bbcd8e4cd74943216bb8"
+      },
+      {
+        "path": "images/partners/merrill-lynch.svg",
+        "bytes": 8180,
+        "sha256": "fb694d8e8f1b362b271ac8786eec7b80f08ce497a46be5539f6a724c5a280fa2"
+      },
+      {
+        "path": "images/partners/morgan-stanley.svg",
+        "bytes": 4563,
+        "sha256": "13527b9a6d0d8e5b946fc052a8ce1bcbf6dfe822bbd931d8c01e834db3e9c0ed"
+      },
+      {
+        "path": "images/partners/nomura.svg",
+        "bytes": 6392,
+        "sha256": "0a0e978527cb29aad10fa426a6e177820b4000948841f0630e7b2672cc35ca90"
+      },
+      {
+        "path": "images/partners/paytm.svg",
+        "bytes": 3083,
+        "sha256": "3f96be939606b225d521fa1aa406406feee9e17ccf2a7a2f7b53dd1bf3138bc1"
+      },
+      {
+        "path": "images/partners/phonepe.svg",
+        "bytes": 3676,
+        "sha256": "4a974c6ef4472a7d3c90cf7e4530f3b224eb61594e0ea5041c948e7a0c3047c2"
+      },
+      {
+        "path": "images/partners/pwc.svg",
+        "bytes": 2090,
+        "sha256": "0232476de94d0b3960a0914598fa793e6a838302d8ea67ffb7a2fa5fa59375e3"
+      },
+      {
+        "path": "images/partners/raymond-james.svg",
+        "bytes": 8508,
+        "sha256": "20659a84d0ca5e53fbcd0be280abed86512ee2f180262daf40d5621badb7c87a"
+      },
+      {
+        "path": "images/partners/razorpay.svg",
+        "bytes": 3478,
+        "sha256": "f7c99c990ff7c6b91a06fe4287bcccb46218377c0a8fea1daa4cff6aaed553ac"
+      },
+      {
+        "path": "images/partners/rbc.svg",
+        "bytes": 6613,
+        "sha256": "dd03ac33519e6bade854792c19380c79150dc057c1acbe2acfdcb22db2b22927"
+      },
+      {
+        "path": "images/partners/rothschild.svg",
+        "bytes": 14055,
+        "sha256": "70dd526255109007da10f0ff907d3e488e311075ba065eb3aef862f5e8e327c0"
+      },
+      {
+        "path": "images/partners/santander.svg",
+        "bytes": 19944,
+        "sha256": "a94c46f8c2524d61c6de9d15e253767113e5ecc43a7dc2f404715d169e45301d"
+      },
+      {
+        "path": "images/partners/scotiabank.svg",
+        "bytes": 4309,
+        "sha256": "99d4c52480a8c01710eec293239476ad187e8f67607e2a84691c5d00e50a714e"
+      },
+      {
+        "path": "images/partners/societe-generale.svg",
+        "bytes": 6481,
+        "sha256": "edbd7133ffa1fe699b4c599728b837c009266709ac901c48fa415dfc5657e1da"
+      },
+      {
+        "path": "images/partners/standard-chartered.svg",
+        "bytes": 6080,
+        "sha256": "b92062b48986f0317714d4249f87df9dd06f50c9651782962505a89228c2246d"
+      },
+      {
+        "path": "images/partners/state-street.svg",
+        "bytes": 55081,
+        "sha256": "07e3432147a5985d6cba5811521f8dbf6ad2086ab96d950ba7f5136d7bf47b4f"
+      },
+      {
+        "path": "images/partners/stifel-financial.svg",
+        "bytes": 12012,
+        "sha256": "bb91cf9ae9a6aac9e376f06acc65b2ad0efa9f78f0ee52cc543098b054c71224"
+      },
+      {
+        "path": "images/partners/wells-fargo.svg",
+        "bytes": 3828,
+        "sha256": "eb0dd26d54dc74134bd887cbf4b59f85c42db91a385a6ac0db2b61649be1d171"
+      },
+      {
+        "path": "images/posters/home-feature-hands-on-workshop.avif",
+        "bytes": 46977,
+        "sha256": "7e9ba6b9ff7c6c63c572ca5538c6f49f3f38dbba5683042ae62b68f6b471b203"
+      },
+      {
+        "path": "images/posters/home-feature-hands-on-workshop.jpg",
+        "bytes": 158867,
+        "sha256": "33a760c197626ddba8167720539b1421271ac0bd18694f3a7590c06138a500b3"
+      },
+      {
+        "path": "images/posters/home-feature-hands-on-workshop.webp",
+        "bytes": 109356,
+        "sha256": "03e4b1ef705591e178eecbc16fe83d3b66c78bb432afc29f5a52518a48843cb8"
+      },
+      {
+        "path": "images/posters/home-final-cta-cohort.avif",
+        "bytes": 38801,
+        "sha256": "8ee43f61a01725c13867d4b70c08878bf0c20f09fa12f272101d2d7b1a21e1c7"
+      },
+      {
+        "path": "images/posters/home-final-cta-cohort.jpg",
+        "bytes": 134093,
+        "sha256": "2b41bf3cb49e81be03bfd596193a68526fbcd2e2054a68a03bc0c84a6c297e37"
+      },
+      {
+        "path": "images/posters/home-final-cta-cohort.webp",
+        "bytes": 85922,
+        "sha256": "d1710328295cba84353881edf9c0c46081bed9817adb6d6a68f5b6bd882b0c1c"
+      },
+      {
+        "path": "images/posters/home-hero-finance-classroom.avif",
+        "bytes": 38559,
+        "sha256": "8113224a6938619505388e4ba7414bc7c93b3f3feeae9661dfd626fdc84b4b94"
+      },
+      {
+        "path": "images/posters/home-hero-finance-classroom.jpg",
+        "bytes": 139546,
+        "sha256": "7d00d6f13985d4e233ade861baa9dbd1d1be5d3a10684adb89c5b986bfaece12"
+      },
+      {
+        "path": "images/posters/home-hero-finance-classroom.webp",
+        "bytes": 94528,
+        "sha256": "9bea6eef0224a64cf287e55d3d341d41c2c7312d052ccafb3d8d8d2ca5ee93bc"
+      },
+      {
+        "path": "images/posters/home-process-application-counselling-1024.avif",
+        "bytes": 13623,
+        "sha256": "dc7298621f9138cdcbec5c66dfefd96b6afadb6c39609a326db0156e111d284f"
+      },
+      {
+        "path": "images/posters/home-process-application-counselling-1024.webp",
+        "bytes": 35362,
+        "sha256": "6cf6c4861405e709e5b53829b36164e0ddeda145cdabc82dc5fad1b282cc3b85"
+      },
+      {
+        "path": "images/posters/home-process-application-counselling-320.avif",
+        "bytes": 4206,
+        "sha256": "03c0a5daaf44e8addb6082eff1e7755fbaac13e4ce10b4635d8ec1c2912ccb6e"
+      },
+      {
+        "path": "images/posters/home-process-application-counselling-320.webp",
+        "bytes": 8640,
+        "sha256": "c665417ece96841fcdc334e43011029f5d9dcea6b37aa1ec6fe65a171b9ca477"
+      },
+      {
+        "path": "images/posters/home-process-application-counselling-480.avif",
+        "bytes": 6279,
+        "sha256": "025356b923a947581457c9e8b6c851c3f82d934cb9d378ac14367057ea2c7c10"
+      },
+      {
+        "path": "images/posters/home-process-application-counselling-480.webp",
+        "bytes": 14032,
+        "sha256": "64f52ccb284fa065d377ec26fcbc173e441a5e1acc0aee3a2c7ca3ce78393389"
+      },
+      {
+        "path": "images/posters/home-process-application-counselling-640.avif",
+        "bytes": 8459,
+        "sha256": "e0a26c4fe9fe1c620e4482db8800fea087734d3abb79bb58b165db97bdd386df"
+      },
+      {
+        "path": "images/posters/home-process-application-counselling-640.webp",
+        "bytes": 19936,
+        "sha256": "c66e2641238544a9f870a41239b1b352fa3549087ba2c28accb23fae26fa1277"
+      },
+      {
+        "path": "images/posters/home-process-application-counselling-768.avif",
+        "bytes": 10084,
+        "sha256": "c8db345eb94dafd095546311ef1ce45ddd97f85f7680e27fe95bc66e0a2460a1"
+      },
+      {
+        "path": "images/posters/home-process-application-counselling-768.webp",
+        "bytes": 24868,
+        "sha256": "517ede3c83ceae028b2723cd01ff129d89406d331b75f1695900c4e6df035a8f"
+      },
+      {
+        "path": "images/posters/home-process-application-counselling.avif",
+        "bytes": 33720,
+        "sha256": "c1e45d686d8655ae8692d73c93dd9b02ac7ebf997ff649923905ed3deb0e3144"
+      },
+      {
+        "path": "images/posters/home-process-application-counselling.jpg",
+        "bytes": 133280,
+        "sha256": "30eb215179e30f71fa3763422d624485ecae1fc90985ff91084406064aeae55a"
+      },
+      {
+        "path": "images/posters/home-process-application-counselling.webp",
+        "bytes": 85640,
+        "sha256": "b88438db55cb4456171585347c61caa587a07440d103720fd49d456db969fc05"
+      },
+      {
+        "path": "images/posters/home-process-mock-interview.avif",
+        "bytes": 39833,
+        "sha256": "eefe8626c0132caed9edb521c947154e62447b80c9393cbd52eb1c64ac4e83b0"
+      },
+      {
+        "path": "images/posters/home-process-mock-interview.jpg",
+        "bytes": 140947,
+        "sha256": "4fd0abcff33085e0ca20101e31dbbed6f27aefc8ca0627428fe5464635c38789"
+      },
+      {
+        "path": "images/posters/home-process-mock-interview.webp",
+        "bytes": 97162,
+        "sha256": "25d0fda8cbfb7539839fd9c9f49df299eb8f88eae20daaa9f8cc610611dacd86"
+      },
+      {
+        "path": "images/posters/home-process-placement-opportunities-1024.avif",
+        "bytes": 16950,
+        "sha256": "d172dc7e57ccb940ef01e728b0095caa181d36504dbf38f03331ceb1ee0579bd"
+      },
+      {
+        "path": "images/posters/home-process-placement-opportunities-1024.webp",
+        "bytes": 41640,
+        "sha256": "93e888bc621b04ab32948c902a20e4d6080f49a99ee68f4fb596e0e86733cdd3"
+      },
+      {
+        "path": "images/posters/home-process-placement-opportunities-320.avif",
+        "bytes": 4481,
+        "sha256": "fa54233d3d07fbb0dd014b1721035c6b3016149645ae70dbcf2d50e9b0ca977b"
+      },
+      {
+        "path": "images/posters/home-process-placement-opportunities-320.webp",
+        "bytes": 8998,
+        "sha256": "3eb34fd94dba74698097270a8c51a121a47337c0527afc104cf51ae3f58f6a25"
+      },
+      {
+        "path": "images/posters/home-process-placement-opportunities-480.avif",
+        "bytes": 7266,
+        "sha256": "17fe820abb7bf1d42b5c45ada41ca913128a42da5a254b4319a2ed301c1b07e5"
+      },
+      {
+        "path": "images/posters/home-process-placement-opportunities-480.webp",
+        "bytes": 15530,
+        "sha256": "b14c35d789d7bde013e42b347c56545fabdb1be2778c40690d86c7db26f5182b"
+      },
+      {
+        "path": "images/posters/home-process-placement-opportunities-640.avif",
+        "bytes": 10095,
+        "sha256": "b717dc5bc760ac5b5c52a5e0862508e8257cf39778387e30592b681b431d7740"
+      },
+      {
+        "path": "images/posters/home-process-placement-opportunities-640.webp",
+        "bytes": 22418,
+        "sha256": "a2e7c145dbbd661f8d050081914ff639cb0f7ba614a1bfe6f746b8ba3e16800f"
+      },
+      {
+        "path": "images/posters/home-process-placement-opportunities-768.avif",
+        "bytes": 12246,
+        "sha256": "41953d66f163d42ab93facac7e7d2fcdcf1ce210ea43913ad53cae9113522fb2"
+      },
+      {
+        "path": "images/posters/home-process-placement-opportunities-768.webp",
+        "bytes": 28382,
+        "sha256": "ed6687653b34895d9c495cfd28c3c9194c38eb4999a0aa8f14169074d55242ce"
+      },
+      {
+        "path": "images/posters/home-process-placement-opportunities.jpg",
+        "bytes": 222705,
+        "sha256": "96f5c02ff7ed96ac05be4b59d736778b0ae7e7d0eaf84b230ef977cf70bdb3ed"
+      },
+      {
+        "path": "images/posters/home-process-practical-training-1024.avif",
+        "bytes": 23668,
+        "sha256": "23e97708b8b610e7aea7d961a53b0db42b46147e71f6a9b0479d38ba98bde5d2"
+      },
+      {
+        "path": "images/posters/home-process-practical-training-1024.webp",
+        "bytes": 57396,
+        "sha256": "46a0e970c3b1b92dec96f53f69a888677b7e469a0226231ae4cda5a74a1c9fe2"
+      },
+      {
+        "path": "images/posters/home-process-practical-training-320.avif",
+        "bytes": 6301,
+        "sha256": "21818afc04e9708ef4d7eb95d366d6fddd5961433658bcbcfd3c290213f87d73"
+      },
+      {
+        "path": "images/posters/home-process-practical-training-320.webp",
+        "bytes": 12540,
+        "sha256": "1f96ba75b1bf8ed7ec569feb6a3ebc92e83afcfe9df1edca6523bd04e5744b59"
+      },
+      {
+        "path": "images/posters/home-process-practical-training-480.avif",
+        "bytes": 10185,
+        "sha256": "12e1fe9e942f3e00a073ac3554a74e14627399fcb488188b4e54d80023a5b5f8"
+      },
+      {
+        "path": "images/posters/home-process-practical-training-480.webp",
+        "bytes": 21736,
+        "sha256": "b341049695283148dbffa8e287ab95b6fdfcf63d54f65a859872c2e2d7f25fc5"
+      },
+      {
+        "path": "images/posters/home-process-practical-training-640.avif",
+        "bytes": 14209,
+        "sha256": "a6a4ed153082c49dfade19f2aa338746fda9e4e9cf0e7e0aa3c21bf63331087e"
+      },
+      {
+        "path": "images/posters/home-process-practical-training-640.webp",
+        "bytes": 31874,
+        "sha256": "c5aa9bf064532b3c6cb0481695d88ae4c35b084600ca7e7327966fe11abc2aa8"
+      },
+      {
+        "path": "images/posters/home-process-practical-training-768.avif",
+        "bytes": 17438,
+        "sha256": "453631b30b8ed2b62f86311c9d9963be9cf7398f620580fff5faf540aee56e7b"
+      },
+      {
+        "path": "images/posters/home-process-practical-training-768.webp",
+        "bytes": 39914,
+        "sha256": "048b2a92ef250140fcfe3b63655be0561aa8f9ae582842cc9e44b8a266c5a7bf"
+      },
+      {
+        "path": "images/posters/home-process-practical-training.avif",
+        "bytes": 56808,
+        "sha256": "cb404f92a801cbb20c448fa1a9a82e9e8edbc6360299a8efac4cae132e5b3529"
+      },
+      {
+        "path": "images/posters/home-process-practical-training.jpg",
+        "bytes": 184820,
+        "sha256": "e39dffde131b6dfbe90920016178732f79bb00a581e4d61cb14ae68cfb5cccdc"
+      },
+      {
+        "path": "images/posters/home-process-practical-training.webp",
+        "bytes": 129976,
+        "sha256": "318b3d3decfefeaa0a26004c7976970b0b2227915e4672a7edb7f2a5026de21f"
+      },
+      {
+        "path": "index.html",
+        "bytes": 136253,
+        "sha256": "de140696f0152adc8b8e65496425e643d3a5c45bb1e80d2ede8452f6980019c4"
+      },
+      {
+        "path": "india/bengaluru/index.html",
+        "bytes": 69615,
+        "sha256": "c435a4eb629ea8f02cd692a63952702c007600109248619ef1070c721bca4fea"
+      },
+      {
+        "path": "india/delhi-ncr/index.html",
+        "bytes": 69273,
+        "sha256": "02c4e0c4563ef08ce9e146179a99fefcf7168254f5ccdfff72d3541de3a902af"
+      },
+      {
+        "path": "india/hyderabad/index.html",
+        "bytes": 70607,
+        "sha256": "4811858648613bf91ab5b15969b0301bdb1a06c0eb6499e46866cd6a0898b9ac"
+      },
+      {
+        "path": "india/index.html",
+        "bytes": 115633,
+        "sha256": "44253355c886dd2c9f59a269f3c9778b01bdd30d39f4ab25a93d2ccfeaa781d2"
+      },
+      {
+        "path": "india/mumbai/index.html",
+        "bytes": 70296,
+        "sha256": "17c0879277796c9ed416cee41290eba8240767136786e74cc313a05959639018"
+      },
+      {
+        "path": "india/pune/index.html",
+        "bytes": 71223,
+        "sha256": "e7f0f90fa6be3c6de7deec6542b4ab5afc5c8ce86ac41de794c1b6e87e442bc3"
+      },
+      {
+        "path": "investment-banking-operations-course-with-placement/index.html",
+        "bytes": 44348,
+        "sha256": "7c9ad217aaf67890ab9a4e710e7446fd29272eb271345068908f89412287b37d"
+      },
+      {
+        "path": "job-oriented-finance-course-india/index.html",
+        "bytes": 44749,
+        "sha256": "7feba74a3d52b7644ad35bffac6c6c6e4a5e7a671525f078740e2c4b00cb496f"
+      },
+      {
+        "path": "llms.txt",
+        "bytes": 83297,
+        "sha256": "3ba3ae927bac31ad14e322a3e3312bec802e6ebdd03dfa4449675b9639539066"
+      },
+      {
+        "path": "locations/lucknow/index.html",
+        "bytes": 55865,
+        "sha256": "32d38f103b3723ab2bae82f19713ce321ed0512073afecf40777dc34586fd02d"
+      },
+      {
+        "path": "online-finance-course-with-placement/index.html",
+        "bytes": 43941,
+        "sha256": "aee652cd6d59984f8286030a42d317b93045e4420aa19c423892495506fda9f8"
+      },
+      {
+        "path": "placements/index.html",
+        "bytes": 109119,
+        "sha256": "d1a549b5f403e63cefd63095f32fb9a31720bc59563eff537c9fe0fc73ec1001"
+      },
+      {
+        "path": "privacy-policy/index.html",
+        "bytes": 40310,
+        "sha256": "961232b95c879c68d968033fee49b80fb22e4189fab90164cccf29df64459c32"
+      },
+      {
+        "path": "quiz/index.html",
+        "bytes": 88593,
+        "sha256": "f74ee6020655d445aa5dec84f3831153b7f8272d58fbd4f3feaa211444b395f1"
+      },
+      {
+        "path": "refund-cancellation-policy/index.html",
+        "bytes": 32011,
+        "sha256": "831b1008c7297c468522131d62823b326d6fe49e2901aaa3601250f08effde36"
+      },
+      {
+        "path": "resources/accounting-basics/index.html",
+        "bytes": 58671,
+        "sha256": "7f3ea17a14a47b7f4685a0a5c268baa6601556a85945392aa16dceef1ce29d67"
+      },
+      {
+        "path": "resources/accounting-interview-questions/index.html",
+        "bytes": 55037,
+        "sha256": "324cad0a783c282dd2fbad00c1db98a9542099036d2c34b6b68081668bf6037c"
+      },
+      {
+        "path": "resources/bank-reconciliation-process/index.html",
+        "bytes": 53141,
+        "sha256": "0fa81829c7d898bd80775969f68f3d05fda66f827a5abc48812f5c60d50629d1"
+      },
+      {
+        "path": "resources/capital-market-operations/index.html",
+        "bytes": 56046,
+        "sha256": "8d53d4cf3e2e1e3883051705ad76feb0452ef0917c351c4aea866b058b162e78"
+      },
+      {
+        "path": "resources/corporate-actions-workflow/index.html",
+        "bytes": 55500,
+        "sha256": "639dd219979d3354786f68b44bec56f8ce982ffded51f9486a621c7d9cb188fc"
+      },
+      {
+        "path": "resources/cost-accounting-finance-operations/index.html",
+        "bytes": 52930,
+        "sha256": "0d60545b662a492d2e2f3b808d342e783561ea898956f1054ccef149be6db765"
+      },
+      {
+        "path": "resources/finance-gk/index.html",
+        "bytes": 57439,
+        "sha256": "14b276e08dd80d5988f750241069cfe4023cc8897e644eb23a385ca2a81f3e83"
+      },
+      {
+        "path": "resources/financial-accounting-banking/index.html",
+        "bytes": 53988,
+        "sha256": "9a35be6a0c71e737be0e825de4ea2af3d5255ee2a570819dc1baa291d5144407"
+      },
+      {
+        "path": "resources/financial-statement-analysis/index.html",
+        "bytes": 54817,
+        "sha256": "49092af8543909cea3bc30ca6b49ee7c7b033c769605fffcea60367dbd6e8d64"
+      },
+      {
+        "path": "resources/financial-system-india/index.html",
+        "bytes": 56209,
+        "sha256": "17fbc00825de12f486ba375ea123accdf9e2ca5dc51841decda082225d5f3868"
+      },
+      {
+        "path": "resources/index.html",
+        "bytes": 78107,
+        "sha256": "2daaba1968dd57a950b1473c45ba53149dd15b48c251ac8c2839efd9a67b1457"
+      },
+      {
+        "path": "resources/investment-banking-interview-questions/index.html",
+        "bytes": 67768,
+        "sha256": "d36ded8dcd4e0d40b9a64fa33f0709fe9b5a275cce5f1828b67fc66cf3944aca"
+      },
+      {
+        "path": "resources/kyc-aml-compliance-guide/index.html",
+        "bytes": 55359,
+        "sha256": "d694e827d804451ed4b969f32950f616113bc2dea1d60cf4bcbc7be828feb0c9"
+      },
+      {
+        "path": "resources/reconciliation-in-finance/index.html",
+        "bytes": 62899,
+        "sha256": "6bb822f21fc1b06ab9bbeaebbc1fcf1c6d094da3e4b1ac983390ca85f7fc6b02"
+      },
+      {
+        "path": "robots.txt",
+        "bytes": 454,
+        "sha256": "8cba8619c2154178fcc2ec69feb3da47ad9ce2292727d2be2bbb5b05ea75aa3f"
+      },
+      {
+        "path": "sitemap.xml",
+        "bytes": 24048,
+        "sha256": "2b7b6f439af07a36a40e4ffcafed7ab4f3ca6d8a37977117cbc6fd3dc1aea951"
+      },
+      {
+        "path": "terms-and-conditions/index.html",
+        "bytes": 34292,
+        "sha256": "962611b92d330ca06463aaef04cebd79d16bc7965bba5917257ecc1c4d1c1ae6"
+      },
+      {
+        "path": "which-finance-course-is-right-for-me/index.html",
+        "bytes": 43997,
+        "sha256": "c7b0912940d9ee778bcf165eb7602b698afa1023ff36d90cbe47b7cc75eb0b0f"
+      }
+    ]
+  },
+  "checks": [
+    {
+      "label": "complete SEO quality gate",
+      "command": "npm.cmd run seo:gate",
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 69245
+    },
+    {
+      "label": "release package deployment check",
+      "command": "npm.cmd run deployment:check",
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 947
+    },
+    {
+      "label": "refresh authority report",
+      "command": "npm.cmd run seo:authority:report",
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 766
+    },
+    {
+      "label": "refresh measurement report",
+      "command": "npm.cmd run seo:measure:report",
+      "passed": true,
+      "exitCode": 0,
+      "durationMs": 703
+    },
+    {
+      "label": "external deployed-site verification",
+      "command": "npm run seo:external -- <deployed-origin>",
+      "passed": null,
+      "status": "skipped"
+    }
+  ],
+  "externalVerification": {
+    "status": "not-run",
+    "command": "npm run seo:external -- <deployed-origin>",
+    "requiredBeforeDeclaringLiveDeploymentVerified": true
+  },
+  "failures": []
+}

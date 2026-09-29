@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "securities-operations-workflow-roles",
+  "slug": "securities-operations-workflow-roles",
+  "status": "published",
+  "title": "Securities Operations: Workflow and Roles",
+  "excerpt": "Understand securities operations through the trade lifecycle, settlement controls, exception handling, role responsibilities and practical skill preparation.",
+  "category": "investment-banking",
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Finance education editorial team",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Securities operations supports the controlled processing of transactions and records after an authorised business activity has been captured. Depending on the organisation, the work can include confirmations, settlement instructions, account or static-data checks, reconciliations, corporate actions, reporting and exception management. The exact workflow varies by security, market, custodian, clearing arrangement and legal entity. This guide explains the operational logic with fictional examples; it is not investment, legal or settlement advice."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Securities operations workflow"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Capture the authorised trade or instruction with a unique reference and the required economic terms.",
+        "Validate static data, account details, instrument identifiers, currency, quantity, price and relevant dates.",
+        "Confirm the transaction with the appropriate counterparty or internal control point using the approved channel.",
+        "Prepare or validate settlement instructions and monitor the expected cash or securities movement.",
+        "Reconcile internal records to external statements, identify breaks and preserve source evidence.",
+        "Close, carry forward or escalate exceptions with an owner, ageing, impact assessment and reviewer trail."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What an operations analyst actually checks"
+    },
+    {
+      "type": "paragraph",
+      "text": "The analyst is usually not asked to decide whether a security is attractive. They check whether a record is complete, whether fields agree across sources, whether the instruction follows procedure and whether a break has been handled within the deadline. A small difference in quantity, settlement date, account or currency can create a downstream exception. The right response is to identify the evidence and route the issue, not to assume that the most recent file is correct."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fictional settlement exception"
+    },
+    {
+      "type": "paragraph",
+      "text": "A fictional operations queue contains a transaction for 2,500 units. The internal record and confirmation agree, but the settlement file contains 2,050 units. The analyst checks for a partial settlement, amendment, corporate action, split instruction or data transformation before escalating. They record the reference, the two values, the difference, the evidence checked, the settlement deadline and the person responsible for the next decision. If the issue could fail settlement, the escalation should be timely and follow the employer's approved process."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Roles inside securities operations"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Trade support analysts monitor capture, confirmations, amendments and communication between teams.",
+        "Settlement analysts coordinate instructions, status updates, failed settlements and evidence.",
+        "Reconciliation analysts compare internal and external records and investigate breaks.",
+        "Corporate-actions analysts process event information under controlled dates and approvals.",
+        "Operations control or quality teams review ageing, root causes, metrics and process improvements."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Skills to build before applying"
+    },
+    {
+      "type": "paragraph",
+      "text": "Start with accounting and markets vocabulary, then practise a small workflow in a spreadsheet using fictional data. Label every source, use formulas that another person can review, keep a break log, and write an escalation note in plain language. Employers may also look for deadline discipline, confidentiality awareness, careful written communication and willingness to follow maker-checker controls. Job requirements differ, so use this as preparation rather than a guarantee of eligibility."
+    },
+    {
+      "type": "link",
+      "label": "Follow the Trade Lifecycle career guide",
+      "href": "/career-guides/trade-lifecycle/",
+      "routeId": "career-guide-trade-lifecycle"
+    },
+    {
+      "type": "link",
+      "label": "Explore Investment Banking Operations training",
+      "href": "/courses/investment-banking-operations/",
+      "routeId": "investment-banking-operations"
+    },
+    {
+      "type": "link",
+      "label": "See the Investment Banking Operations career guide",
+      "href": "/career-guides/investment-banking-operations/",
+      "routeId": "career-guide-investment-banking-operations"
+    },
+    {
+      "type": "link",
+      "label": "Use the reconciliation workflow resource",
+      "href": "/resources/reconciliation-in-finance/",
+      "routeId": "resource-reconciliation-in-finance"
+    },
+    {
+      "type": "link",
+      "label": "Browse all finance career insights",
+      "href": "/blog/",
+      "routeId": "blog"
+    },
+    {
+      "type": "link",
+      "label": "Read NISM's securities-market operations overview",
+      "href": "https://www.nism.ac.in/knowledge_base/an-insight-into-various-back-office-operations-activities-in-securities-markets"
+    },
+    {
+      "type": "paragraph",
+      "text": "Securities operations is a process-and-controls career path. Verify the current role scope, working pattern and training terms with the employer or provider, and never use public practice material for confidential records."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/securities-operations-workflow-roles.png",
+    "alt": "Editorial illustration of a securities operations workflow from trade capture through settlement",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-27",
+  "updatedAt": "2026-09-27",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Securities Operations: Workflow and Roles | Centaur Careers",
+    "description": "Learn securities operations through the trade lifecycle, settlement checks, exception handling and practical analyst skills.",
+    "canonicalPath": "/blog/securities-operations-workflow-roles/",
+    "noindex": false,
+    "focusKeyword": "securities operations workflow",
+    "secondaryKeywords": ["trade lifecycle", "settlement operations"]
+  },
+  "tags": ["Securities Operations", "Securities Operations Workflow", "Trade Lifecycle", "Settlement Operations", "Investment Banking Operations"],
+  "relatedRouteIds": ["blog", "investment-banking-operations", "career-guide-investment-banking-operations", "career-guide-trade-lifecycle", "resource-reconciliation-in-finance"],
+  "redirects": [],
+  "evidenceNotes": [
+    "NISM securities-market back-office operations overview: https://www.nism.ac.in/knowledge_base/an-insight-into-various-back-office-operations-activities-in-securities-markets",
+    "The settlement case is fictional and does not describe a live account or employer procedure.",
+    "Use the applicable current market, custodian and employer procedures for real work."
+  ]
+}

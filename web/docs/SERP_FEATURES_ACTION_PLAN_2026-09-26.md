@@ -1,0 +1,33 @@
+# SERP feature opportunities — 26 September 2026
+
+## What the supplied screenshot says
+
+The Semrush panel shows **zero tracked keywords with a SERP feature linking to Centaur's domain**. In its “Not linking to domain” section, features occur for the tracked queries but link elsewhere: sitelinks (1 keyword), AI Overview (2), reviews (3), image pack (1), video (2), People also ask (3), knowledge panel (1), and related searches (3). The screenshot does not show the underlying queries, dates, locations or device, and these counts are not a sitewide Google visibility score. Semrush describes this panel as a comparison of SERP features won by the domain versus features held by other domains ([Semrush guide](https://www.semrush.com/kb/1309-researching-serp-features)). Export or click each feature to identify its actual query and current winning URL before assigning a content change.
+
+## Current Centaur audit
+
+On 26 September 2026, direct fetches of `/`, `/courses/`, `/blog/` and `/blog/investment-banking-teams-operations/` returned HTTP 200. The sampled pages had one H1. The three hub pages had indexable robots metadata and self-referencing canonical URLs. `/courses/` emitted `Course` and `BreadcrumbList`; the sampled blog article emitted `BlogPosting` and `BreadcrumbList`. The live sitemap and robots.txt also returned HTTP 200. This checks delivery and markup presence, **not Google indexing or rich-result eligibility**. Use Search Console URL Inspection and Google's Rich Results Test after each deployment ([Search Console guidance](https://developers.google.com/search/docs/monitor-debug/search-console-start)).
+
+The current live homepage still shows a salary range, employer logos and named testimonials. The repository's [claims policy](./CLAIMS_EVIDENCE_POLICY.md) requires current proof and permissions for those claims. Verify the evidence or release the corrected copy before asking Google to rely on richer business claims. The live `/courses/` title also differs from the current local route title, so check which release is actually deployed before interpreting a search-result change.
+
+## Work order
+
+| Priority | Feature in screenshot | Centaur action | Check |
+| --- | --- | --- | --- |
+| 1 | All features | Confirm index status and Google-selected canonical for `/courses/`, operations/KYC/trade guides, `/blog/` and the two relevant blog articles. Fix any crawl, canonical or deployment mismatch first. | Search Console URL Inspection, Pages, Sitemaps and Search Appearance reports; do not infer indexing from a local build. |
+| 2 | Sitelinks (1 query) | Keep main navigation and homepage links to `/courses/`, `/career-guides/`, `/resources/`, `/about/`, `/locations/lucknow/` and `/contact/` clear. Use concise descriptive titles and anchors. Add useful body links between course, role and learning pages. | Inspect a relevant branded query after Google recrawls. Sitelinks are automated ([Google guidance](https://developers.google.com/search/docs/appearance/sitelinks)). |
+| 3 | People also ask (3) and AI Overview (2) | On `/career-guides/investment-banking-operations/`, `/career-guides/trade-lifecycle/`, `/career-guides/kyc-aml-analyst/` and the future accounting interview resource, put a direct 2–3 sentence answer under the relevant question heading, followed by a worked case, caveats and primary sources. Keep the page's own role and programme terms precise. | Check that the answer is visible in rendered HTML and that the query matches the page. Google requires no special AI markup ([AI feature guidance](https://developers.google.com/search/docs/appearance/ai-features)). |
+| 4 | Image pack (1) | Use original workflow diagrams already present in the blog library, especially trade lifecycle, KYC case and reconciliation examples. Put each image beside its explanation, with a descriptive filename and alt text. Add a caption when it helps the reader. | Confirm the image URL is crawlable and present in rendered `<img>` markup. Follow [Google Images guidance](https://developers.google.com/search/docs/appearance/google-images). |
+| 5 | Video (2) | If the winning queries match a real teaching topic, make one original short trade-break or KYC-case walkthrough with a transcript, stable thumbnail and indexable watch page. Add `VideoObject` only when the actual video exists and metadata matches it. | Google video indexing report and watch-page inspection ([video guidance](https://developers.google.com/search/docs/appearance/video)). |
+| 6 | Local/knowledge-panel opportunities | Verify and maintain the legitimate Lucknow Google Business Profile, consistent public address/contact details, current photos and accurate service description. Link it to `/locations/lucknow/`. | Check the Lucknow branded/local results; Google says local ranking depends mainly on relevance, distance and prominence ([Business Profile guidance](https://support.google.com/business/answer/7091?hl=en)). |
+
+### Features to deprioritize
+
+- **FAQ rich result:** visible FAQs help readers, but Google generally limits FAQ rich results to well-known government and health sites. Keep existing truthful FAQs; do not create more solely for FAQ markup ([Google update](https://developers.google.com/search/blog/2023/08/howto-faq-changes)).
+- **Review stars:** self-serving `Organization`/`LocalBusiness` review markup does not make Centaur's own testimonials eligible for review snippets. Do not add ratings to win the three review-feature queries ([review guidance](https://developers.google.com/search/docs/appearance/structured-data/review-snippet)).
+- **Course-list rich result:** Google requires at least three real courses and carousel markup. Centaur currently presents one Financial Operations Masterclass with modules, so do not mark modules as separate courses to qualify ([course-list guidance](https://developers.google.com/search/docs/appearance/structured-data/course)).
+- **Featured snippet:** the screenshot records zero such opportunities in the tracked set. Improve clear answers for users, then revisit when a relevant query actually triggers this feature.
+
+## Success measure
+
+For each relevant screenshot query, record: query, location/device, existing rank and landing URL, feature owner, Centaur index status, proposed page change and release date. Recheck the same Semrush campaign after recrawl, then compare Search Console impressions, clicks and confirmed enquiries for the same page. A change from zero feature wins is useful only if the gained feature appears for relevant learners; structured data itself does not guarantee display ([Google structured-data policy](https://developers.google.com/search/docs/appearance/structured-data/sd-policies)).

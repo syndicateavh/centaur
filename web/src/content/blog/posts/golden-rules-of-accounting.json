@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "golden-rules-of-accounting",
+  "slug": "golden-rules-of-accounting",
+  "status": "published",
+  "title": "Golden Rules of Accounting: Debit and Credit Examples",
+  "excerpt": "Understand the three golden rules of accounting with debit and credit logic, fictional journal entries, review checks and finance operations relevance.",
+  "category": "finance-operations",
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Finance education editorial team",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "The golden rules of accounting are a traditional way to remember the debit and credit treatment of personal, real and nominal accounts. They are a learning aid, not a replacement for the accounting framework, chart of accounts or policy used by an organisation. The most reliable approach is to understand what the transaction does, identify the accounts affected, apply the applicable policy, and check the entry against supporting evidence. The examples below use fictional amounts and simplified language."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The three golden rules of accounting"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Personal account: debit the receiver and credit the giver. In a modern ledger, first classify the account and confirm the organisation's account mapping.",
+        "Real account: debit what comes in and credit what goes out. This is often used as a memory aid for assets, but the actual entry still depends on the transaction and policy.",
+        "Nominal account: debit expenses and losses, and credit income and gains. Check whether the item is an expense, asset, liability or another category before posting."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to apply the rules step by step"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Read the source document and describe the economic event in plain language.",
+        "Identify every account affected and decide whether each account is an asset, liability, equity, income or expense.",
+        "Check whether the date, amount, tax treatment, currency and approval are supported by evidence.",
+        "Apply debit and credit logic, then confirm that the entry balances arithmetically.",
+        "Record a useful narration and retain the evidence so another reviewer can understand the entry.",
+        "Review unusual, manual, recurring or high-risk postings according to the organisation's control process."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fictional journal-entry examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "Suppose a fictional business pays office rent of Rs 12,000 from its bank account. The simplified learning entry is a debit to rent expense and a credit to bank, because the expense increases and cash decreases. If the business buys equipment for Rs 50,000 in cash, the learning entry is a debit to equipment and a credit to bank. If it receives Rs 20,000 for services, the learning entry is a debit to bank and a credit to service income. In real work, tax, accrual, capitalization, timing and approval rules may change the entry, so never treat a classroom example as a posting instruction."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Common mistakes to avoid"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Memorising a rule without understanding the transaction or the account classification.",
+        "Treating a balanced entry as proof that the amount, date or account is correct.",
+        "Posting from an edited spreadsheet without checking the original invoice, bank record or approval.",
+        "Using a suspense or plug account to remove a difference without an owner and documented resolution.",
+        "Copying a prior-period entry when the current transaction has different facts or policy."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why the golden rules matter in finance operations"
+    },
+    {
+      "type": "paragraph",
+      "text": "Operations analysts use accounting logic when they review reconciliations, investigate ledger breaks, check cash movements, support month-end work or explain a variance. The career skill is not just naming debit and credit. It is connecting a source record to the right account, identifying what a balance means, documenting an exception and escalating when the policy or evidence is unclear. Practise with fictional records and state the assumption behind every answer."
+    },
+    {
+      "type": "link",
+      "label": "Read the accounting basics resource",
+      "href": "/resources/accounting-basics/",
+      "routeId": "resource-accounting-basics"
+    },
+    {
+      "type": "link",
+      "label": "Study reconciliation in finance",
+      "href": "/resources/reconciliation-in-finance/",
+      "routeId": "resource-reconciliation-in-finance"
+    },
+    {
+      "type": "link",
+      "label": "Explore Finance Operations training",
+      "href": "/courses/finance-operations-training/",
+      "routeId": "courses-finance-operations-training"
+    },
+    {
+      "type": "link",
+      "label": "Practise accounting interview questions",
+      "href": "/resources/accounting-interview-questions/",
+      "routeId": "resource-accounting-interview-questions"
+    },
+    {
+      "type": "link",
+      "label": "Browse all finance career insights",
+      "href": "/blog/",
+      "routeId": "blog"
+    },
+    {
+      "type": "link",
+      "label": "Check the IFRS Accounting Standards Navigator",
+      "href": "https://www.ifrs.org/issued-standards/list-of-standards/"
+    },
+    {
+      "type": "paragraph",
+      "text": "The golden rules are useful for building a first mental model, but current accounting treatment should be confirmed against the applicable standards, entity policy and reviewer instructions. This article is educational and does not provide accounting, tax, audit or legal advice."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/golden-rules-of-accounting.png",
+    "alt": "Editorial illustration of the three accounting rules represented by a balanced ledger",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-27",
+  "updatedAt": "2026-09-27",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Golden Rules of Accounting: Debit & Credit | Centaur Careers",
+    "description": "Understand the three golden rules of accounting with debit and credit examples, review checks and finance operations context.",
+    "canonicalPath": "/blog/golden-rules-of-accounting/",
+    "noindex": false,
+    "focusKeyword": "golden rules of accounting",
+    "secondaryKeywords": ["debit and credit rules", "accounting basics", "journal entries"]
+  },
+  "tags": ["Golden Rules of Accounting", "Debit and Credit", "Accounting Basics", "Journal Entries", "Finance Operations"],
+  "relatedRouteIds": ["blog", "resource-accounting-basics", "resource-reconciliation-in-finance", "courses-finance-operations-training", "resource-accounting-interview-questions"],
+  "redirects": [],
+  "evidenceNotes": [
+    "IFRS Accounting Standards Navigator: https://www.ifrs.org/issued-standards/list-of-standards/",
+    "Journal entries are simplified fictional learning examples and are not prescribed posting instructions.",
+    "No accounting, tax, audit or qualification outcome is promised."
+  ]
+}

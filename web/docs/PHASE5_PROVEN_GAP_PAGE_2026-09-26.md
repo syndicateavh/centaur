@@ -1,0 +1,17 @@
+# Phase 5: distinct accounting interview resource — 26 September 2026
+
+## Selection and scope
+
+The reviewed competitor inventory contains `accounting interview questions and answers` and `basic accounting interview questions` as one query cluster. The export records estimated volume and difficulty but no verifiable India database setting, so these are **topic signals, not proven India search demand**. [Proschool's accounts interview article](https://proschoolonline.com/blog/15-questions-asked-in-every-accounts-interview) and [Imarticus's accounting interview article](https://imarticus.org/blog/top-accounting-interview-questions/) demonstrate an existing public answer format. Centaur's broad [fresher interview article](https://centaurcareers.in/blog/finance-interview-questions-freshers/) lists mixed finance, process, and HR prompts; its [accounting basics](https://centaurcareers.in/resources/accounting-basics/) page teaches concepts. Neither owned a complete technical interview exercise with source transactions, journal entries, a trial balance, statement link, bank difference, and a scoring rubric. That is the independent content gap selected for this release.
+
+Published in the local release package: `/resources/accounting-interview-questions/`. It uses one page for both selected phrases. The first answer is technical and role focused; the fictional Aster Services case supplies four initial events, a bank fee discovered at cut-off, a five-entry answer key, a balanced ₹27,000 trial balance, ₹3,800 profit, ₹23,800 closing assets, and a five-point self-check. The arithmetic is checked in the resource QA script. [ICAI study material](https://www.icai.org/post/17894) is linked as the formal learning reference. The page names Centaur Careers as publisher and does not claim an individual expert reviewed it, employer-specific interview questions, a standalone accounting course, or a hiring outcome.
+
+The resource hub, accounting basics page, reconciliation page, and broad fresher interview article link to the new page. The new page links back to those resources and to the Masterclass only after the educational answer. It has its own prerendered route, self-canonical, indexable directive, sitemap entry, Article schema, breadcrumb, and current publication date. The Phase 2 reviewed-query sheet records the two phrases under this published owner while preserving the original Semrush source estimates as unverified.
+
+## Other proposed pages
+
+No new city, generic course, trade-break, or KYC case-study URL was added. The competitor workbook did not show a verified relevant query cluster for those examples, and the proposed case-study briefs do not yet have their distinct downloadable asset and subject review. Existing trade and KYC guides remain their owners until a separate asset and measured need justify a new page.
+
+## Verification and follow-up
+
+`npm.cmd run release:qa` passed on 26 September 2026. The full local release gate checked resource content, source links, reciprocal discovery, accounting-case arithmetic, rendered metadata, structured data, sitemap, accessibility, and HTTP behavior. The package is ready for upload; this result does not prove that the page is live, indexed, or receiving qualified visits. After deployment, capture page and query data from Search Console for two equal completed 28-day windows and compare organic landing pages and confirmed enquiries before expanding this cluster.
