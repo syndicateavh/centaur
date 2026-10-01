@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const publicUrl = process.env.LMS_PUBLIC_URL;
   if (!publicUrl) return [];
 
-  const publicPages = ["/", "/courses", "/faq", "/help", "/certificates/verify"];
+  const publicPages = ["/", "/courses", "/faq", "/help"];
   const coursePages = courseTracks.map((course) => `/courses/${course.slug}`);
   return [...publicPages, ...coursePages].map((path) => ({
     url: new URL(path, publicUrl).toString(),

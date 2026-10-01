@@ -35,7 +35,7 @@ export function HomeProcessSection() {
           <div className="home-process-copy">
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent-ink">Our Process</p>
             <h2 id="home-process-title" className="mt-4 text-3xl font-bold leading-tight text-primary sm:text-4xl lg:text-5xl">
-              Complete the Program. Get a Guaranteed Finance Job.
+              How the Six-Week Finance Program and Job Guarantee Work
             </h2>
             <p className="mt-5 text-base text-muted-foreground sm:text-lg">
               Centaur Careers guarantees a finance job to graduates and job switchers who complete the six-week Financial Operations Masterclass.

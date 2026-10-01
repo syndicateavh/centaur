@@ -63,6 +63,7 @@
 html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
 
 body {
+  min-width: 320px;
   background: var(--background);
   color: var(--foreground);
   font-family: "IBM Plex Sans", Arial, Helvetica, sans-serif;
@@ -70,8 +71,19 @@ body {
 
 a { text-underline-offset: 0.2em; }
 
+main, section, article, li, label { min-width: 0; }
+img, video, canvas, svg { max-width: 100%; }
+p, h1, h2, h3, h4, dd, summary, a { overflow-wrap: anywhere; }
+pre, code { max-width: 100%; overflow-wrap: anywhere; white-space: pre-wrap; }
+
+button, input[type="submit"], summary, [role="button"] { min-height: 2.75rem; }
+button, input, select, textarea { font: inherit; }
+input[type="checkbox"], input[type="radio"] { min-width: 1.125rem; min-height: 1.125rem; }
+
+::selection { background: #dbeafe; color: #172554; }
+
 :focus-visible {
-  outline: 3px solid var(--gold);
+  outline: 3px solid #1d4ed8;
   outline-offset: 3px;
 }
 
@@ -79,7 +91,7 @@ a { text-underline-offset: 0.2em; }
   display: block;
   width: 100%;
   margin-top: 0.4rem;
-  border: 1px solid var(--border);
+  border: 1px solid #64748b;
   border-radius: 0.65rem;
   background: white;
   padding: 0.7rem 0.8rem;
@@ -87,7 +99,8 @@ a { text-underline-offset: 0.2em; }
   font-weight: 400;
 }
 
-.form-input:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.form-input { min-height: 2.75rem; }
+.form-input:focus-visible { outline: 3px solid #1d4ed8; outline-offset: 2px; }
 
 .skip-link {
   position: fixed;
@@ -115,10 +128,25 @@ a { text-underline-offset: 0.2em; }
 
 .form-control:focus-visible { outline-offset: 2px; border-color: var(--primary); }
 
-.hero-grid {
-  background-image: linear-gradient(#ffffff0b 1px, transparent 1px), linear-gradient(90deg, #ffffff0b 1px, transparent 1px);
-  background-size: 32px 32px;
+.table-scroll { max-width: 100%; overflow-x: auto; overscroll-behavior-inline: contain; }
+.table-scroll:focus-visible { outline: 3px solid #1d4ed8; outline-offset: 3px; }
+
+@media (forced-colors: active) {
+  :focus-visible { outline: 3px solid Highlight; }
+  a, button { forced-color-adjust: auto; }
 }
+
+@media print {
+  html, body { min-width: 0; background: #fff !important; color: #000 !important; }
+  body { display: block !important; }
+  body > * { background: #fff !important; }
+  header, footer, .skip-link, button, input, select, textarea, nav[aria-label] { display: none !important; }
+  main { width: 100% !important; max-width: none !important; padding: 0 !important; }
+  a { color: inherit !important; text-decoration: none !important; }
+  article, section, li { break-inside: avoid; box-shadow: none !important; }
+  * { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+}
+
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }

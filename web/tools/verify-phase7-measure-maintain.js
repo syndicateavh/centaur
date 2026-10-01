@@ -23,7 +23,7 @@ if (SEARCH_CONSOLE_QUERY_SNAPSHOT_FILE === SEARCH_CONSOLE_PAGE_SNAPSHOT_FILE) {
   failures.push('query and page Search Console dimensions must have separate storage');
 }
 
-requireText('docs/SEO_MEASUREMENT_AND_MAINTENANCE.md', [
+requireText('src/content/seo/measurements/README.md', [
   'Monthly cycle',
   '28-day windows',
   'Landing-page leads',

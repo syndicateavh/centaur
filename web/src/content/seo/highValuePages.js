@@ -76,7 +76,7 @@ const PAGE_REQUIREMENTS = Object.freeze({
     pageMarker: 'india',
     role: 'National commercial access hub',
     conversionPath: '/courses/',
-    visiblePrimaryPhrase: 'investment banking operations course in India',
+    visiblePrimaryPhrase: 'online finance course in India',
     minimumVisibleWords: 700,
     requiredMarkers: Object.freeze([
       'data-national-page="india"',
@@ -88,7 +88,7 @@ const PAGE_REQUIREMENTS = Object.freeze({
     ]),
     requiredLinks: Object.freeze(['/courses/', '/locations/lucknow/', '/career-guides/', '/resources/', '/contact/']),
     requiredTerms: Object.freeze([
-      'investment banking operations course in india',
+      'online finance course in india',
       'live online',
       'across india',
       'lucknow',

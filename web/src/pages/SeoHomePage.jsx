@@ -8,6 +8,7 @@ import { HiringNetworkSection } from '@/components/home/HiringNetworkSection.jsx
 import { HomeHero } from '@/components/home/HomeHero.jsx';
 import { HomeProcessSection } from '@/components/home/HomeProcessSection.jsx';
 import { HomeOfferEvidenceSection } from '@/components/home/HomeOfferEvidenceSection.jsx';
+import { HomeTestimonialsSection } from '@/components/home/HomeTestimonialsSection.jsx';
 import { ProgramBenefitsSection } from '@/components/home/ProgramBenefitsSection.jsx';
 import { ProgramFeaturesSection } from '@/components/home/ProgramFeaturesSection.jsx';
 import { useHomeMotion } from '@/components/home/useHomeMotion.js';
@@ -30,6 +31,7 @@ export default function SeoHomePage() {
       <ProgramFeaturesSection />
       <ProgramBenefitsSection />
       <AboutLeadershipSection />
+      <HomeTestimonialsSection />
       <HomeOfferEvidenceSection />
       <InternalLinkGroup links={getHomeInternalLinks()} />
       <div className="home-final-cta" data-home-reveal-container="true" data-home-section="final-cta">

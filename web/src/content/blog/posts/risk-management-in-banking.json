@@ -288,13 +288,19 @@
     "height": 941
   },
   "publishedAt": "2026-09-27",
-  "updatedAt": "2026-09-27",
+  "updatedAt": "2026-09-30",
   "scheduledAt": null,
   "seo": {
-    "title": "Risk Management in Banking: Types, Controls and Roles",
-    "description": "Learn banking-risk types, risk and control workflows, practical operational examples, career skills and the limits of an educational guide.",
+    "title": "Banking Risk Management: Types and Controls | Centaur Careers",
+    "description": "Understand banking risk types, control examples, evidence, and escalation through a practical finance-operations guide.",
     "canonicalPath": "/blog/risk-management-in-banking/",
-    "noindex": false
+    "noindex": false,
+    "focusKeyword": "banking risk management",
+    "secondaryKeywords": [
+      "risk management in banking",
+      "banking risk types",
+      "operational risk controls"
+    ]
   },
   "tags": [
     "Risk Management in Banking",

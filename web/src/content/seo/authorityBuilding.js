@@ -205,7 +205,7 @@ export const LINKABLE_AUTHORITY_ASSETS = Object.freeze([
   }),
   Object.freeze({
     id: 'provider-context-guide',
-    status: 'gated',
+    status: 'active',
     targetPath: '/blog/what-centaur-careers-provides-for-finance-careers/',
     format: 'provider context guide',
     audience: 'Readers researching what a finance-career training provider publishes.',

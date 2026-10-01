@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import CourseCard from "@/components/CourseCard";
 import SectionHeading from "@/components/SectionHeading";
@@ -44,13 +43,8 @@ export default function Home() {
             <p className="mt-5 text-sm font-medium text-navy-100/75">Enrollment is not open. Course content, schedules, and certificate rules are pending review.</p>
           </div>
 
-          <div className="relative mx-auto w-full max-w-lg">
-            <div className="relative aspect-[3/2] overflow-hidden rounded-[1.75rem] border border-white/20 bg-navy-800 shadow-2xl shadow-black/20">
-              <Image src="/images/learning-hero.webp" alt="Adult learners taking part in a finance classroom session" fill sizes="(max-width: 1023px) 100vw, 40vw" className="object-cover" priority />
-              <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-navy-950/85 via-navy-950/10 to-transparent" />
-              <p className="absolute bottom-5 left-5 right-5 text-sm font-semibold text-white sm:bottom-6 sm:left-7">Practical foundations for banking and financial operations</p>
-            </div>
-            <div className="relative mx-3 -mt-7 rounded-[1.75rem] border border-white/15 bg-navy-900/95 p-5 shadow-2xl shadow-black/20 backdrop-blur sm:mx-5 sm:p-7">
+          <div className="mx-auto w-full max-w-lg">
+            <div className="rounded-[1.75rem] border border-white/15 bg-navy-900/95 p-5 shadow-2xl shadow-black/20 sm:p-7">
               <div className="flex items-center justify-between border-b border-white/15 pb-5">
                 <div><p className="text-xs font-bold uppercase tracking-[0.16em] text-navy-200">Learning roadmap</p><p className="mt-1 text-lg font-bold">Your next role, in focus</p></div>
                 <span aria-hidden="true" className="grid size-11 place-items-center rounded-2xl bg-gold-400 text-xl font-black text-navy-950">↗</span>
@@ -83,7 +77,7 @@ export default function Home() {
           <Link href="/courses" className="rounded-sm pb-1 text-sm font-extrabold text-navy-900 hover:underline">View all six tracks <span aria-hidden="true">→</span></Link>
         </div>
         <div className="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-          {courseTracks.slice(0, 3).map((course) => <CourseCard key={course.slug} course={course} compact />)}
+          {courseTracks.slice(0, 3).map((course) => <CourseCard key={course.slug} course={course} compact showImage={false} />)}
         </div>
       </section>
 

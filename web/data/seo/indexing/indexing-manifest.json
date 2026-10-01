@@ -3,14 +3,14 @@
   "siteOrigin": "https://centaurcareers.in",
   "sitemapUrl": "https://centaurcareers.in/sitemap.xml",
   "sourceFile": "public/sitemap.xml",
-  "urlCount": 185,
+  "urlCount": 191,
   "urls": [
     {
       "url": "https://centaurcareers.in/",
       "path": "/",
       "kind": "site-route",
       "routeId": "home",
-      "lastModified": "2026-09-29",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -26,7 +26,7 @@
       "path": "/career-guides/",
       "kind": "site-route",
       "routeId": "career-guides",
-      "lastModified": "2026-09-13",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -154,7 +154,7 @@
       "path": "/courses/",
       "kind": "site-route",
       "routeId": "courses",
-      "lastModified": "2026-09-26",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -162,7 +162,7 @@
       "path": "/courses/investment-banking-operations/",
       "kind": "site-route",
       "routeId": "investment-banking-operations",
-      "lastModified": "2026-09-29",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -170,7 +170,7 @@
       "path": "/courses/retail-banking/",
       "kind": "site-route",
       "routeId": "retail-banking",
-      "lastModified": "2026-09-29",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -178,7 +178,7 @@
       "path": "/courses/finance-operations/",
       "kind": "site-route",
       "routeId": "finance-operations",
-      "lastModified": "2026-09-29",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -186,7 +186,7 @@
       "path": "/courses/kyc-aml/",
       "kind": "site-route",
       "routeId": "kyc-aml-compliance",
-      "lastModified": "2026-09-29",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -194,7 +194,7 @@
       "path": "/courses/digital-payments/",
       "kind": "site-route",
       "routeId": "digital-payments",
-      "lastModified": "2026-09-29",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -202,7 +202,7 @@
       "path": "/courses/fintech/",
       "kind": "site-route",
       "routeId": "fintech-neo-banking",
-      "lastModified": "2026-09-29",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -210,7 +210,7 @@
       "path": "/placements/",
       "kind": "site-route",
       "routeId": "placements",
-      "lastModified": "2026-09-13",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -226,7 +226,7 @@
       "path": "/contact/",
       "kind": "site-route",
       "routeId": "contact",
-      "lastModified": "2026-09-13",
+      "lastModified": "2026-09-29",
       "eligibility": "sitemap"
     },
     {
@@ -238,11 +238,43 @@
       "eligibility": "sitemap"
     },
     {
+      "url": "https://centaurcareers.in/terms-and-conditions/",
+      "path": "/terms-and-conditions/",
+      "kind": "site-route",
+      "routeId": "terms-and-conditions",
+      "lastModified": "2026-09-30",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/cookie-policy/",
+      "path": "/cookie-policy/",
+      "kind": "site-route",
+      "routeId": "cookie-policy",
+      "lastModified": "2026-09-30",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/refund-cancellation-policy/",
+      "path": "/refund-cancellation-policy/",
+      "kind": "site-route",
+      "routeId": "refund-cancellation-policy",
+      "lastModified": "2026-09-30",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/disclaimer/",
+      "path": "/disclaimer/",
+      "kind": "site-route",
+      "routeId": "disclaimer",
+      "lastModified": "2026-09-30",
+      "eligibility": "sitemap"
+    },
+    {
       "url": "https://centaurcareers.in/india/",
       "path": "/india/",
       "kind": "site-route",
       "routeId": "india",
-      "lastModified": "2026-09-26",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -250,7 +282,7 @@
       "path": "/india/delhi-ncr/",
       "kind": "site-route",
       "routeId": "india-delhi-ncr",
-      "lastModified": "2026-09-26",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -258,7 +290,7 @@
       "path": "/india/bengaluru/",
       "kind": "site-route",
       "routeId": "india-bengaluru",
-      "lastModified": "2026-09-26",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -266,7 +298,7 @@
       "path": "/india/mumbai/",
       "kind": "site-route",
       "routeId": "india-mumbai",
-      "lastModified": "2026-09-26",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -290,7 +322,7 @@
       "path": "/locations/lucknow/",
       "kind": "site-route",
       "routeId": "lucknow-location",
-      "lastModified": "2026-09-26",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -546,7 +578,7 @@
       "path": "/best-investment-banking-course-india/",
       "kind": "site-route",
       "routeId": "lead-best-investment-banking-course-india",
-      "lastModified": "2026-09-29",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -674,7 +706,7 @@
       "path": "/courses/finance-operations-syllabus/",
       "kind": "site-route",
       "routeId": "courses-finance-operations-syllabus",
-      "lastModified": "2026-09-28",
+      "lastModified": "2026-09-29",
       "eligibility": "sitemap"
     },
     {
@@ -682,7 +714,7 @@
       "path": "/courses/finance-course-fees-eligibility/",
       "kind": "site-route",
       "routeId": "courses-finance-course-fees-eligibility",
-      "lastModified": "2026-09-28",
+      "lastModified": "2026-09-29",
       "eligibility": "sitemap"
     },
     {
@@ -698,7 +730,7 @@
       "path": "/compare/best-finance-institutes-india/",
       "kind": "site-route",
       "routeId": "comparison-best-finance-institutes-india",
-      "lastModified": "2026-09-29",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -754,7 +786,7 @@
       "path": "/blog/category/career-guides/",
       "kind": "blog-category",
       "routeId": null,
-      "lastModified": "2026-09-29",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -762,7 +794,7 @@
       "path": "/blog/category/finance-operations/",
       "kind": "blog-category",
       "routeId": null,
-      "lastModified": "2026-09-29",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -786,7 +818,7 @@
       "path": "/blog/category/investment-banking/",
       "kind": "blog-category",
       "routeId": null,
-      "lastModified": "2026-09-29",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -794,7 +826,23 @@
       "path": "/blog/category/retail-banking/",
       "kind": "blog-category",
       "routeId": null,
-      "lastModified": "2026-09-29",
+      "lastModified": "2026-09-30",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/open-banking-apis-consent-operations/",
+      "path": "/blog/open-banking-apis-consent-operations/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-30",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/what-centaur-careers-provides-for-finance-careers/",
+      "path": "/blog/what-centaur-careers-provides-for-finance-careers/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -898,7 +946,7 @@
       "path": "/blog/payment-reconciliation-process-breaks-controls/",
       "kind": "blog-article",
       "routeId": null,
-      "lastModified": "2026-09-29",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -930,7 +978,7 @@
       "path": "/blog/retail-vs-commercial-banking/",
       "kind": "blog-article",
       "routeId": null,
-      "lastModified": "2026-09-29",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -1282,7 +1330,7 @@
       "path": "/blog/reconciliation-process-steps-finance/",
       "kind": "blog-article",
       "routeId": null,
-      "lastModified": "2026-09-27",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -1290,7 +1338,7 @@
       "path": "/blog/risk-management-in-banking/",
       "kind": "blog-article",
       "routeId": null,
-      "lastModified": "2026-09-27",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -1330,7 +1378,7 @@
       "path": "/blog/settlement-trade-break-worked-example/",
       "kind": "blog-article",
       "routeId": null,
-      "lastModified": "2026-09-26",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -1338,7 +1386,7 @@
       "path": "/blog/balance-sheet-meaning-format-example/",
       "kind": "blog-article",
       "routeId": null,
-      "lastModified": "2026-09-24",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -1362,7 +1410,7 @@
       "path": "/blog/cost-accounting-methods-examples/",
       "kind": "blog-article",
       "routeId": null,
-      "lastModified": "2026-09-27",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -1378,7 +1426,7 @@
       "path": "/blog/financial-accounting-statements-process-examples/",
       "kind": "blog-article",
       "routeId": null,
-      "lastModified": "2026-09-27",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -1402,7 +1450,7 @@
       "path": "/blog/investment-banking-teams-operations/",
       "kind": "blog-article",
       "routeId": null,
-      "lastModified": "2026-09-26",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -1450,7 +1498,7 @@
       "path": "/blog/fund-accounting-nav-workflow-career-skills/",
       "kind": "blog-article",
       "routeId": null,
-      "lastModified": "2026-09-29",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     },
     {
@@ -1482,7 +1530,7 @@
       "path": "/blog/investment-banking-operations-vs-cfa-financial-modelling/",
       "kind": "blog-article",
       "routeId": null,
-      "lastModified": "2026-09-26",
+      "lastModified": "2026-09-30",
       "eligibility": "sitemap"
     }
   ]

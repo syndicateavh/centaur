@@ -107,16 +107,33 @@
     "height": 941
   },
   "publishedAt": "2026-09-24",
-  "updatedAt": "2026-09-26",
+  "updatedAt": "2026-09-30",
   "scheduledAt": null,
   "seo": {
-    "title": "Investment Banking Teams: Where Operations Fits",
-    "description": "See how advisory, markets, control and operations teams differ, with a simple transaction workflow and India-specific source links.",
+    "title": "Investment Banking Teams and Operations | Centaur Careers",
+    "description": "Map investment banking teams and see where operations, controls, and post-trade workflows fit.",
     "canonicalPath": "/blog/investment-banking-teams-operations/",
-    "noindex": false
+    "noindex": false,
+    "focusKeyword": "investment banking teams",
+    "secondaryKeywords": [
+      "investment banking teams",
+      "investment banking operations",
+      "front middle back office"
+    ]
   },
-  "tags": ["Investment Banking", "Investment Banking Operations", "Securities Operations", "Finance Careers"],
-  "relatedRouteIds": ["blog", "career-guides", "career-guide-investment-banking-operations", "investment-banking-operations", "courses"],
+  "tags": [
+    "Investment Banking",
+    "Investment Banking Operations",
+    "Securities Operations",
+    "Finance Careers"
+  ],
+  "relatedRouteIds": [
+    "blog",
+    "career-guides",
+    "career-guide-investment-banking-operations",
+    "investment-banking-operations",
+    "courses"
+  ],
   "redirects": [],
   "evidenceNotes": [
     "NISM securities-market back-office operations overview: https://www.nism.ac.in/knowledge_base/an-insight-into-various-back-office-operations-activities-in-securities-markets",

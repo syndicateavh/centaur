@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises';
-import { createHash } from 'node:crypto';
 import pg from 'pg';
+import { assessmentContentHash, getAssessmentDefinitions, validateAssessmentContent } from './assessment-content.mjs';
 
 if (!process.env.DATABASE_URL && !process.env.MIGRATION_DATABASE_URL) {
   try { process.loadEnvFile('.env'); } catch {}
@@ -19,7 +19,9 @@ if (!connectionString) {
   process.exit(1);
 }
 const content = JSON.parse(await readFile(new URL('../content/kyc-aml-pilot-v1.json', import.meta.url), 'utf8'));
-const assessmentContent = JSON.parse(await readFile(new URL('../content/kyc-aml-assessment-v1.json', import.meta.url), 'utf8'));
+const { source: assessmentContent, definitions } = await getAssessmentDefinitions();
+const validation = await validateAssessmentContent();
+if (validation.errors.length) throw new Error(`Assessment content validation failed:\n${validation.errors.join('\n')}`);
 const client = new pg.Client({ connectionString, connectionTimeoutMillis: 4000 });
 try {
   await client.connect();
@@ -32,15 +34,16 @@ try {
     ON CONFLICT (slug) DO UPDATE SET title=EXCLUDED.title, summary=EXCLUDED.summary, status='draft', is_sandbox=TRUE, updated_at=now()
     RETURNING id`, [c.slug, c.title, c.summary]);
   const version = await client.query(`INSERT INTO lms.course_versions
-    (course_id, version_number, status, overview, estimated_minutes, review_status, review_date, reviewer_name,
+    (course_id, version_number, status, overview, estimated_minutes, independent_practice_minutes, review_status, review_date, reviewer_name,
      learning_objectives, glossary, content_sources, case_packet)
-    VALUES ($1, 1, 'draft', $2, $3, 'pending', $4, NULL, $5::jsonb, $6::jsonb, $7::jsonb, $8::jsonb)
+    VALUES ($1, 1, 'draft', $2, $3, $4, 'pending', $5, NULL, $6::jsonb, $7::jsonb, $8::jsonb, $9::jsonb)
     ON CONFLICT (course_id, version_number) DO UPDATE SET status='draft', overview=EXCLUDED.overview,
-      estimated_minutes=EXCLUDED.estimated_minutes, review_status='pending', review_date=EXCLUDED.review_date,
+      estimated_minutes=EXCLUDED.estimated_minutes, independent_practice_minutes=EXCLUDED.independent_practice_minutes,
+      review_status='pending', review_date=EXCLUDED.review_date,
       reviewer_name=NULL, learning_objectives=EXCLUDED.learning_objectives, glossary=EXCLUDED.glossary,
       content_sources=EXCLUDED.content_sources, case_packet=EXCLUDED.case_packet, updated_at=now()
-    RETURNING id`, [course.rows[0].id, c.overview, c.estimatedMinutes, c.reviewDate,
-    JSON.stringify(c.learningObjectives), JSON.stringify(c.glossary), JSON.stringify(c.references), JSON.stringify(c.casePacket)]);
+    RETURNING id`, [course.rows[0].id, c.overview, c.estimatedMinutes,
+    c.independentPracticeMinutes, c.reviewDate, JSON.stringify(c.learningObjectives), JSON.stringify(c.glossary), JSON.stringify(c.references), JSON.stringify(c.casePacket)]);
   const versionId = version.rows[0].id;
   for (let mi = 0; mi < content.modules.length; mi++) {
     const courseModule = content.modules[mi];
@@ -58,10 +61,6 @@ try {
       lesson.id = result.rows[0].id;
     }
   }
-  const definitions = [
-    ...assessmentContent.knowledgeChecks.map((definition) => ({ ...definition, kind: 'knowledge_check', passPercent: 100, maxAttempts: 20, timeLimitMinutes: null })),
-    { ...assessmentContent.finalAssessment, kind: 'final', moduleSlug: null },
-  ];
   for (const definition of definitions) {
     const rules = {
       kind: definition.kind,
@@ -72,7 +71,7 @@ try {
       objective_blueprint: definition.blueprint ?? [...new Set(definition.questions.map((question) => question.objective))].map((objective) => ({ objective, count: definition.questions.filter((question) => question.objective === objective).length })),
       feedback: definition.kind === 'final' ? 'objective_summary_without_answer_key' : 'answer_explanations',
     };
-    const hash = createHash('sha256').update(JSON.stringify(definition)).digest('hex');
+    const hash = assessmentContentHash(definition);
     const existing = await client.query(`SELECT id, status, content_hash FROM lms.assessments
       WHERE course_version_id=$1 AND slug=$2 AND version_number=1 FOR UPDATE`, [versionId, definition.slug]);
     let assessmentId;

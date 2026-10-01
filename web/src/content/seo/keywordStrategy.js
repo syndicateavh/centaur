@@ -15,10 +15,10 @@ export const KEYWORD_STRATEGY_CONFIG = Object.freeze({
 });
 
 const PRIMARY_KEYWORD_PREFERENCES = Object.freeze({
-  '/courses/': 'investment banking operations course',
+  '/courses/': 'financial operations masterclass',
   '/locations/lucknow/': 'investment banking course in Lucknow',
   '/courses/kyc-aml/': 'KYC AML course',
-  '/india/': 'investment banking operations course India',
+  '/india/': 'finance career training India',
   '/career-guides/choosing-finance-career-course/': 'investment banking course with placement support',
   '/india/delhi-ncr/': 'investment banking course in Delhi',
   '/india/bengaluru/': 'investment banking course in Bangalore',

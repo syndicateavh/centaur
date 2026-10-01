@@ -118,6 +118,12 @@
       "href": "https://www.npci.org.in/product/upi/product-statistics"
     },
     {
+      "type": "link",
+      "label": "Read how open banking consent and data flows work in India",
+      "href": "/blog/open-banking-apis-consent-operations/",
+      "routeId": "blog-open-banking-apis-consent-operations"
+    },
+    {
       "type": "paragraph",
       "text": "FinTech changes quickly, so confirm current product, regulatory and employer requirements before relying on a workflow description. This article is an educational overview and does not claim a partnership, licence, product access or employment result."
     }
@@ -137,10 +143,27 @@
     "canonicalPath": "/blog/fintech-operations-roles-workflows/",
     "noindex": false,
     "focusKeyword": "fintech operations roles",
-    "secondaryKeywords": ["fintech operations", "payments operations", "digital banking"]
+    "secondaryKeywords": [
+      "fintech operations",
+      "payments operations",
+      "digital banking"
+    ]
   },
-  "tags": ["FinTech Operations Roles", "FinTech Operations", "Payments Operations", "Digital Banking", "Finance Careers"],
-  "relatedRouteIds": ["blog", "digital-payments", "fintech-neo-banking", "career-guide-digital-payments-operations", "contact"],
+  "tags": [
+    "FinTech Operations Roles",
+    "FinTech Operations",
+    "Payments Operations",
+    "Digital Banking",
+    "Finance Careers"
+  ],
+  "relatedRouteIds": [
+    "blog",
+    "digital-payments",
+    "fintech-neo-banking",
+    "career-guide-digital-payments-operations",
+    "contact",
+    "blog-open-banking-apis-consent-operations"
+  ],
   "redirects": [],
   "evidenceNotes": [
     "RBI payment and settlement systems information: https://rbi.org.in/scripts/RTGS_Notification.aspx?Id=12133",

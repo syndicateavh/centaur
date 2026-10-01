@@ -244,16 +244,32 @@
     "height": 941
   },
   "publishedAt": "2026-09-24",
-  "updatedAt": "2026-09-27",
+  "updatedAt": "2026-09-30",
   "scheduledAt": null,
   "seo": {
-    "title": "Financial Accounting: Process, Statements and Example",
-    "description": "Understand financial accounting through the transaction cycle, a fictional worked example, statement basics and practical checks before relying on figures.",
+    "title": "Financial Accounting Process and Statements | Centaur Careers",
+    "description": "Follow a fictional transaction from source document through journals, ledgers, a trial balance, and financial statements.",
     "canonicalPath": "/blog/financial-accounting-statements-process-examples/",
-    "noindex": false
+    "noindex": false,
+    "focusKeyword": "financial accounting process",
+    "secondaryKeywords": [
+      "financial accounting",
+      "financial accounting process",
+      "financial statements"
+    ]
   },
-  "tags": ["Financial Accounting", "Accounting Process", "Financial Statements", "Accounting Basics"],
-  "relatedRouteIds": ["blog", "resources", "resource-accounting-basics", "resource-reconciliation-in-finance"],
+  "tags": [
+    "Financial Accounting",
+    "Accounting Process",
+    "Financial Statements",
+    "Accounting Basics"
+  ],
+  "relatedRouteIds": [
+    "blog",
+    "resources",
+    "resource-accounting-basics",
+    "resource-reconciliation-in-finance"
+  ],
   "redirects": [],
   "evidenceNotes": [
     "ICAI accounting-process learning resource: https://live.icai.org/bos/vcc/pdf/Accounting_Process.pdf",

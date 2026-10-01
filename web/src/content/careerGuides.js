@@ -468,7 +468,7 @@ export const CAREER_GUIDES = Object.freeze([
     updatedAt: '2026-09-29',
     h1: 'Finance Careers After Graduation: A Practical Guide',
     breadcrumbLabel: 'Finance Careers After Graduation',
-    primaryKeyword: 'best finance course after BCom',
+      primaryKeyword: 'finance careers after graduation',
     secondaryKeywords: [
       'investment banking operations after BCom',
       'finance jobs after BCom',
@@ -527,10 +527,11 @@ export const CAREER_GUIDES = Object.freeze([
       faq('Do graduates need an MBA for BFSI operations roles?', 'Not every BFSI operations role has the same education requirement. Some roles may consider graduates from different backgrounds, while others may request specific study or experience. Check the current job description rather than assuming one qualification is required for every path.'),
       faq('How should a graduate compare finance courses?', 'Compare the curriculum, practical exercises, duration, learning mode, assessment, support terms, certificate wording, and the clarity of the provider\'s conditions. Choose the course whose scope and participation requirements match your current goal.'),
       faq('What is the best finance course after BCom?', 'There is no best course for every BCom graduate. Start with the role you want, compare its current job requirements with the published syllabus and practical work, and check the delivery mode, total fees, credential, and written career-support terms. Centaur Careers offers one six-week Financial Operations Masterclass covering several BFSI operations subjects; review its full scope before deciding whether it fits your goal.'),
+      link('Compare finance courses after graduation, including the BTech pathway', '/best-finance-course-after-graduation/', 'lead-best-finance-course-after-graduation'),
       link('Read the investment banking operations career guide', '/career-guides/investment-banking-operations/', 'career-guide-investment-banking-operations'),
     ],
     relatedGuideIds: ['finance-operations', 'investment-banking-operations', 'kyc-aml-analyst', 'retail-banking-operations'],
-    relatedRouteIds: ['courses', 'career-guide-finance-operations', 'career-guide-investment-banking-operations', 'career-guide-kyc-aml-analyst', 'career-guide-retail-banking-operations'],
+    relatedRouteIds: ['courses', 'career-guide-finance-operations', 'career-guide-investment-banking-operations', 'career-guide-kyc-aml-analyst', 'career-guide-retail-banking-operations', 'lead-best-finance-course-after-graduation'],
   }),
   createGuide({
     id: 'retail-banking-operations',
@@ -824,9 +825,10 @@ export const CAREER_GUIDE_HUB = Object.freeze({
   id: 'career-guides',
   path: '/career-guides/',
   title: 'Finance Operations Career Guides | Centaur Careers',
-  description: 'Practical career guides for investment banking operations, KYC and AML, finance operations, retail banking, payments, trade lifecycle, and graduates.',
+  description: 'Use this finance operations career guide collection to explore investment banking operations, KYC and AML, finance operations, retail banking, digital payments, trade lifecycle, and graduate pathways.',
   h1: 'Finance Operations Career Guides',
   breadcrumbLabel: 'Career Guides',
+  updatedAt: '2026-09-30',
 });
 
 // One authoritative path per operations topic keeps the information cluster

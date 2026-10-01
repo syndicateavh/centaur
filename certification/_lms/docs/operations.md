@@ -10,6 +10,17 @@ These procedures cover the internal development environment. Do not use local vo
 - Keep database-owner credentials in `.env.migration` for host-side migration commands or in the one-shot Compose migration service. Do not pass them to the long-running Next.js app; its only database connection is the least-privilege `lms_app` role.
 - CI migrates a fresh empty PostgreSQL service, which checks that the schema can be created without relying on a developer's database volume.
 
+## Reproducible local setup
+
+1. Preserve existing ignored configuration: copy `.env.example` to `.env` and `.env.migration.example` to `.env.migration` only when those files do not already exist.
+2. Start Docker Desktop and wait for `docker info` to succeed. Run `docker compose config --quiet` before starting services.
+3. Run `docker compose up -d`. Confirm the database is healthy, the one-shot `migrate` service exited with code 0, and the app is running with `docker compose ps -a`. If migration or seeding fails, inspect `docker compose logs migrate` before using the app.
+4. Confirm `http://localhost:3000/api/health` returns status `ok`; use `/admin` for local diagnostics and `/admin/mail` for synthetic account verification messages.
+5. Run `npm run db:migrate:check`. Then set `$env:LMS_AUTHZ_TESTS='true'`, run `npm run db:authz:check`, and remove that environment variable. The access check uses fictional rows and the restricted runtime role; run it only against the isolated local/CI database.
+6. For a protected local admin account, create a synthetic account at `/sign-up`, verify it through `/admin/mail`, then run `npm run db:bootstrap:local-admin -- verified-local-email@example.invalid`. The command checks `NODE_ENV=development`, the exact local database/port, and a verified matching account; it grants the role once and appends an audit event. Sign in and open `/admin/operations` to confirm access.
+
+The bootstrap command never provisions a role in staging or production. Those environments require a separate owner-controlled procedure and approval. Avoid `docker compose down -v` or removing the named PostgreSQL volume unless intentionally resetting local data.
+
 ## Application error logs
 
 - Next.js and Node write process diagnostics to the app container's standard output and standard error. View local output with `docker compose logs --follow app`.

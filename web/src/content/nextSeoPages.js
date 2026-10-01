@@ -1,6 +1,14 @@
 import { BLOG_BLOCK_TYPES } from './blog/blogSchema.js';
+import { LEARNING_MODES, PROGRAM } from './sourceContent.js';
 
 export const NEXT_SEO_PAGE_DATE = '2026-09-28';
+
+const ONLINE_LEARNING_MODE = LEARNING_MODES.find(({ name }) => name === 'Online');
+const OFFLINE_LEARNING_MODE = LEARNING_MODES.find(({ name }) => name === 'Offline');
+const PUBLISHED_FEES = Object.freeze({
+  online: `${ONLINE_LEARNING_MODE.price} (reference fee ${ONLINE_LEARNING_MODE.originalPrice})`,
+  lucknow: `${OFFLINE_LEARNING_MODE.price} (reference fee ${OFFLINE_LEARNING_MODE.originalPrice})`,
+});
 
 const paragraph = (text) => ({ type: BLOG_BLOCK_TYPES.PARAGRAPH, text });
 const heading = (text, level = 2) => ({ type: BLOG_BLOCK_TYPES.HEADING, level, text });
@@ -97,7 +105,7 @@ function resourceBody({
   ];
 }
 
-function landingBody({ opening, fit, coverage, practice, checks, links, faqs }) {
+function landingBody({ opening, fit, coverage, practice, planningMilestones, planningNote, checks, links, faqs }) {
   return [
     paragraph(opening),
     heading('Who this page is for'),
@@ -113,6 +121,11 @@ function landingBody({ opening, fit, coverage, practice, checks, links, faqs }) 
       'Explain controls, exceptions, evidence, ownership, and escalation in plain language.',
       'Compare practice tasks with current vacancies and close role-specific gaps.',
     ]),
+    ...(planningMilestones?.length ? [
+      heading('A six-week study-planning outline'),
+      list(planningMilestones, true),
+      paragraph(planningNote || 'This is an illustrative study plan, not a published cohort timetable. Confirm the actual session order and weekly effort with Centaur Careers.'),
+    ] : []),
     heading('What to confirm before enrolling'),
     list(checks),
     paragraph('Ask for current information in writing when your decision depends on a fee, schedule, learning mode, assessment, certificate, eligibility condition, refund term, or career-support promise. Published details can change between cohorts, and no page should be treated as a substitute for the applicable written terms.'),
@@ -625,9 +638,9 @@ export const NEXT_LANDING_PAGE_SPECS = Object.freeze([
     primaryKeyword: 'finance operations syllabus',
     image: COURSE_IMAGE,
     imageAlt: 'Finance operations syllabus topics and practical learning sequence',
-    updatedAt: NEXT_SEO_PAGE_DATE,
+    updatedAt: '2026-09-29',
     body: landingBody({
-      opening: 'A useful finance operations syllabus should show how concepts become workflows, controls, records, decisions, and evidence. Centaur Careers currently presents one Financial Operations Masterclass with six connected subject areas. This page explains a practical way to read that existing syllabus; it does not create a separate syllabus-only course or add modules beyond the published program.',
+      opening: `A useful finance operations syllabus should show how concepts become workflows, controls, records, decisions, and evidence. Centaur Careers currently presents one ${PROGRAM.duration} Financial Operations Masterclass with six connected subject areas. This page explains the existing syllabus and its learning sequence; it does not create a separate syllabus-only course or add modules beyond the published program.`,
       fit: 'The page is for graduates and job switchers comparing practical BFSI operations learning. It may help people exploring investment operations, retail banking, KYC and AML, payments, lending, credit, accounting, risk, reporting, or FinTech operations. It is not a replacement for a degree, CFA Program, CA qualification, regulatory licence, employer training, or a specialist professional credential. Match every topic with the role you actually want to research.',
       coverage: [
         'Investment Banking Operations: trade lifecycle, settlements, reconciliation, corporate actions, fund-accounting context, and post-trade controls.',
@@ -638,8 +651,17 @@ export const NEXT_LANDING_PAGE_SPECS = Object.freeze([
         'FinTech and Neo-Banking: technology-enabled financial workflows, digital products, operational hand-offs, controls, and service context.',
       ],
       practice: 'The strongest sequence moves from vocabulary to process, then from process to evidence. A learner might first map a trade or payment, then compare two fictional records, investigate a mismatch, write a short case note, and explain the relevant control. The same method can be adapted to a KYC file, loan document, accounting record, or customer-service workflow. Practice should make the learner\'s reasoning visible without using confidential data.',
-      checks: ['Current module names, topics, session plan, total duration, and cohort dates.', 'Whether sessions are live, online, in person, recorded, or combined for the relevant cohort.', 'Exercises, feedback, assessments, attendance, access period, and required devices or tools.', 'Certificate wording and the conditions for completion.', 'Current fees, taxes, instalments, refund or cancellation terms, and inclusions.', 'Career-support and Job Guarantee Program eligibility, obligations, exclusions, and written terms.'],
-      links: [link('Review the complete Financial Operations Masterclass', '/courses/', 'courses'), link('Read the finance operations career guide', '/career-guides/finance-operations/', 'career-guide-finance-operations'), link('Use the graduate learning roadmap', '/career-guides/finance-learning-roadmap/', 'career-guide-finance-learning-roadmap'), link('Read current program FAQs', '/faqs/finance-program/', 'faqs-finance-program')],
+      planningMilestones: [
+        'Week 1 — Build shared foundations: banking and finance vocabulary, records, roles, controls, and how to read a process map.',
+        'Week 2 — Trace customer and account workflows across retail banking and KYC / AML; practise identifying missing information and documenting an exception.',
+        'Week 3 — Map an investment-banking trade from capture through confirmation and settlement, using fictional identifiers and dates.',
+        'Week 4 — Practise reconciliation, settlement-break investigation, evidence recording, ownership, and escalation.',
+        'Week 5 — Compare payment, lending, credit, NBFC, and FinTech workflows; note where each product has different records and control owners.',
+        'Week 6 — Bring one fictional workflow together in a short case file, explain the checks and limits, and practise describing role fit in an interview.',
+      ],
+      planningNote: 'This is an optional self-study planning example built from the published topic areas; it is not Centaur Careers’ stated teaching schedule or a promise that each topic occupies one week. The public syllabus does not state weekly study hours. Ask for the current cohort timetable, expected effort, project requirements, assessment, and interview-preparation plan before enrolling.',
+      checks: ['Current module names, topics, session plan, the published six-week duration, and cohort dates.', 'Whether sessions are live, online, in person, recorded, or combined for the relevant cohort.', 'Exercises, feedback, assessments, attendance, access period, and required devices or tools.', 'Certificate wording and the conditions for completion.', 'Current fees, taxes, instalments, refund or cancellation terms, and inclusions.', 'Career-support and Job Guarantee Program eligibility, obligations, and current written terms.'],
+      links: [link('Review the finance course duration checklist', '/finance-course-duration/', 'lead-finance-course-duration'), link('Ask questions before enrolling', '/blog/questions-to-ask-finance-institute-before-enrolling/'), link('Review the complete Financial Operations Masterclass', '/courses/', 'courses'), link('Read current program FAQs', '/faqs/finance-program/', 'faqs-finance-program')],
       faqs: [
         { question: 'Is this a separate Finance Operations syllabus course?', answer: 'No. It is a structured guide to the subjects and practical learning sequence connected with the existing Financial Operations Masterclass. Confirm the current syllabus directly before enrolling.' },
         { question: 'Does the syllabus guarantee a particular finance job?', answer: 'No page or topic alone establishes a hiring outcome. Employers set their own role, eligibility, assessment, location, shift, and experience requirements. Review the published Job Guarantee Program terms separately where relevant.' },
@@ -652,22 +674,22 @@ export const NEXT_LANDING_PAGE_SPECS = Object.freeze([
     parentId: 'courses',
     path: '/courses/finance-course-fees-eligibility/',
     title: 'Finance Course Fees, Eligibility and Terms | Centaur Careers',
-    description: 'Financial Operations Masterclass fees are published at ₹35,000 online and ₹50,000 in Lucknow. Check graduation eligibility and request current written cohort terms.',
+    description: `Published Masterclass fees are ${ONLINE_LEARNING_MODE.price} online and ${OFFLINE_LEARNING_MODE.price} in Lucknow. Check graduation entry and request written cohort terms.`,
     h1: 'Financial Operations Masterclass Fees and Eligibility',
     breadcrumbLabel: 'Finance Course Fees and Eligibility',
     primaryKeyword: 'finance course fees and eligibility',
     image: COURSE_IMAGE,
     imageAlt: 'Checklist for finance course fees eligibility and written terms',
-    updatedAt: NEXT_SEO_PAGE_DATE,
+    updatedAt: '2026-09-29',
     body: landingBody({
-      opening: 'The published Financial Operations Masterclass fee is ₹35,000 for live online learning and ₹50,000 for the in-person Lucknow option. Graduation is the program entry requirement; a previous finance background is not required. These are published prices, so request a written quote for your cohort and confirm the total payable amount, taxes, payment schedule, inclusions, and cancellation terms before paying.',
+      opening: `The published Financial Operations Masterclass fee is ${PUBLISHED_FEES.online} for live online learning and ${PUBLISHED_FEES.lucknow} for the in-person Lucknow option. Graduation is the program entry requirement; a previous finance background is not required. Confirm the fee validity and request a written quote for your cohort, including the total payable amount, taxes, payment schedule, inclusions, and cancellation terms before paying.`,
       fit: 'The Financial Operations Masterclass is open to graduates and job switchers from any academic background. Graduation is the entry requirement, and a previous finance degree or work experience is not required. Ask about documents, language, device and connectivity needs, in-person availability, attendance, assessment, and current written support conditions. Employers set their own requirements for individual jobs.',
-      coverage: ['One existing Financial Operations Masterclass rather than a new fees-based product.', 'Published online fee: ₹35,000. Published in-person Lucknow fee: ₹50,000. Confirm the written amount for your cohort.', 'Connected investment operations, retail banking, KYC/AML, payments, finance operations, and FinTech subject areas.', 'Live online access described for learners across India and a published in-person option at the Lucknow location, subject to current cohort confirmation.', 'Program learning, certificate, and support information only as stated in current written terms.', 'A separate placement page summarises the 100% Job Guarantee Program; request its current written terms before enrolling.', 'Published privacy, refund and cancellation, terms, disclaimer, and contact routes for decision support.'],
+      coverage: ['One existing Financial Operations Masterclass rather than a new fees-based product.', `Published online fee: ${PUBLISHED_FEES.online}. Published in-person Lucknow fee: ${PUBLISHED_FEES.lucknow}. Confirm the fee validity and written amount for your cohort.`, 'Graduation is the program entry requirement; a previous finance background is not required.', 'Connected investment operations, retail banking, KYC/AML, payments, finance operations, and FinTech subject areas.', 'Live online access described for learners across India and a published in-person option at the Lucknow location, subject to current cohort confirmation.', 'Program learning, certificate, and support information only as stated in current written terms.', 'A separate placement page summarises the 100% Job Guarantee Program; request its current written cohort terms before enrolling.', 'Published privacy, refund and cancellation, terms, disclaimer, and contact routes for decision support.'],
       practice: 'Before comparing prices, define what you need to learn and what evidence the program lets you build. Ask whether exercises are reviewed, how questions are handled, what attendance is required, whether a missed session can be recovered, and how long materials or support remain available. A lower headline fee may not be a better fit if the schedule, mode, practice, or terms do not work for you; a higher fee does not prove recognition or an outcome.',
       checks: ['Total current fee, taxes, payment dates, instalment conditions, and included or excluded costs.', 'Eligibility, required documents, cohort capacity, start date, timetable, language, and attendance rules.', 'Live, recorded, online, classroom, or blended delivery for the exact cohort.', 'Curriculum version, exercises, feedback, assessment, completion, and certificate wording.', 'Cancellation, refund, transfer, deferral, missed-session, and access-expiry terms.', 'Career support, Job Guarantee Program conditions, learner obligations, role scope, location, and exclusions.'],
-      links: [link('Review the Masterclass page', '/courses/', 'courses'), link('Read finance program FAQs', '/faqs/finance-program/', 'faqs-finance-program'), link('Read refund and cancellation information', '/refund-cancellation-policy/', 'refund-cancellation-policy'), link('Read the Job Guarantee Program summary', '/placements/#job-guarantee-terms', 'placements'), link('Ask Centaur Careers for current written details', '/contact/', 'contact')],
+      links: [link('Use the total-cost comparison checklist', '/finance-course-fees-in-india/', 'lead-finance-course-fees-india'), link('Use the course-entry checklist', '/finance-course-eligibility/', 'lead-finance-course-eligibility'), link('Ask questions before enrolling', '/blog/questions-to-ask-finance-institute-before-enrolling/'), link('Review the Masterclass page', '/courses/', 'courses'), link('Read finance program FAQs', '/faqs/finance-program/', 'faqs-finance-program'), link('Read refund and cancellation information', '/refund-cancellation-policy/', 'refund-cancellation-policy'), link('Read the Job Guarantee Program summary', '/placements/#job-guarantee-terms', 'placements'), link('Ask Centaur Careers for current written details', '/contact/', 'contact')],
       faqs: [
-        { question: 'What are the published online and Lucknow fees?', answer: 'The published online fee is ₹35,000 and the in-person Lucknow fee is ₹50,000. Ask for the current written total, taxes, inclusions, and payment terms for your cohort before paying.' },
+        { question: 'What are the published online and Lucknow fees?', answer: `The published online fee is ${PUBLISHED_FEES.online} and the in-person Lucknow fee is ${PUBLISHED_FEES.lucknow}. Confirm the fee validity and ask for the current written total, taxes, inclusions, and payment terms for your cohort before paying.` },
         { question: 'Who is eligible for the Financial Operations Masterclass?', answer: 'Graduates and job switchers from any academic background can join. Graduation is the program entry requirement; a previous finance background is not required. Confirm documents and the current cohort schedule directly.' },
         { question: 'Does paying the fee guarantee a job?', answer: 'The published 100% Job Guarantee Program promises a finance job to graduates and job switchers after completing the six-week program. Payment alone is not completion. Review the published summary and request current written cohort terms before enrolling.' },
       ],
@@ -678,23 +700,24 @@ export const NEXT_LANDING_PAGE_SPECS = Object.freeze([
     routeId: 'courses-finance-course-for-graduates',
     parentId: 'courses',
     path: '/courses/finance-course-for-graduates/',
-    title: 'Finance Course for Graduates: Career Fit Guide | Centaur Careers',
-    description: 'Assess whether practical finance operations learning fits your graduate background, target roles, skill gaps, schedule, evidence needs, and current terms.',
-    h1: 'Finance Course for Graduates: Role Fit and Learning Plan',
+    title: 'Finance Course for Graduates with Placement | Centaur Careers',
+    description: 'For BTech, BCom, BA, BSc and non-commerce graduates: compare finance course fit, practical workflows, eligibility, and the current job guarantee terms.',
+    h1: 'Finance Course for Graduates from Any Background',
     breadcrumbLabel: 'Finance Course for Graduates',
     primaryKeyword: 'finance course for graduates',
     image: COURSE_IMAGE,
     imageAlt: 'Graduate comparing finance career roles and practical learning needs',
     updatedAt: NEXT_SEO_PAGE_DATE,
     body: landingBody({
-      opening: 'A finance course for graduates should be chosen by role fit rather than degree label alone. A BCom, BBA, BA, BSc, engineering, or other graduate may bring different strengths and gaps, while employers may set different education, tool, communication, shift, and experience requirements. This page helps graduates test whether the existing Financial Operations Masterclass matches the work they want to explore.',
+      opening: 'A finance course after BTech, BCom, BA, BSc, BBA, or another degree should be chosen by role fit rather than degree label alone. Centaur Careers accepts graduates from any academic background into its six-week Financial Operations Masterclass. Compare the practical workflows, eligibility, fees, and written 100% Job Guarantee Program terms with your target vacancies before enrolling.',
       fit: 'Start by choosing between role families such as investment operations, banking operations, finance operations, lending and credit operations, KYC and AML, payments, or FinTech operations. Then compare the current syllabus with the tasks in real vacancies. Commerce knowledge can help with accounting and financial vocabulary; another degree can still provide analysis, technology, communication, or process strengths. Neither background removes the need to demonstrate the requested skills.',
       coverage: ['Financial-market and post-trade context for learners exploring investment operations roles.', 'Retail-banking products, customer journeys, service processes, and operational controls.', 'KYC, AML, due-diligence, screening, monitoring, evidence, and escalation context.', 'Digital-payment flows, transaction statuses, settlement, reconciliation, disputes, and exceptions.', 'Finance-operations foundations across accounting, lending, credit, reporting, risk, and controls.', 'FinTech and neo-banking workflows connecting products, technology, operations, compliance, and service.'],
       practice: 'A graduate should leave practice with examples they can explain honestly. Useful evidence can include a fictional reconciliation, a mapped payment or trade, a KYC case note, a loan-document checklist, an exception register, or a short operational report. The learner should state the assumptions, sources, checks, limits, and next decision owner. A copied project or list of definitions provides much weaker evidence than a small, defensible exercise.',
       checks: ['Which role families the current curriculum supports and which it does not claim to cover.', 'Your foundation gaps in accounting, banking, markets, products, data, communication, or controls.', 'The current cohort schedule and whether the learning mode is workable from your location.', 'Practice, review, assessment, certificate, and support details for the full program.', 'Current fees and written refund, cancellation, attendance, and access terms.', 'Employer requirements and the current Job Guarantee Program conditions relevant to your profile.'],
-      links: [link('Use the finance learning roadmap', '/career-guides/finance-learning-roadmap/', 'career-guide-finance-learning-roadmap'), link('Compare finance careers after graduation', '/career-guides/finance-careers-after-graduation/', 'career-guide-finance-careers-after-graduation'), link('Review the Finance Operations syllabus', '/courses/finance-operations-syllabus/', 'courses-finance-operations-syllabus'), link('Review the complete Masterclass', '/courses/', 'courses')],
+      links: [link('Use the finance learning roadmap', '/career-guides/finance-learning-roadmap/', 'career-guide-finance-learning-roadmap'), link('Compare finance careers after graduation', '/career-guides/finance-careers-after-graduation/', 'career-guide-finance-careers-after-graduation'), link('Review the Finance Operations syllabus', '/courses/finance-operations-syllabus/', 'courses-finance-operations-syllabus'), link('Read the current job guarantee terms', '/placements/#job-guarantee-terms', 'placements'), link('Review the complete Masterclass', '/courses/', 'courses')],
       faqs: [
         { question: 'Which graduates can explore finance operations?', answer: 'People from different graduate backgrounds can research the field, but each employer sets its own eligibility and skills. Compare your foundation and evidence with current role requirements rather than assuming a degree title guarantees fit.' },
+        { question: 'Can I join a finance course after BTech or from a non-commerce background with placement?', answer: 'Centaur Careers states that graduates from any academic background can join its six-week Financial Operations Masterclass. Its published 100% Job Guarantee Program applies to eligible graduates and job switchers after course completion and promises a finance job. It does not promise a particular employer, analyst title, salary, or city; review the current written terms.' },
         { question: 'Is this page a separate course for BCom or BBA graduates?', answer: 'No. It is a graduate-fit guide for the existing Financial Operations Masterclass. It does not create separate BCom, BBA, MBA, or other degree-specific classes.' },
       ],
     }),

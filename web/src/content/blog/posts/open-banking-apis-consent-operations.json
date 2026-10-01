@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "open-banking-apis-consent-operations",
+  "slug": "open-banking-apis-consent-operations",
+  "status": "published",
+  "title": "Open Banking in India: Consent, APIs and Operations",
+  "excerpt": "Understand open banking concepts and India’s Account Aggregator framework through consent steps, data roles, operations controls, and a fictional case.",
+  "category": "finance-operations",
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Finance education editorial team",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Open banking describes ways customers can authorize financial data or services to work across providers through defined digital connections. The exact model, legal roles, and safeguards depend on the country and framework. In India, the RBI-regulated Account Aggregator (AA) framework is one consent-based financial-data-sharing arrangement; it should not be treated as a label for every API, fintech connection, or open-banking model."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Account Aggregator roles in India"
+    },
+    {
+      "type": "paragraph",
+      "text": "The RBI’s Account Aggregator Directions establish a framework for registered NBFC Account Aggregators. In a typical data-sharing request, a Financial Information User (FIU) seeks specified information for a stated purpose, a customer provides consent through an AA, and a Financial Information Provider (FIP) supplies the information through the framework. A customer chooses whether to participate and what consent to provide. The parties’ exact permissions and responsibilities depend on the current directions and their regulated status."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A simplified consent and data flow"
+    },
+    {
+      "type": "list",
+      "items": [
+        "A customer begins a service journey with a participating FIU.",
+        "The FIU requests defined financial information, a purpose, and a time period.",
+        "The customer reviews the consent request and chooses whether to approve it through an Account Aggregator.",
+        "The FIP responds to the authorized request through the framework; the FIU uses the information for the stated purpose.",
+        "The operations teams monitor status, exceptions, consent records, customer questions, and required retention or deletion controls under applicable rules."
+      ],
+      "ordered": true
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What operations teams need to control"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Purpose and scope: confirm that requested information matches the customer journey and approved use.",
+        "Consent state: track request, approval, expiry, and withdrawal events accurately.",
+        "Data integrity: match customer, account, time range, and response identifiers without exposing unnecessary information.",
+        "Security and access: apply authorized access, transmission safeguards, and audit logging under the relevant framework.",
+        "Exceptions and complaints: record missing, delayed, incomplete, or disputed responses and route them to the responsible party.",
+        "Partner handoffs: make ownership and escalation clear across FIU, FIP, and AA participants."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fictional operations case"
+    },
+    {
+      "type": "paragraph",
+      "text": "A fictional FIU requests six months of account data for a customer who has approved the request. One account responds, while a second has a pending status. The analyst checks the consent record, requested account list, timestamps, and response status; avoids treating the partial response as complete; records the missing item; and routes the exception to the defined team. The analyst does not expand the purpose or ask the customer to approve a different request without the required process."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What this means for analyst careers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Depending on the employer, operations, onboarding, customer support, compliance, and product-operations teams may monitor request status, investigate exceptions, verify consent records, answer process questions, and maintain evidence. Job titles vary. Analysts follow their employer’s current procedures and do not make independent legal interpretations or promise that a data transfer is risk-free."
+    },
+    {
+      "type": "link",
+      "label": "Explore FinTech and neo-banking operations",
+      "href": "/courses/fintech/",
+      "routeId": "fintech-neo-banking"
+    },
+    {
+      "type": "link",
+      "label": "Explore digital payment operations roles",
+      "href": "/career-guides/digital-payments-operations/",
+      "routeId": "career-guide-digital-payments-operations"
+    },
+    {
+      "type": "link",
+      "label": "Read RBI’s Account Aggregator Directions",
+      "href": "https://systemhealth.rbi.org.in/Scripts/BS_ViewMasDirections.aspx_id%3D10598%281%29.html"
+    },
+    {
+      "type": "link",
+      "label": "Read the Government of India Account Aggregator framework overview",
+      "href": "https://www.financialservices.gov.in/account-aggregator-framework"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rules and ecosystem participation can change. Review the current RBI Directions and official government guidance before relying on a regulatory or participation detail. This article is educational and does not provide legal, compliance, investment, or financial advice."
+    },
+    {
+      "type": "faq",
+      "question": "Does open banking mean every bank shares customer data automatically?",
+      "answer": "No. Data sharing depends on the framework, participating institutions, the customer’s authorization, the requested information, and applicable rules."
+    },
+    {
+      "type": "faq",
+      "question": "Is the Account Aggregator framework the same as every open-banking API?",
+      "answer": "No. India’s Account Aggregator framework has defined roles and RBI Directions. Other API connections and international open-banking arrangements may follow different models."
+    },
+    {
+      "type": "faq",
+      "question": "Can an operations analyst approve customer consent?",
+      "answer": "An analyst follows the employer’s approved workflow and authority. The customer’s authorization and the regulated parties’ responsibilities must be handled through the applicable process."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/open-banking-apis-consent-operations.png",
+    "alt": "Illustration of customer-authorized data sharing between financial institutions and an operations review team",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-09-30",
+  "updatedAt": "2026-09-30",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Open Banking in India: Consent and Operations",
+    "description": "Learn how consent, Account Aggregator roles, data requests, and operations controls fit together in India’s financial data-sharing framework.",
+    "canonicalPath": "/blog/open-banking-apis-consent-operations/",
+    "noindex": false,
+    "focusKeyword": "open banking in India",
+    "secondaryKeywords": [
+      "Account Aggregator framework",
+      "open banking consent",
+      "financial data sharing India",
+      "open banking operations"
+    ]
+  },
+  "tags": [
+    "Open Banking",
+    "Account Aggregator",
+    "FinTech Operations",
+    "Consent",
+    "Banking APIs"
+  ],
+  "relatedRouteIds": [
+    "blog",
+    "fintech-neo-banking",
+    "career-guide-digital-payments-operations",
+    "contact"
+  ],
+  "redirects": [],
+  "evidenceNotes": [
+    "RBI, Master Direction - Non-Banking Financial Company - Account Aggregator (Reserve Bank) Directions, 2016, updated 6 September 2024: https://systemhealth.rbi.org.in/Scripts/BS_ViewMasDirections.aspx_id%3D10598%281%29.html",
+    "Department of Financial Services, Government of India, Account Aggregator Framework: https://www.financialservices.gov.in/account-aggregator-framework (checked 30 September 2026).",
+    "Regulatory and ecosystem details must be rechecked against current official sources before future updates; this is a high-level educational summary.",
+    "Fictional case only; no account or customer data is used."
+  ]
+}

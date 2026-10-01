@@ -1,16 +1,16 @@
 export const INDIA_PAGE = Object.freeze({
   id: 'india',
   path: '/india/',
-  title: 'Live Online Finance Course Across India | Centaur Careers',
-  description: 'Join the six-week Financial Operations Masterclass live online across India. Compare investment banking and BFSI modules with in-person access in Lucknow.',
-  h1: 'Financial Operations Masterclass: Live Online Across India',
+  title: 'Online Finance Course in India | Centaur Careers',
+  description: 'Join the six-week Financial Operations Masterclass live online across India. Classroom sessions are available in Lucknow. Review curriculum, eligibility, and fees.',
+  h1: 'Live Online Finance Course Across India',
   breadcrumbLabel: 'India',
-  primaryKeyword: 'investment banking operations course India',
-  directAnswer: 'Centaur Careers offers one six-week Financial Operations Masterclass. Graduates and job switchers outside Lucknow can attend live online from across India. Investment banking operations, KYC and AML, digital payments, retail banking, finance operations, and FinTech are subjects within that course, not separate regional programmes. The published in-person option is at Mindsprout Career Hub in Lucknow. Confirm the current cohort, fees, and support terms before joining.',
+  primaryKeyword: 'finance career training India',
+  directAnswer: 'Centaur Careers offers one six-week Financial Operations Masterclass. Learners across India can join live online, and the published in-person option is at Mindsprout Career Hub in Lucknow. Investment banking operations, KYC and AML, digital payments, retail banking, finance operations, and FinTech are subjects within that course, not separate regional programmes. Confirm the current cohort, fees, and written support terms before joining.',
   faqs: Object.freeze([
     Object.freeze({
-      question: 'Can students outside Lucknow join the Financial Operations Masterclass?',
-      answer: 'The current public program information describes live online sessions for learners who are not in Lucknow. Contact Centaur Careers to confirm the current cohort schedule, learning mode, fees, and support terms before enrolling.',
+      question: 'Can learners join the Financial Operations Masterclass online from other cities?',
+      answer: 'The published learning option is live online across India. Contact Centaur Careers to confirm the current cohort schedule, fees, and written support terms before enrolling.',
     }),
     Object.freeze({
       question: 'Does Centaur Careers have physical training centres across India?',
@@ -18,7 +18,7 @@ export const INDIA_PAGE = Object.freeze({
     }),
     Object.freeze({
       question: 'What does the India-wide finance operations training cover?',
-      answer: 'Graduates and job switchers who complete the Financial Operations Masterclass get a finance job through the 100% Job Guarantee Program. The course covers investment banking operations, KYC and AML, digital payments, retail banking, finance operations, and FinTech.',
+      answer: 'The six-week Financial Operations Masterclass covers investment banking operations, KYC and AML, digital payments, retail banking, finance operations, and FinTech. Graduates and job switchers who complete it get a finance job through the 100% Job Guarantee Program. Request the current written cohort terms before paying.',
     }),
     Object.freeze({
       question: 'How should I choose between online and offline learning?',

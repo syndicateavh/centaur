@@ -4,7 +4,7 @@ import BlogContentRenderer from '@/components/blog/BlogContentRenderer.jsx';
 import InternalLinkGroup from '@/components/InternalLinkGroup.jsx';
 import { CtaSection, PageHero } from '@/components/PageShell.jsx';
 import { BUSINESS_DATA } from '@/content/businessData.js';
-import { getLeadIntentAction } from '@/content/leadIntentActions.js';
+import { getLeadIntentAction, getLeadIntentSourcePages } from '@/content/leadIntentActions.js';
 import { getPriorityLandingPage } from '@/content/prioritySeoContent.js';
 import { getInternalLinks } from '@/seo/internalLinks.js';
 import { getSeoRoute } from '@/seo/seoRoutes.js';
@@ -15,6 +15,7 @@ export default function PriorityLandingPage({ pageId }) {
 
   const route = getSeoRoute(page.routeId);
   const leadAction = getLeadIntentAction(page.id);
+  const sourcePages = getLeadIntentSourcePages(page.id);
   const whatsappUrl = leadAction
     ? `https://wa.me/${BUSINESS_DATA.telephone.replace(/\D/g, '')}?text=${encodeURIComponent(`Hi Centaur Careers, I read your ${page.h1} page. I would like to ${leadAction.title.toLowerCase()}. Please share the current details and written terms.`)}`
     : null;
@@ -23,10 +24,12 @@ export default function PriorityLandingPage({ pageId }) {
       <PageHero routeId={route.id} eyebrow="Finance career pathway" title={page.h1} intro={page.description} />
       <article data-priority-landing-page={page.id} className="bg-white py-14 sm:py-20">
         <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-10 flex flex-wrap items-center gap-3 border-b border-border pb-6 text-sm text-muted-foreground">
-            {page.author?.name && <span className="font-bold text-primary">By {page.author.name}{page.author.role ? `, ${page.author.role}` : ''}</span>}
-            <span>Page updated <time dateTime={page.updatedAt}>{page.updatedAt}</time></span>
-          </div>
+          {!page.hideByline && (
+            <div className="mb-10 flex flex-wrap items-center gap-3 border-b border-border pb-6 text-sm text-muted-foreground">
+              {page.author?.name && <span className="font-bold text-primary">By {page.author.name}{page.author.role ? `, ${page.author.role}` : ''}</span>}
+              <span>Page updated <time dateTime={page.updatedAt}>{page.updatedAt}</time></span>
+            </div>
+          )}
           {leadAction ? <BlogContentRenderer blocks={page.body.slice(0, 3)} /> : <BlogContentRenderer blocks={page.body} />}
           {leadAction && (
             <aside data-lead-intent-action={page.id} data-conversion-cta className="my-10 rounded-2xl border border-accent/40 bg-accent/10 p-6 sm:p-8">
@@ -40,15 +43,26 @@ export default function PriorityLandingPage({ pageId }) {
             </aside>
           )}
           {leadAction && <BlogContentRenderer blocks={page.body.slice(3)} />}
-          <aside className="mt-12 rounded-2xl border border-accent/30 bg-accent/10 p-6 text-primary">
-            <h2 className="text-2xl font-bold">Confirm the current program details</h2>
-            <p className="mt-3 leading-relaxed">Curriculum, cohort timing, fees, learning mode, certificate wording, and support terms can change. Review the full program page and ask Centaur Careers to confirm the terms for your cohort.</p>
-            <div className="mt-5 flex flex-wrap gap-4">
-              <Link to="/courses/" className="font-bold underline decoration-accent decoration-2 underline-offset-4">Review the Masterclass</Link>
-              <Link to="/placements/#job-guarantee-terms" className="font-bold underline decoration-accent decoration-2 underline-offset-4">Read the placement summary</Link>
-              <Link to="/contact/" className="font-bold underline decoration-accent decoration-2 underline-offset-4">Contact Centaur Careers</Link>
-            </div>
-          </aside>
+          {sourcePages.length > 0 ? (
+            <aside data-intent-owner-links={page.id} className="mt-12 rounded-2xl border border-accent/30 bg-accent/10 p-6 text-primary">
+              <h2 className="text-2xl font-bold">Check the source page for each current detail</h2>
+              <p className="mt-3 leading-relaxed">Use these pages for Centaur Careers’ published program facts or the broader topic owner. Ask the team for written cohort terms when a detail is not stated or needs confirmation.</p>
+              <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3">
+                {sourcePages.map(({ label, path }) => <Link key={path} to={path} className="font-bold underline decoration-accent decoration-2 underline-offset-4">{label}</Link>)}
+                <Link to="/contact/" className="font-bold underline decoration-accent decoration-2 underline-offset-4">Ask Centaur Careers a specific question</Link>
+              </div>
+            </aside>
+          ) : (
+            <aside className="mt-12 rounded-2xl border border-accent/30 bg-accent/10 p-6 text-primary">
+              <h2 className="text-2xl font-bold">Confirm the current program details</h2>
+              <p className="mt-3 leading-relaxed">Curriculum, cohort timing, fees, learning mode, certificate wording, and support terms can change. Review the full program page and ask Centaur Careers to confirm the terms for your cohort.</p>
+              <div className="mt-5 flex flex-wrap gap-4">
+                <Link to="/courses/" className="font-bold underline decoration-accent decoration-2 underline-offset-4">Review the Masterclass</Link>
+                <Link to="/placements/#job-guarantee-terms" className="font-bold underline decoration-accent decoration-2 underline-offset-4">Read the placement summary</Link>
+                <Link to="/contact/" className="font-bold underline decoration-accent decoration-2 underline-offset-4">Contact Centaur Careers</Link>
+              </div>
+            </aside>
+          )}
         </div>
       </article>
       <InternalLinkGroup links={getInternalLinks(page.routeId)} />

@@ -9,6 +9,13 @@
   "author": { "type": "Organization", "id": "centaur-careers", "name": "Centaur Careers", "role": "Finance education editorial team", "profilePath": "/about/" },
   "body": [
     { "type": "paragraph", "text": "Before joining a finance institute, ask questions that connect the marketing promise to the actual learning experience and written terms. The most useful questions cover role fit, curriculum, practice, eligibility, fees, schedule, certificate wording, placement or career support, refund conditions and how the provider handles unanswered issues. This checklist is for general education research in India and is not a guarantee that any institute will produce a particular job outcome." },
+    { "type": "heading", "level": 2, "text": "Where to verify Centaur Careers’ current program facts" },
+    { "type": "paragraph", "text": "The questions below are general comparison prompts; they do not mean every possible condition applies to Centaur Careers. Use the relevant source page for the published program facts and request the complete current written cohort terms when a detail is not stated or needs confirmation." },
+    { "type": "link", "label": "Review the Financial Operations Masterclass", "href": "/courses/", "routeId": "courses" },
+    { "type": "link", "label": "Check published fees and graduation entry", "href": "/courses/finance-course-fees-eligibility/", "routeId": "courses-finance-course-fees-eligibility" },
+    { "type": "link", "label": "Review the syllabus and six-week learning sequence", "href": "/courses/finance-operations-syllabus/", "routeId": "courses-finance-operations-syllabus" },
+    { "type": "link", "label": "Read the published placement and Job Guarantee Program summary", "href": "/placements/#job-guarantee-terms", "routeId": "placements" },
+    { "type": "link", "label": "Read the refund and cancellation policy", "href": "/refund-cancellation-policy/", "routeId": "refund-cancellation-policy" },
     { "type": "heading", "level": 2, "text": "Questions about the course and target role" },
     { "type": "list", "ordered": true, "items": ["Which role or workflow does the course prepare me to understand: finance operations, investment banking operations, retail banking, KYC and AML, payments, credit, risk or FinTech?", "Is this a complete programme or a module inside a broader programme?", "Which topics are taught in the current cohort, and which are only introductory?", "What kind of learner is a good fit, and what background or prerequisite is expected?", "Which current job descriptions or role families should I use to test whether the syllabus is relevant?"] },
     { "type": "heading", "level": 2, "text": "Questions about practical learning" },
@@ -24,9 +31,6 @@
     { "type": "heading", "level": 2, "text": "What to do when a question is not answered" },
     { "type": "paragraph", "text": "Keep a short decision record. Write the question, the page or person who answered it, the date, the exact answer, and what remains uncertain. If the answer affects cost, eligibility, mode, certification, refund or career support, request it in writing. A professional provider should be able to distinguish a current fact, a general explanation, a provider-specific term and an issue that needs confirmation." },
     { "type": "link", "label": "Compare finance institutes in India using a verification framework", "href": "/compare/best-finance-institutes-india/", "routeId": "comparison-best-finance-institutes-india" },
-    { "type": "link", "label": "Review the Financial Operations Masterclass", "href": "/courses/", "routeId": "courses" },
-    { "type": "link", "label": "Check finance course fees and eligibility", "href": "/courses/finance-course-fees-eligibility/", "routeId": "courses-finance-course-fees-eligibility" },
-    { "type": "link", "label": "Read the current placement and job-guarantee terms", "href": "/placements/", "routeId": "placements" },
     { "type": "link", "label": "Contact the programme team with a specific question", "href": "/contact/", "routeId": "contact" },
     { "type": "paragraph", "text": "The best enrolment decision is one you can explain: the role you want to explore, the practice you will receive, the total commitment, the support terms, the risks you checked and the questions that remain. Use the checklist before submitting an application or payment." }
   ],
@@ -36,7 +40,7 @@
   "scheduledAt": null,
   "seo": { "title": "Questions to Ask a Finance Institute Before Enrolling", "description": "Use this finance-course checklist to compare syllabus, fees, eligibility, mode, certificate, placement terms, refunds and support before enrolling in India.", "canonicalPath": "/blog/questions-to-ask-finance-institute-before-enrolling/", "noindex": false, "focusKeyword": "questions to ask finance institute", "secondaryKeywords": ["finance course checklist", "questions before joining finance course", "finance institute placement questions", "finance course eligibility and fees"] },
   "tags": ["Finance Course Checklist", "Course Selection", "Placement Terms", "Finance Education"],
-  "relatedRouteIds": ["comparison-best-finance-institutes-india", "courses", "courses-finance-course-fees-eligibility", "placements", "career-guide-choosing-finance-career-course", "contact"],
+  "relatedRouteIds": ["comparison-best-finance-institutes-india", "courses", "courses-finance-course-fees-eligibility", "courses-finance-operations-syllabus", "refund-cancellation-policy", "placements", "career-guide-choosing-finance-career-course", "contact"],
   "redirects": [],
   "evidenceNotes": ["Checklist is educational and does not endorse a provider or guarantee an outcome.", "Fees, eligibility, delivery, certificates, refunds and placement terms must be reviewed for the applicable cohort.", "Fictional learner example; no learner identity or result is represented."]
 }

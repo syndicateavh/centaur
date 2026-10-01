@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getDatabasePool } from "@/lib/db";
+import { requireCourseEditor } from "@/lib/learner";
 
 export const dynamic = "force-dynamic";
 
 type PilotReview = {
   title: string; slug: string; version_id: string; version_number: number; version_status: string;
   review_status: string; review_date: string | null; reviewer_name: string | null;
+  estimated_minutes: number; independent_practice_minutes: number;
   objectives: string[]; sources: { title: string; url: string; accessed: string; note: string }[];
   case_packet: { title: string; notice: string; facts: string[]; questions: string[] };
   module_count: number; lesson_count: number;
@@ -18,8 +20,10 @@ type AssessmentReviewRecord = { assessment_id: string; assessment_version_number
 
 export default async function LocalCurriculumReviewPage() {
   if (process.env.NODE_ENV !== "development") notFound();
+  await requireCourseEditor();
   const result = await getDatabasePool().query<PilotReview>(`SELECT c.title, c.slug, v.version_number,
       v.status AS version_status, v.review_status, v.review_date::text, v.reviewer_name,
+      v.estimated_minutes, v.independent_practice_minutes,
       v.id AS version_id, v.learning_objectives AS objectives, v.content_sources AS sources, v.case_packet,
       (SELECT count(*)::int FROM lms.modules m WHERE m.course_version_id=v.id) AS module_count,
       (SELECT count(*)::int FROM lms.modules m JOIN lms.lessons l ON l.module_id=m.id WHERE m.course_version_id=v.id) AS lesson_count
@@ -41,7 +45,7 @@ export default async function LocalCurriculumReviewPage() {
     <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">Pilot curriculum review</h1>
     <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-600">This local-only page helps a qualified reviewer inspect the current draft and its references. It cannot approve a course or change publication state.</p>
     {!pilot ? <p className="mt-6 rounded-xl border border-gold-200 bg-gold-50 p-5 text-sm">No pilot curriculum is seeded. Run <code>npm run db:seed:pilot</code> in the local development environment.</p> : <>
-      <section className="mt-7 rounded-xl border border-gold-300 bg-gold-50 p-5"><p className="text-xs font-extrabold uppercase tracking-widest text-gold-900">{pilot.review_status.replaceAll("_", " ")} · version {pilot.version_number} · {pilot.version_status}</p><h2 className="mt-2 text-2xl font-bold">{pilot.title}</h2><p className="mt-2 text-sm text-slate-700">{pilot.module_count} modules · {pilot.lesson_count} lessons · last source check {pilot.review_date ?? "not recorded"} · reviewer {pilot.reviewer_name ?? "not assigned"}</p></section>
+      <section className="mt-7 rounded-xl border border-gold-300 bg-gold-50 p-5"><p className="text-xs font-extrabold uppercase tracking-widest text-gold-900">{pilot.review_status.replaceAll("_", " ")} · version {pilot.version_number} · {pilot.version_status}</p><h2 className="mt-2 text-2xl font-bold">{pilot.title}</h2><p className="mt-2 text-sm text-slate-700">{pilot.module_count} modules · {pilot.lesson_count} lessons · {pilot.estimated_minutes} estimated minutes including {pilot.independent_practice_minutes} minutes of offline workbook practice · draft record {pilot.review_date ?? "not dated"} · reviewer {pilot.reviewer_name ?? "not assigned"}</p></section>
       <section className="mt-7 rounded-xl border border-slate-200 bg-white p-5"><h2 className="text-xl font-bold">Reviewer checklist</h2><ul className="mt-4 space-y-3 text-sm leading-6 text-slate-700"><li>☐ Confirm every legal/regulatory statement against current official material and note the effective date and scope.</li><li>☐ Check that customer due diligence, beneficial ownership, PEP/screening, ongoing review, record keeping, and confidentiality wording matches applicable requirements.</li><li>☐ Confirm examples are fictional, do not contain real customer data, and avoid teaching unsupported decision rules.</li><li>☐ Review learning objectives, sequence, practice prompts, workbook answers, readability, and accessibility.</li><li>☐ Record reviewer name, review date, corrections, and the approved source set in the content record before publication.</li></ul><p className="mt-4 rounded-lg bg-slate-50 p-3 text-xs leading-5 text-slate-600">Approval must be recorded by the authorized content owner through a controlled release process. This preview is not a signoff record.</p></section>
       <section className="mt-7 rounded-xl border border-slate-200 bg-white p-5"><h2 className="text-xl font-bold">Learning objectives</h2><ol className="mt-3 list-decimal space-y-2 pl-5 text-sm leading-6 text-slate-700">{pilot.objectives.map((objective, index) => <li key={index}>{objective}</li>)}</ol></section>
       <section className="mt-7 rounded-xl border border-slate-200 bg-white p-5"><h2 className="text-xl font-bold">Lesson content preview</h2><div className="mt-4 space-y-5">{curriculum?.rows.map((lesson, index) => <article key={`${lesson.lesson_title}-${index}`} className="rounded-lg border border-slate-200 p-4"><p className="text-xs font-bold uppercase tracking-wide text-navy-800">{lesson.title}</p><h3 className="mt-1 text-lg font-bold">{lesson.lesson_title}</h3><p className="text-xs text-slate-500">{lesson.content.minutes ?? 0} minutes</p><div className="mt-3 space-y-3 text-sm leading-6 text-slate-700">{lesson.content.blocks?.map((block, blockIndex) => <div key={blockIndex}>{block.title && <h4 className="font-bold text-slate-950">{block.title}</h4>}{block.text && <p>{block.text}</p>}{block.items && <ul className="list-disc space-y-1 pl-5">{block.items.map((item) => <li key={item}>{item}</li>)}</ul>}</div>)}</div></article>)}</div></section>

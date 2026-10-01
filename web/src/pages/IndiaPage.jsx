@@ -41,7 +41,7 @@ export default function IndiaPage() {
           </div>
 
           <div data-high-value-section="national-commercial-bridge" className="mx-auto mb-14 max-w-4xl rounded-2xl border border-border bg-muted p-7 sm:p-9">
-            <h2 className="text-2xl font-bold text-primary">Investment banking operations course in India: choose the right access route</h2>
+            <h2 className="text-2xl font-bold text-primary">Online finance course in India: choose a live learning mode</h2>
             <p className="mt-3 leading-relaxed text-muted-foreground">Centaur Careers teaches investment banking operations as part of one Financial Operations Masterclass. Check the trade settlement, reconciliation, corporate actions, and fund accounting topics against the work you want to learn. Then choose live online access from your city or the published Lucknow option, and confirm the current schedule, fees, assessment, and written support terms. The full programme details and enquiry route are on the course page.</p>
             <div className="mt-5 flex flex-wrap gap-3">
               <Link to="/courses/" className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-primary px-5 py-3 font-bold text-white">Review the full program <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
@@ -104,16 +104,20 @@ export default function IndiaPage() {
               <article key={mode.name} className="rounded-2xl border border-border bg-white p-7 shadow-sm">
                 <p className="text-sm font-bold uppercase tracking-[0.16em] text-accent-ink">{mode.name} mode</p>
                 <h2 className="mt-3 text-2xl font-bold text-primary">{mode.name === 'Online' ? 'Live online banking and finance course' : 'In-person finance course in Lucknow'}</h2>
+                <p className="mt-3 text-sm font-semibold text-accent-ink">Current published fee</p>
                 <div className="mt-3 flex items-baseline gap-3">
                   <span className="text-3xl font-extrabold text-primary">{mode.price}</span>
                 </div>
-                <p className="mt-2 text-sm text-muted-foreground">Confirm the applicable written fee for your cohort before paying.</p>
+                <p className="mt-2 text-sm text-muted-foreground">Reference fee: {mode.originalPrice}. {mode.note} Confirm the total payable amount and written cohort terms before paying.</p>
                 <p className="mt-3 text-muted-foreground">{mode.name === 'Online'
-                  ? 'The online route is the national access path described for learners joining from outside Lucknow.'
+                  ? 'The live online route is available across India.'
                   : 'The offline route is the published in-person learning option at Mindsprout Career Hub, Lucknow.'}</p>
                 <ul className="mt-6 space-y-3 text-sm text-foreground/80">
                   {mode.features.slice(0, 4).map((feature) => <li key={feature} className="flex items-start gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent-ink" aria-hidden="true" />{feature}</li>)}
                 </ul>
+                <Link to={mode.name === 'Offline' ? '/locations/lucknow/' : '/contact/'} className="mt-6 inline-flex min-h-11 items-center gap-2 font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">
+                  {mode.name === 'Offline' ? 'View the Lucknow location' : 'Ask about online access'} <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                </Link>
               </article>
             ))}
           </div>

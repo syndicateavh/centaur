@@ -116,6 +116,12 @@
       "href": "https://www.npci.org.in/product/upi/product-statistics"
     },
     {
+      "type": "link",
+      "label": "Read how open banking consent and data flows work in India",
+      "href": "/blog/open-banking-apis-consent-operations/",
+      "routeId": "blog-open-banking-apis-consent-operations"
+    },
+    {
       "type": "paragraph",
       "text": "Neo-banking is a changing category. Verify the current legal entity, product terms, support route and regulatory information with the provider and relevant authority. This article is educational and does not make a partnership or financial-protection claim."
     }
@@ -135,10 +141,27 @@
     "canonicalPath": "/blog/neo-banking-products-controls/",
     "noindex": false,
     "focusKeyword": "neo banking",
-    "secondaryKeywords": ["neo banking products", "digital banking controls", "fintech operations"]
+    "secondaryKeywords": [
+      "neo banking products",
+      "digital banking controls",
+      "fintech operations"
+    ]
   },
-  "tags": ["Neo Banking", "Neo Banking Products", "Digital Banking Controls", "FinTech", "Payments Operations"],
-  "relatedRouteIds": ["blog", "digital-payments", "fintech-neo-banking", "career-guide-digital-payments-operations", "contact"],
+  "tags": [
+    "Neo Banking",
+    "Neo Banking Products",
+    "Digital Banking Controls",
+    "FinTech",
+    "Payments Operations"
+  ],
+  "relatedRouteIds": [
+    "blog",
+    "digital-payments",
+    "fintech-neo-banking",
+    "career-guide-digital-payments-operations",
+    "contact",
+    "blog-open-banking-apis-consent-operations"
+  ],
   "redirects": [],
   "evidenceNotes": [
     "RBI payment and settlement systems information: https://rbi.org.in/scripts/RTGS_Notification.aspx?Id=12133",

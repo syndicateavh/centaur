@@ -72,6 +72,8 @@ export default function RegionalPage({ regionId }) {
         <p className="mt-6 inline-flex items-center gap-2 text-sm text-white/70"><CalendarDays className="h-4 w-4" aria-hidden="true" />Guide updated {page.updatedAt}</p>
       </PageHero>
 
+      {page.image && <figure className="mx-auto w-full max-w-7xl px-4 pt-8 sm:px-6 lg:px-8"><img src={page.image} alt={page.imageAlt} width="1672" height="941" loading="lazy" decoding="async" className="max-h-[28rem] w-full rounded-2xl border border-border object-cover shadow-sm" /></figure>}
+
       <article
         data-regional-page={page.id}
         data-regional-market={page.id}
@@ -87,7 +89,7 @@ export default function RegionalPage({ regionId }) {
 
           <section data-regional-program-answer data-regional-online-access data-high-value-section="regional-commercial-bridge" aria-labelledby={`${page.id}-program-answer-title`} className="mt-8 rounded-2xl border border-border bg-white p-7 sm:p-9">
             <h2 id={`${page.id}-program-answer-title`} className="text-2xl font-bold text-primary">{page.courseQuestion}</h2>
-            <p className="mt-3 leading-relaxed text-foreground/85">Centaur Careers offers one six-week Financial Operations Masterclass with an investment banking operations module. Learners in {page.regionName} can join live online; the published in-person option is in Lucknow. Review the full curriculum and ask the team to confirm the current cohort schedule, fees, certificate, and written support terms before enrolling. This page does not claim a classroom or a city-specific job in {page.regionName}.</p>
+            <p className="mt-3 leading-relaxed text-foreground/85">{page.courseAnswer || `Centaur Careers offers one six-week Financial Operations Masterclass with an investment banking operations module. Learners in ${page.regionName} can join live online; the published in-person option is in Lucknow. Review the full curriculum and ask the team to confirm the current cohort schedule, fees, certificate, and written support terms before enrolling. This page does not claim a classroom or a city-specific job in ${page.regionName}.`}</p>
             <div className="mt-5 flex flex-wrap gap-4">
               <Link to="/courses/" className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">Review the full program <ArrowRight className="inline h-4 w-4" aria-hidden="true" /></Link>
               <Link to="/placements/" className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">Review placement support <ArrowRight className="inline h-4 w-4" aria-hidden="true" /></Link>

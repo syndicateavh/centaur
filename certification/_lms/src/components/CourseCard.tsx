@@ -3,12 +3,12 @@ import Image from "next/image";
 import type { CourseTrack } from "@/data/courses";
 import { getCourseImage } from "@/data/courseImages";
 
-export default function CourseCard({ course, compact = false }: { course: CourseTrack; compact?: boolean }) {
+export default function CourseCard({ course, compact = false, showImage = true }: { course: CourseTrack; compact?: boolean; showImage?: boolean }) {
   return (
     <article className="course-card group relative flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:border-navy-300 hover:shadow-lg">
-      <div className="relative -mx-6 -mt-6 mb-5 aspect-[3/2] overflow-hidden rounded-t-2xl bg-navy-100">
+      {showImage && <div className="relative -mx-6 -mt-6 mb-5 aspect-[3/2] overflow-hidden rounded-t-2xl bg-navy-100">
         <Image src={getCourseImage(course.slug)} alt={`${course.title} learning`} fill sizes="(max-width: 639px) 100vw, (max-width: 1279px) 50vw, 33vw" className="object-cover transition duration-300 group-hover:scale-[1.02]" />
-      </div>
+      </div>}
       <div className="flex items-start justify-between gap-4">
         <span className="rounded-full bg-navy-50 px-3 py-1 text-xs font-bold text-navy-900">{course.category}</span>
         <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-gold-200 bg-gold-50 px-2.5 py-1 text-xs font-semibold text-gold-900">
@@ -17,7 +17,7 @@ export default function CourseCard({ course, compact = false }: { course: Course
         </span>
       </div>
       <h3 className="mt-5 text-xl font-bold tracking-tight text-slate-950">
-        <Link href={`/courses/${course.slug}`} className="rounded-sm after:absolute after:inset-0 focus-visible:outline-none">
+        <Link href={`/courses/${course.slug}`} className="rounded-sm after:absolute after:inset-0">
           {course.title}
         </Link>
       </h3>

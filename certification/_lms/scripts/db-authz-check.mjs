@@ -41,16 +41,20 @@ try {
     VALUES ($1, 'Synthetic Learner A', $2, true, true, true, 'authz-test', 'authz-test'), ($3, 'Synthetic Learner B', $4, true, true, true, 'authz-test', 'authz-test')`, [learnerA, `${learnerA}@example.invalid`, learnerB, `${learnerB}@example.invalid`]);
   await admin.query('INSERT INTO lms.profiles (user_id, display_name) VALUES ($1, $2), ($3, $4)', [learnerA, 'Synthetic Learner A', learnerB, 'Synthetic Learner B']);
   await admin.query('INSERT INTO lms.user_roles (user_id, role) VALUES ($1, \'learner\'), ($2, \'learner\')', [learnerA, learnerB]);
-  await admin.query(`INSERT INTO lms.courses (id, slug, title, status) VALUES ($1, $2, 'Authz test course', 'published')`, [courseId, `authz-${courseId}`]);
-  await admin.query(`INSERT INTO lms.course_versions (id, course_id, version_number, status) VALUES ($1, $2, 1, 'published')`, [versionId, courseId]);
+  await admin.query(`INSERT INTO lms.courses (id, slug, title, status, is_sandbox) VALUES ($1, $2, 'Authz test course', 'draft', TRUE)`, [courseId, `authz-${courseId}`]);
+  await admin.query(`INSERT INTO lms.course_versions (id, course_id, version_number, status) VALUES ($1, $2, 1, 'draft')`, [versionId, courseId]);
   await admin.query('UPDATE lms.courses SET current_version_id = $2 WHERE id = $1', [courseId, versionId]);
   await admin.query('INSERT INTO lms.modules (id, course_version_id, slug, title, position) VALUES ($1, $2, \'test\', \'Test module\', 1)', [moduleId, versionId]);
   await admin.query('INSERT INTO lms.lessons (id, module_id, slug, title, position) VALUES ($1, $2, \'test\', \'Test lesson\', 1)', [lessonId, moduleId]);
   await admin.query('INSERT INTO lms.assessments (id, course_version_id, slug, title) VALUES ($1, $2, \'test\', \'Test assessment\')', [assessmentId, versionId]);
   await admin.query('INSERT INTO lms.enrollments (user_id, course_id, course_version_id) VALUES ($1, $2, $3)', [learnerB, courseId, versionId]);
   await admin.query('INSERT INTO lms.lesson_progress (user_id, lesson_id) VALUES ($1, $2)', [learnerB, lessonId]);
-  await admin.query('INSERT INTO lms.assessment_attempts (user_id, assessment_id, attempt_number) VALUES ($1, $2, 1)', [learnerB, assessmentId]);
-  await admin.query(`INSERT INTO lms.certificates (public_id, user_id, course_id, course_version_id) VALUES ($1, $2, $3, $4)`, [`AUTHZ-${courseId}`, learnerB, courseId, versionId]);
+  await admin.query(`INSERT INTO lms.assessment_attempts
+    (user_id, assessment_id, attempt_number, course_version_id, assessment_version_number)
+    VALUES ($1, $2, 1, $3, 1)`, [learnerB, assessmentId, versionId]);
+  await admin.query(`INSERT INTO lms.certificates
+    (public_id, user_id, course_id, course_version_id, course_title_snapshot, recipient_name_snapshot)
+    VALUES ($1, $2, $3, $4, 'Authz test course', 'Synthetic Learner B')`, [`CTC-${randomUUID().replaceAll('-', '').toUpperCase()}`, learnerB, courseId, versionId]);
   await admin.query('INSERT INTO lms.account_deletion_requests (user_id) VALUES ($1)', [learnerB]);
   await admin.query(`INSERT INTO lms.audit_events (actor_user_id, action, target_type) VALUES ($1, 'authz.synthetic', 'test')`, [learnerB]);
   await admin.query('COMMIT');
@@ -108,7 +112,9 @@ try {
     ['user_roles', 'INSERT INTO lms.user_roles (user_id, role) VALUES ($1, \'learner\')', [learnerB]],
     ['enrollments', 'INSERT INTO lms.enrollments (user_id, course_id, course_version_id) VALUES ($1, $2, $3)', [learnerB, courseId, versionId]],
     ['lesson_progress', 'INSERT INTO lms.lesson_progress (user_id, lesson_id) VALUES ($1, $2)', [learnerB, lessonId]],
-    ['assessment_attempts', 'INSERT INTO lms.assessment_attempts (user_id, assessment_id, attempt_number) VALUES ($1, $2, 2)', [learnerB, assessmentId]],
+    ['assessment_attempts', `INSERT INTO lms.assessment_attempts
+      (user_id, assessment_id, attempt_number, course_version_id, assessment_version_number)
+      VALUES ($1, $2, 2, $3, 1)`, [learnerB, assessmentId, versionId]],
     ['account_deletion_requests', 'INSERT INTO lms.account_deletion_requests (user_id) VALUES ($1)', [learnerB]],
     ['audit_events', "INSERT INTO lms.audit_events (actor_user_id, action, target_type) VALUES ($1, 'authz.cross_insert', 'test')", [learnerB]],
   ];

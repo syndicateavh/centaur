@@ -1,12 +1,13 @@
 import "server-only";
-import { randomUUID } from "node:crypto";
+import { createHmac, randomUUID } from "node:crypto";
 import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import nodemailer from "nodemailer";
 import type { Transporter } from "nodemailer";
 import { logServerError } from "@/lib/logger";
+import { getDatabasePool } from "@/lib/db";
 
-type AuthEmail = { to: string; subject: string; text: string; actionUrl: string };
+type AuthEmail = { kind: "verification" | "password_reset"; to: string; subject: string; text: string; actionUrl: string };
 export type LocalMailPreview = AuthEmail & { id: string; createdAt: string };
 
 const mailPreviewDirectory = path.resolve(process.cwd(), ".dev-mail");
@@ -15,6 +16,17 @@ let smtpTransport: Transporter | undefined;
 export function isEmailDeliveryConfigured() {
   if (process.env.NODE_ENV === "development") return true;
   return Boolean(process.env.SMTP_HOST && process.env.SMTP_FROM);
+}
+
+async function recordDelivery(message: AuthEmail, status: "sent" | "failed", errorCode?: string) {
+  try {
+    const secret = process.env.BETTER_AUTH_SECRET ?? "local-only-fingerprint-secret";
+    const fingerprint = createHmac("sha256",secret).update(message.to.trim().toLowerCase()).digest("hex").toUpperCase();
+    await getDatabasePool().query(`INSERT INTO lms.mail_delivery_attempts(message_type,recipient_fingerprint,status,error_code)
+      VALUES($1,$2,$3,$4)`,[message.kind,fingerprint,status,errorCode?.slice(0,80) ?? null]);
+  } catch (error) {
+    logServerError("auth.mail.delivery_log_failed",error);
+  }
 }
 
 export async function sendAuthEmail(message: AuthEmail) {
@@ -26,6 +38,7 @@ export async function sendAuthEmail(message: AuthEmail) {
   }
 
   if (!process.env.SMTP_HOST || !process.env.SMTP_FROM) {
+    await recordDelivery(message,"failed","smtp_not_configured");
     throw new Error("The approved internal SMTP relay is not configured.");
   }
 
@@ -41,7 +54,15 @@ export async function sendAuthEmail(message: AuthEmail) {
     socketTimeout: 10000,
   });
 
-  await smtpTransport.sendMail({ from: process.env.SMTP_FROM, to: message.to, subject: message.subject, text: `${message.text}\n\n${message.actionUrl}` });
+  try {
+    await smtpTransport.sendMail({ from: process.env.SMTP_FROM, to: message.to, subject: message.subject, text: `${message.text}\n\n${message.actionUrl}` });
+    await recordDelivery(message,"sent");
+  } catch (error) {
+    const errorCode = error && typeof error === "object" && "code" in error ? String(error.code) : "delivery_failed";
+    await recordDelivery(message,"failed",errorCode);
+    logServerError("auth.mail.delivery_failed",error);
+    throw error;
+  }
 }
 
 export async function listLocalMailPreviews() {

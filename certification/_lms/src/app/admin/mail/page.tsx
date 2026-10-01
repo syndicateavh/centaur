@@ -1,9 +1,11 @@
 import { notFound } from "next/navigation";
 import { listLocalMailPreviews } from "@/lib/mail";
+import { requireAdmin } from "@/lib/learner";
 
 export const dynamic = "force-dynamic";
 export default async function LocalMailPreviewPage() {
   if (process.env.NODE_ENV !== "development") notFound();
+  await requireAdmin();
   const messages = await listLocalMailPreviews();
   return <main id="main-content" className="mx-auto w-full max-w-5xl flex-1 px-5 py-10 sm:px-8">
     <p className="text-xs font-bold uppercase tracking-[0.18em] text-navy-800">Local development only</p><h1 className="mt-2 text-3xl font-bold">Auth mail previews</h1>

@@ -6,15 +6,15 @@
     "src/seo/seoRoutes.js"
   ],
   "summary": {
-    "indexableNodeCount": 93,
+    "indexableNodeCount": 97,
     "hubCount": 11,
     "requiredHubEdgeCount": 151,
-    "reciprocalGroupCount": 5,
+    "reciprocalGroupCount": 6,
     "authorityTargetCount": 12,
     "authorityJourneyCount": 13,
     "keywordDestinationCount": 24,
     "discoveryRootCount": 5,
-    "discoveryReachableNodeCount": 93,
+    "discoveryReachableNodeCount": 97,
     "discoveryUnreachableNodeCount": 0,
     "discoveryReachableKeywordDestinationCount": 24,
     "discoveryUnreachableKeywordDestinationCount": 0
@@ -121,6 +121,10 @@
       "about",
       "lead-best-finance-course-placement",
       "lead-finance-institute-lucknow-placement",
+      "terms-and-conditions",
+      "cookie-policy",
+      "refund-cancellation-policy",
+      "disclaimer",
       "lead-finance-course-duration",
       "lead-finance-course-fees-india",
       "lead-finance-course-eligibility",
@@ -605,6 +609,38 @@
     {
       "routeId": "privacy-policy",
       "path": "/privacy-policy/",
+      "parentId": "home",
+      "role": "legal-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "terms-and-conditions",
+      "path": "/terms-and-conditions/",
+      "parentId": "home",
+      "role": "legal-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "cookie-policy",
+      "path": "/cookie-policy/",
+      "parentId": "home",
+      "role": "legal-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "refund-cancellation-policy",
+      "path": "/refund-cancellation-policy/",
+      "parentId": "home",
+      "role": "legal-page",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "disclaimer",
+      "path": "/disclaimer/",
       "parentId": "home",
       "role": "legal-page",
       "keywordOwnerUrl": null,
@@ -1368,6 +1404,28 @@
         {
           "sourceId": "india",
           "targetId": "india-hyderabad"
+        }
+      ],
+      "reciprocal": true
+    },
+    {
+      "id": "legal-policy-cross-navigation",
+      "pairs": [
+        {
+          "sourceId": "privacy-policy",
+          "targetId": "terms-and-conditions"
+        },
+        {
+          "sourceId": "privacy-policy",
+          "targetId": "cookie-policy"
+        },
+        {
+          "sourceId": "privacy-policy",
+          "targetId": "refund-cancellation-policy"
+        },
+        {
+          "sourceId": "privacy-policy",
+          "targetId": "disclaimer"
         }
       ],
       "reciprocal": true
@@ -2142,6 +2200,11 @@
     ],
     "investment-banking-operations": [
       "courses",
+      "courses-finance-course-fees-eligibility",
+      "courses-finance-operations-syllabus",
+      "india-bengaluru",
+      "india-mumbai",
+      "resource-corporate-actions-workflow",
       "courses-banking-courses",
       "retail-banking",
       "finance-operations",
@@ -2195,6 +2258,7 @@
       "courses",
       "career-guide-kyc-aml-analyst",
       "career-guide-fintech-operations",
+      "india-mumbai",
       "resources",
       "resource-investment-banking-interview-questions",
       "placements",
@@ -2307,11 +2371,14 @@
     "india-delhi-ncr": [
       "india",
       "courses",
+      "courses-banking-and-finance",
+      "investment-banking-operations",
       "career-guides",
       "career-guide-finance-operations",
       "career-guide-kyc-aml-analyst",
       "resources",
       "resource-investment-banking-interview-questions",
+      "placements",
       "lucknow-location",
       "faqs",
       "contact"
@@ -2319,11 +2386,14 @@
     "india-bengaluru": [
       "india",
       "courses",
+      "investment-banking-operations",
       "career-guides",
+      "career-guide-investment-banking-operations",
       "career-guide-digital-payments-operations",
       "career-guide-finance-operations",
       "resources",
       "resource-investment-banking-interview-questions",
+      "placements",
       "lucknow-location",
       "faqs",
       "contact"
@@ -2331,11 +2401,14 @@
     "india-mumbai": [
       "india",
       "courses",
+      "kyc-aml-compliance",
       "career-guides",
+      "career-guide-kyc-aml-analyst",
       "career-guide-investment-banking-operations",
       "career-guide-trade-lifecycle",
       "resources",
       "resource-investment-banking-interview-questions",
+      "placements",
       "lucknow-location",
       "faqs",
       "contact"
@@ -2366,7 +2439,43 @@
     "privacy-policy": [
       "home",
       "contact",
-      "courses"
+      "courses",
+      "terms-and-conditions",
+      "cookie-policy",
+      "refund-cancellation-policy",
+      "disclaimer"
+    ],
+    "terms-and-conditions": [
+      "privacy-policy",
+      "refund-cancellation-policy",
+      "cookie-policy",
+      "disclaimer",
+      "courses",
+      "contact"
+    ],
+    "cookie-policy": [
+      "privacy-policy",
+      "terms-and-conditions",
+      "refund-cancellation-policy",
+      "disclaimer",
+      "contact"
+    ],
+    "refund-cancellation-policy": [
+      "privacy-policy",
+      "terms-and-conditions",
+      "cookie-policy",
+      "disclaimer",
+      "courses",
+      "placements",
+      "contact"
+    ],
+    "disclaimer": [
+      "privacy-policy",
+      "terms-and-conditions",
+      "cookie-policy",
+      "refund-cancellation-policy",
+      "courses",
+      "contact"
     ],
     "comparison-investment-banking-operations": [
       "courses",
@@ -2401,6 +2510,8 @@
       "investment-banking-operations",
       "resources",
       "india",
+      "india-bengaluru",
+      "resource-corporate-actions-workflow",
       "resource-investment-banking-interview-questions",
       "career-guide-trade-lifecycle",
       "career-guide-finance-operations",
@@ -2413,6 +2524,7 @@
       "kyc-aml-compliance",
       "resources",
       "india",
+      "india-mumbai",
       "resource-investment-banking-interview-questions",
       "career-guide-finance-operations",
       "career-guide-retail-banking-operations",
@@ -2429,6 +2541,7 @@
       "resource-financial-accounting-banking",
       "resource-financial-statement-analysis",
       "india",
+      "india-delhi-ncr",
       "resource-investment-banking-interview-questions",
       "career-guide-reconciliation-analyst",
       "career-guide-investment-banking-operations",
@@ -2440,6 +2553,7 @@
       "career-guides",
       "courses",
       "investment-banking-operations",
+      "career-guide-settlement-analyst",
       "resources",
       "india",
       "resource-investment-banking-interview-questions",
@@ -2452,6 +2566,7 @@
       "career-guides",
       "courses",
       "lead-best-finance-course-after-bcom",
+      "lead-best-finance-course-after-graduation",
       "resources",
       "india",
       "resource-investment-banking-interview-questions",
@@ -2709,6 +2824,7 @@
       "comparison-finance-operations-vs-financial-modelling-cfa",
       "faqs-finance-program",
       "placements",
+      "india-delhi-ncr",
       "contact"
     ],
     "courses-finance-operations-training": [

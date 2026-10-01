@@ -14,9 +14,9 @@ const questions = [
   { question: "How long will a course take, and how will it be taught?", answer: "Study time, prerequisites, and delivery format have not been approved. Each course page marks these details as pending rather than estimating them." },
   { question: "Can I sign up or start a course?", answer: "Not yet. Student registration, enrollment, lessons, and assessments belong to later implementation phases. This public preview does not create an account." },
   { question: "Is the proposed free learning part of the paid Financial Operations Masterclass?", answer: "No. The proposed free tracks are a separate initiative. The paid Financial Operations Masterclass remains a separate Centaur Careers offer with its own content and terms." },
-  { question: "Will I receive a certificate?", answer: "Centaur is considering course-completion certificates, but certificate wording, completion rules, assessments, pass criteria, and retake policy have not been approved. No certificate is issued by this preview." },
+  { question: "Will I receive a certificate?", answer: "A course-completion certificate is issued only for an approved, published course after the server confirms every required lesson and a passing final assessment for your enrolled course version. The current KYC/AML pilot remains a local draft, so it cannot issue a certificate." },
   { question: "What would a Centaur certificate qualify me to do?", answer: "A future Centaur course-completion certificate would document learning under stated course rules. It would not be a bank, government, regulator, or employer credential, would not authorize regulated work, and would not guarantee a job or placement." },
-  { question: "Will a certificate be publicly verifiable?", answer: "A verification page is shown as a design preview. There are no issued credentials to verify yet. If certificate issuance is approved, Centaur will define which limited details a public lookup displays." },
+  { question: "Will a certificate be publicly verifiable?", answer: "Issued certificates have a non-sequential ID and QR link to a public status page. The page shows the course, issuer, issue date, status, and holder name only when public display has been approved. It never shows account email or assessment answers." },
   { question: "Who can I contact about LMS support?", answer: "A learner-support contact and response process have not been selected. See the help page for the current project status and general Centaur Careers enquiry route." },
 ];
 
@@ -32,7 +32,7 @@ export default function FaqPage() {
         <p className="text-xs font-bold uppercase tracking-[0.15em] text-gold-900">Credential scope</p>
         <h2 id="certificate-scope-heading" className="mt-2 text-2xl font-bold">A proposed learning certificate is not a job or industry licence</h2>
         <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-700">If approved, a Centaur certificate would record completion of a specified educational course under published requirements. It would not be issued by a bank, government, regulator, or employer, and would not guarantee employment, placement, or authority to perform regulated work.</p>
-        <Link href="/certificates/verify" className="mt-4 inline-flex rounded-sm text-sm font-extrabold text-navy-900 hover:underline">View verification page preview <span aria-hidden="true" className="ml-2">→</span></Link>
+        <Link href="/certificates/verify" className="mt-4 inline-flex rounded-sm text-sm font-extrabold text-navy-900 hover:underline">Verify a certificate <span aria-hidden="true" className="ml-2">→</span></Link>
       </section>
       <div className="mt-9 divide-y divide-slate-200 rounded-2xl border border-slate-200 bg-white px-5 sm:px-7">
         {questions.map(({ question, answer }, index) => (

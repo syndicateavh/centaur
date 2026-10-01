@@ -39,6 +39,14 @@ const REGIONAL_ROUTE_IDS = Object.freeze(
     .map((route) => route.id),
 );
 
+const LEGAL_ROUTE_IDS = Object.freeze([
+  'privacy-policy',
+  'terms-and-conditions',
+  'cookie-policy',
+  'refund-cancellation-policy',
+  'disclaimer',
+].filter((routeId) => INDEXABLE_ROUTES.some((route) => route.id === routeId)));
+
 const MODULE_GUIDE_PAIRS = Object.freeze([
   ['investment-banking-operations', 'career-guide-investment-banking-operations'],
   ['retail-banking', 'career-guide-retail-banking-operations'],
@@ -158,6 +166,13 @@ export const SITE_ARCHITECTURE_RECIPROCAL_GROUPS = Object.freeze([
     reciprocal: true,
   }),
   Object.freeze({
+    id: 'legal-policy-cross-navigation',
+    pairs: Object.freeze(LEGAL_ROUTE_IDS
+      .filter((routeId) => routeId !== 'privacy-policy')
+      .map((routeId) => Object.freeze({ sourceId: 'privacy-policy', targetId: routeId }))),
+    reciprocal: true,
+  }),
+  Object.freeze({
     id: 'module-career-topic-paths',
     pairs: Object.freeze(MODULE_GUIDE_PAIRS.flatMap(({ moduleRouteId, guideRouteId }) => [
       Object.freeze({ sourceId: moduleRouteId, targetId: guideRouteId }),
@@ -178,7 +193,7 @@ function roleForRoute(route) {
   if (route.trackId) return 'commercial-module';
   if (route.comparison) return 'comparison';
   if (route.id === 'about') return 'entity-page';
-  if (route.id === 'privacy-policy') return 'legal-page';
+  if (LEGAL_ROUTE_IDS.includes(route.id)) return 'legal-page';
   return 'supporting-page';
 }
 

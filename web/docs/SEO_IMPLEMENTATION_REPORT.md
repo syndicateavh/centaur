@@ -2,6 +2,11 @@
 
 Report date: 2026-09-14
 
+> Historical report: route totals, release results, and validation statements
+> below describe the 14 September 2026 snapshot only. Later high-intent query
+> implementation and current source-level verification are tracked in
+> [`SEO_HIGH_INTENT_PROMPT_COVERAGE_2026-09-30.md`](./SEO_HIGH_INTENT_PROMPT_COVERAGE_2026-09-30.md).
+
 Repository: `centaur/web`
 
 Preservation rule: existing English, claims, branding, business functionality, and page meaning were preserved. The implementation focused on crawlability, metadata, structured data, internal links, performance, accessibility, validation, and deployment verification.

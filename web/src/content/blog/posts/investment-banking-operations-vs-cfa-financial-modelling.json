@@ -188,13 +188,19 @@
     "height": 941
   },
   "publishedAt": "2026-09-15",
-  "updatedAt": "2026-09-26",
+  "updatedAt": "2026-09-30",
   "scheduledAt": null,
   "seo": {
-    "title": "IB Operations vs CFA vs Financial Modelling",
-    "description": "Compare investment banking operations, CFA and financial modelling by career goal, curriculum, study commitment and evidence of skill in India.",
+    "title": "Investment Banking Operations vs CFA and Modelling",
+    "description": "Compare investment banking operations, financial modelling, and CFA study by work, learning goals, and role fit.",
     "canonicalPath": "/blog/investment-banking-operations-vs-cfa-financial-modelling/",
-    "noindex": false
+    "noindex": false,
+    "focusKeyword": "investment banking operations vs CFA",
+    "secondaryKeywords": [
+      "investment banking operations vs financial modelling",
+      "investment banking vs CFA",
+      "finance career paths"
+    ]
   },
   "tags": [
     "Finance Careers",

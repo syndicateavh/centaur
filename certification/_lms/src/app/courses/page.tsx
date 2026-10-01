@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import CourseCatalog from "@/components/CourseCatalog";
+import LearnerNavigation from "@/components/learning/LearnerNavigation";
 import { courseTracks } from "@/data/courses";
+import { getCurrentLearner } from "@/lib/learner";
 
 export const metadata: Metadata = {
   title: "Proposed Banking and Finance Learning Tracks",
@@ -9,8 +11,11 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
-export default function CoursesPage() {
+export default async function CoursesPage() {
+  const learner = await getCurrentLearner();
   return (
+    <>
+    {learner && <LearnerNavigation name={learner.name} />}
     <main id="main-content" className="mx-auto w-full max-w-7xl flex-1 px-5 py-12 sm:px-8 sm:py-16 lg:px-10">
       <div className="max-w-3xl">
         <p className="text-xs font-bold uppercase tracking-[0.18em] text-navy-800">Course catalogue · proposals</p>
@@ -28,5 +33,6 @@ export default function CoursesPage() {
         <p className="mt-2 text-sm leading-6 text-slate-600">Centaur will publish the approved syllabus, expected study effort, prerequisites, teaching format, assessment rules, and certificate scope before accepting learners. The free proposal is separate from the paid Financial Operations Masterclass.</p>
       </aside>
     </main>
+    </>
   );
 }

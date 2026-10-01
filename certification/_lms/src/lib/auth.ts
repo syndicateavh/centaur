@@ -46,6 +46,7 @@ export const auth = betterAuth({
     revokeSessionsOnPasswordReset: true,
     sendResetPassword: async ({ user, url }) => {
       await sendAuthEmail({
+        kind: "password_reset",
         to: user.email,
         subject: "Reset your Centaur Learning password",
         text: "A password reset was requested for your Centaur Learning account. If you made this request, use this one-time link within one hour. If you did not request it, you can ignore this message.",
@@ -60,6 +61,7 @@ export const auth = betterAuth({
     expiresIn: 24 * 60 * 60,
     sendVerificationEmail: async ({ user, url }) => {
       await sendAuthEmail({
+        kind: "verification",
         to: user.email,
         subject: "Verify your Centaur Learning email",
         text: "Confirm that this email address belongs to you to activate your learner account. This link expires in 24 hours. If you did not create an account, you can ignore this message.",

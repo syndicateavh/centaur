@@ -52,10 +52,11 @@ export default function LucknowLocationPage() {
           <article>
             <SectionHeading eyebrow="Training venue" title="Mindsprout Career Hub, Lucknow" />
             <address data-location-address className="rounded-2xl border border-border bg-muted p-7 not-italic text-muted-foreground">
-              <strong className="text-lg text-primary">{BUSINESS_DATA.name}</strong><br />
+              <strong className="text-lg text-primary">{BUSINESS_DATA.trainingLocation.name}</strong><br />
               {BUSINESS_DATA.trainingLocation.address.streetAddress}<br />
               {BUSINESS_DATA.trainingLocation.address.addressLocality}, {BUSINESS_DATA.trainingLocation.address.addressRegion} {BUSINESS_DATA.trainingLocation.address.postalCode}<br />
-              India
+              India<br />
+              Training provider: {BUSINESS_DATA.name}
             </address>
             <div className="mt-6 flex flex-wrap gap-3">
               <a data-location-directions href={BUSINESS_DATA.trainingLocation.mapUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center gap-2 rounded-xl bg-primary px-6 py-3 font-bold text-white">
@@ -76,8 +77,9 @@ export default function LucknowLocationPage() {
           <aside className="rounded-2xl bg-primary p-8 text-white">
             <MapPin className="h-8 w-8 text-accent" aria-hidden="true" />
             <h2 className="mt-5 text-2xl font-bold text-white">{offline.summary}</h2>
+            <p className="mt-3 text-sm font-semibold text-white/75">Current published fee</p>
             <p className="mt-3 text-3xl font-black text-accent">{offline.price}</p>
-            <p className="mt-3 text-white/70">Confirm the current classroom cohort and total payable amount in writing before paying.</p>
+            <p className="mt-2 text-white/70">Reference fee: {offline.originalPrice}. {offline.note} Confirm the current classroom cohort and total payable amount in writing before paying.</p>
             <ul className="mt-6 space-y-3">
               {offline.features.map((feature) => (
                 <li key={feature} className="flex items-start gap-3 text-sm text-white/75">

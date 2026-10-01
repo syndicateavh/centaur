@@ -123,3 +123,18 @@ terms remain owned by `/india/` or the approved national/course destination;
 they are not copied into city pages. `tools/verify-regional-keyword-ownership.js`
 is part of the Phase 2 gate and fails if a regional page starts owning an
 online-intent query or loses its measurement-market mapping.
+
+## 2026-09-30 high-intent owner reconciliation
+
+The source workbook is retained as a historical keyword plan. The later
+attached-prompt implementation uses `src/content/seo/searchIntentOwnership.js`
+as the current route-level owner register and deliberately resolves 19 workbook
+assignments to more specific current pages (including fee, syllabus, course
+module, regional, BCom, reconciliation, settlement, and payment-reconciliation
+owners). `npm run seo:intent:check` reports those differences for review; it
+passes because the register is the current approved routing decision. Do not
+silently rewrite the imported workbook. If that workbook is re-imported, first
+review its target URLs against the current coverage report and route owners.
+
+The current prompt coverage table is in
+[`SEO_HIGH_INTENT_PROMPT_COVERAGE_2026-09-30.md`](./SEO_HIGH_INTENT_PROMPT_COVERAGE_2026-09-30.md).

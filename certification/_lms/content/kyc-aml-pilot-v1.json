@@ -5,8 +5,9 @@
     "summary": "A practical, text-first introduction to customer due diligence, risk awareness, screening, monitoring, and clear case documentation for entry-level banking operations learners.",
     "overview": "This internal pilot introduces a careful, evidence-led approach to KYC and AML operations in an Indian banking context. It uses fictional cases and focuses on recognizing issues, recording facts, and escalating through approved channels. It is educational material, not legal advice, bank policy, or authorization to make regulated decisions.",
     "estimatedMinutes": 265,
-    "contentStatus": "Internal pilot draft — subject-matter review required",
-    "reviewDate": "2026-09-29",
+    "independentPracticeMinutes": 45,
+    "contentStatus": "Internal pilot draft â€” subject-matter review required",
+    "reviewDate": "2026-10-01",
     "reviewer": null,
     "learningObjectives": [
       "Explain the purpose of KYC and AML controls and identify where institutional policy governs a task.",
@@ -28,20 +29,20 @@
       {"term":"FIU-IND","definition":"The Financial Intelligence Unit-India, the national agency that receives, processes, analyses, and disseminates information relating to suspect financial transactions."}
     ],
     "references": [
-      {"title":"RBI Master Direction — Know Your Customer (KYC) Direction, 2016 (updated 14 August 2025)","url":"https://old.rbi.org.in/commonman/English/Scripts/MasterDirection.aspx","accessed":"2026-09-29","note":"Use the latest RBI text and applicable amendments when reviewing this course; the institution's approved policy controls operational work."},
-      {"title":"RBI KYC Amendment Directions, 2025 (12 June 2025)","url":"https://www.rbi.org.in/scripts/NotificationUser.aspx/searchnew/searchnew/NotificationUser.aspx?Id=12866","accessed":"2026-09-29","note":"Included to demonstrate that amendments have dates and scope. Do not rely on time-limited provisions without checking current direction text."},
-      {"title":"Prevention of Money-Laundering Act, 2002 — India Code","url":"https://www.indiacode.nic.in/indiacode/handle/123456789/2036?view_type=browse","accessed":"2026-09-29","note":"Check the current consolidated Act and rules for legal interpretation."},
-      {"title":"Prevention of Money-Laundering (Maintenance of Records) Rules, 2005 — FIU-IND","url":"https://fiuindia.gov.in/pdfs/AML_legislation/PMLA_2005.pdf","accessed":"2026-09-29","note":"Use the latest amendments and institution-approved procedures."}
+      {"title":"RBI Master Direction â€” Know Your Customer (KYC) Direction, 2016 (updated 14 August 2025)","url":"https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=11566","accessed":"2026-10-01","note":"The RBI page lists updates through 14 August 2025, including the June 2025 amendment. Confirm the current text and any later amendments before course approval; institutional policy controls operational work."},
+      {"title":"RBI KYC Amendment Directions, 2025 (12 June 2025)","url":"https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=12866","accessed":"2026-10-01","note":"Included to demonstrate that amendments have dates and scope. The text includes time-bound provisions; verify their current status and the latest consolidated direction before relying on them."},
+      {"title":"Prevention of Money-Laundering Act, 2002 â€” India Code","url":"https://www.indiacode.nic.in/indiacode/handle/123456789/2036?view_type=browse","accessed":"2026-10-01","note":"Check the current consolidated Act and rules for legal interpretation."},
+      {"title":"Prevention of Money-Laundering (Maintenance of Records) Rules, 2005 â€” FIU-IND","url":"https://fiuindia.gov.in/pdfs/AML_legislation/PMLA_2005.pdf","accessed":"2026-10-01","note":"Use the latest amendments and institution-approved procedures."}
     ],
     "casePacket": {
-      "title":"Riverstone Textiles — fictional practice packet",
+      "title":"Riverstone Textiles â€” fictional practice packet",
       "notice":"Every person, business, date, reference, and amount in this exercise is invented. Identifiers are deliberately non-real labels. Do not use real customer information in learning exercises.",
       "facts":[
         "Riverstone Textiles Private Limited is a fictional small business seeking a current account for domestic wholesale operations.",
         "The application lists two directors and states that the business buys fabric from suppliers in three Indian states and sells to retailers.",
         "The ownership chart supplied in the exercise names two fictional shareholders; one branch of the chart ends at an unnamed holding company, so control is not yet clear.",
         "A fictional authorized representative submits a board authorization marked DEMO-DOC-17. The copy is readable, but the authority record has not been checked in the approved system.",
-        "The expected activity note says 20–30 domestic supplier and retailer payments per month. A later fictional alert shows several incoming transfers from a newly introduced counterparty with no matching invoice in the sample file.",
+        "The expected activity note says 20â€“30 domestic supplier and retailer payments per month. A later fictional alert shows several incoming transfers from a newly introduced counterparty with no matching invoice in the sample file.",
         "A screening tool returns a possible name similarity for one director. The available fictional date-of-birth field differs; the approved reviewer has not completed the match review."
       ],
       "questions":[
@@ -127,7 +128,7 @@
         {"type":"list","items":["State the alert trigger, date range, and relevant transactions using approved references.","Describe the customer profile and expected activity relevant to the review.","Identify records checked and their source; distinguish system facts from customer statements.","Explain what is consistent, inconsistent, or still unknown.","Record actions taken, escalation destination, and pending follow-up."]},
         {"type":"paragraph","text":"Avoid vague labels such as 'suspicious customer' or unsupported explanations such as 'probably fraud'. A good note is factual, concise, reproducible, and limited to people who need it. Reporting decisions belong to the designated officer or role under applicable law and institutional policy."},
         {"type":"callout","title":"Confidential reporting","text":"Applicable rules restrict disclosure of certain reporting information. Follow the institution's confidentiality and escalation procedures; never signal a filing or investigation to the customer."},
-        {"type":"activity","title":"Practice: draft a neutral note","text":"Using the case packet, draft 4–6 sentences. Include the stated expected activity, the transfer pattern in the fictional sample, the absent invoice, what has not yet been verified, and the escalation needed. Do not state that a crime occurred."},
+        {"type":"activity","title":"Practice: draft a neutral note","text":"Using the case packet, draft 4â€“6 sentences. Include the stated expected activity, the transfer pattern in the fictional sample, the absent invoice, what has not yet been verified, and the escalation needed. Do not state that a crime occurred."},
         {"type":"takeaways","items":["Alerts initiate review; they do not settle the case.","Separate sourced facts, customer statements, analysis, and next steps.","Use authorized channels and preserve confidentiality."]}
       ]}
     ]},
@@ -138,7 +139,7 @@
         {"type":"heading","text":"Your analyst handoff"},
         {"type":"list","items":["Create a fact / customer-statement / unknown table.","List the ownership and authority checks still needed under the legal-entity procedure.","Record screening similarities and differences without deciding the match.","Compare the observed activity with the stated profile and identify missing context.","Draft a neutral handoff with evidence sources, actions, owner, and next step."]},
         {"type":"activity","title":"Submit your own practice note","text":"Use the downloadable workbook to complete the checklist and draft note. This is a self-check exercise; it is not submitted to the LMS and should not contain real customer data. Compare your answer with the standard: every conclusion should point to evidence, every unknown should remain labelled, and every decision should be routed to an authorized role."},
-        {"type":"callout","title":"Model handoff structure","text":"Trigger and date range → profile context → records and sources reviewed → facts and differences → unresolved questions → actions taken → authorized owner and next step."},
+        {"type":"callout","title":"Model handoff structure","text":"Trigger and date range â†’ profile context â†’ records and sources reviewed â†’ facts and differences â†’ unresolved questions â†’ actions taken â†’ authorized owner and next step."},
         {"type":"takeaways","items":["The case remains unresolved until prescribed checks and authorized decisions are complete.","Write so another reviewer can reproduce the reasoning.","Protect confidentiality throughout the handoff."]}
       ]},
       {"slug":"glossary-and-readiness","title":"Glossary, references, and readiness checklist","minutes":10,"blocks":[
@@ -146,7 +147,7 @@
         {"type":"heading","text":"Before you handle live work"},
         {"type":"list","items":["I know where to find my employer's current KYC/AML procedure and escalation contacts.","I can separate identity, authority, beneficial ownership, and transaction review.","I can distinguish an observed fact from a customer statement and an inference.","I know not to decide a screening match or suspicious activity outside my authority.","I can write a neutral note with source, date, rationale, and next step.","I will not place customer information in personal notes or unapproved tools."]},
         {"type":"paragraph","text":"The glossary and official references are available on the course overview page. Regulatory sources can change after this pilot's review date. Before this material is approved or reused, a qualified reviewer should verify every legal statement and update the source register."},
-        {"type":"callout","title":"Course completion","text":"Completing these lessons marks the lesson checklist only. It is not a professional qualification, assessment pass, bank authorization, or certificate. A later approved course version may add reviewed assessments and certificate rules."},
+        {"type":"callout","title":"Course completion","text":"Completing these lessons records the lesson checklist only. Optional module knowledge checks support practice and do not affect course completion. An approved course is complete only after every required lesson is complete and the learner passes its published final assessment. A Centaur course-completion certificate is available only when the learner completed the same approved course version and assessment. This sandbox preview is not eligible for a certificate."},
         {"type":"takeaways","items":["Use current official sources and current institutional procedure.","Ask an authorized reviewer when you are unsure.","This pilot requires subject-matter signoff before public release."]}
       ]}
     ]}

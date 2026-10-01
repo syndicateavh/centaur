@@ -6,7 +6,6 @@ import {
 import { Link } from 'react-router';
 import { BUSINESS_DATA } from '@/content/businessData.js';
 import { HeroParticleNetwork } from '@/components/home/HeroParticleNetwork.jsx';
-import { PROGRAM } from '@/content/sourceContent.js';
 import { ResponsiveImage } from '@/components/ui/responsive-image.jsx';
 import { BRAND_LOGO_SOURCES } from '@/lib/imagePresets.js';
 
@@ -17,19 +16,22 @@ export function HomeHero({ seo }) {
       <HeroParticleNetwork />
       <div data-home-hero-glow className="home-hero-glow pointer-events-none absolute" aria-hidden="true" />
       <div data-home-hero-orbit className="home-hero-orbit pointer-events-none absolute hidden lg:block" aria-hidden="true" />
-      <div className="home-hero-content relative z-[2] mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(330px,0.85fr)] lg:items-center lg:px-8">
+      <div className="home-hero-content relative z-[2] mx-auto box-border grid w-full min-w-0 max-w-7xl grid-cols-[minmax(0,1fr)] gap-12 pl-4 pr-6 sm:px-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(330px,0.85fr)] lg:items-center lg:px-8">
         <div className="min-w-0 max-w-3xl">
-          <p data-home-hero-reveal className="inline-flex items-center gap-2 rounded-full border border-red-300/35 bg-red-400/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-red-100">
+          <p data-home-hero-reveal className="inline-flex max-w-full flex-wrap items-center gap-2 rounded-full border border-red-300/35 bg-red-400/10 px-3 py-2 text-[0.68rem] font-bold uppercase tracking-[0.1em] text-red-100 sm:px-4 sm:text-xs sm:tracking-[0.16em]">
             <span className="h-2 w-2 rounded-full bg-red-300" />
             6-Week Financial Operations Masterclass
           </p>
-          <p data-home-hero-reveal className="mt-7 text-base font-semibold text-accent sm:text-lg">Practical Banking &amp; Finance Training</p>
-          <h1 id="home-page-title" data-home-lcp className="mt-3 w-full max-w-full font-display text-[clamp(2.75rem,5vw,3.75rem)] font-bold leading-[1.06] tracking-tight text-white">
+          <p data-home-hero-reveal className="mt-7 max-w-full text-base font-semibold text-accent sm:text-lg">Practical Banking &amp; Finance Training</p>
+          <h1 id="home-page-title" data-home-lcp className="mt-3 w-full min-w-0 max-w-full font-display text-[clamp(2rem,8vw,2.75rem)] font-bold leading-[1.02] tracking-tight text-white sm:text-[clamp(2.75rem,5vw,3.75rem)] sm:leading-[1.06]">
             {seo.h1}
           </h1>
+          <h2 data-home-hero-reveal className="mt-4 min-w-0 max-w-full text-lg font-semibold leading-snug text-white/90 sm:text-xl">
+            Financial Operations Masterclass for Banking and Finance Careers
+          </h2>
           <div data-home-hero-reveal className="mt-7 space-y-3">
             {[
-              'Get a guaranteed finance job after completing the six-week program. Open to graduates and job switchers.',
+              'A guaranteed finance job for graduates and job switchers who complete the six-week Financial Operations Masterclass.',
               'Build practical skills across banking operations, KYC and AML, payments, credit, and FinTech.',
               'Choose live online learning across India or in-person sessions in Lucknow.',
               'Prepare for finance interviews through structured practice, projects, and career guidance.',

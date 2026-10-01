@@ -1,8 +1,8 @@
 # Final Release QA Report
 
-Generated: 2026-09-29T10:52:23.018Z
+Generated: 2026-09-29T21:18:36.209Z
 
-Status: **local-qa-passed**
+Status: **local-qa-failed**
 
 This report covers the repository-controlled static release package. It does not claim that search engines have indexed the site or that external authority/backlinks have been earned.
 
@@ -11,18 +11,17 @@ This report covers the repository-controlled static release package. It does not
 - Site origin: https://centaurcareers.in
 - Upload directory: `build/client`
 - Route documents: 98
-- Indexable routes: 93
-- Sitemap URLs: 185
-- Package files: 653
-- Package bytes before transfer compression: 131650006
+- Indexable routes: 97
+- Sitemap URLs: 191
+- Package files: 663
+- Package bytes before transfer compression: 135975334
 - Upload rule: upload the contents of `build/client/`, preserving `.htaccess`; do not upload the repository, `build/server`, or a nested `build/client/` directory.
 
 ## Automated checks
 
-- PASS — `npm.cmd run seo:gate` (69245 ms)
-- PASS — `npm.cmd run deployment:check` (947 ms)
-- PASS — `npm.cmd run seo:authority:report` (766 ms)
-- PASS — `npm.cmd run seo:measure:report` (703 ms)
+- FAIL — `npm.cmd run seo:gate` (68550 ms)
+- PASS — `npm.cmd run seo:authority:report` (815 ms)
+- PASS — `npm.cmd run seo:measure:report` (1000 ms)
 - SKIP — `npm run seo:external -- <deployed-origin>` (0 ms)
 
 ## External deployment
@@ -34,3 +33,7 @@ The live release remains dependent on uploading this package to the configured h
 ## Learning handoff
 
 Run `npm run release:learn` after this QA report to record Search Console, GA4/CRM, and keep/revise/stop decision readiness. Missing exports remain pending evidence.
+
+## Failures
+
+- complete SEO quality gate

@@ -35,7 +35,7 @@ const GUARANTEE_TERMS = Object.freeze([
   Object.freeze({ title: 'Completion requirement', description: 'The job guarantee applies after the learner completes the six-week Financial Operations Masterclass.' }),
   Object.freeze({ title: 'Guaranteed outcome', description: 'A graduate or job switcher who completes the program receives a finance job through the 100% Job Guarantee Program.' }),
   Object.freeze({ title: 'Learning access', description: 'Live online learning is available across India, with an in-person learning option in Lucknow.' }),
-  Object.freeze({ title: 'Scope of the guarantee', description: 'The guarantee covers a finance job. It does not promise a particular employer, salary, role, or city unless that detail is provided separately in writing.' }),
+  Object.freeze({ title: 'Scope of the guarantee', description: 'The published summary guarantees a finance job after completion; it does not name a particular employer, salary, role, or city. Request the full written terms for your cohort.' }),
   Object.freeze({ title: 'Written cohort terms', description: 'Ask for the current written conditions for your cohort before paying, including any attendance, assessment, support-period, or process details.' }),
 ]);
 
@@ -278,7 +278,8 @@ export default function PlacementsPage() {
               <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent-ink">Published program summary</p>
               <h2 id="job-guarantee-terms-title" className="mt-3 text-3xl font-bold text-primary sm:text-4xl">100% Job Guarantee Program summary</h2>
               <p className="mt-5 text-lg leading-relaxed text-muted-foreground">Centaur Careers publishes a finance job guarantee for graduates and job switchers after completing the six-week Financial Operations Masterclass. Request the current written terms for your cohort before enrolling; this page and the downloadable summary do not replace them.</p>
-              <p className="mt-3 text-sm font-semibold text-foreground/70">Last reviewed: 18 September 2026</p>
+              <p className="mt-3 leading-relaxed text-muted-foreground"><strong>Salary opportunity:</strong> Centaur advertises ₹3–12 LPA as an indicative opportunity range, separate from the job guarantee. The guarantee summary does not promise a salary; actual compensation depends on the role, employer, location, experience, and applicable cohort terms. Confirm role-specific details in writing before enrolling.</p>
+              <p className="mt-3 text-sm font-semibold text-foreground/70">Last reviewed: 30 September 2026</p>
             </div>
 
             <div className="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-3">

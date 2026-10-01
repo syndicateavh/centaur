@@ -25,15 +25,15 @@
       "canonicalUrl": "https://centaurcareers.in/courses/",
       "routeId": "courses",
       "page": {
-        "title": "Investment Banking Operations Course | Centaur Careers",
-        "description": "Study investment banking operations in a six-week Masterclass with settlements, reconciliation, live online access across India and a Lucknow option.",
+        "title": "Financial Operations Masterclass | Centaur Careers",
+        "description": "A six-week finance operations course for all graduates, covering banking, investment operations, KYC and AML, payments, and credit. Live online across India or in person in Lucknow.",
         "h1": "Financial Operations Masterclass",
         "purpose": "Primary commercial program hub",
         "type": "Program hub, Program hub / comparison guide",
         "action": "Consolidate"
       },
       "ownership": {
-        "primaryKeyword": "investment banking operations course",
+        "primaryKeyword": "financial operations masterclass",
         "secondaryKeywords": [
           "investment banking course",
           "investment banking course in India",
@@ -234,7 +234,7 @@
           "https://proschoolonline.com/investment-banking-course",
           "https://www.smartsteps.in/gafp"
         ],
-        "lastModified": "2026-09-26",
+        "lastModified": "2026-09-30",
         "governanceStatus": "ready-to-build"
       },
       "indexability": {
@@ -516,6 +516,11 @@
             "label": "Financial Operations Masterclass"
           },
           {
+            "routeId": "disclaimer",
+            "path": "/disclaimer/",
+            "label": "Financial Operations Masterclass"
+          },
+          {
             "routeId": "faqs",
             "path": "/faqs/",
             "label": "Financial Operations Masterclass"
@@ -621,6 +626,11 @@
             "label": "Financial Operations Masterclass"
           },
           {
+            "routeId": "refund-cancellation-policy",
+            "path": "/refund-cancellation-policy/",
+            "label": "Financial Operations Masterclass"
+          },
+          {
             "routeId": "resources",
             "path": "/resources/",
             "label": "Financial Operations Masterclass"
@@ -691,6 +701,11 @@
             "label": "Financial Operations Masterclass"
           },
           {
+            "routeId": "terms-and-conditions",
+            "path": "/terms-and-conditions/",
+            "label": "Financial Operations Masterclass"
+          },
+          {
             "routeId": "lead-which-finance-course-right",
             "path": "/which-finance-course-is-right-for-me/",
             "label": "Financial Operations Masterclass"
@@ -736,7 +751,7 @@
           {
             "routeId": "courses-finance-course-for-graduates",
             "path": "/courses/finance-course-for-graduates/",
-            "label": "Finance Course for Graduates: Role Fit and Learning Plan",
+            "label": "Finance Course for Graduates from Any Background",
             "authorityTier": "supporting"
           },
           {
@@ -784,7 +799,7 @@
           {
             "routeId": "placements",
             "path": "/placements/",
-            "label": "100% Job Guarantee Program",
+            "label": "100% Job Guarantee Program for Finance Careers in India",
             "authorityTier": "commercial-support"
           },
           {
@@ -814,7 +829,7 @@
           {
             "routeId": "comparison-best-finance-institutes-india",
             "path": "/compare/best-finance-institutes-india/",
-            "label": "Best Finance Institutes in India: How to Compare",
+            "label": "Top Finance Institutes in India: Compare Courses and Placement Terms",
             "authorityTier": "supporting"
           },
           {
@@ -904,7 +919,7 @@
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Financial Operations Masterclass: Live Online Across India",
+            "label": "Live Online Finance Course Across India",
             "authorityTier": "national-hub"
           },
           {
@@ -950,7 +965,7 @@
             "authorityTier": "supporting"
           }
         ],
-        "inboundCount": 89,
+        "inboundCount": 92,
         "outboundCount": 42,
         "orphan": false
       },
@@ -967,8 +982,8 @@
       "canonicalUrl": "https://centaurcareers.in/locations/lucknow/",
       "routeId": "lucknow-location",
       "page": {
-        "title": "Finance and Investment Banking Course in Lucknow",
-        "description": "Centaur Careers in-person sessions at Mindsprout Career Hub, R K Tower, 70/2, Sector B, Barabirwa, Alambagh, Lucknow, Uttar Pradesh 226005.",
+        "title": "Finance & Investment Banking Course in Lucknow | Centaur Careers",
+        "description": "Study the six-week Financial Operations Masterclass in person at Mindsprout Career Hub, Alambagh, Lucknow. Review the curriculum, fees, and current cohort details.",
         "h1": "Finance and Investment Banking Course in Lucknow",
         "purpose": "Local Lucknow acquisition page",
         "type": "Real local page",
@@ -1016,7 +1031,7 @@
         "evidenceUrls": [
           "https://proschoolonline.com/investment-banking-course/investment-banking-course-in-lucknow"
         ],
-        "lastModified": "2026-09-26",
+        "lastModified": "2026-09-30",
         "governanceStatus": "needs-business-verification"
       },
       "indexability": {
@@ -1141,13 +1156,13 @@
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Financial Operations Masterclass: Live Online Across India",
+            "label": "Live Online Finance Course Across India",
             "authorityTier": "national-hub"
           },
           {
             "routeId": "placements",
             "path": "/placements/",
-            "label": "100% Job Guarantee Program",
+            "label": "100% Job Guarantee Program for Finance Careers in India",
             "authorityTier": "commercial-support"
           },
           {
@@ -1249,7 +1264,7 @@
         "evidenceUrls": [
           "https://www.smartsteps.in/kyc-aml"
         ],
-        "lastModified": "2026-09-29",
+        "lastModified": "2026-09-30",
         "governanceStatus": "ready-to-build"
       },
       "indexability": {
@@ -1286,6 +1301,11 @@
             "label": "KYC & AML Compliance Learning Module"
           },
           {
+            "routeId": "india-mumbai",
+            "path": "/india/mumbai/",
+            "label": "KYC & AML Compliance Learning Module"
+          },
+          {
             "routeId": "resource-kyc-aml-compliance-guide",
             "path": "/resources/kyc-aml-compliance-guide/",
             "label": "KYC & AML Compliance Learning Module"
@@ -1311,6 +1331,12 @@
             "authorityTier": "supporting"
           },
           {
+            "routeId": "india-mumbai",
+            "path": "/india/mumbai/",
+            "label": "Mumbai Investment Operations: Online Course and Career Guide",
+            "authorityTier": "supporting"
+          },
+          {
             "routeId": "resources",
             "path": "/resources/",
             "label": "Finance Career Resources",
@@ -1325,7 +1351,7 @@
           {
             "routeId": "placements",
             "path": "/placements/",
-            "label": "100% Job Guarantee Program",
+            "label": "100% Job Guarantee Program for Finance Careers in India",
             "authorityTier": "commercial-support"
           },
           {
@@ -1341,8 +1367,8 @@
             "authorityTier": "supporting"
           }
         ],
-        "inboundCount": 5,
-        "outboundCount": 8,
+        "inboundCount": 6,
+        "outboundCount": 9,
         "orphan": false
       },
       "conversionDestination": {
@@ -1358,15 +1384,15 @@
       "canonicalUrl": "https://centaurcareers.in/india/",
       "routeId": "india",
       "page": {
-        "title": "Live Online Finance Course Across India | Centaur Careers",
-        "description": "Join the six-week Financial Operations Masterclass live online across India. Compare investment banking and BFSI modules with in-person access in Lucknow.",
-        "h1": "Financial Operations Masterclass: Live Online Across India",
+        "title": "Online Finance Course in India | Centaur Careers",
+        "description": "Join the six-week Financial Operations Masterclass live online across India. Classroom sessions are available in Lucknow. Review curriculum, eligibility, and fees.",
+        "h1": "Live Online Finance Course Across India",
         "purpose": "Pan-India access and regional career hub",
         "type": "National hub initially, National landing page",
         "action": "Consolidate"
       },
       "ownership": {
-        "primaryKeyword": "investment banking operations course India",
+        "primaryKeyword": "finance career training India",
         "secondaryKeywords": [
           "online investment banking operations course India",
           "finance operations training India",
@@ -1612,7 +1638,7 @@
           "https://imarticus.org/certified-investment-banking-operations-program-lucknow/",
           "https://imarticus.org/certified-investment-banking-operations-program/"
         ],
-        "lastModified": "2026-09-26",
+        "lastModified": "2026-09-30",
         "governanceStatus": "needs-business-verification"
       },
       "indexability": {
@@ -1631,197 +1657,197 @@
           {
             "routeId": "home",
             "path": "/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "about",
             "path": "/about/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "blog",
             "path": "/blog/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "career-guides",
             "path": "/career-guides/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "career-guide-digital-payments-operations",
             "path": "/career-guides/digital-payments-operations/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "career-guide-finance-careers-after-graduation",
             "path": "/career-guides/finance-careers-after-graduation/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "career-guide-finance-operations",
             "path": "/career-guides/finance-operations/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "career-guide-financial-operations-faq",
             "path": "/career-guides/financial-operations-faq/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "career-guide-fintech-operations",
             "path": "/career-guides/fintech-operations/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "career-guide-investment-banking-operations",
             "path": "/career-guides/investment-banking-operations/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "career-guide-kyc-aml-analyst",
             "path": "/career-guides/kyc-aml-analyst/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "career-guide-retail-banking-operations",
             "path": "/career-guides/retail-banking-operations/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "career-guide-trade-lifecycle",
             "path": "/career-guides/trade-lifecycle/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "comparison-best-finance-institutes-india",
             "path": "/compare/best-finance-institutes-india/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "comparison-investment-banking-operations",
             "path": "/compare/investment-banking-operations-courses/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "comparison-online-vs-offline-finance-training",
             "path": "/compare/online-vs-offline-finance-training/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "contact",
             "path": "/contact/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "courses",
             "path": "/courses/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "digital-payments",
             "path": "/courses/digital-payments/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "finance-operations",
             "path": "/courses/finance-operations/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "investment-banking-operations",
             "path": "/courses/investment-banking-operations/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "retail-banking",
             "path": "/courses/retail-banking/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "faqs",
             "path": "/faqs/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "lead-finance-course-cities-india",
             "path": "/finance-course-cities-india/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "india-bengaluru",
             "path": "/india/bengaluru/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "india-delhi-ncr",
             "path": "/india/delhi-ncr/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "india-hyderabad",
             "path": "/india/hyderabad/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "india-mumbai",
             "path": "/india/mumbai/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "india-pune",
             "path": "/india/pune/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "lucknow-location",
             "path": "/locations/lucknow/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "lead-online-finance-course-placement",
             "path": "/online-finance-course-with-placement/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "placements",
             "path": "/placements/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "quiz",
             "path": "/quiz/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "resources",
             "path": "/resources/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "resource-accounting-basics",
             "path": "/resources/accounting-basics/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "resource-finance-gk",
             "path": "/resources/finance-gk/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "resource-financial-system-india",
             "path": "/resources/financial-system-india/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "resource-investment-banking-interview-questions",
             "path": "/resources/investment-banking-interview-questions/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           },
           {
             "routeId": "resource-reconciliation-in-finance",
             "path": "/resources/reconciliation-in-finance/",
-            "label": "Financial Operations Masterclass: Live Online Across India"
+            "label": "Live Online Finance Course Across India"
           }
         ],
         "outbound": [
@@ -1864,7 +1890,7 @@
           {
             "routeId": "courses-finance-course-for-graduates",
             "path": "/courses/finance-course-for-graduates/",
-            "label": "Finance Course for Graduates: Role Fit and Learning Plan",
+            "label": "Finance Course for Graduates from Any Background",
             "authorityTier": "supporting"
           },
           {
@@ -1918,7 +1944,7 @@
           {
             "routeId": "comparison-best-finance-institutes-india",
             "path": "/compare/best-finance-institutes-india/",
-            "label": "Best Finance Institutes in India: How to Compare",
+            "label": "Top Finance Institutes in India: Compare Courses and Placement Terms",
             "authorityTier": "supporting"
           },
           {
@@ -1948,7 +1974,7 @@
           {
             "routeId": "placements",
             "path": "/placements/",
-            "label": "100% Job Guarantee Program",
+            "label": "100% Job Guarantee Program for Finance Careers in India",
             "authorityTier": "commercial-support"
           },
           {
@@ -2168,7 +2194,7 @@
           {
             "routeId": "comparison-best-finance-institutes-india",
             "path": "/compare/best-finance-institutes-india/",
-            "label": "Best Finance Institutes in India: How to Compare",
+            "label": "Top Finance Institutes in India: Compare Courses and Placement Terms",
             "authorityTier": "supporting"
           },
           {
@@ -2198,7 +2224,7 @@
           {
             "routeId": "placements",
             "path": "/placements/",
-            "label": "100% Job Guarantee Program",
+            "label": "100% Job Guarantee Program for Finance Careers in India",
             "authorityTier": "commercial-support"
           },
           {
@@ -2232,7 +2258,7 @@
       "routeId": "india-delhi-ncr",
       "page": {
         "title": "Investment Banking Course in Delhi | Online NCR Guide",
-        "description": "Explore live online finance training from Delhi-NCR for investment banking, KYC, payments, and GCC roles. Review the 100% Job Guarantee Program terms.",
+        "description": "Explore online banking operations, KYC, payments and finance training from Delhi-NCR. Review the current placement and 100% Job Guarantee Program terms.",
         "h1": "Delhi-NCR Finance Operations: Online Course and Career Guide",
         "purpose": "Supporting module, career or regional page",
         "type": "Regional guide",
@@ -2312,7 +2338,7 @@
         "evidenceUrls": [
           "https://imarticus.org/certified-investment-banking-operations-program-lucknow/"
         ],
-        "lastModified": "2026-09-26",
+        "lastModified": "2026-09-30",
         "governanceStatus": "ready-to-build"
       },
       "indexability": {
@@ -2329,6 +2355,16 @@
       "internalLinks": {
         "inbound": [
           {
+            "routeId": "career-guide-finance-operations",
+            "path": "/career-guides/finance-operations/",
+            "label": "Delhi-NCR Finance Operations: Online Course and Career Guide"
+          },
+          {
+            "routeId": "courses-banking-and-finance",
+            "path": "/courses/banking-and-finance/",
+            "label": "Delhi-NCR Finance Operations: Online Course and Career Guide"
+          },
+          {
             "routeId": "lead-finance-course-cities-india",
             "path": "/finance-course-cities-india/",
             "label": "Delhi-NCR Finance Operations: Online Course and Career Guide"
@@ -2343,7 +2379,7 @@
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Financial Operations Masterclass: Live Online Across India",
+            "label": "Live Online Finance Course Across India",
             "authorityTier": "national-hub"
           },
           {
@@ -2351,6 +2387,18 @@
             "path": "/courses/",
             "label": "Financial Operations Masterclass",
             "authorityTier": "priority-commercial"
+          },
+          {
+            "routeId": "courses-banking-and-finance",
+            "path": "/courses/banking-and-finance/",
+            "label": "Banking and Finance Course for Career Starters",
+            "authorityTier": "supporting"
+          },
+          {
+            "routeId": "investment-banking-operations",
+            "path": "/courses/investment-banking-operations/",
+            "label": "Investment Banking Operations Training",
+            "authorityTier": "commercial-module"
           },
           {
             "routeId": "career-guides",
@@ -2383,6 +2431,12 @@
             "authorityTier": "supporting"
           },
           {
+            "routeId": "placements",
+            "path": "/placements/",
+            "label": "100% Job Guarantee Program for Finance Careers in India",
+            "authorityTier": "commercial-support"
+          },
+          {
             "routeId": "lucknow-location",
             "path": "/locations/lucknow/",
             "label": "Finance and Investment Banking Course in Lucknow",
@@ -2401,8 +2455,8 @@
             "authorityTier": "supporting"
           }
         ],
-        "inboundCount": 2,
-        "outboundCount": 10,
+        "inboundCount": 4,
+        "outboundCount": 13,
         "orphan": false
       },
       "conversionDestination": {
@@ -2419,7 +2473,7 @@
       "routeId": "india-bengaluru",
       "page": {
         "title": "Investment Banking Course in Bangalore | Online Guide",
-        "description": "Join the live online Masterclass from Bengaluru to explore finance operations, fintech, payments, and GCC roles. Review 100% Job Guarantee Program terms.",
+        "description": "Study investment banking operations online from Bengaluru and explore finance, fintech, payments and GCC roles. Review placement and Job Guarantee Program terms.",
         "h1": "Bengaluru Finance and FinTech Operations: Online Course Guide",
         "purpose": "Supporting module, career or regional page",
         "type": "Regional guide",
@@ -2483,7 +2537,7 @@
         "evidenceUrls": [
           "https://www.upgrad.com/offline-centres/certificate-global-investment-banking-operations-course-in-pune-city/"
         ],
-        "lastModified": "2026-09-26",
+        "lastModified": "2026-09-30",
         "governanceStatus": "ready-to-build"
       },
       "indexability": {
@@ -2500,6 +2554,16 @@
       "internalLinks": {
         "inbound": [
           {
+            "routeId": "career-guide-investment-banking-operations",
+            "path": "/career-guides/investment-banking-operations/",
+            "label": "Bengaluru Finance and FinTech Operations: Online Course Guide"
+          },
+          {
+            "routeId": "investment-banking-operations",
+            "path": "/courses/investment-banking-operations/",
+            "label": "Bengaluru Finance and FinTech Operations: Online Course Guide"
+          },
+          {
             "routeId": "lead-finance-course-cities-india",
             "path": "/finance-course-cities-india/",
             "label": "Bengaluru Finance and FinTech Operations: Online Course Guide"
@@ -2514,7 +2578,7 @@
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Financial Operations Masterclass: Live Online Across India",
+            "label": "Live Online Finance Course Across India",
             "authorityTier": "national-hub"
           },
           {
@@ -2524,10 +2588,22 @@
             "authorityTier": "priority-commercial"
           },
           {
+            "routeId": "investment-banking-operations",
+            "path": "/courses/investment-banking-operations/",
+            "label": "Investment Banking Operations Training",
+            "authorityTier": "commercial-module"
+          },
+          {
             "routeId": "career-guides",
             "path": "/career-guides/",
             "label": "Finance Operations Career Guides",
             "authorityTier": "information-hub"
+          },
+          {
+            "routeId": "career-guide-investment-banking-operations",
+            "path": "/career-guides/investment-banking-operations/",
+            "label": "Investment Banking Operations: Career, Roles & Skills",
+            "authorityTier": "supporting"
           },
           {
             "routeId": "career-guide-digital-payments-operations",
@@ -2554,6 +2630,12 @@
             "authorityTier": "supporting"
           },
           {
+            "routeId": "placements",
+            "path": "/placements/",
+            "label": "100% Job Guarantee Program for Finance Careers in India",
+            "authorityTier": "commercial-support"
+          },
+          {
             "routeId": "lucknow-location",
             "path": "/locations/lucknow/",
             "label": "Finance and Investment Banking Course in Lucknow",
@@ -2572,8 +2654,8 @@
             "authorityTier": "supporting"
           }
         ],
-        "inboundCount": 2,
-        "outboundCount": 10,
+        "inboundCount": 4,
+        "outboundCount": 13,
         "orphan": false
       },
       "conversionDestination": {
@@ -2590,7 +2672,7 @@
       "routeId": "india-mumbai",
       "page": {
         "title": "Investment Banking Course in Mumbai | Online Guide",
-        "description": "Explore Mumbai finance operations online, including trade support, settlements, and reconciliation. Review the 100% Job Guarantee Program terms.",
+        "description": "Explore KYC AML and finance operations courses online from Mumbai, including trade support and settlements. Review current placement and job guarantee terms.",
         "h1": "Mumbai Investment Operations: Online Course and Career Guide",
         "purpose": "Supporting module, career or regional page",
         "type": "Regional guide",
@@ -2638,7 +2720,7 @@
         "evidenceUrls": [
           "https://imarticus.org/certified-investment-banking-operations-program-lucknow/"
         ],
-        "lastModified": "2026-09-26",
+        "lastModified": "2026-09-30",
         "governanceStatus": "ready-to-build"
       },
       "indexability": {
@@ -2655,6 +2737,21 @@
       "internalLinks": {
         "inbound": [
           {
+            "routeId": "career-guide-kyc-aml-analyst",
+            "path": "/career-guides/kyc-aml-analyst/",
+            "label": "Mumbai Investment Operations: Online Course and Career Guide"
+          },
+          {
+            "routeId": "investment-banking-operations",
+            "path": "/courses/investment-banking-operations/",
+            "label": "Mumbai Investment Operations: Online Course and Career Guide"
+          },
+          {
+            "routeId": "kyc-aml-compliance",
+            "path": "/courses/kyc-aml/",
+            "label": "Mumbai Investment Operations: Online Course and Career Guide"
+          },
+          {
             "routeId": "india",
             "path": "/india/",
             "label": "Mumbai Investment Operations: Online Course and Career Guide"
@@ -2664,7 +2761,7 @@
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Financial Operations Masterclass: Live Online Across India",
+            "label": "Live Online Finance Course Across India",
             "authorityTier": "national-hub"
           },
           {
@@ -2674,10 +2771,22 @@
             "authorityTier": "priority-commercial"
           },
           {
+            "routeId": "kyc-aml-compliance",
+            "path": "/courses/kyc-aml/",
+            "label": "KYC & AML Compliance Learning Module",
+            "authorityTier": "informational-module"
+          },
+          {
             "routeId": "career-guides",
             "path": "/career-guides/",
             "label": "Finance Operations Career Guides",
             "authorityTier": "information-hub"
+          },
+          {
+            "routeId": "career-guide-kyc-aml-analyst",
+            "path": "/career-guides/kyc-aml-analyst/",
+            "label": "KYC & AML Analyst Career Guide",
+            "authorityTier": "supporting"
           },
           {
             "routeId": "career-guide-investment-banking-operations",
@@ -2704,6 +2813,12 @@
             "authorityTier": "supporting"
           },
           {
+            "routeId": "placements",
+            "path": "/placements/",
+            "label": "100% Job Guarantee Program for Finance Careers in India",
+            "authorityTier": "commercial-support"
+          },
+          {
             "routeId": "lucknow-location",
             "path": "/locations/lucknow/",
             "label": "Finance and Investment Banking Course in Lucknow",
@@ -2722,8 +2837,8 @@
             "authorityTier": "supporting"
           }
         ],
-        "inboundCount": 1,
-        "outboundCount": 10,
+        "inboundCount": 4,
+        "outboundCount": 13,
         "orphan": false
       },
       "conversionDestination": {
@@ -2814,7 +2929,7 @@
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Financial Operations Masterclass: Live Online Across India",
+            "label": "Live Online Finance Course Across India",
             "authorityTier": "national-hub"
           },
           {
@@ -2856,7 +2971,7 @@
           {
             "routeId": "placements",
             "path": "/placements/",
-            "label": "100% Job Guarantee Program",
+            "label": "100% Job Guarantee Program for Finance Careers in India",
             "authorityTier": "commercial-support"
           },
           {
@@ -2964,7 +3079,7 @@
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Financial Operations Masterclass: Live Online Across India",
+            "label": "Live Online Finance Course Across India",
             "authorityTier": "national-hub"
           },
           {
@@ -3000,7 +3115,7 @@
           {
             "routeId": "placements",
             "path": "/placements/",
-            "label": "100% Job Guarantee Program",
+            "label": "100% Job Guarantee Program for Finance Careers in India",
             "authorityTier": "commercial-support"
           },
           {
@@ -3326,7 +3441,7 @@
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Financial Operations Masterclass: Live Online Across India",
+            "label": "Live Online Finance Course Across India",
             "authorityTier": "national-hub"
           },
           {
@@ -3380,7 +3495,7 @@
           {
             "routeId": "placements",
             "path": "/placements/",
-            "label": "100% Job Guarantee Program",
+            "label": "100% Job Guarantee Program for Finance Careers in India",
             "authorityTier": "commercial-support"
           },
           {
@@ -3667,7 +3782,13 @@
           {
             "routeId": "lead-best-finance-course-after-bcom",
             "path": "/best-finance-course-after-bcom/",
-            "label": "BCom Finance Course Comparison Checklist for Career Fit",
+            "label": "Finance Course After BCom: Compare Skills, Roles and Placement Terms",
+            "authorityTier": "supporting"
+          },
+          {
+            "routeId": "lead-best-finance-course-after-graduation",
+            "path": "/best-finance-course-after-graduation/",
+            "label": "How to Choose a Finance Course After BTech or a Non-Commerce Degree",
             "authorityTier": "supporting"
           },
           {
@@ -3679,7 +3800,7 @@
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Financial Operations Masterclass: Live Online Across India",
+            "label": "Live Online Finance Course Across India",
             "authorityTier": "national-hub"
           },
           {
@@ -3720,7 +3841,7 @@
           }
         ],
         "inboundCount": 14,
-        "outboundCount": 11,
+        "outboundCount": 12,
         "orphan": false
       },
       "conversionDestination": {
@@ -3916,6 +4037,11 @@
             "label": "Investment Banking Operations: Career, Roles & Skills"
           },
           {
+            "routeId": "india-bengaluru",
+            "path": "/india/bengaluru/",
+            "label": "Investment Banking Operations: Career, Roles & Skills"
+          },
+          {
             "routeId": "india-mumbai",
             "path": "/india/mumbai/",
             "label": "Investment Banking Operations: Career, Roles & Skills"
@@ -3959,8 +4085,20 @@
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Financial Operations Masterclass: Live Online Across India",
+            "label": "Live Online Finance Course Across India",
             "authorityTier": "national-hub"
+          },
+          {
+            "routeId": "india-bengaluru",
+            "path": "/india/bengaluru/",
+            "label": "Bengaluru Finance and FinTech Operations: Online Course Guide",
+            "authorityTier": "supporting"
+          },
+          {
+            "routeId": "resource-corporate-actions-workflow",
+            "path": "/resources/corporate-actions-workflow/",
+            "label": "Corporate Actions Workflow: Events, Dates and Controls",
+            "authorityTier": "supporting"
           },
           {
             "routeId": "resource-investment-banking-interview-questions",
@@ -3989,12 +4127,12 @@
           {
             "routeId": "placements",
             "path": "/placements/",
-            "label": "100% Job Guarantee Program",
+            "label": "100% Job Guarantee Program for Finance Careers in India",
             "authorityTier": "commercial-support"
           }
         ],
-        "inboundCount": 13,
-        "outboundCount": 10,
+        "inboundCount": 14,
+        "outboundCount": 12,
         "orphan": false
       },
       "conversionDestination": {
@@ -4308,6 +4446,12 @@
             "authorityTier": "commercial-module"
           },
           {
+            "routeId": "career-guide-settlement-analyst",
+            "path": "/career-guides/settlement-analyst/",
+            "label": "Settlement Analyst: Role, Workflow and Skills",
+            "authorityTier": "supporting"
+          },
+          {
             "routeId": "resources",
             "path": "/resources/",
             "label": "Finance Career Resources",
@@ -4316,7 +4460,7 @@
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Financial Operations Masterclass: Live Online Across India",
+            "label": "Live Online Finance Course Across India",
             "authorityTier": "national-hub"
           },
           {
@@ -4351,7 +4495,7 @@
           }
         ],
         "inboundCount": 12,
-        "outboundCount": 10,
+        "outboundCount": 11,
         "orphan": false
       },
       "conversionDestination": {
@@ -4749,8 +4893,14 @@
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Financial Operations Masterclass: Live Online Across India",
+            "label": "Live Online Finance Course Across India",
             "authorityTier": "national-hub"
+          },
+          {
+            "routeId": "india-delhi-ncr",
+            "path": "/india/delhi-ncr/",
+            "label": "Delhi-NCR Finance Operations: Online Course and Career Guide",
+            "authorityTier": "supporting"
           },
           {
             "routeId": "resource-investment-banking-interview-questions",
@@ -4785,12 +4935,12 @@
           {
             "routeId": "placements",
             "path": "/placements/",
-            "label": "100% Job Guarantee Program",
+            "label": "100% Job Guarantee Program for Finance Careers in India",
             "authorityTier": "commercial-support"
           }
         ],
         "inboundCount": 34,
-        "outboundCount": 14,
+        "outboundCount": 15,
         "orphan": false
       },
       "conversionDestination": {
@@ -5024,6 +5174,11 @@
             "label": "KYC & AML Analyst Career Guide"
           },
           {
+            "routeId": "india-mumbai",
+            "path": "/india/mumbai/",
+            "label": "KYC & AML Analyst Career Guide"
+          },
+          {
             "routeId": "resource-investment-banking-interview-questions",
             "path": "/resources/investment-banking-interview-questions/",
             "label": "KYC & AML Analyst Career Guide"
@@ -5062,8 +5217,14 @@
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Financial Operations Masterclass: Live Online Across India",
+            "label": "Live Online Finance Course Across India",
             "authorityTier": "national-hub"
+          },
+          {
+            "routeId": "india-mumbai",
+            "path": "/india/mumbai/",
+            "label": "Mumbai Investment Operations: Online Course and Career Guide",
+            "authorityTier": "supporting"
           },
           {
             "routeId": "resource-investment-banking-interview-questions",
@@ -5092,7 +5253,7 @@
           {
             "routeId": "placements",
             "path": "/placements/",
-            "label": "100% Job Guarantee Program",
+            "label": "100% Job Guarantee Program for Finance Careers in India",
             "authorityTier": "commercial-support"
           },
           {
@@ -5102,8 +5263,8 @@
             "authorityTier": "supporting"
           }
         ],
-        "inboundCount": 14,
-        "outboundCount": 11,
+        "inboundCount": 15,
+        "outboundCount": 12,
         "orphan": false
       },
       "conversionDestination": {
@@ -5256,7 +5417,7 @@
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Financial Operations Masterclass: Live Online Across India",
+            "label": "Live Online Finance Course Across India",
             "authorityTier": "national-hub"
           },
           {
@@ -5292,7 +5453,7 @@
           {
             "routeId": "placements",
             "path": "/placements/",
-            "label": "100% Job Guarantee Program",
+            "label": "100% Job Guarantee Program for Finance Careers in India",
             "authorityTier": "commercial-support"
           }
         ],
@@ -5472,7 +5633,7 @@
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Financial Operations Masterclass: Live Online Across India",
+            "label": "Live Online Finance Course Across India",
             "authorityTier": "national-hub"
           },
           {
@@ -5568,7 +5729,7 @@
         "evidenceUrls": [
           "https://timespro.com/early-career/investment-banking-operations-program"
         ],
-        "lastModified": "2026-09-29",
+        "lastModified": "2026-09-30",
         "governanceStatus": "ready-to-build"
       },
       "indexability": {
@@ -5647,7 +5808,7 @@
           {
             "routeId": "placements",
             "path": "/placements/",
-            "label": "100% Job Guarantee Program",
+            "label": "100% Job Guarantee Program for Finance Careers in India",
             "authorityTier": "commercial-support"
           },
           {
@@ -5683,7 +5844,7 @@
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Financial Operations Masterclass: Live Online Across India",
+            "label": "Live Online Finance Course Across India",
             "authorityTier": "national-hub"
           },
           {
@@ -5892,7 +6053,7 @@
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Financial Operations Masterclass: Live Online Across India",
+            "label": "Live Online Finance Course Across India",
             "authorityTier": "national-hub"
           },
           {
@@ -5990,7 +6151,7 @@
         "evidenceUrls": [
           "https://www.upgrad.com/offline-centres/certificate-global-investment-banking-operations-course/"
         ],
-        "lastModified": "2026-09-29",
+        "lastModified": "2026-09-30",
         "governanceStatus": "ready-to-build"
       },
       "indexability": {
@@ -6055,13 +6216,13 @@
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Financial Operations Masterclass: Live Online Across India",
+            "label": "Live Online Finance Course Across India",
             "authorityTier": "national-hub"
           },
           {
             "routeId": "placements",
             "path": "/placements/",
-            "label": "100% Job Guarantee Program",
+            "label": "100% Job Guarantee Program for Finance Careers in India",
             "authorityTier": "commercial-support"
           },
           {
@@ -6268,7 +6429,7 @@
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Financial Operations Masterclass: Live Online Across India",
+            "label": "Live Online Finance Course Across India",
             "authorityTier": "national-hub"
           },
           {
@@ -6280,7 +6441,7 @@
           {
             "routeId": "placements",
             "path": "/placements/",
-            "label": "100% Job Guarantee Program",
+            "label": "100% Job Guarantee Program for Finance Careers in India",
             "authorityTier": "commercial-support"
           },
           {
@@ -6348,7 +6509,7 @@
         "evidenceUrls": [
           "https://www.upgrad.com/offline-centres/certificate-global-investment-banking-operations-course/"
         ],
-        "lastModified": "2026-09-29",
+        "lastModified": "2026-09-30",
         "governanceStatus": "ready-to-build"
       },
       "indexability": {
@@ -6414,7 +6575,7 @@
           {
             "routeId": "placements",
             "path": "/placements/",
-            "label": "100% Job Guarantee Program",
+            "label": "100% Job Guarantee Program for Finance Careers in India",
             "authorityTier": "commercial-support"
           },
           {
@@ -6584,7 +6745,7 @@
           {
             "routeId": "comparison-best-finance-institutes-india",
             "path": "/compare/best-finance-institutes-india/",
-            "label": "Best Finance Institutes in India: How to Compare",
+            "label": "Top Finance Institutes in India: Compare Courses and Placement Terms",
             "authorityTier": "supporting"
           },
           {
@@ -6602,7 +6763,7 @@
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Financial Operations Masterclass: Live Online Across India",
+            "label": "Live Online Finance Course Across India",
             "authorityTier": "national-hub"
           },
           {
@@ -6614,7 +6775,7 @@
           {
             "routeId": "placements",
             "path": "/placements/",
-            "label": "100% Job Guarantee Program",
+            "label": "100% Job Guarantee Program for Finance Careers in India",
             "authorityTier": "commercial-support"
           },
           {

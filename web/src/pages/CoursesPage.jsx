@@ -29,13 +29,13 @@ export default function CoursesPage() {
 
   return (
     <>
-      <PageHero routeId="courses" eyebrow={PROGRAM.model} title={seo.h1} intro="One six-week finance course for graduates and job switchers. Study investment banking operations alongside KYC and AML, retail banking, digital payments, finance operations, and FinTech through the Financial Operations Masterclass." />
+      <PageHero routeId="courses" eyebrow={PROGRAM.model} title={seo.h1} intro="One six-week finance course for graduates and job switchers. Study investment banking operations alongside KYC and AML, retail banking, digital payments, finance operations, and FinTech through the Financial Operations Masterclass. Compare the published online and Lucknow options, then confirm the current cohort details." />
 
       <section data-course-direct-answer className="border-b border-border bg-white py-8" aria-labelledby="course-direct-answer-title">
         <div className="container mx-auto min-w-0 max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="min-w-0 max-w-4xl">
-          <h2 id="course-direct-answer-title" className="text-2xl font-bold text-primary">Is this an investment banking operations course?</h2>
-          <p className="mx-0 mt-3 max-w-none leading-relaxed text-muted-foreground">Yes. Investment banking operations training is part of Centaur Careers' single six-week Financial Operations Masterclass. The module introduces trade settlements, reconciliation, corporate actions, and fund accounting. The complete course also covers other banking and finance operations topics. Join live online from across India or ask about the published in-person option in Lucknow.</p>
+          <h2 id="course-direct-answer-title" className="text-2xl font-bold text-primary">What does the Financial Operations Masterclass cover?</h2>
+          <p className="mx-0 mt-3 max-w-none leading-relaxed text-muted-foreground">The six-week Financial Operations Masterclass is a finance operations course for graduates and job switchers. It covers banking and investment operations, KYC and AML, retail banking, digital payments, credit, and FinTech. Investment banking operations is one module within the programme, including trade settlements, reconciliation, corporate actions, and fund accounting. Join live online across India or study in person in Lucknow.</p>
           <p className="mx-0 mt-3 max-w-none text-sm leading-relaxed text-muted-foreground">Before enrolling, confirm the current cohort schedule, fees, certificate wording, and written support terms with the team.</p>
           <p className="mx-0 mt-3 max-w-none text-sm leading-relaxed text-muted-foreground">First compare <Link to="/career-guides/investment-banking-operations/" className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">what investment banking operations analysts do</Link> with the topics taught here. Then use the <Link to="/career-guides/choosing-finance-career-course/" className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">finance course selection checklist</Link> to review the syllabus, study mode, full cost, certificate, and current support terms.</p>
           <div className="mt-5 flex flex-wrap gap-3">
@@ -60,8 +60,8 @@ export default function CoursesPage() {
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Banking and finance training"
-            title="A practical finance course for graduates and beginners"
-            intro="If you are comparing finance courses, this six-week program combines live instruction, practical BFSI scenarios, a course completion certificate, and structured career support in one learning pathway."
+            title="A practical finance course for graduates and job switchers"
+            intro="If you are comparing finance courses, review the six-week curriculum, published learning modes and fees, certificate wording, and current written career-support terms for this single program."
             align="center"
           />
           <div className="grid gap-5 md:grid-cols-3">
@@ -71,13 +71,13 @@ export default function CoursesPage() {
               <Link to="/india/" className="mt-5 inline-flex items-center gap-2 font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">Explore online access across India <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
             </article>
             <article className="rounded-2xl border border-border bg-white p-7 shadow-sm">
-              <h2 className="text-xl font-bold text-primary">Finance training for job-ready skills</h2>
-              <p className="mt-3 leading-relaxed text-muted-foreground">Build practical understanding across investment banking operations, retail banking, KYC and AML, digital payments, finance operations, and FinTech.</p>
+              <h2 className="text-xl font-bold text-primary">Finance training for graduates new to the sector</h2>
+              <p className="mt-3 leading-relaxed text-muted-foreground">Graduates and job switchers can explore investment banking operations, retail banking, KYC and AML, digital payments, finance operations, and FinTech without previous finance experience.</p>
               <Link to="/career-guides/" className="mt-5 inline-flex items-center gap-2 font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">Compare finance career paths <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
             </article>
             <article className="rounded-2xl border border-border bg-white p-7 shadow-sm">
-              <h2 className="text-xl font-bold text-primary">Course Certificate and Career Support</h2>
-              <p className="mt-3 leading-relaxed text-muted-foreground">Complete the six-week program and receive a Centaur Careers Course Completion Certificate, along with interview preparation and placement support.</p>
+              <h2 className="text-xl font-bold text-primary">Course certificate and job guarantee</h2>
+              <p className="mt-3 leading-relaxed text-muted-foreground">The published program describes a Centaur Careers Course Completion Certificate and a guaranteed finance job for graduates and job switchers after completing the six-week course. Confirm certificate requirements and current written cohort terms before enrolling.</p>
               <Link to="/placements/" className="mt-5 inline-flex items-center gap-2 font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">Explore the 100% Job Guarantee Program <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
             </article>
           </div>
@@ -98,7 +98,7 @@ export default function CoursesPage() {
                 </tr>
                 <tr>
                   <th scope="row" className="bg-muted/40 px-6 py-4 font-bold text-primary">Delivery Modes &amp; Published Fees</th>
-                  <td className="px-6 py-4 text-foreground/85">Online Mode: ₹35,000 (live interactive sessions across India) | Offline Mode: ₹50,000 (classroom training at Mindsprout Career Hub, Lucknow)</td>
+                  <td className="px-6 py-4 text-foreground/85">{LEARNING_MODES.map((mode) => `${mode.name} mode: ${mode.price} (reference fee ${mode.originalPrice})`).join(' | ')}. Confirm the applicable cohort fee and validity with Centaur Careers.</td>
                 </tr>
                 <tr>
                   <th scope="row" className="bg-muted/40 px-6 py-4 font-bold text-primary">Core Curriculum Modules</th>
@@ -212,10 +212,11 @@ export default function CoursesPage() {
             {LEARNING_MODES.map((mode) => (
               <article key={mode.name} className="rounded-2xl border border-border p-8 shadow-sm">
                 <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">{mode.name} Mode</p>
+                <p className="mt-4 text-sm font-semibold text-accent-ink">Current published fee</p>
                 <div className="mt-4 flex items-baseline gap-3">
                   <span className="text-4xl font-extrabold text-primary">{mode.price}</span>
                 </div>
-                <p className="mt-2 text-sm text-muted-foreground">Confirm the total payable amount and cohort terms in writing before paying.</p>
+                <p className="mt-2 text-sm text-muted-foreground">Reference fee: {mode.originalPrice}. {mode.note} Confirm the total payable amount and cohort terms in writing before paying.</p>
                 <p className="mt-3 text-muted-foreground">{mode.summary}</p>
                 <ul className="mt-6 space-y-3">
               {mode.features.map((feature) => <li key={feature} className="flex items-start gap-3 text-sm text-foreground/75"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-accent-ink" aria-hidden="true" />{feature}</li>)}
@@ -258,16 +259,27 @@ export default function CoursesPage() {
       </section>
 
       <section data-high-value-section="commercial-decision" className="bg-muted py-12">
-        <div className="container mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Before you apply"
-            title="Check course fit, mode, and current support terms"
-            intro="If you are comparing an investment banking operations course or a job-oriented finance course, match the curriculum to the workflow you want to practise, then confirm the current cohort, fees, certificate wording, and support terms with Centaur Careers."
+            title="One programme, with a source page for each enrolment decision"
+            intro="Use the page that owns the answer you need: published fees and entry criteria, syllabus and duration, placement terms, or the questions to ask before enrolling. Request written cohort details for anything that needs confirmation."
             align="center"
           />
-          <div className="mt-7 flex flex-wrap justify-center gap-3">
-            <Link to="/career-guides/choosing-finance-career-course/" className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-border bg-white px-5 py-3 font-bold text-primary">Use the course comparison guide <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
-            <Link to="/contact/" className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-primary px-5 py-3 font-bold text-white">Ask about the current cohort <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+            {[
+              ['/courses/finance-course-fees-eligibility/', 'Fees and entry', 'Published mode fees, graduation entry rule, and written terms.'],
+              ['/courses/finance-operations-syllabus/', 'Syllabus and duration', 'The six-week learning sequence and topics to confirm for a cohort.'],
+              ['/placements/#job-guarantee-terms', 'Placement terms', 'The published Job Guarantee Program summary and current-term request.'],
+              ['/blog/questions-to-ask-finance-institute-before-enrolling/', 'Before-enrolment checklist', 'Questions about practice, access, costs, certificates, refunds, and support.'],
+              ['/contact/', 'Ask about a cohort', 'Request written answers to details that are not stated on the source pages.'],
+            ].map(([path, title, description]) => (
+              <Link key={path} to={path} className="rounded-2xl border border-border bg-white p-5 text-left shadow-sm transition hover:-translate-y-0.5 hover:border-accent/60 hover:shadow-md">
+                <span className="block font-bold text-primary">{title}</span>
+                <span className="mt-2 block text-sm leading-relaxed text-muted-foreground">{description}</span>
+                <span className="mt-4 inline-flex items-center gap-2 text-sm font-bold text-primary">Open source page <ArrowRight className="h-4 w-4" aria-hidden="true" /></span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "status": "local-qa-passed",
-  "generatedAt": "2026-09-29T10:52:23.018Z",
+  "status": "local-qa-failed",
+  "generatedAt": "2026-09-29T21:18:36.209Z",
   "repository": "centaur/web",
   "gitCommit": "89d3a2b781131c711afc3646a8c9f0b33da50c56",
   "nodeVersion": "v22.23.1",
@@ -9,10 +9,10 @@
   "siteOrigin": "https://centaurcareers.in",
   "buildDirectory": "build/client",
   "uploadBoundary": "Upload the contents of build/client/ into the hosting document root; do not upload the build/client directory itself.",
-  "releaseReadyForUpload": true,
-  "indexableRouteCount": 93,
+  "releaseReadyForUpload": false,
+  "indexableRouteCount": 97,
   "routeDocumentCount": 98,
-  "sitemapUrlCount": 185,
+  "sitemapUrlCount": 191,
   "routes": [
     {
       "id": "home",
@@ -221,28 +221,28 @@
       "id": "terms-and-conditions",
       "path": "/terms-and-conditions/",
       "canonical": "https://centaurcareers.in/terms-and-conditions/",
-      "indexable": false,
+      "indexable": true,
       "prerenderPath": "/terms-and-conditions"
     },
     {
       "id": "cookie-policy",
       "path": "/cookie-policy/",
       "canonical": "https://centaurcareers.in/cookie-policy/",
-      "indexable": false,
+      "indexable": true,
       "prerenderPath": "/cookie-policy"
     },
     {
       "id": "refund-cancellation-policy",
       "path": "/refund-cancellation-policy/",
       "canonical": "https://centaurcareers.in/refund-cancellation-policy/",
-      "indexable": false,
+      "indexable": true,
       "prerenderPath": "/refund-cancellation-policy"
     },
     {
       "id": "disclaimer",
       "path": "/disclaimer/",
       "canonical": "https://centaurcareers.in/disclaimer/",
-      "indexable": false,
+      "indexable": true,
       "prerenderPath": "/disclaimer"
     },
     {
@@ -702,8 +702,8 @@
     }
   ],
   "package": {
-    "fileCount": 653,
-    "totalBytes": 131650006,
+    "fileCount": 663,
+    "totalBytes": 135975334,
     "files": [
       {
         "path": ".htaccess",
@@ -713,92 +713,87 @@
       {
         "path": "404/index.html",
         "bytes": 26634,
-        "sha256": "c4897250e06d3d0f7fb9e81bdb3ddd1dcee35dbc9d4d0cbb85079501997c402c"
+        "sha256": "8e11b143deb1a6f4465c3c2bc0d5eaf0c92b4a93a9a17cc98dedbbefe84da464"
       },
       {
         "path": "about/index.html",
-        "bytes": 45281,
-        "sha256": "6d0c3cd8772349bea61049416b107bc157c6310c7bfff3ad52ca37df48f146ec"
+        "bytes": 47810,
+        "sha256": "2ff46a0021b3de79238b3f541aa4a35de558f39d9e693bc45bd334e92a90472a"
       },
       {
-        "path": "assets/BlogContentRenderer-Dp9UT0iE.js",
+        "path": "assets/BlogContentRenderer-BouABoHi.js",
         "bytes": 2544,
-        "sha256": "0b6785c565b66be4a701b159f9b94616075bed1adb9a74d383e66d7413771cd6"
+        "sha256": "abe66f2ee1d3312ac015d7a4d9feca4d55eaac2554a34dc7fa5dc1540b09c27c"
       },
       {
-        "path": "assets/BlogPostCard-DiCQMdoT.js",
-        "bytes": 1620,
-        "sha256": "ac6b38c993b14620046ad9b832a17ae80085424214340005707b018c481e3257"
+        "path": "assets/BlogPostCard-dT2LOT_G.js",
+        "bytes": 1622,
+        "sha256": "aa66e46f88af59401ea7470d3de5dc8e43edfdb49a8767bea8785239803d624c"
       },
       {
-        "path": "assets/CallToAction-DRieCxvd.js",
-        "bytes": 2543,
-        "sha256": "dcdb3ea798c0abc7b119479ccfcbfb9b62e3e1f33e4f8d2b6a1089f5f1fb2e7c"
+        "path": "assets/CallToAction-DiBhGXTz.js",
+        "bytes": 2545,
+        "sha256": "68f1cf30b83dc5ebb96bb89cfc4e324ed536f0d984b28ae391268be94fe9315d"
       },
       {
-        "path": "assets/CareerGuidePage-C1m-ifCU.js",
+        "path": "assets/CareerGuidePage-T0LtM39-.js",
         "bytes": 2758,
-        "sha256": "902cc306732b9848b16672807e063a6e7afc914866751b2d7c9d7ff702d9afda"
+        "sha256": "d1b84e52115deb9a655d1ff2cbef116af68b748108b18a481bab37d2fa8c4d15"
       },
       {
-        "path": "assets/CommercialDecisionChecklist-N4ypn1ci.js",
-        "bytes": 3351,
-        "sha256": "35adb3bddc3a97baf5de3bdfc01e7a1d4bb1f3524f1aba7a6fe9d7bbabae6789"
+        "path": "assets/CourseDetailPage-Cwmu630w.js",
+        "bytes": 8281,
+        "sha256": "fc274db08c92bd38c674fbc0d5511cd49133cfd8e7a4e149b1b36cc0ea0e34d7"
       },
       {
-        "path": "assets/CourseDetailPage-ib65ZjIk.js",
-        "bytes": 8256,
-        "sha256": "43391f51660fd1b67cd842cf87e17bc21dd966dd5e20dee7e8804d730b736f88"
+        "path": "assets/InformationalModulePage-BAz_vYn3.js",
+        "bytes": 3708,
+        "sha256": "6fafdc687861457d5ccb294147d105baae0195bb584ba6e6a606568280a5264c"
       },
       {
-        "path": "assets/InformationalModulePage-DW1fxi8e.js",
-        "bytes": 3694,
-        "sha256": "357b1ac1cbff0c650f5ecc36b84a59f079fb02d8b4d19297db3b2b04200a5fd9"
+        "path": "assets/InternalLinkGroup-BNOxjRis.js",
+        "bytes": 1707,
+        "sha256": "8a4e6814319fec827539e5157f00b5e226c7b9dd1c27302e54ae39fef4b19408"
       },
       {
-        "path": "assets/InternalLinkGroup-DLW2L6sP.js",
-        "bytes": 1052,
-        "sha256": "8fa00060989818970a5cc430cd600961e67e6ec52382ff39d798a95004712832"
-      },
-      {
-        "path": "assets/LegalPage-BDRSdGRs.js",
+        "path": "assets/LegalPage-ClxeCXZu.js",
         "bytes": 2043,
-        "sha256": "64395407296ae6f902d93902d23f9127c6d9be09c81efeb7b7115d972041cf58"
+        "sha256": "6ed548892ef7aff915b3c9e67d97bebdc8af80875e9cb2eb43f1974feba8d0e7"
       },
       {
-        "path": "assets/NotFoundPage-BEcFzItD.js",
+        "path": "assets/NotFoundPage-CN2kdH2c.js",
         "bytes": 1694,
-        "sha256": "fdbaf79b8d72bd80e512be33e0cf82a2aa55d4067e362e1e8445e5f976562806"
+        "sha256": "55781aaaa2e26982457eb13b27f95048471f63643e87e772b4af955e9b43c8cb"
       },
       {
-        "path": "assets/PageShell-CW0rNu1u.js",
-        "bytes": 1630,
-        "sha256": "3f2dfe3fae541fdb83a40f2b01f082ab12a37d0f49a059cb324848bbe8eb64c4"
+        "path": "assets/PageShell-DYdvGkGU.js",
+        "bytes": 1596,
+        "sha256": "9771ef405b11377ac293ab7c07b0ec9329c73f998538e321f9ba44ba23c2409f"
       },
       {
-        "path": "assets/PriorityComparisonPage-CH9--kUd.js",
+        "path": "assets/PriorityComparisonPage-aXi4KhKs.js",
         "bytes": 4353,
-        "sha256": "0008f4796f1deb0485f3d6fc0144b60407d8bbc3c4ae77ab9971f3df1fcc747c"
+        "sha256": "d63fa384f2650cca0baad1894ad30ae2c1f4c3801a3f3fb76c8d1268985fa837"
       },
       {
-        "path": "assets/PriorityLandingPage-Bzc2scGW.js",
-        "bytes": 2187,
-        "sha256": "d24ba3a979ee7bccee6f4013cd4a09df84b2ed684536f21da86f2552d1d9bfb5"
+        "path": "assets/PriorityLandingPage-CxM51QXj.js",
+        "bytes": 13751,
+        "sha256": "e53863c93cd8f88d2bd24a8a89d17edb2b1abb12ee629206f2697f0588ebdb67"
       },
       {
-        "path": "assets/RegionalPage-5t99WhZh.js",
-        "bytes": 14772,
-        "sha256": "5da6157000b093db5477ff17b54e0a8c8e7fd4aa8ad310dafb057f1a4da438f3"
+        "path": "assets/RegionalPage-DtaLvuj6.js",
+        "bytes": 15073,
+        "sha256": "2238249ebc2b565f7fcc968a569032779284c47c818d30751eeb06725bbf2c1c"
       },
       {
-        "path": "assets/ResourcePage-BA1nn4rp.js",
+        "path": "assets/ResourcePage-DL9rVerI.js",
         "bytes": 9688,
-        "sha256": "e32c912207becf7c30bbed8464ada9f45b3e5f068a9f224d3ed66769e01063b0"
+        "sha256": "4750e4a10ca96f554aefd8204c61512f1c19f87613bb4b9f82063f36d222651a"
       },
       {
-        "path": "assets/RoleIntentPathway-BkQoHmEy.js",
-        "bytes": 3292,
-        "sha256": "942926c2c368664639953189fc1625c9df7c0113f40a90f88ef2ea18480c1a7a"
+        "path": "assets/RoleIntentPathway-CTrm7wBg.js",
+        "bytes": 3294,
+        "sha256": "6ec252d7aa83368cf737cac782ffb7d712ce3fb56c94d8735cf6c9b8826eecb4"
       },
       {
         "path": "assets/ScrollTrigger-BrDuEirF.js",
@@ -811,189 +806,194 @@
         "sha256": "971092766229318d8dde1f82c0faaa8cf0c2c768d90802ef613a15ebcc4ac268"
       },
       {
-        "path": "assets/about-DZfyAg8v.js",
-        "bytes": 2515,
-        "sha256": "65ea7d61a2a07e532ae053291d1b81fbbeccd84428f47b9348b1b1076c0604c0"
+        "path": "assets/TopicProgramPathway-BV5Y9kVq.js",
+        "bytes": 5998,
+        "sha256": "8186fd256923b5707c8fe988b21f85b6e69a4fc677aeb3ecc79b5ac74b11e71d"
       },
       {
-        "path": "assets/arrow-right-D80Zzi_k.js",
-        "bytes": 169,
-        "sha256": "423aae129f32827becb4a6a03927d4334aca6f478716298c3fdb944d0107767f"
+        "path": "assets/about-BIHu56ds.js",
+        "bytes": 5168,
+        "sha256": "60ac9730d013f44559ffcf0eb0aee4480653854cc3224f60ed98a11bf787406c"
       },
       {
-        "path": "assets/blog-DtG30-jv.js",
-        "bytes": 4210,
-        "sha256": "a53e7080915337f2b016c6ba5d8f4961ea87bef6b6cd92068a31445172db377e"
+        "path": "assets/blog-DDnfkVf4.js",
+        "bytes": 4212,
+        "sha256": "8cbd09f24c46d9109bb11aa05daa424b4c1f89961e5c695d33c7e685f42851ea"
       },
       {
-        "path": "assets/blog-category-twt4sT4v.js",
-        "bytes": 3791,
-        "sha256": "aa36bb2ceda05ca619e9588b472ed2224ffd7781254b079402efe10913dd179a"
+        "path": "assets/blog-category-CGyQraUY.js",
+        "bytes": 3793,
+        "sha256": "ca58e2546057b5ccbec810558ddcf2488c092b643dc3197e5ccc18c7fffd3894"
       },
       {
-        "path": "assets/blog-portal-DA3wgEan.js",
+        "path": "assets/blog-portal-KR54GXXT.js",
         "bytes": 37959,
-        "sha256": "ce904f0209ac89ab89ddf79a7ee537d34ee79c45c88078dc62aa5c6f123e5bc8"
+        "sha256": "49b6015735bf87a646d0d62b81f4b9e3edcc13da0abe43ff69480d95fe1feb69"
       },
       {
-        "path": "assets/blog-post-gfK-wage.js",
-        "bytes": 4572,
-        "sha256": "5fe3515a92a0c66bd1a903b0759bc13671e3bc0f8c3811456635b58ddd0d1ff9"
+        "path": "assets/blog-post-CoJIiVYt.js",
+        "bytes": 4574,
+        "sha256": "8fc34eeb97f6756477e55347359dea0825b673293b32f4d6c29696007119f485"
       },
       {
-        "path": "assets/blogSeo-C45pEF02.js",
+        "path": "assets/blogSeo-Hl-AvLl0.js",
         "bytes": 11505,
-        "sha256": "def2329a468b1647a29e43ff381c69563756578c645c9f14bc8994d18f9131cd"
+        "sha256": "ca2e505f354c7ebe0b210f06f71f47014d51b394948a9b023105c428a5a7487f"
       },
       {
-        "path": "assets/blogStorage-Um49s8Na.js",
-        "bytes": 909633,
-        "sha256": "6ca86b83f77a8900c8ab0c54d130521aef04d3eba8ab81f03af6ed8ad36b9575"
+        "path": "assets/blogStorage-CAm0sJVe.js",
+        "bytes": 925706,
+        "sha256": "2c2d61a95b1b1875968304346996f42667bd32d5af27b4a211c246fd9309c2c2"
       },
       {
-        "path": "assets/calendar-days-stajitgz.js",
+        "path": "assets/calendar-days-DrBK8ZQ6.js",
         "bytes": 498,
-        "sha256": "082c1ded908377820c11a56b47136ee0763a0d999a3b85e09c85a57cbb0ad4bb"
+        "sha256": "89beafcecbd529d3b299292638f50b0fa3848852be4ebf7b05dec33d5fb62f6e"
       },
       {
-        "path": "assets/career-guide-back-office-banking-jobs-CeC9GJl6.js",
-        "bytes": 747,
-        "sha256": "07bf57c0b9ef615f7b907cfd75ee414ef984709c5611df7adaad9afb6b8a0d3d"
-      },
-      {
-        "path": "assets/career-guide-business-analyst-in-banking-BOEtvLq_.js",
-        "bytes": 753,
-        "sha256": "ca04b7e17a4452afbf282aab1f8f9192728032127aeba7dfa8546ef54803bda1"
-      },
-      {
-        "path": "assets/career-guide-choosing-finance-career-course-hHIueorO.js",
-        "bytes": 754,
-        "sha256": "e22b5f50dc1ab2a432d7a45db97950b82ec8863b5c504c7d462ab048c40c8dd3"
-      },
-      {
-        "path": "assets/career-guide-credit-analyst-M0Stq5an.js",
-        "bytes": 727,
-        "sha256": "59da6223b004dae6fbe6c4262e20b5414940eafbc7a732bf09444eb560a7a49e"
-      },
-      {
-        "path": "assets/career-guide-credit-operations-analyst-phZatUhd.js",
+        "path": "assets/career-guide-back-office-banking-jobs-CWa2jPPI.js",
         "bytes": 749,
-        "sha256": "b70a249ac3863e3b706387a439bf480057b1baf82204ff5d4591d8641e93d51c"
+        "sha256": "c9d4d01bb005968196cd8d7160f3735f0d6382e91b39f3d93b82e297eda60dfd"
       },
       {
-        "path": "assets/career-guide-custody-operations-kP5N1nDm.js",
-        "bytes": 735,
-        "sha256": "82179f48fd226805f86f95a688c234f0e8ff46892ce0ebabe76c146c78b33212"
+        "path": "assets/career-guide-business-analyst-in-banking-DOdfY2Oj.js",
+        "bytes": 755,
+        "sha256": "081b3ead0af090f5703a41699903e8ebb8dec88baf2bd0ea950e6d474ab2ea1c"
       },
       {
-        "path": "assets/career-guide-digital-payments-operations-BPmOSBWp.js",
-        "bytes": 753,
-        "sha256": "12327e75c5d2a170ec01a1ee92ec3117ee57ac211ff0035ff527ad06f78bab42"
+        "path": "assets/career-guide-choosing-finance-career-course-DfLX_cHz.js",
+        "bytes": 756,
+        "sha256": "1c80242e2e953cbadd7cba5588df63a4e2fdc75ba92909b537f3e34bf56c7e03"
       },
       {
-        "path": "assets/career-guide-finance-careers-after-graduation-bnaaU1e6.js",
-        "bytes": 763,
-        "sha256": "0adbe5e4dc27587d0c58c93e4b87f83f26769bcaedbe35bc41bf268174af8920"
-      },
-      {
-        "path": "assets/career-guide-finance-learning-roadmap-BuxK3NJK.js",
-        "bytes": 742,
-        "sha256": "d88a02fd8bd1642d30322c8f52d12ee3e8c318be6b5c20394f5f460808ede59a"
-      },
-      {
-        "path": "assets/career-guide-finance-operations-D_30fRAO.js",
-        "bytes": 730,
-        "sha256": "e7d74a3760124caa9c40b606860508638399e661263a4496d927649998a5b918"
-      },
-      {
-        "path": "assets/career-guide-financial-operations-faq-DSXX0-LA.js",
-        "bytes": 742,
-        "sha256": "a04c212638308e85576c974f8e9fc4a6de82ca7e1534f347f247d3848ace9093"
-      },
-      {
-        "path": "assets/career-guide-fintech-operations-gXgPyc56.js",
-        "bytes": 735,
-        "sha256": "4ab4ec3471c6b3259ce47baf4ba0e5732fb750ec0a40286d76a19315eed311b7"
-      },
-      {
-        "path": "assets/career-guide-investment-banking-operations-CWh3OfZb.js",
-        "bytes": 757,
-        "sha256": "19bebfe4ce707a87c23427c7c67931f1a183c4449fb234f8721a7706ccb6c91a"
-      },
-      {
-        "path": "assets/career-guide-investment-banking-operations-roles-Bne3h0ta.js",
-        "bytes": 769,
-        "sha256": "fe73bbb1b846bdd47f45e70b27445f6b7beb77313e6af6ef7a6cd8b0326eed77"
-      },
-      {
-        "path": "assets/career-guide-kyc-aml-analyst-DXiImYIY.js",
+        "path": "assets/career-guide-credit-analyst-x1lRDAfa.js",
         "bytes": 729,
-        "sha256": "1f4f9f1d3ae3bdfc931fd42059c438e2ade96f11d7987009e28dd1d4b3ba7a33"
+        "sha256": "d5b04ad5227486e96235e67a2b0f78cc41a27b0e535af9d5329b1640306b611c"
       },
       {
-        "path": "assets/career-guide-middle-office-operations-keX2w-w2.js",
-        "bytes": 747,
-        "sha256": "cbebd56587286e8751db7a87e2769990471f5491f5ad64f73c382479feb3ecf9"
-      },
-      {
-        "path": "assets/career-guide-operations-analyst-banking-DMsaGeMw.js",
-        "bytes": 746,
-        "sha256": "314a1776dc3acbcd37143e9be6ba11319646f1df98ddfc513edb0f4dcd12a74c"
-      },
-      {
-        "path": "assets/career-guide-reconciliation-analyst-DZY85NTp.js",
-        "bytes": 738,
-        "sha256": "3a2eddb8ada17c64e4b609395045a3d133e70c26614147493aa5e63c6304f643"
-      },
-      {
-        "path": "assets/career-guide-retail-banking-operations-CDj4MvVx.js",
-        "bytes": 749,
-        "sha256": "8c1596eb68141bf6a954e3ef7f2ad5776191a389db1278b15fe8fdfb9bf3a75c"
-      },
-      {
-        "path": "assets/career-guide-risk-operations-analyst-B25TO5uP.js",
-        "bytes": 745,
-        "sha256": "0cd55567227861faf58ffa038d71989b75a19718f32536cf66ce5a036c932f0b"
-      },
-      {
-        "path": "assets/career-guide-securities-operations-BjupuUCB.js",
-        "bytes": 741,
-        "sha256": "fe6e270b65bc7555638492139c63d86d04d0d11e6d933980553a08efe0f4b0a7"
-      },
-      {
-        "path": "assets/career-guide-settlement-analyst-C2LPxya3.js",
-        "bytes": 735,
-        "sha256": "b98c55c1e2f16c2974936e189486032561445e9f4c95ad1614f712f694732356"
-      },
-      {
-        "path": "assets/career-guide-trade-lifecycle-DbI2OOIj.js",
-        "bytes": 729,
-        "sha256": "d256129ee67d3f1d8940cf529f4f74415bb4ff6073afd66489a4c920a98a9bc4"
-      },
-      {
-        "path": "assets/career-guide-trade-support-analyst-xRfyVYWy.js",
-        "bytes": 741,
-        "sha256": "3b36d66356fcea358f6cc022696636d66cc49513af1c036c34976b21d99b528c"
-      },
-      {
-        "path": "assets/career-guide-transaction-monitoring-analyst-CfN8NnsX.js",
-        "bytes": 754,
-        "sha256": "2d635fcaea7fcdfb0b9eaf8f53ee9a3b6ac462b3f6d80868d2c7dad0b4288ab5"
-      },
-      {
-        "path": "assets/career-guide-what-is-investment-banking-_UrqTXrO.js",
+        "path": "assets/career-guide-credit-operations-analyst-En8KwTwA.js",
         "bytes": 751,
-        "sha256": "3fd246ddfba41452acf8a812b9192add6b688866824ccad6dc8e750937d9d0d4"
+        "sha256": "695e5e59122e6587132c73d15e14eeea64b3f05056655e3abec99f86a98c2ba6"
       },
       {
-        "path": "assets/career-guides-ExXzwboI.js",
-        "bytes": 6714,
-        "sha256": "4f47b74cb1a6d2885ecf9e9a2072da537840bdd3c491d2f4be86922362cbeb65"
+        "path": "assets/career-guide-custody-operations-C-N_GTAE.js",
+        "bytes": 737,
+        "sha256": "cefffec4c35fc82bbdd25081bceb55d868d0ab3404351bf5b4edd4ce2776dd40"
       },
       {
-        "path": "assets/catch-all-Dqkt-jA5.js",
+        "path": "assets/career-guide-digital-payments-operations-3ZfzEPtk.js",
+        "bytes": 755,
+        "sha256": "b8496e777f53f7a54b6f247ae109b0b903ba8d4874e6b6b5975156a7fccf63be"
+      },
+      {
+        "path": "assets/career-guide-finance-careers-after-graduation-BvassuhJ.js",
+        "bytes": 765,
+        "sha256": "b2fee1a6b0e3698c3ded36aef98fec69921a2004254f6ff00ce60e2d952a92cf"
+      },
+      {
+        "path": "assets/career-guide-finance-learning-roadmap-CR1VkVHX.js",
+        "bytes": 744,
+        "sha256": "ac9b2685d9030639292e257db69daa0a53b2abb898a000ae19abbfe8c021ea65"
+      },
+      {
+        "path": "assets/career-guide-finance-operations-DcvsjVSz.js",
+        "bytes": 732,
+        "sha256": "6675f5e39448395fb2ff389683a0a64db2bdb09c111f632f00c472b6fc1bfa1b"
+      },
+      {
+        "path": "assets/career-guide-financial-operations-faq-BclMrzNy.js",
+        "bytes": 744,
+        "sha256": "0b5011691ccc2e7e046a23101c0cc7aa6381116c0a0dc89aa59b2f116b683247"
+      },
+      {
+        "path": "assets/career-guide-fintech-operations-DBa0tdtP.js",
+        "bytes": 737,
+        "sha256": "52a7e81961f33b2043e011e0e2f32423675ee9cd660ab38cf3fbcd5e1a4f3dae"
+      },
+      {
+        "path": "assets/career-guide-investment-banking-operations-Bj4I1Zs5.js",
+        "bytes": 759,
+        "sha256": "ee59a77d8a154674228b771fb0e0e405c8901ec801a038661e00ed111517631d"
+      },
+      {
+        "path": "assets/career-guide-investment-banking-operations-roles-BacrIiBd.js",
+        "bytes": 771,
+        "sha256": "a806a30aae02988d4b894970762d4b4ed9f6a10d1bf5b48356558edbafced8f7"
+      },
+      {
+        "path": "assets/career-guide-kyc-aml-analyst-gK13kjVG.js",
+        "bytes": 731,
+        "sha256": "4e9693a4a40625783b0d5ed27b692f6fc14cea5705ec87b4e617e9489685dd80"
+      },
+      {
+        "path": "assets/career-guide-middle-office-operations-wNb2yexW.js",
+        "bytes": 749,
+        "sha256": "e36b294821d809e0b128da57e8204fc31e0167a15eb11896163ffd747b0d3096"
+      },
+      {
+        "path": "assets/career-guide-operations-analyst-banking-BEgTEGZR.js",
+        "bytes": 748,
+        "sha256": "c1467e008cad6cd7c75c9aab3315fd1e1241d8d29d14a75e56e0fb43e92b8633"
+      },
+      {
+        "path": "assets/career-guide-reconciliation-analyst-vjY8KIfp.js",
+        "bytes": 740,
+        "sha256": "9aceeec8a41a2e7b2ea7abac105336b319358aeef204fc91a8d9278c2c490d98"
+      },
+      {
+        "path": "assets/career-guide-retail-banking-operations-CeQKmJua.js",
+        "bytes": 751,
+        "sha256": "a96a20e121558e505318075e403cc037ac6c7819b83c48b05b3ffa850664a5e1"
+      },
+      {
+        "path": "assets/career-guide-risk-operations-analyst-DCNYQXjn.js",
+        "bytes": 747,
+        "sha256": "62468f95ff248e8296567f39437d6dd6d963986b420aba33792394bbc61dc27b"
+      },
+      {
+        "path": "assets/career-guide-securities-operations-C7viLXh2.js",
+        "bytes": 743,
+        "sha256": "d60158f41506b2b4f27f565be7ebd721bb1be28d877d96e42c816948f90e9cd4"
+      },
+      {
+        "path": "assets/career-guide-settlement-analyst-Bg-ItCEs.js",
+        "bytes": 737,
+        "sha256": "16b5b5e97d3794a14140b819fdeb4e85ee550117b5e8c956fd31029ddf29ebb0"
+      },
+      {
+        "path": "assets/career-guide-trade-lifecycle-BqlVqtL2.js",
+        "bytes": 731,
+        "sha256": "ae7006a5b38c1d6447f8b99f8b3938e8303a371dffbfd5d3dab220cbd526f669"
+      },
+      {
+        "path": "assets/career-guide-trade-support-analyst-DLNI2sak.js",
+        "bytes": 743,
+        "sha256": "9927f9ae5f7bb0c7b4f22c138322cf459c191df5bbd483f2d1a7224df60820ae"
+      },
+      {
+        "path": "assets/career-guide-transaction-monitoring-analyst-B7Lq6XfP.js",
+        "bytes": 756,
+        "sha256": "d6cf1c1f3d34bb259e2862db33cfce51a54d1ffac020b82e7ebea11defe52c91"
+      },
+      {
+        "path": "assets/career-guide-what-is-investment-banking-VF9JUU4X.js",
+        "bytes": 753,
+        "sha256": "41af6a6ea4e4a5644560b8d8e07554708c2b4167dc9e67f6a9849cbaf6936f1a"
+      },
+      {
+        "path": "assets/career-guides-DXcl5zp_.js",
+        "bytes": 6716,
+        "sha256": "801c1552c37bc493be84812e9cb8577f94daae74e969a9eae849ca2273080ae8"
+      },
+      {
+        "path": "assets/catch-all-DmgAenxE.js",
         "bytes": 242,
-        "sha256": "a5c8c234cd7a94fd30491cfc298af05e0996f220c85e902ab0dd0587a9f35d9c"
+        "sha256": "fe50cdab8a4a756501ab1b5b7f8c12f17137dc5653c76d87db3539d0315ccaf4"
+      },
+      {
+        "path": "assets/chevron-right-CHRk1VLl.js",
+        "bytes": 246,
+        "sha256": "a2350af55a2bb583053dcfba910ff0d84135b60ec9655051743e2ebe25fefe59"
       },
       {
         "path": "assets/chunk-62JRHF6Z-DL5htDy3.js",
@@ -1001,49 +1001,49 @@
         "sha256": "4f8b820f434de66fe207136ba2b0b490e034f5959250457a4cd4841dd17f799f"
       },
       {
-        "path": "assets/circle-check-t2m7Bb6T.js",
+        "path": "assets/circle-check-0tPHrOcY.js",
         "bytes": 177,
-        "sha256": "e917c70ef933eca41977225111b2fccddabf0a79b5c5f9009cd628e57ef2d78e"
+        "sha256": "41b7a3af420256433068fe54a27ca950075a59df650f7135d4c7fe5b618d5881"
       },
       {
-        "path": "assets/comparison-banking-vs-finance-careers-CDkJAlgt.js",
-        "bytes": 677,
-        "sha256": "d4435acc9631f60de7a6af4dd4225c2f8af8aef1f64d349f5c8581cc42cc404f"
+        "path": "assets/comparison-banking-vs-finance-careers-Da46rzjs.js",
+        "bytes": 679,
+        "sha256": "4c5b1d76771096867e6277ce3f95928142dd0ddd5fd6037d8bc7b415e418f76b"
       },
       {
-        "path": "assets/comparison-best-finance-institutes-india-hKGn4G0z.js",
-        "bytes": 688,
-        "sha256": "f7839d40646b75b5778fc5b7ff8f2cc4e2bb1f4ff18220c463f41699d22bb635"
+        "path": "assets/comparison-best-finance-institutes-india-DKaU5zeE.js",
+        "bytes": 690,
+        "sha256": "ac865dae06c617678cbcaa1ac6f7fcaedd02fa376d8edae1809194b772fcfaf5"
       },
       {
-        "path": "assets/comparison-finance-operations-vs-financial-modelling-cfa-1ZWgpvKK.js",
-        "bytes": 720,
-        "sha256": "5dd88bf95e13a62fe78575a36988a072c376c31818373ff79fac121a35f77a2e"
+        "path": "assets/comparison-finance-operations-vs-financial-modelling-cfa-D5StxU-6.js",
+        "bytes": 722,
+        "sha256": "c0e447e39b10663ad47e068748f7dd2f3ad3fbfd3f0682abe55a420da8cfc8e4"
       },
       {
-        "path": "assets/comparison-investment-banking-operations-CGbc3k7W.js",
-        "bytes": 9644,
-        "sha256": "f586de5aa0d1bc6a82a328bc637513948b2508314d09fea814e81d206bee662d"
+        "path": "assets/comparison-investment-banking-operations-D6pTf-js.js",
+        "bytes": 9646,
+        "sha256": "64cc48df15b63c118ca34718f56fe72aa48ca18d197b478dd03c4c14a6752703"
       },
       {
-        "path": "assets/comparison-investment-banking-operations-vs-financial-analyst-CxaVNSK1.js",
-        "bytes": 730,
-        "sha256": "fba1f5b6b9c06117cc41e1a9debf12f29a0222f085d6027096d9de912d8ad312"
+        "path": "assets/comparison-investment-banking-operations-vs-financial-analyst-CN57it33.js",
+        "bytes": 732,
+        "sha256": "f2a92f0d108046b4561e6c7022d1a9863b12a617f5a0a843412d5cb4739b3c5b"
       },
       {
-        "path": "assets/comparison-online-vs-offline-finance-training-DfYBR2Gp.js",
-        "bytes": 693,
-        "sha256": "71b8739141df5d0900b73528462b741314eb57d24b69d2a9fee286d14e64270a"
+        "path": "assets/comparison-online-vs-offline-finance-training-Cp_wOFno.js",
+        "bytes": 695,
+        "sha256": "7fdac75d1d19a9a6562b079c5bf0a664f61815e4d49486d4b93ba010394760e3"
       },
       {
-        "path": "assets/contact-B7sQEoqg.js",
-        "bytes": 4951,
-        "sha256": "4d16ca78ca1dda77180b053d316da2248a40b926d50adccf568a97e23691f332"
+        "path": "assets/contact-D3qmodwp.js",
+        "bytes": 5963,
+        "sha256": "ad0644bf6a258802401014302c879a39db1b4a285bf683f4489bdd5b1c283770"
       },
       {
-        "path": "assets/cookie-policy-DBfvPRTJ.js",
-        "bytes": 443,
-        "sha256": "5ebfa13c421ccd5eede627dfbdc25b8bc02b44c11bd9d9960005349c21b7c348"
+        "path": "assets/cookie-policy-JdbdXOvw.js",
+        "bytes": 445,
+        "sha256": "f54d29aa32a8cdc8f0c07f96ed1299a28b502f694ade67cb8c0ce45965f258f1"
       },
       {
         "path": "assets/courseImages-IYeQMXQ7.js",
@@ -1056,39 +1056,39 @@
         "sha256": "aaba15872aab789c343f5efab2c0f9992b6bbe5c331f6dff2eb9846853715640"
       },
       {
-        "path": "assets/courses-banking-and-finance-BWtPUfY-.js",
-        "bytes": 584,
-        "sha256": "aa9554865d1bd0b8a848bb54afca428383a804a1a8f4b70b3edd6ad165247f0b"
+        "path": "assets/courses-BEK3YgXa.js",
+        "bytes": 26391,
+        "sha256": "b23f7f5e93c1c9508c9b47df7763ae13e1b65501bc9e81285a7e1c2e33958194"
       },
       {
-        "path": "assets/courses-banking-courses-BvHGG60N.js",
-        "bytes": 581,
-        "sha256": "eb333a7d9a7768d33e91dd7e1bf1585b9177c712a391026f2bae52aa5e3bb36e"
+        "path": "assets/courses-banking-and-finance-CM2TCC38.js",
+        "bytes": 586,
+        "sha256": "7f3703974707b8c8966e0da0035ceeb237034f757a4a5873489c3bf1ef652520"
       },
       {
-        "path": "assets/courses-finance-course-fees-eligibility-Bb8OBNa5.js",
-        "bytes": 613,
-        "sha256": "d3229f8775e0f2e901f9d3d02cb06d77971b38e3e06c3b9a2af1c91c4d23d65a"
+        "path": "assets/courses-banking-courses-CV9Vn54_.js",
+        "bytes": 583,
+        "sha256": "22f2ad5ec77d250e18d6e9eac8fcc738eb63332091268e50323487e1b8b8c0e7"
       },
       {
-        "path": "assets/courses-finance-course-for-graduates-BFVY8WJE.js",
+        "path": "assets/courses-finance-course-fees-eligibility-6maHcI5w.js",
+        "bytes": 615,
+        "sha256": "8faaa1b52ff47f6247426885f89e425c93b8cf4a48cbeea5970670279272c472"
+      },
+      {
+        "path": "assets/courses-finance-course-for-graduates-Cu8uMpge.js",
+        "bytes": 609,
+        "sha256": "edf4172cfaebad616944197203a7882eba886dbc5c8784f818e6441af7724232"
+      },
+      {
+        "path": "assets/courses-finance-operations-syllabus-BMDbhub9.js",
         "bytes": 607,
-        "sha256": "f664be865770d6febaf2a3236ef6ecdfc70b18ae99dc1a426b8c7b68067e3775"
+        "sha256": "e2dd114e545560f37eede1dee54adc4b601c5ad3828a1ec3d5778422fc8b65ae"
       },
       {
-        "path": "assets/courses-finance-operations-syllabus-YHQNF5jP.js",
-        "bytes": 605,
-        "sha256": "78d618f4d7e216666bfffb6541519548298e46db7baeca717e9bfce0c60f18dd"
-      },
-      {
-        "path": "assets/courses-finance-operations-training-enaqgYn3.js",
-        "bytes": 600,
-        "sha256": "903624ea8819b744c3a4318ce7317c40248958220567182ce114ed2e8d65cab4"
-      },
-      {
-        "path": "assets/courses-y9O0yUSV.js",
-        "bytes": 25059,
-        "sha256": "c9d209949ca6a02daa055ca982da00848457d7fb6234ff93fba6d05d7e0e37ed"
+        "path": "assets/courses-finance-operations-training-B_7UUOCh.js",
+        "bytes": 602,
+        "sha256": "7830be0c4ac2452a83627f84f2b91f383598c24bdbae7f07488cea96d30a14da"
       },
       {
         "path": "assets/deferredWork-CowTrdqk.js",
@@ -1096,19 +1096,19 @@
         "sha256": "6000f6c13ad31b7c189ea0cdee91a4054568e86f620eeeff45e1e0d017f1fd42"
       },
       {
-        "path": "assets/digital-payments-DxvQ_WCo.js",
-        "bytes": 697,
-        "sha256": "ff29043f26fe8e5dabb36ea2d035d0ec6c0caf375d22421443fcac49dbe5fa6d"
+        "path": "assets/digital-payments-01xje_Rz.js",
+        "bytes": 691,
+        "sha256": "89900ad23de964e133ba1f0e556be03c7fa6eb5141a22d21ba90c76c66fa5763"
       },
       {
-        "path": "assets/disclaimer-B3NT6LF3.js",
-        "bytes": 432,
-        "sha256": "562c407034c263f8002f1f6fbfa6e4006f4446e34fdba75ab02a216adbc7fbe8"
+        "path": "assets/disclaimer-Ct94b-y9.js",
+        "bytes": 434,
+        "sha256": "f83bfa2d66447c128ca852bcbf158bb2d115e0c523f921e20eaf03eecdd6befd"
       },
       {
-        "path": "assets/downloads-Dcy91-gm.js",
-        "bytes": 735,
-        "sha256": "813e7c9750f3418d1f523b372f72673dcd567a7f314037981ec7c5bb4ad0265a"
+        "path": "assets/downloads-DjnWdjQm.js",
+        "bytes": 739,
+        "sha256": "f892913b69e50ff14343151b9738e4ebd9529d7b9bc9755bb452a70c31e8d9c9"
       },
       {
         "path": "assets/entry.client-DSviY7sr.js",
@@ -1116,39 +1116,39 @@
         "sha256": "8faf56dc6fd38ba86950700e8c194417920906cac48085c307106d9b3709da7a"
       },
       {
-        "path": "assets/external-link-enBNSjqB.js",
+        "path": "assets/external-link-Co-OL7xp.js",
         "bytes": 255,
-        "sha256": "5996bd53abdbcbfe632c92a661a9049688770754f1a03e16123f3f8a07b76f2c"
+        "sha256": "756e14b0d2c0476f0e8e8c0ff58b0e6d90d80ab4c71ca06ebf61324d8695933f"
       },
       {
-        "path": "assets/faqs-DlGQ7b_w.js",
-        "bytes": 3417,
-        "sha256": "0d768cfede1a794e621da6cf5fab5dfe6a2a5faf2fef3d7b6dceb3a6116be9dd"
+        "path": "assets/faqs-C6Li_abu.js",
+        "bytes": 3419,
+        "sha256": "a27af2ac89ac93c4d13ee636fcd25d3616de0b63716ea2408e9d69ee84f8fa72"
       },
       {
-        "path": "assets/faqs-finance-program-ByeC3QLY.js",
-        "bytes": 2814,
-        "sha256": "95abd9dc548e271a9f10faa0830d77301806aa66cbae502cae7fc3e9b49fcd3c"
+        "path": "assets/faqs-finance-program-3DIeMlVB.js",
+        "bytes": 2816,
+        "sha256": "1d336618387a99f137caf18de1909ef88929247047e08849aec066ff2eb81312"
       },
       {
-        "path": "assets/finance-operations-Bny0-81Q.js",
-        "bytes": 756,
-        "sha256": "5bab49b70792db4fabe79e29e32ce5200278829f3acb663f6e9af4450867b4e0"
+        "path": "assets/finance-operations-Bl0SfHLW.js",
+        "bytes": 750,
+        "sha256": "b5fd42383dbf1cae49465e31907d22b71145f413e7b3ed72516a2213b44e63f4"
       },
       {
-        "path": "assets/fintech-neo-banking-DyeIHFtU.js",
-        "bytes": 708,
-        "sha256": "655343f6b1f5d3e12a14e45cd2552e45161b0d4774108a0528d955aa8c883381"
+        "path": "assets/fintech-neo-banking-CaBTrgfH.js",
+        "bytes": 702,
+        "sha256": "95b392a9833b0126945ffc25441be14f05b864a1255108da7026d46563e37403"
       },
       {
-        "path": "assets/hiringPartnerLogos-DbWvRf7P.js",
+        "path": "assets/hiringPartnerLogos-aSJG_qBk.js",
         "bytes": 2678,
-        "sha256": "28418c7f464c9a8ecc9e5bfe1519a79a58f33a4f5d392de5ed7f79828bd58f3f"
+        "sha256": "521befb1e86b45e35f37d5a1adc13261b66637d0332d8d38f3046df276bd13dc"
       },
       {
-        "path": "assets/home-y8VdvLYz.js",
-        "bytes": 54376,
-        "sha256": "7b503fef79b7c2314d236a2ea68f7373ef3c4cd971c9704f93785258999b029b"
+        "path": "assets/home-C2cH3qsq.js",
+        "bytes": 76319,
+        "sha256": "35733a7599cdd31dda06fe3a574888c420e9c40d91a7beb4a5c4ee7c71380354"
       },
       {
         "path": "assets/ibm-plex-sans-cyrillic-ext-wght-normal-d45eAU9y.woff2",
@@ -1186,14 +1186,14 @@
         "sha256": "4a3c82f829660379ea9f189d99a36cbc2c545fa46ae1647b9dd0ce8fb1189d99"
       },
       {
+        "path": "assets/index-ChPjmrNP.css",
+        "bytes": 82596,
+        "sha256": "1bbb8af9fa02a7d9d207706aff0a83a1fce6e9be0ef2f275b4adeaf99f13e087"
+      },
+      {
         "path": "assets/index-D4-8ALNT.js",
         "bytes": 70426,
         "sha256": "86e1aee306e610f5e211c6e3b7a2348050782e9e700a8797a2db42afb451be49"
-      },
-      {
-        "path": "assets/index-DSXzC1sr.css",
-        "bytes": 82384,
-        "sha256": "250d886219a8c7265856ab03eabf5f2bcdec5fcff8e5836061c000fcecd5ede8"
       },
       {
         "path": "assets/index-DidRQKrG.js",
@@ -1201,154 +1201,154 @@
         "sha256": "6a93aac4701fe60cdad3a811315e0eb20e0339fde6316f3376c429de1bec8ffc"
       },
       {
-        "path": "assets/india-DrM174fX.js",
-        "bytes": 14429,
-        "sha256": "42250f6215728f04b98998b91ab4653835044959eace9e19cb32c1abcd4f07b4"
+        "path": "assets/india-CW1wblKO.js",
+        "bytes": 15068,
+        "sha256": "f26471ebf27b2df26ec6a725b20e9e7c9ae419a38f61904b6a88c118d77632fe"
       },
       {
-        "path": "assets/india-bengaluru-DNbZ2Idh.js",
-        "bytes": 590,
-        "sha256": "9af8cc768dccc0852c454395e4b433309700cc35d7f7dadebc1ca21563b97568"
+        "path": "assets/india-bengaluru-DrWZOPnq.js",
+        "bytes": 592,
+        "sha256": "6d4bf8d606aa1266bf4a58b8f87e1c2bb6c4ed708ab29eb653ff0003e4a23e42"
       },
       {
-        "path": "assets/india-delhi-ncr-B6avCEUy.js",
-        "bytes": 590,
-        "sha256": "53eed68af8edff30b936d2fbbb4a10504c88bea61d866a7c3f1835ebc6024458"
+        "path": "assets/india-delhi-ncr-DgF5tOEl.js",
+        "bytes": 592,
+        "sha256": "e00ef7af63b6838524a631fe37bd870eec7d1b3f2948fe44c98e107f61145a05"
       },
       {
-        "path": "assets/india-hyderabad-BQ9ia3i5.js",
-        "bytes": 590,
-        "sha256": "5c03f2632e7e50c2751942b83dca1a88569e6cd1b1edfdc77c62dadb27e62994"
+        "path": "assets/india-hyderabad-f0J4Z62z.js",
+        "bytes": 592,
+        "sha256": "d3d8bc4f5a24ec34abff86668da3a3b58f5b1485d68b116b717c43d02daeb120"
       },
       {
-        "path": "assets/india-mumbai-dXR2UYsf.js",
-        "bytes": 584,
-        "sha256": "c0b1400e7a21504b6acbf5428cdb5491bebacf5abd02fa992648cf619d7641ac"
+        "path": "assets/india-mumbai-CZP_pIsf.js",
+        "bytes": 586,
+        "sha256": "5a613ac6ac1b678a2157e8a5ee90eac23afb92f62780efc6d53f77913a9b02c4"
       },
       {
-        "path": "assets/india-pune-N5P67-zD.js",
-        "bytes": 580,
-        "sha256": "58968877f0f3c6cd1a5d7d043e2dce1dfed5424f756d623581bacd0cc4e7ee40"
+        "path": "assets/india-pune-Ck37pExw.js",
+        "bytes": 582,
+        "sha256": "6817dded0e9cd299b2447b305f248da6e8e1f9bda7389f28bb1a870fd02a57d0"
       },
       {
-        "path": "assets/internalLinks-54gducx9.js",
-        "bytes": 41330,
-        "sha256": "f0f2a77c3e2d1011c5ed25d2bbd6878ef41cd3c946c18cf4afbde627efffae46"
+        "path": "assets/internalLinks-Phzqk-09.js",
+        "bytes": 42277,
+        "sha256": "d9603d4c8e14bca35de25c56ce507e31554d6440d9985448fa97e42dfc8aba4c"
       },
       {
-        "path": "assets/investment-banking-operations--djxxnfB.js",
-        "bytes": 773,
-        "sha256": "1e7b2ff322b7f5cc1a26db78dc5702fcde0c590ca003fb9d3b23fc00395e5b92"
+        "path": "assets/investment-banking-operations-HHieyC-d.js",
+        "bytes": 767,
+        "sha256": "eb1385b2d0fa6ffda9911dcfd14fa2ce528146cbe0bfda9821c173d09c1041dc"
       },
       {
-        "path": "assets/kyc-aml-compliance-DNDuFaFo.js",
-        "bytes": 706,
-        "sha256": "b360c427efd7eeb3ebe1807f9490a612a925dd0c814ed89c2ad0bc3d147a727d"
+        "path": "assets/kyc-aml-compliance-Bk4xMjLA.js",
+        "bytes": 700,
+        "sha256": "5fb465911be45a3c8df41ab41d4b7bf7e29b6b5ede789ce29dd4e05dc303fca1"
       },
       {
-        "path": "assets/lead-banking-finance-course-placement-DYcHGKli.js",
-        "bytes": 617,
-        "sha256": "3bf1c831f6fc61b8d315eef8f588fd5b17f07c3a065f197d110eadd132fa63b0"
-      },
-      {
-        "path": "assets/lead-best-finance-course-after-bcom-CpeKFZ53.js",
-        "bytes": 608,
-        "sha256": "095605013d5455ca0bb5e25b670de48f9c767bf89f7fd9cbb30488430d8f4199"
-      },
-      {
-        "path": "assets/lead-best-finance-course-after-graduation-YJRFjMcl.js",
-        "bytes": 620,
-        "sha256": "2fa2021db5348cf9dd6418e9de4942b7fb84cd325b019df55e5a02b92de4fb22"
-      },
-      {
-        "path": "assets/lead-best-finance-course-placement-BngejHB6.js",
-        "bytes": 611,
-        "sha256": "9e71676e572f185b708fc0c125991768e5e6ff0c84a227c9d92786b4c37f069e"
-      },
-      {
-        "path": "assets/lead-best-investment-banking-course-india-JlQqAJGc.js",
-        "bytes": 625,
-        "sha256": "606e9238dece79399a829d6a7e99e373f8a5e0ec40f50fefa43b594e1a484199"
-      },
-      {
-        "path": "assets/lead-finance-course-cities-india-Yc9pqu9B.js",
-        "bytes": 607,
-        "sha256": "1b09174043f58ee41265cd33ee4c749c3f2cc4e00ef09815690ceab7829df79d"
-      },
-      {
-        "path": "assets/lead-finance-course-duration-CQQoeLrx.js",
-        "bytes": 599,
-        "sha256": "b177f1e839f5c070e20db0c4ffcece4de87621024f8c5bee8c540bc47c19b5b6"
-      },
-      {
-        "path": "assets/lead-finance-course-eligibility-DYwF84fD.js",
-        "bytes": 605,
-        "sha256": "a0f415f99606f106ce69f5383cb9f2e58e78190f5511d326e0ac4b07d5433c35"
-      },
-      {
-        "path": "assets/lead-finance-course-fees-india-Dqt_zvvf.js",
-        "bytes": 598,
-        "sha256": "cfa0ff516bb5a6c0cafec93e936a75f710983395c2b8197c6a9b867408524473"
-      },
-      {
-        "path": "assets/lead-finance-course-job-guarantee-BG7-i3KT.js",
-        "bytes": 609,
-        "sha256": "5ee20b03b692a78d43e25263a88e9e0f8d3dc1b3d8b927d7bd3828b79175d501"
-      },
-      {
-        "path": "assets/lead-finance-course-placement-DcJix7oi.js",
-        "bytes": 601,
-        "sha256": "f17192be14cd0585c2369e6e9acd114a0f8af816866405a18626f1181865c0f1"
-      },
-      {
-        "path": "assets/lead-finance-course-vs-mba-cfa-modelling-R_Dpnf1i.js",
-        "bytes": 623,
-        "sha256": "6325b178b79f706c2272a5ed5bf806beab38a6aa9dcee2ae62339bf992189579"
-      },
-      {
-        "path": "assets/lead-finance-institute-lucknow-placement-SdpSHF5y.js",
-        "bytes": 623,
-        "sha256": "1ad028f1a34aef8f54f8d0aa50b2e2a39ba034924b0914c561223dc27f853ad6"
-      },
-      {
-        "path": "assets/lead-investment-banking-operations-course-placement-Cidcih7D.js",
-        "bytes": 645,
-        "sha256": "507ece7ff1f0c965c3e54c817283591e6f4fb15b14a1ab60b4fe43df9fb6beb3"
-      },
-      {
-        "path": "assets/lead-job-oriented-finance-course-india-D-jkf3IH.js",
+        "path": "assets/lead-banking-finance-course-placement-DKYPm34w.js",
         "bytes": 619,
-        "sha256": "c4123e76970ea8d5a2d7b135d3df1e39753aa5ef8569fc537112bb63ac6026e9"
+        "sha256": "283997af280c163b113c29444e8a375db62769f5979ee574395f9fd3d5a34d09"
       },
       {
-        "path": "assets/lead-online-finance-course-placement-BpRHIVU4.js",
+        "path": "assets/lead-best-finance-course-after-bcom-BjFvxsHk.js",
         "bytes": 610,
-        "sha256": "ffdfb077c438c395bead6789bebfc6898a6ff880c9498ea9a81d5070f3650e7d"
+        "sha256": "d331e86385e98e7a32444b000f0d8aef6d807feab495d9e71fc2f895e10c7b21"
       },
       {
-        "path": "assets/lead-which-finance-course-right-CkK2Nlgp.js",
+        "path": "assets/lead-best-finance-course-after-graduation-DXfVCyXH.js",
+        "bytes": 622,
+        "sha256": "4b971405ccd7d11225c47d5bcbe4bc34c71938da295ff8271bd6a9b916334f18"
+      },
+      {
+        "path": "assets/lead-best-finance-course-placement-uUNYJVO7.js",
+        "bytes": 613,
+        "sha256": "79a61dbb2fa38049c9cbea0c19264674ccb42a502187d158a6136a46e685f9d2"
+      },
+      {
+        "path": "assets/lead-best-investment-banking-course-india-Cy18JBXe.js",
+        "bytes": 627,
+        "sha256": "c0ede7cb233fbcaa4cc970ec94a9b51cd55cc59d2c41fd73a04af57bfeeb3bfe"
+      },
+      {
+        "path": "assets/lead-finance-course-cities-india-COlGA56d.js",
+        "bytes": 609,
+        "sha256": "770c019063aabac746a701ec2aa228f778c0170113c032acdcc9fd02b57e057b"
+      },
+      {
+        "path": "assets/lead-finance-course-duration-Dz7mzugX.js",
+        "bytes": 601,
+        "sha256": "20897593b079f3c1a8d389b351b7ace334ceeada6b4e3ae296c8f34ef02e1d21"
+      },
+      {
+        "path": "assets/lead-finance-course-eligibility-Bc1sB1jo.js",
+        "bytes": 607,
+        "sha256": "95dfc2bc0b5755bb3f0c8369b1c5723a22a849488473a930f1775ad63e8138bd"
+      },
+      {
+        "path": "assets/lead-finance-course-fees-india-xSX1XvWr.js",
         "bytes": 600,
-        "sha256": "2098493d1002ba84ffe2de362ff09f0698a748ed6b75d139ba380741e9fba40b"
+        "sha256": "18345c7aa1d12b9d81a571b0bd1d42f5e6dbebf7e06c7a3f14228d6def6768eb"
       },
       {
-        "path": "assets/lucknow-location-BjrdE4_V.js",
-        "bytes": 9689,
-        "sha256": "410c1dc295b0fa1306df752be8bbfa469f5b43d57dfdce25daf0e174588af0d9"
+        "path": "assets/lead-finance-course-job-guarantee-CRveMCPC.js",
+        "bytes": 611,
+        "sha256": "f149dd4f185f3895a3b6645d5de5f7d98cd8b5163476491a03a929d6f66152ca"
       },
       {
-        "path": "assets/mail-B-HlQaq2.js",
+        "path": "assets/lead-finance-course-placement-cp4ppUyy.js",
+        "bytes": 603,
+        "sha256": "107a080a668237da7e1115449b5c97630f53fed628692aa6a2c83aa0e719e5fe"
+      },
+      {
+        "path": "assets/lead-finance-course-vs-mba-cfa-modelling-D_wwtQuT.js",
+        "bytes": 625,
+        "sha256": "e89b7fbb9012a194ce5a346ce3fc89380a3dfc7d3fae8dbb5a89b96540371fba"
+      },
+      {
+        "path": "assets/lead-finance-institute-lucknow-placement-DpVuTyXk.js",
+        "bytes": 625,
+        "sha256": "5a2707dc0cda79aabf7f477afb3862cea8b12b031957c059b102dc2121bf2c7b"
+      },
+      {
+        "path": "assets/lead-investment-banking-operations-course-placement-COclzwVR.js",
+        "bytes": 647,
+        "sha256": "cd3406a640516cbfb50ea88a60f491eabf1b88a900eff892c4ca9d9fb54625c2"
+      },
+      {
+        "path": "assets/lead-job-oriented-finance-course-india-CmnXV6Np.js",
+        "bytes": 621,
+        "sha256": "35394493628a01348308904908cf282b7880568804062693f239d8cd541d26c8"
+      },
+      {
+        "path": "assets/lead-online-finance-course-placement-BWdSZO6k.js",
+        "bytes": 612,
+        "sha256": "45243ad55b1d995c7d4c7a4f6b5afe27c5696f4d1f3c85ee98ba1fbbc87deafa"
+      },
+      {
+        "path": "assets/lead-which-finance-course-right-DwmL5EKq.js",
+        "bytes": 602,
+        "sha256": "2f2d311ac899cf19533b10a1134b0b37d3b940a40d45c0e4c17c7a0ac52574da"
+      },
+      {
+        "path": "assets/lucknow-location-Bl9TPxaJ.js",
+        "bytes": 9901,
+        "sha256": "5724153b9634a58e31c6aad0c2d6e07a93844c89a81d870b5f8c0d0dbd9ed5bc"
+      },
+      {
+        "path": "assets/mail-B7n7qrBg.js",
         "bytes": 220,
-        "sha256": "3ab67c3c71bced0d11c730c09daecfc722e399af2517a51c8cdad58adcada4c4"
+        "sha256": "51513af04290138a84c4684e467cc8442c162191df894bf2ee929f21c6912907"
       },
       {
-        "path": "assets/manifest-c761c334.js",
-        "bytes": 85820,
-        "sha256": "9d3fb8ef1ee53e5948384bf8ec8fcd3e97095720937220c9f3aa1731ca96c8c0"
+        "path": "assets/manifest-071e58fe.js",
+        "bytes": 86002,
+        "sha256": "88fcca95065f4fb3b11ac79953012f84f3767fc9701b13411cc79f87771f9da0"
       },
       {
-        "path": "assets/map-pin-72NAQhCS.js",
+        "path": "assets/map-pin-C08z_YhG.js",
         "bytes": 258,
-        "sha256": "88b2200f61f0204e66aadb60a35e55b30baecb20bee06d361a153b09e589dafe"
+        "sha256": "dae1fbb3d5e28331e5b00b7b22aef4b3687f588701ab60e17aeb30d034fb74aa"
       },
       {
         "path": "assets/measurementTaxonomy-Bzjq_Nl2.js",
@@ -1356,109 +1356,109 @@
         "sha256": "12c0f4bc5efd787bcf0b2f762a9b69dad1636fb03cb63aba3ab9060b06c9ee28"
       },
       {
-        "path": "assets/message-circle-148uSgmx.js",
+        "path": "assets/message-circle-B0qjifCh.js",
         "bytes": 152,
-        "sha256": "1646f26b33a75bd85c9b232aa19f6849a963a5f241db1d7fa6a8db2ad777fee7"
+        "sha256": "c55fd3e6fb66b29e96b80c19884ef4e24c0041ffe3f6d7b4fb8c83a9ccf84af1"
       },
       {
-        "path": "assets/not-found-CojjmzTq.js",
+        "path": "assets/not-found-CIlJd0OI.js",
         "bytes": 242,
-        "sha256": "fd5205717d0275b9dde968f831b64cacdc07e382fa07f262bf683b4ae8752f7a"
+        "sha256": "0d86f66c29699c09359999ba73863cf937e23d4486ad3c439ea4f41187d1d8ca"
       },
       {
-        "path": "assets/phone-CNp92lS7.js",
+        "path": "assets/phone-Cy5OcTrJ.js",
         "bytes": 399,
-        "sha256": "a07a0a6e47ca1ca3a57b456dac55b53842eb1368f0020036f201adb1dd264d8d"
+        "sha256": "ab0068a4d61df1f9d6b80a0d4988d2b6490efd861b43ecbaf9b5431a2df6cdea"
       },
       {
-        "path": "assets/placements-Bzo2dRnP.js",
-        "bytes": 22271,
-        "sha256": "7f9ea3af9d8aed21d235efcb28b2152e4531c813937cef2d4125f8645daf05c1"
+        "path": "assets/placements-CsfDhmio.js",
+        "bytes": 22294,
+        "sha256": "94ebb2d2ddef0f2dfa199612e89f49054bbbd40437a43b0ef1f5a3ad1efdf999"
       },
       {
-        "path": "assets/privacy-policy-Clch3LDJ.js",
-        "bytes": 445,
-        "sha256": "9d35503d66ddbb25657c7dbf0400600512def1bd4ad1c9129fd2f83dcbd684fc"
+        "path": "assets/privacy-policy-CMWarEw9.js",
+        "bytes": 447,
+        "sha256": "41531f3a22ad071c2dd609e83bc30b412c6e9651f447dc286ed31ab613a824f7"
       },
       {
-        "path": "assets/quiz-CFv1m__E.js",
-        "bytes": 29483,
-        "sha256": "f9e9bdf5886f5e3103c07c9540dd16c2adacf488da45fcd2e7e17df51cb2eef6"
+        "path": "assets/quiz-11Q6M2H6.js",
+        "bytes": 29485,
+        "sha256": "89f33142e77abb2ebfdcaea368f84171d1e19f0cafba45d197e2f33ae198ba5d"
       },
       {
-        "path": "assets/refund-cancellation-policy-Da06gaDw.js",
-        "bytes": 469,
-        "sha256": "248817bca4cfc3390dadf3dbff6a3596112fec17c9c6a00942a25d2c91234685"
+        "path": "assets/refund-cancellation-policy-CMiZKcp1.js",
+        "bytes": 471,
+        "sha256": "f6d70f89b6a86f2ba6114978521162c6d57dbe0c1942787d9d03f7e55de359e5"
       },
       {
-        "path": "assets/resource-accounting-basics-2l_vgTqv.js",
-        "bytes": 619,
-        "sha256": "6e99ea0c9ea6048912f9738099bc2df6697922100a4d73a8891e8a49dd9dbf8f"
+        "path": "assets/resource-accounting-basics-DZnKELbU.js",
+        "bytes": 621,
+        "sha256": "3977725e6090de28ed4f9c1ecae1507b9de33fc2d9d8478e51372b78b69d1a3a"
       },
       {
-        "path": "assets/resource-accounting-interview-questions-BVHlp7gQ.js",
-        "bytes": 645,
-        "sha256": "f5756b9c7af116a7b47c82c146bf33775953640bbe9caa2a65cd46acc8972da5"
+        "path": "assets/resource-accounting-interview-questions-rk4NL9KK.js",
+        "bytes": 647,
+        "sha256": "2c563d086fd79232dbce6269be6db0201b13b050e5e36c1ac1aad09b2f1b5a1c"
       },
       {
-        "path": "assets/resource-bank-reconciliation-process-DxWoMG8r.js",
-        "bytes": 639,
-        "sha256": "f47bb97b6417583914607f3f44562bf53177fceb6251a04ffe5c8c5f64765d8c"
-      },
-      {
-        "path": "assets/resource-capital-market-operations-hTE2_FA7.js",
-        "bytes": 630,
-        "sha256": "8b28decfdc5474bbd0d1d9a6991486a4b9d580cb062d7b567f8d3908a492e278"
-      },
-      {
-        "path": "assets/resource-corporate-actions-workflow-CMRtn6bD.js",
-        "bytes": 637,
-        "sha256": "07353a54af948dea55ea5c7be97e6966b450bbcbc458b9d24431e109ad0e4ecc"
-      },
-      {
-        "path": "assets/resource-cost-accounting-finance-operations-UQHAUh_I.js",
-        "bytes": 653,
-        "sha256": "5c5e6f752b16b6eb16aea3031a47f254a807286f8a747de2206b2177c37c6631"
-      },
-      {
-        "path": "assets/resource-finance-gk-BX2KsIAn.js",
-        "bytes": 605,
-        "sha256": "be6069243a2dd08d131de420f77eaaeb0225981306489324eb9d6cbc81e1b606"
-      },
-      {
-        "path": "assets/resource-financial-accounting-banking-Yw_ZWWFC.js",
+        "path": "assets/resource-bank-reconciliation-process-D_sVwrk1.js",
         "bytes": 641,
-        "sha256": "2054762479b6ee867762ebff1c96347b3c01c7b4873092025e9b02b9498be609"
+        "sha256": "9a5d3877e17423001d36d8770fb1baf20ec2c82bd300c7ffb1bdf499c2d2ed91"
       },
       {
-        "path": "assets/resource-financial-statement-analysis-DLp9RnDz.js",
-        "bytes": 636,
-        "sha256": "db5228639002b5b43400d88a4fca92b54ba4213e6804b62cd38bb3208bc96e84"
+        "path": "assets/resource-capital-market-operations-r1LFGD0D.js",
+        "bytes": 632,
+        "sha256": "4c9e70fa7143d34d3c39e9629943e26cd5b4c2901202c10768013e60a3c526f4"
       },
       {
-        "path": "assets/resource-financial-system-india-ZHC29BxT.js",
-        "bytes": 629,
-        "sha256": "4f3a2acc0496d3644f55df1d353b6029e1065a21910bd9b87d84706479e4dcb6"
+        "path": "assets/resource-corporate-actions-workflow-uZWpBqAW.js",
+        "bytes": 639,
+        "sha256": "08ef1f4049fab4128a15dc2b3e952a518893dd4c8788d91e40a80fb3aa6046d1"
       },
       {
-        "path": "assets/resource-investment-banking-interview-questions-BbIoS5gP.js",
-        "bytes": 661,
-        "sha256": "5047c08820720409c23387ca883ee9bb06c919ce00de2ada7265a40a19742e1f"
+        "path": "assets/resource-cost-accounting-finance-operations-BpmtiLO5.js",
+        "bytes": 655,
+        "sha256": "496833cea9478b72f3fbaf49299e08ebeab4f2635efa7e746bb651a69c480169"
       },
       {
-        "path": "assets/resource-kyc-aml-compliance-guide-DBYR6iWN.js",
-        "bytes": 633,
-        "sha256": "c019339432e7b10b00844dea89ae68d4bcf0f4c3286e48fc4da4b92918abb3e6"
+        "path": "assets/resource-finance-gk-D0TwPraM.js",
+        "bytes": 607,
+        "sha256": "0b2a6706f651292dedd2b6945ce9b1a1a510b10eff892ca4eaa22549a69be363"
       },
       {
-        "path": "assets/resource-reconciliation-in-finance-ghXznmpl.js",
+        "path": "assets/resource-financial-accounting-banking-BzXTYf4V.js",
+        "bytes": 643,
+        "sha256": "c29aefccdc88cd08a77ece1d9c6652e8f5a419b4f62abcf8e6e9eecb38358c7d"
+      },
+      {
+        "path": "assets/resource-financial-statement-analysis-CTLXn8Uy.js",
+        "bytes": 638,
+        "sha256": "375306a6b5cf3940dba32ffe20403d1368a0d6e99c264a3035a2328250219dba"
+      },
+      {
+        "path": "assets/resource-financial-system-india-qFtjPAt8.js",
+        "bytes": 631,
+        "sha256": "4dfc85d6fd13c0763657f481141f665f1f9233b678b7e3f3c04521dd1ef5f2e5"
+      },
+      {
+        "path": "assets/resource-investment-banking-interview-questions-Bj6d2ou8.js",
+        "bytes": 663,
+        "sha256": "0e124c46f16e3ca8c8150f5f2edb4631680c8f712ca49d52adfc11250fa97d59"
+      },
+      {
+        "path": "assets/resource-kyc-aml-compliance-guide-LIjWEC2U.js",
         "bytes": 635,
-        "sha256": "b4b59777a1acb6878ebd1dadf36558855bdd078b17472ed346b9df20aac81e3b"
+        "sha256": "6dc79109f7d479c01af64db734997df49eab3cf2f5fb8f079eaafeb763fd30f7"
       },
       {
-        "path": "assets/resources-DeacUCKc.js",
-        "bytes": 5798,
-        "sha256": "c4c9e57b556b18f5f303a75e9d2ef6196b12aafe291f9e04cb8cdbb46fc843e8"
+        "path": "assets/resource-reconciliation-in-finance-6-r1jR_z.js",
+        "bytes": 637,
+        "sha256": "8271f9c729d30e48e590c304053749c36968e87c3dc661b70e392d6966c8d31e"
+      },
+      {
+        "path": "assets/resources-CrOpxX8E.js",
+        "bytes": 5800,
+        "sha256": "fc76591977ba80097e15ad29b51c70451e79a33991b75536a1ee222ce20d7995"
       },
       {
         "path": "assets/responsive-image-0oYySbiN.js",
@@ -1466,34 +1466,34 @@
         "sha256": "dd888b3df15b0e30dce180cbaf692d8952e6cd7f4a6cf42a7c3fdc25c43a7e33"
       },
       {
-        "path": "assets/retail-banking-qTwL0HT7.js",
-        "bytes": 743,
-        "sha256": "25dec243be324de94617e5acd4c1342e94ec7ab83afa21869b67dad9df436b80"
+        "path": "assets/retail-banking-B3647EwH.js",
+        "bytes": 737,
+        "sha256": "e44f95bee46affc0f776f1de7b0b7f828d1a4257a0bfb19a1f8c727bff88f039"
       },
       {
-        "path": "assets/roleIntent-CldA49Kg.js",
-        "bytes": 26922,
-        "sha256": "3c60042429cfc247d030ca921e8c6a6ac361411f90664c904d93d8cb232dd49e"
+        "path": "assets/roleIntent-BtmSSL-A.js",
+        "bytes": 27932,
+        "sha256": "e6bf5bd2301857678f22f8a72f569a8006e099e10299980bb5bee3dce7ae3e52"
       },
       {
-        "path": "assets/root-BIbuZh_8.js",
+        "path": "assets/root-dVGhfCTw.js",
         "bytes": 114957,
-        "sha256": "63955ea1557c77472b4ab4485060bfe2a48677fdcd6929daf189afcf3beeaed0"
+        "sha256": "703b79a41354e7806a7f3c8512862e00e0b7ce27f77318d541886b8faf37931c"
       },
       {
-        "path": "assets/route-BO9aVUya.js",
+        "path": "assets/route-55ggTMXc.js",
         "bytes": 254,
-        "sha256": "f81a0392cdc520aea0468e93465dd9aeabc39403042b84c3f977cbb5850cd685"
+        "sha256": "8f2dd42c5c0cb1a48e974d5cf32deeb94135cd9da4f91ec6a6c1e4445b9daf87"
       },
       {
-        "path": "assets/seoRoutes-VurQgYjE.js",
-        "bytes": 1184033,
-        "sha256": "bddb6f5484e1d1188e9c649a8ba21a8ba1bc8b38d241c5810cd41df9c6352946"
+        "path": "assets/seoRoutes-D_46QhGR.js",
+        "bytes": 1227137,
+        "sha256": "2f4a6d3498d256699e587eab496c3a19682b044ec49528bdaaa96f0c0396b07d"
       },
       {
-        "path": "assets/shield-check-Bkmu3Amo.js",
+        "path": "assets/shield-check-Bd3_md0M.js",
         "bytes": 324,
-        "sha256": "6e5c071937d49dfecdce2f3767094e1d68aeaf6452136a482f871a81a05af938"
+        "sha256": "093fc6c4ffc9ec04fd1164c642ef34c033e62504f5a3a340f568294fb4c4008f"
       },
       {
         "path": "assets/source-serif-4-cyrillic-600-normal-BDP5YDHD.woff2",
@@ -1556,754 +1556,774 @@
         "sha256": "c42f67589974674a03cd1aece3e18123ad858642ecd8561cedaaeb282dc7a7d1"
       },
       {
-        "path": "assets/sourceContent-CqCRrwVG.js",
-        "bytes": 15512,
-        "sha256": "4a8827b913233c9c9382b7da5039eaac8b613b1fdf696593c58226189c44e86b"
+        "path": "assets/sourceContent-DLnDgUSd.js",
+        "bytes": 16963,
+        "sha256": "757cd5aa78e8b761dbb8591bd869d92b78d34cdebe5c5b9ad34a41ed76e7277a"
       },
       {
-        "path": "assets/terms-and-conditions-BqDvQvNp.js",
-        "bytes": 457,
-        "sha256": "ba0f22aa560ad5018c3b91821a5fb7590f4e23a5e0d3f2bda19edd03c1b4445f"
+        "path": "assets/terms-and-conditions-CzrHSSgw.js",
+        "bytes": 459,
+        "sha256": "180b5e7a89addc4c32b8d8cfbd8c7f609f14accde9272af11889c5192056ed0d"
       },
       {
         "path": "banking-finance-course-with-placement/index.html",
-        "bytes": 43985,
-        "sha256": "f5b96ad6b72b9a3f67ab9197fd66d611891c2dd14a915d974adcd34245db07a4"
+        "bytes": 46271,
+        "sha256": "7f65265d2158a2bfe32dd37f2be516ce092b3b2f416e4a4ff3ca13b38fbda272"
       },
       {
         "path": "best-finance-course-after-bcom/index.html",
-        "bytes": 44907,
-        "sha256": "d706992c8b45a4e0acfc5a707c0b7721b3b73116e1400c16160f8652552ac9ca"
+        "bytes": 48100,
+        "sha256": "00e197adbf13ef66e1ce4adc4ade2cfb3da0c670f7ef40b830697d427556a0e9"
       },
       {
         "path": "best-finance-course-after-graduation/index.html",
-        "bytes": 44323,
-        "sha256": "6b7845e84dfd003d49c06a3a31392af2aab68da904f1212a70b3e6586f13dd6d"
+        "bytes": 51263,
+        "sha256": "6a138a7f6b78a57fad8d75f92b8bc7ee7e8c9493006d3ee971c5c6bdcdc34363"
       },
       {
         "path": "best-finance-course-in-india-with-placement/index.html",
-        "bytes": 45350,
-        "sha256": "a26aa8a922f3a1759cdf5b21347812cde722cb0b8f098d8db3e258c23a851f82"
+        "bytes": 47671,
+        "sha256": "3d6d79b37019f6eba704bbe2600236a08ab9c95a3efbe3f6ca9ca5194b344376"
       },
       {
         "path": "best-investment-banking-course-india/index.html",
-        "bytes": 45269,
-        "sha256": "d41e357cc47d824136f7d04e01ddcb0f60bf1b18ba9600300feb56e42c3273d1"
+        "bytes": 51475,
+        "sha256": "94720857fe8148516a2392394f2b6f91df6c1963d7dcd8e131612ef95b012334"
       },
       {
         "path": "blog/accounting-conventions-principles-examples/index.html",
-        "bytes": 53093,
-        "sha256": "0cc493e1293754d95b53222a723d748a9bcc3653d1c927504d8e3a33d9c39c15"
+        "bytes": 53092,
+        "sha256": "a31a6223a38d18f5b34b32f371f25bb62949526c8648c9d344bad62a0ceaac1d"
       },
       {
         "path": "blog/accounting-principles-explained/index.html",
-        "bytes": 44680,
-        "sha256": "ab403b7588ae3cbab852f8d75a3f7867e6c26e88eb9eb396c74dd359aa676950"
+        "bytes": 44679,
+        "sha256": "8c8b3c0e9bd87256a6a4ccba8df690b4bcfefb4536c40cbae1b9b794141721f2"
       },
       {
         "path": "blog/accounts-receivable-vs-payable/index.html",
-        "bytes": 44404,
-        "sha256": "3570d8743cd08e6c9e1d4431a02bbee826e7b0b7ca966d889ed400ac8682510f"
+        "bytes": 44403,
+        "sha256": "07a2f5023e02b2b5b41b0370eace09e3dfa612319220244b1136fc37a22dd3f4"
       },
       {
         "path": "blog/accrual-vs-deferral-accounting/index.html",
-        "bytes": 43889,
-        "sha256": "cfd3b4395c0cec7646bca83b00b7b34429ddb6ce0d8ac81fdeaf1c3d46484d5e"
+        "bytes": 43888,
+        "sha256": "1505ef3e98325025b14d4818602dda78585563adad7af307248e12fa97785774"
       },
       {
         "path": "blog/ai-in-banking-use-cases-risks/index.html",
-        "bytes": 53472,
-        "sha256": "afa16a1e43005a7ea184f6d173014d97a8cd11c7249e24906ea4028e5f4b00dc"
+        "bytes": 53474,
+        "sha256": "da452a15a5f8e36102b3bec609d47e231e9b6cdf5c47f9462d8b989468ba1928"
       },
       {
         "path": "blog/asset-servicing-operations-corporate-actions/index.html",
-        "bytes": 44428,
-        "sha256": "6dd5466fb1a0ed08cc120142e879846753712aa7f5af871ed85747247adfc610"
+        "bytes": 44430,
+        "sha256": "d5e88171048e05775a0a9ae33f97f235c8562f5951d6caac741241280b89d96c"
       },
       {
         "path": "blog/balance-sheet-meaning-format-example/index.html",
-        "bytes": 43801,
-        "sha256": "194eb55e15694a5ae1fe6f9df3903f94d9c7183403288d67e1bc2115b1d6345e"
+        "bytes": 45771,
+        "sha256": "0d934824ad987671e07bbbf830b22c0ee927da01a0645f5a68cea968bfe029a1"
       },
       {
         "path": "blog/banking-interview-questions-freshers/index.html",
-        "bytes": 45236,
-        "sha256": "015d48730d4b3cf3948c6e3ebc1bf466bd6ed13c8eedc86dd823a2c7806e9d51"
+        "bytes": 45238,
+        "sha256": "0ae825728a52f7ddae5b9f8ce40255ff57cb0b5e5f419a98b438df1c5b800330"
       },
       {
         "path": "blog/banking-sector-india-structure-operations/index.html",
-        "bytes": 54703,
-        "sha256": "a5c7390aea595db5052fa24fb2d84eb9cda337bb55e924c01ccc058c14482614"
+        "bytes": 54705,
+        "sha256": "90bba5ab789a4e8e1d2359122546aa8f471140d3ba37f75cdd749411e0caff1c"
       },
       {
         "path": "blog/bfsi-domain-banking-financial-services-insurance/index.html",
-        "bytes": 55032,
-        "sha256": "2b8f38293bf74f1a9b6a45c0eab0f4c42a17867722e8ed691aa69a1072360d1c"
+        "bytes": 55034,
+        "sha256": "536444b6041546bcea9287e6e2222370ca7c1b28872c27cb38745e74537b8cad"
       },
       {
         "path": "blog/bonds-vs-equities-difference/index.html",
-        "bytes": 43589,
-        "sha256": "7382959c4f27a0843b990ff1c03b48283f596ae0b023bbb7e791ea039c3c3b55"
+        "bytes": 43591,
+        "sha256": "f05eef3714e4d97ee0e49e2bb8aaa3e31ca0c6987781da2ff9fe3017723ebf28"
       },
       {
         "path": "blog/business-analyst-vs-financial-analyst-finance/index.html",
-        "bytes": 44905,
-        "sha256": "aa218432dade19e36a02f9df1236c69e0698c4b06c5a32232c95bd0288662380"
+        "bytes": 44907,
+        "sha256": "99f7756788ce109ed7cf7642cde3751f1823974c909a77671ec52243ea9982a1"
       },
       {
         "path": "blog/career-options-in-commerce-decision-map/index.html",
-        "bytes": 44398,
-        "sha256": "6d604298bbcdc02228a5231fc01a4547038d7e981d25c2115c4c80254a385d15"
+        "bytes": 44400,
+        "sha256": "d33e2f94f7145c5356cac43d2b35b8cc632a1b47849e74b42e0044475d547711"
       },
       {
         "path": "blog/cash-flow-statement-direct-vs-indirect/index.html",
-        "bytes": 44728,
-        "sha256": "6632a12fb9de84d29046d3f938885d7b36bbd1739182811b0a0ea824aa570e53"
+        "bytes": 44727,
+        "sha256": "7ffaaabe59b88d28fe50d7a633589b84f13cbe053094bc27282fa548022f45c8"
       },
       {
         "path": "blog/category/career-guides/index.html",
-        "bytes": 53760,
-        "sha256": "ae1d201498431a912a0984912f484b45953736ca0a99fbe913efb735ee57c1a7"
+        "bytes": 55982,
+        "sha256": "835eb6346fdceaceca2c08db5f9fd8433d07d9b0e818313d88ac843bed7a5796"
       },
       {
         "path": "blog/category/finance-operations/index.html",
-        "bytes": 103118,
-        "sha256": "db265befd44ddfa0c170004a7b4dba8e0ce2427413b3b5b612f066c61fb54c3c"
+        "bytes": 105301,
+        "sha256": "3598bfbeee8f42bf7d829ee0913bab6d8f8f267b35e7d98ea3b91e3c8b232e16"
       },
       {
         "path": "blog/category/industry-updates/index.html",
-        "bytes": 39282,
-        "sha256": "cc3297d3900df788cb08a2cf581f4224ba41ccda69292e4bb8a7f99e732b70a2"
+        "bytes": 39390,
+        "sha256": "d6a97f00abbdcd2ca0df7b9d8deff8483de0f40727425730e5b0824b9f6a69f0"
       },
       {
         "path": "blog/category/interview-preparation/index.html",
-        "bytes": 41561,
-        "sha256": "4941555ecfc80807682204d66c0df35751f7f5923f210d68a8fbf7ce11c26749"
+        "bytes": 41669,
+        "sha256": "2d43885bc8ee9616ff644d707baa476f479333c3c96566bffd9c05d9f31badf5"
       },
       {
         "path": "blog/category/investment-banking/index.html",
-        "bytes": 84893,
-        "sha256": "e614cdd1ac1e0ebf4cf5fd1669716ff78cc45268dffbd0b511f2446d823f5acb"
+        "bytes": 85001,
+        "sha256": "325c3deb76c896c225e3e2d092fd52143462bb36b0cba6d97e7de834941a99bd"
       },
       {
         "path": "blog/category/retail-banking/index.html",
-        "bytes": 77870,
-        "sha256": "37dd0a6ef2ea1ca9e829b1bef49403174fb3d4216dbeff38ad95c0fd302152c3"
+        "bytes": 77978,
+        "sha256": "a5a566707d5911a26bcb8df0a6d72a8b2d58e551691d7a38e70f57ba6543a7bf"
       },
       {
         "path": "blog/chargeback-process-evidence-operations/index.html",
-        "bytes": 44456,
-        "sha256": "40dbfd5d8111ea45b52511e8511fb6ec0e56327376699fca2fad4aac6d8ce407"
+        "bytes": 47282,
+        "sha256": "c5b276b44c506a1182706001a28a59a8aa99cdf31f624ff2c4a860331d5cebec"
       },
       {
         "path": "blog/clearing-and-settlement-explained/index.html",
-        "bytes": 54641,
-        "sha256": "08d5150818d91e5e2b8e1baec31da2828692ae1da05bb544a821d71c80365a4b"
+        "bytes": 54643,
+        "sha256": "b96552344a1ec6aa612dc49c9f1d766f0771a440305734db7f1ada42d49a4666"
       },
       {
         "path": "blog/commercial-banks-services-operations/index.html",
-        "bytes": 42957,
-        "sha256": "6f999239f6a410352e26a87d86933c9a5d3b885aef632e54bf0c733ba2fa278e"
+        "bytes": 42959,
+        "sha256": "111cdfb41a76613b6c4d26889973b0cc41fe18c4102bc7f395a81f3b219db020"
       },
       {
         "path": "blog/compliance-analyst-duties-career-path/index.html",
-        "bytes": 44752,
-        "sha256": "70004de7dc2ddd4c1e573a51bdee867b055e3c1a5594d2854dd8a416e2fba720"
+        "bytes": 44754,
+        "sha256": "c3475686b12ec8e184c3b5b4bc20c016dcd01451092e3ac1973c6544c0e6bdce"
       },
       {
         "path": "blog/corporate-actions-analyst-career-path/index.html",
-        "bytes": 59541,
-        "sha256": "bae9011f5d425632f34f3be23b185b2fe11c6001cfb16863db9379163f8515c0"
+        "bytes": 59572,
+        "sha256": "14c4b4c5c498593450602c545a00254c9d3c106712794297a7344b4c8d70d623"
       },
       {
         "path": "blog/cost-accounting-methods-examples/index.html",
-        "bytes": 53664,
-        "sha256": "650bd868ff1841497b5ed3045f18a83ad355026ecb686c856f786313260d7069"
+        "bytes": 53510,
+        "sha256": "1ca5c07aa4d25e325a2f047c24c59b711bdd3c0123cd4d079bbffce1ff44e89c"
       },
       {
         "path": "blog/cost-accounting-vs-management-accounting/index.html",
-        "bytes": 53312,
-        "sha256": "3ee12fae2f3ee8264ab3ea19c617a59344f05ce8fd79075d9745e87bf5a76314"
+        "bytes": 53311,
+        "sha256": "7be25077636fa3eb524e1c6fb628b0cf5add91c131a1ba8eb7d5b6a34038040a"
       },
       {
         "path": "blog/credit-analysis-basics-beginners/index.html",
-        "bytes": 53853,
-        "sha256": "0ea381a6bea58aa8910b92fc06cf3e4e93c627e713532add7f51bc8f458a753d"
+        "bytes": 53855,
+        "sha256": "09ca4cefe4e0012a3e04bccc19cac68acccef49917284a2893ded78a46fe9922"
       },
       {
         "path": "blog/credit-risk-management-banking/index.html",
-        "bytes": 52929,
-        "sha256": "f9710e65c65e9db3fdb7c2df704d9840de2fc9563c922afab27692f995ad8c86"
+        "bytes": 52931,
+        "sha256": "94892d78273446c9349d6ffbe23415d5acaf595d7afcb6b85c9e13ceab3ca2f9"
       },
       {
         "path": "blog/derivatives-meaning-types-operations/index.html",
-        "bytes": 44805,
-        "sha256": "f5788229c433b1fe678da8d62cd9462798353c2f3220af0fe0e1b15db27c0d0d"
+        "bytes": 44807,
+        "sha256": "46260422841086563bf998280c59f8b91cf9459c8dcc8b0816c3c07ed10b40a6"
       },
       {
         "path": "blog/digital-banking-services-operations/index.html",
-        "bytes": 44567,
-        "sha256": "e722694c76150f664ecddafcbf9e083f8d6a70eb1871305e4d8301bc3a22f007"
+        "bytes": 44569,
+        "sha256": "444bf8ce7a0cb9b0ed47cc2c84bbe3defe4e7b7ce0756c37aa50bd9327803319"
       },
       {
         "path": "blog/digital-payments-operations-career-india/index.html",
-        "bytes": 48881,
-        "sha256": "a49ba02d25df857c6ab9a1a059f391335b49ae49a86d941f94aaa35820e87917"
+        "bytes": 48864,
+        "sha256": "6e769f6483871ba156047d11469ea60df47f7aaeafe81be97f1c3ed678ae44d5"
       },
       {
         "path": "blog/enhanced-due-diligence-edd-process/index.html",
-        "bytes": 44667,
-        "sha256": "33bd55cab0ec9cbd94b81053f1e87acaf2be8753ab073f6cad69bff7e7fe2bf9"
+        "bytes": 44669,
+        "sha256": "7aba1b4c7d8997fa1b471de1469e73257970a6606f0090050e532b7573d6b25f"
       },
       {
         "path": "blog/failed-settlement-reasons-resolution/index.html",
-        "bytes": 54870,
-        "sha256": "019d7aa37a5a472c8019af61e2e7094e7114c809ab7b9d7817219315a10440df"
+        "bytes": 54872,
+        "sha256": "f0f47a26eb18821a194180d037f19d59f10847ef3c026d84cbb997d3efcc98a5"
       },
       {
         "path": "blog/finance-interview-questions-freshers/index.html",
-        "bytes": 46341,
-        "sha256": "2ac02f0517fe3586798bd155907b9a92936d2d560117b51a808374913e755d92"
+        "bytes": 46343,
+        "sha256": "fbbade0a3b0b72a27ba31ec979f9ad4446661e13ad97de8f4838687c97e448c0"
       },
       {
         "path": "blog/finance-operations-portfolio-projects-freshers/index.html",
-        "bytes": 59436,
-        "sha256": "6c96d36511b589dc2993922620456f940e2be45b557dfac892c04e61e96bb32a"
+        "bytes": 59467,
+        "sha256": "6b25853e9f50c54809bd1d35971c794d6d948840f4e7c2989ce1aa76f2f93283"
       },
       {
         "path": "blog/finance-operations-resume-skills-examples/index.html",
-        "bytes": 44890,
-        "sha256": "11b69f2dc4df33b6289630acc2e2d7b6c29ebda838f0689bbd66a2660ea9fc94"
+        "bytes": 44921,
+        "sha256": "7bc93cb79d5b160fc6ad4b53496ff1099dff67c3c30aa6020724569630c0147a"
       },
       {
         "path": "blog/finance-operations-vs-accounting/index.html",
-        "bytes": 44488,
-        "sha256": "93ee3d9ff698b172b8342a9fd8722eabb91bced15f7bedaf83ee31c68260fe25"
+        "bytes": 44487,
+        "sha256": "c325c700fe07c127a598b7a1649e41a18869582682ec4e21c35bdcdf98465c83"
       },
       {
         "path": "blog/finance-process-associate-role/index.html",
-        "bytes": 60056,
-        "sha256": "4cce89cf864f128bae606dc1843f097110c6b2391b34b69f247bd42c050af470"
+        "bytes": 60055,
+        "sha256": "6b1e94e84909a3b06d44fc6ba60e3e82119a356a86b52f5b106a71f9e5ef7aeb"
       },
       {
         "path": "blog/financial-accounting-statements-process-examples/index.html",
-        "bytes": 53946,
-        "sha256": "24db745fdbe45c69398789a1e85af675abcd34149134f2535a0dd34e2059be1c"
+        "bytes": 53764,
+        "sha256": "4f4e7e321c60c1c87033974a9306fbfb9459b53341016546b081e90ce7d8de63"
       },
       {
         "path": "blog/financial-crime-analyst-kyc-aml-career-guide/index.html",
-        "bytes": 57917,
-        "sha256": "d69cc8693589c900b409230afaa08083970986db5773035aa7c49a7344bed0c0"
+        "bytes": 57948,
+        "sha256": "cc6808a5e8640e6a8002665c7a433c2ba82366e5ff7dc8e3983bbf5e915acb5a"
       },
       {
         "path": "blog/financial-management-decisions-controls/index.html",
-        "bytes": 42812,
-        "sha256": "448ddbbda0e11802dc4c2335f4aa42bd846f5a958df8cfb9256bdbb0840946b0"
+        "bytes": 42814,
+        "sha256": "9073a42a369c604d8e67f706bbd35598cb62198a4b9cc2bdbf104f964261cb97"
       },
       {
         "path": "blog/financial-market-intermediaries/index.html",
-        "bytes": 58263,
-        "sha256": "bc634123a24aaf773ae8335f0d1df7180b66688f8f8879dd40b85f35ac4fede6"
+        "bytes": 58265,
+        "sha256": "56feb341c6a90af15d72f39c83f3f17ea66c279ace2bdc00fecb30bf5e97c272"
       },
       {
         "path": "blog/financial-markets-instruments-participants-operations/index.html",
-        "bytes": 55160,
-        "sha256": "248ca927c903a7426252faa0a8f2959e837d8a7345222ecc7153a3b4749c7d32"
+        "bytes": 55162,
+        "sha256": "af18699120e3ee435fc6106917689e6737940f396fee88d531ef7ec3e081333a"
       },
       {
         "path": "blog/financial-products-and-services-banking/index.html",
-        "bytes": 56435,
-        "sha256": "323dbd1941f7daf124989ccdb9725f246bf3db98aa690c9b33edcb58257828d5"
+        "bytes": 56437,
+        "sha256": "d80e95094cb8dd5132ae8cc143e253b61082ba8deb63765f47fe3355b92e75ca"
       },
       {
         "path": "blog/financial-reporting-process-controls/index.html",
-        "bytes": 53840,
-        "sha256": "a746a2a0f120e3abe1718592caa1adbce84bef969f1f5c58818922087dff477e"
+        "bytes": 53842,
+        "sha256": "db2bb5267fc6f3be867d6ec02d4093ef89007eb4ee4e8fb451fa986399039258"
       },
       {
         "path": "blog/fintech-operations-careers-after-graduation/index.html",
-        "bytes": 50260,
-        "sha256": "260391dfb156a3f8b43bf0702366ac79d67895a6e1ff846a5595fa7d5f5e4e9d"
+        "bytes": 50243,
+        "sha256": "a86baa1262f0314259398e24a6d15fd41a00005482b4ed0016b5d3e66ac19c77"
       },
       {
         "path": "blog/fintech-operations-roles-workflows/index.html",
-        "bytes": 44708,
-        "sha256": "15ad493a72173f8d068278cd21f4675239bc2157a3455b8293a066042ad13b38"
+        "bytes": 44945,
+        "sha256": "bcafd42cb058ef1a58366d268d56179c5517a65e35309ed363932608465f3cb7"
       },
       {
         "path": "blog/front-middle-back-office-investment-banking/index.html",
-        "bytes": 54903,
-        "sha256": "8a959fb3e6c72f81123a3b14e1e221632c64a8b101d51f59b906bb6d67980e30"
+        "bytes": 54905,
+        "sha256": "91c87763c616a30f029d94a0ac76fe6de0351507cf7a205fba28899e729f18fa"
       },
       {
         "path": "blog/fund-accounting-nav-workflow-career-skills/index.html",
-        "bytes": 58020,
-        "sha256": "64e502ccec0e72f1ac8638624e063940280444c927662ac76bb23a7c1871a41f"
+        "bytes": 58683,
+        "sha256": "3f7bd0f2b96a1df92b4e10e7574066012543ca79cbabf527f92a383efcd6bc3d"
       },
       {
         "path": "blog/general-ledger-vs-subledger/index.html",
-        "bytes": 45254,
-        "sha256": "bb3ea78f2651b15488333edb109259c7a21eadd02f5b2d7d52aa0c6f58936a18"
+        "bytes": 45253,
+        "sha256": "02478c48b92da0361a9a7240f84dd62db0e6fac2dbb1a723b15febc86056ac67"
       },
       {
         "path": "blog/golden-rules-of-accounting/index.html",
-        "bytes": 44715,
-        "sha256": "622a0eb8b95031538fea4112ab8237f3d9eb17f5e79914342736686e4da52c81"
+        "bytes": 44714,
+        "sha256": "0d41283b8ab3ac96d07d17a84d0610c3bcd15fa3f61b64a6110505bbb6a774b0"
       },
       {
         "path": "blog/how-to-choose-kyc-aml-course-india/index.html",
-        "bytes": 48320,
-        "sha256": "fa6ab829fcef220209c16fd50a3b754a97e379c095bb9f46eb85482d42766fe3"
+        "bytes": 48351,
+        "sha256": "0e06287d48cee1d720e425aa529dfbff06de1742d717b6429f79e84212a40d5c"
       },
       {
         "path": "blog/how-to-evaluate-finance-institute-reviews/index.html",
-        "bytes": 45506,
-        "sha256": "32cfae5037664e2440c073a9dd3533bc8988af6241e02d884f1cf5f057977f77"
+        "bytes": 45557,
+        "sha256": "61c623bd8aa4a7588bb89ecf92f9b7c3da02c6ead3b40da075ab6467dca345f9"
       },
       {
         "path": "blog/index.html",
-        "bytes": 195639,
-        "sha256": "1e067c2c206c4c781ce7904cfaa7737f0e8335a2b3280c68f7ff58bbdd60c63a"
+        "bytes": 199334,
+        "sha256": "0211940ee9074dd68a0523a7c2bf62b9e8f5dd354b023a39034032e451932fd2"
       },
       {
         "path": "blog/investment-banking-career-path-india/index.html",
-        "bytes": 45315,
-        "sha256": "cbee3bee6b2a1d68dccd72f0d3604a2d16164f1ce618ed9005b3f6532c893977"
+        "bytes": 45317,
+        "sha256": "968c07711012f4de9288789391e77ab404e02179a379dcf54f1d897d878b5f29"
       },
       {
         "path": "blog/investment-banking-operations-vs-cfa-financial-modelling/index.html",
-        "bytes": 49987,
-        "sha256": "065fd4600274ad17f20f0e2a62d74d23afed9a0b6d9bee5a8d5ea091d9929031"
+        "bytes": 49897,
+        "sha256": "e971b01d18cb710021db6ef7d570f0dd32522f044d16e635ed1a32ba6b4db4d6"
       },
       {
         "path": "blog/investment-banking-roles-teams/index.html",
-        "bytes": 44895,
-        "sha256": "e7d8869769e58ed2bc90ab35dac9b12f614373e62626e8cfb6e046f01cfb1dbd"
+        "bytes": 44897,
+        "sha256": "6043afed626e4d6c4e2a713d95c74261f4fac794ead7bcfcbc22720bc36d7348"
       },
       {
         "path": "blog/investment-banking-skills-graduates/index.html",
-        "bytes": 53785,
-        "sha256": "ea4d4fa24c79db214f7bea0ab2d43575ce8e0aa5783b836b63f0476ebd54d830"
+        "bytes": 53787,
+        "sha256": "2798667d5c37c323536dbc3ebde87e3111b942348a82fc998b0ca4a8c27204db"
       },
       {
         "path": "blog/investment-banking-teams-operations/index.html",
-        "bytes": 44727,
-        "sha256": "c6021cd726a9a8e14acd6277efd989127e53f173400cd98e8e2f5c6e9316349d"
+        "bytes": 44552,
+        "sha256": "0228c8c4e2d425d705acbd56561322130094ff4d21c5c991bb09b77775c19184"
       },
       {
         "path": "blog/investment-banks-in-india-functions-roles/index.html",
-        "bytes": 44796,
-        "sha256": "255a83bd3638e223b1aa239257760993bc2ad9f84ba750171ea2c9d2b1dab9ae"
+        "bytes": 44798,
+        "sha256": "bb1869b0a13a2cc9a8ddc3a4d802b274926a2c46061950c8bb557f5cee24081b"
       },
       {
         "path": "blog/investment-management-meaning-process-roles/index.html",
-        "bytes": 55566,
-        "sha256": "0267987d03f4faf7913e2cc4077c39c3df7ad9ee27ecacb93adeb7517059a5cc"
+        "bytes": 55568,
+        "sha256": "0ff6c3a646eeac965d3ef122ecaaf7266631f848363dde36146c218397446b38"
       },
       {
         "path": "blog/kyc-onboarding-case-file-example/index.html",
-        "bytes": 47561,
-        "sha256": "89e25f1f773fa5f9cda441a39fb51987021544387a38c45401e376b51284b441"
+        "bytes": 47563,
+        "sha256": "5976056da310c7e3704da0659a8970276bae6276b89fce3815d5ce7492dcc33c"
       },
       {
         "path": "blog/loan-operations-banking-roles-skills-career-path/index.html",
-        "bytes": 59849,
-        "sha256": "32f1f515f96b3ff997ba2db62f7ef20a51b689d2b722aef0fb87bf84e0f8b959"
+        "bytes": 62396,
+        "sha256": "c5c71162df42054a179601f229ddf91c36f93b3a095e80494e2d127ff99ddf5f"
       },
       {
         "path": "blog/loan-processing-steps-workflow/index.html",
-        "bytes": 54003,
-        "sha256": "3c18690e3d9ed6f8c871c5e21e5820f4708bae1f9d26ac97fa23269b6d63eff9"
+        "bytes": 54005,
+        "sha256": "f2a6596d696b048750631d70e8143f72b6ce02b55afc78dc483cace4f8b444c2"
       },
       {
         "path": "blog/maker-checker-controls-banking-operations/index.html",
-        "bytes": 44376,
-        "sha256": "436bf0494e96e141daf743f08a5657c8734e98be0b23f335305d3bdf473447ff"
+        "bytes": 44378,
+        "sha256": "8e28b242e2ad2481645a9351d5621ad53f976163f2662cccd2ce484443f4aff5"
       },
       {
         "path": "blog/money-market-instruments-operations/index.html",
-        "bytes": 52809,
-        "sha256": "ddb36387b0d797848348715c55f3b63ae74f648c937df8ff07d2968c0c938c4a"
+        "bytes": 52811,
+        "sha256": "a86d9b74525157abcc2fa99032906ffdcc298252ff35169318547e87cf9f91bf"
       },
       {
         "path": "blog/month-end-close-process-finance-operations/index.html",
-        "bytes": 45385,
-        "sha256": "3efd04f5b30c150aa54e1f70343d9d24010f750cdd25d0f460f4fb8fa86d9945"
+        "bytes": 45384,
+        "sha256": "5e9d4cc96ab706d16fc1dd8c6901b44423a286b6aa1b07030e9beb3b7fc3cdff"
       },
       {
         "path": "blog/nbfc-vs-bank-difference-india/index.html",
-        "bytes": 44512,
-        "sha256": "e1810893bbd7413eb217848448174cb2cc7b7b6594eb60bd1e6d679de7e52c98"
+        "bytes": 44514,
+        "sha256": "e8b5b65c1a450c0a0f3d5ecc7c609464740c76c87439f1406422f44d9878cc66"
       },
       {
         "path": "blog/neo-banking-products-controls/index.html",
-        "bytes": 44151,
-        "sha256": "f684a897987a1715d05e6dcbe47ff2c13d62346e4a35f9fa6edf2d288e8e0105"
+        "bytes": 44388,
+        "sha256": "264b94d37afab2e9689bfc306c088e37730b544c467950ce50758d2ec823e3df"
+      },
+      {
+        "path": "blog/open-banking-apis-consent-operations/index.html",
+        "bytes": 45392,
+        "sha256": "01acdea13aac97d17415810fe3567b05a900b8328e890706636b9b08ee1958f0"
       },
       {
         "path": "blog/payment-gateway-process-settlement/index.html",
-        "bytes": 44281,
-        "sha256": "8506a3fee95b81a7fb35fcd059673f4a6d018f11cfb918ea875e4f259fbd9608"
+        "bytes": 44283,
+        "sha256": "1d976b24253bca23b85cddf7760d1b3018840282245f79f75d7033d7793b8be9"
       },
       {
         "path": "blog/payment-reconciliation-process-breaks-controls/index.html",
-        "bytes": 45132,
-        "sha256": "0b41f6422607f413d086d444fe3018b888a8348f8fe48f824dcf1fc47cec52c9"
+        "bytes": 47870,
+        "sha256": "28b63e6a3a32ae16f077c280ddb20b3ceb0e3db3399c12da063d3f34729f97d0"
       },
       {
         "path": "blog/procure-to-pay-process-controls/index.html",
-        "bytes": 45392,
-        "sha256": "75c2ff37de30b7b454ce701b0751b63f5bb2e730f7ffd09aabfa3a4721cfd980"
+        "bytes": 45391,
+        "sha256": "d66eb9038b9c6630d94b88c850466432338259f14d1c7df188fefcd9957f5d15"
       },
       {
         "path": "blog/questions-to-ask-finance-institute-before-enrolling/index.html",
-        "bytes": 46647,
-        "sha256": "21524969adf4cb5df14f2d656917fbb537f9c7567540c535c82cee6c4c80680c"
+        "bytes": 48069,
+        "sha256": "ffdb1a17fae8356b06f51c00d5cafc0882638cd85860abf13ed5958fcb509c7f"
       },
       {
         "path": "blog/r2r-p2p-o2c-finance-processes/index.html",
-        "bytes": 44715,
-        "sha256": "ad177c1dac90df6d7f116b0f088f3c5857a827c6f6eed26e225288ee4f22c90b"
+        "bytes": 44714,
+        "sha256": "d9c24524eb1608af9b61aba647bd3c1b91fcb09d4428e19bbb22fc01a61f802a"
       },
       {
         "path": "blog/reconciliation-process-steps-finance/index.html",
-        "bytes": 45320,
-        "sha256": "1378d148279ec76f1ff61d1be217a6f01b8037cd32e9aa5fb782b283104edab6"
+        "bytes": 45324,
+        "sha256": "1d60b1939a739349b0e0589dcc6f5d6f7d51d22ae51cb05ad753dac07e8bdef2"
       },
       {
         "path": "blog/retail-vs-commercial-banking/index.html",
-        "bytes": 44339,
-        "sha256": "98c77e8b08e257d470af49412bd1e6d01d5c63c1be764a7055209d020f5dc891"
+        "bytes": 44312,
+        "sha256": "3c16bb6f9ac135f6e99f8bfd70317459c09f0c6e76208f8f918f8838a28fe1e3"
       },
       {
         "path": "blog/risk-management-in-banking/index.html",
-        "bytes": 61488,
-        "sha256": "14e99eb95be67ed9aac61c325c46bcbb20a03f2455ee35ab4dfe0fdb03a61f8a"
+        "bytes": 61513,
+        "sha256": "f46f1ec0c9f59c10d7730fe4d672f0e2ddf6258170a11d3ab5e25e52de99bfa1"
       },
       {
         "path": "blog/rtgs-neft-imps-upi-difference/index.html",
-        "bytes": 44801,
-        "sha256": "17331f75a63493c78bb125dc4b3532f39179c17ff53a8eb470f2e33392df0d00"
+        "bytes": 44803,
+        "sha256": "57cf200ee59e1da66bb4bce2d4e769af730a7477a348538a169609d264d2c070"
       },
       {
         "path": "blog/sanctions-screening-process-banking/index.html",
-        "bytes": 44698,
-        "sha256": "bec1af8e4d29179303cc10a57ee05541494592dda29f12bafa07494d79110986"
+        "bytes": 44700,
+        "sha256": "17139d31ba31368633f52167e5f7b01f632fcb996b77fa861db6bc3367e13546"
       },
       {
         "path": "blog/securities-operations-workflow-roles/index.html",
-        "bytes": 44960,
-        "sha256": "b35d9a156d135844e9e484131c96d9319b6bd085f935dc48fcf94bfc93933c23"
+        "bytes": 44939,
+        "sha256": "091e7c65be8d400af34106c1f9e3caa68416d8b2b04758ec893374eda1f3aec5"
       },
       {
         "path": "blog/settlement-trade-break-worked-example/index.html",
-        "bytes": 47969,
-        "sha256": "9f62f0cb265677abb68b8212d0d5013318684d7b4bd09c56478de8380df14ccb"
+        "bytes": 47860,
+        "sha256": "2fb03dfb63cd99a8794d1580d91368acb87c1cb90424dbf17e70b45b23d5ecb2"
       },
       {
         "path": "blog/trade-capture-process-controls/index.html",
-        "bytes": 44592,
-        "sha256": "9eaa6999c489975dec3d5ce1c15b0fa54cf8c0f86426694b3cc8a7dc44ffb5b5"
+        "bytes": 44594,
+        "sha256": "b6d3d536b0b37c810c4b185cb0e9ebaf4ed3c9989938e2eef2e1a51a153129b4"
       },
       {
         "path": "blog/trade-confirmation-vs-affirmation/index.html",
-        "bytes": 44016,
-        "sha256": "c5805ca60db6ad29eaf8eb8e5141ce763ea45e73733d679c66da56d8123d47b4"
+        "bytes": 44018,
+        "sha256": "0b917cfc68c0d92f86ba3e967f3a151df7941409b75d6f6e7dc20fb8746a1132"
       },
       {
         "path": "blog/trade-support-analyst-duties-skills/index.html",
-        "bytes": 44742,
-        "sha256": "e3a84090628906f32db49c5b048f4f9f3263f9aa0ba28d8a6a53267ca624d4a9"
+        "bytes": 44751,
+        "sha256": "86237dd815d694ab7e109959f15ab66c880e1046e3b3b133434bb9b947b2ba8b"
       },
       {
         "path": "blog/transaction-monitoring-alerts-escalation/index.html",
-        "bytes": 53249,
-        "sha256": "fbce6a81a3ef687596fd67612e10f470a85f8ac0ad29a4b1b0a1749b041416f0"
+        "bytes": 53251,
+        "sha256": "d5a7595305d09872ec108ca0a6266c075184e94928663e2505734803870336bc"
       },
       {
         "path": "blog/treasury-operations-roles-workflow/index.html",
-        "bytes": 53712,
-        "sha256": "5eeaacfa14c07c260ee6f32c4111f0d98c60d0b49216caab76a7c5edaf788094"
+        "bytes": 53714,
+        "sha256": "1d8422fe905da14511e01b25f7e43839c1c639abfdedc83d451d9228b5ecd5f2"
       },
       {
         "path": "blog/trial-balance-format-errors-reconciliation/index.html",
-        "bytes": 43359,
-        "sha256": "a55150e95bb3c027e8813d432a2667b075bd43e5f074f755ceef7832ec79dc32"
+        "bytes": 43358,
+        "sha256": "8a3754336ff7194893ba1dea94aa49691f6ef389a3ed934da47c8381fafbfd1a"
       },
       {
         "path": "blog/trial-balance-format-purpose-example/index.html",
-        "bytes": 43998,
-        "sha256": "fa993e14634a094f57e59f01f54e6f142a15e997cfb582ac2350944712368f28"
+        "bytes": 43997,
+        "sha256": "4696bdab0d988b068a988e0f0de131dc5eec6a3e3742702cc7bcb68bb03cec5a"
       },
       {
         "path": "blog/upi-payment-lifecycle/index.html",
-        "bytes": 54668,
-        "sha256": "25e8228aa4e8e8d510c613b0ad62dc5ef852d493c4bbb6dd4ae5226e16f292e9"
+        "bytes": 54670,
+        "sha256": "fdd84a527616ebe655dd80781e9b9d5a755bd89b7019404c6b7cf87cbedd5004"
+      },
+      {
+        "path": "blog/what-centaur-careers-provides-for-finance-careers/index.html",
+        "bytes": 48630,
+        "sha256": "caaef34226a4e50edb1613d84d8899c0967220754ff2eb264bfca1bc47fa6558"
       },
       {
         "path": "blog/what-is-aml-controls-workflow/index.html",
-        "bytes": 52922,
-        "sha256": "72e176492acd505ace11da544e5b3519bcf6879bc25532714417da0b61f7b827"
+        "bytes": 52924,
+        "sha256": "fecc1c91bd6fa8e3fb6bfe3529d803b206a92da7fdb2067b769351c74f7f98c5"
       },
       {
         "path": "blog/what-is-kyc-process-documents/index.html",
-        "bytes": 54434,
-        "sha256": "a56ea3143cb91f9e6d23ddbe8abcfe516d83ca6974a5bcd119921c7ef569fd25"
+        "bytes": 54436,
+        "sha256": "30aa8dbd46150ce27c646943608c5247fbc00bf220defa4306aad0745aded2c1"
       },
       {
         "path": "blog/working-capital-cycle-explained/index.html",
-        "bytes": 44192,
-        "sha256": "eb728e2ea76b4dab2abfa96f89ec85a650a1ff9157ace3362e47135718b6282b"
+        "bytes": 44191,
+        "sha256": "3072418b0ce9f3a259829f24f9ea60dbb53c7b29c8907ffd88e9ad1b527fce81"
       },
       {
         "path": "career-guides/back-office-banking-jobs/index.html",
-        "bytes": 59979,
-        "sha256": "f0ed74ea5b6ebd2ca0714a1050e391dab79125be7db511cc1d1f133ee8111819"
+        "bytes": 64428,
+        "sha256": "9a87f92e60dabc07e1ecca237c07cd398586b328239ab14113e4c85f5e76675d"
       },
       {
         "path": "career-guides/business-analyst-in-banking/index.html",
-        "bytes": 58747,
-        "sha256": "4a8f1dbec4bef415b966963bd33e3859edf1068c098237389a07eee97e1c33f9"
+        "bytes": 58825,
+        "sha256": "3536b2db1070d62a972c99030c6009fe287aabbf449ac14f6bdee647b924b5d9"
       },
       {
         "path": "career-guides/choosing-finance-career-course/index.html",
-        "bytes": 60515,
-        "sha256": "53c497fd9ad5b7abbc81d0667a25703a8902e8e61dd68cbdbc006a02ca22c3d3"
+        "bytes": 61507,
+        "sha256": "e041c28133e9ce27e287c87b09174d17760f83ba46d03de53aaa8503f613c91e"
       },
       {
         "path": "career-guides/credit-analyst/index.html",
-        "bytes": 58719,
-        "sha256": "d7eb5fe65c87cceca79f23a809627d3ea3229245d699625aee3f12b8075d2bf6"
+        "bytes": 58797,
+        "sha256": "c7325de256d6e16fe50c264e2f595db2fcdff09c3f470aa1d35770122d621881"
       },
       {
         "path": "career-guides/credit-operations-analyst/index.html",
-        "bytes": 59460,
-        "sha256": "11d2442902fd535d76a74ab1f4b1c1163fde9f91ccb9852fd193a0d5053e786d"
+        "bytes": 64143,
+        "sha256": "cbf3c47e97c4b09c6d04154685b07416ae5aaa43797fdf31a39810f2b5acc9f7"
       },
       {
         "path": "career-guides/custody-operations/index.html",
-        "bytes": 60036,
-        "sha256": "f33f0827c525b6b62850728c1b733a59a70ee7837abfecbaf58193f7fe186323"
+        "bytes": 60114,
+        "sha256": "7acdfb69078a7d5a6935900047a2ef0017398b232010a572f336e5ea8efb1d5a"
       },
       {
         "path": "career-guides/digital-payments-operations/index.html",
-        "bytes": 59989,
-        "sha256": "5ad096ebb037d841c23151bb2da2fc0c101fdef2fa77a35d5c6d7d62a9aa745b"
+        "bytes": 64550,
+        "sha256": "fd668952fdabdbe4c591f6f3e2b606f11685b1c2bf2881d399123f1bfe5820f3"
       },
       {
         "path": "career-guides/finance-careers-after-graduation/index.html",
-        "bytes": 60806,
-        "sha256": "c93e80faf0a91760aa6fc0b4718768efd69550d2316552468550fc80576eec55"
+        "bytes": 61737,
+        "sha256": "a7ac72e67f995e3ec6e41b8a748a1a5ee95ee04ef69c4f276fcd014c41009f77"
       },
       {
         "path": "career-guides/finance-learning-roadmap/index.html",
-        "bytes": 59512,
-        "sha256": "b5469e1a61a2f2ce5056b4dcd0a40760dbdefd5c7c324ab5b6130a07a26b776b"
+        "bytes": 59582,
+        "sha256": "e0f0b35e6db555e036405c2416d6bfa076f366410750e9ba535d00d6bd34e2e0"
       },
       {
         "path": "career-guides/finance-operations/index.html",
-        "bytes": 72779,
-        "sha256": "48ffa06aa00d9c0f1c3e0ea1cc4a7b0f1bc9a743f54440a6f07bb0c456030910"
+        "bytes": 77157,
+        "sha256": "96cfc05ea938226dfcb4e65e33570c5069e05ef603bfbe5b60f0e3ac4a8bd860"
       },
       {
         "path": "career-guides/financial-operations-faq/index.html",
-        "bytes": 57683,
-        "sha256": "73f95453f4707a8ad3fc38017c16e9f862273855af3487e7c6d2e5f40ed53d9b"
+        "bytes": 57771,
+        "sha256": "40714e4bbc1f3ef49572ed6222e4315c551fa78f4ac81626eedcb882bb1ac6af"
       },
       {
         "path": "career-guides/fintech-operations/index.html",
-        "bytes": 58592,
-        "sha256": "023d51bea2e4b5e06e1016d41870da32916912d2c2f64cf3d213c60c1cc1c5ec"
+        "bytes": 58680,
+        "sha256": "9a3f8827bc5c66615e6235a4b989f543e3b342bcc0b426fe16700c8c700beffe"
       },
       {
         "path": "career-guides/index.html",
-        "bytes": 145212,
-        "sha256": "4ab57f318316fc23c9c879362375a74d6e1cb578acaa0f8a12e565a9159e57fc"
+        "bytes": 145575,
+        "sha256": "8c89cf426d5524593c226854cb8579ebaae75cb188c41a9ea8ab7b5c6d311b1e"
       },
       {
         "path": "career-guides/investment-banking-operations-roles/index.html",
-        "bytes": 62307,
-        "sha256": "558e40a10667e63acc10b470a755cbb4e1350e2edf1ba64e6fd7052e82150a66"
+        "bytes": 62414,
+        "sha256": "bb85914c92e27fca31d4057ec02297a226d12d796a53f9ec2e58df2a041b9d5f"
       },
       {
         "path": "career-guides/investment-banking-operations/index.html",
-        "bytes": 62644,
-        "sha256": "1a9a4d3d00eed14bab0b296bd9f9917724514ac8f94b06c530fde883c29f6784"
+        "bytes": 67233,
+        "sha256": "e0917fe1baf9e3569e8834279a15680239d7731f9ec658577c2ceaebdc4f025b"
       },
       {
         "path": "career-guides/kyc-aml-analyst/index.html",
-        "bytes": 60315,
-        "sha256": "263627aa3f2c29febec0090e16838174a3a9f96d25fadeb246370cdaf13f00a2"
+        "bytes": 64676,
+        "sha256": "4c6fa066aa7fa3405304b5f3a7b9fbedb7e52f2df1e81218cc2b5c61b73fe9c8"
       },
       {
         "path": "career-guides/middle-office-operations/index.html",
-        "bytes": 59355,
-        "sha256": "bbb6757f68cdf95d292d602aae069c5d42b15b16799914eb7aadf1f4f6332dab"
+        "bytes": 59433,
+        "sha256": "f7ec38ec76352799be09cc82a72c1a5028f6f3da0f1a041b1994886a568b67d4"
       },
       {
         "path": "career-guides/operations-analyst-banking/index.html",
-        "bytes": 59598,
-        "sha256": "fb06f1ec14a6c082ec52b430d64ee714290bece1f7da2b73f2c2d81730369a10"
+        "bytes": 59676,
+        "sha256": "1af4a8013c763c75cdb660cad7f90bb0a6918fff3c7f6d65d9345ad319d3ecbc"
       },
       {
         "path": "career-guides/reconciliation-analyst/index.html",
-        "bytes": 61299,
-        "sha256": "16cda7e81c573305803238160340aa4bd760b122cd296b15b37be56b15450791"
+        "bytes": 65778,
+        "sha256": "c8cb488cfeda2ad89ced47ce22f67f459bbc0ce6df82dc51c9c52f9858d98e5c"
       },
       {
         "path": "career-guides/retail-banking-operations/index.html",
-        "bytes": 58705,
-        "sha256": "28b013a46dc40cb3c6eed7707be5d927ee9525e9971ba66e5dc0489f01d7ed8a"
+        "bytes": 62798,
+        "sha256": "7ee27f1061f5616d4f17c983f0387b6727b19bc98aa1eb63d5c9c4c24f46c8a4"
       },
       {
         "path": "career-guides/risk-operations-analyst/index.html",
-        "bytes": 58744,
-        "sha256": "3a13dd858fee2327eefa402de5df219cf913c406bfb4185b7ab36d06e54dae56"
+        "bytes": 58822,
+        "sha256": "c656b5369edbbf9c08e165e9da9d99aa570c6e5e3d49218f1e763a49d17ece75"
       },
       {
         "path": "career-guides/securities-operations/index.html",
-        "bytes": 58939,
-        "sha256": "9c3cc48909005941845f74396878654147e361daa39a17da6cc46f2f58ecf096"
+        "bytes": 59046,
+        "sha256": "318f711746bece32b32f698b37538b14366a6c80f03aeb203f8babe778d9c8dc"
       },
       {
         "path": "career-guides/settlement-analyst/index.html",
-        "bytes": 59538,
-        "sha256": "6ecef02a4966751f3c2068cf0f6a93e5b39966444fc6d18bbfaf9032f74849c9"
+        "bytes": 59616,
+        "sha256": "1d4867b0f9ad55f0edf35c366255f43a6d8af2ca87903180a9d69eeec274c73d"
       },
       {
         "path": "career-guides/trade-lifecycle/index.html",
-        "bytes": 60438,
-        "sha256": "498b8c92235dcc01f6c4d22adf1d6a1ff7a200caa33d40f54ea9106e95da252c"
+        "bytes": 64496,
+        "sha256": "5d99b352e35d902729adaf407b1f54955be5834da808bb892374609669e6e244"
       },
       {
         "path": "career-guides/trade-support-analyst/index.html",
-        "bytes": 59084,
-        "sha256": "63009e68a6f62e7c2556a28cee57ba7e3245fb0aa6e90b166c8c1b40ed8149d0"
+        "bytes": 59191,
+        "sha256": "b74e307378678fc7b43d2e704e27db063d89d836b0caac54d22b13522523551c"
       },
       {
         "path": "career-guides/transaction-monitoring-analyst/index.html",
-        "bytes": 58960,
-        "sha256": "ca78f9edc115762eb524ebf361997d3a011c3eaa689700effc298e131c1ce865"
+        "bytes": 59038,
+        "sha256": "11b2fbb251d93733bf87a79eb34ae90d045777d12c2b3caed140f601a29b7238"
       },
       {
         "path": "career-guides/what-is-investment-banking/index.html",
-        "bytes": 58953,
-        "sha256": "70f24995e8c4e668772a23a1500a8e210f5e1e42d3f39d65727457944262b1d1"
+        "bytes": 59031,
+        "sha256": "ce6ddd33beb2c40eba1581fde4b5d8b919b91074fa49fc865d8c51312123caaa"
       },
       {
         "path": "compare/banking-vs-finance-careers/index.html",
-        "bytes": 56514,
-        "sha256": "8dc17a478c60aa684016374afa93e28f14b229ca4f81a987eac2bcae6f034715"
+        "bytes": 56592,
+        "sha256": "02073b711585aabb0efa8ca40f52d6999c9f3a4df9baef8cf58c4cd850e1b4c6"
       },
       {
         "path": "compare/best-finance-institutes-india/index.html",
-        "bytes": 57606,
-        "sha256": "50d73fdb5765d45aa68a7c66d7015d08fe1c7747d95ced14b722a58cef7493eb"
+        "bytes": 63121,
+        "sha256": "edcaacc715fb175636a3d5c4a1112eb43ad60a4b0768077583e03c39daa91e16"
       },
       {
         "path": "compare/finance-operations-vs-financial-modelling-cfa/index.html",
-        "bytes": 52041,
-        "sha256": "f5dac0b7ab5c878015763adf650ad2ad88f6424e9d2c95ec225bf5447c6494ca"
+        "bytes": 53000,
+        "sha256": "dc0e407c3e158bb673ae4ccd5a30473199e6d7677c98b5c4fd8e3df1e99a9a53"
       },
       {
         "path": "compare/investment-banking-operations-courses/index.html",
-        "bytes": 73191,
-        "sha256": "65542467f454a6acf2de3258ba27e3372a6c258f0747f8b2eff87583483d2c9f"
+        "bytes": 73299,
+        "sha256": "b1d655b8e986474cd6f3fcd2aeea5ae236f24a14eeedece4007a9b7f122d9ea2"
       },
       {
         "path": "compare/investment-banking-operations-vs-financial-analyst/index.html",
-        "bytes": 57278,
-        "sha256": "31c280f2fa6cbb252c57343838b9c722a25c253117efdabc6453bc03021601a6"
+        "bytes": 57356,
+        "sha256": "bc9abaefbcd476b3181eccf7ad84da0c5ceaa956a48db0503dddb1f48ce38de0"
       },
       {
         "path": "compare/online-vs-offline-finance-training/index.html",
-        "bytes": 50264,
-        "sha256": "48e308a77e5c2a2d05319e52cb01f319b19bc40b2d72529e214cc5bec93917f3"
+        "bytes": 51224,
+        "sha256": "290c78a063f5400d8af1867858ddedf313ff6f92a0b123bd63861f92e7d9b5a6"
       },
       {
         "path": "contact/index.html",
-        "bytes": 43519,
-        "sha256": "1ff5c010f4128922486f56fd394ae28fc3535fa8b9b3a5b0a943b22f7be03e40"
+        "bytes": 45237,
+        "sha256": "8d1328bc08b2573e1bba84f433f76c6f148fdb4027ccc53b040396f795591dba"
       },
       {
         "path": "cookie-policy/index.html",
-        "bytes": 31447,
-        "sha256": "e0c224ddbe811967c376f6d1b1b7c4d1f375fe9b285031029516506c2cafe9d2"
+        "bytes": 39185,
+        "sha256": "0692698bb705cb0718e9e30b0f5eaa107995198b1ea6e3d46175701c900af785"
       },
       {
         "path": "courses/banking-and-finance/index.html",
-        "bytes": 49800,
-        "sha256": "8b93001e82c39aa43fcecc16b338cde9f8f2d6fdd8076e1cd38b57435b0320bd"
+        "bytes": 50948,
+        "sha256": "1e0ab46cfc49dd8d8e6442f5572f25a6862d1096b6059a4dd0c84fc213fef4a0"
       },
       {
         "path": "courses/banking-courses/index.html",
-        "bytes": 51110,
-        "sha256": "a9b78dea2a4c997160044bfea6584cb854e9b8c65c3be6d4f5305d338ffcbee6"
+        "bytes": 51386,
+        "sha256": "087682f93a1186aa1fc2bbfe7ba9108cc3fa0e16a2e8b6f6461d18e99248b008"
       },
       {
         "path": "courses/digital-payments/index.html",
-        "bytes": 51006,
-        "sha256": "4591d6051ebf72ca3aeb41a4053ada8738831de4c9490558c39c972eca8c7e2c"
+        "bytes": 54289,
+        "sha256": "d7f0e808b29e617820eec1b8f32488e10744b9512ddaa80dcb6a3277884f630c"
       },
       {
         "path": "courses/finance-course-fees-eligibility/index.html",
-        "bytes": 53250,
-        "sha256": "22718d7a72731e34356481f7d0b2cd8569359383be5e4f6696f98fbd44c2e219"
+        "bytes": 56504,
+        "sha256": "b778500c7d59a2fe7a029e414287163e5b3c3f07650b7952bf0247603b26fd39"
       },
       {
         "path": "courses/finance-course-for-graduates/index.html",
-        "bytes": 52243,
-        "sha256": "5b0d05d9354e401c294500b85b3839258963f90d25a284a2050b75645f152543"
+        "bytes": 54142,
+        "sha256": "87b92b67061a10a677b705a15f2b908989921c7d2aed7c2b0a2166af04cc0cc0"
       },
       {
         "path": "courses/finance-operations-syllabus/index.html",
-        "bytes": 53089,
-        "sha256": "1f8fe35628c803f62e173c458ceedf3463d88a196b8d72ba279b7f39874fa4a8"
+        "bytes": 55985,
+        "sha256": "20c724c15281efd28c464daa77710d73e7aea7640c844cf0a8e0eecf5fff5bec"
       },
       {
         "path": "courses/finance-operations-training/index.html",
-        "bytes": 52378,
-        "sha256": "f9daae873357adf06dc75507928037f8a02ed8118a293496d58c7e124e4fb992"
+        "bytes": 52654,
+        "sha256": "b4d1cc689bf93ff2e78bec4feaab9d8876e609d75e89773c5516630e9e9bd434"
       },
       {
         "path": "courses/finance-operations/index.html",
-        "bytes": 65036,
-        "sha256": "3e9dddcdaa7ced4f3352c90e38caba701dbc9770c92519887a01f190d61aab2f"
+        "bytes": 68452,
+        "sha256": "f9f3a8d8f9e831a1f7b89b6dfb955e88d9e6a0a73332fccdae64cefd51589e40"
       },
       {
         "path": "courses/fintech/index.html",
-        "bytes": 51266,
-        "sha256": "ccde8a62200caa00c006e70ff7f5cdba136cb3cde88d85e87bdf3b974e0089bc"
+        "bytes": 54635,
+        "sha256": "e57f3e85c4f093a8bc0877e8edf9e9ca8edb98516fee76f27172720eeeaf0064"
       },
       {
         "path": "courses/index.html",
-        "bytes": 139892,
-        "sha256": "c330e556132fb88cf3190b49a4f9c0983d63946108343e26c9ed8b97fdd65fca"
+        "bytes": 128002,
+        "sha256": "b8ba4ed73d253114e9688e61592c2f0a0f06979be1f9734bede2dd63c29f5734"
       },
       {
         "path": "courses/investment-banking-operations/index.html",
-        "bytes": 66426,
-        "sha256": "ee255a5e19af365727a014759c7ecf5ede8b7606dcd78cd6b48df017e018a5e2"
+        "bytes": 71829,
+        "sha256": "5d386ba314955f6128097fb83a74d31b05245530491ea27728af5246bd2eb97e"
       },
       {
         "path": "courses/kyc-aml/index.html",
-        "bytes": 54112,
-        "sha256": "cbdd96ca0b4f23d9271ac0b979f9fe4db425e7a3490abd90ff144fc01373a4b2"
+        "bytes": 57449,
+        "sha256": "227d11356648a7287a706a171deb3daea0996488885655e6c6a44d58b2e56a8f"
       },
       {
         "path": "courses/retail-banking/index.html",
-        "bytes": 61507,
-        "sha256": "acac29f6e5a90048af5ba49d5d6daf7eb927e4cb8e38f61114e9aa1806e8c693"
+        "bytes": 64858,
+        "sha256": "34e34ee5776883b0bd1015ca818a1ad2519a9599b76172453297b17928804076"
       },
       {
         "path": "disclaimer/index.html",
-        "bytes": 31315,
-        "sha256": "14c32562d0d098706a2a0f2c2386098f8b45cb17a29f8d9db4da0f35448a08e1"
+        "bytes": 39794,
+        "sha256": "72f24369b8174060600fbf6cadc226f1343f48798cb6981ce4dfb22d52a5523f"
+      },
+      {
+        "path": "downloads/chargeback-case-answer-key.txt",
+        "bytes": 1978,
+        "sha256": "198dc3c874307335ca4a6c0a5b491f4df3ba3fb75706ed0b952c5a104f993703"
+      },
+      {
+        "path": "downloads/chargeback-case-source-records.csv",
+        "bytes": 594,
+        "sha256": "26e53473dcf8a572bdb72cef8dd1f47fb9db720829cf052e01987811601e4a52"
       },
       {
         "path": "downloads/financial-operations-masterclass-syllabus.txt",
-        "bytes": 1733,
-        "sha256": "a7339db7916dc9111d0ffe460fb6919eb8d53867c01f4333093c97884cb95029"
+        "bytes": 1720,
+        "sha256": "aafcd8c4c0c6c6b3e8840f43f847b3ae4ac90ea884405af8ba7e463bd15395a0"
       },
       {
         "path": "downloads/kyc-onboarding-case-answer-key.txt",
@@ -2316,9 +2336,29 @@
         "sha256": "e8072cb63659959e64c965ac0476a66b9f642b87a848d046a6bc62933700974c"
       },
       {
+        "path": "downloads/loan-file-review-answer-key.txt",
+        "bytes": 1486,
+        "sha256": "df363299734f73db12ac297766390a79c74fde32e97c3dd7a4d55acacaf1ed71"
+      },
+      {
+        "path": "downloads/loan-file-review-source-records.csv",
+        "bytes": 499,
+        "sha256": "81d7605fe61ff7bcf1df2634984e8e86bab4699b60cb8868fd9bba3337a36d9f"
+      },
+      {
+        "path": "downloads/payment-reconciliation-answer-key.txt",
+        "bytes": 1580,
+        "sha256": "6c6e4d710132a7117fa3aad6824cd104248ede680d7bc8079d43854201816bb9"
+      },
+      {
+        "path": "downloads/payment-reconciliation-source-records.csv",
+        "bytes": 378,
+        "sha256": "93697e4100293e69e35c41b7f9b6b70e2ddc8fed64babb1e0d33ffff6066ef10"
+      },
+      {
         "path": "downloads/placement-support-terms.txt",
-        "bytes": 1470,
-        "sha256": "b83619af6a58c3de9e76d9009260dd557fe686c8b89d12a6edec8bbcc1e69de6"
+        "bytes": 1194,
+        "sha256": "192e792933fca2034769f196329f3f5d5120628234e2d639402a1834e726c987"
       },
       {
         "path": "downloads/settlement-trade-break-answer-key.txt",
@@ -2337,53 +2377,53 @@
       },
       {
         "path": "faqs/finance-program/index.html",
-        "bytes": 47325,
-        "sha256": "664d74d4cba19d5086f6c0ba421d133673aa16ebdd007d57a69390d1b45533e2"
+        "bytes": 47432,
+        "sha256": "aaa9ff5ee70ea4d5366dac95565a246d14ab8d7e1d51da641f52e5b4eb4ef193"
       },
       {
         "path": "faqs/index.html",
-        "bytes": 44830,
-        "sha256": "4cea53db69b2674d004ceb3f3f9e892b33111b6187f9fde8e1550bbc36959abe"
+        "bytes": 45540,
+        "sha256": "63816401437542cfa62898315d7202b0767f767cde9b1c079a250a2be4349f7c"
       },
       {
         "path": "finance-course-cities-india/index.html",
-        "bytes": 44782,
-        "sha256": "bfd9a5d6b142fd12c16d11581e584ab68d4e63324cf254a9c1cbcbc5d3450e80"
+        "bytes": 46936,
+        "sha256": "a9e56e8ccac86cd6cea29b0852325e47ca4745e9d22873f8cc5f9c145621fa2a"
       },
       {
         "path": "finance-course-duration/index.html",
-        "bytes": 42832,
-        "sha256": "eb31d07a211ab8f1b073d81f37ae3cdce95104564491f6603289bd876fed4a61"
+        "bytes": 44992,
+        "sha256": "e89d3a10d78a5ea235640cff0a0bead3cd11a49c11956e1e211906a9756534bb"
       },
       {
         "path": "finance-course-eligibility/index.html",
-        "bytes": 43814,
-        "sha256": "bf49067adf6e7528075f26db995b582522d7597a17e0127bab80fcc8cebd970e"
+        "bytes": 46113,
+        "sha256": "7c48cce315939f3198348dcb621f42f805c870ed1713c46f8568a69f38ccf153"
       },
       {
         "path": "finance-course-fees-in-india/index.html",
-        "bytes": 43885,
-        "sha256": "b093e1b1b5ceddc37a4763d7923b58802b17e760acdd6be02260adf6e2422c7c"
+        "bytes": 46145,
+        "sha256": "9718e5c0199e2bef78f177bdfbd5bdaa9fdb8d9ec4d1e2a65b0c0356592c6216"
       },
       {
         "path": "finance-course-vs-mba-cfa-financial-modelling/index.html",
-        "bytes": 44411,
-        "sha256": "92fcbeda596945a34f23147359110058edc4b3f1b7ab57aed7f7ba6d6bf5a27a"
+        "bytes": 46694,
+        "sha256": "35447568ce7bea09998e3950bac55d74398a077bdabbd5d1820cf09360e6a9f6"
       },
       {
         "path": "finance-course-with-job-guarantee/index.html",
-        "bytes": 43861,
-        "sha256": "b7958e521fca1e3af2859316e3747eb5246a384ed994943e4f2a349855407de8"
+        "bytes": 46258,
+        "sha256": "a4f06736c85749d38907769d0e83d3cf3bb538453b638aed7961a0b8be12f39e"
       },
       {
         "path": "finance-course-with-placement/index.html",
-        "bytes": 43815,
-        "sha256": "3cf90d3f86002d9e8dfecb05b95b2b76db23282ce6fb10150d771b4ee8aa7f74"
+        "bytes": 46101,
+        "sha256": "d0a6113602acb17e5017d8f3c35fe5c9343add3d7e6d4d5e248e6bb6dc8d3973"
       },
       {
         "path": "finance-institute-lucknow-with-placement/index.html",
-        "bytes": 44014,
-        "sha256": "733e4608a4d9e9b770fb73d98ebc76ba274a0db44e3216709b3e16c7778f2702"
+        "bytes": 46295,
+        "sha256": "2f4bf553fb78b7966a0a095981d2e26e2cdc9f5bbbac0786925e1f13d044e534"
       },
       {
         "path": "images/blog/.gitkeep",
@@ -2596,6 +2636,11 @@
         "sha256": "a1c6ec03503063d1eb50c5709451488b6347ea601465000a9722291fe17b801d"
       },
       {
+        "path": "images/blog/financial-statement-analysis-ratios-limits.png",
+        "bytes": 2061147,
+        "sha256": "eaa05cb25863059a23bfe98876d541a5880287b6d4cb6fc7b3b372a5a7b006b9"
+      },
+      {
         "path": "images/blog/fintech-operations-careers-india.jpg",
         "bytes": 244043,
         "sha256": "26c9389015ad39a4aa778265e4da69b7fc1f1184764d2d8a3e54ee70b6a8a3d7"
@@ -2699,6 +2744,11 @@
         "path": "images/blog/neo-banking-products-controls.png",
         "bytes": 1862004,
         "sha256": "939a56d9163c58d30a33f2cd0646488ca45ee6d08519c22af26a9ad393ff3b71"
+      },
+      {
+        "path": "images/blog/open-banking-apis-consent-operations.png",
+        "bytes": 1884052,
+        "sha256": "6e36c5e0f27063fefc034c3dd2cc25b3a2f2c9af86fa836673c4a8cc8a234c9e"
       },
       {
         "path": "images/blog/payment-gateway-process-settlement.webp",
@@ -3802,153 +3852,153 @@
       },
       {
         "path": "index.html",
-        "bytes": 136253,
-        "sha256": "de140696f0152adc8b8e65496425e643d3a5c45bb1e80d2ede8452f6980019c4"
+        "bytes": 132020,
+        "sha256": "4cfcbfe95c409d64e8320147a6473e07350619bac997b206951b0e6c15e6a13b"
       },
       {
         "path": "india/bengaluru/index.html",
-        "bytes": 69615,
-        "sha256": "c435a4eb629ea8f02cd692a63952702c007600109248619ef1070c721bca4fea"
+        "bytes": 74357,
+        "sha256": "27cb912f5b74e47d5938a476c98c07c79bbb8771ce4749b5e1b5526d6e2bcaf9"
       },
       {
         "path": "india/delhi-ncr/index.html",
-        "bytes": 69273,
-        "sha256": "02c4e0c4563ef08ce9e146179a99fefcf7168254f5ccdfff72d3541de3a902af"
+        "bytes": 73221,
+        "sha256": "8091fe1fd6774fc36b574140acfdd7cd2684347fb7c66166db0d38c8b339d26c"
       },
       {
         "path": "india/hyderabad/index.html",
-        "bytes": 70607,
-        "sha256": "4811858648613bf91ab5b15969b0301bdb1a06c0eb6499e46866cd6a0898b9ac"
+        "bytes": 70663,
+        "sha256": "7e5c38239e650df4653938d5cb12d3648c4bb1139277e3b7d86a0d86d5331be5"
       },
       {
         "path": "india/index.html",
-        "bytes": 115633,
-        "sha256": "44253355c886dd2c9f59a269f3c9778b01bdd30d39f4ab25a93d2ccfeaa781d2"
+        "bytes": 103473,
+        "sha256": "220662aceaaca188127c83338666d26ea850cda59107a2804442d07eabd5dae9"
       },
       {
         "path": "india/mumbai/index.html",
-        "bytes": 70296,
-        "sha256": "17c0879277796c9ed416cee41290eba8240767136786e74cc313a05959639018"
+        "bytes": 74982,
+        "sha256": "ea9b3bef57b2e651406417283c2f5b596741bca2c06b766919d270bb2708ddb7"
       },
       {
         "path": "india/pune/index.html",
-        "bytes": 71223,
-        "sha256": "e7f0f90fa6be3c6de7deec6542b4ab5afc5c8ce86ac41de794c1b6e87e442bc3"
+        "bytes": 71279,
+        "sha256": "96e6bc782f611cf2425eec09ec15200d749a6a1886d61433674cd68246e9e412"
       },
       {
         "path": "investment-banking-operations-course-with-placement/index.html",
-        "bytes": 44348,
-        "sha256": "7c9ad217aaf67890ab9a4e710e7446fd29272eb271345068908f89412287b37d"
+        "bytes": 47460,
+        "sha256": "ef01afa3f3fa8746f31bf37053ca7bac1a92e87e841cb37b776c4d27440b3b3e"
       },
       {
         "path": "job-oriented-finance-course-india/index.html",
-        "bytes": 44749,
-        "sha256": "7feba74a3d52b7644ad35bffac6c6c6e4a5e7a671525f078740e2c4b00cb496f"
+        "bytes": 47008,
+        "sha256": "64565e3dadd634cf75dd86a84f37911935e75b8e01f4ad8da4b6536ad0faf5de"
       },
       {
         "path": "llms.txt",
-        "bytes": 83297,
-        "sha256": "3ba3ae927bac31ad14e322a3e3312bec802e6ebdd03dfa4449675b9639539066"
+        "bytes": 85371,
+        "sha256": "bcb4a81c296a37a472fbac0c8b0a1f27f039f755fbcc66e049abfff64c591361"
       },
       {
         "path": "locations/lucknow/index.html",
-        "bytes": 55865,
-        "sha256": "32d38f103b3723ab2bae82f19713ce321ed0512073afecf40777dc34586fd02d"
+        "bytes": 56791,
+        "sha256": "a794699842c493f5a3c114580411f96d0d147b5f01b2d4e08f2fcba5e8f93662"
       },
       {
         "path": "online-finance-course-with-placement/index.html",
-        "bytes": 43941,
-        "sha256": "aee652cd6d59984f8286030a42d317b93045e4420aa19c423892495506fda9f8"
+        "bytes": 46134,
+        "sha256": "c8f7e0ea27d664e417f5df60eadbd1daf965c85ca76dea274875c24c46454dff"
       },
       {
         "path": "placements/index.html",
-        "bytes": 109119,
-        "sha256": "d1a549b5f403e63cefd63095f32fb9a31720bc59563eff537c9fe0fc73ec1001"
+        "bytes": 95605,
+        "sha256": "faac6c7f3af5401e5b35afb86318a1110b498a8ed5bcd89a40a9d4e2340e063d"
       },
       {
         "path": "privacy-policy/index.html",
-        "bytes": 40310,
-        "sha256": "961232b95c879c68d968033fee49b80fb22e4189fab90164cccf29df64459c32"
+        "bytes": 43539,
+        "sha256": "66c727a42da3b171d71bd95d9a06ed1ddb490e179cedfcb2b269f3af84457593"
       },
       {
         "path": "quiz/index.html",
-        "bytes": 88593,
-        "sha256": "f74ee6020655d445aa5dec84f3831153b7f8272d58fbd4f3feaa211444b395f1"
+        "bytes": 88701,
+        "sha256": "32bdbb87770616fae17293768ce41505ea5216be26c2d4f0a9f8ef87136dd0e5"
       },
       {
         "path": "refund-cancellation-policy/index.html",
-        "bytes": 32011,
-        "sha256": "831b1008c7297c468522131d62823b326d6fe49e2901aaa3601250f08effde36"
+        "bytes": 41421,
+        "sha256": "35d0f19dcfde66e268c85c58dfbca1e9cbf7976f48a70dabb99abb4f4d97b95b"
       },
       {
         "path": "resources/accounting-basics/index.html",
-        "bytes": 58671,
-        "sha256": "7f3ea17a14a47b7f4685a0a5c268baa6601556a85945392aa16dceef1ce29d67"
+        "bytes": 59001,
+        "sha256": "393d648fa3c63ec93ec5183c9a43217c8488096745771eca435dd77657cfb976"
       },
       {
         "path": "resources/accounting-interview-questions/index.html",
-        "bytes": 55037,
-        "sha256": "324cad0a783c282dd2fbad00c1db98a9542099036d2c34b6b68081668bf6037c"
+        "bytes": 55112,
+        "sha256": "76db5d4ae2d3ca5a981ed3384fe6a150ad31387db831926b2cf83f95e2823366"
       },
       {
         "path": "resources/bank-reconciliation-process/index.html",
-        "bytes": 53141,
-        "sha256": "0fa81829c7d898bd80775969f68f3d05fda66f827a5abc48812f5c60d50629d1"
+        "bytes": 53378,
+        "sha256": "3c6a6ad824f66f267c84bb92fa20db667cdd1642bfe02ef76a06fb069ce3495b"
       },
       {
         "path": "resources/capital-market-operations/index.html",
-        "bytes": 56046,
-        "sha256": "8d53d4cf3e2e1e3883051705ad76feb0452ef0917c351c4aea866b058b162e78"
+        "bytes": 56124,
+        "sha256": "ab956930229cf7a054aa36a54bd9c623dd8bcdb562c70b95da842c8b51c87881"
       },
       {
         "path": "resources/corporate-actions-workflow/index.html",
-        "bytes": 55500,
-        "sha256": "639dd219979d3354786f68b44bec56f8ce982ffded51f9486a621c7d9cb188fc"
+        "bytes": 55578,
+        "sha256": "eb8ab97505d00de463931d21db18ed1c3b705b73138c91a768318916480009db"
       },
       {
         "path": "resources/cost-accounting-finance-operations/index.html",
-        "bytes": 52930,
-        "sha256": "0d60545b662a492d2e2f3b808d342e783561ea898956f1054ccef149be6db765"
+        "bytes": 53008,
+        "sha256": "91c964767a67e4d40121d46ababe964ea33ade2608205023197d16bb9aa9e0ec"
       },
       {
         "path": "resources/finance-gk/index.html",
-        "bytes": 57439,
-        "sha256": "14b276e08dd80d5988f750241069cfe4023cc8897e644eb23a385ca2a81f3e83"
+        "bytes": 57524,
+        "sha256": "bc5f2396bdc921a499f214c530a121242b48ea141b0231ced9a02f1dbb613567"
       },
       {
         "path": "resources/financial-accounting-banking/index.html",
-        "bytes": 53988,
-        "sha256": "9a35be6a0c71e737be0e825de4ea2af3d5255ee2a570819dc1baa291d5144407"
+        "bytes": 54063,
+        "sha256": "328aebae5044536e6f872853ae393cd80f6d118574ddef4d4d02cfd9dca233c0"
       },
       {
         "path": "resources/financial-statement-analysis/index.html",
-        "bytes": 54817,
-        "sha256": "49092af8543909cea3bc30ca6b49ee7c7b033c769605fffcea60367dbd6e8d64"
+        "bytes": 56029,
+        "sha256": "b342205f38aeb978cf513d0e845e36244b5e54dc873e6f544fcf9cd4b74d84c1"
       },
       {
         "path": "resources/financial-system-india/index.html",
-        "bytes": 56209,
-        "sha256": "17fbc00825de12f486ba375ea123accdf9e2ca5dc51841decda082225d5f3868"
+        "bytes": 56268,
+        "sha256": "506a4d4ddecf7185c94e03fca3869c88535f3fdfcce75130d6113a8e807847cf"
       },
       {
         "path": "resources/index.html",
-        "bytes": 78107,
-        "sha256": "2daaba1968dd57a950b1473c45ba53149dd15b48c251ac8c2839efd9a67b1457"
+        "bytes": 78209,
+        "sha256": "6f171be1d1f7610963d18de70dee2531562b0ef3c492a47bd9b734f0f9b307f3"
       },
       {
         "path": "resources/investment-banking-interview-questions/index.html",
-        "bytes": 67768,
-        "sha256": "d36ded8dcd4e0d40b9a64fa33f0709fe9b5a275cce5f1828b67fc66cf3944aca"
+        "bytes": 68158,
+        "sha256": "94c480dc39275f8e0d2dae9f2c3263c2948674d1655f68112ab1a225c0a26f42"
       },
       {
         "path": "resources/kyc-aml-compliance-guide/index.html",
-        "bytes": 55359,
-        "sha256": "d694e827d804451ed4b969f32950f616113bc2dea1d60cf4bcbc7be828feb0c9"
+        "bytes": 55437,
+        "sha256": "5173f4a3e03c3096ced8b7f1ba069528a8f55e16bfbb8ccb2527291eb184a98f"
       },
       {
         "path": "resources/reconciliation-in-finance/index.html",
-        "bytes": 62899,
-        "sha256": "6bb822f21fc1b06ab9bbeaebbc1fcf1c6d094da3e4b1ac983390ca85f7fc6b02"
+        "bytes": 63296,
+        "sha256": "f10b9267f7c6ea483ae97a50f68c28159713c3ef64d3012653c1727506d14413"
       },
       {
         "path": "robots.txt",
@@ -3957,18 +4007,18 @@
       },
       {
         "path": "sitemap.xml",
-        "bytes": 24048,
-        "sha256": "2b7b6f439af07a36a40e4ffcafed7ab4f3ca6d8a37977117cbc6fd3dc1aea951"
+        "bytes": 24776,
+        "sha256": "4918465be65da60ec47e65ae5f895b5c9caa7d1880beb1e679152a1583053d60"
       },
       {
         "path": "terms-and-conditions/index.html",
-        "bytes": 34292,
-        "sha256": "962611b92d330ca06463aaef04cebd79d16bc7965bba5917257ecc1c4d1c1ae6"
+        "bytes": 42850,
+        "sha256": "1622a57c9c9a32f8180a616c4a6b74aa013972946bb1e9ff85617b3103f4f133"
       },
       {
         "path": "which-finance-course-is-right-for-me/index.html",
-        "bytes": 43997,
-        "sha256": "c7b0912940d9ee778bcf165eb7602b698afa1023ff36d90cbe47b7cc75eb0b0f"
+        "bytes": 46273,
+        "sha256": "ae67157bc1d0ff0075ef9d75be25a0973584381482d83b15a89cf09dfe574535"
       }
     ]
   },
@@ -3976,30 +4026,23 @@
     {
       "label": "complete SEO quality gate",
       "command": "npm.cmd run seo:gate",
-      "passed": true,
-      "exitCode": 0,
-      "durationMs": 69245
-    },
-    {
-      "label": "release package deployment check",
-      "command": "npm.cmd run deployment:check",
-      "passed": true,
-      "exitCode": 0,
-      "durationMs": 947
+      "passed": false,
+      "exitCode": 1,
+      "durationMs": 68550
     },
     {
       "label": "refresh authority report",
       "command": "npm.cmd run seo:authority:report",
       "passed": true,
       "exitCode": 0,
-      "durationMs": 766
+      "durationMs": 815
     },
     {
       "label": "refresh measurement report",
       "command": "npm.cmd run seo:measure:report",
       "passed": true,
       "exitCode": 0,
-      "durationMs": 703
+      "durationMs": 1000
     },
     {
       "label": "external deployed-site verification",
@@ -4013,5 +4056,7 @@
     "command": "npm run seo:external -- <deployed-origin>",
     "requiredBeforeDeclaringLiveDeploymentVerified": true
   },
-  "failures": []
+  "failures": [
+    "complete SEO quality gate"
+  ]
 }

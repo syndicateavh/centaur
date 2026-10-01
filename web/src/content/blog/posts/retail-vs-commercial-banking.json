@@ -6,32 +6,138 @@
   "title": "Retail Banking vs Commercial Banking: Differences and Roles",
   "excerpt": "Compare retail and commercial banking customers, products, workflows, controls and role families in a clear operations-focused guide.",
   "category": "retail-banking",
-  "author": { "type": "Organization", "id": "centaur-careers", "name": "Centaur Careers", "role": "Finance education editorial team", "profilePath": "/about/" },
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Finance education editorial team",
+    "profilePath": "/about/"
+  },
   "body": [
-    { "type": "paragraph", "text": "Retail banking and commercial banking both move money, provide financial services and rely on controlled operations, but they usually serve different customer groups and workflow patterns. Retail banking commonly serves individuals and households, while commercial banking focuses on businesses and institutions. The boundary is not identical at every bank, and products can overlap. This comparison explains the operating differences for learners and early-career readers. It does not recommend a bank, product, loan or account and all examples are fictional." },
-    { "type": "heading", "level": 2, "text": "Retail banking in simple terms" },
-    { "type": "paragraph", "text": "Retail banking is generally associated with individual customers and household financial needs. Common activities can include account servicing, payments, deposits, cards, personal lending, customer identification, complaints, branch or digital-channel support and reconciliation. The operational scale may be high, so standardised processing, data protection, service quality and exception routing matter. The exact products and responsibilities depend on the bank and its current offering." },
-    { "type": "heading", "level": 2, "text": "Commercial banking in simple terms" },
-    { "type": "paragraph", "text": "Commercial banking generally serves businesses and may involve operating accounts, collections, payments, credit facilities, cash management, trade-related services and relationship or credit teams. Business files can involve more entities, authorised signatories, financial information, limits and documentation. Operations teams may check account instructions, payment files, approvals, credit conditions and reconciliations. A commercial service workflow can have different control points from a high-volume retail request." },
-    { "type": "heading", "level": 2, "text": "Key differences" },
-    { "type": "list", "items": ["Customer: individual or household focus versus business or institutional relationship.", "Workflow: high-volume standardised requests versus more entity-specific instructions and approvals.", "Evidence: customer-service and account records versus business authority, facility, payment and financial records.", "Operations: channel support and transaction processing versus cash-management, credit, documentation and exception coordination.", "Skills: both need accuracy, privacy, communication and controls; commercial work may add entity and instruction complexity."] },
-    { "type": "heading", "level": 2, "text": "A fictional service handoff" },
-    { "type": "paragraph", "text": "A fictional retail customer requests a change through an authorised channel, while a fictional business sends a payment file with multiple beneficiaries and approval evidence. Both cases need identity, instruction, access and posting checks, but the business file may require additional validation of authority, file totals and maker-checker approval. The operations associate follows the relevant procedure and escalates a missing document rather than applying the retail checklist to the commercial case. These examples are invented." },
-    { "type": "heading", "level": 2, "text": "Skills that transfer across both areas" },
-    { "type": "paragraph", "text": "Both retail and commercial operations need accurate data capture, customer or stakeholder communication, privacy awareness, reconciliation and escalation. The difference is often the complexity and volume of the evidence rather than a completely different skill set. A learner can build a portfolio exercise that compares a simple customer-service request with a controlled business payment file, then explains where authority, approval, reference and exception handling change. Keep the exercise fictional and do not present it as experience with a real bank." },
-    { "type": "list", "items": ["What customer or entity is being served?", "Which source proves the instruction is authorised?", "Which fields must be checked before posting or release?", "What happens when the record is incomplete or inconsistent?", "Which team owns the next action and customer communication?"] },
-    { "type": "link", "label": "Read about commercial bank services and operations", "href": "/blog/commercial-banks-services-operations/" },
-    { "type": "link", "label": "Explore retail banking operations roles", "href": "/career-guides/retail-banking-operations/", "routeId": "career-guide-retail-banking-operations" },
-    { "type": "link", "label": "Review the retail banking course module", "href": "/courses/retail-banking/", "routeId": "retail-banking" },
-    { "type": "paragraph", "text": "For career research, compare job descriptions by workflow, customer type, control responsibility and evidence handled rather than by title alone. A role named operations analyst can mean different work in different teams. Centaur Careers publishes this comparison for education; it is not banking, lending, investment, legal or employment advice." }
+    {
+      "type": "paragraph",
+      "text": "Retail banking and commercial banking both move money, provide financial services and rely on controlled operations, but they usually serve different customer groups and workflow patterns. Retail banking commonly serves individuals and households, while commercial banking focuses on businesses and institutions. The boundary is not identical at every bank, and products can overlap. This comparison explains the operating differences for learners and early-career readers. It does not recommend a bank, product, loan or account and all examples are fictional."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Retail banking in simple terms"
+    },
+    {
+      "type": "paragraph",
+      "text": "Retail banking is generally associated with individual customers and household financial needs. Common activities can include account servicing, payments, deposits, cards, personal lending, customer identification, complaints, branch or digital-channel support and reconciliation. The operational scale may be high, so standardised processing, data protection, service quality and exception routing matter. The exact products and responsibilities depend on the bank and its current offering."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Commercial banking in simple terms"
+    },
+    {
+      "type": "paragraph",
+      "text": "Commercial banking generally serves businesses and may involve operating accounts, collections, payments, credit facilities, cash management, trade-related services and relationship or credit teams. Business files can involve more entities, authorised signatories, financial information, limits and documentation. Operations teams may check account instructions, payment files, approvals, credit conditions and reconciliations. A commercial service workflow can have different control points from a high-volume retail request."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Key differences"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Customer: individual or household focus versus business or institutional relationship.",
+        "Workflow: high-volume standardised requests versus more entity-specific instructions and approvals.",
+        "Evidence: customer-service and account records versus business authority, facility, payment and financial records.",
+        "Operations: channel support and transaction processing versus cash-management, credit, documentation and exception coordination.",
+        "Skills: both need accuracy, privacy, communication and controls; commercial work may add entity and instruction complexity."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A fictional service handoff"
+    },
+    {
+      "type": "paragraph",
+      "text": "A fictional retail customer requests a change through an authorised channel, while a fictional business sends a payment file with multiple beneficiaries and approval evidence. Both cases need identity, instruction, access and posting checks, but the business file may require additional validation of authority, file totals and maker-checker approval. The operations associate follows the relevant procedure and escalates a missing document rather than applying the retail checklist to the commercial case. These examples are invented."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Skills that transfer across both areas"
+    },
+    {
+      "type": "paragraph",
+      "text": "Both retail and commercial operations need accurate data capture, customer or stakeholder communication, privacy awareness, reconciliation and escalation. The difference is often the complexity and volume of the evidence rather than a completely different skill set. A learner can build a portfolio exercise that compares a simple customer-service request with a controlled business payment file, then explains where authority, approval, reference and exception handling change. Keep the exercise fictional and do not present it as experience with a real bank."
+    },
+    {
+      "type": "list",
+      "items": [
+        "What customer or entity is being served?",
+        "Which source proves the instruction is authorised?",
+        "Which fields must be checked before posting or release?",
+        "What happens when the record is incomplete or inconsistent?",
+        "Which team owns the next action and customer communication?"
+      ]
+    },
+    {
+      "type": "link",
+      "label": "Read about commercial bank services and operations",
+      "href": "/blog/commercial-banks-services-operations/"
+    },
+    {
+      "type": "link",
+      "label": "Explore retail banking operations roles",
+      "href": "/career-guides/retail-banking-operations/",
+      "routeId": "career-guide-retail-banking-operations"
+    },
+    {
+      "type": "link",
+      "label": "Review the retail banking course module",
+      "href": "/courses/retail-banking/",
+      "routeId": "retail-banking"
+    },
+    {
+      "type": "paragraph",
+      "text": "For career research, compare job descriptions by workflow, customer type, control responsibility and evidence handled rather than by title alone. A role named operations analyst can mean different work in different teams. Centaur Careers publishes this comparison for education; it is not banking, lending, investment, legal or employment advice."
+    }
   ],
-  "coverImage": { "src": "/images/blog/retail-vs-commercial-banking.webp", "alt": "Editorial comparison illustration showing distinct retail and commercial banking service lanes with shared controls", "width": 1672, "height": 941 },
+  "coverImage": {
+    "src": "/images/blog/retail-vs-commercial-banking.webp",
+    "alt": "Editorial comparison illustration showing distinct retail and commercial banking service lanes with shared controls",
+    "width": 1672,
+    "height": 941
+  },
   "publishedAt": "2026-09-29",
-  "updatedAt": "2026-09-29",
+  "updatedAt": "2026-09-30",
   "scheduledAt": null,
-  "seo": { "title": "Retail vs Commercial Banking: Key Differences | Centaur Careers", "description": "Compare retail and commercial banking customers, products, workflows, controls and role families in a clear operations-focused guide.", "canonicalPath": "/blog/retail-vs-commercial-banking/", "noindex": false, "focusKeyword": "retail banking vs commercial banking", "secondaryKeywords": ["retail banking and commercial banking", "commercial banking roles", "retail banking operations", "banking products"] },
-  "tags": ["Retail Banking", "Commercial Banking", "Banking Products", "Banking Roles"],
-  "relatedRouteIds": ["blog", "retail-banking", "career-guide-retail-banking-operations", "career-guide-finance-operations", "resource-finance-gk"],
+  "seo": {
+    "title": "Retail vs Commercial Banking: Key Differences | Centaur Careers",
+    "description": "Compare retail and commercial banking customers, services, operations, and role families with a practical workflow map.",
+    "canonicalPath": "/blog/retail-vs-commercial-banking/",
+    "noindex": false,
+    "focusKeyword": "retail banking vs commercial banking",
+    "secondaryKeywords": [
+      "retail banking",
+      "commercial banking",
+      "banking operations"
+    ]
+  },
+  "tags": [
+    "Retail Banking",
+    "Commercial Banking",
+    "Banking Products",
+    "Banking Roles"
+  ],
+  "relatedRouteIds": [
+    "blog",
+    "retail-banking",
+    "career-guide-retail-banking-operations",
+    "career-guide-finance-operations",
+    "resource-finance-gk"
+  ],
   "redirects": [],
-  "evidenceNotes": ["The comparison is a general educational model; banks define products, teams and controls differently.", "Examples are fictional and no banking or employment outcome is promised."]
+  "evidenceNotes": [
+    "The comparison is a general educational model; banks define products, teams and controls differently.",
+    "Examples are fictional and no banking or employment outcome is promised."
+  ]
 }

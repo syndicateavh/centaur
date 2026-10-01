@@ -6,43 +6,198 @@
   "title": "Trade Break Before Settlement: A Worked Investigation",
   "excerpt": "Use four fictional trade records to calculate a settlement mismatch, write an investigation note, decide what to escalate, and check an answer key.",
   "category": "investment-banking",
-  "author": { "type": "Organization", "id": "centaur-careers", "name": "Centaur Careers", "role": "Publisher", "profilePath": "/" },
+  "author": {
+    "type": "Organization",
+    "id": "centaur-careers",
+    "name": "Centaur Careers",
+    "role": "Publisher",
+    "profilePath": "/"
+  },
   "body": [
-    { "type": "paragraph", "text": "A trade break before settlement is an unresolved difference between records that should describe the same transaction. In this worked example, an internal record and a queued instruction show 100 practice shares, while a counterparty confirmation shows 10. No settlement failure has occurred in this packet: the instruction is still queued. An operations analyst should quantify the break, check the original evidence and possible amendments, log the exception, and route the decision to the authorised owner. The analyst should not overwrite a source record or declare the trade agreed simply to make records match." },
-    { "type": "paragraph", "text": "Every company name, instrument, reference, date, price and status below is fictional. The exercise teaches an investigation method; it is not a rule for any exchange, clearing system, counterparty or employer. The example uses a simplified gross amount of quantity multiplied by price, with taxes and fees excluded." },
-    { "type": "heading", "level": 2, "text": "Download the four source records and try the case" },
-    { "type": "paragraph", "text": "Download the CSV first and compare the rows for simulated trade SIM-1042. Work out which fields match, which differ, the numerical size of each difference, and whether the available evidence lets you close the exception. Keep the answer key closed until you have written a short case note." },
-    { "type": "link", "label": "Download the fictional trade-break source records (CSV)", "href": "/downloads/settlement-trade-break-source-records.csv" },
-    { "type": "list", "items": ["Execution note SIM-EX-01: buy 100 Practice Share P units at INR 250, gross INR 25,000; approval of the original execution still needs checking.", "Internal capture SIM-INT-02: buy 100 units at INR 250, gross INR 25,000; confirmation remains pending.", "Counterparty confirmation SIM-CP-03: buy 10 units at INR 250, gross INR 2,500; marked unmatched.", "Queued settlement instruction SIM-SET-04: 100 units and INR 25,000; its release depends on the employer's control and approval process."] },
-    { "type": "heading", "level": 2, "text": "Step 1: identify and calculate the trade break" },
-    { "type": "paragraph", "text": "First confirm that the rows refer to the same simulated trade: reference SIM-1042, instrument, buy side, trade date and exercise settlement date. Then compare the economic fields. The quantity difference between 100 and 10 is 90 shares. At INR 250 per share, the simplified gross-amount difference is INR 22,500. The price does not differ. This points the investigation toward quantity, allocation or record version, but it does not prove which party's record is wrong." },
-    { "type": "heading", "level": 2, "text": "Step 2: trace evidence without forcing a match" },
-    { "type": "paragraph", "text": "The execution note and internal capture both show 100, but a second internal record is not independent proof that the counterparty confirmation is a typo. Check the approved execution, allocation history, any amendments, the record versions and whether all four rows truly belong to the same instruction. Ask the designated trade owner or counterparty contact to verify the disputed quantity through the approved channel. A ten-share allocation, stale confirmation or capture error would lead to different corrective action." },
-    { "type": "link", "label": "See where confirmation and settlement sit in the trade lifecycle", "href": "/career-guides/trade-lifecycle/", "routeId": "career-guide-trade-lifecycle" },
-    { "type": "heading", "level": 2, "text": "Step 3: log the exception and escalate the decision" },
-    { "type": "paragraph", "text": "A useful exception log records the source IDs, 90-share and INR 22,500 differences, time found, current status, evidence checked, owner, deadline and next action. Refer the queued instruction to the authorised settlement-control owner. Whether processing is paused depends on the team's procedure and delegated authority; the learner in this case cannot release, cancel or alter a real instruction. Keep both original records visible so another reviewer can retrace the issue." },
-    { "type": "callout", "title": "Model case note", "text": "SIM-1042: Internal capture SIM-INT-02 and queued instruction SIM-SET-04 show 100 units/INR 25,000; counterparty confirmation SIM-CP-03 shows 10 units/INR 2,500. Price and trade reference match. Difference: 90 units/INR 22,500 gross. Execution note SIM-EX-01 shows 100, subject to trade-owner validation. Status: unresolved; instruction referred to settlement-control owner. Next: verify execution and allocation history, request counterparty confirmation through the approved channel, then recheck the instruction after authorised resolution. No source record changed." },
-    { "type": "heading", "level": 2, "text": "Step 4: verify resolution and close the trail" },
-    { "type": "paragraph", "text": "When the authorised parties establish the agreed trade details, any correction must follow their controlled process. Compare the revised confirmation with the approved trade and settlement instruction, record the change and approval, and check the final status. If the break cannot be resolved by the applicable cut-off, escalate it rather than closing it as a timing difference by guesswork. This is why a good answer ends with a verification step, not merely a request for a corrected file." },
-    { "type": "link", "label": "Download the worked answer key and model note (TXT)", "href": "/downloads/settlement-trade-break-answer-key.txt" },
-    { "type": "heading", "level": 2, "text": "Self-check your investigation" },
-    { "type": "list", "ordered": true, "items": ["Did you match the identifiers and scope before comparing quantities?", "Did you calculate both 90 shares and INR 22,500 gross without adding unsupported fees?", "Did you test allocation, amendment, version and capture possibilities rather than assuming a typo?", "Did you state what to record and who must decide on the queued instruction?", "Did you require an authorised correction, a recheck and a final audit trail before closure?"] },
-    { "type": "paragraph", "text": "Give yourself one point per item you can explain aloud. The five-point score is a learning aid, not an employer assessment. A common weak answer is to change 10 to 100 immediately: that erases the evidence of the mismatch and claims an authority the analyst may not have." },
-    { "type": "link", "label": "Learn the broader reconciliation process for unmatched records", "href": "/resources/reconciliation-in-finance/", "routeId": "resource-reconciliation-in-finance" },
-    { "type": "link", "label": "Explore the investment banking operations analyst role", "href": "/career-guides/investment-banking-operations/", "routeId": "career-guide-investment-banking-operations" },
-    { "type": "heading", "level": 2, "text": "How this practice connects to a course decision" },
-    { "type": "paragraph", "text": "If this kind of comparison, evidence handling and escalation interests you, inspect the current Financial Operations Masterclass curriculum for trade settlement and reconciliation practice. Ask how learners receive feedback on an exception note and what the programme actually covers. A fictional exercise on this page does not establish job readiness or a particular employer outcome." },
-    { "type": "link", "label": "Review the Financial Operations Masterclass curriculum", "href": "/courses/", "routeId": "courses" },
-    { "type": "paragraph", "text": "For market context, SEBI's investor education asks investors to retain and check trade confirmations. This case is an original operations learning example, not a quotation from a provider or a statement of a universal settlement procedure." },
-    { "type": "link", "label": "Read SEBI's investor guidance on trade confirmations", "href": "https://investor.sebi.gov.in/securities-dos_and_donts.html" }
+    {
+      "type": "paragraph",
+      "text": "A trade break before settlement is an unresolved difference between records that should describe the same transaction. In this worked example, an internal record and a queued instruction show 100 practice shares, while a counterparty confirmation shows 10. No settlement failure has occurred in this packet: the instruction is still queued. An operations analyst should quantify the break, check the original evidence and possible amendments, log the exception, and route the decision to the authorised owner. The analyst should not overwrite a source record or declare the trade agreed simply to make records match."
+    },
+    {
+      "type": "paragraph",
+      "text": "Every company name, instrument, reference, date, price and status below is fictional. The exercise teaches an investigation method; it is not a rule for any exchange, clearing system, counterparty or employer. The example uses a simplified gross amount of quantity multiplied by price, with taxes and fees excluded."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Download the four source records and try the case"
+    },
+    {
+      "type": "paragraph",
+      "text": "Download the CSV first and compare the rows for simulated trade SIM-1042. Work out which fields match, which differ, the numerical size of each difference, and whether the available evidence lets you close the exception. Keep the answer key closed until you have written a short case note."
+    },
+    {
+      "type": "link",
+      "label": "Download the fictional trade-break source records (CSV)",
+      "href": "/downloads/settlement-trade-break-source-records.csv"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Execution note SIM-EX-01: buy 100 Practice Share P units at INR 250, gross INR 25,000; approval of the original execution still needs checking.",
+        "Internal capture SIM-INT-02: buy 100 units at INR 250, gross INR 25,000; confirmation remains pending.",
+        "Counterparty confirmation SIM-CP-03: buy 10 units at INR 250, gross INR 2,500; marked unmatched.",
+        "Queued settlement instruction SIM-SET-04: 100 units and INR 25,000; its release depends on the employer's control and approval process."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Step 1: identify and calculate the trade break"
+    },
+    {
+      "type": "paragraph",
+      "text": "First confirm that the rows refer to the same simulated trade: reference SIM-1042, instrument, buy side, trade date and exercise settlement date. Then compare the economic fields. The quantity difference between 100 and 10 is 90 shares. At INR 250 per share, the simplified gross-amount difference is INR 22,500. The price does not differ. This points the investigation toward quantity, allocation or record version, but it does not prove which party's record is wrong."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Step 2: trace evidence without forcing a match"
+    },
+    {
+      "type": "paragraph",
+      "text": "The execution note and internal capture both show 100, but a second internal record is not independent proof that the counterparty confirmation is a typo. Check the approved execution, allocation history, any amendments, the record versions and whether all four rows truly belong to the same instruction. Ask the designated trade owner or counterparty contact to verify the disputed quantity through the approved channel. A ten-share allocation, stale confirmation or capture error would lead to different corrective action."
+    },
+    {
+      "type": "link",
+      "label": "See where confirmation and settlement sit in the trade lifecycle",
+      "href": "/career-guides/trade-lifecycle/",
+      "routeId": "career-guide-trade-lifecycle"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Step 3: log the exception and escalate the decision"
+    },
+    {
+      "type": "paragraph",
+      "text": "A useful exception log records the source IDs, 90-share and INR 22,500 differences, time found, current status, evidence checked, owner, deadline and next action. Refer the queued instruction to the authorised settlement-control owner. Whether processing is paused depends on the team's procedure and delegated authority; the learner in this case cannot release, cancel or alter a real instruction. Keep both original records visible so another reviewer can retrace the issue."
+    },
+    {
+      "type": "callout",
+      "title": "Model case note",
+      "text": "SIM-1042: Internal capture SIM-INT-02 and queued instruction SIM-SET-04 show 100 units/INR 25,000; counterparty confirmation SIM-CP-03 shows 10 units/INR 2,500. Price and trade reference match. Difference: 90 units/INR 22,500 gross. Execution note SIM-EX-01 shows 100, subject to trade-owner validation. Status: unresolved; instruction referred to settlement-control owner. Next: verify execution and allocation history, request counterparty confirmation through the approved channel, then recheck the instruction after authorised resolution. No source record changed."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Step 4: verify resolution and close the trail"
+    },
+    {
+      "type": "paragraph",
+      "text": "When the authorised parties establish the agreed trade details, any correction must follow their controlled process. Compare the revised confirmation with the approved trade and settlement instruction, record the change and approval, and check the final status. If the break cannot be resolved by the applicable cut-off, escalate it rather than closing it as a timing difference by guesswork. This is why a good answer ends with a verification step, not merely a request for a corrected file."
+    },
+    {
+      "type": "link",
+      "label": "Download the worked answer key and model note (TXT)",
+      "href": "/downloads/settlement-trade-break-answer-key.txt"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Self-check your investigation"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Did you match the identifiers and scope before comparing quantities?",
+        "Did you calculate both 90 shares and INR 22,500 gross without adding unsupported fees?",
+        "Did you test allocation, amendment, version and capture possibilities rather than assuming a typo?",
+        "Did you state what to record and who must decide on the queued instruction?",
+        "Did you require an authorised correction, a recheck and a final audit trail before closure?"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Give yourself one point per item you can explain aloud. The five-point score is a learning aid, not an employer assessment. A common weak answer is to change 10 to 100 immediately: that erases the evidence of the mismatch and claims an authority the analyst may not have."
+    },
+    {
+      "type": "link",
+      "label": "Learn the broader reconciliation process for unmatched records",
+      "href": "/resources/reconciliation-in-finance/",
+      "routeId": "resource-reconciliation-in-finance"
+    },
+    {
+      "type": "link",
+      "label": "Explore the investment banking operations analyst role",
+      "href": "/career-guides/investment-banking-operations/",
+      "routeId": "career-guide-investment-banking-operations"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How this practice connects to a course decision"
+    },
+    {
+      "type": "paragraph",
+      "text": "If this kind of comparison, evidence handling and escalation interests you, inspect the current Financial Operations Masterclass curriculum for trade settlement and reconciliation practice. Ask how learners receive feedback on an exception note and what the programme actually covers. A fictional exercise on this page does not establish job readiness or a particular employer outcome."
+    },
+    {
+      "type": "link",
+      "label": "Review the Financial Operations Masterclass curriculum",
+      "href": "/courses/",
+      "routeId": "courses"
+    },
+    {
+      "type": "link",
+      "label": "Read the settlement analyst career guide",
+      "href": "/career-guides/settlement-analyst/",
+      "routeId": "career-guide-settlement-analyst"
+    },
+    {
+      "type": "paragraph",
+      "text": "For market context, SEBI's investor education asks investors to retain and check trade confirmations. This case is an original operations learning example, not a quotation from a provider or a statement of a universal settlement procedure."
+    },
+    {
+      "type": "link",
+      "label": "Read SEBI's investor guidance on trade confirmations",
+      "href": "https://investor.sebi.gov.in/securities-dos_and_donts.html"
+    }
   ],
-  "coverImage": { "src": "/images/blog/settlement-trade-break-worked-example.png", "alt": "Finance operations analyst comparing two fictional transaction records with a mismatch highlighted on one screen", "width": 1672, "height": 941 },
+  "coverImage": {
+    "src": "/images/blog/settlement-trade-break-worked-example.png",
+    "alt": "Finance operations analyst comparing two fictional transaction records with a mismatch highlighted on one screen",
+    "width": 1672,
+    "height": 941
+  },
   "publishedAt": "2026-09-26",
-  "updatedAt": "2026-09-26",
+  "updatedAt": "2026-09-30",
   "scheduledAt": null,
-  "seo": { "title": "Trade Break Before Settlement: Worked Investigation", "description": "Work through a fictional pre-settlement trade mismatch using source records, a 90-share calculation, an escalation note, downloadable answer key and self-check.", "canonicalPath": "/blog/settlement-trade-break-worked-example/", "noindex": false },
-  "tags": ["Trade Settlement Break", "Investment Banking Operations", "Reconciliation", "Worked Example"],
-  "relatedRouteIds": ["blog", "career-guide-trade-lifecycle", "career-guide-investment-banking-operations", "resource-reconciliation-in-finance", "courses"],
+  "seo": {
+    "title": "Trade Settlement Break: Worked Investigation | Centaur Careers",
+    "description": "Follow a fictional trade break from source records through investigation, evidence, escalation, and resolution checks.",
+    "canonicalPath": "/blog/settlement-trade-break-worked-example/",
+    "noindex": false,
+    "focusKeyword": "trade settlement break",
+    "secondaryKeywords": [
+      "trade settlement break",
+      "trade reconciliation",
+      "settlement operations"
+    ]
+  },
+  "tags": [
+    "Trade Settlement Break",
+    "Investment Banking Operations",
+    "Reconciliation",
+    "Worked Example"
+  ],
+  "relatedRouteIds": [
+    "blog",
+    "career-guide-trade-lifecycle",
+    "career-guide-investment-banking-operations",
+    "resource-reconciliation-in-finance",
+    "courses"
+  ],
   "redirects": [],
-  "evidenceNotes": ["Original four-row fictional dataset and arithmetic; no real security, client or employer record appears in the article or downloads.", "SEBI investor guidance on retaining and checking trade confirmations: https://investor.sebi.gov.in/securities-dos_and_donts.html", "The exercise does not assert a real settlement cycle, employer control, or market-specific correction rule. Editorial math and source-record review performed 2026-09-26; no named industry reviewer is represented."]
+  "evidenceNotes": [
+    "Original four-row fictional dataset and arithmetic; no real security, client or employer record appears in the article or downloads.",
+    "SEBI investor guidance on retaining and checking trade confirmations: https://investor.sebi.gov.in/securities-dos_and_donts.html",
+    "The exercise does not assert a real settlement cycle, employer control, or market-specific correction rule. Editorial math and source-record review performed 2026-09-26; no named industry reviewer is represented."
+  ]
 }

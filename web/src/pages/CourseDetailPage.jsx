@@ -55,6 +55,7 @@ export default function CourseDetailPage({ courseId }) {
             <SectionHeading eyebrow={HOME_COPY.tracksHeading} title={track.title} />
             <p className="text-lg text-muted-foreground">{track.description}</p>
             <p className="mt-5 rounded-xl border border-accent/30 bg-accent/10 p-4 text-sm font-semibold text-primary">This subject is taught within the <Link to="/courses/" className="underline decoration-accent decoration-2 underline-offset-4">Financial Operations Masterclass</Link> as a module, not as a separate program.</p>
+            {courseId === 'investment-banking-operations' && <p className="mt-4 rounded-xl border border-border bg-muted p-4 text-sm leading-relaxed text-muted-foreground">Centaur Careers does not offer a separate Investment Banking Operations certification. The published Course Completion Certificate applies to the full Financial Operations Masterclass under its current completion terms; it is not an external professional or regulatory credential.</p>}
             <p className="mt-5 rounded-xl border border-border bg-muted p-4 text-sm text-muted-foreground">This is a curriculum module within the Financial Operations Masterclass. Graduates and job switchers who complete the six-week program get a finance job through the 100% Job Guarantee Program.</p>
           </article>
           <div className="course-detail-visual">

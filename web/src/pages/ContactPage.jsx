@@ -27,6 +27,9 @@ export default function ContactPage() {
         intro={CONTACT_COPY.description}
       >
         <div className="mt-8 flex flex-wrap gap-3">
+          <a href={BUSINESS_DATA.whatsappUrl} target="_blank" rel="noopener noreferrer" data-analytics-id="contact-whatsapp" data-analytics-intent="commercial_program" className="inline-flex min-h-12 items-center gap-2 rounded-xl bg-accent px-6 py-3 font-bold text-primary">
+            <MessageCircle className="h-5 w-5" aria-hidden="true" /> Ask on WhatsApp
+          </a>
           <a href={BUSINESS_DATA.enrollmentUrl} target="_blank" rel="noopener noreferrer" data-analytics-id="contact-application" data-analytics-channel="enrollment" data-analytics-intent="commercial_program" className="inline-flex min-h-12 items-center gap-2 rounded-xl bg-accent px-6 py-3 font-bold text-primary">
             <Send className="h-5 w-5" aria-hidden="true" /> Start Your Application
           </a>
@@ -43,7 +46,7 @@ export default function ContactPage() {
 
       <section className="bg-white py-16 sm:py-20">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow={CONTACT_COPY.eyebrow} title={CONTACT_COPY.heading} intro={CONTACT_COPY.description} />
+          <SectionHeading eyebrow="Contact channels" title={CONTACT_COPY.heading} intro="Call, email, or message the team. Choose the channel that works best for your course or enrolment question." />
           <div className="grid gap-5 md:grid-cols-3">
             {contacts.map(({ label, value, href, icon: Icon, external }) => (
               <a key={label} href={href} {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})} className="rounded-2xl border border-border p-6 shadow-sm transition hover:-translate-y-1 hover:border-accent/50 hover:shadow-lg">
@@ -61,21 +64,24 @@ export default function ContactPage() {
           <article className="rounded-2xl bg-white p-8 shadow-sm">
             <div className="flex items-center gap-3">
               <MapPin className="h-7 w-7 text-accent-ink" aria-hidden="true" />
-              <h2 className="text-2xl font-bold text-primary">{BUSINESS_DATA.name}</h2>
+              <h2 className="text-2xl font-bold text-primary">Published in-person learning location</h2>
             </div>
             <address className="mt-6 not-italic text-muted-foreground">
+              <strong className="text-primary">{BUSINESS_DATA.trainingLocation.name}</strong><br />
               {BUSINESS_DATA.trainingLocation.address.streetAddress}<br />
               {BUSINESS_DATA.trainingLocation.address.addressLocality}, {BUSINESS_DATA.trainingLocation.address.addressRegion} {BUSINESS_DATA.trainingLocation.address.postalCode}<br />
-              India
+              India<br />
+              Training provider: {BUSINESS_DATA.name}
             </address>
             <a href={BUSINESS_DATA.trainingLocation.mapUrl} target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center gap-2 font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">
               <Route className="h-4 w-4" aria-hidden="true" /> Open directions
             </a>
           </article>
           <article className="rounded-2xl bg-primary p-8 text-white">
-            <h2 className="text-2xl font-bold text-white">{CONTACT_COPY.quickContact}</h2>
+            <h2 className="text-2xl font-bold text-white">Online access across India</h2>
             <p className="mt-5 text-white/70">{OFFLINE_PARTNER_LINE}</p>
-            <p className="mt-6 text-white/70">Contact the team to discuss current cohort details and your questions.</p>
+            <p className="mt-6 text-white/70">The published program has a live online option across India and an in-person option in Lucknow. Contact Centaur Careers to confirm current cohort availability, schedule, fees, and written support terms.</p>
+            <Link to="/courses/" className="mt-6 inline-flex min-h-11 items-center gap-2 rounded-xl border border-white/25 px-5 py-3 font-bold text-white">View the course details <Route className="h-4 w-4" aria-hidden="true" /></Link>
           </article>
         </div>
       </section>

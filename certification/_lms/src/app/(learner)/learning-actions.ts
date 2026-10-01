@@ -20,8 +20,7 @@ async function updateLessonProgress(formData: FormData, status: "in_progress" | 
       JOIN lms.course_versions v ON v.id=e.course_version_id AND v.course_id=c.id
       JOIN lms.modules m ON m.course_version_id=v.id JOIN lms.lessons l ON l.module_id=m.id
       WHERE e.user_id=$1 AND e.status='active' AND c.slug=$2 AND l.id=$3
-        AND (c.status='published' OR ($4::boolean AND c.is_sandbox AND c.status='draft'))
-        AND (v.status='published' OR ($4::boolean AND c.is_sandbox AND v.status='draft'))
+        AND ((c.status IN ('published','archived') AND v.status IN ('published','retired')) OR ($4::boolean AND c.is_sandbox AND c.status='draft' AND v.status='draft'))
         AND (l.published=TRUE OR $4::boolean)`, [learner.id, courseSlug, lessonId, allowed]);
     if (!result.rowCount) return null;
     if (status === "completed") {

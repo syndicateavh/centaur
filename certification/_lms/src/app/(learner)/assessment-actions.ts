@@ -6,6 +6,7 @@ import { z } from "zod";
 import { requireLearner } from "@/lib/learner";
 import { withLearnerTransaction } from "@/lib/learner-db";
 import { calculateCourseCompletion } from "@/lib/course-completion";
+import { issueCertificateForCompletedEnrollment } from "@/lib/certificates";
 
 const slugSchema = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/).max(100);
 const attemptIdSchema = z.string().uuid();
@@ -26,7 +27,8 @@ export async function startAssessment(formData: FormData) {
       JOIN lms.course_versions v ON v.id=e.course_version_id AND v.course_id=c.id
       JOIN lms.assessments a ON a.course_version_id=v.id
       WHERE e.user_id=$1 AND e.status='active' AND c.slug=$2 AND a.slug=$3
-        AND ((c.status='published' AND v.status='published' AND a.status='published' AND a.review_status='approved')
+        AND a.version_number=(SELECT max(a2.version_number) FROM lms.assessments a2 WHERE a2.course_version_id=v.id AND a2.slug=a.slug)
+        AND ((c.status IN ('published','archived') AND v.status IN ('published','retired') AND a.status IN ('published','retired') AND a.review_status='approved')
           OR ($4::boolean AND c.is_sandbox=TRUE AND c.status='draft' AND v.status='draft' AND a.status='draft'))
       FOR UPDATE OF e`, [learner.id, courseSlug, assessmentSlug, localDraftPreview]);
     const assessment = result.rows[0];
@@ -37,14 +39,14 @@ export async function startAssessment(formData: FormData) {
           count(l.id) FILTER (WHERE p.status='completed')::int AS complete
         FROM lms.modules m JOIN lms.lessons l ON l.module_id=m.id
         LEFT JOIN lms.lesson_progress p ON p.lesson_id=l.id AND p.user_id=$1
-        WHERE m.course_version_id=$2`, [learner.id, assessment.course_version_id]);
+        WHERE m.course_version_id=$2 AND (l.published=TRUE OR $3::boolean)`, [learner.id, assessment.course_version_id, localDraftPreview]);
       required = lessons.rows[0];
     } else if (assessment.rules.module_slug) {
       const lessons = await client.query<{ total: number; complete: number }>(`SELECT count(l.id)::int AS total,
           count(l.id) FILTER (WHERE p.status='completed')::int AS complete
         FROM lms.modules m JOIN lms.lessons l ON l.module_id=m.id
         LEFT JOIN lms.lesson_progress p ON p.lesson_id=l.id AND p.user_id=$1
-        WHERE m.course_version_id=$2 AND m.slug=$3`, [learner.id, assessment.course_version_id, assessment.rules.module_slug]);
+        WHERE m.course_version_id=$2 AND m.slug=$3 AND (l.published=TRUE OR $4::boolean)`, [learner.id, assessment.course_version_id, assessment.rules.module_slug, localDraftPreview]);
       required = lessons.rows[0];
     }
     if (required && (!required.total || required.complete !== required.total)) return "locked";
@@ -86,7 +88,7 @@ export async function submitAssessment(formData: FormData) {
       JOIN lms.course_versions v ON v.id=e.course_version_id AND v.course_id=e.course_id
       WHERE aa.user_id=$1 AND aa.id=$2 AND c.slug=$3 AND aa.course_version_id=e.course_version_id
         AND aa.assessment_version_number=a.version_number
-        AND ((c.status='published' AND v.status='published' AND a.status='published' AND a.review_status='approved')
+        AND ((c.status IN ('published','archived') AND v.status IN ('published','retired') AND a.status IN ('published','retired') AND a.review_status='approved')
           OR ($4::boolean AND c.is_sandbox=TRUE AND c.status='draft' AND v.status='draft' AND a.status='draft'))
       FOR UPDATE OF aa`, [learner.id, attemptId, courseSlug, localDraftPreview]);
     const attempt = attemptResult.rows[0];
@@ -125,9 +127,12 @@ export async function submitAssessment(formData: FormData) {
     };
     await client.query(`UPDATE lms.assessment_attempts SET status='submitted',answers=$2::jsonb,score_percent=$3,passed=$4,
       feedback=$5::jsonb,submitted_at=now() WHERE id=$1`, [attempt.id, JSON.stringify(answers), score, passed, JSON.stringify(feedback)]);
-    let courseCompleted = false;
-    if (attempt.rules.kind === "final" && passed) courseCompleted = await calculateCourseCompletion(client, learner.id, attempt.course_id, attempt.course_version_id);
-    return { ...attempt, complete: courseCompleted, submitted: true };
+    let certificate: { id: string; public_id: string } | null = null;
+    if (attempt.rules.kind === "final" && passed) {
+      const courseCompleted = await calculateCourseCompletion(client, learner.id, attempt.course_id, attempt.course_version_id);
+      if (courseCompleted) certificate = await issueCertificateForCompletedEnrollment(client, learner.id, attempt.course_id, attempt.course_version_id);
+    }
+    return { ...attempt, certificateIssued: Boolean(certificate), submitted: true };
   });
   if (!submitted) redirect("/dashboard");
   revalidatePath(`/learn/${courseSlug}`);
@@ -147,7 +152,7 @@ export async function saveAssessmentAnswers(formData: FormData) {
       JOIN lms.enrollments e ON e.user_id=aa.user_id AND e.course_version_id=aa.course_version_id
       JOIN lms.courses c ON c.id=e.course_id JOIN lms.course_versions v ON v.id=e.course_version_id
       WHERE aa.id=$1 AND aa.user_id=$2 AND c.slug=$3 AND aa.assessment_version_number=a.version_number
-        AND ((c.status='published' AND v.status='published' AND a.status='published' AND a.review_status='approved')
+        AND ((c.status IN ('published','archived') AND v.status IN ('published','retired') AND a.status IN ('published','retired') AND a.review_status='approved')
           OR ($4::boolean AND c.is_sandbox=TRUE AND c.status='draft' AND v.status='draft' AND a.status='draft'))
       FOR UPDATE OF aa`, [attemptId, learner.id, courseSlug, localDraftPreview]);
     if (!attempt.rowCount || attempt.rows[0].status !== "in_progress") return null;

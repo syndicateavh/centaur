@@ -7,11 +7,11 @@
     "blogKeywordMap": "src/content/seo/blogKeywordOwnership.js"
   },
   "summary": {
-    "pageCount": 185,
-    "siteRouteCount": 93,
+    "pageCount": 191,
+    "siteRouteCount": 97,
     "blogCategoryCount": 6,
-    "blogArticleCount": 86,
-    "pagesWithPrimaryKeyword": 185
+    "blogArticleCount": 88,
+    "pagesWithPrimaryKeyword": 191
   },
   "pages": [
     {
@@ -22,7 +22,7 @@
       "primaryKeyword": "Centaur Careers finance training",
       "secondaryKeywords": [],
       "keywordPurpose": "Brand/entity and Financial Operations Masterclass overview",
-      "lastModified": "2026-09-29"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "site-route",
@@ -42,7 +42,7 @@
       "primaryKeyword": "finance operations career guide",
       "secondaryKeywords": [],
       "keywordPurpose": "Career-guide information cluster hub",
-      "lastModified": "2026-09-13"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "site-route",
@@ -224,7 +224,7 @@
       "id": "courses",
       "path": "/courses/",
       "canonicalUrl": "https://centaurcareers.in/courses/",
-      "primaryKeyword": "investment banking operations course",
+      "primaryKeyword": "financial operations masterclass",
       "secondaryKeywords": [
         "investment banking course",
         "investment banking course in India",
@@ -312,7 +312,7 @@
         "live online finance training India"
       ],
       "keywordPurpose": "Primary commercial finance course and Financial Operations Masterclass hub",
-      "lastModified": "2026-09-26"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "site-route",
@@ -322,7 +322,7 @@
       "primaryKeyword": "investment banking operations module",
       "secondaryKeywords": [],
       "keywordPurpose": "Supporting Investment Banking Operations module page",
-      "lastModified": "2026-09-29"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "site-route",
@@ -338,7 +338,7 @@
         "banking operations training for freshers"
       ],
       "keywordPurpose": "Supporting Retail Banking module page",
-      "lastModified": "2026-09-29"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "site-route",
@@ -348,7 +348,7 @@
       "primaryKeyword": "finance operations module",
       "secondaryKeywords": [],
       "keywordPurpose": "Supporting Finance Operations module page",
-      "lastModified": "2026-09-29"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "site-route",
@@ -376,7 +376,7 @@
         "AML compliance training"
       ],
       "keywordPurpose": "Informational guide to a subject taught within the Financial Operations Masterclass",
-      "lastModified": "2026-09-29"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "site-route",
@@ -390,7 +390,7 @@
         "digital payments operations course"
       ],
       "keywordPurpose": "Informational guide to a subject taught within the Financial Operations Masterclass",
-      "lastModified": "2026-09-29"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "site-route",
@@ -404,17 +404,17 @@
         "fintech certification India"
       ],
       "keywordPurpose": "Informational guide to a subject taught within the Financial Operations Masterclass",
-      "lastModified": "2026-09-29"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "site-route",
       "id": "placements",
       "path": "/placements/",
       "canonicalUrl": "https://centaurcareers.in/placements/",
-      "primaryKeyword": "finance course with job guarantee",
+      "primaryKeyword": "finance course with 100% job guarantee in India",
       "secondaryKeywords": [],
       "keywordPurpose": "Finance job guarantee program, placement process, and published guarantee details",
-      "lastModified": "2026-09-13"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "site-route",
@@ -434,7 +434,7 @@
       "primaryKeyword": "Centaur Careers contact",
       "secondaryKeywords": [],
       "keywordPurpose": "Contact and enrolment access for Centaur Careers in Lucknow",
-      "lastModified": "2026-09-13"
+      "lastModified": "2026-09-29"
     },
     {
       "kind": "site-route",
@@ -448,10 +448,50 @@
     },
     {
       "kind": "site-route",
+      "id": "terms-and-conditions",
+      "path": "/terms-and-conditions/",
+      "canonicalUrl": "https://centaurcareers.in/terms-and-conditions/",
+      "primaryKeyword": "Centaur Careers terms and conditions",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Website and program-use terms for Centaur Careers",
+      "lastModified": "2026-09-30"
+    },
+    {
+      "kind": "site-route",
+      "id": "cookie-policy",
+      "path": "/cookie-policy/",
+      "canonicalUrl": "https://centaurcareers.in/cookie-policy/",
+      "primaryKeyword": "Centaur Careers cookie policy",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Cookie, analytics, and advertising technology disclosure",
+      "lastModified": "2026-09-30"
+    },
+    {
+      "kind": "site-route",
+      "id": "refund-cancellation-policy",
+      "path": "/refund-cancellation-policy/",
+      "canonicalUrl": "https://centaurcareers.in/refund-cancellation-policy/",
+      "primaryKeyword": "Centaur Careers refund policy",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Refund and cancellation information for paid program enquiries",
+      "lastModified": "2026-09-30"
+    },
+    {
+      "kind": "site-route",
+      "id": "disclaimer",
+      "path": "/disclaimer/",
+      "canonicalUrl": "https://centaurcareers.in/disclaimer/",
+      "primaryKeyword": "Centaur Careers disclaimer",
+      "secondaryKeywords": [],
+      "keywordPurpose": "Education, career, and program information disclaimer",
+      "lastModified": "2026-09-30"
+    },
+    {
+      "kind": "site-route",
       "id": "india",
       "path": "/india/",
       "canonicalUrl": "https://centaurcareers.in/india/",
-      "primaryKeyword": "investment banking operations course India",
+      "primaryKeyword": "finance career training India",
       "secondaryKeywords": [
         "online investment banking operations course India",
         "finance operations training India",
@@ -562,7 +602,7 @@
         "best investment banking course in Dehradun"
       ],
       "keywordPurpose": "India-wide online finance operations training access",
-      "lastModified": "2026-09-26"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "site-route",
@@ -596,7 +636,7 @@
         "best investment banking course in Gurgaon"
       ],
       "keywordPurpose": "Selective regional finance-career market and access guide",
-      "lastModified": "2026-09-26"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "site-route",
@@ -622,7 +662,7 @@
         "best investment banking course in Bengaluru"
       ],
       "keywordPurpose": "Selective regional finance-career market and access guide",
-      "lastModified": "2026-09-26"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "site-route",
@@ -640,7 +680,7 @@
         "best investment banking course in Mumbai"
       ],
       "keywordPurpose": "Selective regional finance-career market and access guide",
-      "lastModified": "2026-09-26"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "site-route",
@@ -694,7 +734,7 @@
         "best investment banking course in Lucknow"
       ],
       "keywordPurpose": "Evidence-backed local Lucknow acquisition page",
-      "lastModified": "2026-09-26"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "site-route",
@@ -984,7 +1024,7 @@
       "id": "career-guide-finance-careers-after-graduation",
       "path": "/career-guides/finance-careers-after-graduation/",
       "canonicalUrl": "https://centaurcareers.in/career-guides/finance-careers-after-graduation/",
-      "primaryKeyword": "best finance course after BCom",
+      "primaryKeyword": "finance careers after graduation",
       "secondaryKeywords": [
         "investment banking operations after BCom",
         "finance jobs after BCom",
@@ -1405,17 +1445,17 @@
       "id": "lead-best-investment-banking-course-india",
       "path": "/best-investment-banking-course-india/",
       "canonicalUrl": "https://centaurcareers.in/best-investment-banking-course-india/",
-      "primaryKeyword": "best investment banking course in India comparison",
+      "primaryKeyword": "best investment banking institute in India",
       "secondaryKeywords": [],
       "keywordPurpose": "Commercial topic and career-direction landing page",
-      "lastModified": "2026-09-29"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "site-route",
       "id": "lead-best-finance-course-after-graduation",
       "path": "/best-finance-course-after-graduation/",
       "canonicalUrl": "https://centaurcareers.in/best-finance-course-after-graduation/",
-      "primaryKeyword": "graduate finance course shortlist checklist",
+      "primaryKeyword": "finance course after BTech with placement",
       "secondaryKeywords": [],
       "keywordPurpose": "Commercial topic and career-direction landing page",
       "lastModified": "2026-09-29"
@@ -1425,7 +1465,7 @@
       "id": "lead-best-finance-course-after-bcom",
       "path": "/best-finance-course-after-bcom/",
       "canonicalUrl": "https://centaurcareers.in/best-finance-course-after-bcom/",
-      "primaryKeyword": "BCom finance course comparison checklist",
+      "primaryKeyword": "finance course after BCom with placement",
       "secondaryKeywords": [],
       "keywordPurpose": "Commercial topic and career-direction landing page",
       "lastModified": "2026-09-29"
@@ -1568,7 +1608,7 @@
       "primaryKeyword": "finance operations syllabus",
       "secondaryKeywords": [],
       "keywordPurpose": "Commercial topic and career-direction landing page",
-      "lastModified": "2026-09-28"
+      "lastModified": "2026-09-29"
     },
     {
       "kind": "site-route",
@@ -1578,7 +1618,7 @@
       "primaryKeyword": "finance course fees and eligibility",
       "secondaryKeywords": [],
       "keywordPurpose": "Commercial topic and career-direction landing page",
-      "lastModified": "2026-09-28"
+      "lastModified": "2026-09-29"
     },
     {
       "kind": "site-route",
@@ -1598,7 +1638,7 @@
       "primaryKeyword": "best finance institute in India",
       "secondaryKeywords": [],
       "keywordPurpose": "Decision-support comparison page",
-      "lastModified": "2026-09-29"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "site-route",
@@ -1684,7 +1724,7 @@
         "banking career blog"
       ],
       "keywordPurpose": "Published article category archive",
-      "lastModified": "2026-09-29"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "blog-category",
@@ -1698,7 +1738,7 @@
         "banking operations blog"
       ],
       "keywordPurpose": "Published article category archive",
-      "lastModified": "2026-09-29"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "blog-category",
@@ -1740,7 +1780,7 @@
         "investment banking careers"
       ],
       "keywordPurpose": "Published article category archive",
-      "lastModified": "2026-09-29"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "blog-category",
@@ -1754,7 +1794,36 @@
         "banking services explained"
       ],
       "keywordPurpose": "Published article category archive",
-      "lastModified": "2026-09-29"
+      "lastModified": "2026-09-30"
+    },
+    {
+      "kind": "blog-article",
+      "id": "open-banking-apis-consent-operations",
+      "path": "/blog/open-banking-apis-consent-operations/",
+      "canonicalUrl": "https://centaurcareers.in/blog/open-banking-apis-consent-operations/",
+      "primaryKeyword": "open banking in India",
+      "secondaryKeywords": [
+        "Account Aggregator framework",
+        "open banking consent",
+        "financial data sharing India",
+        "open banking operations"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-30"
+    },
+    {
+      "kind": "blog-article",
+      "id": "what-centaur-careers-provides-for-finance-careers",
+      "path": "/blog/what-centaur-careers-provides-for-finance-careers/",
+      "canonicalUrl": "https://centaurcareers.in/blog/what-centaur-careers-provides-for-finance-careers/",
+      "primaryKeyword": "Centaur Careers finance course",
+      "secondaryKeywords": [
+        "Centaur Careers placement",
+        "finance course with job guarantee",
+        "finance analyst career training"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "blog-article",
@@ -1943,13 +2012,12 @@
       "canonicalUrl": "https://centaurcareers.in/blog/payment-reconciliation-process-breaks-controls/",
       "primaryKeyword": "payment reconciliation",
       "secondaryKeywords": [
-        "payment reconciliation process",
+        "payment reconciliation",
         "settlement reconciliation",
-        "payment breaks",
-        "digital payments operations"
+        "payment exceptions"
       ],
       "keywordPurpose": "Published first-party finance education article",
-      "lastModified": "2026-09-29"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "blog-article",
@@ -2003,13 +2071,12 @@
       "canonicalUrl": "https://centaurcareers.in/blog/retail-vs-commercial-banking/",
       "primaryKeyword": "retail banking vs commercial banking",
       "secondaryKeywords": [
-        "retail banking and commercial banking",
-        "commercial banking roles",
-        "retail banking operations",
-        "banking products"
+        "retail banking",
+        "commercial banking",
+        "banking operations"
       ],
       "keywordPurpose": "Published first-party finance education article",
-      "lastModified": "2026-09-29"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "blog-article",
@@ -2645,26 +2712,26 @@
       "canonicalUrl": "https://centaurcareers.in/blog/reconciliation-process-steps-finance/",
       "primaryKeyword": "reconciliation process",
       "secondaryKeywords": [
-        "reconciliation steps",
-        "bank reconciliation",
-        "finance operations"
+        "reconciliation process",
+        "reconciliation meaning",
+        "finance reconciliation"
       ],
       "keywordPurpose": "Published first-party finance education article",
-      "lastModified": "2026-09-27"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "blog-article",
       "id": "risk-management-in-banking",
       "path": "/blog/risk-management-in-banking/",
       "canonicalUrl": "https://centaurcareers.in/blog/risk-management-in-banking/",
-      "primaryKeyword": "risk management in banking",
+      "primaryKeyword": "banking risk management",
       "secondaryKeywords": [
-        "banking risk management types",
-        "banking risk controls",
-        "risk analyst banking"
+        "risk management in banking",
+        "banking risk types",
+        "operational risk controls"
       ],
       "keywordPurpose": "Published first-party finance education article",
-      "lastModified": "2026-09-27"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "blog-article",
@@ -2728,26 +2795,26 @@
       "canonicalUrl": "https://centaurcareers.in/blog/settlement-trade-break-worked-example/",
       "primaryKeyword": "trade settlement break",
       "secondaryKeywords": [
-        "settlement break investigation",
-        "trade settlement operations",
-        "trade break resolution"
+        "trade settlement break",
+        "trade reconciliation",
+        "settlement operations"
       ],
       "keywordPurpose": "Published first-party finance education article",
-      "lastModified": "2026-09-26"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "blog-article",
       "id": "balance-sheet-meaning-format-example",
       "path": "/blog/balance-sheet-meaning-format-example/",
       "canonicalUrl": "https://centaurcareers.in/blog/balance-sheet-meaning-format-example/",
-      "primaryKeyword": "balance sheet meaning",
+      "primaryKeyword": "balance sheet format",
       "secondaryKeywords": [
+        "balance sheet",
         "balance sheet format",
-        "balance sheet example",
-        "assets liabilities and equity"
+        "balance sheet example"
       ],
       "keywordPurpose": "Published first-party finance education article",
-      "lastModified": "2026-09-24"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "blog-article",
@@ -2784,12 +2851,12 @@
       "canonicalUrl": "https://centaurcareers.in/blog/cost-accounting-methods-examples/",
       "primaryKeyword": "cost accounting methods",
       "secondaryKeywords": [
-        "cost accounting examples",
-        "cost allocation methods",
-        "cost and management accounting"
+        "cost accounting",
+        "cost accounting methods",
+        "cost accounting example"
       ],
       "keywordPurpose": "Published first-party finance education article",
-      "lastModified": "2026-09-27"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "blog-article",
@@ -2812,12 +2879,12 @@
       "canonicalUrl": "https://centaurcareers.in/blog/financial-accounting-statements-process-examples/",
       "primaryKeyword": "financial accounting process",
       "secondaryKeywords": [
-        "financial accounting statements",
-        "accounting cycle steps",
-        "financial accounting example"
+        "financial accounting",
+        "financial accounting process",
+        "financial statements"
       ],
       "keywordPurpose": "Published first-party finance education article",
-      "lastModified": "2026-09-27"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "blog-article",
@@ -2854,12 +2921,12 @@
       "canonicalUrl": "https://centaurcareers.in/blog/investment-banking-teams-operations/",
       "primaryKeyword": "investment banking teams",
       "secondaryKeywords": [
-        "investment banking departments",
+        "investment banking teams",
         "investment banking operations",
-        "investment banking roles"
+        "front middle back office"
       ],
       "keywordPurpose": "Published first-party finance education article",
-      "lastModified": "2026-09-26"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "blog-article",
@@ -2936,14 +3003,14 @@
       "id": "fund-accounting-nav-workflow-career-skills",
       "path": "/blog/fund-accounting-nav-workflow-career-skills/",
       "canonicalUrl": "https://centaurcareers.in/blog/fund-accounting-nav-workflow-career-skills/",
-      "primaryKeyword": "fund accounting NAV",
+      "primaryKeyword": "fund accounting workflow",
       "secondaryKeywords": [
-        "fund accounting workflow",
-        "NAV calculation process",
-        "fund accounting career"
+        "fund accounting",
+        "NAV calculation",
+        "fund accounting workflow"
       ],
       "keywordPurpose": "Published first-party finance education article",
-      "lastModified": "2026-09-29"
+      "lastModified": "2026-09-30"
     },
     {
       "kind": "blog-article",
@@ -2992,14 +3059,14 @@
       "id": "investment-banking-operations-vs-cfa-financial-modelling",
       "path": "/blog/investment-banking-operations-vs-cfa-financial-modelling/",
       "canonicalUrl": "https://centaurcareers.in/blog/investment-banking-operations-vs-cfa-financial-modelling/",
-      "primaryKeyword": "investment banking vs CFA",
+      "primaryKeyword": "investment banking operations vs CFA",
       "secondaryKeywords": [
         "investment banking operations vs financial modelling",
-        "CFA vs investment banking",
-        "finance career comparison"
+        "investment banking vs CFA",
+        "finance career paths"
       ],
       "keywordPurpose": "Published first-party finance education article",
-      "lastModified": "2026-09-26"
+      "lastModified": "2026-09-30"
     }
   ]
 }

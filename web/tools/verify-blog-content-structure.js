@@ -54,7 +54,12 @@ const availableImagePaths = new Set(
 );
 const validation = validateBlogCollectionForEditorialUse(posts, {
   mode: 'collection',
-  validRouteIds: routeIds,
+  // Blog records use stable virtual route IDs (blog-<slug>) even though all
+  // posts share the dynamic /blog/:slug React Router route.
+  validRouteIds: [
+    ...routeIds,
+    ...posts.filter((post) => post.status === BLOG_STATUSES.PUBLISHED).map((post) => `blog-${post.slug}`),
+  ],
   validRoutePaths: INDEXABLE_ROUTES.map((route) => route.path),
   validRoutes: INDEXABLE_ROUTES,
   availableImagePaths,

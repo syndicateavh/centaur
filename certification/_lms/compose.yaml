@@ -23,6 +23,8 @@ services:
     command: sh -c "npm ci && npm run db:migrate && npm run db:seed:local && npm run db:seed:pilot"
     environment:
       NODE_ENV: development
+      LMS_APP_USER: ${LMS_APP_USER}
+      LMS_APP_PASSWORD: ${LMS_APP_PASSWORD}
       MIGRATION_DATABASE_URL: postgresql://lms_dev:local_dev_only@database:5432/${POSTGRES_DB:-centaur_lms}
     volumes:
       - .:/app
@@ -43,6 +45,7 @@ services:
       BETTER_AUTH_URL: ${BETTER_AUTH_URL:-http://localhost:3000}
       BETTER_AUTH_SECRET: ${BETTER_AUTH_SECRET}
       LMS_AUTH_ENABLED: ${LMS_AUTH_ENABLED:-false}
+      LMS_CONTROLLED_PILOT: ${LMS_CONTROLLED_PILOT:-false}
       SMTP_HOST: ${SMTP_HOST:-}
       SMTP_PORT: ${SMTP_PORT:-25}
       SMTP_SECURE: ${SMTP_SECURE:-false}
@@ -61,6 +64,21 @@ services:
         condition: service_healthy
       migrate:
         condition: service_completed_successfully
+
+  scheduled-publisher:
+    image: node:22-alpine
+    working_dir: /app
+    profiles: ["operations"]
+    command: npm run ops:publish-scheduled
+    environment:
+      DATABASE_URL: postgresql://${LMS_APP_USER}:${LMS_APP_PASSWORD}@database:5432/${POSTGRES_DB:-centaur_lms}
+      LMS_SCHEDULER_ACTOR_USER_ID: ${LMS_SCHEDULER_ACTOR_USER_ID:-}
+    volumes:
+      - .:/app
+      - lms_node_modules:/app/node_modules
+    depends_on:
+      database:
+        condition: service_healthy
 
 volumes:
   lms_postgres_data:

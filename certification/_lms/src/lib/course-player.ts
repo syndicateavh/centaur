@@ -10,7 +10,8 @@ export type LessonBlock =
 
 type CourseRow = {
   course_id: string; slug: string; title: string; summary: string; overview: string; enrollment_status: string;
-  version_id: string; version_number: number; estimated_minutes: number | null;
+  course_status: string; is_sandbox: boolean;
+  version_id: string; version_number: number; estimated_minutes: number | null; independent_practice_minutes: number;
   review_status: string; review_date: string | Date | null; reviewer_name: string | null;
   learning_objectives: string[];
   glossary: { term: string; definition: string }[];
@@ -31,14 +32,14 @@ function localDraftAccess() {
 async function loadCourse(learnerId: string, courseSlug: string) {
   return withLearnerTransaction(learnerId, async (client) => {
     const result = await client.query<CourseRow>(`SELECT c.id AS course_id, c.slug, c.title, c.summary,e.status AS enrollment_status,
-        v.overview, v.id AS version_id, v.version_number, v.estimated_minutes, v.review_status,
-        v.review_date, v.reviewer_name, v.learning_objectives, v.glossary, v.content_sources, v.case_packet
+        v.overview, v.id AS version_id, v.version_number, v.estimated_minutes, v.independent_practice_minutes, v.review_status,
+        v.review_date, v.reviewer_name, v.learning_objectives, v.glossary, v.content_sources, v.case_packet,
+        c.status AS course_status,c.is_sandbox
       FROM lms.enrollments e
       JOIN lms.courses c ON c.id=e.course_id
       JOIN lms.course_versions v ON v.id=e.course_version_id AND v.course_id=c.id
       WHERE e.user_id=$1 AND e.status IN ('active','completed') AND c.slug=$2
-        AND (c.status='published' OR ($3::boolean AND c.is_sandbox AND c.status='draft'))
-        AND (v.status='published' OR ($3::boolean AND c.is_sandbox AND v.status='draft'))`,
+        AND ((c.status IN ('published','archived') AND v.status IN ('published','retired')) OR ($3::boolean AND c.is_sandbox AND c.status='draft' AND v.status='draft'))`,
     [learnerId, courseSlug, localDraftAccess()]);
     return result.rows[0] ?? null;
   });
@@ -63,7 +64,7 @@ export async function getEnrolledCourse(learnerId: string, courseSlug: string): 
       LEFT JOIN LATERAL (SELECT status,passed,score_percent FROM lms.assessment_attempts aa
         WHERE aa.assessment_id=a.id AND aa.user_id=$1 ORDER BY attempt_number DESC LIMIT 1) latest ON TRUE
       WHERE a.course_version_id=$2 AND a.version_number=(SELECT max(a2.version_number) FROM lms.assessments a2 WHERE a2.course_version_id=a.course_version_id AND a2.slug=a.slug)
-        AND (a.status='published' OR ($3::boolean AND a.status='draft')) ORDER BY a.slug`,
+        AND (a.status IN ('published','retired') OR ($3::boolean AND a.status='draft')) ORDER BY a.slug`,
     [learnerId, course.version_id, localDraftAccess()]);
     const modules = new Map<string, PlayerModule>();
     for (const row of result.rows) {

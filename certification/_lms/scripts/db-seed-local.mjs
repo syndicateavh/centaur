@@ -34,10 +34,14 @@ try {
   const version = await client.query(`
     INSERT INTO lms.course_versions (course_id, version_number, status, overview)
     VALUES ($1, 1, 'published', 'Local enrollment workflow sandbox. It has no lessons, assessment, or certificate.')
-    ON CONFLICT (course_id, version_number) DO UPDATE SET status = 'published', overview = EXCLUDED.overview, updated_at = now()
+    ON CONFLICT (course_id, version_number) DO NOTHING
     RETURNING id
   `, [course.rows[0].id]);
-  await client.query('UPDATE lms.courses SET current_version_id = $2 WHERE id = $1', [course.rows[0].id, version.rows[0].id]);
+  const versionId = version.rows[0]?.id ?? (await client.query(
+    'SELECT id FROM lms.course_versions WHERE course_id=$1 AND version_number=1', [course.rows[0].id],
+  )).rows[0]?.id;
+  if (!versionId) throw new Error('Local enrollment sandbox version could not be created or found.');
+  await client.query('UPDATE lms.courses SET current_version_id = $2 WHERE id = $1', [course.rows[0].id, versionId]);
   await client.query('COMMIT');
   console.log('Local enrollment sandbox is ready. It is excluded from public course discovery and production enrollment.');
 } catch (error) {

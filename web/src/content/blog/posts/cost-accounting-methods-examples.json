@@ -253,16 +253,32 @@
     "height": 941
   },
   "publishedAt": "2026-09-24",
-  "updatedAt": "2026-09-27",
+  "updatedAt": "2026-09-30",
   "scheduledAt": null,
   "seo": {
-    "title": "Cost Accounting Methods: A Clear Worked Example",
-    "description": "Explore cost accounting classifications, methods and a fictional unit-cost example with transparent allocation assumptions and practical checks.",
+    "title": "Cost Accounting Methods and Examples | Centaur Careers",
+    "description": "Compare cost accounting methods and follow a checked fictional example, including allocation assumptions and limits.",
     "canonicalPath": "/blog/cost-accounting-methods-examples/",
-    "noindex": false
+    "noindex": false,
+    "focusKeyword": "cost accounting methods",
+    "secondaryKeywords": [
+      "cost accounting",
+      "cost accounting methods",
+      "cost accounting example"
+    ]
   },
-  "tags": ["Cost Accounting", "Cost Accounting Methods", "Cost Classification", "Worked Example"],
-  "relatedRouteIds": ["blog", "resources", "resource-accounting-basics", "courses"],
+  "tags": [
+    "Cost Accounting",
+    "Cost Accounting Methods",
+    "Cost Classification",
+    "Worked Example"
+  ],
+  "relatedRouteIds": [
+    "blog",
+    "resources",
+    "resource-accounting-basics",
+    "courses"
+  ],
   "redirects": [],
   "evidenceNotes": [
     "ICMAI Intermediate Course Curriculum, Paper 8 Cost Accounting; verified live 2026-09-26: https://icmai.in/ClntStudents/Intermediate_Course_Curriculum",

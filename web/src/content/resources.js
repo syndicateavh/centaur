@@ -40,6 +40,7 @@ function faq(question, answer) {
 
 const RESOURCE_DEPTH_ADDITIONS = Object.freeze({
   'reconciliation-in-finance': [
+    { type: BLOG_BLOCK_TYPES.IMAGE, image: { src: '/images/blog/reconciliation-process-steps-finance.png', alt: 'Finance operations reconciliation workflow from matching records to investigating a break', width: 1672, height: 941 } },
     heading('How to classify a reconciliation break'),
     paragraph('Classification helps a team choose the next action; it is not a substitute for evidence. A timing difference may clear when the next file or statement arrives. A missing or duplicate item may need source-system investigation. An amount, date, identifier, or status variance may require the responsible team to confirm which record is authoritative. An unresolved item should retain its ageing, owner, risk, and escalation path until the explanation is verified.'),
     list([
@@ -97,6 +98,7 @@ export const RESOURCES = Object.freeze([
     updatedAt: '2026-09-26',
     body: Object.freeze([
       paragraph('Investment banking operations interview preparation should combine process knowledge with clear, structured explanations. For a fresher, practise trade capture, confirmation, settlement, reconciliation, corporate actions, exception handling, and escalation, then prepare examples that show accuracy, communication, and calm prioritisation.'),
+      { type: BLOG_BLOCK_TYPES.IMAGE, image: { src: '/images/blog/banking-interview-questions-freshers.png', alt: 'Finance graduate preparing for investment banking operations interview questions', width: 1672, height: 941 } },
       paragraph('This resource is for operations and post-trade interviews. A front-office advisory or valuation interview tests a different set of skills; use the job description to choose the right preparation path.'),
       heading('How to use this interview resource'),
       paragraph('Read each question as a prompt to explain a process, not as a definition to memorise. A strong answer usually names the purpose of the activity, places it in the wider workflow, identifies the checks involved, and explains what you would do when the expected information does not match.'),

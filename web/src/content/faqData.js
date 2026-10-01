@@ -1,7 +1,7 @@
 export const GENERAL_FAQS = Object.freeze([
   Object.freeze({
     question: 'Who can join the program?',
-    answer: 'The program is open to graduates and job switchers from any academic background across India. Previous finance education or work experience is not required.',
+    answer: 'Graduation is the entry requirement. The program is open to graduates and job switchers from any academic background across India; previous finance education or experience is not required. Confirm the current cohort requirements with Centaur Careers.',
   }),
   Object.freeze({
     question: 'Is this a 100% Job Guarantee Program?',
@@ -13,11 +13,11 @@ export const GENERAL_FAQS = Object.freeze([
   }),
   Object.freeze({
     question: 'How does the job guarantee work?',
-    answer: 'After completing the six-week Financial Operations Masterclass, graduates and job switchers get a finance job through the 100% Job Guarantee Program. Interview preparation and role guidance support that process.',
+    answer: 'Centaur Careers publishes a finance job guarantee for graduates and job switchers who complete the six-week Financial Operations Masterclass. The Placements page summarizes the promise; request the complete written terms for your cohort before paying.',
   }),
   Object.freeze({
     question: 'Does the guarantee cover every job, employer, salary, and city?',
-    answer: 'The program guarantees a finance job after completion. The complete scope is published in the Job Guarantee Terms on the Placements page.',
+    answer: 'Centaur Careers publishes a guarantee of a finance job for graduates and job switchers who complete the six-week program. The Placements page gives a summary, not the full cohort terms; request the current written terms before paying. The public claim does not specify a particular employer, salary, role, or city.',
   }),
   Object.freeze({
     question: 'How can I confirm current course details before enrolling?',

@@ -1,4 +1,4 @@
-// The surviving production bundle is historical source material. Public copy
+﻿// The surviving production bundle is historical source material. Public copy
 // here includes the business owner's approved 100% Job Guarantee Program claim;
 // do not add salary, employer, or outcome statistics without current evidence.
 
@@ -12,7 +12,7 @@ export const PROGRAM = Object.freeze({
   model: '100% Job Guarantee Program',
   badge: '100% Job Guarantee Program*',
   challenge: 'Practical finance operations training with a guaranteed finance job after program completion.',
-  headline: 'Get a ₹3–12 LPA Finance Job in 6 Weeks',
+  headline: 'Financial Operations Masterclass for Banking and Finance Careers',
   modelDescription:
     'Complete the six-week Financial Operations Masterclass and get a finance job through the 100% Job Guarantee Program. Open to graduates and job switchers.',
   trainingDescription:
@@ -20,7 +20,7 @@ export const PROGRAM = Object.freeze({
   placementSupportDescription:
     'Learners receive placement preparation, role guidance, and opportunity support through the program process.',
   metaDescription:
-    'Complete Centaur Careers’ six-week Financial Operations Masterclass and get a finance job through its 100% Job Guarantee Program. Open to graduates and job switchers across India.',
+    'Complete Centaur Careersâ€™ six-week Financial Operations Masterclass and get a finance job through its 100% Job Guarantee Program. Open to graduates and job switchers across India.',
 });
 
 export const JOB_GUARANTEE = Object.freeze({
@@ -53,7 +53,7 @@ export const HOME_COPY = Object.freeze({
   whyDescription: 'We combine practical training with structured career support to help learners prepare for finance opportunities.',
   benefitsEyebrow: 'Student Benefits',
   benefitsHeading: 'What You Gain From This Program',
-  benefitsDescription: 'Everything you need to go from campus to corporate — skills, confidence, connections, and career guidance.',
+  benefitsDescription: 'Everything you need to go from campus to corporate â€” skills, confidence, connections, and career guidance.',
   comparisonEyebrow: 'Comparison',
   comparisonHeading: 'What to Compare Before Choosing a Finance Program',
   comparisonDescription: 'Compare curriculum, learning modes, and program support terms before choosing a program.',
@@ -165,24 +165,22 @@ export const PROGRAM_BENEFITS = Object.freeze([
 export const PROGRAM_PROCESS = Object.freeze([
   Object.freeze({
     step: 'Step 01',
-    title: 'Get Selected',
-    subtitle: 'Application & Screening',
+    title: 'Review the program',
+    subtitle: 'Curriculum and cohort details',
     items: Object.freeze([
-      'Submit your profile via WhatsApp or form',
-      'Discuss the current cohort and learning mode with the team',
-      'Finance track matching — IB / Retail / Ops',
-      'Seat confirmation & fee payment',
+      'Compare the six published banking and finance learning areas',
+      'Choose live online access across India or ask about the Lucknow in-person option',
+      'Confirm the current schedule, fees, certificate wording, and written program terms',
     ]),
   }),
   Object.freeze({
     step: 'Step 02',
-    title: '6-Week Training',
-    subtitle: 'Intensive BFSI Masterclass',
+    title: 'Complete six weeks of learning',
+    subtitle: 'Financial Operations Masterclass',
     items: Object.freeze([
-      'IB Ops, Retail Banking & Finance Operations',
-      'KYC / AML, Digital Payments, Corporate Readiness',
-      'Practice scenarios, projects, and program activities',
-      'Role-specific projects & case studies',
+      'Study investment banking operations, retail banking, KYC / AML, digital payments, finance operations, and FinTech',
+      'The published program describes live teaching, practical scenarios, projects, and case studies',
+      'Ask the team to confirm the current cohort assessment and practice activities',
     ]),
   }),
   Object.freeze({
@@ -190,10 +188,8 @@ export const PROGRAM_PROCESS = Object.freeze([
     title: 'Guaranteed Finance Job',
     subtitle: '100% Job Guarantee Program',
     items: Object.freeze([
-      'Interview preparation and role guidance',
-      'Guidance for suitable interview opportunities and current vacancies',
-      'A finance job is guaranteed after completing the six-week program.',
-      'Resume, interview, and offer guidance',
+      'Graduates and job switchers who complete the six-week program receive a finance job through the 100% Job Guarantee Program',
+      'Review the published guarantee summary and request current written cohort terms before paying',
     ]),
   }),
 ]);
@@ -201,37 +197,32 @@ export const PROGRAM_PROCESS = Object.freeze([
 export const LEARNING_MODES = Object.freeze([
   Object.freeze({
     name: 'Online',
-    price: '₹35,000',
-    originalPrice: '₹50,000',
-    note: 'Limited-time cohort pricing',
-    summary: 'Flexible, learn from anywhere',
+    price: '\u20B935,000',
+    originalPrice: '\u20B950,000',
+    note: 'Confirm the current cohort price and validity with Centaur Careers.',
+    summary: 'Live online sessions for learners across India',
     features: Object.freeze([
-      '6-week live online sessions',
-      'Ask whether recorded-session access is included in the current cohort',
-      'Confirm mock-interview availability with the team',
-      'Ask which resume or LinkedIn support is included',
-      'Confirm current learner-support channels',
-      'Review the placement-assistance terms',
+      'Six-week Financial Operations Masterclass',
+      'Investment banking operations, retail banking, KYC / AML, digital payments, finance operations, and FinTech topics',
+      'Confirm the current cohort schedule, assessment format, and support terms',
     ]),
   }),
   Object.freeze({
     name: 'Offline',
-    price: '₹50,000',
-    originalPrice: '₹70,000',
-    note: 'Includes in-person mentorship and infrastructure',
-    summary: 'In-person, immersive experience',
+    price: '\u20B950,000',
+    originalPrice: '\u20B970,000',
+    note: 'Confirm the current cohort price and validity with Centaur Careers.',
+    summary: 'In-person sessions at Mindsprout Career Hub in Lucknow',
     features: Object.freeze([
-      'Ask how the in-person mode relates to online program activities',
-      'In-person learning option at Mindsprout Career Hub, Lucknow',
-      'Confirm current cohort facilities and learning materials',
-      'Ask which in-person learner-support activities are included',
-      'Confirm interview-preparation arrangements',
+      'Six-week Financial Operations Masterclass',
+      'Published in-person learning option at Mindsprout Career Hub, Alambagh, Lucknow',
+      'Confirm the current cohort schedule, facilities, assessment format, and support terms',
     ]),
   }),
 ]);
 
 export const OFFLINE_PARTNER_LINE =
-  'Delivered at Mindsprout Career Hub, Lucknow — a dedicated in-person learning environment powered by Centaur Careers.';
+  'Centaur Careers lists an in-person learning option at Mindsprout Career Hub in Alambagh, Lucknow. Confirm the address, cohort schedule, and availability with the team before travelling.';
 
 export const CERTIFICATE = Object.freeze({
   heading: 'Centaur Careers Course Completion Certificate',
@@ -264,8 +255,6 @@ export const PLACEMENT_PROMISE = Object.freeze({
       description: 'Centaur Careers guarantees a finance job after program completion.',
     }),
   ]),
-  scoreNote:
-    'Score = aggregate of weekly assessments, mock interviews, and practical project evaluations across the 6-week program.',
   termsNote:
     'The six-week Financial Operations Masterclass comes with a 100% Job Guarantee for graduates and job switchers.',
   accountabilityHeading: 'A Guaranteed Finance Job After Program Completion',
@@ -276,31 +265,31 @@ export const PLACEMENT_PROMISE = Object.freeze({
 export const PLACEMENT_TIERS = Object.freeze([
   Object.freeze({
     tier: 'Platinum',
-    range: '85–100',
+    range: '85â€“100',
     perks: Object.freeze([
       'First-choice role selection',
       'Global banks & top NBFC access',
-      'Salary band ₹7–12 LPA',
+      'Salary band â‚¹7â€“12 LPA',
       'Priority interview scheduling',
     ]),
   }),
   Object.freeze({
     tier: 'Gold',
-    range: '70–84',
+    range: '70â€“84',
     perks: Object.freeze([
       'Strong role access across sectors',
       'Private banks & mid-tier NBFC placement',
-      'Salary band ₹4–6 LPA',
+      'Salary band â‚¹4â€“6 LPA',
       'Standard interview scheduling',
     ]),
   }),
   Object.freeze({
     tier: 'Silver',
-    range: '50–69',
+    range: '50â€“69',
     perks: Object.freeze([
       'Extended training & re-assessment',
       'NBFCs, FinTech & regional banks',
-      'Salary band ₹3–5 LPA',
+      'Salary band â‚¹3â€“5 LPA',
       'Additional mock interviews',
     ]),
   }),
@@ -350,7 +339,7 @@ export const HIRING_PARTNERS = Object.freeze([
   Object.freeze({ name: 'Barclays', domain: 'barclays.com', category: 'Investment Bank', logo: 'barclays.svg' }),
   Object.freeze({ name: 'Wells Fargo', domain: 'wellsfargo.com', category: 'Investment Bank', logo: 'wells-fargo.svg' }),
   Object.freeze({ name: 'BNP Paribas', domain: 'group.bnpparibas', category: 'Investment Bank', logo: 'bnp-paribas.svg' }),
-  Object.freeze({ name: 'Société Générale', domain: 'societegenerale.com', category: 'Investment Bank', logo: 'societe-generale.svg' }),
+  Object.freeze({ name: 'SociÃ©tÃ© GÃ©nÃ©rale', domain: 'societegenerale.com', category: 'Investment Bank', logo: 'societe-generale.svg' }),
   Object.freeze({ name: 'Nomura', domain: 'nomura.com', category: 'Investment Bank', logo: 'nomura.svg' }),
   Object.freeze({ name: 'Standard Chartered', domain: 'sc.com', category: 'Investment Bank', logo: 'standard-chartered.svg' }),
   Object.freeze({ name: 'Macquarie', domain: 'macquarie.com', category: 'Investment Bank', logo: 'macquarie.svg' }),
@@ -386,7 +375,7 @@ export const TESTIMONIALS = Object.freeze([
   Object.freeze({
     name: 'Nikita B.',
     role: 'Senior Fund Accounting Analyst, Citi',
-    quote: 'The program was practical and focused on real job readiness. My mentor walked me through every stage — skills, assessments, and interviews. It worked.',
+    quote: 'The program was practical and focused on real job readiness. My mentor walked me through every stage â€” skills, assessments, and interviews. It worked.',
   }),
   Object.freeze({
     name: 'Rahul S.',
@@ -401,12 +390,12 @@ export const TESTIMONIALS = Object.freeze([
   Object.freeze({
     name: 'Karan V.',
     role: 'Compliance Analyst, HSBC',
-    quote: 'The KYC and AML modules were exactly what HSBC was looking for. I felt prepared — not just trained.',
+    quote: 'The KYC and AML modules were exactly what HSBC was looking for. I felt prepared â€” not just trained.',
   }),
   Object.freeze({
     name: 'Priya A.',
     role: 'Retail Banking Officer, Kotak',
-    quote: 'I had no banking background when I joined. Centaur broke everything down — from theory to job-ready skills. Placed within weeks of finishing.',
+    quote: 'I had no banking background when I joined. Centaur broke everything down â€” from theory to job-ready skills. Placed within weeks of finishing.',
   }),
 ]);
 
@@ -453,13 +442,13 @@ export const LEADERSHIP = Object.freeze([
 export const LEADERSHIP_INTRO = Object.freeze({
   heading: 'Leadership Driving Your Career Outcomes',
   description:
-    'Led by professionals with experience across banking, training, and placements — focused on delivering real career outcomes.',
+    'Led by professionals with experience across banking, training, and placements â€” focused on delivering real career outcomes.',
 });
 
 export const CONTACT_COPY = Object.freeze({
-  eyebrow: 'Get In Touch',
-  heading: 'Start Your Finance Career Journey Today',
-  description: 'Have questions? Contact our team by WhatsApp, phone, or email to ask about current program details.',
+  eyebrow: 'Course enquiries',
+  heading: 'Choose a way to contact Centaur Careers',
+  description: 'Ask about the six-week Financial Operations Masterclass, live online access across India, the in-person Lucknow option, published fees, and current cohort terms.',
   quickContact: 'Quick Contact',
   whatsapp: 'WhatsApp (Fastest)',
   whatsappDescription: 'Chat with our team instantly',

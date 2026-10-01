@@ -123,18 +123,34 @@
     "height": 941
   },
   "publishedAt": "2026-09-27",
-  "updatedAt": "2026-09-27",
+  "updatedAt": "2026-09-30",
   "scheduledAt": null,
   "seo": {
-    "title": "Reconciliation Process and Steps | Centaur Careers",
-    "description": "Learn the reconciliation process with a practical finance workflow, fictional example, control checks and exception-handling guidance.",
+    "title": "Reconciliation Process: Steps and Examples | Centaur Careers",
+    "description": "Learn reconciliation steps, evidence checks, common breaks, and escalation through a practical finance example.",
     "canonicalPath": "/blog/reconciliation-process-steps-finance/",
     "noindex": false,
     "focusKeyword": "reconciliation process",
-    "secondaryKeywords": ["reconciliation steps", "bank reconciliation", "finance operations"]
+    "secondaryKeywords": [
+      "reconciliation process",
+      "reconciliation meaning",
+      "finance reconciliation"
+    ]
   },
-  "tags": ["Reconciliation Process", "Reconciliation Steps", "Bank Reconciliation", "Finance Operations", "Accounting"],
-  "relatedRouteIds": ["blog", "resource-accounting-basics", "resource-reconciliation-in-finance", "courses-finance-operations-training", "resource-accounting-interview-questions"],
+  "tags": [
+    "Reconciliation Process",
+    "Reconciliation Steps",
+    "Bank Reconciliation",
+    "Finance Operations",
+    "Accounting"
+  ],
+  "relatedRouteIds": [
+    "blog",
+    "resource-accounting-basics",
+    "resource-reconciliation-in-finance",
+    "courses-finance-operations-training",
+    "resource-accounting-interview-questions"
+  ],
   "redirects": [],
   "evidenceNotes": [
     "IFRS Accounting Standards Navigator: https://www.ifrs.org/issued-standards/list-of-standards/",

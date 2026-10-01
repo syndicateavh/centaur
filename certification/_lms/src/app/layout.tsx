@@ -20,21 +20,21 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           A proposed free learning initiative from Centaur Careers <span className="hidden sm:inline">· Enrollment is not open yet</span>
         </div>
         <header className="sticky top-0 z-30 border-b border-slate-200/80 bg-white/95 backdrop-blur">
-          <nav aria-label="Main navigation" className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-5 py-3 sm:px-8 lg:px-10">
+          <nav aria-label="Main navigation" className="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-8 lg:px-10">
             <Link href="/" aria-label="Centaur Learning home" className="inline-flex items-center gap-2 rounded-sm text-navy-950 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-navy-700">
               <span className="grid size-11 shrink-0 place-items-center overflow-hidden rounded-full bg-white ring-1 ring-navy-950/10 sm:size-12">
                 <Image src="/brand/centaur-careers-logo.jpg" alt="Centaur Careers" width={1440} height={1435} sizes="48px" className="size-full object-cover" priority />
               </span>
               <span className="leading-tight"><span className="block text-sm font-extrabold tracking-tight sm:text-base">Centaur Careers</span><span className="block text-[0.66rem] font-semibold uppercase tracking-[0.16em] text-slate-500">Learning</span></span>
             </Link>
-            <div className="flex flex-wrap items-center justify-end gap-x-5 gap-y-2 text-sm font-semibold text-slate-700">
-              <Link href="/courses" className="nav-link">Explore tracks</Link>
-              <Link href="/faq" className="nav-link">FAQs</Link>
-              <Link href="/certificates/verify" className="nav-link">Verify certificate</Link>
-              <Link href="/sign-in" className="nav-link">Sign in</Link>
-              <Link href="/sign-up" className="nav-link">Create account</Link>
-              <Link href="/help" className="button-primary rounded-lg px-4 py-2.5 text-sm">Help</Link>
-              {process.env.NODE_ENV === "development" && <Link href="/admin" className="nav-link">Local admin</Link>}
+            <div className="-mx-4 flex w-[calc(100%+2rem)] min-w-0 flex-nowrap items-center justify-start gap-1 overflow-x-auto px-4 pb-1 text-sm font-semibold text-slate-700 sm:mx-0 sm:w-auto sm:flex-wrap sm:justify-end sm:gap-x-5 sm:gap-y-2 sm:overflow-visible sm:px-0 sm:pb-0">
+              <Link href="/courses" className="nav-link inline-flex min-h-11 shrink-0 items-center px-2">Explore tracks</Link>
+              <Link href="/faq" className="nav-link inline-flex min-h-11 shrink-0 items-center px-2">FAQs</Link>
+              <Link href="/certificates/verify" className="nav-link inline-flex min-h-11 shrink-0 items-center px-2">Verify certificate</Link>
+              <Link href="/sign-in" className="nav-link inline-flex min-h-11 shrink-0 items-center px-2">Sign in</Link>
+              <Link href="/sign-up" className="nav-link inline-flex min-h-11 shrink-0 items-center px-2">Create account</Link>
+              <Link href="/help" className="button-primary inline-flex min-h-11 shrink-0 items-center rounded-lg px-4 py-2.5 text-sm">Help</Link>
+              {process.env.NODE_ENV === "development" && <Link href="/admin" className="nav-link inline-flex min-h-11 shrink-0 items-center px-2">Local admin</Link>}
             </div>
           </nav>
         </header>

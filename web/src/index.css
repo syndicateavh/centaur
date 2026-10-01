@@ -1220,8 +1220,15 @@
   }
 
   .home-hero h1 {
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
+    word-break: normal;
     text-wrap: balance;
+  }
+
+  @media (max-width: 639px) {
+    .home-hero h1 {
+      text-wrap: pretty;
+    }
   }
 
   .home-hero-panel {

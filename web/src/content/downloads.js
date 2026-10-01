@@ -7,7 +7,7 @@ export const DOWNLOAD_ASSETS = Object.freeze({
   placementTerms: Object.freeze({
     path: '/downloads/placement-support-terms.txt',
     filename: 'placement-support-terms.txt',
-    label: 'Download the placement summary',
+    label: 'Download the job guarantee summary',
   }),
   settlementProject: Object.freeze({
     path: '/downloads/settlement-trade-break-source-records.csv',

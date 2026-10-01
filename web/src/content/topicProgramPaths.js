@@ -1,6 +1,6 @@
 // Distinct learning decisions for the six subjects in the single Masterclass.
 // The guarantee belongs to the full program, never to an individual module.
-export const TOPIC_PROGRAM_REVIEW_DATE = '2026-09-29';
+export const TOPIC_PROGRAM_REVIEW_DATE = '2026-09-30';
 
 export const TOPIC_PROGRAM_PATHS = Object.freeze({
   'investment-banking-operations': Object.freeze({

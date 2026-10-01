@@ -253,13 +253,19 @@
     "height": 941
   },
   "publishedAt": "2026-09-21",
-  "updatedAt": "2026-09-29",
+  "updatedAt": "2026-09-30",
   "scheduledAt": null,
   "seo": {
-    "title": "Fund Accounting: Meaning, NAV Workflow & Career Skills",
-    "description": "Learn what fund accounting involves, how a simplified NAV workflow fits together, and the skills graduates can practise for operations roles.",
+    "title": "Fund Accounting Workflow and NAV Skills | Centaur Careers",
+    "description": "Learn how fund accounting inputs, NAV checks, reconciliations, and exceptions connect to investment operations roles.",
     "canonicalPath": "/blog/fund-accounting-nav-workflow-career-skills/",
-    "noindex": false
+    "noindex": false,
+    "focusKeyword": "fund accounting workflow",
+    "secondaryKeywords": [
+      "fund accounting",
+      "NAV calculation",
+      "fund accounting workflow"
+    ]
   },
   "tags": [
     "Fund Accounting",

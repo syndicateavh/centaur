@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "baselineDate": "2026-09-27",
+  "baselineDate": "2026-09-29",
   "purpose": "Protect approved original literature and business-fact source files from accidental SEO rewrites.",
   "approvalRequired": true,
   "approvedOriginalSource": {
@@ -11,7 +11,7 @@
   "protectedFiles": [
     {
       "path": "src/content/sourceContent.js",
-      "sha256": "75fb268ee3ff82b99899d07f21d259cd425cda4e1cb1587532c30e35cdca62b5"
+      "sha256": "8d1270f3b618ed53d54cf65af372d61e284b5cc49839ec3aae6f2a6aaed6a0a8"
     },
     {
       "path": "src/content/businessData.js",
@@ -23,7 +23,7 @@
     },
     {
       "path": "src/content/faqData.js",
-      "sha256": "3ace3c1b482877234819da745861b5c1f47886643dfd457ae35e7c93c9f506a9"
+      "sha256": "0c8dee347a825bb934856acaeeb69594b963ea5767793c5335857b10d15a3e09"
     }
   ]
 }

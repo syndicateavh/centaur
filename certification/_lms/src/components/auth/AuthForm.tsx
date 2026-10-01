@@ -60,13 +60,13 @@ export default function AuthForm({ kind, token = "", returnTo = "/dashboard" }: 
   return <section className="mx-auto w-full max-w-lg rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
     <h1 className="text-2xl font-bold tracking-tight text-slate-950">{heading}</h1>
     <p className="mt-2 text-sm leading-6 text-slate-600">Internal development flow for the proposed Centaur Learning platform.</p>
-    <form className="mt-6 space-y-4" onSubmit={submit}>
+    <form className="mt-6 space-y-4" onSubmit={submit} aria-busy={busy}>
       {kind === "sign-up" && <label className="block text-sm font-semibold">Full name<input required name="name" maxLength={100} autoComplete="name" className="form-input" /></label>}
       {(kind !== "reset") && <label className="block text-sm font-semibold">Email address<input required type="email" name="email" value={email} onChange={(event) => setEmail(event.target.value)} autoComplete="email" className="form-input" /></label>}
-      {(kind === "sign-up" || kind === "sign-in" || kind === "reset") && <label className="block text-sm font-semibold">{kind === "reset" ? "New password" : "Password"}<input required type="password" name="password" minLength={15} maxLength={128} autoComplete={kind === "sign-in" ? "current-password" : "new-password"} className="form-input" /><span className="mt-1 block text-xs font-normal text-slate-500">Use at least 15 characters.</span></label>}
+      {(kind === "sign-up" || kind === "sign-in" || kind === "reset") && <label className="block text-sm font-semibold">{kind === "reset" ? "New password" : "Password"}<input required type="password" name="password" minLength={15} maxLength={128} autoComplete={kind === "sign-in" ? "current-password" : "new-password"} aria-describedby="password-help" className="form-input" /><span id="password-help" className="mt-1 block text-xs font-normal text-slate-600">Use at least 15 characters.</span></label>}
       {kind === "sign-up" && <label className="flex items-start gap-3 text-sm leading-6 text-slate-700"><input type="checkbox" checked={accepted} onChange={(event) => setAccepted(event.target.checked)} className="mt-1 size-4 accent-navy-800" /><span>I agree to the <Link className="text-navy-800 underline" href="/privacy">privacy notice</Link> and <Link className="text-navy-800 underline" href="/terms">terms</Link>.</span></label>}
-      {error && <p role="alert" className="rounded-lg bg-rose-50 p-3 text-sm text-rose-800">{error}</p>}
-      {message && <p role="status" className="rounded-lg bg-emerald-50 p-3 text-sm text-emerald-900">{message}</p>}
+      {error && <p role="alert" aria-live="assertive" className="rounded-lg bg-rose-50 p-3 text-sm text-rose-900">{error}</p>}
+      {message && <p role="status" aria-live="polite" className="rounded-lg bg-emerald-50 p-3 text-sm text-emerald-950">{message}</p>}
       <button disabled={busy || (kind === "sign-up" && !accepted)} className="w-full rounded-lg bg-navy-900 px-4 py-3 font-bold text-white hover:bg-navy-800 disabled:opacity-50">{busy ? "Please wait…" : heading}</button>
     </form>
     <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-sm text-navy-800">{kind !== "sign-in" && <Link href="/sign-in">Sign in</Link>}{kind !== "sign-up" && <Link href="/sign-up">Create account</Link>}{kind !== "forgot" && kind !== "reset" && <Link href="/forgot-password">Forgot password?</Link>}{kind !== "verify" && <Link href="/verify-email">Resend verification</Link>}</div>
