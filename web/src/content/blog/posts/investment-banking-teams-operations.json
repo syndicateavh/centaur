@@ -98,6 +98,24 @@
     {
       "type": "paragraph",
       "text": "Centaur Careers publishes this general industry explainer. It is educational, does not provide investment or legal advice, and does not claim that every described function is part of the current Financial Operations Masterclass. The linked program page describes the current investment banking operations module; check its scope directly."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Investment banking is broader than M&A"
+    },
+    {
+      "type": "paragraph",
+      "text": "Mergers and acquisitions is one visible advisory activity, but investment banks and securities firms also support markets, financing, research, risk, technology, finance control, compliance, and post-trade operations. These functions are not interchangeable. A graduate exploring investment banking should read about the specific team and output, then check how the vacancy describes client work, transaction work, controls, and processing."
+    },
+    {
+      "type": "paragraph",
+      "text": "Operations roles commonly support records and hand-offs around transactions, confirmations, settlement, asset servicing, or reconciliations. This is valuable financial-services work, but it is different from advising on or negotiating a deal. The title investment banking operations should not be shortened into a claim that the role is front-office investment banking."
+    },
+    {
+      "type": "link",
+      "label": "Explore the investment banking operations career guide",
+      "href": "/career-guides/investment-banking-operations/"
     }
   ],
   "coverImage": {
@@ -107,18 +125,20 @@
     "height": 941
   },
   "publishedAt": "2026-09-24",
-  "updatedAt": "2026-09-30",
+  "updatedAt": "2026-10-02",
   "scheduledAt": null,
   "seo": {
-    "title": "Investment Banking Teams and Operations | Centaur Careers",
-    "description": "Map investment banking teams and see where operations, controls, and post-trade workflows fit.",
+    "title": "Investment Banking Teams Beyond M&A | Centaur Careers",
+    "description": "Explore investment banking teams beyond M&A, including markets, risk, controls, and operations, and see how transaction work is handed off.",
     "canonicalPath": "/blog/investment-banking-teams-operations/",
     "noindex": false,
     "focusKeyword": "investment banking teams",
     "secondaryKeywords": [
       "investment banking teams",
       "investment banking operations",
-      "front middle back office"
+      "front middle back office",
+      "investment banking operations jobs",
+      "investment banking careers beyond M&A"
     ]
   },
   "tags": [

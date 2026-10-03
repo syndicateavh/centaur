@@ -3,8 +3,8 @@ import { Mail, MapPin, MessageCircle, Phone, Route, Send } from 'lucide-react';
 import { Link } from 'react-router';
 import InternalLinkGroup from '@/components/InternalLinkGroup.jsx';
 import { PageHero, SectionHeading } from '@/components/PageShell.jsx';
+import SyllabusPreviewDialog from '@/components/SyllabusPreviewDialog.jsx';
 import { BUSINESS_DATA } from '@/content/businessData.js';
-import { DOWNLOAD_ASSETS } from '@/content/downloads.js';
 import { CONTACT_COPY, OFFLINE_PARTNER_LINE } from '@/content/sourceContent.js';
 import { getInternalLinks } from '@/seo/internalLinks.js';
 import { getSeoRoute } from '@/seo/seoRoutes.js';
@@ -30,12 +30,12 @@ export default function ContactPage() {
           <a href={BUSINESS_DATA.whatsappUrl} target="_blank" rel="noopener noreferrer" data-analytics-id="contact-whatsapp" data-analytics-intent="commercial_program" className="inline-flex min-h-12 items-center gap-2 rounded-xl bg-accent px-6 py-3 font-bold text-primary">
             <MessageCircle className="h-5 w-5" aria-hidden="true" /> Ask on WhatsApp
           </a>
-          <a href={BUSINESS_DATA.enrollmentUrl} target="_blank" rel="noopener noreferrer" data-analytics-id="contact-application" data-analytics-channel="enrollment" data-analytics-intent="commercial_program" className="inline-flex min-h-12 items-center gap-2 rounded-xl bg-accent px-6 py-3 font-bold text-primary">
+          <a href={BUSINESS_DATA.enrollmentUrl} target="_blank" rel="noopener noreferrer" data-analytics-id="contact-application" data-analytics-channel="enrollment" data-analytics-intent="commercial_program" className="inline-flex min-h-12 items-center gap-2 rounded-xl border border-white/30 bg-white/5 px-6 py-3 font-bold text-white transition hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-primary">
             <Send className="h-5 w-5" aria-hidden="true" /> Start Your Application
           </a>
-          <a href={DOWNLOAD_ASSETS.syllabus.path} download={DOWNLOAD_ASSETS.syllabus.filename} data-analytics-id="contact-syllabus-download" data-analytics-intent="commercial_program" className="inline-flex min-h-12 items-center gap-2 rounded-xl border border-white/25 bg-white/10 px-6 py-3 font-bold text-white">
-            Download syllabus summary
-          </a>
+          <SyllabusPreviewDialog
+            triggerClassName="inline-flex min-h-12 items-center gap-2 rounded-xl border border-transparent px-4 py-3 font-semibold text-white/75 underline decoration-accent underline-offset-4 transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
+          />
         </div>
         <nav aria-label="Review before applying" className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold text-white/80">
           <Link to="/courses/finance-course-fees-eligibility/" className="underline decoration-accent underline-offset-4 hover:text-white">Fees and eligibility</Link>
@@ -46,7 +46,7 @@ export default function ContactPage() {
 
       <section className="bg-white py-16 sm:py-20">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Contact channels" title={CONTACT_COPY.heading} intro="Call, email, or message the team. Choose the channel that works best for your course or enrolment question." />
+          <SectionHeading eyebrow="Contact channels" title={CONTACT_COPY.heading} intro="Prefer a direct conversation? Use one of these channels for course, cohort, or enrolment questions." />
           <div className="grid gap-5 md:grid-cols-3">
             {contacts.map(({ label, value, href, icon: Icon, external }) => (
               <a key={label} href={href} {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})} className="rounded-2xl border border-border p-6 shadow-sm transition hover:-translate-y-1 hover:border-accent/50 hover:shadow-lg">

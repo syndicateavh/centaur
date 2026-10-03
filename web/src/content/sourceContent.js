@@ -20,7 +20,7 @@ export const PROGRAM = Object.freeze({
   placementSupportDescription:
     'Learners receive placement preparation, role guidance, and opportunity support through the program process.',
   metaDescription:
-    'Complete Centaur Careersâ€™ six-week Financial Operations Masterclass and get a finance job through its 100% Job Guarantee Program. Open to graduates and job switchers across India.',
+    'Complete Centaur Careers’ six-week Financial Operations Masterclass and get a finance job through its 100% Job Guarantee Program. Open to graduates and job switchers across India.',
 });
 
 export const JOB_GUARANTEE = Object.freeze({
@@ -53,7 +53,7 @@ export const HOME_COPY = Object.freeze({
   whyDescription: 'We combine practical training with structured career support to help learners prepare for finance opportunities.',
   benefitsEyebrow: 'Student Benefits',
   benefitsHeading: 'What You Gain From This Program',
-  benefitsDescription: 'Everything you need to go from campus to corporate â€” skills, confidence, connections, and career guidance.',
+  benefitsDescription: 'Everything you need to go from campus to corporate — skills, confidence, connections, and career guidance.',
   comparisonEyebrow: 'Comparison',
   comparisonHeading: 'What to Compare Before Choosing a Finance Program',
   comparisonDescription: 'Compare curriculum, learning modes, and program support terms before choosing a program.',
@@ -265,31 +265,31 @@ export const PLACEMENT_PROMISE = Object.freeze({
 export const PLACEMENT_TIERS = Object.freeze([
   Object.freeze({
     tier: 'Platinum',
-    range: '85â€“100',
+    range: '85–100',
     perks: Object.freeze([
       'First-choice role selection',
       'Global banks & top NBFC access',
-      'Salary band â‚¹7â€“12 LPA',
+      'Salary band ₹7–12 LPA',
       'Priority interview scheduling',
     ]),
   }),
   Object.freeze({
     tier: 'Gold',
-    range: '70â€“84',
+    range: '70–84',
     perks: Object.freeze([
       'Strong role access across sectors',
       'Private banks & mid-tier NBFC placement',
-      'Salary band â‚¹4â€“6 LPA',
+      'Salary band ₹4–6 LPA',
       'Standard interview scheduling',
     ]),
   }),
   Object.freeze({
     tier: 'Silver',
-    range: '50â€“69',
+    range: '50–69',
     perks: Object.freeze([
       'Extended training & re-assessment',
       'NBFCs, FinTech & regional banks',
-      'Salary band â‚¹3â€“5 LPA',
+      'Salary band ₹3–5 LPA',
       'Additional mock interviews',
     ]),
   }),
@@ -339,7 +339,7 @@ export const HIRING_PARTNERS = Object.freeze([
   Object.freeze({ name: 'Barclays', domain: 'barclays.com', category: 'Investment Bank', logo: 'barclays.svg' }),
   Object.freeze({ name: 'Wells Fargo', domain: 'wellsfargo.com', category: 'Investment Bank', logo: 'wells-fargo.svg' }),
   Object.freeze({ name: 'BNP Paribas', domain: 'group.bnpparibas', category: 'Investment Bank', logo: 'bnp-paribas.svg' }),
-  Object.freeze({ name: 'SociÃ©tÃ© GÃ©nÃ©rale', domain: 'societegenerale.com', category: 'Investment Bank', logo: 'societe-generale.svg' }),
+  Object.freeze({ name: 'Société Générale', domain: 'societegenerale.com', category: 'Investment Bank', logo: 'societe-generale.svg' }),
   Object.freeze({ name: 'Nomura', domain: 'nomura.com', category: 'Investment Bank', logo: 'nomura.svg' }),
   Object.freeze({ name: 'Standard Chartered', domain: 'sc.com', category: 'Investment Bank', logo: 'standard-chartered.svg' }),
   Object.freeze({ name: 'Macquarie', domain: 'macquarie.com', category: 'Investment Bank', logo: 'macquarie.svg' }),
@@ -375,7 +375,7 @@ export const TESTIMONIALS = Object.freeze([
   Object.freeze({
     name: 'Nikita B.',
     role: 'Senior Fund Accounting Analyst, Citi',
-    quote: 'The program was practical and focused on real job readiness. My mentor walked me through every stage â€” skills, assessments, and interviews. It worked.',
+    quote: 'The program was practical and focused on real job readiness. My mentor walked me through every stage — skills, assessments, and interviews. It worked.',
   }),
   Object.freeze({
     name: 'Rahul S.',
@@ -390,12 +390,12 @@ export const TESTIMONIALS = Object.freeze([
   Object.freeze({
     name: 'Karan V.',
     role: 'Compliance Analyst, HSBC',
-    quote: 'The KYC and AML modules were exactly what HSBC was looking for. I felt prepared â€” not just trained.',
+    quote: 'The KYC and AML modules were exactly what HSBC was looking for. I felt prepared — not just trained.',
   }),
   Object.freeze({
     name: 'Priya A.',
     role: 'Retail Banking Officer, Kotak',
-    quote: 'I had no banking background when I joined. Centaur broke everything down â€” from theory to job-ready skills. Placed within weeks of finishing.',
+    quote: 'I had no banking background when I joined. Centaur broke everything down — from theory to job-ready skills. Placed within weeks of finishing.',
   }),
 ]);
 
@@ -442,7 +442,7 @@ export const LEADERSHIP = Object.freeze([
 export const LEADERSHIP_INTRO = Object.freeze({
   heading: 'Leadership Driving Your Career Outcomes',
   description:
-    'Led by professionals with experience across banking, training, and placements â€” focused on delivering real career outcomes.',
+    'Led by professionals with experience across banking, training, and placements — focused on delivering real career outcomes.',
 });
 
 export const CONTACT_COPY = Object.freeze({

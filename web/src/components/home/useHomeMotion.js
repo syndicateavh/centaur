@@ -87,19 +87,14 @@ export function useHomeMotion(homeRef) {
           const heroOrbit = hero?.querySelector('[data-home-hero-orbit]');
           const heroPanel = hero?.querySelector('[data-home-hero-panel]');
           const heroItems = homeElement.querySelectorAll('[data-home-hero-reveal]:not([data-home-hero-panel]):not([data-home-lcp])');
-          const heroDetails = hero?.querySelectorAll('[data-home-hero-detail]:not([data-home-hero-flow-item])') ?? [];
+          const heroDetails = Array.from(hero?.querySelectorAll('[data-home-hero-detail]:not([data-home-hero-flow-item])') ?? [])
+            .filter((detail) => !detail.closest('.home-hero-support'));
           const heroFlowItems = hero?.querySelectorAll('[data-home-hero-flow-item]') ?? [];
           const heroFlowLines = hero?.querySelectorAll('[data-home-hero-flow-line]') ?? [];
           const heroFlowIndexes = hero?.querySelectorAll('[data-home-hero-flow-item] .home-hero-flow-index') ?? [];
           const heroFlowBorders = hero?.querySelectorAll('.home-hero-flow-border') ?? [];
           const heroFlowBorderRects = hero?.querySelectorAll('.home-hero-flow-border rect') ?? [];
           const heroFlowArrows = hero?.querySelectorAll('.home-hero-flow-arrow') ?? [];
-          const flowSequenceStart = 1.18;
-          const flowStepInterval = desktop ? 0.58 : 0.5;
-          const flowSequenceEnd = heroFlowItems.length
-            ? flowSequenceStart + ((heroFlowItems.length - 1) * flowStepInterval) + 0.48
-            : 0.78;
-
           const setHeroFlowState = (activeIndex) => {
             heroFlowItems.forEach((flowItem, itemIndex) => {
               flowItem.dataset.state = itemIndex === activeIndex
@@ -117,15 +112,7 @@ export function useHomeMotion(homeRef) {
             });
           };
 
-          if (desktop && heroFlowItems.length) {
-            gsap.set(heroFlowItems, { autoAlpha: 0, y: desktop ? 20 : 14 });
-            gsap.set(heroFlowLines, { autoAlpha: 0, scaleY: 0, transformOrigin: 'top center' });
-            gsap.set(heroFlowIndexes, { autoAlpha: 0, scale: 0.78 });
-            gsap.set(heroFlowBorders, { autoAlpha: 0 });
-            gsap.set(heroFlowBorderRects, { strokeDashoffset: 0 });
-            gsap.set(heroFlowArrows, { autoAlpha: 0, top: '0%' });
-            setHeroFlowState(0);
-          }
+          if (heroFlowItems.length) setHeroFlowState(0);
 
           const sectionCleanups = [];
           const heroTimeline = gsap.timeline({ defaults: { ease: 'power2.out' } });
@@ -141,38 +128,7 @@ export function useHomeMotion(homeRef) {
               y: desktop ? 24 : 14,
             }, 0.18)
             .fromTo(heroPanel, { autoAlpha: 0, y: 32, scale: 0.96, rotationX: 3 }, { autoAlpha: 1, y: 0, scale: 1, rotationX: 0, duration: 0.8, ease: 'power3.out' }, 0.35)
-            .from(heroDetails, { autoAlpha: 0, y: 12, duration: 0.4, stagger: 0.08 }, flowSequenceEnd);
-
-          if (desktop) heroFlowItems.forEach((flowItem, index) => {
-            const stepStart = flowSequenceStart + (index * flowStepInterval);
-            const flowIndex = flowItem.querySelector('.home-hero-flow-index');
-            const flowLine = heroFlowLines[index];
-
-            heroTimeline.to(flowItem, {
-              autoAlpha: 1,
-              y: 0,
-              duration: desktop ? 0.42 : 0.36,
-              ease: 'power3.out',
-            }, stepStart);
-
-            if (flowIndex) {
-              heroTimeline.to(flowIndex, {
-                autoAlpha: 1,
-                scale: 1,
-                duration: desktop ? 0.36 : 0.3,
-                ease: 'back.out(1.7)',
-              }, stepStart + 0.05);
-            }
-
-            if (flowLine) {
-              heroTimeline.to(flowLine, {
-                autoAlpha: 1,
-                scaleY: 1,
-                duration: desktop ? 0.26 : 0.22,
-                ease: 'power2.out',
-              }, stepStart + 0.32);
-            }
-          });
+            .from(heroDetails, { autoAlpha: 0, y: 12, duration: 0.4, stagger: 0.08 }, 0.78);
 
           let heroFlowLoop;
           if (desktop && heroFlowItems.length > 1) {

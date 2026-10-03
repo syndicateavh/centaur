@@ -37,8 +37,8 @@ function readPage(publicPath) {
 }
 
 function hasHeading(html, level, text) {
-  const escapedText = text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  return new RegExp(`<h${level}\\b[^>]*>${escapedText}</h${level}>`, 'i').test(html);
+  const headings = html.matchAll(new RegExp(`<h${level}\\b[^>]*>([\\s\\S]*?)</h${level}>`, 'gi'));
+  return [...headings].some((match) => decodeHtml(match[1].replace(/<!--[\\s\\S]*?-->/g, '').replace(/<[^>]*>/g, '')).trim() === text);
 }
 
 function verifyImage(html, image, publicPath, loading) {

@@ -13,6 +13,7 @@ import {
 import { Link } from 'react-router';
 import InternalLinkGroup from '@/components/InternalLinkGroup.jsx';
 import { CtaSection, PageHero, SectionHeading } from '@/components/PageShell.jsx';
+import DownloadPreviewDialog from '@/components/DownloadPreviewDialog.jsx';
 import { BUSINESS_DATA } from '@/content/businessData.js';
 import { DOWNLOAD_ASSETS } from '@/content/downloads.js';
 import { HIRING_PARTNER_LOGOS } from '@/content/hiringPartnerLogos.js';
@@ -85,6 +86,27 @@ export default function PlacementsPage() {
         eyebrow="Your finance career pathway"
         title={seo.h1}
         intro="Complete our six-week finance program and get a finance job. Centaur Careers’ 100% Job Guarantee Program is open to graduates and job switchers across India."
+        sideContent={(
+          <aside className="rounded-3xl border border-white/15 bg-white/[0.07] p-6 shadow-2xl backdrop-blur sm:p-8" aria-label="Job guarantee program at a glance">
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent">Program at a glance</p>
+            <h2 className="mt-3 text-2xl font-bold text-white">A clear route from training to a finance job</h2>
+            <dl className="mt-6 divide-y divide-white/10">
+              <div className="flex items-start gap-3 py-4 first:pt-0">
+                <GraduationCap className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden="true" />
+                <div><dt className="font-semibold text-white">Who can join</dt><dd className="mt-1 text-sm leading-relaxed text-white/70">Graduates and job switchers; no finance background required.</dd></div>
+              </div>
+              <div className="flex items-start gap-3 py-4">
+                <Laptop className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden="true" />
+                <div><dt className="font-semibold text-white">Six-week program</dt><dd className="mt-1 text-sm leading-relaxed text-white/70">Live online across India or in person in Lucknow.</dd></div>
+              </div>
+              <div className="flex items-start gap-3 py-4 last:pb-0">
+                <ShieldCheck className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden="true" />
+                <div><dt className="font-semibold text-white">Published outcome</dt><dd className="mt-1 text-sm leading-relaxed text-white/70">A finance job after completing the program. Read the written terms for your cohort.</dd></div>
+              </div>
+            </dl>
+            <Link to="#job-guarantee-terms" className="mt-5 inline-flex min-h-11 items-center gap-2 rounded-xl border border-white/20 px-4 py-3 font-semibold text-white transition hover:bg-white/10">Read the guarantee summary <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
+          </aside>
+        )}
       >
         <div className="mt-8 flex flex-wrap gap-3">
           <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-accent px-6 py-3 font-bold text-primary shadow-lg transition hover:-translate-y-0.5">
@@ -94,34 +116,7 @@ export default function PlacementsPage() {
             Explore the six-week program <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </Link>
         </div>
-        <Link to="#job-guarantee-terms" className="mt-4 inline-flex text-sm font-semibold text-white/70 underline decoration-accent underline-offset-4 transition hover:text-white">
-          View guarantee summary
-        </Link>
-        <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 border-t border-white/10 pt-6 text-sm text-white/75">
-          <span className="flex items-center gap-2"><GraduationCap className="h-4 w-4 text-accent" aria-hidden="true" />Graduates and job switchers</span>
-          <span className="flex items-center gap-2"><Laptop className="h-4 w-4 text-accent" aria-hidden="true" />Live online across India</span>
-          <span className="flex items-center gap-2"><MapPin className="h-4 w-4 text-accent" aria-hidden="true" />In-person option in Lucknow</span>
-        </div>
       </PageHero>
-
-      <section className="bg-white py-16 sm:py-20" aria-label="Job guarantee overview">
-        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Our commitment" title={PLACEMENT_PROMISE.heading} intro="Complete the six-week Financial Operations Masterclass and get a finance job through our 100% Job Guarantee Program. Open to graduates and job switchers from any academic background." align="center" />
-          <div className="grid gap-6 md:grid-cols-3">
-            {[
-              ['Open access', 'Graduation is the entry requirement. Previous finance education or work experience is not required.'],
-              ['Practical preparation', 'Complete the six-week learning journey with projects, workflow practice, and interview preparation.'],
-              ['Guaranteed finance job', 'After completing the six-week program, get a finance job through the 100% Job Guarantee Program.'],
-            ].map(([title, description]) => (
-              <article key={title} className="rounded-2xl border border-border p-7 shadow-sm">
-                <ShieldCheck className="h-7 w-7 text-accent-ink" aria-hidden="true" />
-                <h2 className="mt-5 text-xl font-bold text-primary">{title}</h2>
-                <p className="mt-3 leading-relaxed text-muted-foreground">{description}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="bg-muted py-16 sm:py-20" aria-label="Who can join">
         <div className="container mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:px-8">
@@ -302,9 +297,16 @@ export default function PlacementsPage() {
                   </li>
                 ))}
               </ul>
-              <a href={DOWNLOAD_ASSETS.placementTerms.path} download={DOWNLOAD_ASSETS.placementTerms.filename} data-analytics-id="placement-terms-download" data-analytics-intent="commercial_placement" className="mt-6 inline-flex min-h-11 items-center gap-2 rounded-xl bg-primary px-5 py-3 font-bold text-white transition hover:bg-primary/90">
+              <DownloadPreviewDialog
+                asset={DOWNLOAD_ASSETS.placementTerms}
+                title="Published placement support terms"
+                description="Review the published placement support summary before connecting with Centaur Careers."
+                analyticsId="placement-terms-preview"
+                analyticsIntent="commercial_placement"
+                triggerClassName="mt-6 inline-flex min-h-11 items-center gap-2 rounded-xl bg-primary px-5 py-3 font-bold text-white transition hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+              >
                 {DOWNLOAD_ASSETS.placementTerms.label} <ArrowRight className="h-4 w-4" aria-hidden="true" />
-              </a>
+              </DownloadPreviewDialog>
             </div>
 
             <div className="mt-8 flex flex-col items-start justify-between gap-5 rounded-2xl bg-primary p-6 text-white sm:flex-row sm:items-center">

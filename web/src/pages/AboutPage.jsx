@@ -3,6 +3,7 @@ import { Mail } from 'lucide-react';
 import { Link } from 'react-router';
 import InternalLinkGroup from '@/components/InternalLinkGroup.jsx';
 import { CtaSection, PageHero, SectionHeading } from '@/components/PageShell.jsx';
+import DownloadPreviewDialog from '@/components/DownloadPreviewDialog.jsx';
 import { DOWNLOAD_ASSETS } from '@/content/downloads.js';
 import { ABOUT_SUMMARY, LEADERSHIP, LEADERSHIP_INTRO, PROGRAM } from '@/content/sourceContent.js';
 import { getInternalLinks } from '@/seo/internalLinks.js';
@@ -23,7 +24,7 @@ export default function AboutPage() {
       <section className="bg-white py-16 sm:py-20">
         <div className="container mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.2fr_0.8fr] lg:px-8">
           <article>
-            <SectionHeading eyebrow="About Centaur Careers" title={ABOUT_SUMMARY.heading} />
+            <SectionHeading eyebrow="About Centaur Careers" title={ABOUT_SUMMARY.heading} align="left" />
             {ABOUT_SUMMARY.paragraphs.map((paragraph) => (
               <p key={paragraph} className="mt-5 text-lg leading-relaxed text-muted-foreground">{paragraph}</p>
             ))}
@@ -68,7 +69,14 @@ export default function AboutPage() {
             <article className="rounded-2xl border border-border bg-muted/30 p-6">
               <h3 className="text-xl font-bold text-primary">Curriculum and delivery</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">The dated syllabus summary lists the six subject areas, online and Lucknow access, and details to reconfirm for the current cohort.</p>
-              <a href={DOWNLOAD_ASSETS.syllabus.path} download={DOWNLOAD_ASSETS.syllabus.filename} className="mt-5 inline-block font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">Download syllabus summary</a>
+              <DownloadPreviewDialog
+                asset={DOWNLOAD_ASSETS.syllabus}
+                title="Financial Operations Masterclass syllabus"
+                triggerLabel="Download syllabus summary"
+                analyticsId="about-syllabus-preview"
+                analyticsIntent="commercial_program"
+                triggerClassName="mt-5 inline-block cursor-pointer border-0 bg-transparent p-0 text-left font-bold text-primary underline decoration-accent decoration-2 underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              />
             </article>
             <article className="rounded-2xl border border-border bg-muted/30 p-6">
               <h3 className="text-xl font-bold text-primary">Original practice examples</h3>

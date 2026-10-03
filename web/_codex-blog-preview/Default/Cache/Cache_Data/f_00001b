@@ -1,0 +1,261 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/RoleIntentPathway.jsx");import RefreshRuntime from "/@id/__x00__virtual:react-router/hmr-runtime";const inWebWorker = typeof WorkerGlobalScope !== 'undefined' && self instanceof WorkerGlobalScope;let prevRefreshReg;let prevRefreshSig;if (import.meta.hot && !inWebWorker) {  if (!window.__vite_plugin_react_preamble_installed__) {    throw new Error(      "React Router Vite plugin can't detect preamble. Something is wrong."    );  }  prevRefreshReg = window.$RefreshReg$;  prevRefreshSig = window.$RefreshSig$;  window.$RefreshReg$ = (type, id) => {    RefreshRuntime.register(type, "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx" + " " + id)  };  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;}import __vite__cjsImport2_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=1f33d8d7"; const jsxDEV = __vite__cjsImport2_react_jsxDevRuntime["jsxDEV"];
+import __vite__cjsImport3_react from "/node_modules/.vite/deps/react.js?v=1f33d8d7"; const React = __vite__cjsImport3_react.__esModule ? __vite__cjsImport3_react.default : __vite__cjsImport3_react;
+import { ArrowRight } from "/node_modules/.vite/deps/lucide-react.js?v=1f33d8d7";
+import { Link } from "/node_modules/.vite/deps/react-router.js?v=1f33d8d7";
+import { SectionHeading } from "/src/components/PageShell.jsx";
+function quizPath(intent) {
+  return "/quiz/?domain=" + encodeURIComponent(intent.quizDomainId) + "#quiz-round-title";
+}
+function PathLink({
+  to,
+  children
+}) {
+  return /* @__PURE__ */jsxDEV(Link, {
+    to,
+    className: "inline-flex min-h-11 items-center gap-2 rounded-xl border border-primary/15 bg-white px-4 py-2.5 font-bold text-primary transition hover:-translate-y-0.5 hover:border-accent hover:shadow-sm",
+    children: [children, " ", /* @__PURE__ */jsxDEV(ArrowRight, {
+      className: "h-4 w-4",
+      "aria-hidden": "true"
+    }, void 0, false, {
+      fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+      lineNumber: 13,
+      columnNumber: 18
+    }, this)]
+  }, void 0, true, {
+    fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+    lineNumber: 12,
+    columnNumber: 5
+  }, this);
+}
+_c = PathLink;
+export default function RoleIntentPathway({
+  intent,
+  compact = false
+}) {
+  if (!intent) return null;
+  const rolePageLabel = intent.kind === "guide" ? "Read the role guide" : "Read the specialist article";
+  if (compact) {
+    return /* @__PURE__ */jsxDEV("div", {
+      "data-role-intent-pathway": intent.id,
+      className: "rounded-2xl border border-border bg-white p-6 shadow-sm",
+      children: [/* @__PURE__ */jsxDEV("p", {
+        className: "text-xs font-bold uppercase tracking-[0.16em] text-accent-ink",
+        children: "Specialist search path"
+      }, void 0, false, {
+        fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+        lineNumber: 26,
+        columnNumber: 9
+      }, this), /* @__PURE__ */jsxDEV("h3", {
+        className: "mt-3 text-2xl font-bold text-primary",
+        children: intent.label
+      }, void 0, false, {
+        fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+        lineNumber: 27,
+        columnNumber: 9
+      }, this), /* @__PURE__ */jsxDEV("p", {
+        className: "mt-3 text-sm leading-relaxed text-muted-foreground",
+        children: intent.summary
+      }, void 0, false, {
+        fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+        lineNumber: 28,
+        columnNumber: 9
+      }, this), /* @__PURE__ */jsxDEV("p", {
+        className: "mt-4 text-sm font-semibold text-foreground/80",
+        children: [/* @__PURE__ */jsxDEV("span", {
+          className: "font-bold text-primary",
+          children: "Answers:"
+        }, void 0, false, {
+          fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+          lineNumber: 29,
+          columnNumber: 70
+        }, this), " ", intent.primaryQuestion]
+      }, void 0, true, {
+        fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+        lineNumber: 29,
+        columnNumber: 9
+      }, this), /* @__PURE__ */jsxDEV("div", {
+        className: "mt-5 flex flex-wrap gap-3",
+        children: [/* @__PURE__ */jsxDEV(PathLink, {
+          to: intent.canonicalPath,
+          children: rolePageLabel
+        }, void 0, false, {
+          fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+          lineNumber: 31,
+          columnNumber: 11
+        }, this), /* @__PURE__ */jsxDEV(PathLink, {
+          to: quizPath(intent),
+          children: "Practise this role"
+        }, void 0, false, {
+          fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+          lineNumber: 32,
+          columnNumber: 11
+        }, this), /* @__PURE__ */jsxDEV(PathLink, {
+          to: intent.coursePath,
+          children: intent.coursePathLabel
+        }, void 0, false, {
+          fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+          lineNumber: 33,
+          columnNumber: 11
+        }, this)]
+      }, void 0, true, {
+        fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+        lineNumber: 30,
+        columnNumber: 9
+      }, this)]
+    }, void 0, true, {
+      fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+      lineNumber: 25,
+      columnNumber: 7
+    }, this);
+  }
+  return /* @__PURE__ */jsxDEV("section", {
+    "data-role-intent-pathway": intent.id,
+    className: "bg-muted py-14 sm:py-16",
+    "aria-labelledby": intent.id + "-pathway-title",
+    children: /* @__PURE__ */jsxDEV("div", {
+      className: "container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8",
+      children: [/* @__PURE__ */jsxDEV(SectionHeading, {
+        align: "left",
+        eyebrow: "Role-intent pathway",
+        title: "Explore " + intent.label,
+        intro: intent.summary,
+        id: intent.id + "-pathway-title"
+      }, void 0, false, {
+        fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+        lineNumber: 42,
+        columnNumber: 9
+      }, this), /* @__PURE__ */jsxDEV("div", {
+        className: "grid gap-6 lg:grid-cols-[minmax(0,1fr)_auto]",
+        children: [/* @__PURE__ */jsxDEV("div", {
+          className: "rounded-2xl border border-border bg-white p-6 shadow-sm",
+          children: [/* @__PURE__ */jsxDEV("p", {
+            className: "text-sm font-bold uppercase tracking-[0.14em] text-accent-ink",
+            children: "Questions this path answers"
+          }, void 0, false, {
+            fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+            lineNumber: 51,
+            columnNumber: 13
+          }, this), /* @__PURE__ */jsxDEV("p", {
+            className: "mt-3 text-lg font-bold leading-relaxed text-primary",
+            children: intent.primaryQuestion
+          }, void 0, false, {
+            fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+            lineNumber: 52,
+            columnNumber: 13
+          }, this), /* @__PURE__ */jsxDEV("ul", {
+            className: "mt-4 grid gap-2 text-sm leading-relaxed text-muted-foreground sm:grid-cols-2",
+            children: intent.searchQuestions.map(question => /* @__PURE__ */jsxDEV("li", {
+              className: "rounded-lg bg-muted/60 px-3 py-2",
+              children: question
+            }, question, false, {
+              fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+              lineNumber: 54,
+              columnNumber: 57
+            }, this))
+          }, void 0, false, {
+            fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+            lineNumber: 53,
+            columnNumber: 13
+          }, this)]
+        }, void 0, true, {
+          fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+          lineNumber: 50,
+          columnNumber: 11
+        }, this), /* @__PURE__ */jsxDEV("div", {
+          className: "flex flex-col items-stretch gap-3 lg:min-w-64",
+          children: [/* @__PURE__ */jsxDEV(PathLink, {
+            to: intent.canonicalPath,
+            children: rolePageLabel
+          }, void 0, false, {
+            fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+            lineNumber: 58,
+            columnNumber: 13
+          }, this), /* @__PURE__ */jsxDEV(PathLink, {
+            to: quizPath(intent),
+            children: ["Practise ", intent.label]
+          }, void 0, true, {
+            fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+            lineNumber: 59,
+            columnNumber: 13
+          }, this), /* @__PURE__ */jsxDEV(PathLink, {
+            to: intent.coursePath,
+            children: intent.coursePathLabel
+          }, void 0, false, {
+            fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+            lineNumber: 60,
+            columnNumber: 13
+          }, this)]
+        }, void 0, true, {
+          fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+          lineNumber: 57,
+          columnNumber: 11
+        }, this)]
+      }, void 0, true, {
+        fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+        lineNumber: 49,
+        columnNumber: 9
+      }, this), intent.articleLinks.length > 0 && /* @__PURE__ */jsxDEV("div", {
+        className: "mt-6 rounded-2xl border border-border bg-white p-6",
+        children: [/* @__PURE__ */jsxDEV("p", {
+          className: "text-sm font-bold uppercase tracking-[0.14em] text-accent-ink",
+          children: "Continue with a related workflow"
+        }, void 0, false, {
+          fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+          lineNumber: 65,
+          columnNumber: 13
+        }, this), /* @__PURE__ */jsxDEV("ul", {
+          className: "mt-4 grid gap-3 sm:grid-cols-2",
+          children: intent.articleLinks.map(article => /* @__PURE__ */jsxDEV("li", {
+            children: /* @__PURE__ */jsxDEV(Link, {
+              to: article.path,
+              className: "font-bold text-primary underline decoration-accent decoration-2 underline-offset-4",
+              children: article.label
+            }, void 0, false, {
+              fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+              lineNumber: 69,
+              columnNumber: 19
+            }, this)
+          }, article.path, false, {
+            fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+            lineNumber: 68,
+            columnNumber: 17
+          }, this))
+        }, void 0, false, {
+          fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+          lineNumber: 66,
+          columnNumber: 13
+        }, this)]
+      }, void 0, true, {
+        fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+        lineNumber: 64,
+        columnNumber: 11
+      }, this)]
+    }, void 0, true, {
+      fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+      lineNumber: 41,
+      columnNumber: 7
+    }, this)
+  }, void 0, false, {
+    fileName: "C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx",
+    lineNumber: 40,
+    columnNumber: 5
+  }, this);
+}
+_c2 = RoleIntentPathway;
+var _c, _c2;
+$RefreshReg$(_c, "PathLink");
+$RefreshReg$(_c2, "RoleIntentPathway");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/Virat Singh/OneDrive/Desktop/centaur/web/src/components/RoleIntentPathway.jsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      undefined && window.__reactRouterRouteModuleUpdates.set(undefined, nextExports);
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate(currentExports, nextExports, []);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+//# sourceMappingURL=data:application/json;base64,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UGF0aCIsImludGVudCIsImVuY29kZVVSSUNvbXBvbmVudCIsInF1aXpEb21haW5JZCIsIlBhdGhMaW5rIiwidG8iLCJjaGlsZHJlbiIsImNsYXNzTmFtZSIsImZpbGVOYW1lIiwibGluZU51bWJlciIsImNvbHVtbk51bWJlciIsIl9jIiwiUm9sZUludGVudFBhdGh3YXkiLCJjb21wYWN0Iiwicm9sZVBhZ2VMYWJlbCIsImtpbmQiLCJpZCIsImxhYmVsIiwic3VtbWFyeSIsInByaW1hcnlRdWVzdGlvbiIsImNhbm9uaWNhbFBhdGgiLCJjb3Vyc2VQYXRoIiwiY291cnNlUGF0aExhYmVsIiwiYWxpZ24iLCJleWVicm93IiwidGl0bGUiLCJpbnRybyIsInNlYXJjaFF1ZXN0aW9ucyIsIm1hcCIsInF1ZXN0aW9uIiwiYXJ0aWNsZUxpbmtzIiwibGVuZ3RoIiwiYXJ0aWNsZSIsInBhdGgiLCJfYzIiLCIkUmVmcmVzaFJlZyQiXSwiaWdub3JlTGlzdCI6W10sInNvdXJjZXMiOlsiUm9sZUludGVudFBhdGh3YXkuanN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5pbXBvcnQgeyBBcnJvd1JpZ2h0IH0gZnJvbSAnbHVjaWRlLXJlYWN0JztcbmltcG9ydCB7IExpbmsgfSBmcm9tICdyZWFjdC1yb3V0ZXInO1xuaW1wb3J0IHsgU2VjdGlvbkhlYWRpbmcgfSBmcm9tICdAL2NvbXBvbmVudHMvUGFnZVNoZWxsLmpzeCc7XG5cbmZ1bmN0aW9uIHF1aXpQYXRoKGludGVudCkge1xuICByZXR1cm4gJy9xdWl6Lz9kb21haW49JyArIGVuY29kZVVSSUNvbXBvbmVudChpbnRlbnQucXVpekRvbWFpbklkKSArICcjcXVpei1yb3VuZC10aXRsZSc7XG59XG5cbmZ1bmN0aW9uIFBhdGhMaW5rKHsgdG8sIGNoaWxkcmVuIH0pIHtcbiAgcmV0dXJuIChcbiAgICA8TGluayB0bz17dG99IGNsYXNzTmFtZT1cImlubGluZS1mbGV4IG1pbi1oLTExIGl0ZW1zLWNlbnRlciBnYXAtMiByb3VuZGVkLXhsIGJvcmRlciBib3JkZXItcHJpbWFyeS8xNSBiZy13aGl0ZSBweC00IHB5LTIuNSBmb250LWJvbGQgdGV4dC1wcmltYXJ5IHRyYW5zaXRpb24gaG92ZXI6LXRyYW5zbGF0ZS15LTAuNSBob3Zlcjpib3JkZXItYWNjZW50IGhvdmVyOnNoYWRvdy1zbVwiPlxuICAgICAge2NoaWxkcmVufSA8QXJyb3dSaWdodCBjbGFzc05hbWU9XCJoLTQgdy00XCIgYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cbiAgICA8L0xpbms+XG4gICk7XG59XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFJvbGVJbnRlbnRQYXRod2F5KHsgaW50ZW50LCBjb21wYWN0ID0gZmFsc2UgfSkge1xuICBpZiAoIWludGVudCkgcmV0dXJuIG51bGw7XG5cbiAgY29uc3Qgcm9sZVBhZ2VMYWJlbCA9IGludGVudC5raW5kID09PSAnZ3VpZGUnID8gJ1JlYWQgdGhlIHJvbGUgZ3VpZGUnIDogJ1JlYWQgdGhlIHNwZWNpYWxpc3QgYXJ0aWNsZSc7XG5cbiAgaWYgKGNvbXBhY3QpIHtcbiAgICByZXR1cm4gKFxuICAgICAgPGRpdiBkYXRhLXJvbGUtaW50ZW50LXBhdGh3YXk9e2ludGVudC5pZH0gY2xhc3NOYW1lPVwicm91bmRlZC0yeGwgYm9yZGVyIGJvcmRlci1ib3JkZXIgYmctd2hpdGUgcC02IHNoYWRvdy1zbVwiPlxuICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXhzIGZvbnQtYm9sZCB1cHBlcmNhc2UgdHJhY2tpbmctWzAuMTZlbV0gdGV4dC1hY2NlbnQtaW5rXCI+U3BlY2lhbGlzdCBzZWFyY2ggcGF0aDwvcD5cbiAgICAgICAgPGgzIGNsYXNzTmFtZT1cIm10LTMgdGV4dC0yeGwgZm9udC1ib2xkIHRleHQtcHJpbWFyeVwiPntpbnRlbnQubGFiZWx9PC9oMz5cbiAgICAgICAgPHAgY2xhc3NOYW1lPVwibXQtMyB0ZXh0LXNtIGxlYWRpbmctcmVsYXhlZCB0ZXh0LW11dGVkLWZvcmVncm91bmRcIj57aW50ZW50LnN1bW1hcnl9PC9wPlxuICAgICAgICA8cCBjbGFzc05hbWU9XCJtdC00IHRleHQtc20gZm9udC1zZW1pYm9sZCB0ZXh0LWZvcmVncm91bmQvODBcIj48c3BhbiBjbGFzc05hbWU9XCJmb250LWJvbGQgdGV4dC1wcmltYXJ5XCI+QW5zd2Vyczo8L3NwYW4+IHtpbnRlbnQucHJpbWFyeVF1ZXN0aW9ufTwvcD5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtdC01IGZsZXggZmxleC13cmFwIGdhcC0zXCI+XG4gICAgICAgICAgPFBhdGhMaW5rIHRvPXtpbnRlbnQuY2Fub25pY2FsUGF0aH0+e3JvbGVQYWdlTGFiZWx9PC9QYXRoTGluaz5cbiAgICAgICAgICA8UGF0aExpbmsgdG89e3F1aXpQYXRoKGludGVudCl9PlByYWN0aXNlIHRoaXMgcm9sZTwvUGF0aExpbms+XG4gICAgICAgICAgPFBhdGhMaW5rIHRvPXtpbnRlbnQuY291cnNlUGF0aH0+e2ludGVudC5jb3Vyc2VQYXRoTGFiZWx9PC9QYXRoTGluaz5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICApO1xuICB9XG5cbiAgcmV0dXJuIChcbiAgICA8c2VjdGlvbiBkYXRhLXJvbGUtaW50ZW50LXBhdGh3YXk9e2ludGVudC5pZH0gY2xhc3NOYW1lPVwiYmctbXV0ZWQgcHktMTQgc206cHktMTZcIiBhcmlhLWxhYmVsbGVkYnk9e2ludGVudC5pZCArICctcGF0aHdheS10aXRsZSd9PlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXIgbXgtYXV0byBtYXgtdy01eGwgcHgtNCBzbTpweC02IGxnOnB4LThcIj5cbiAgICAgICAgPFNlY3Rpb25IZWFkaW5nXG4gICAgICAgICAgYWxpZ249XCJsZWZ0XCJcbiAgICAgICAgICBleWVicm93PVwiUm9sZS1pbnRlbnQgcGF0aHdheVwiXG4gICAgICAgICAgdGl0bGU9eydFeHBsb3JlICcgKyBpbnRlbnQubGFiZWx9XG4gICAgICAgICAgaW50cm89e2ludGVudC5zdW1tYXJ5fVxuICAgICAgICAgIGlkPXtpbnRlbnQuaWQgKyAnLXBhdGh3YXktdGl0bGUnfVxuICAgICAgICAvPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImdyaWQgZ2FwLTYgbGc6Z3JpZC1jb2xzLVttaW5tYXgoMCwxZnIpX2F1dG9dXCI+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJyb3VuZGVkLTJ4bCBib3JkZXIgYm9yZGVyLWJvcmRlciBiZy13aGl0ZSBwLTYgc2hhZG93LXNtXCI+XG4gICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXNtIGZvbnQtYm9sZCB1cHBlcmNhc2UgdHJhY2tpbmctWzAuMTRlbV0gdGV4dC1hY2NlbnQtaW5rXCI+UXVlc3Rpb25zIHRoaXMgcGF0aCBhbnN3ZXJzPC9wPlxuICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwibXQtMyB0ZXh0LWxnIGZvbnQtYm9sZCBsZWFkaW5nLXJlbGF4ZWQgdGV4dC1wcmltYXJ5XCI+e2ludGVudC5wcmltYXJ5UXVlc3Rpb259PC9wPlxuICAgICAgICAgICAgPHVsIGNsYXNzTmFtZT1cIm10LTQgZ3JpZCBnYXAtMiB0ZXh0LXNtIGxlYWRpbmctcmVsYXhlZCB0ZXh0LW11dGVkLWZvcmVncm91bmQgc206Z3JpZC1jb2xzLTJcIj5cbiAgICAgICAgICAgICAge2ludGVudC5zZWFyY2hRdWVzdGlvbnMubWFwKChxdWVzdGlvbikgPT4gPGxpIGtleT17cXVlc3Rpb259IGNsYXNzTmFtZT1cInJvdW5kZWQtbGcgYmctbXV0ZWQvNjAgcHgtMyBweS0yXCI+e3F1ZXN0aW9ufTwvbGk+KX1cbiAgICAgICAgICAgIDwvdWw+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGZsZXgtY29sIGl0ZW1zLXN0cmV0Y2ggZ2FwLTMgbGc6bWluLXctNjRcIj5cbiAgICAgICAgICAgIDxQYXRoTGluayB0bz17aW50ZW50LmNhbm9uaWNhbFBhdGh9Pntyb2xlUGFnZUxhYmVsfTwvUGF0aExpbms+XG4gICAgICAgICAgICA8UGF0aExpbmsgdG89e3F1aXpQYXRoKGludGVudCl9PlByYWN0aXNlIHtpbnRlbnQubGFiZWx9PC9QYXRoTGluaz5cbiAgICAgICAgICAgIDxQYXRoTGluayB0bz17aW50ZW50LmNvdXJzZVBhdGh9PntpbnRlbnQuY291cnNlUGF0aExhYmVsfTwvUGF0aExpbms+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgICB7aW50ZW50LmFydGljbGVMaW5rcy5sZW5ndGggPiAwICYmIChcbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm10LTYgcm91bmRlZC0yeGwgYm9yZGVyIGJvcmRlci1ib3JkZXIgYmctd2hpdGUgcC02XCI+XG4gICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXNtIGZvbnQtYm9sZCB1cHBlcmNhc2UgdHJhY2tpbmctWzAuMTRlbV0gdGV4dC1hY2NlbnQtaW5rXCI+Q29udGludWUgd2l0aCBhIHJlbGF0ZWQgd29ya2Zsb3c8L3A+XG4gICAgICAgICAgICA8dWwgY2xhc3NOYW1lPVwibXQtNCBncmlkIGdhcC0zIHNtOmdyaWQtY29scy0yXCI+XG4gICAgICAgICAgICAgIHtpbnRlbnQuYXJ0aWNsZUxpbmtzLm1hcCgoYXJ0aWNsZSkgPT4gKFxuICAgICAgICAgICAgICAgIDxsaSBrZXk9e2FydGljbGUucGF0aH0+XG4gICAgICAgICAgICAgICAgICA8TGluayB0bz17YXJ0aWNsZS5wYXRofSBjbGFzc05hbWU9XCJmb250LWJvbGQgdGV4dC1wcmltYXJ5IHVuZGVybGluZSBkZWNvcmF0aW9uLWFjY2VudCBkZWNvcmF0aW9uLTIgdW5kZXJsaW5lLW9mZnNldC00XCI+e2FydGljbGUubGFiZWx9PC9MaW5rPlxuICAgICAgICAgICAgICAgIDwvbGk+XG4gICAgICAgICAgICAgICkpfVxuICAgICAgICAgICAgPC91bD5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgKX1cbiAgICAgIDwvZGl2PlxuICAgIDwvc2VjdGlvbj5cbiAgKTtcbn1cbiJdLCJmaWxlIjoiQzovVXNlcnMvVmlyYXQgU2luZ2gvT25lRHJpdmUvRGVza3RvcC9jZW50YXVyL3dlYi9zcmMvY29tcG9uZW50cy9Sb2xlSW50ZW50UGF0aHdheS5qc3gifQ==

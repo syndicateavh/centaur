@@ -166,6 +166,29 @@
       "text": "Frequently asked questions"
     },
     {
+      "type": "heading",
+      "level": 2,
+      "text": "Can you build a finance career without an MBA, CFA, or CA?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Some finance positions require a named professional qualification, a particular degree, or prior experience. Others specify a different mix of graduate eligibility, process knowledge, tools, communication, and demonstrated skill. There is no universal rule that every finance career requires an MBA, CFA charter, or CA qualification. Equally, this comparison is not a claim that credentials never matter: check the exact requirements for your target role and country."
+    },
+    {
+      "type": "paragraph",
+      "text": "Before paying for another qualification, compare its official curriculum, eligibility, time commitment, fees, and intended career use with current vacancies. Distinguish a professional designation from a training course, a completed exam level from a charter, and a learning certificate from an employer requirement."
+    },
+    {
+      "type": "faq",
+      "question": "Do I need an MBA, CFA, or CA for every finance job?",
+      "answer": "No. Requirements vary by occupation, seniority, employer, and jurisdiction. Some roles may request a credential; others may focus on different education or experience. Use current job postings and official credential-body information."
+    },
+    {
+      "type": "link",
+      "label": "Compare finance careers after graduation",
+      "href": "/career-guides/finance-careers-after-graduation/"
+    },
+    {
       "type": "faq",
       "question": "Is investment banking operations the same as investment banking?",
       "answer": "No. Operations teams support transaction processing, controls, settlement and related workflows. Front-office investment banking commonly refers to advisory and capital-raising work. Titles vary, so always read the role description."
@@ -188,7 +211,7 @@
     "height": 941
   },
   "publishedAt": "2026-09-15",
-  "updatedAt": "2026-09-30",
+  "updatedAt": "2026-10-02",
   "scheduledAt": null,
   "seo": {
     "title": "Investment Banking Operations vs CFA and Modelling",
@@ -199,7 +222,9 @@
     "secondaryKeywords": [
       "investment banking operations vs financial modelling",
       "investment banking vs CFA",
-      "finance career paths"
+      "finance career paths",
+      "finance jobs without MBA",
+      "finance career without CFA or CA"
     ]
   },
   "tags": [

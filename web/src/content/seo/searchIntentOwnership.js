@@ -160,4 +160,60 @@ export const SEARCH_INTENT_OWNERS = Object.freeze([
   owner('digital-payments-jobs', 'digital payment operations', '/career-guides/digital-payments-operations/', {
     queryVariants: ['payment operations jobs'], intent: 'Payment-operations roles and workflow preparation, distinct from module course queries.',
   }),
+  owner('gcc-finance-careers-india', 'GCC finance careers in India', '/blog/gcc-finance-careers-india/', {
+    supportingPaths: ['/career-guides/finance-careers-after-graduation/'],
+    intent: 'Career and role-family guidance for finance work in Global Capability Centres, distinct from the broad finance-operations career pillar.',
+  }),
+  owner('finance-vs-tech-career', 'finance vs tech career', '/blog/finance-vs-tech-career/', {
+    supportingPaths: ['/career-guides/finance-careers-after-graduation/'],
+    intent: 'Graduate career-choice comparison by work, skills, and role evidence rather than salary claims.',
+  }),
+  owner('banking-jobs-without-sales', 'banking jobs without sales', '/blog/banking-jobs-without-sales/', {
+    supportingPaths: ['/career-guides/finance-careers-after-graduation/'],
+    intent: 'Career discovery for banking operations and support roles, with sales duties verified at vacancy level.',
+  }),
+  owner('excel-python-ai-finance-skills', 'Excel vs Python in finance', '/blog/excel-python-ai-finance-skills/', {
+    supportingPaths: ['/career-guides/finance-careers-after-graduation/'],
+    intent: 'Task-based tool-learning advice for finance graduates; the existing investment-banking skills guide retains its broader workflow-skills intent.',
+  }),
+  owner('finance-entry-roadmap', 'how to enter finance after graduation', '/blog/how-to-enter-finance-after-graduation/', {
+    supportingPaths: ['/career-guides/finance-careers-after-graduation/'],
+    intent: 'A practical informational roadmap for role discovery and preparation, separate from course-selection and enrolment queries.',
+  }),
+  owner('ai-finance-job-impact', 'will AI replace finance jobs', '/blog/will-ai-replace-finance-jobs/', {
+    supportingPaths: ['/career-guides/finance-careers-after-graduation/'],
+    intent: 'Task-based, source-grounded discussion of AI and finance work without making unsupported job-loss forecasts.',
+  }),
+  owner('finance-career-without-professional-qualification', 'finance career without MBA', '/blog/finance-career-without-mba-cfa-ca/', {
+    supportingPaths: ['/career-guides/finance-careers-after-graduation/'],
+    intent: 'Role-specific explanation of qualification requirements, distinct from choosing or purchasing a training course.',
+  }),
+  owner('btech-to-finance-career', 'BTech to finance career', '/blog/btech-to-finance-career/', {
+    supportingPaths: ['/career-guides/finance-careers-after-graduation/'],
+    intent: 'Informational transition paths for engineering graduates; commercial course eligibility queries remain with the course page.',
+  }),
+  owner('ai-finance-career-paths', 'AI in finance careers', '/blog/ai-finance-careers/', {
+    supportingPaths: ['/career-guides/finance-careers-after-graduation/'],
+    intent: 'Role families that work with AI capabilities in finance, separate from broad AI impact and specific banking use-case pages.',
+  }),
+  owner('finance-jobs-for-freshers', 'finance jobs for freshers', '/blog/finance-jobs-for-freshers/', {
+    supportingPaths: ['/career-guides/finance-careers-after-graduation/'],
+    intent: 'An overview of finance role families and role research for new graduates, not an active vacancy listing.',
+  }),
+  owner('agentic-ai-banking', 'agentic AI in banking', '/blog/agentic-ai-banking/', {
+    supportingPaths: ['/career-guides/finance-careers-after-graduation/'],
+    intent: 'A cautious explainer of agentic AI concepts, banking workflow boundaries, and oversight rather than a deployment claim.',
+  }),
+  owner('ai-kyc-aml-careers', 'AI and KYC AML jobs', '/blog/ai-kyc-aml-jobs/', {
+    supportingPaths: ['/career-guides/finance-careers-after-graduation/'],
+    intent: 'How approved AI may affect KYC and AML work, distinct from general KYC career or course guidance.',
+  }),
+  owner('ai-credit-digital-lending-careers', 'AI credit analysis and digital lending', '/blog/ai-credit-and-digital-lending/', {
+    supportingPaths: ['/career-guides/finance-careers-after-graduation/'],
+    intent: 'Career and workflow context for AI-supported credit and digital lending, separate from credit-course intent.',
+  }),
+  owner('finance-career-map', 'finance career paths in banking and fintech', '/blog/future-finance-career-map/', {
+    supportingPaths: ['/career-guides/finance-careers-after-graduation/'],
+    intent: 'A cross-role informational map connecting finance role families without claiming a standard ladder or course ranking.',
+  }),
 ]);

@@ -87,6 +87,7 @@ authority, traffic, ranking, or backlink outcome is estimated.
 Phase 10 is connected to the full quality gate:
 
 ```text
+npm run seo:phase10:check
 npm run seo:authority:check
 npm run seo:check
 npm run seo:gate

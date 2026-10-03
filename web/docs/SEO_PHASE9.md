@@ -47,6 +47,7 @@ The page remains governed by source freshness: provider descriptions are attribu
 Passed:
 
 ```text
+npm run seo:phase9:check
 npm run seo:comparison:check
 npm run seo:gate
 ```

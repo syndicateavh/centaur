@@ -1,14 +1,20 @@
-import React from 'react';
+﻿import React from 'react';
 import { ArrowLeft, CalendarDays } from 'lucide-react';
 import { Link, useParams } from 'react-router';
-import BlogContentRenderer from '@/components/blog/BlogContentRenderer.jsx';
+import BlogContentRenderer, { getBlogHeadingId } from '@/components/blog/BlogContentRenderer.jsx';
 import { ResponsiveImage } from '@/components/ui/responsive-image.jsx';
-import { CtaSection, PageHero } from '@/components/PageShell.jsx';
-import { getBlogPostBySlug } from '@/content/blog/blogStorage.js';
-import { blogCategoryLabel, blogCategoryPath } from '@/content/blog/blogRoutes.js';
+import { Breadcrumbs, CtaSection } from '@/components/PageShell.jsx';
+import { getBlogPostBySlug, getPublishedBlogPosts } from '@/content/blog/blogStorage.js';
+import { blogCategoryLabel, blogCategoryPath, blogPostPath } from '@/content/blog/blogRoutes.js';
 import RoleIntentPathway from '@/components/RoleIntentPathway.jsx';
 import { getRoleIntentByCanonicalPath } from '@/content/roleIntent.js';
 import { getSeoRoute } from '@/seo/seoRoutes.js';
+
+const BLOG_DATE_FORMAT = new Intl.DateTimeFormat('en-IN', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+
+function formatBlogDate(value) {
+  return value ? BLOG_DATE_FORMAT.format(new Date(`${value}T00:00:00Z`)) : '';
+}
 
 export default function BlogPostPage() {
   const { slug } = useParams();
@@ -34,45 +40,79 @@ export default function BlogPostPage() {
       return null;
     }
   }).filter(Boolean);
-  const roleIntent = getRoleIntentByCanonicalPath(post.seo?.canonicalPath || '/blog/' + post.slug + '/');
+  const postsInCategory = getPublishedBlogPosts().filter((candidate) => candidate.slug !== post.slug);
+  const relatedPostLimit = Math.max(0, 4 - relatedRoutes.length);
+  const relatedPosts = [
+    ...postsInCategory.filter((candidate) => candidate.category === post.category),
+    ...postsInCategory.filter((candidate) => candidate.category !== post.category),
+  ].slice(0, relatedPostLimit);
+  const articleSections = post.body.flatMap((block, index) => block.type === 'heading' ? [{ block, index }] : []);
+  const roleIntent = getRoleIntentByCanonicalPath(post.seo?.canonicalPath || `/blog/${post.slug}/`);
 
   return (
     <>
-      <PageHero
-        breadcrumbItems={[
-          { label: 'Blog', to: '/blog/' },
-          { label: post.title },
-        ]}
-        eyebrow={blogCategoryLabel(post.category)}
-        title={post.title}
-        intro={post.excerpt}
-      />
-      <section className="bg-white py-14 sm:py-20" aria-label="Blog article">
-        <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-8 flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
-            <span className="font-bold text-primary">{post.author.name}</span>
-            <span aria-hidden="true">·</span>
-            <span>{post.author.role}</span>
-            {post.publishedAt && <><span aria-hidden="true">·</span><time className="inline-flex items-center gap-2" dateTime={post.publishedAt}><CalendarDays className="h-4 w-4" aria-hidden="true" />Published {post.publishedAt}</time></>}
-            {post.updatedAt && post.updatedAt !== post.publishedAt && <><span aria-hidden="true">·</span><time dateTime={post.updatedAt}>Updated {post.updatedAt}</time></>}
-          </div>
-          {post.coverImage?.src && <ResponsiveImage priority src={post.coverImage.src} alt={post.coverImage.alt} width={post.coverImage.width} height={post.coverImage.height} sizes="(min-width: 1024px) 896px, 100vw" decoding="async" className="mb-10 aspect-[16/7] w-full rounded-2xl object-cover" />}
-          <BlogContentRenderer blocks={post.body} />
-          {post.tags?.length > 0 && (
-            <div className="mt-10 flex flex-wrap gap-2" aria-label="Article topics">
-              {post.tags.map((tag) => <span key={tag} className="rounded-full bg-muted px-3 py-1 text-sm font-bold text-primary"><span aria-hidden="true">#</span>{tag}</span>)}
+      <header className="bg-navy-gradient py-9 text-white sm:py-11 lg:py-12" aria-labelledby={`blog-${post.slug}-title`}>
+        <div className="design-container">
+          <Breadcrumbs className="mb-5" items={[{ label: 'Blog', to: '/blog/' }, { label: post.title }]} />
+          <div className={`grid items-center gap-7 lg:gap-12 ${post.coverImage?.src ? 'lg:grid-cols-[minmax(0,1.08fr)_minmax(20rem,0.92fr)]' : ''}`}>
+            <div className="min-w-0 max-w-3xl">
+              <p className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-accent">{blogCategoryLabel(post.category)}</p>
+              <h1 id={`blog-${post.slug}-title`} className="text-balance break-words text-3xl font-black leading-[1.12] text-white sm:text-4xl lg:text-[2.75rem]">{post.title}</h1>
+              <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg">{post.excerpt}</p>
+              <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-white/75">
+                <span className="font-bold text-white">{post.author.name}</span>
+                <span>{post.author.role}</span>
+                {post.publishedAt && <time className="inline-flex items-center gap-2" dateTime={post.publishedAt}><CalendarDays className="h-4 w-4" aria-hidden="true" />Published {formatBlogDate(post.publishedAt)}</time>}
+                {post.updatedAt && post.updatedAt !== post.publishedAt && <time dateTime={post.updatedAt}>Updated {formatBlogDate(post.updatedAt)}</time>}
+              </div>
             </div>
-          )}
-          <div className="mt-12 flex flex-wrap gap-3 border-t border-border pt-6">
-            <Link to={blogCategoryPath(post.category)} className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">More {blogCategoryLabel(post.category)} articles</Link>
-            <Link to="/blog/" className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">All blog articles</Link>
+            {post.coverImage?.src && <ResponsiveImage priority src={post.coverImage.src} alt={post.coverImage.alt} width={post.coverImage.width} height={post.coverImage.height} sizes="(min-width: 1024px) 44vw, 100vw" decoding="async" className="aspect-[16/9] w-full rounded-2xl border border-white/10 object-cover shadow-xl" />}
           </div>
-          {relatedRoutes.length > 0 && (
-            <nav aria-label="Related Centaur Careers pages" className="mt-12 rounded-2xl bg-muted p-6">
-              <h2 className="text-xl font-bold text-primary">Related Centaur Careers pages</h2>
-              <ul className="mt-4 grid gap-3 sm:grid-cols-2">{relatedRoutes.map((route) => <li key={route.id}><Link to={route.path} className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">{route.h1}</Link></li>)}</ul>
-            </nav>
-          )}
+        </div>
+      </header>
+
+      <section className="bg-white py-10 sm:py-14" aria-label="Blog article">
+        <div className="design-container max-w-6xl">
+          <div className="grid items-start gap-10 xl:grid-cols-[minmax(0,47rem)_minmax(15rem,18rem)] xl:justify-center xl:gap-x-14">
+            <article className="order-last w-full min-w-0 xl:order-1">
+              <BlogContentRenderer blocks={post.body} imageSizes="(min-width: 1280px) 752px, (min-width: 768px) 88vw, 100vw" />
+              {post.tags?.length > 0 && (
+                <div className="mt-10 flex flex-wrap gap-2" aria-label="Article topics">
+                  {post.tags.map((tag) => <span key={tag} className="rounded-full bg-muted px-3 py-1 text-sm font-bold text-primary"><span aria-hidden="true">#</span>{tag}</span>)}
+                </div>
+              )}
+              <div className="mt-12 flex w-full flex-wrap justify-start gap-3 border-t border-border pt-6 text-left">
+                <Link to={blogCategoryPath(post.category)} className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">More {blogCategoryLabel(post.category)} articles</Link>
+                <Link to="/blog/" className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">All blog articles</Link>
+              </div>
+            </article>
+            {(articleSections.length > 0 || relatedRoutes.length > 0 || relatedPosts.length > 0) && (
+              <aside className="order-first min-w-0 text-left xl:order-2 xl:sticky xl:top-28 xl:max-h-[calc(100vh-8rem)] xl:overflow-y-auto xl:pb-2">
+                <div className="w-full space-y-8 border-t border-border pt-5 text-left xl:space-y-7 xl:border-l-2 xl:border-t-0 xl:border-accent/70 xl:pl-5 xl:pt-0">
+                  {articleSections.length > 0 && (
+                    <nav aria-label="Article sections">
+                      <p className="text-xs font-bold uppercase tracking-[0.16em] text-accent-ink">In this article</p>
+                      <ol className="mt-4 space-y-2.5 text-sm leading-relaxed">
+                        {articleSections.map(({ block, index }) => {
+                          const headingId = getBlogHeadingId(block.text, index);
+                          return <li key={headingId}><a className="font-medium text-primary underline decoration-border underline-offset-4 hover:decoration-accent" href={`#${headingId}`}>{block.text}</a></li>;
+                        })}
+                      </ol>
+                    </nav>
+                  )}
+                  {(relatedRoutes.length > 0 || relatedPosts.length > 0) && (
+                    <nav aria-label="Related Centaur Careers pages">
+                      <h2 className="text-xs font-bold uppercase tracking-[0.16em] text-accent-ink">Related pages</h2>
+                      <ul className="mt-4 space-y-2.5 text-sm">
+                        {relatedRoutes.map((route) => <li key={route.id}><Link to={route.path} className="font-semibold text-primary underline decoration-border decoration-2 underline-offset-4 hover:decoration-accent">{route.h1}</Link></li>)}
+                        {relatedPosts.map((relatedPost) => <li key={relatedPost.id}><Link to={blogPostPath(relatedPost.slug)} className="font-semibold text-primary underline decoration-border decoration-2 underline-offset-4 hover:decoration-accent">{relatedPost.title}</Link></li>)}
+                      </ul>
+                    </nav>
+                  )}
+                </div>
+              </aside>
+            )}
+          </div>
         </div>
       </section>
       <RoleIntentPathway intent={roleIntent} />

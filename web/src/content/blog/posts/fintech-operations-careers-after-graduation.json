@@ -170,6 +170,29 @@
       "text": "Frequently asked questions"
     },
     {
+      "type": "heading",
+      "level": 2,
+      "text": "Can a non-tech graduate build a FinTech career?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Yes, some FinTech operations, onboarding, payment support, customer operations, reconciliation, and compliance-support roles may value finance knowledge, process discipline, communication, or case handling more than software development. That does not mean every FinTech role is non-technical. Engineering, data science, API support, cybersecurity, and some product-analytics roles can require specialist technical skills or experience."
+    },
+    {
+      "type": "paragraph",
+      "text": "A commerce, management, arts, or science degree is not a substitute for role-specific preparation. Read current employer postings, identify the recurring task and tool requirements, and build a small example using fictional data. Explain what you checked and what you would escalate; do not suggest that one course or degree automatically qualifies you for every FinTech position."
+    },
+    {
+      "type": "faq",
+      "question": "Can a BCom or BA graduate work in FinTech?",
+      "answer": "A graduate may apply to FinTech roles whose current criteria match their background and demonstrated skills. Operations and service roles can differ from technical roles, so check the required education, tools, experience, location, and work schedule in the employer’s vacancy."
+    },
+    {
+      "type": "link",
+      "label": "Compare finance and technology career paths",
+      "href": "/blog/finance-vs-tech-career/"
+    },
+    {
       "type": "faq",
       "question": "Can a BCom graduate enter FinTech operations?",
       "answer": "Yes, BCom graduates can be relevant for operations roles when their skills match the work. Build knowledge of the chosen workflow, Excel and reconciliation ability, control awareness and clear communication, then check each employer's criteria."
@@ -198,7 +221,7 @@
     "height": 941
   },
   "publishedAt": "2026-09-15",
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-10-02",
   "scheduledAt": null,
   "seo": {
     "title": "FinTech Operations Careers After Graduation India",

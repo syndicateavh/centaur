@@ -42,11 +42,24 @@ export default function CourseDetailPage({ courseId }) {
         eyebrow={HOME_COPY.tracksEyebrow}
         title={seo.h1}
         intro={track.description}
+        sideContent={(
+          <figure className="course-detail-media aspect-[4/3] overflow-hidden rounded-3xl border border-white/15 bg-white/5 shadow-2xl">
+            <ResponsiveImage
+              {...trackImage}
+              alt={`${track.title} course module`}
+              className="course-detail-image"
+              sizes="(min-width: 1024px) 38rem, 100vw"
+            />
+          </figure>
+        )}
       >
         <div className="mt-8 flex flex-wrap gap-3 text-sm">
           <span className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3"><Clock3 className="h-4 w-4 text-accent" aria-hidden="true" /> {PROGRAM.duration}</span>
           <span className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3"><Route className="h-4 w-4 text-accent" aria-hidden="true" /> {PROGRAM.model}</span>
         </div>
+        <Link to="/courses/" className="mt-6 inline-flex min-h-12 items-center gap-2 rounded-xl bg-accent px-5 py-3 font-bold text-primary shadow-lg shadow-accent/15 transition hover:-translate-y-0.5">
+          View the full Financial Operations Masterclass <Route className="h-4 w-4" aria-hidden="true" />
+        </Link>
       </PageHero>
 
       <section data-commercial-section="module-overview" className="bg-white py-16 sm:py-20">
@@ -58,15 +71,8 @@ export default function CourseDetailPage({ courseId }) {
             {courseId === 'investment-banking-operations' && <p className="mt-4 rounded-xl border border-border bg-muted p-4 text-sm leading-relaxed text-muted-foreground">Centaur Careers does not offer a separate Investment Banking Operations certification. The published Course Completion Certificate applies to the full Financial Operations Masterclass under its current completion terms; it is not an external professional or regulatory credential.</p>}
             <p className="mt-5 rounded-xl border border-border bg-muted p-4 text-sm text-muted-foreground">This is a curriculum module within the Financial Operations Masterclass. Graduates and job switchers who complete the six-week program get a finance job through the 100% Job Guarantee Program.</p>
           </article>
-          <div className="course-detail-visual">
-            <div className="course-detail-media" aria-hidden="true">
-              <ResponsiveImage
-                {...trackImage}
-                className="course-detail-image"
-                sizes="(min-width: 1024px) 46rem, 100vw"
-              />
-            </div>
-            <article className="course-detail-topics rounded-2xl bg-muted p-8">
+          <div>
+            <article className="rounded-2xl border border-border bg-muted p-6 sm:p-8">
               <h2 className="text-2xl font-bold text-primary">{searchContent.heading}</h2>
               <p className="mt-3 leading-relaxed text-muted-foreground">{searchContent.intro}</p>
               <ul className="mt-6 grid gap-4 sm:grid-cols-2">

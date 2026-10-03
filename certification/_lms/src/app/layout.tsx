@@ -17,7 +17,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="flex min-h-screen flex-col bg-background text-foreground">
         <a href="#main-content" className="skip-link">Skip to content</a>
         <div className="border-b border-navy-950/10 bg-navy-950 px-4 py-2 text-center text-xs font-semibold tracking-wide text-white sm:text-sm">
-          A proposed free learning initiative from Centaur Careers <span className="hidden sm:inline">· Enrollment is not open yet</span>
+          {process.env.NODE_ENV === "development" ? "Centaur Learning local preview" : "A proposed free learning initiative from Centaur Careers"}
+          <span className="hidden sm:inline"> · {process.env.NODE_ENV === "development" ? "KYC/AML sandbox preview available" : "Enrollment is not open yet"}</span>
         </div>
         <header className="sticky top-0 z-30 border-b border-slate-200/80 bg-white/95 backdrop-blur">
           <nav aria-label="Main navigation" className="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-8 lg:px-10">
@@ -34,7 +35,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <Link href="/sign-in" className="nav-link inline-flex min-h-11 shrink-0 items-center px-2">Sign in</Link>
               <Link href="/sign-up" className="nav-link inline-flex min-h-11 shrink-0 items-center px-2">Create account</Link>
               <Link href="/help" className="button-primary inline-flex min-h-11 shrink-0 items-center rounded-lg px-4 py-2.5 text-sm">Help</Link>
-              {process.env.NODE_ENV === "development" && <Link href="/admin" className="nav-link inline-flex min-h-11 shrink-0 items-center px-2">Local admin</Link>}
             </div>
           </nav>
         </header>

@@ -3,6 +3,7 @@ import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router';
 import InternalLinkGroup from '@/components/InternalLinkGroup.jsx';
 import { CtaSection, PageHero, SectionHeading } from '@/components/PageShell.jsx';
+import DownloadPreviewDialog from '@/components/DownloadPreviewDialog.jsx';
 import { ResponsiveImage } from '@/components/ui/responsive-image.jsx';
 import { getCourseTrackImage } from '@/content/courseImages.js';
 import { getCourseModulePath } from '@/content/courseModulePaths.js';
@@ -34,29 +35,53 @@ export default function CoursesPage() {
       <section data-course-direct-answer className="border-b border-border bg-white py-8" aria-labelledby="course-direct-answer-title">
         <div className="container mx-auto min-w-0 max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="min-w-0 max-w-4xl">
-          <h2 id="course-direct-answer-title" className="text-2xl font-bold text-primary">What does the Financial Operations Masterclass cover?</h2>
-          <p className="mx-0 mt-3 max-w-none leading-relaxed text-muted-foreground">The six-week Financial Operations Masterclass is a finance operations course for graduates and job switchers. It covers banking and investment operations, KYC and AML, retail banking, digital payments, credit, and FinTech. Investment banking operations is one module within the programme, including trade settlements, reconciliation, corporate actions, and fund accounting. Join live online across India or study in person in Lucknow.</p>
-          <p className="mx-0 mt-3 max-w-none text-sm leading-relaxed text-muted-foreground">Before enrolling, confirm the current cohort schedule, fees, certificate wording, and written support terms with the team.</p>
-          <p className="mx-0 mt-3 max-w-none text-sm leading-relaxed text-muted-foreground">First compare <Link to="/career-guides/investment-banking-operations/" className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">what investment banking operations analysts do</Link> with the topics taught here. Then use the <Link to="/career-guides/choosing-finance-career-course/" className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">finance course selection checklist</Link> to review the syllabus, study mode, full cost, certificate, and current support terms.</p>
-          <div className="mt-5 flex flex-wrap gap-3">
-            <Link to="/contact/" className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-primary px-5 py-3 font-bold text-white">Ask about the current cohort <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
-            <Link to="/career-guides/investment-banking-operations/" className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-border px-5 py-3 font-bold text-primary">Understand the operations role <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
-          </div>
+            <h2 id="course-direct-answer-title" className="text-2xl font-bold text-primary">What does the Financial Operations Masterclass cover?</h2>
+            <p className="mx-0 mt-3 max-w-none leading-relaxed text-muted-foreground">The six-week Financial Operations Masterclass is a finance operations course for graduates and job switchers. It covers banking and investment operations, KYC and AML, retail banking, digital payments, credit, and FinTech. Investment banking operations is one module within the programme, including trade settlements, reconciliation, corporate actions, and fund accounting. Join live online across India or study in person in Lucknow.</p>
+            <p className="mx-0 mt-3 max-w-none text-sm leading-relaxed text-muted-foreground">Before enrolling, confirm the current cohort schedule, fees, certificate wording, and written support terms with the team.</p>
+            <p className="mx-0 mt-3 max-w-none text-sm leading-relaxed text-muted-foreground">First compare <Link to="/career-guides/investment-banking-operations/" className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">what investment banking operations analysts do</Link> and review <Link to="/blog/finance-jobs-for-freshers/" className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">finance jobs for freshers and their entry requirements</Link> against the topics taught here. Then use the <Link to="/career-guides/choosing-finance-career-course/" className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">finance course selection checklist</Link> to review the syllabus, study mode, full cost, certificate, and current support terms.</p>
           </div>
         </div>
       </section>
 
-      <section className="bg-accent/15 py-8" aria-label="100% Job Guarantee Program">
-        <div className="container mx-auto flex max-w-5xl flex-col items-start justify-between gap-5 px-4 sm:px-6 md:flex-row md:items-center lg:px-8">
-          <div>
-            <p className="text-sm font-black uppercase tracking-[0.16em] text-accent-foreground">{JOB_GUARANTEE.label}</p>
-            <p className="mt-2 max-w-3xl leading-relaxed text-foreground/80">{JOB_GUARANTEE.description} {JOB_GUARANTEE.shortQualifier}</p>
+      <section id="course-overview" className="scroll-mt-24 border-b border-border bg-muted/60 py-10 sm:py-12" aria-labelledby="course-overview-title">
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+            <div className="max-w-2xl">
+              <p className="text-sm font-bold uppercase tracking-[0.16em] text-accent-ink">Program at a glance</p>
+              <h2 id="course-overview-title" className="mt-2 text-2xl font-bold text-primary sm:text-3xl">Check the key details before you compare</h2>
+              <p className="mt-3 leading-relaxed text-muted-foreground">Published fees and learning options are shown below. Confirm the current cohort schedule, total payable amount, and written support terms with the team.</p>
+            </div>
+            <Link to="/contact/" className="inline-flex min-h-11 shrink-0 items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 font-bold text-white">Ask about the current cohort <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
           </div>
-          <Link to={JOB_GUARANTEE.termsPath} className="inline-flex min-h-11 shrink-0 items-center gap-2 rounded-xl bg-primary px-5 py-3 font-bold text-white">View program details <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
+          <dl className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="rounded-xl border border-border bg-white p-5">
+              <dt className="text-sm font-semibold text-muted-foreground">Duration</dt>
+              <dd className="mt-2 text-xl font-bold text-primary">{PROGRAM.duration}</dd>
+            </div>
+            {LEARNING_MODES.map((mode) => (
+              <div key={mode.name} className="rounded-xl border border-border bg-white p-5">
+                <dt className="text-sm font-semibold text-muted-foreground">{mode.name} published fee</dt>
+                <dd className="mt-2 text-xl font-bold text-primary">{mode.price}</dd>
+                <dd className="mt-1 text-xs leading-relaxed text-muted-foreground">{mode.summary}</dd>
+              </div>
+            ))}
+            <div className="rounded-xl border border-border bg-white p-5">
+              <dt className="text-sm font-semibold text-muted-foreground">Who can apply</dt>
+              <dd className="mt-2 text-lg font-bold text-primary">Graduates and job switchers</dd>
+              <dd className="mt-1 text-xs leading-relaxed text-muted-foreground">No previous finance background is required.</dd>
+            </div>
+          </dl>
+          <nav aria-label="Course page sections" className="mt-6 flex flex-wrap gap-x-6 gap-y-3 border-t border-border pt-5 text-sm font-bold">
+            <a href="#finance-course-overview" className="text-primary underline decoration-accent decoration-2 underline-offset-4">Program facts</a>
+            <a href="#program-modules" className="text-primary underline decoration-accent decoration-2 underline-offset-4">Course modules</a>
+            <a href="#learning-modes" className="text-primary underline decoration-accent decoration-2 underline-offset-4">Learning modes</a>
+            <a href="#program-faq" className="text-primary underline decoration-accent decoration-2 underline-offset-4">FAQs</a>
+            <Link to={JOB_GUARANTEE.termsPath} className="text-primary underline decoration-accent decoration-2 underline-offset-4">Guarantee terms</Link>
+          </nav>
         </div>
       </section>
 
-      <section data-high-value-page="courses" data-commercial-section="finance-course-overview" className="bg-muted py-16 sm:py-20">
+      <section id="finance-course-overview" data-high-value-page="courses" data-commercial-section="finance-course-overview" className="scroll-mt-24 bg-muted py-16 sm:py-20">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Banking and finance training"
@@ -126,7 +151,7 @@ export default function CoursesPage() {
         </div>
       </section>
 
-      <section data-commercial-page="courses" data-commercial-section="program-modules" className="bg-white py-16 sm:py-20">
+      <section id="program-modules" data-commercial-page="courses" data-commercial-section="program-modules" className="scroll-mt-24 bg-white py-16 sm:py-20">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow={HOME_COPY.tracksEyebrow} title={HOME_COPY.tracksHeading} intro={HOME_COPY.tracksDescription} align="center" />
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -205,7 +230,7 @@ export default function CoursesPage() {
         </div>
       </section>
 
-      <section data-commercial-section="learning-modes" className="bg-white py-16 sm:py-20">
+      <section id="learning-modes" data-commercial-section="learning-modes" className="scroll-mt-24 bg-white py-16 sm:py-20">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="Learning modes" title="Compare online and in-person learning" intro="Online access is available across India; the published in-person option is in Lucknow. Confirm the current cohort, schedule, and fees before applying." align="center" />
           <div className="mx-auto grid max-w-5xl gap-7 lg:grid-cols-2">
@@ -238,10 +263,16 @@ export default function CoursesPage() {
             align="center"
           />
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-            <a href={DOWNLOAD_ASSETS.syllabus.path} download={DOWNLOAD_ASSETS.syllabus.filename} data-analytics-id="course-syllabus-download" data-analytics-intent="commercial_program" className="rounded-2xl border border-border bg-white p-6 font-bold text-primary shadow-sm transition hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-lg">
+            <DownloadPreviewDialog
+              asset={DOWNLOAD_ASSETS.syllabus}
+              title="Financial Operations Masterclass syllabus"
+              analyticsId="course-syllabus-preview"
+              analyticsIntent="commercial_program"
+              triggerClassName="w-full rounded-2xl border border-border bg-white p-6 text-left font-bold text-primary shadow-sm transition hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            >
               <span className="block text-lg">{DOWNLOAD_ASSETS.syllabus.label}</span>
               <span className="mt-2 block text-sm font-normal leading-relaxed text-muted-foreground">Modules, access, practical learning, certificate notes, and questions to confirm for the current cohort.</span>
-            </a>
+            </DownloadPreviewDialog>
             <Link to="/blog/settlement-trade-break-worked-example/" className="rounded-2xl border border-border bg-white p-6 font-bold text-primary shadow-sm transition hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-lg">
               <span className="block text-lg">Trade-break sample project</span>
               <span className="mt-2 block text-sm font-normal leading-relaxed text-muted-foreground">Open the fictional settlement-break case and download its source records.</span>
@@ -346,7 +377,7 @@ export default function CoursesPage() {
         </div>
       </section>
 
-      <section data-commercial-section="program-faq" className="bg-muted py-16 sm:py-20">
+      <section id="program-faq" data-commercial-section="program-faq" className="scroll-mt-24 bg-muted py-16 sm:py-20">
         <div className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="Program FAQs" title="Frequently Asked Questions" intro="Review the original program answers before you apply." align="center" />
           <div className="space-y-3">

@@ -5,6 +5,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.topic-slider {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.topic-slider::-webkit-scrollbar {
+  display: none;
+}
+
 .route-loading-screen {
   position: fixed;
   z-index: 1000;
@@ -376,6 +385,42 @@
     margin-inline: auto;
   }
 
+  .blog-grid-container {
+    width: min(calc(100vw - 2rem), var(--content-max-width));
+    min-width: 0;
+    margin-inline: auto;
+  }
+
+  .blog-steps {
+    counter-reset: blog-step;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .blog-steps > li {
+    position: relative;
+    min-height: 2.25rem;
+    padding-left: 3.25rem;
+    counter-increment: blog-step;
+  }
+
+  .blog-steps > li::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    width: 2.25rem;
+    aspect-ratio: 1;
+    place-items: center;
+    border: 1px solid hsl(var(--accent-ink) / 0.28);
+    border-radius: 9999px;
+    background: hsl(var(--accent) / 0.14);
+    color: hsl(var(--primary));
+    content: counter(blog-step, decimal-leading-zero);
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
   .design-section {
     padding-block: var(--section-space);
   }
@@ -440,6 +485,10 @@
     min-height: 4.75rem;
     padding-inline: 0.75rem;
     transition: min-height 240ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .site-header-actions {
+    min-width: 2.75rem;
   }
 
   .site-header.is-scrolled .site-header-shell {
@@ -1220,14 +1269,15 @@
   }
 
   .home-hero h1 {
-    overflow-wrap: break-word;
+    max-inline-size: 100%;
+    overflow-wrap: anywhere;
     word-break: normal;
     text-wrap: balance;
   }
 
   @media (max-width: 639px) {
     .home-hero h1 {
-      text-wrap: pretty;
+      text-wrap: wrap;
     }
   }
 

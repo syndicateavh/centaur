@@ -4,6 +4,8 @@ import CourseCard from "@/components/CourseCard";
 import SectionHeading from "@/components/SectionHeading";
 import { courseTracks } from "@/data/courses";
 
+const localPreview = process.env.NODE_ENV === "development";
+
 export const metadata: Metadata = {
   title: "Free Banking Operations Learning Tracks | Centaur",
   description: "Explore six proposed free learning tracks for banking and financial operations roles. Course details and enrollment are still under review.",
@@ -24,7 +26,7 @@ export default function Home() {
         <div className="hero-grid relative mx-auto grid max-w-7xl gap-12 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[1.12fr_0.88fr] lg:items-center lg:px-10 lg:py-24">
           <div className="relative z-10 max-w-3xl">
             <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3.5 py-1.5 text-xs font-bold uppercase tracking-[0.12em] text-navy-100">
-              <span aria-hidden="true" className="size-2 rounded-full bg-gold-400" /> Proposed free learning initiative
+              <span aria-hidden="true" className="size-2 rounded-full bg-gold-400" /> {localPreview ? "Local course preview available" : "Proposed free learning initiative"}
             </span>
             <h1 className="mt-7 max-w-3xl font-editorial text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
               Build your understanding of <span className="text-navy-200">banking operations.</span>
@@ -33,14 +35,14 @@ export default function Home() {
               Explore practical learning paths for the work behind banking and financial services. Six role areas are being shaped into a separate, proposed free learning platform.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
-              <Link href="/courses" className="inline-flex min-h-12 items-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-extrabold text-navy-950 transition hover:-translate-y-0.5 hover:bg-navy-50">
-                Explore proposed tracks <span aria-hidden="true">→</span>
+              <Link href={localPreview ? "/sign-up" : "/courses"} className="inline-flex min-h-12 items-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-extrabold text-navy-950 transition hover:-translate-y-0.5 hover:bg-navy-50">
+                {localPreview ? "Create account to preview" : "Explore proposed tracks"} <span aria-hidden="true">→</span>
               </Link>
               <Link href="/faq#certificate-scope" className="inline-flex min-h-12 items-center rounded-xl border border-white/30 px-5 py-3 text-sm font-bold text-white transition hover:bg-white/10">
                 Understand certificate scope
               </Link>
             </div>
-            <p className="mt-5 text-sm font-medium text-navy-100/75">Enrollment is not open. Course content, schedules, and certificate rules are pending review.</p>
+            <p className="mt-5 text-sm font-medium text-navy-100/75">{localPreview ? "Local account enrollment is available for the KYC/AML sandbox preview. The draft is unreviewed and cannot issue a certificate." : "Enrollment is not open. Course content, schedules, and certificate rules are pending review."}</p>
           </div>
 
           <div className="mx-auto w-full max-w-lg">
@@ -72,6 +74,10 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-7xl px-5 py-8 sm:px-8 lg:px-10 lg:py-14">
+        {localPreview && <aside className="mb-8 flex flex-col justify-between gap-4 rounded-2xl border border-gold-300 bg-gold-50 p-5 sm:flex-row sm:items-center sm:p-6">
+          <div><p className="text-xs font-bold uppercase tracking-[0.15em] text-gold-900">Available in this local preview</p><h2 className="mt-1 text-xl font-bold text-slate-950">KYC/AML Operations sandbox</h2><p className="mt-2 max-w-3xl text-sm leading-6 text-slate-700">Create an account, verify it through local mail preview, then enroll from your dashboard. This draft is for review and practice; it is not approved and does not issue certificates.</p></div>
+          <Link href="/sign-up" className="button-primary inline-flex min-h-11 shrink-0 items-center justify-center rounded-xl px-4 py-2.5 text-sm font-bold">Start local preview</Link>
+        </aside>}
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeading eyebrow="Find your area" title="Explore the proposed tracks" description="These role pathways are topic proposals, not available courses. Open a track to see its current outline and what still needs approval." />
           <Link href="/courses" className="rounded-sm pb-1 text-sm font-extrabold text-navy-900 hover:underline">View all six tracks <span aria-hidden="true">→</span></Link>

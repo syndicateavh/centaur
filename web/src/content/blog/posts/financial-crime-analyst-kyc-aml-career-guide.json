@@ -226,6 +226,24 @@
       "routeId": "placements"
     },
     {
+      "type": "heading",
+      "level": 2,
+      "text": "Deepfakes, impersonation, and financial crime analysis"
+    },
+    {
+      "type": "paragraph",
+      "text": "A fictional alert might involve a caller whose voice resembles a customer, a payment request accompanied by a changed contact detail, or identity documents that do not agree with other approved records. These examples illustrate why an analyst should verify the source, preserve the original evidence, follow the institution’s authentication process, and escalate uncertainty. A generated voice, unusual transaction, or screening match is a lead for review, not proof that a person committed fraud."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fraud work and AML work can touch the same customer or transaction but may have different objectives, evidence standards, owners, and reporting rules. Follow the queue procedure and applicable policy. Do not attempt to authenticate a real customer outside authorised channels or share alert data in an unapproved tool."
+    },
+    {
+      "type": "faq",
+      "question": "Do financial crime analysts investigate deepfake fraud?",
+      "answer": "Some financial-crime or fraud teams may review impersonation concerns as part of a defined case workflow, but duties vary by employer. Analysts should use approved evidence sources and authentication procedures, document uncertainty, and escalate cases to the authorised owner."
+    },
+    {
       "type": "faq",
       "question": "What does a financial crime analyst do?",
       "answer": "A financial crime analyst reviews customer information, screening results, alerts, transactions, and related evidence within an approved KYC, AML, sanctions, or fraud workflow. The analyst documents the reasoning, escalates when required, and does not make conclusions beyond their authority."
@@ -265,13 +283,21 @@
     "height": 941
   },
   "publishedAt": "2026-09-22",
-  "updatedAt": "2026-09-26",
+  "updatedAt": "2026-10-02",
   "scheduledAt": null,
   "seo": {
     "title": "Financial Crime Analyst: KYC, AML & Career Guide",
     "description": "Learn what financial crime analysts do, how KYC and AML workflows work, which skills freshers need, and how to prepare for compliance interviews.",
     "canonicalPath": "/blog/financial-crime-analyst-kyc-aml-career-guide/",
-    "noindex": false
+    "noindex": false,
+    "focusKeyword": "financial crime analyst",
+    "secondaryKeywords": [
+      "financial crime analyst career",
+      "KYC AML analyst roles",
+      "financial crime jobs",
+      "fraud analyst jobs",
+      "deepfake fraud investigation"
+    ]
   },
   "tags": [
     "Financial Crime Analyst",

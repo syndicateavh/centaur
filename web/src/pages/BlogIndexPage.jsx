@@ -14,45 +14,65 @@ export default function BlogIndexPage() {
   const posts = getPublishedBlogPosts();
   const categories = [...new Set([...posts.map((post) => post.category), 'industry-updates'])].sort();
   const categoryCounts = new Map(categories.map((category) => [category, posts.filter((post) => post.category === category).length]));
+  const [featuredPost, ...recentPosts] = posts;
 
   return (
     <>
       <PageHero routeId="blog" eyebrow="Knowledge centre" title={seo.h1} intro={seo.description} />
 
-      <section className="bg-white py-16 sm:py-20" aria-labelledby="blog-posts-title">
-        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Latest articles" title="Practical guidance for finance careers" intro="Browse structured, first-party articles for learners exploring banking and finance operations careers." align="center" />
-          {posts.length > 0 ? (
-            <div id="blog-posts-title" className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {posts.map((post) => <BlogPostCard key={post.id} post={post} />)}
+      <>
+        {categories.length > 0 && (
+          <nav className="border-b border-border bg-muted/40" aria-label="Browse blog topics">
+            <div className="design-container flex flex-col items-stretch gap-2 py-4 sm:flex-row sm:items-center sm:gap-3">
+              <span className="shrink-0 text-sm font-bold text-primary">Browse topics</span>
+              <div className="w-full min-w-0 sm:flex-1">
+                <div className="topic-slider flex min-w-0 snap-x snap-mandatory gap-2 overflow-x-auto scroll-smooth py-1" role="group" aria-label="Blog topic categories" tabIndex={0}>
+                  {categories.map((category) => (
+                    <Link key={category} to={blogCategoryPath(category)} className="shrink-0 snap-start rounded-full border border-border bg-white px-4 py-2.5 text-sm font-semibold text-primary transition hover:border-accent hover:bg-accent/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent">
+                      {blogCategoryLabel(category)} <span className="text-muted-foreground">({categoryCounts.get(category) || 0})</span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
             </div>
-          ) : (
-            <div id="blog-posts-title" className="mx-auto max-w-3xl rounded-2xl border border-dashed border-border bg-muted/40 p-8 text-center sm:p-12">
-              <h2 className="text-2xl font-bold text-primary">Articles are being prepared</h2>
-              <p className="mt-4 text-muted-foreground">The Centaur Careers team is preparing original career guidance for this library. Explore the current finance career tracks while new articles are reviewed and published.</p>
-              <Link to="/courses/" className="mt-6 inline-flex min-h-11 items-center rounded-xl bg-accent px-5 py-3 font-bold text-primary">Explore courses</Link>
-            </div>
-          )}
-        </div>
-      </section>
+          </nav>
+        )}
 
-      {categories.length > 0 && (
-        <section className="bg-muted py-16 sm:py-20" aria-labelledby="blog-categories-title">
-          <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <SectionHeading eyebrow="Browse by topic" title="Choose a career topic" intro="Use the controlled topic archive to find related articles." align="center" />
-            <div id="blog-categories-title" className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {categories.map((category) => <Link key={category} to={blogCategoryPath(category)} className="rounded-xl border border-border bg-white p-5 transition hover:-translate-y-0.5 hover:border-accent hover:shadow-sm"><span className="block font-bold text-primary">{blogCategoryLabel(category)}</span><span className="mt-2 block text-sm text-muted-foreground">{categoryCounts.get(category) || 0} published {categoryCounts.get(category) === 1 ? 'article' : 'articles'}</span></Link>)}
-            </div>
+        <section className="design-section" aria-labelledby="blog-featured-title">
+          <div className="design-container">
+            {featuredPost ? (
+              <>
+                <h2 id="blog-featured-title" className="sr-only">Featured article</h2>
+                <BlogPostCard post={featuredPost} featured />
+              </>
+            ) : (
+              <div className="mx-auto max-w-3xl rounded-2xl border border-dashed border-border bg-muted/40 p-8 text-center sm:p-12">
+                <h2 id="blog-featured-title" className="text-2xl font-bold text-primary">Articles are being prepared</h2>
+                <p className="mt-4 text-muted-foreground">The Centaur Careers team is preparing original career guidance for this library. Explore the current finance career tracks while new articles are reviewed and published.</p>
+                <Link to="/courses/" className="mt-6 inline-flex min-h-11 items-center rounded-xl bg-accent px-5 py-3 font-bold text-primary">Explore courses</Link>
+              </div>
+            )}
           </div>
         </section>
-      )}
+
+        {recentPosts.length > 0 && (
+          <section className="bg-surface-subtle py-14 sm:py-20" aria-labelledby="blog-posts-title">
+            <div className="design-container">
+              <SectionHeading eyebrow="The library" title="More practical finance career guides" intro="Explore role explainers, skill guides, and career comparisons written for finance learners." align="left" id="blog-posts-title" />
+              <div className="grid gap-5 lg:grid-cols-2">
+                {recentPosts.map((post) => <BlogPostCard key={post.id} post={post} layout="horizontal" />)}
+              </div>
+            </div>
+          </section>
+        )}
+      </>
 
       <section data-career-guide-cluster-entry className="bg-white py-12" aria-labelledby="career-guide-entry-title">
-        <div className="container mx-auto flex max-w-5xl flex-col items-start justify-between gap-5 rounded-2xl border border-border bg-muted p-7 sm:flex-row sm:items-center sm:px-8">
+        <div className="design-container flex flex-col items-start justify-between gap-5 rounded-2xl border border-border bg-muted p-7 sm:flex-row sm:items-center sm:px-8">
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.16em] text-accent-ink">Career guides</p>
             <h2 id="career-guide-entry-title" className="mt-2 text-2xl font-bold text-primary">Explore finance operations career guides</h2>
-            <p className="mt-2 text-muted-foreground">Follow focused guides on investment banking operations, KYC and AML, finance operations, payments, retail banking, and graduate pathways.</p>
+            <p className="mt-2 max-w-3xl text-muted-foreground">Follow focused guides on investment banking operations, KYC and AML, finance operations, payments, retail banking, and graduate pathways.</p>
           </div>
           <Link to="/career-guides/" className="inline-flex min-h-11 shrink-0 items-center gap-2 rounded-xl bg-primary px-5 py-3 font-bold text-white">Browse career guides <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
         </div>

@@ -308,7 +308,7 @@ export const SEO_ROUTES = Object.freeze([
     parentId: 'home',
     path: '/placements/',
     title: 'Finance Course with 100% Job Guarantee in India | Centaur Careers',
-    description: 'See how Centaur Careersâ€™ 100% Job Guarantee Program works after the six-week finance course, who is eligible, what finance job is guaranteed, and which written terms to confirm.',
+    description: 'See how Centaur Careers’ 100% Job Guarantee Program works after the six-week finance course, who is eligible, what finance job is guaranteed, and which written terms to confirm.',
     h1: '100% Job Guarantee Program for Finance Careers in India',
     breadcrumbLabel: 'Job Guarantee',
     schemaType: 'WebPage',
@@ -741,14 +741,14 @@ export function createCourseInstancesSchema() {
   return [
     {
       '@type': 'CourseInstance',
-      name: 'Online Mode â€” Live Interactive Sessions Across India',
+      name: 'Online Mode — Live Interactive Sessions Across India',
       courseMode: 'online',
       courseWorkload: 'P6W',
       inLanguage: BUSINESS_DATA.language,
     },
     {
       '@type': 'CourseInstance',
-      name: 'Offline Mode â€” Classroom Sessions at Lucknow Partner Location',
+      name: 'Offline Mode — Classroom Sessions at Lucknow Partner Location',
       courseMode: 'onsite',
       courseWorkload: 'P6W',
       inLanguage: BUSINESS_DATA.language,

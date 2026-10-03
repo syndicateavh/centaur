@@ -3,7 +3,7 @@
   "siteOrigin": "https://centaurcareers.in",
   "sitemapUrl": "https://centaurcareers.in/sitemap.xml",
   "sourceFile": "public/sitemap.xml",
-  "urlCount": 191,
+  "urlCount": 205,
   "urls": [
     {
       "url": "https://centaurcareers.in/",
@@ -370,7 +370,7 @@
       "path": "/career-guides/finance-careers-after-graduation/",
       "kind": "site-route",
       "routeId": "career-guide-finance-careers-after-graduation",
-      "lastModified": "2026-09-29",
+      "lastModified": "2026-10-03",
       "eligibility": "sitemap"
     },
     {
@@ -786,7 +786,7 @@
       "path": "/blog/category/career-guides/",
       "kind": "blog-category",
       "routeId": null,
-      "lastModified": "2026-09-30",
+      "lastModified": "2026-10-03",
       "eligibility": "sitemap"
     },
     {
@@ -794,7 +794,7 @@
       "path": "/blog/category/finance-operations/",
       "kind": "blog-category",
       "routeId": null,
-      "lastModified": "2026-09-30",
+      "lastModified": "2026-10-03",
       "eligibility": "sitemap"
     },
     {
@@ -802,7 +802,7 @@
       "path": "/blog/category/industry-updates/",
       "kind": "blog-category",
       "routeId": null,
-      "lastModified": "2026-09-28",
+      "lastModified": "2026-10-03",
       "eligibility": "sitemap"
     },
     {
@@ -818,7 +818,7 @@
       "path": "/blog/category/investment-banking/",
       "kind": "blog-category",
       "routeId": null,
-      "lastModified": "2026-09-30",
+      "lastModified": "2026-10-02",
       "eligibility": "sitemap"
     },
     {
@@ -827,6 +827,118 @@
       "kind": "blog-category",
       "routeId": null,
       "lastModified": "2026-09-30",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/agentic-ai-banking/",
+      "path": "/blog/agentic-ai-banking/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-10-03",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/ai-credit-and-digital-lending/",
+      "path": "/blog/ai-credit-and-digital-lending/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-10-03",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/ai-finance-careers/",
+      "path": "/blog/ai-finance-careers/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-10-03",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/ai-kyc-aml-jobs/",
+      "path": "/blog/ai-kyc-aml-jobs/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-10-03",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/btech-to-finance-career/",
+      "path": "/blog/btech-to-finance-career/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-10-03",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/finance-career-without-mba-cfa-ca/",
+      "path": "/blog/finance-career-without-mba-cfa-ca/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-10-03",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/finance-jobs-for-freshers/",
+      "path": "/blog/finance-jobs-for-freshers/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-10-03",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/future-finance-career-map/",
+      "path": "/blog/future-finance-career-map/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-10-03",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/how-to-enter-finance-after-graduation/",
+      "path": "/blog/how-to-enter-finance-after-graduation/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-10-03",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/will-ai-replace-finance-jobs/",
+      "path": "/blog/will-ai-replace-finance-jobs/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-10-03",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/banking-jobs-without-sales/",
+      "path": "/blog/banking-jobs-without-sales/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-10-02",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/excel-python-ai-finance-skills/",
+      "path": "/blog/excel-python-ai-finance-skills/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-10-03",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/finance-vs-tech-career/",
+      "path": "/blog/finance-vs-tech-career/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-10-03",
+      "eligibility": "sitemap"
+    },
+    {
+      "url": "https://centaurcareers.in/blog/gcc-finance-careers-india/",
+      "path": "/blog/gcc-finance-careers-india/",
+      "kind": "blog-article",
+      "routeId": null,
+      "lastModified": "2026-10-02",
       "eligibility": "sitemap"
     },
     {
@@ -1034,7 +1146,7 @@
       "path": "/blog/ai-in-banking-use-cases-risks/",
       "kind": "blog-article",
       "routeId": null,
-      "lastModified": "2026-09-28",
+      "lastModified": "2026-10-03",
       "eligibility": "sitemap"
     },
     {
@@ -1074,7 +1186,7 @@
       "path": "/blog/credit-analysis-basics-beginners/",
       "kind": "blog-article",
       "routeId": null,
-      "lastModified": "2026-09-28",
+      "lastModified": "2026-10-03",
       "eligibility": "sitemap"
     },
     {
@@ -1106,7 +1218,7 @@
       "path": "/blog/front-middle-back-office-investment-banking/",
       "kind": "blog-article",
       "routeId": null,
-      "lastModified": "2026-09-28",
+      "lastModified": "2026-10-02",
       "eligibility": "sitemap"
     },
     {
@@ -1114,7 +1226,7 @@
       "path": "/blog/investment-banking-skills-graduates/",
       "kind": "blog-article",
       "routeId": null,
-      "lastModified": "2026-09-28",
+      "lastModified": "2026-10-02",
       "eligibility": "sitemap"
     },
     {
@@ -1450,7 +1562,7 @@
       "path": "/blog/investment-banking-teams-operations/",
       "kind": "blog-article",
       "routeId": null,
-      "lastModified": "2026-09-30",
+      "lastModified": "2026-10-02",
       "eligibility": "sitemap"
     },
     {
@@ -1482,7 +1594,7 @@
       "path": "/blog/financial-crime-analyst-kyc-aml-career-guide/",
       "kind": "blog-article",
       "routeId": null,
-      "lastModified": "2026-09-26",
+      "lastModified": "2026-10-02",
       "eligibility": "sitemap"
     },
     {
@@ -1506,7 +1618,7 @@
       "path": "/blog/digital-payments-operations-career-india/",
       "kind": "blog-article",
       "routeId": null,
-      "lastModified": "2026-09-15",
+      "lastModified": "2026-10-02",
       "eligibility": "sitemap"
     },
     {
@@ -1514,7 +1626,7 @@
       "path": "/blog/fintech-operations-careers-after-graduation/",
       "kind": "blog-article",
       "routeId": null,
-      "lastModified": "2026-09-15",
+      "lastModified": "2026-10-02",
       "eligibility": "sitemap"
     },
     {
@@ -1530,7 +1642,7 @@
       "path": "/blog/investment-banking-operations-vs-cfa-financial-modelling/",
       "kind": "blog-article",
       "routeId": null,
-      "lastModified": "2026-09-30",
+      "lastModified": "2026-10-02",
       "eligibility": "sitemap"
     }
   ]

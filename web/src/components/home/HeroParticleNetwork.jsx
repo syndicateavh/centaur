@@ -313,15 +313,17 @@ export function HeroParticleNetwork() {
       pointer.y = null;
     };
 
-    const updateMotionPreference = (event) => {
-      reducedMotion = event.matches;
+    const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const mobileViewport = window.matchMedia('(max-width: 639px)');
+    const updateMotionState = () => {
+      reducedMotion = motionPreference.matches || mobileViewport.matches;
       startAnimation();
     };
-
-    const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
-    reducedMotion = motionPreference.matches;
-    if (motionPreference.addEventListener) motionPreference.addEventListener('change', updateMotionPreference);
-    else motionPreference.addListener?.(updateMotionPreference);
+    reducedMotion = motionPreference.matches || mobileViewport.matches;
+    if (motionPreference.addEventListener) motionPreference.addEventListener('change', updateMotionState);
+    else motionPreference.addListener?.(updateMotionState);
+    if (mobileViewport.addEventListener) mobileViewport.addEventListener('change', updateMotionState);
+    else mobileViewport.addListener?.(updateMotionState);
 
     resize();
     hero.addEventListener('pointermove', updatePointer, { passive: true });
@@ -352,8 +354,10 @@ export function HeroParticleNetwork() {
       if (!resizeObserver) window.removeEventListener('resize', resize);
       hero.removeEventListener('pointermove', updatePointer);
       hero.removeEventListener('pointerleave', clearPointer);
-      if (motionPreference.removeEventListener) motionPreference.removeEventListener('change', updateMotionPreference);
-      else motionPreference.removeListener?.(updateMotionPreference);
+      if (motionPreference.removeEventListener) motionPreference.removeEventListener('change', updateMotionState);
+      else motionPreference.removeListener?.(updateMotionState);
+      if (mobileViewport.removeEventListener) mobileViewport.removeEventListener('change', updateMotionState);
+      else mobileViewport.removeListener?.(updateMotionState);
       context.clearRect(0, 0, width, height);
     };
   }, []);

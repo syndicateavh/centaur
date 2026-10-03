@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "id": "finance-jobs-for-freshers",
+  "slug": "finance-jobs-for-freshers",
+  "status": "published",
+  "title": "Finance Jobs for Freshers: 10 Career Paths in 2026",
+  "excerpt": "Compare entry-level finance and BFSI paths, current India hiring signals, day-to-day work, and the skills to check in real vacancies.",
+  "category": "career-guides",
+  "author": {
+    "type": "Person",
+    "id": "bharat-singh",
+    "name": "Bharat Singh",
+    "role": "Founder & Director",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Finance jobs for freshers cover more than investment banking or accounting. A graduate may find roles across operations, customer service, payments, lending, compliance, analysis, and technology-enabled financial services. Job titles are not standard across employers, so compare responsibilities and eligibility in the current vacancy rather than relying on a generic list."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What current hiring signals say about finance and technology in India"
+    },
+    {
+      "type": "paragraph",
+      "text": "Recent India hiring signals show activity across both finance and specialised technology, but they do not rank jobs by fresher suitability. Naukri JobSpeak reported that accounting and finance activity rose 14% year over year in August 2026, banking, financial services and broking rose 10%, and AI/ML roles rose 31%. JobSpeak tracks new postings and recruiter searches on its platform; it is not a count of completed hires or a guarantee of openings for a particular graduate. A May 2026 report citing foundit says AI/ML, cloud and cybersecurity make up about 65% of technology hiring demand. That is a signal about specialised tech hiring, not proof that every finance role requires coding."
+    },
+    {
+      "type": "link",
+      "label": "Read the August 2026 Naukri JobSpeak hiring figures and their measurement limits",
+      "href": "https://www.business-standard.com/industry/news/white-collar-hiring-rises-14-in-august-as-non-it-sectors-drive-growth-126090801337_1.html"
+    },
+    {
+      "type": "link",
+      "label": "Read foundit's 2026 report coverage on specialised technology hiring",
+      "href": "https://yourstory.com/2026/05/ai-cloud-and-cybersecurity-driving-it-jobs-demand-says-foundit-report"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Ten role families to compare"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Retail banking service and branch operations: support account, service, and transaction workflows.",
+        "Banking operations: maintain records, route requests, and complete process controls.",
+        "Investment banking operations: support trade processing, confirmations, settlement, and reconciliations.",
+        "Fund accounting and administration: maintain fund records and support valuation or reporting processes.",
+        "Payments operations: trace transactions, reconcile batches, and investigate exceptions.",
+        "KYC and customer due diligence: review onboarding information, record evidence, and request or escalate missing items.",
+        "AML and transaction-monitoring operations: review alerts and document case decisions under policy.",
+        "Credit operations: support application intake, documentation, servicing, or loan administration.",
+        "Finance reporting and reconciliation: compare source records and prepare controlled reports.",
+        "FinTech product or customer operations: coordinate support, issue resolution, and process improvements."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to compare entry requirements"
+    },
+    {
+      "type": "paragraph",
+      "text": "For each path, save several recent employer vacancies and write down education criteria, experience, tools, schedule, location, and the main output of the role. Separate “required” from “preferred.” Some positions are open to broader graduate backgrounds; others expect commerce, accounting, analytics, coding, or prior experience. An entry-level label does not establish that a role is suitable for every fresher."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Build a small proof of skill"
+    },
+    {
+      "type": "paragraph",
+      "text": "Choose an exercise linked to the target role. For payments, reconcile invented transactions. For compliance, prepare a fictional case note that identifies evidence, gaps, and escalation. For operations, map a workflow and mark where approvals or controls occur. For reporting, compare mock source data and explain discrepancies. Clearly label the work as practice and never include confidential or customer information."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Questions to ask before applying or accepting"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Which team owns the work, and who receives its output?",
+        "What does a normal day or shift involve?",
+        "Which systems, controls, and service measures are used?",
+        "What training and review happen before someone works independently?",
+        "Which eligibility, location, schedule, and employment terms apply?"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Frequently asked questions"
+    },
+    {
+      "type": "faq",
+      "question": "Which finance job is best for a fresher?",
+      "answer": "There is no single best role. Match the duties and eligibility to your strengths, interests, location, and current preparation."
+    },
+    {
+      "type": "faq",
+      "question": "Can a fresher work in finance without an MBA?",
+      "answer": "Some roles do not list an MBA requirement; others may ask for it or prefer relevant experience. Check the exact vacancy."
+    },
+    {
+      "type": "faq",
+      "question": "Are all finance jobs for freshers sales jobs?",
+      "answer": "No. Finance includes operational, analytical, service, compliance, and support work. Some banking roles have sales targets, so ask about the actual responsibilities."
+    },
+    {
+      "type": "link",
+      "label": "Explore banking roles that may focus on operations instead of sales",
+      "href": "/blog/banking-jobs-without-sales/"
+    },
+    {
+      "type": "link",
+      "label": "Explore the finance career map",
+      "href": "/blog/future-finance-career-map/"
+    },
+    {
+      "type": "link",
+      "label": "Read the graduate finance career guide",
+      "href": "/career-guides/finance-careers-after-graduation/"
+    },
+    {
+      "type": "link",
+      "label": "Compare KYC and AML analyst responsibilities",
+      "href": "/career-guides/kyc-aml-analyst/"
+    },
+    {
+      "type": "link",
+      "label": "Explore digital payments operations work",
+      "href": "/career-guides/digital-payments-operations/"
+    },
+    {
+      "type": "link",
+      "label": "Explore FinTech operations careers after graduation",
+      "href": "/blog/fintech-operations-careers-after-graduation/"
+    },
+    {
+      "type": "link",
+      "label": "See the Financial Operations Masterclass curriculum and current program details",
+      "href": "/courses/",
+      "routeId": "courses"
+    },
+    {
+      "type": "paragraph",
+      "text": "Editorial note: reviewed 3 October 2026. Role availability and entry criteria change by employer, city, and hiring cycle."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/investment-banking-skills-graduates.png",
+    "alt": "New graduate reviewing a range of finance role descriptions",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-10-03",
+  "updatedAt": "2026-10-03",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Finance Jobs for Freshers in India: 10 Career Paths",
+    "description": "Compare finance jobs for freshers in India by role, day-to-day work, entry requirements, and current finance and technology hiring signals.",
+    "canonicalPath": "/blog/finance-jobs-for-freshers/",
+    "focusKeyword": "finance jobs for freshers",
+    "secondaryKeywords": [
+      "finance jobs after graduation",
+      "finance career options for fresh graduates",
+      "entry-level BFSI roles",
+      "best finance roles for graduates"
+    ],
+    "noindex": false
+  },
+  "tags": [
+    "Finance Careers",
+    "Graduate Career Planning"
+  ],
+  "relatedRouteIds": [
+    "blog",
+    "career-guides",
+    "career-guide-finance-careers-after-graduation"
+  ],
+  "redirects": [],
+  "evidenceNotes": [
+    "The ten items are role families for exploration, not a ranking or a promise of vacancies.",
+    "Requirements and duties vary by employer.",
+    "August 2026 Naukri JobSpeak figures describe platform postings and recruiter searches, not actual hires; the source states this limitation.",
+    "The foundit technology-hiring figures are cited as reported by YourStory and describe technology-sector demand, not finance-role requirements.",
+    "No salary or job-placement outcome is claimed."
+  ]
+}

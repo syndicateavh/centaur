@@ -12,14 +12,15 @@ export const metadata: Metadata = {
 
 export default async function HelpPage() {
   const learner = await getCurrentLearner();
+  const localPreview = process.env.NODE_ENV === "development";
   return (
     <>
     {learner && <LearnerNavigation name={learner.name} />}
     <main id="main-content" className="mx-auto w-full max-w-6xl flex-1 px-5 py-12 sm:px-8 sm:py-16">
       <div className="max-w-3xl">
         <p className="text-xs font-bold uppercase tracking-[0.18em] text-navy-800">Help and status</p>
-        <h1 className="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">Weâ€™re preparing the learning platform</h1>
-        <p className="mt-5 text-base leading-7 text-slate-600">{learner ? "For help with your account or enrolled course, send a private request to the learner support team." : "Enrollment and learner support are not open publicly yet. Course content and learner terms are still being reviewed."}</p>
+        <h1 className="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">{localPreview ? "Local course preview is available" : "Weâ€™re preparing the learning platform"}</h1>
+        <p className="mt-5 text-base leading-7 text-slate-600">{learner ? "For help with your account or enrolled course, send a private request to the learner support team." : localPreview ? "Create and verify a local learner account to enroll in the KYC/AML sandbox preview. Public enrollment remains closed while course content and learner terms are reviewed." : "Enrollment and learner support are not open publicly yet. Course content and learner terms are still being reviewed."}</p>
       </div>
       <div className="mt-9 grid gap-5 md:grid-cols-2">
         <section className="rounded-2xl border border-slate-200 bg-white p-6 sm:p-8" aria-labelledby="platform-status">
@@ -28,7 +29,7 @@ export default async function HelpPage() {
           <ul className="mt-4 space-y-3 text-sm leading-6 text-slate-600">
             <li className="flex gap-2"><span aria-hidden="true" className="font-bold text-navy-800">âœ“</span> Public descriptions of six proposed role areas are available.</li>
             <li className="flex gap-2"><span aria-hidden="true" className="font-bold text-gold-800">â—‹</span> Final syllabi, eligibility, and course schedules are pending review.</li>
-            <li className="flex gap-2"><span aria-hidden="true" className="font-bold text-gold-800">â—‹</span> Public enrollment and course delivery are not open. The current draft course is not eligible to issue certificates.</li>
+            <li className="flex gap-2"><span aria-hidden="true" className="font-bold text-gold-800">○</span> {localPreview ? "A local KYC/AML sandbox is available for preview; public enrollment is closed and the draft cannot issue certificates." : "Public enrollment and course delivery are not open. The current draft course is not eligible to issue certificates."}</li>
           </ul>
         </section>
         <section className="rounded-2xl border border-slate-200 bg-white p-6 sm:p-8" aria-labelledby="support-status">
@@ -41,7 +42,7 @@ export default async function HelpPage() {
       <div className="mt-8 rounded-2xl bg-navy-950 p-6 text-white sm:p-8">
         <h2 className="text-xl font-bold">Want to follow the proposal?</h2>
         <p className="mt-2 max-w-2xl text-sm leading-6 text-navy-50/80">There is no mailing-list form on this preview. Check the course catalogue and FAQs for published changes after the free offer and learner terms are approved.</p>
-        <div className="mt-5 flex flex-wrap gap-3"><Link href="/courses" className="rounded-xl bg-white px-4 py-3 text-sm font-extrabold text-navy-950 hover:bg-navy-50">Browse proposed tracks</Link><Link href="/faq" className="rounded-xl border border-white/30 px-4 py-3 text-sm font-bold text-white hover:bg-white/10">Read FAQs</Link></div>
+        <div className="mt-5 flex flex-wrap gap-3">{localPreview && !learner && <Link href="/sign-up" className="rounded-xl bg-white px-4 py-3 text-sm font-extrabold text-navy-950 hover:bg-navy-50">Create account to preview</Link>}<Link href="/courses" className="rounded-xl bg-white px-4 py-3 text-sm font-extrabold text-navy-950 hover:bg-navy-50">{localPreview ? "Browse courses and preview" : "Browse proposed tracks"}</Link><Link href="/faq" className="rounded-xl border border-white/30 px-4 py-3 text-sm font-bold text-white hover:bg-white/10">Read FAQs</Link></div>
       </div>
     </main>
     </>

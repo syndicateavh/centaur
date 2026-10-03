@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "ai-credit-and-digital-lending",
+  "slug": "ai-credit-and-digital-lending",
+  "status": "published",
+  "title": "How AI May Support Credit Decisions and Digital Lending",
+  "excerpt": "Follow the digital-lending workflow, understand where models may support analysis, and learn why data quality, explainability, and human controls matter.",
+  "category": "career-guides",
+  "author": {
+    "type": "Person",
+    "id": "bharat-singh",
+    "name": "Bharat Singh",
+    "role": "Founder & Director",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "AI credit analysis and digital lending bring together model outputs and operational workflows. AI may help organise application data, identify inconsistencies, estimate risk, detect fraud patterns, or monitor a portfolio. It does not make lending automatically fair, accurate, or compliant. The lender remains responsible for its decision process, disclosures, data handling, controls, and customer treatment under applicable requirements."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A simplified digital-lending workflow"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Application: collect information and explain what data is required.",
+        "Verification: check identity, documents, account details, and permitted data sources.",
+        "Assessment: review repayment capacity, credit information, policy criteria, and risk indicators.",
+        "Decision and communication: follow authorised decision rules and provide required notices or explanations.",
+        "Disbursal and servicing: confirm terms and transfer, then handle payments, support, and complaints.",
+        "Monitoring: identify missed payments, fraud indicators, and process issues under approved controls."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Where a model can help and where it can fail"
+    },
+    {
+      "type": "paragraph",
+      "text": "A model can process many signals quickly, but its output depends on data quality, representativeness, design choices, and monitoring. Missing or inaccurate information may distort an assessment. Historical data can embed patterns that deserve scrutiny. A score can also be difficult to explain if its inputs or logic are opaque. The RBI’s FREE-AI report identifies alternate credit assessment as an opportunity while also discussing fairness, explainability, data protection, and cybersecurity challenges."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The operations and analyst work behind the technology"
+    },
+    {
+      "type": "paragraph",
+      "text": "Digital lending still depends on people who validate data, document exceptions, investigate suspected fraud, support customers, test controls, monitor model performance, and escalate issues. Job titles vary: credit operations, underwriting support, risk analytics, model governance, loan servicing, and product operations may sit in different teams. Read current employer descriptions to see whether a role analyses, approves, processes, monitors, or services a loan."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Skills to practise"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Understand basic credit concepts and the information used in an application.",
+        "Check source, date, completeness, and consistency before relying on a data point.",
+        "Use spreadsheets to reconcile fictional application or payment records.",
+        "Explain an exception without guessing at a customer’s intent or risk.",
+        "Learn data privacy, fair treatment, audit trail, and escalation expectations.",
+        "Add statistics or programming if target analytical roles request them."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Frequently asked questions"
+    },
+    {
+      "type": "faq",
+      "question": "Does AI approve every digital loan?",
+      "answer": "No. Processes and decision authority vary. A model may be one input or may support specific steps; confirm the lender’s documented process."
+    },
+    {
+      "type": "faq",
+      "question": "Can AI credit scoring be biased?",
+      "answer": "Models can produce unfair outcomes through unsuitable data, design, or use. Institutions need governance, testing, monitoring, and controls appropriate to the system and applicable law."
+    },
+    {
+      "type": "faq",
+      "question": "What finance roles work with digital lending?",
+      "answer": "Roles may include loan operations, credit analysis, underwriting support, fraud operations, data analytics, risk governance, and product operations. Titles and entry requirements vary."
+    },
+    {
+      "type": "link",
+      "label": "Read the RBI FREE-AI Committee report",
+      "href": "https://m.rbi.org.in/scripts/PublicationReportDetails.aspx?ID=1306&UrlPage="
+    },
+    {
+      "type": "link",
+      "label": "Learn credit-analysis fundamentals",
+      "href": "/blog/credit-analysis-basics-beginners/"
+    },
+    {
+      "type": "link",
+      "label": "Explore finance career paths for graduates",
+      "href": "/blog/future-finance-career-map/"
+    },
+    {
+      "type": "paragraph",
+      "text": "Editorial note: reviewed 3 October 2026. This article does not assess any lender or offer credit advice. Rules and processes differ by product, lender, and jurisdiction."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/credit-analysis-basics-beginners.png",
+    "alt": "Credit analyst comparing application records and a lending workflow",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-10-03",
+  "updatedAt": "2026-10-03",
+  "scheduledAt": null,
+  "seo": {
+    "title": "AI Credit and Digital Lending: Workflow Guide",
+    "description": "Follow the digital-lending workflow, understand where models may support analysis, and learn why data quality, explainability, and human controls matter.",
+    "canonicalPath": "/blog/ai-credit-and-digital-lending/",
+    "focusKeyword": "AI credit analysis and digital lending",
+    "secondaryKeywords": [
+      "AI credit scoring explained",
+      "digital lending workflow and AI",
+      "AI in credit risk operations",
+      "credit analyst AI skills"
+    ],
+    "noindex": false
+  },
+  "tags": [
+    "Finance Careers",
+    "Graduate Career Planning",
+    "Artificial Intelligence"
+  ],
+  "relatedRouteIds": [
+    "blog",
+    "career-guides",
+    "career-guide-finance-careers-after-graduation"
+  ],
+  "redirects": [],
+  "evidenceNotes": [
+    "RBI FREE-AI report dated 13 August 2025 supports the described AI opportunities and risk themes.",
+    "Workflow steps are illustrative and not a substitute for lender-specific policy.",
+    "No lending recommendation or credit eligibility claim is made."
+  ]
+}

@@ -76,7 +76,7 @@ function BrandLink({ onClick, compact = false }) {
 
 function DesktopNavigation({ pathname }) {
   return (
-    <NavigationMenu aria-label="Primary navigation" className="hidden lg:flex">
+    <NavigationMenu aria-label="Primary navigation" className="hidden xl:flex">
       <NavigationMenuList className="gap-1 space-x-0">
         {navLinks.map((link) => {
           const isActive = isNavLinkActive(pathname, link);
@@ -142,7 +142,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="site-utility-bar hidden border-b border-white/10 bg-primary text-white lg:block">
+      <div className="site-utility-bar hidden border-b border-white/10 bg-primary text-white xl:block">
         <div className="design-container flex min-h-11 items-center justify-between gap-6">
           <div className="flex items-center gap-4 text-xs font-medium text-white/80">
             <span>{HOME_COPY.headerTraining}</span>
@@ -161,14 +161,14 @@ export default function Header() {
       </div>
 
       <header data-site-header className={`site-header sticky top-0 z-50 w-full ${headerScrolled ? 'is-scrolled' : ''} ${headerHidden ? 'is-hidden' : ''}`}>
-        <div className="site-header-shell design-container grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 lg:grid-cols-[1fr_auto_1fr]">
+        <div className="site-header-shell design-container grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 xl:grid-cols-[1fr_auto_1fr]">
           <BrandLink />
 
-          <div className="hidden justify-center lg:flex">
+          <div className="hidden justify-center xl:flex">
             <DesktopNavigation pathname={location.pathname} />
           </div>
 
-          <div className="flex items-center justify-end gap-2 lg:col-start-3">
+          <div className="site-header-actions flex min-w-11 items-center justify-end gap-2 xl:col-start-3">
             <a href={BUSINESS_DATA.enrollmentUrl} target="_blank" rel="noopener noreferrer" className="site-header-cta hidden h-11 items-center justify-center rounded-control bg-accent px-5 text-sm font-bold text-primary shadow-sm xl:inline-flex">
               Apply for details
             </a>
@@ -176,7 +176,7 @@ export default function Header() {
             <span id={mobileMenuOpen ? undefined : 'mobile-navigation'} hidden />
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
-                <button type="button" aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'} aria-controls="mobile-navigation" aria-expanded={mobileMenuOpen} className="site-menu-trigger inline-flex h-11 w-11 items-center justify-center rounded-control border border-primary/10 bg-primary/5 text-primary lg:hidden">
+                <button type="button" aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'} aria-controls="mobile-navigation" aria-expanded={mobileMenuOpen} className="site-menu-trigger inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-control border border-primary/10 bg-primary/5 text-primary xl:hidden">
                   <MobileMenuIcon open={mobileMenuOpen} />
                 </button>
               </SheetTrigger>

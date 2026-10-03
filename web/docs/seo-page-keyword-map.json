@@ -7,11 +7,11 @@
     "blogKeywordMap": "src/content/seo/blogKeywordOwnership.js"
   },
   "summary": {
-    "pageCount": 191,
+    "pageCount": 205,
     "siteRouteCount": 97,
     "blogCategoryCount": 6,
-    "blogArticleCount": 88,
-    "pagesWithPrimaryKeyword": 191
+    "blogArticleCount": 102,
+    "pagesWithPrimaryKeyword": 205
   },
   "pages": [
     {
@@ -1089,7 +1089,7 @@
         "short term finance course after graduates"
       ],
       "keywordPurpose": "First-party career-guide information page",
-      "lastModified": "2026-09-29"
+      "lastModified": "2026-10-03"
     },
     {
       "kind": "site-route",
@@ -1724,7 +1724,7 @@
         "banking career blog"
       ],
       "keywordPurpose": "Published article category archive",
-      "lastModified": "2026-09-30"
+      "lastModified": "2026-10-03"
     },
     {
       "kind": "blog-category",
@@ -1738,7 +1738,7 @@
         "banking operations blog"
       ],
       "keywordPurpose": "Published article category archive",
-      "lastModified": "2026-09-30"
+      "lastModified": "2026-10-03"
     },
     {
       "kind": "blog-category",
@@ -1752,7 +1752,7 @@
         "BFSI updates"
       ],
       "keywordPurpose": "Published article category archive",
-      "lastModified": "2026-09-28"
+      "lastModified": "2026-10-03"
     },
     {
       "kind": "blog-category",
@@ -1780,7 +1780,7 @@
         "investment banking careers"
       ],
       "keywordPurpose": "Published article category archive",
-      "lastModified": "2026-09-30"
+      "lastModified": "2026-10-02"
     },
     {
       "kind": "blog-category",
@@ -1795,6 +1795,216 @@
       ],
       "keywordPurpose": "Published article category archive",
       "lastModified": "2026-09-30"
+    },
+    {
+      "kind": "blog-article",
+      "id": "agentic-ai-banking",
+      "path": "/blog/agentic-ai-banking/",
+      "canonicalUrl": "https://centaurcareers.in/blog/agentic-ai-banking/",
+      "primaryKeyword": "agentic AI in banking",
+      "secondaryKeywords": [
+        "agentic AI finance careers",
+        "AI agents in banking operations",
+        "agentic AI banking jobs",
+        "banking AI oversight skills"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-10-03"
+    },
+    {
+      "kind": "blog-article",
+      "id": "ai-credit-and-digital-lending",
+      "path": "/blog/ai-credit-and-digital-lending/",
+      "canonicalUrl": "https://centaurcareers.in/blog/ai-credit-and-digital-lending/",
+      "primaryKeyword": "AI credit analysis and digital lending",
+      "secondaryKeywords": [
+        "AI credit scoring explained",
+        "digital lending workflow and AI",
+        "AI in credit risk operations",
+        "credit analyst AI skills"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-10-03"
+    },
+    {
+      "kind": "blog-article",
+      "id": "ai-finance-careers",
+      "path": "/blog/ai-finance-careers/",
+      "canonicalUrl": "https://centaurcareers.in/blog/ai-finance-careers/",
+      "primaryKeyword": "AI in finance careers",
+      "secondaryKeywords": [
+        "FinTech AI jobs for graduates",
+        "AI banking career paths",
+        "finance and artificial intelligence roles",
+        "AI skills for finance graduates"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-10-03"
+    },
+    {
+      "kind": "blog-article",
+      "id": "ai-kyc-aml-jobs",
+      "path": "/blog/ai-kyc-aml-jobs/",
+      "canonicalUrl": "https://centaurcareers.in/blog/ai-kyc-aml-jobs/",
+      "primaryKeyword": "AI and KYC AML jobs",
+      "secondaryKeywords": [
+        "AI KYC jobs",
+        "AI in AML operations",
+        "KYC analyst skills in AI workflows",
+        "RegTech compliance careers"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-10-03"
+    },
+    {
+      "kind": "blog-article",
+      "id": "btech-to-finance-career",
+      "path": "/blog/btech-to-finance-career/",
+      "canonicalUrl": "https://centaurcareers.in/blog/btech-to-finance-career/",
+      "primaryKeyword": "BTech to finance career",
+      "secondaryKeywords": [
+        "engineering graduate finance career paths",
+        "transition from engineering to banking",
+        "BTech graduate finance role options",
+        "finance career transition from engineering"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-10-03"
+    },
+    {
+      "kind": "blog-article",
+      "id": "finance-career-without-mba-cfa-ca",
+      "path": "/blog/finance-career-without-mba-cfa-ca/",
+      "canonicalUrl": "https://centaurcareers.in/blog/finance-career-without-mba-cfa-ca/",
+      "primaryKeyword": "finance career without MBA",
+      "secondaryKeywords": [
+        "finance jobs without CFA or CA",
+        "finance career without professional qualification",
+        "finance roles for graduates",
+        "how to get a finance job without MBA"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-10-03"
+    },
+    {
+      "kind": "blog-article",
+      "id": "finance-jobs-for-freshers",
+      "path": "/blog/finance-jobs-for-freshers/",
+      "canonicalUrl": "https://centaurcareers.in/blog/finance-jobs-for-freshers/",
+      "primaryKeyword": "finance jobs for freshers",
+      "secondaryKeywords": [
+        "finance jobs after graduation",
+        "finance career options for fresh graduates",
+        "entry-level BFSI roles",
+        "best finance roles for graduates"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-10-03"
+    },
+    {
+      "kind": "blog-article",
+      "id": "future-finance-career-map",
+      "path": "/blog/future-finance-career-map/",
+      "canonicalUrl": "https://centaurcareers.in/blog/future-finance-career-map/",
+      "primaryKeyword": "finance career paths in banking and fintech",
+      "secondaryKeywords": [
+        "types of finance jobs",
+        "finance career options map",
+        "banking and finance career paths",
+        "finance roles after graduation"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-10-03"
+    },
+    {
+      "kind": "blog-article",
+      "id": "how-to-enter-finance-after-graduation",
+      "path": "/blog/how-to-enter-finance-after-graduation/",
+      "canonicalUrl": "https://centaurcareers.in/blog/how-to-enter-finance-after-graduation/",
+      "primaryKeyword": "how to enter finance after graduation",
+      "secondaryKeywords": [
+        "how to start a finance career",
+        "finance career roadmap for graduates",
+        "finance roles for graduates",
+        "entry-level finance career paths"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-10-03"
+    },
+    {
+      "kind": "blog-article",
+      "id": "will-ai-replace-finance-jobs",
+      "path": "/blog/will-ai-replace-finance-jobs/",
+      "canonicalUrl": "https://centaurcareers.in/blog/will-ai-replace-finance-jobs/",
+      "primaryKeyword": "will AI replace finance jobs",
+      "secondaryKeywords": [
+        "future of finance jobs",
+        "AI impact on banking jobs",
+        "finance jobs and automation",
+        "skills for AI-enabled finance work"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-10-03"
+    },
+    {
+      "kind": "blog-article",
+      "id": "banking-jobs-without-sales",
+      "path": "/blog/banking-jobs-without-sales/",
+      "canonicalUrl": "https://centaurcareers.in/blog/banking-jobs-without-sales/",
+      "primaryKeyword": "banking jobs without sales",
+      "secondaryKeywords": [
+        "non sales banking jobs",
+        "bank jobs without sales targets",
+        "core finance jobs for freshers",
+        "operations jobs in banking"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-10-02"
+    },
+    {
+      "kind": "blog-article",
+      "id": "excel-python-ai-finance-skills",
+      "path": "/blog/excel-python-ai-finance-skills/",
+      "canonicalUrl": "https://centaurcareers.in/blog/excel-python-ai-finance-skills/",
+      "primaryKeyword": "Excel vs Python in finance",
+      "secondaryKeywords": [
+        "Excel vs Python for finance",
+        "AI skills for finance jobs",
+        "what should finance freshers learn",
+        "finance analyst tools for graduates"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-10-03"
+    },
+    {
+      "kind": "blog-article",
+      "id": "finance-vs-tech-career",
+      "path": "/blog/finance-vs-tech-career/",
+      "canonicalUrl": "https://centaurcareers.in/blog/finance-vs-tech-career/",
+      "primaryKeyword": "finance vs tech career",
+      "secondaryKeywords": [
+        "finance vs IT jobs",
+        "tech or finance after graduation",
+        "finance or technology career",
+        "finance career options for graduates"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-10-03"
+    },
+    {
+      "kind": "blog-article",
+      "id": "gcc-finance-careers-india",
+      "path": "/blog/gcc-finance-careers-india/",
+      "canonicalUrl": "https://centaurcareers.in/blog/gcc-finance-careers-india/",
+      "primaryKeyword": "GCC finance careers in India",
+      "secondaryKeywords": [
+        "Global Capability Centre finance careers",
+        "GCC finance roles",
+        "finance operations in global capability centres",
+        "GCC jobs for freshers"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-10-02"
     },
     {
       "kind": "blog-article",
@@ -2178,10 +2388,12 @@
         "artificial intelligence in banking",
         "AI banking use cases",
         "AI risks in financial services",
-        "banking AI governance"
+        "banking AI governance",
+        "AI governance in financial services",
+        "AI model oversight in banking"
       ],
       "keywordPurpose": "Published first-party finance education article",
-      "lastModified": "2026-09-28"
+      "lastModified": "2026-10-03"
     },
     {
       "kind": "blog-article",
@@ -2256,7 +2468,7 @@
         "credit analyst basics"
       ],
       "keywordPurpose": "Published first-party finance education article",
-      "lastModified": "2026-09-28"
+      "lastModified": "2026-10-03"
     },
     {
       "kind": "blog-article",
@@ -2312,11 +2524,12 @@
       "secondaryKeywords": [
         "front office vs middle office vs back office",
         "investment banking front office roles",
+        "investment banking operations vs front office",
         "middle office banking jobs",
         "back office investment banking operations"
       ],
       "keywordPurpose": "Published first-party finance education article",
-      "lastModified": "2026-09-28"
+      "lastModified": "2026-10-02"
     },
     {
       "kind": "blog-article",
@@ -2328,10 +2541,12 @@
         "investment banking skills for graduates",
         "investment banking operations skills",
         "investment banking skills for freshers",
-        "trade operations analyst skills"
+        "trade operations analyst skills",
+        "Excel Python AI finance skills",
+        "Excel skills for finance operations"
       ],
       "keywordPurpose": "Published first-party finance education article",
-      "lastModified": "2026-09-28"
+      "lastModified": "2026-10-02"
     },
     {
       "kind": "blog-article",
@@ -2923,10 +3138,12 @@
       "secondaryKeywords": [
         "investment banking teams",
         "investment banking operations",
-        "front middle back office"
+        "front middle back office",
+        "investment banking operations jobs",
+        "investment banking careers beyond M&A"
       ],
       "keywordPurpose": "Published first-party finance education article",
-      "lastModified": "2026-09-30"
+      "lastModified": "2026-10-02"
     },
     {
       "kind": "blog-article",
@@ -2979,10 +3196,12 @@
       "secondaryKeywords": [
         "financial crime analyst career",
         "KYC AML analyst roles",
-        "financial crime jobs"
+        "financial crime jobs",
+        "fraud analyst jobs",
+        "deepfake fraud investigation"
       ],
       "keywordPurpose": "Published first-party finance education article",
-      "lastModified": "2026-09-26"
+      "lastModified": "2026-10-02"
     },
     {
       "kind": "blog-article",
@@ -3017,14 +3236,16 @@
       "id": "digital-payments-operations-career-india",
       "path": "/blog/digital-payments-operations-career-india/",
       "canonicalUrl": "https://centaurcareers.in/blog/digital-payments-operations-career-india/",
-      "primaryKeyword": "digital payments operations career",
+      "primaryKeyword": "digital payments operations career India",
       "secondaryKeywords": [
-        "digital payments jobs",
-        "payment operations analyst",
+        "digital payments operations career",
+        "digital payment jobs for freshers",
+        "UPI operations career",
+        "payment operations analyst career path",
         "digital payments career in India"
       ],
       "keywordPurpose": "Published first-party finance education article",
-      "lastModified": "2026-09-15"
+      "lastModified": "2026-10-02"
     },
     {
       "kind": "blog-article",
@@ -3038,7 +3259,7 @@
         "fintech career in India"
       ],
       "keywordPurpose": "Published first-party finance education article",
-      "lastModified": "2026-09-15"
+      "lastModified": "2026-10-02"
     },
     {
       "kind": "blog-article",
@@ -3063,10 +3284,12 @@
       "secondaryKeywords": [
         "investment banking operations vs financial modelling",
         "investment banking vs CFA",
-        "finance career paths"
+        "finance career paths",
+        "finance jobs without MBA",
+        "finance career without CFA or CA"
       ],
       "keywordPurpose": "Published first-party finance education article",
-      "lastModified": "2026-09-30"
+      "lastModified": "2026-10-02"
     }
   ]
 }

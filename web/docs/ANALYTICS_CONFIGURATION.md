@@ -28,6 +28,10 @@ The site sends `download_click` directly to GA4 when a visitor downloads a publi
 
 Use this event to measure access to the published syllabus, placement-terms summary, and fictional case-study source files. A download is a content-engagement event, not a lead, enrollment, or confirmation that a file was read. Do not add a second GTM-to-GA4 mapping for this event. Validate the event and file names in GA4 DebugView before using them in reports.
 
+## Syllabus preview events
+
+Published download preview dialogs record `syllabus_preview_open` / `syllabus_preview_completed` for the syllabus and `download_preview_open` / `download_preview_completed` for other published text or CSV files. The events include the page measurement taxonomy, `preview_funnel: published_download`, `download_path`, and `download_name`. Completion means the file reached its end; it does not prove that a visitor understood the content, contacted the team, or enrolled. The WhatsApp link remains measured separately as a `lead_cta_click` outbound action. Do not map preview events to a lead or enrollment conversion in GA4.
+
 ## Page measurement taxonomy
 
 Page views, `virtual_page_view`, `lead_cta_click`, `internal_pathway_click`, and `download_click` now include stable URL-derived fields:

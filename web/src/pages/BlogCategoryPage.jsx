@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useParams } from 'react-router';
 import BlogPostCard from '@/components/blog/BlogPostCard.jsx';
 import InternalLinkGroup from '@/components/InternalLinkGroup.jsx';
-import { PageHero } from '@/components/PageShell.jsx';
+import { Breadcrumbs, PageHero } from '@/components/PageShell.jsx';
 import { getBlogPostsByCategory } from '@/content/blog/blogStorage.js';
 import { BLOG_CATEGORIES } from '@/content/blog/blogSchema.js';
 import { blogCategoryLabel } from '@/content/blog/blogRoutes.js';
@@ -63,15 +63,24 @@ export default function BlogCategoryPage() {
 
   return (
     <>
-      <PageHero
-        breadcrumbItems={[{ label: 'Blog', to: '/blog/' }, { label }]}
-        eyebrow="Blog topic"
-        title={`${label} articles`}
-        intro={`Published Centaur Careers articles about ${label.toLowerCase()}.`}
-      />
+      <header className="bg-navy-gradient py-9 text-white sm:py-11" aria-labelledby="blog-category-title">
+        <div className="design-container">
+          <Breadcrumbs className="mb-5" items={[{ label: 'Blog', to: '/blog/' }, { label }]} />
+          <p className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-accent">Topic archive</p>
+          <h1 id="blog-category-title" className="text-balance text-3xl font-black leading-tight sm:text-4xl">{label} articles</h1>
+          <p className="mt-3 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg">Articles and practical guidance about {label.toLowerCase()}.</p>
+        </div>
+      </header>
       <section className="bg-white py-16 sm:py-20" aria-labelledby="blog-category-posts-title">
-        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div id="blog-category-posts-title" className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">{posts.map((post) => <BlogPostCard key={post.id} post={post} />)}</div>
+        <div className="design-container max-w-6xl">
+          <div className="mb-8 flex flex-wrap items-end justify-between gap-3">
+            <div>
+              <p className="eyebrow">Topic archive</p>
+              <h2 id="blog-category-posts-title" className="mt-2 text-2xl font-bold text-primary">{posts.length} {posts.length === 1 ? 'article' : 'articles'} about {label.toLowerCase()}</h2>
+            </div>
+            <Link to="/blog/" className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">All topics</Link>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-2">{posts.map((post) => <BlogPostCard key={post.id} post={post} layout="horizontal" />)}</div>
         </div>
       </section>
       <InternalLinkGroup links={getInternalLinks('blog')} />

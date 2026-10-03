@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "agentic-ai-banking",
+  "slug": "agentic-ai-banking",
+  "status": "published",
+  "title": "Agentic AI in Banking: What It Could Change and What Still Needs Review",
+  "excerpt": "A grounded guide to AI agents in banking workflows, their possible uses, oversight boundaries, and skills graduates can practise safely.",
+  "category": "career-guides",
+  "author": {
+    "type": "Person",
+    "id": "bharat-singh",
+    "name": "Bharat Singh",
+    "role": "Founder & Director",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Agentic AI in banking describes a possible way to coordinate multi-step work through software tools, but “agentic AI” is used inconsistently. A demonstration is not proof that a bank has deployed a system in production. The key questions are what it may access, what actions it may take, how its work is checked, and who remains accountable."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Where an agent might assist a banking workflow"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Collect information from approved internal sources and prepare a draft case summary.",
+        "Route a service request to a queue based on defined criteria.",
+        "Compare records and flag a potential mismatch for analyst review.",
+        "Gather approved documentation and check whether required fields appear to be present.",
+        "Prepare a draft status message for an authorised employee to verify."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "These examples describe possible workflow designs, not a statement that all banks use agentic AI for them. High-impact actions such as approving credit, closing an AML case, changing customer records, or releasing a payment need explicit authority, controls, testing, and oversight. An AI agent should not be assumed to have independent legal or institutional authority."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why banking needs strong boundaries"
+    },
+    {
+      "type": "paragraph",
+      "text": "A multi-step system can inherit a wrong source record, misunderstand a policy, repeat an error across steps, or take an action outside the intended scope if permissions are weak. The RBI’s FREE-AI framework highlights trustworthy and accountable adoption in financial services. NIST’s voluntary AI Risk Management Framework offers a general way to govern, map, measure, and manage AI risks; neither source means a particular system is safe without case-specific controls."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What human oversight looks like in practice"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Limit an agent to approved tools and minimum necessary access.",
+        "Require confirmation before material customer, credit, payment, or compliance actions.",
+        "Keep a traceable record of source data, prompts or instructions, outputs, checks, and approvals.",
+        "Provide a safe stop and escalation path when information is missing or contradictory.",
+        "Test performance on edge cases and monitor drift, error patterns, and customer impact."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Skills graduates can prepare"
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn the workflow before focusing on the agent. Practise describing decision rights, sensitive information, control points, exception routes, and evidence. Basic data literacy, process mapping, clear writing, and careful verification are relevant across roles. Technical candidates can add orchestration, API, security, evaluation, or model-monitoring skills where target jobs ask for them."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Frequently asked questions"
+    },
+    {
+      "type": "faq",
+      "question": "Are banks already using agentic AI for lending and KYC?",
+      "answer": "Some organisations experiment with AI, but adoption and permitted use vary. Verify a deployment claim in a primary employer or regulator source; do not infer it from a vendor demo."
+    },
+    {
+      "type": "faq",
+      "question": "Will agentic AI replace banking operations teams?",
+      "answer": "There is no reliable universal forecast. Automation may alter tasks, but workflows still require governance, exception handling, customer protection, and accountable review."
+    },
+    {
+      "type": "faq",
+      "question": "What is the difference between a chatbot and an AI agent?",
+      "answer": "A chatbot usually responds to a conversation, while an agent may be configured to plan steps or use tools to complete a task. Real products can combine features, so inspect the system design and permissions."
+    },
+    {
+      "type": "link",
+      "label": "Read the RBI FREE-AI Committee report",
+      "href": "https://m.rbi.org.in/scripts/PublicationReportDetails.aspx?ID=1306&UrlPage="
+    },
+    {
+      "type": "link",
+      "label": "Read NIST’s AI Risk Management Framework",
+      "href": "https://www.nist.gov/itl/ai-risk-management-framework"
+    },
+    {
+      "type": "link",
+      "label": "Explore how AI could change finance jobs and tasks",
+      "href": "/blog/will-ai-replace-finance-jobs/"
+    },
+    {
+      "type": "paragraph",
+      "text": "Editorial note: reviewed 3 October 2026. “Agentic AI” is an evolving product term. Verify deployments, permissions, and regulatory obligations with primary sources."
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/ai-in-banking-use-cases-risks.png",
+    "alt": "Banking operations analyst reviewing a controlled AI-assisted workflow",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-10-03",
+  "updatedAt": "2026-10-03",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Agentic AI in Banking: Uses, Risks and Skills",
+    "description": "A grounded guide to AI agents in banking workflows, their possible uses, oversight boundaries, and skills graduates can practise safely.",
+    "canonicalPath": "/blog/agentic-ai-banking/",
+    "focusKeyword": "agentic AI in banking",
+    "secondaryKeywords": [
+      "agentic AI finance careers",
+      "AI agents in banking operations",
+      "agentic AI banking jobs",
+      "banking AI oversight skills"
+    ],
+    "noindex": false
+  },
+  "tags": [
+    "Finance Careers",
+    "Graduate Career Planning",
+    "Artificial Intelligence"
+  ],
+  "relatedRouteIds": [
+    "blog",
+    "career-guides",
+    "career-guide-finance-careers-after-graduation"
+  ],
+  "redirects": [],
+  "evidenceNotes": [
+    "RBI FREE-AI report and NIST AI RMF are primary framework references.",
+    "Potential use cases are illustrative and are not claims about current bank deployments.",
+    "System permissions, risk, and regulatory obligations require case-specific review."
+  ]
+}
