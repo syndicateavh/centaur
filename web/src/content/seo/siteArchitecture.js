@@ -110,7 +110,12 @@ export const SITE_ARCHITECTURE_HUBS = Object.freeze([
   Object.freeze({
     routeId: 'placements',
     role: 'commercial-support-hub',
-    requiredTargetIds: Object.freeze(['courses', 'career-guides', 'resources', 'india', 'faqs', 'contact']),
+    requiredTargetIds: Object.freeze(['student-outcomes', 'courses', 'career-guides', 'resources', 'india', 'faqs', 'contact']),
+  }),
+  Object.freeze({
+    routeId: 'student-outcomes',
+    role: 'learner-outcomes-collection',
+    requiredTargetIds: Object.freeze(['placements', 'courses', 'about', 'contact']),
   }),
   Object.freeze({
     routeId: 'india',

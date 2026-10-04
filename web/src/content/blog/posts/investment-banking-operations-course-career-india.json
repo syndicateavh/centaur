@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "id": "investment-banking-operations-course-career-india",
+  "slug": "investment-banking-operations-course-career-india",
+  "status": "published",
+  "title": "Investment Banking Operations Course and Career Guide",
+  "excerpt": "Learn what investment banking operations teams do and how Centaur Careers connects practical workflows with a six-week finance program and job guarantee.",
+  "category": "investment-banking",
+  "author": {
+    "id": "bharat-singh",
+    "name": "Bharat Singh",
+    "role": "Founder & Director",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Investment banking operations helps financial transactions move through controlled processes, from trade capture and confirmation to settlement, reconciliation, and reporting. Centaur Careers includes this subject in its six-week Financial Operations Masterclass. We believe the program is one of the best ways for graduates and job switchers to build a broad finance foundation while learning the practical language of operations."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What does investment banking operations cover?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Operations teams support the accurate processing and control of financial activity. Depending on the employer and product, an analyst may compare trade details, check settlement instructions, monitor a queue, investigate mismatches, reconcile records, update a case, or escalate an unresolved issue. The exact responsibilities vary, so learners should read current job descriptions rather than assume every team has the same duties."
+    },
+    {
+      "type": "paragraph",
+      "text": "Centaur Careers' investment banking operations learning area includes trade settlements, reconciliation, corporate actions, and fund accounting. These topics sit within one broader program alongside retail banking, KYC and AML compliance, digital payments, finance operations, and FinTech."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A fictional settlement example"
+    },
+    {
+      "type": "paragraph",
+      "text": "Imagine a fictional trade record showing 500 shares while a second approved record shows 480. A careful operations analyst would confirm that both records refer to the same transaction, check timestamps and authorised amendments, identify which source should be used, record the 20-share difference, and follow the escalation procedure. The analyst should preserve the original records and explain the evidence instead of changing a value simply to clear a queue."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Skills that help you prepare"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Attention to detail when comparing identifiers, values, and dates.",
+        "A clear understanding of transaction stages and handoffs.",
+        "Spreadsheet skills for sorting, matching, and documenting exceptions.",
+        "Concise case notes that separate evidence from assumptions.",
+        "Sound judgement about when to follow procedure and when to escalate."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "A useful practice portfolio can use invented trade records to show a match, a missing item, a duplicate, and a mismatch. Label the data as fictional and explain the checks you performed. This demonstrates your reasoning without claiming access to a bank system or confidential transaction data."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Study investment banking operations with a job guarantee"
+    },
+    {
+      "type": "paragraph",
+      "text": "Centaur Careers is built for graduates and job switchers who want a structured start across finance operations. The six-week Financial Operations Masterclass teaches investment banking operations as one part of a connected curriculum. We believe this breadth, together with the program's practical learning approach, makes it one of the best finance training choices in the industry for learners comparing career paths."
+    },
+    {
+      "type": "paragraph",
+      "text": "Centaur Careers guarantees a finance job to graduates and job switchers who complete the full six-week Financial Operations Masterclass through its 100% Job Guarantee Program. The guarantee applies to the full program, not a separate module or a promised job title. Read the current written terms before enrolling."
+    },
+    {
+      "type": "paragraph",
+      "text": "The guarantee applies to a finance job after completing the full Masterclass. It is not a promise of an investment banking operations analyst title or a specific employer, salary, city, or start date. Review the current written terms before applying."
+    },
+    {
+      "type": "faq",
+      "question": "Is investment banking operations a separate Centaur Careers course?",
+      "answer": "No. It is a learning area within the six-week Financial Operations Masterclass, which also covers retail banking, KYC and AML, digital payments, finance operations, and FinTech."
+    },
+    {
+      "type": "faq",
+      "question": "Does the job guarantee promise an investment banking role?",
+      "answer": "The published program guarantees a finance job to graduates and job switchers who complete the full Masterclass, subject to its current written terms. It does not promise a particular job title or employer."
+    },
+    {
+      "type": "link",
+      "label": "Explore the Financial Operations Masterclass",
+      "href": "/courses/",
+      "routeId": "courses"
+    },
+    {
+      "type": "link",
+      "label": "Review the 100% Job Guarantee Program terms",
+      "href": "/placements/#job-guarantee-terms",
+      "routeId": "placements"
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/investment-banking-career-path-india.png",
+    "alt": "Finance learners reviewing an investment operations workflow together",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-10-04",
+  "updatedAt": "2026-10-04",
+  "scheduledAt": null,
+  "seo": {
+    "title": "Investment Banking Operations Course | Centaur Careers",
+    "description": "Explore settlements, reconciliation, corporate actions, fund accounting, and Centaur Careers' six-week finance program with a 100% Job Guarantee.",
+    "canonicalPath": "/blog/investment-banking-operations-course-career-india/",
+    "noindex": false,
+    "focusKeyword": "investment banking operations course",
+    "secondaryKeywords": [
+      "investment banking operations career",
+      "investment banking operations training",
+      "investment operations course with placement"
+    ]
+  },
+  "tags": [
+    "Investment Banking Operations",
+    "Settlements",
+    "Reconciliation",
+    "Finance Careers",
+    "Job Guarantee"
+  ],
+  "relatedRouteIds": [
+    "courses",
+    "placements",
+    "contact"
+  ],
+  "redirects": [],
+  "evidenceNotes": [
+    "Course name, six-week duration, curriculum areas, delivery information, and 100% Job Guarantee Program wording are based on the business-owner-approved current material in src/content/sourceContent.js and the current Centaur Careers course and placements pages.",
+    "The job-guarantee statement applies to graduates and job switchers who complete the full six-week Financial Operations Masterclass. It does not promise a specific employer, title, salary, city, or start date; see /placements/#job-guarantee-terms.",
+    "Any workflow examples in this article are fictional and for learning only. No learner outcome, testimonial, placement statistic, or employer relationship is claimed."
+  ]
+}

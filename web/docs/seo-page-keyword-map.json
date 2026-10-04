@@ -7,11 +7,11 @@
     "blogKeywordMap": "src/content/seo/blogKeywordOwnership.js"
   },
   "summary": {
-    "pageCount": 205,
-    "siteRouteCount": 97,
+    "pageCount": 223,
+    "siteRouteCount": 110,
     "blogCategoryCount": 6,
-    "blogArticleCount": 102,
-    "pagesWithPrimaryKeyword": 205
+    "blogArticleCount": 107,
+    "pagesWithPrimaryKeyword": 223
   },
   "pages": [
     {
@@ -42,7 +42,7 @@
       "primaryKeyword": "finance operations career guide",
       "secondaryKeywords": [],
       "keywordPurpose": "Career-guide information cluster hub",
-      "lastModified": "2026-09-30"
+      "lastModified": "2026-10-04"
     },
     {
       "kind": "site-route",
@@ -414,7 +414,17 @@
       "primaryKeyword": "finance course with 100% job guarantee in India",
       "secondaryKeywords": [],
       "keywordPurpose": "Finance job guarantee program, placement process, and published guarantee details",
-      "lastModified": "2026-09-30"
+      "lastModified": "2026-10-04"
+    },
+    {
+      "kind": "site-route",
+      "id": "student-outcomes",
+      "path": "/placements/student-outcomes/",
+      "canonicalUrl": "https://centaurcareers.in/placements/student-outcomes/",
+      "primaryKeyword": "Centaur Careers student placements",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party learner placement profiles and individual career stories",
+      "lastModified": "2026-10-04"
     },
     {
       "kind": "site-route",
@@ -751,7 +761,7 @@
       "id": "career-guide-investment-banking-operations",
       "path": "/career-guides/investment-banking-operations/",
       "canonicalUrl": "https://centaurcareers.in/career-guides/investment-banking-operations/",
-      "primaryKeyword": "what is investment banking operations",
+      "primaryKeyword": "investment banking operations analyst",
       "secondaryKeywords": [
         "investment banking operations meaning",
         "investment banking operations explained",
@@ -801,7 +811,7 @@
       "id": "career-guide-kyc-aml-analyst",
       "path": "/career-guides/kyc-aml-analyst/",
       "canonicalUrl": "https://centaurcareers.in/career-guides/kyc-aml-analyst/",
-      "primaryKeyword": "what is KYC in banking",
+      "primaryKeyword": "KYC analyst jobs for freshers",
       "secondaryKeywords": [
         "what is AML in banking",
         "KYC and AML difference",
@@ -1096,7 +1106,7 @@
       "id": "career-guide-retail-banking-operations",
       "path": "/career-guides/retail-banking-operations/",
       "canonicalUrl": "https://centaurcareers.in/career-guides/retail-banking-operations/",
-      "primaryKeyword": "retail banking operations meaning",
+      "primaryKeyword": "retail banking operations jobs",
       "secondaryKeywords": [
         "retail banking operations process",
         "retail banking operations jobs",
@@ -1325,7 +1335,7 @@
       "id": "career-guide-custody-operations",
       "path": "/career-guides/custody-operations/",
       "canonicalUrl": "https://centaurcareers.in/career-guides/custody-operations/",
-      "primaryKeyword": "custody operations career",
+      "primaryKeyword": "custody operations analyst",
       "secondaryKeywords": [],
       "keywordPurpose": "First-party career-guide information page",
       "lastModified": "2026-09-28"
@@ -1399,6 +1409,126 @@
       "secondaryKeywords": [],
       "keywordPurpose": "First-party career-guide information page",
       "lastModified": "2026-09-28"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-corporate-actions-analyst",
+      "path": "/career-guides/corporate-actions-analyst/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/corporate-actions-analyst/",
+      "primaryKeyword": "corporate actions analyst",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-10-04"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-fund-accounting-analyst",
+      "path": "/career-guides/fund-accounting-analyst/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/fund-accounting-analyst/",
+      "primaryKeyword": "fund accounting analyst",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-10-04"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-aml-analyst",
+      "path": "/career-guides/aml-analyst/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/aml-analyst/",
+      "primaryKeyword": "AML analyst jobs for freshers",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-10-04"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-client-onboarding-analyst",
+      "path": "/career-guides/client-onboarding-analyst/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/client-onboarding-analyst/",
+      "primaryKeyword": "client onboarding analyst",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-10-04"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-payment-operations-analyst",
+      "path": "/career-guides/payment-operations-analyst/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/payment-operations-analyst/",
+      "primaryKeyword": "payment operations analyst",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-10-04"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-upi-operations-analyst",
+      "path": "/career-guides/upi-operations-analyst/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/upi-operations-analyst/",
+      "primaryKeyword": "UPI operations jobs",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-10-04"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-payment-disputes-analyst",
+      "path": "/career-guides/payment-disputes-analyst/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/payment-disputes-analyst/",
+      "primaryKeyword": "payment disputes analyst",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-10-04"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-branch-operations-analyst",
+      "path": "/career-guides/branch-operations-analyst/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/branch-operations-analyst/",
+      "primaryKeyword": "bank branch operations jobs",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-10-04"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-banking-relationship-manager",
+      "path": "/career-guides/banking-relationship-manager/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/banking-relationship-manager/",
+      "primaryKeyword": "banking relationship manager jobs",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-10-04"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-loan-processing-analyst",
+      "path": "/career-guides/loan-processing-analyst/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/loan-processing-analyst/",
+      "primaryKeyword": "loan processing analyst",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-10-04"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-nbfc-operations-analyst",
+      "path": "/career-guides/nbfc-operations-analyst/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/nbfc-operations-analyst/",
+      "primaryKeyword": "NBFC operations jobs",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-10-04"
+    },
+    {
+      "kind": "site-route",
+      "id": "career-guide-fintech-operations-analyst",
+      "path": "/career-guides/fintech-operations-analyst/",
+      "canonicalUrl": "https://centaurcareers.in/career-guides/fintech-operations-analyst/",
+      "primaryKeyword": "fintech operations analyst",
+      "secondaryKeywords": [],
+      "keywordPurpose": "First-party career-guide information page",
+      "lastModified": "2026-10-04"
     },
     {
       "kind": "site-route",
@@ -1724,7 +1854,7 @@
         "banking career blog"
       ],
       "keywordPurpose": "Published article category archive",
-      "lastModified": "2026-10-03"
+      "lastModified": "2026-10-04"
     },
     {
       "kind": "blog-category",
@@ -1738,7 +1868,7 @@
         "banking operations blog"
       ],
       "keywordPurpose": "Published article category archive",
-      "lastModified": "2026-10-03"
+      "lastModified": "2026-10-04"
     },
     {
       "kind": "blog-category",
@@ -1780,7 +1910,7 @@
         "investment banking careers"
       ],
       "keywordPurpose": "Published article category archive",
-      "lastModified": "2026-10-02"
+      "lastModified": "2026-10-04"
     },
     {
       "kind": "blog-category",
@@ -1795,6 +1925,76 @@
       ],
       "keywordPurpose": "Published article category archive",
       "lastModified": "2026-09-30"
+    },
+    {
+      "kind": "blog-article",
+      "id": "best-banking-course-with-placement-india",
+      "path": "/blog/best-banking-course-with-placement-india/",
+      "canonicalUrl": "https://centaurcareers.in/blog/best-banking-course-with-placement-india/",
+      "primaryKeyword": "best banking course with placement in India",
+      "secondaryKeywords": [
+        "banking course with job guarantee",
+        "finance course with placement in India",
+        "banking and finance course for graduates"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-10-04"
+    },
+    {
+      "kind": "blog-article",
+      "id": "best-finance-course-for-graduates-india",
+      "path": "/blog/best-finance-course-for-graduates-india/",
+      "canonicalUrl": "https://centaurcareers.in/blog/best-finance-course-for-graduates-india/",
+      "primaryKeyword": "best finance course for graduates",
+      "secondaryKeywords": [
+        "finance course after graduation",
+        "finance course with job guarantee",
+        "banking and finance career program India"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-10-04"
+    },
+    {
+      "kind": "blog-article",
+      "id": "digital-payments-operations-course-india",
+      "path": "/blog/digital-payments-operations-course-india/",
+      "canonicalUrl": "https://centaurcareers.in/blog/digital-payments-operations-course-india/",
+      "primaryKeyword": "digital payments operations course",
+      "secondaryKeywords": [
+        "digital payments course with placement",
+        "payment operations training India",
+        "UPI operations course"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-10-04"
+    },
+    {
+      "kind": "blog-article",
+      "id": "investment-banking-operations-course-career-india",
+      "path": "/blog/investment-banking-operations-course-career-india/",
+      "canonicalUrl": "https://centaurcareers.in/blog/investment-banking-operations-course-career-india/",
+      "primaryKeyword": "investment banking operations course",
+      "secondaryKeywords": [
+        "investment banking operations career",
+        "investment banking operations training",
+        "investment operations course with placement"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-10-04"
+    },
+    {
+      "kind": "blog-article",
+      "id": "kyc-aml-course-job-guarantee-india",
+      "path": "/blog/kyc-aml-course-job-guarantee-india/",
+      "canonicalUrl": "https://centaurcareers.in/blog/kyc-aml-course-job-guarantee-india/",
+      "primaryKeyword": "KYC AML course with job guarantee",
+      "secondaryKeywords": [
+        "KYC AML course India",
+        "AML analyst training",
+        "KYC compliance course with placement"
+      ],
+      "keywordPurpose": "Published first-party finance education article",
+      "lastModified": "2026-10-04"
     },
     {
       "kind": "blog-article",

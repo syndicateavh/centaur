@@ -1,14 +1,15 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Instagram, Linkedin, MessageCircle } from 'lucide-react';
+import { ChevronDown, Instagram, Linkedin, MessageCircle } from 'lucide-react';
 import { Link, useLocation } from 'react-router';
 import { BUSINESS_DATA, SOCIAL_PROFILES } from '@/content/businessData.js';
 import { HOME_COPY } from '@/content/sourceContent.js';
+import { CAREER_ROLE_NAV_GROUPS } from '@/content/careerGuides.js';
 import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-} from '@/components/ui/navigation-menu.jsx';
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu.jsx';
 import { ResponsiveImage } from '@/components/ui/responsive-image.jsx';
 import { BRAND_LOGO_SOURCES } from '@/lib/imagePresets.js';
 import {
@@ -26,7 +27,23 @@ const navLinks = [
   { to: '/courses/', label: 'Courses' },
   { to: '/blog/', label: 'Insights' },
   { to: '/resources/', label: 'Resources' },
-  { to: '/placements/', label: 'Placements' },
+  {
+    label: 'Guides',
+    children: [
+      { to: '/career-guides/', label: 'All Role Guides', featured: true },
+      ...CAREER_ROLE_NAV_GROUPS.flatMap((group) => [
+        { key: group.label, label: group.label, section: true },
+        ...group.links,
+      ]),
+    ],
+  },
+  {
+    label: 'Placements',
+    children: [
+      { to: '/placements/student-outcomes/', label: 'Student Placements' },
+      { to: '/placements/', label: '100% Job Guarantee', end: true },
+    ],
+  },
   { to: '/about/', label: 'About' },
   { to: '/contact/', label: 'Contact' },
 ];
@@ -76,39 +93,95 @@ function BrandLink({ onClick, compact = false }) {
 
 function DesktopNavigation({ pathname }) {
   return (
-    <NavigationMenu aria-label="Primary navigation" className="hidden xl:flex">
-      <NavigationMenuList className="gap-1 space-x-0">
+    <nav aria-label="Primary navigation" className="hidden xl:block">
+      <ul className="flex items-center gap-1">
         {navLinks.map((link) => {
+          if (link.children) {
+            const isActive = link.children.some((child) => child.to && isNavLinkActive(pathname, child));
+            return (
+              <li key={link.label}>
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <button
+                      type="button"
+                      aria-current={isActive ? 'page' : undefined}
+                      className={`site-nav-link group relative inline-flex h-11 items-center rounded-lg px-3 text-sm font-semibold ${isActive ? 'is-active text-primary' : 'text-foreground/70 hover:text-primary'}`}
+                    >
+                      {link.label}
+                      <ChevronDown className="ml-1 h-3.5 w-3.5 transition-transform group-data-[state=open]:rotate-180" aria-hidden="true" />
+                      <span className="site-nav-indicator" aria-hidden="true" />
+                    </button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent
+                    side="bottom"
+                    align="start"
+                    sideOffset={8}
+                    collisionPadding={12}
+                    className={`z-[60] max-h-[min(75vh,40rem)] overflow-y-auto rounded-xl border border-border bg-white p-3 shadow-xl ${link.label === 'Guides' ? 'w-[min(32rem,calc(100vw-2rem))]' : 'w-[min(18rem,calc(100vw-2rem))]'}`}
+                  >
+                    <ul className={`gap-x-3 gap-y-1 ${link.label === 'Guides' ? 'grid grid-cols-2' : 'flex flex-col'}`}>
+                      {link.children.map((child) => {
+                        if (child.section) {
+                          return <li key={child.key} className="col-span-2 px-3 pb-1 pt-3 text-xs font-bold uppercase tracking-[0.14em] text-accent-ink">{child.label}</li>;
+                        }
+                        const isChildActive = isNavLinkActive(pathname, child);
+                        return (
+                          <li key={child.to}>
+                            <DropdownMenuItem asChild className="cursor-pointer rounded-lg p-0 focus:bg-primary/5">
+                              <Link
+                                to={child.to}
+                                aria-current={isChildActive ? 'page' : undefined}
+                                className={`block rounded-lg px-3 py-2.5 text-sm font-semibold ${child.featured ? 'border border-accent/40 bg-accent/10' : ''} ${isChildActive ? 'bg-primary text-white' : 'text-primary hover:bg-primary/5'}`}
+                              >
+                                {child.label}
+                              </Link>
+                            </DropdownMenuItem>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              </li>
+            );
+          }
           const isActive = isNavLinkActive(pathname, link);
           return (
-            <NavigationMenuItem key={link.to}>
-              <NavigationMenuLink asChild active={isActive}>
-                <Link
-                  to={link.to}
-                  aria-current={isActive ? 'page' : undefined}
-                  className={`site-nav-link group relative inline-flex h-11 items-center rounded-lg px-3 text-sm font-semibold ${isActive ? 'is-active text-primary' : 'text-foreground/70 hover:text-primary'}`}
-                >
-                  {link.label}
-                  <span className="site-nav-indicator" aria-hidden="true" />
-                </Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
+            <li key={link.to}>
+              <Link
+                to={link.to}
+                aria-current={isActive ? 'page' : undefined}
+                className={`site-nav-link group relative inline-flex h-11 items-center rounded-lg px-3 text-sm font-semibold ${isActive ? 'is-active text-primary' : 'text-foreground/70 hover:text-primary'}`}
+              >
+                {link.label}
+                <span className="site-nav-indicator" aria-hidden="true" />
+              </Link>
+            </li>
           );
         })}
-      </NavigationMenuList>
-    </NavigationMenu>
+      </ul>
+    </nav>
   );
 }
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [openMobileSubmenu, setOpenMobileSubmenu] = useState(null);
   const [headerScrolled, setHeaderScrolled] = useState(false);
   const [headerHidden, setHeaderHidden] = useState(false);
   const scrollFrameRef = useRef(null);
   const lastScrollYRef = useRef(0);
   const location = useLocation();
 
-  useEffect(() => setMobileMenuOpen(false), [location.pathname]);
+  useEffect(() => {
+    setMobileMenuOpen(false);
+    setOpenMobileSubmenu(null);
+  }, [location.pathname]);
+
+  const handleMobileMenuChange = (open) => {
+    setMobileMenuOpen(open);
+    if (!open) setOpenMobileSubmenu(null);
+  };
 
   useEffect(() => {
     const updateHeaderState = () => {
@@ -174,7 +247,7 @@ export default function Header() {
             </a>
 
             <span id={mobileMenuOpen ? undefined : 'mobile-navigation'} hidden />
-            <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+            <Sheet open={mobileMenuOpen} onOpenChange={handleMobileMenuChange}>
               <SheetTrigger asChild>
                 <button type="button" aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'} aria-controls="mobile-navigation" aria-expanded={mobileMenuOpen} className="site-menu-trigger inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-control border border-primary/10 bg-primary/5 text-primary xl:hidden">
                   <MobileMenuIcon open={mobileMenuOpen} />
@@ -183,7 +256,7 @@ export default function Header() {
 
               <SheetContent closeIcon={<MobileMenuIcon open />} id="mobile-navigation" side="right" className="site-mobile-sheet flex h-dvh w-[min(92vw,26rem)] flex-col overflow-hidden border-l border-primary/10 p-0 sm:max-w-[26rem]">
                 <SheetHeader className="border-b border-border/80 px-6 pb-5 pt-[max(1.25rem,env(safe-area-inset-top))] text-left">
-                  <BrandLink compact onClick={() => setMobileMenuOpen(false)} />
+                  <BrandLink compact onClick={() => handleMobileMenuChange(false)} />
                   <SheetTitle className="sr-only">Primary navigation</SheetTitle>
                   <SheetDescription className="sr-only">{HOME_COPY.headerTraining}. {HOME_COPY.headerLocation}.</SheetDescription>
                 </SheetHeader>
@@ -192,6 +265,49 @@ export default function Header() {
                   <nav aria-label="Mobile navigation">
                     <ul className="space-y-1">
                       {navLinks.map((link, index) => {
+                        if (link.children) {
+                          const isActive = link.children.some((child) => child.to && isNavLinkActive(location.pathname, child));
+                          const submenuId = `mobile-submenu-${index}`;
+                          const submenuOpen = openMobileSubmenu === link.label;
+                          return (
+                            <li key={link.label} style={{ '--mobile-nav-index': index }} className="site-mobile-nav-item">
+                              <button
+                                type="button"
+                                aria-expanded={submenuOpen}
+                                aria-controls={submenuId}
+                                onClick={() => setOpenMobileSubmenu((open) => (open === link.label ? null : link.label))}
+                                className={`site-mobile-nav-link flex min-h-12 w-full items-center justify-between rounded-control px-4 font-display text-lg font-semibold ${isActive ? 'is-active bg-primary text-white' : 'text-primary hover:bg-primary/5'}`}
+                              >
+                                {link.label}
+                                <ChevronDown className={`h-5 w-5 transition-transform ${submenuOpen ? 'rotate-180' : ''}`} aria-hidden="true" />
+                              </button>
+                              {submenuOpen && (
+                                <ul id={submenuId} className="mt-1 space-y-1 border-l border-border pl-3">
+                                  {link.children.map((child) => {
+                                    if (child.section) {
+                                      return <li key={child.key} className="px-4 pb-1 pt-3 text-xs font-bold uppercase tracking-[0.14em] text-accent-ink">{child.label}</li>;
+                                    }
+                                    const isChildActive = isNavLinkActive(location.pathname, child);
+                                    return (
+                                      <li key={child.to}>
+                                        <SheetClose asChild>
+                                          <Link
+                                            to={child.to}
+                                            aria-current={isChildActive ? 'page' : undefined}
+                                            className={`site-mobile-nav-link flex min-h-11 items-center justify-between rounded-control px-4 text-base font-semibold ${child.featured ? 'border border-accent/40 bg-accent/10' : ''} ${isChildActive ? 'is-active bg-primary text-white' : 'text-primary hover:bg-primary/5'}`}
+                                          >
+                                            {child.label}
+                                            <span className="site-mobile-nav-marker" aria-hidden="true" />
+                                          </Link>
+                                        </SheetClose>
+                                      </li>
+                                    );
+                                  })}
+                                </ul>
+                              )}
+                            </li>
+                          );
+                        }
                         const isActive = isNavLinkActive(location.pathname, link);
                         return (
                           <li key={link.to} style={{ '--mobile-nav-index': index }} className="site-mobile-nav-item">

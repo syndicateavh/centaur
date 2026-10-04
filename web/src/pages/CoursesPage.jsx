@@ -123,7 +123,7 @@ export default function CoursesPage() {
                 </tr>
                 <tr>
                   <th scope="row" className="bg-muted/40 px-6 py-4 font-bold text-primary">Delivery Modes &amp; Published Fees</th>
-                  <td className="px-6 py-4 text-foreground/85">{LEARNING_MODES.map((mode) => `${mode.name} mode: ${mode.price} (reference fee ${mode.originalPrice})`).join(' | ')}. Confirm the applicable cohort fee and validity with Centaur Careers.</td>
+                  <td className="px-6 py-4 text-foreground/85">Online: {LEARNING_MODES.find((mode) => mode.name === 'Online')?.price}; Offline: {LEARNING_MODES.find((mode) => mode.name === 'Offline')?.price}. Confirm the applicable cohort fee and validity with Centaur Careers.</td>
                 </tr>
                 <tr>
                   <th scope="row" className="bg-muted/40 px-6 py-4 font-bold text-primary">Core Curriculum Modules</th>
@@ -241,7 +241,7 @@ export default function CoursesPage() {
                 <div className="mt-4 flex items-baseline gap-3">
                   <span className="text-4xl font-extrabold text-primary">{mode.price}</span>
                 </div>
-                <p className="mt-2 text-sm text-muted-foreground">Reference fee: {mode.originalPrice}. {mode.note} Confirm the total payable amount and cohort terms in writing before paying.</p>
+                <p className="mt-2 text-sm text-muted-foreground">{mode.note} Confirm the total payable amount and cohort terms in writing before paying.</p>
                 <p className="mt-3 text-muted-foreground">{mode.summary}</p>
                 <ul className="mt-6 space-y-3">
               {mode.features.map((feature) => <li key={feature} className="flex items-start gap-3 text-sm text-foreground/75"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-accent-ink" aria-hidden="true" />{feature}</li>)}

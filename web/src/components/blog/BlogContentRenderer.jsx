@@ -36,7 +36,7 @@ function ContentLink({ block }) {
   return <a href={href} target="_blank" rel="noopener noreferrer" className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">{block.label}</a>;
 }
 
-export default function BlogContentRenderer({ blocks = [], imageSizes = '(min-width: 1024px) 896px, 100vw' }) {
+export default function BlogContentRenderer({ blocks = [], imageSizes = '(min-width: 1024px) 896px, 100vw', roleHeadingSupport = null }) {
   return (
     <div className="prose-readable space-y-7 text-base leading-relaxed text-foreground/85">
       {blocks.map((block, index) => {
@@ -47,9 +47,21 @@ export default function BlogContentRenderer({ blocks = [], imageSizes = '(min-wi
           return <section key={`faq-group-${index}`} aria-label="Frequently asked questions" className="rounded-2xl border border-border bg-muted/40 px-5 sm:px-6"><dl className="divide-y divide-border">{questions.map((faq, faqIndex) => <div key={`faq-${faqIndex}`} className="py-5 first:pt-5 last:pb-5"><dt className="text-lg font-bold leading-snug text-primary">{faq.question}</dt><dd className="mt-2 leading-relaxed">{faq.answer}</dd></div>)}</dl></section>;
         }
         if (block.type === BLOG_BLOCK_TYPES.HEADING) {
-          return block.level === 3
-            ? <h3 id={getBlogHeadingId(block.text, index)} key={index} className="scroll-mt-24 pt-3 text-xl font-bold text-primary sm:text-2xl">{block.text}</h3>
-            : <h2 id={getBlogHeadingId(block.text, index)} key={index} className="scroll-mt-24 border-l-4 border-accent-ink pl-4 pt-4 text-2xl font-bold leading-tight text-primary sm:text-[1.75rem]">{block.text}</h2>;
+          const headingId = getBlogHeadingId(block.text, index);
+          const supportId = `${headingId}-course-support`;
+          return (
+            <React.Fragment key={index}>
+              {block.level === 3
+                ? <h3 id={headingId} aria-describedby={roleHeadingSupport ? supportId : undefined} className="scroll-mt-24 pt-3 text-xl font-bold text-primary sm:text-2xl">{block.text}</h3>
+                : <h2 id={headingId} aria-describedby={roleHeadingSupport ? supportId : undefined} className="scroll-mt-24 border-l-4 border-accent-ink pl-4 pt-4 text-2xl font-bold leading-tight text-primary sm:text-[1.75rem]">{block.text}</h2>}
+              {roleHeadingSupport && (
+                <p id={supportId} data-role-heading-promotion className="-mt-4 rounded-lg border-l-2 border-accent-ink bg-muted/50 px-4 py-3 text-sm leading-relaxed text-muted-foreground">
+                  Preparing for <strong className="text-primary">{roleHeadingSupport.roleLabel} jobs</strong>? Centaur Careers’ best-in-industry {roleHeadingSupport.courseName} includes a 100% Job Guarantee for a finance job after course completion; it does not guarantee this exact role, employer, salary, or city.{' '}
+                  <Link to={roleHeadingSupport.termsPath} className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">Read the terms</Link>.
+                </p>
+              )}
+            </React.Fragment>
+          );
         }
         if (block.type === BLOG_BLOCK_TYPES.LIST) {
           const List = block.ordered ? 'ol' : 'ul';

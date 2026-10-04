@@ -6,15 +6,15 @@
     "src/seo/seoRoutes.js"
   ],
   "summary": {
-    "indexableNodeCount": 97,
-    "hubCount": 11,
-    "requiredHubEdgeCount": 151,
+    "indexableNodeCount": 110,
+    "hubCount": 12,
+    "requiredHubEdgeCount": 168,
     "reciprocalGroupCount": 6,
     "authorityTargetCount": 12,
     "authorityJourneyCount": 13,
     "keywordDestinationCount": 24,
     "discoveryRootCount": 5,
-    "discoveryReachableNodeCount": 97,
+    "discoveryReachableNodeCount": 110,
     "discoveryUnreachableNodeCount": 0,
     "discoveryReachableKeywordDestinationCount": 24,
     "discoveryUnreachableKeywordDestinationCount": 0
@@ -100,6 +100,18 @@
       "career-guide-settlement-analyst",
       "career-guide-finance-learning-roadmap",
       "career-guide-operations-analyst-banking",
+      "career-guide-corporate-actions-analyst",
+      "career-guide-fund-accounting-analyst",
+      "career-guide-aml-analyst",
+      "career-guide-client-onboarding-analyst",
+      "career-guide-payment-operations-analyst",
+      "career-guide-upi-operations-analyst",
+      "career-guide-payment-disputes-analyst",
+      "career-guide-branch-operations-analyst",
+      "career-guide-banking-relationship-manager",
+      "career-guide-loan-processing-analyst",
+      "career-guide-nbfc-operations-analyst",
+      "career-guide-fintech-operations-analyst",
       "resource-accounting-basics",
       "resource-accounting-interview-questions",
       "resource-reconciliation-in-finance",
@@ -116,6 +128,7 @@
       "india-pune",
       "india-hyderabad",
       "lead-banking-finance-course-placement",
+      "student-outcomes",
       "lead-finance-course-placement",
       "lead-finance-course-job-guarantee",
       "about",
@@ -225,7 +238,19 @@
         "career-guide-back-office-banking-jobs",
         "career-guide-settlement-analyst",
         "career-guide-finance-learning-roadmap",
-        "career-guide-operations-analyst-banking"
+        "career-guide-operations-analyst-banking",
+        "career-guide-corporate-actions-analyst",
+        "career-guide-fund-accounting-analyst",
+        "career-guide-aml-analyst",
+        "career-guide-client-onboarding-analyst",
+        "career-guide-payment-operations-analyst",
+        "career-guide-upi-operations-analyst",
+        "career-guide-payment-disputes-analyst",
+        "career-guide-branch-operations-analyst",
+        "career-guide-banking-relationship-manager",
+        "career-guide-loan-processing-analyst",
+        "career-guide-nbfc-operations-analyst",
+        "career-guide-fintech-operations-analyst"
       ]
     },
     {
@@ -303,11 +328,22 @@
       "routeId": "placements",
       "role": "commercial-support-hub",
       "requiredTargetIds": [
+        "student-outcomes",
         "courses",
         "career-guides",
         "resources",
         "india",
         "faqs",
+        "contact"
+      ]
+    },
+    {
+      "routeId": "student-outcomes",
+      "role": "learner-outcomes-collection",
+      "requiredTargetIds": [
+        "placements",
+        "courses",
+        "about",
         "contact"
       ]
     },
@@ -591,6 +627,14 @@
       "indexable": true
     },
     {
+      "routeId": "student-outcomes",
+      "path": "/placements/student-outcomes/",
+      "parentId": "home",
+      "role": "learner-outcomes-collection",
+      "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
       "routeId": "about",
       "path": "/about/",
       "parentId": "home",
@@ -795,7 +839,7 @@
       "path": "/career-guides/reconciliation-analyst/",
       "parentId": "career-guides",
       "role": "career-guide",
-      "keywordOwnerUrl": null,
+      "keywordOwnerUrl": "/career-guides/reconciliation-analyst/",
       "indexable": true
     },
     {
@@ -859,7 +903,7 @@
       "path": "/career-guides/custody-operations/",
       "parentId": "career-guides",
       "role": "career-guide",
-      "keywordOwnerUrl": null,
+      "keywordOwnerUrl": "/career-guides/custody-operations/",
       "indexable": true
     },
     {
@@ -867,7 +911,7 @@
       "path": "/career-guides/credit-operations-analyst/",
       "parentId": "career-guides",
       "role": "career-guide",
-      "keywordOwnerUrl": null,
+      "keywordOwnerUrl": "/career-guides/credit-operations-analyst/",
       "indexable": true
     },
     {
@@ -875,7 +919,7 @@
       "path": "/career-guides/transaction-monitoring-analyst/",
       "parentId": "career-guides",
       "role": "career-guide",
-      "keywordOwnerUrl": null,
+      "keywordOwnerUrl": "/career-guides/transaction-monitoring-analyst/",
       "indexable": true
     },
     {
@@ -899,7 +943,7 @@
       "path": "/career-guides/settlement-analyst/",
       "parentId": "career-guides",
       "role": "career-guide",
-      "keywordOwnerUrl": null,
+      "keywordOwnerUrl": "/career-guides/settlement-analyst/",
       "indexable": true
     },
     {
@@ -916,6 +960,102 @@
       "parentId": "career-guides",
       "role": "career-guide",
       "keywordOwnerUrl": null,
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-corporate-actions-analyst",
+      "path": "/career-guides/corporate-actions-analyst/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": "/career-guides/corporate-actions-analyst/",
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-fund-accounting-analyst",
+      "path": "/career-guides/fund-accounting-analyst/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": "/career-guides/fund-accounting-analyst/",
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-aml-analyst",
+      "path": "/career-guides/aml-analyst/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": "/career-guides/aml-analyst/",
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-client-onboarding-analyst",
+      "path": "/career-guides/client-onboarding-analyst/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": "/career-guides/client-onboarding-analyst/",
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-payment-operations-analyst",
+      "path": "/career-guides/payment-operations-analyst/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": "/career-guides/payment-operations-analyst/",
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-upi-operations-analyst",
+      "path": "/career-guides/upi-operations-analyst/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": "/career-guides/upi-operations-analyst/",
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-payment-disputes-analyst",
+      "path": "/career-guides/payment-disputes-analyst/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": "/career-guides/payment-disputes-analyst/",
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-branch-operations-analyst",
+      "path": "/career-guides/branch-operations-analyst/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": "/career-guides/branch-operations-analyst/",
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-banking-relationship-manager",
+      "path": "/career-guides/banking-relationship-manager/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": "/career-guides/banking-relationship-manager/",
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-loan-processing-analyst",
+      "path": "/career-guides/loan-processing-analyst/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": "/career-guides/loan-processing-analyst/",
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-nbfc-operations-analyst",
+      "path": "/career-guides/nbfc-operations-analyst/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": "/career-guides/nbfc-operations-analyst/",
+      "indexable": true
+    },
+    {
+      "routeId": "career-guide-fintech-operations-analyst",
+      "path": "/career-guides/fintech-operations-analyst/",
+      "parentId": "career-guides",
+      "role": "career-guide",
+      "keywordOwnerUrl": "/career-guides/fintech-operations-analyst/",
       "indexable": true
     },
     {
@@ -1320,6 +1460,54 @@
         {
           "sourceId": "career-guides",
           "targetId": "career-guide-operations-analyst-banking"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-corporate-actions-analyst"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-fund-accounting-analyst"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-aml-analyst"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-client-onboarding-analyst"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-payment-operations-analyst"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-upi-operations-analyst"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-payment-disputes-analyst"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-branch-operations-analyst"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-banking-relationship-manager"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-loan-processing-analyst"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-nbfc-operations-analyst"
+        },
+        {
+          "sourceId": "career-guides",
+          "targetId": "career-guide-fintech-operations-analyst"
         }
       ],
       "reciprocal": true
@@ -2112,6 +2300,18 @@
       "career-guide-settlement-analyst",
       "career-guide-finance-learning-roadmap",
       "career-guide-operations-analyst-banking",
+      "career-guide-corporate-actions-analyst",
+      "career-guide-fund-accounting-analyst",
+      "career-guide-aml-analyst",
+      "career-guide-client-onboarding-analyst",
+      "career-guide-payment-operations-analyst",
+      "career-guide-upi-operations-analyst",
+      "career-guide-payment-disputes-analyst",
+      "career-guide-branch-operations-analyst",
+      "career-guide-banking-relationship-manager",
+      "career-guide-loan-processing-analyst",
+      "career-guide-nbfc-operations-analyst",
+      "career-guide-fintech-operations-analyst",
       "resource-investment-banking-interview-questions"
     ],
     "resources": [
@@ -2286,6 +2486,7 @@
       "contact"
     ],
     "placements": [
+      "student-outcomes",
       "courses",
       "career-guides",
       "resources",
@@ -2295,6 +2496,12 @@
       "lead-finance-course-job-guarantee",
       "about",
       "faqs",
+      "contact"
+    ],
+    "student-outcomes": [
+      "placements",
+      "courses",
+      "about",
       "contact"
     ],
     "about": [
@@ -3183,6 +3390,109 @@
       "comparison-best-finance-institutes-india",
       "courses",
       "contact"
+    ],
+    "career-guide-corporate-actions-analyst": [
+      "career-guides",
+      "courses",
+      "investment-banking-operations",
+      "career-guide-investment-banking-operations",
+      "career-guide-custody-operations",
+      "resource-corporate-actions-workflow",
+      "placements"
+    ],
+    "career-guide-fund-accounting-analyst": [
+      "career-guides",
+      "courses",
+      "investment-banking-operations",
+      "career-guide-reconciliation-analyst",
+      "career-guide-custody-operations",
+      "placements"
+    ],
+    "career-guide-aml-analyst": [
+      "career-guides",
+      "courses",
+      "kyc-aml-compliance",
+      "career-guide-kyc-aml-analyst",
+      "career-guide-transaction-monitoring-analyst",
+      "career-guide-risk-operations-analyst",
+      "placements"
+    ],
+    "career-guide-client-onboarding-analyst": [
+      "career-guides",
+      "courses",
+      "kyc-aml-compliance",
+      "career-guide-kyc-aml-analyst",
+      "career-guide-retail-banking-operations",
+      "placements"
+    ],
+    "career-guide-payment-operations-analyst": [
+      "career-guides",
+      "courses",
+      "digital-payments",
+      "career-guide-digital-payments-operations",
+      "career-guide-fintech-operations",
+      "career-guide-reconciliation-analyst",
+      "placements"
+    ],
+    "career-guide-upi-operations-analyst": [
+      "career-guides",
+      "courses",
+      "digital-payments",
+      "career-guide-digital-payments-operations",
+      "career-guide-payment-operations-analyst",
+      "career-guide-fintech-operations",
+      "placements"
+    ],
+    "career-guide-payment-disputes-analyst": [
+      "career-guides",
+      "courses",
+      "digital-payments",
+      "career-guide-digital-payments-operations",
+      "career-guide-payment-operations-analyst",
+      "career-guide-reconciliation-analyst",
+      "placements"
+    ],
+    "career-guide-branch-operations-analyst": [
+      "career-guides",
+      "courses",
+      "retail-banking",
+      "career-guide-retail-banking-operations",
+      "career-guide-operations-analyst-banking",
+      "placements"
+    ],
+    "career-guide-banking-relationship-manager": [
+      "career-guides",
+      "courses",
+      "retail-banking",
+      "career-guide-retail-banking-operations",
+      "career-guide-branch-operations-analyst",
+      "placements"
+    ],
+    "career-guide-loan-processing-analyst": [
+      "career-guides",
+      "courses",
+      "finance-operations",
+      "career-guide-credit-operations-analyst",
+      "career-guide-credit-analyst",
+      "career-guide-nbfc-operations-analyst",
+      "placements"
+    ],
+    "career-guide-nbfc-operations-analyst": [
+      "career-guides",
+      "courses",
+      "finance-operations",
+      "career-guide-loan-processing-analyst",
+      "career-guide-credit-operations-analyst",
+      "placements"
+    ],
+    "career-guide-fintech-operations-analyst": [
+      "career-guides",
+      "courses",
+      "digital-payments",
+      "career-guide-payment-operations-analyst",
+      "career-guide-digital-payments-operations",
+      "career-guide-fintech-operations",
+      "placements"
     ]
   }
 }

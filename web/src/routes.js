@@ -15,6 +15,7 @@ const routeModules = Object.freeze({
   'digital-payments': 'routes/digital-payments.jsx',
   'fintech-neo-banking': 'routes/fintech-neo-banking.jsx',
   placements: 'routes/placements.jsx',
+  'student-outcomes': 'routes/student-outcomes.jsx',
   about: 'routes/about.jsx',
   contact: 'routes/contact.jsx',
   'privacy-policy': 'routes/privacy-policy.jsx',
@@ -103,7 +104,9 @@ const routeModules = Object.freeze({
 });
 
 const publicRoutes = SEO_ROUTES.map((seoRoute) => {
-  const moduleFile = routeModules[seoRoute.id];
+  const moduleFile = routeModules[seoRoute.id]
+    || (seoRoute.careerGuideId ? 'routes/career-guide-role.jsx' : null);
+  const usesSharedCareerGuideRoute = !routeModules[seoRoute.id] && Boolean(seoRoute.careerGuideId);
   if (!moduleFile) {
     throw new Error(`No route module is registered for SEO route: ${seoRoute.id}`);
   }
@@ -112,7 +115,9 @@ const publicRoutes = SEO_ROUTES.map((seoRoute) => {
     return index(moduleFile);
   }
 
-  return route(seoRoute.path.slice(1, -1), moduleFile);
+  return usesSharedCareerGuideRoute
+    ? route(seoRoute.path.slice(1, -1), moduleFile, { id: seoRoute.id })
+    : route(seoRoute.path.slice(1, -1), moduleFile);
 });
 
 export default [

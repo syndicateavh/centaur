@@ -22,6 +22,12 @@ const AUTHOR = Object.freeze({
 });
 
 const PUBLISHED_AT = '2026-09-27';
+const NEW_ROLE_GUIDE_DATE = '2026-10-04';
+const NEW_ROLE_GUIDE_IDS = new Set([
+  'corporate-actions-analyst', 'fund-accounting-analyst', 'aml-analyst', 'client-onboarding-analyst',
+  'payment-operations-analyst', 'upi-operations-analyst', 'payment-disputes-analyst',
+  'branch-operations-analyst', 'banking-relationship-manager', 'loan-processing-analyst', 'nbfc-operations-analyst', 'fintech-operations-analyst',
+]);
 
 const paragraph = (text) => ({ type: BLOG_BLOCK_TYPES.PARAGRAPH, text });
 const heading = (text, level = 2) => ({ type: BLOG_BLOCK_TYPES.HEADING, level, text });
@@ -576,10 +582,10 @@ function guide(data) {
     keywordOwnerUrl: data.keywordOwnerUrl ?? null,
     ...imageDimensions(data.image),
     author: AUTHOR,
-    publishedAt: PUBLISHED_AT,
+    publishedAt: NEW_ROLE_GUIDE_IDS.has(data.id) ? NEW_ROLE_GUIDE_DATE : PUBLISHED_AT,
     updatedAt: JOB_INTENT_GUIDE_IDS.includes(data.id)
       ? JOB_INTENT_REVIEW_DATE
-      : (data.updatedAt || (NEXT_CAREER_DEPTH_BLOCKS[data.id] ? '2026-09-28' : PUBLISHED_AT)),
+      : (NEW_ROLE_GUIDE_IDS.has(data.id) ? NEW_ROLE_GUIDE_DATE : (data.updatedAt || (NEXT_CAREER_DEPTH_BLOCKS[data.id] ? '2026-09-28' : PUBLISHED_AT))),
     secondaryKeywords: Object.freeze(data.secondaryKeywords),
     body: Object.freeze([
       ...appendBeforeCommonQuestions(body, NEXT_CAREER_DEPTH_BLOCKS[data.id]),

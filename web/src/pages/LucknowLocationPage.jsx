@@ -79,7 +79,7 @@ export default function LucknowLocationPage() {
             <h2 className="mt-5 text-2xl font-bold text-white">{offline.summary}</h2>
             <p className="mt-3 text-sm font-semibold text-white/75">Current published fee</p>
             <p className="mt-3 text-3xl font-black text-accent">{offline.price}</p>
-            <p className="mt-2 text-white/70">Reference fee: {offline.originalPrice}. {offline.note} Confirm the current classroom cohort and total payable amount in writing before paying.</p>
+            <p className="mt-2 text-white/70">{offline.note} Confirm the current classroom cohort and total payable amount in writing before paying.</p>
             <ul className="mt-6 space-y-3">
               {offline.features.map((feature) => (
                 <li key={feature} className="flex items-start gap-3 text-sm text-white/75">

@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "id": "kyc-aml-course-job-guarantee-india",
+  "slug": "kyc-aml-course-job-guarantee-india",
+  "status": "published",
+  "title": "KYC and AML Course with a 100% Job Guarantee",
+  "excerpt": "Explore KYC and AML analyst workflows and Centaur Careers' six-week Masterclass, where compliance is part of a full finance job-guarantee program.",
+  "category": "finance-operations",
+  "author": {
+    "id": "bharat-singh",
+    "name": "Bharat Singh",
+    "role": "Founder & Director",
+    "profilePath": "/about/"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "KYC and AML teams help financial institutions understand customer risk, review activity, record evidence, and escalate concerns through approved processes. Centaur Careers includes KYC and AML compliance in its six-week Financial Operations Masterclass, alongside banking, payments, finance operations, and FinTech. We believe this makes Centaur Careers one of the best choices in the finance training industry for graduates and job switchers who want to explore compliance careers."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What will you learn about KYC and AML work?"
+    },
+    {
+      "type": "paragraph",
+      "text": "KYC, or Know Your Customer, introduces the work of understanding a customer relationship and maintaining relevant information. AML refers to broader controls for identifying and escalating money-laundering risk. In an entry-level workflow, a learner may encounter customer due diligence, document checks, risk indicators, transaction-monitoring alerts, case notes, and escalation steps. Actual procedures depend on the employer, product, and current rules."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Centaur Careers curriculum introduces due diligence, transaction monitoring, SAR filing concepts, and regulatory reporting as learning topics. Learners should understand the vocabulary, practise organising evidence, and learn to follow procedures; training content is not a substitute for an employer's approved process or current regulatory guidance."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A fictional case-review exercise"
+    },
+    {
+      "type": "paragraph",
+      "text": "Consider a fictional onboarding file with an incomplete address, two records that use different spellings of a name, and a document that needs a clearer source. A careful learner lists what is known, records each source, identifies what is missing, and writes a neutral follow-up question. The learner does not infer wrongdoing from an inconsistency alone. A decision is escalated through the appropriate process when information or authority is missing."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why choose Centaur Careers'"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Study KYC and AML within a six-week finance operations program, rather than as an isolated vocabulary list.",
+        "Explore related subjects including retail banking, digital payments, investment banking operations, and FinTech.",
+        "Practise workflow thinking through the course's practical scenarios, projects, and case studies.",
+        "Access the 100% Job Guarantee Program as a graduate or job switcher who completes the full Masterclass."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "We designed the Financial Operations Masterclass to be one of the best finance-career programs in the industry for learners who want to compare related operational roles and build a foundation before applying. Check the syllabus, cohort schedule, fees, and current terms so the program fits your goals."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "KYC and AML training with a finance job guarantee"
+    },
+    {
+      "type": "paragraph",
+      "text": "Centaur Careers guarantees a finance job to graduates and job switchers who complete the full six-week Financial Operations Masterclass through its 100% Job Guarantee Program. The guarantee applies to the full program, not a separate module or a promised job title. Read the current written terms before enrolling."
+    },
+    {
+      "type": "paragraph",
+      "text": "The guarantee covers a finance job under the program terms. It does not promise a specific KYC analyst, AML analyst, compliance, financial-crime, employer, salary, city, or start date. Read the complete terms before enrolling."
+    },
+    {
+      "type": "faq",
+      "question": "Does this guarantee a KYC or AML analyst job?",
+      "answer": "The program guarantees a finance job for graduates and job switchers who complete the full six-week Masterclass, subject to the written terms. It does not promise a specific KYC, AML, compliance, or financial-crime role."
+    },
+    {
+      "type": "faq",
+      "question": "Can a graduate with no finance background apply?",
+      "answer": "The Masterclass is for graduates and job switchers; prior finance experience is not required in the published program description. Check the current course and cohort details before applying."
+    },
+    {
+      "type": "link",
+      "label": "See the KYC and AML learning areas in the Masterclass",
+      "href": "/courses/",
+      "routeId": "courses"
+    },
+    {
+      "type": "link",
+      "label": "Read the full 100% Job Guarantee Program terms",
+      "href": "/placements/#job-guarantee-terms",
+      "routeId": "placements"
+    }
+  ],
+  "coverImage": {
+    "src": "/images/blog/kyc-aml-course-india-guide.jpg",
+    "alt": "Learners reviewing a fictional KYC case file and compliance workflow",
+    "width": 1672,
+    "height": 941
+  },
+  "publishedAt": "2026-10-04",
+  "updatedAt": "2026-10-04",
+  "scheduledAt": null,
+  "seo": {
+    "title": "KYC and AML Course with Job Guarantee | Centaur",
+    "description": "Learn about KYC, due diligence, monitoring, and compliance operations in Centaur Careers' six-week Masterclass and 100% Job Guarantee Program.",
+    "canonicalPath": "/blog/kyc-aml-course-job-guarantee-india/",
+    "noindex": false,
+    "focusKeyword": "KYC AML course with job guarantee",
+    "secondaryKeywords": [
+      "KYC AML course India",
+      "AML analyst training",
+      "KYC compliance course with placement"
+    ]
+  },
+  "tags": [
+    "KYC",
+    "AML",
+    "Compliance Careers",
+    "Finance Course",
+    "Job Guarantee"
+  ],
+  "relatedRouteIds": [
+    "courses",
+    "placements",
+    "contact"
+  ],
+  "redirects": [],
+  "evidenceNotes": [
+    "Course name, six-week duration, curriculum areas, delivery information, and 100% Job Guarantee Program wording are based on the business-owner-approved current material in src/content/sourceContent.js and the current Centaur Careers course and placements pages.",
+    "The job-guarantee statement applies to graduates and job switchers who complete the full six-week Financial Operations Masterclass. It does not promise a specific employer, title, salary, city, or start date; see /placements/#job-guarantee-terms.",
+    "Any workflow examples in this article are fictional and for learning only. No learner outcome, testimonial, placement statistic, or employer relationship is claimed.",
+    "Compliance examples are fictional and educational. Readers should consult current primary regulatory sources and employer procedures for operational requirements."
+  ]
+}

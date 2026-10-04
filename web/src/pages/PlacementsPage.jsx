@@ -83,7 +83,7 @@ export default function PlacementsPage() {
     <>
       <PageHero
         routeId="placements"
-        eyebrow="Your finance career pathway"
+        eyebrow="100% Job Guarantee Program"
         title={seo.h1}
         intro="Complete our six-week finance program and get a finance job. Centaur Careers’ 100% Job Guarantee Program is open to graduates and job switchers across India."
         sideContent={(
@@ -114,6 +114,9 @@ export default function PlacementsPage() {
           </a>
           <Link to="/courses/" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-white/25 bg-white/10 px-6 py-3 font-bold text-white transition hover:bg-white/15">
             Explore the six-week program <ArrowRight className="h-4 w-4" aria-hidden="true" />
+          </Link>
+          <Link to="/placements/student-outcomes/" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-white/25 px-6 py-3 font-bold text-white transition hover:bg-white/10">
+            See student placements <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </Link>
         </div>
       </PageHero>

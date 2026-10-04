@@ -108,7 +108,7 @@ export default function IndiaPage() {
                 <div className="mt-3 flex items-baseline gap-3">
                   <span className="text-3xl font-extrabold text-primary">{mode.price}</span>
                 </div>
-                <p className="mt-2 text-sm text-muted-foreground">Reference fee: {mode.originalPrice}. {mode.note} Confirm the total payable amount and written cohort terms before paying.</p>
+                <p className="mt-2 text-sm text-muted-foreground">{mode.note} Confirm the total payable amount and written cohort terms before paying.</p>
                 <p className="mt-3 text-muted-foreground">{mode.name === 'Online'
                   ? 'The live online route is available across India.'
                   : 'The offline route is the published in-person learning option at Mindsprout Career Hub, Lucknow.'}</p>

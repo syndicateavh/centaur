@@ -291,8 +291,23 @@
             "label": "Financial Operations Masterclass"
           },
           {
+            "routeId": "career-guide-aml-analyst",
+            "path": "/career-guides/aml-analyst/",
+            "label": "Financial Operations Masterclass"
+          },
+          {
             "routeId": "career-guide-back-office-banking-jobs",
             "path": "/career-guides/back-office-banking-jobs/",
+            "label": "Financial Operations Masterclass"
+          },
+          {
+            "routeId": "career-guide-banking-relationship-manager",
+            "path": "/career-guides/banking-relationship-manager/",
+            "label": "Financial Operations Masterclass"
+          },
+          {
+            "routeId": "career-guide-branch-operations-analyst",
+            "path": "/career-guides/branch-operations-analyst/",
             "label": "Financial Operations Masterclass"
           },
           {
@@ -303,6 +318,16 @@
           {
             "routeId": "career-guide-choosing-finance-career-course",
             "path": "/career-guides/choosing-finance-career-course/",
+            "label": "Financial Operations Masterclass"
+          },
+          {
+            "routeId": "career-guide-client-onboarding-analyst",
+            "path": "/career-guides/client-onboarding-analyst/",
+            "label": "Financial Operations Masterclass"
+          },
+          {
+            "routeId": "career-guide-corporate-actions-analyst",
+            "path": "/career-guides/corporate-actions-analyst/",
             "label": "Financial Operations Masterclass"
           },
           {
@@ -346,8 +371,18 @@
             "label": "Financial Operations Masterclass"
           },
           {
+            "routeId": "career-guide-fintech-operations-analyst",
+            "path": "/career-guides/fintech-operations-analyst/",
+            "label": "Financial Operations Masterclass"
+          },
+          {
             "routeId": "career-guide-fintech-operations",
             "path": "/career-guides/fintech-operations/",
+            "label": "Financial Operations Masterclass"
+          },
+          {
+            "routeId": "career-guide-fund-accounting-analyst",
+            "path": "/career-guides/fund-accounting-analyst/",
             "label": "Financial Operations Masterclass"
           },
           {
@@ -366,13 +401,33 @@
             "label": "Financial Operations Masterclass"
           },
           {
+            "routeId": "career-guide-loan-processing-analyst",
+            "path": "/career-guides/loan-processing-analyst/",
+            "label": "Financial Operations Masterclass"
+          },
+          {
             "routeId": "career-guide-middle-office-operations",
             "path": "/career-guides/middle-office-operations/",
             "label": "Financial Operations Masterclass"
           },
           {
+            "routeId": "career-guide-nbfc-operations-analyst",
+            "path": "/career-guides/nbfc-operations-analyst/",
+            "label": "Financial Operations Masterclass"
+          },
+          {
             "routeId": "career-guide-operations-analyst-banking",
             "path": "/career-guides/operations-analyst-banking/",
+            "label": "Financial Operations Masterclass"
+          },
+          {
+            "routeId": "career-guide-payment-disputes-analyst",
+            "path": "/career-guides/payment-disputes-analyst/",
+            "label": "Financial Operations Masterclass"
+          },
+          {
+            "routeId": "career-guide-payment-operations-analyst",
+            "path": "/career-guides/payment-operations-analyst/",
             "label": "Financial Operations Masterclass"
           },
           {
@@ -413,6 +468,11 @@
           {
             "routeId": "career-guide-transaction-monitoring-analyst",
             "path": "/career-guides/transaction-monitoring-analyst/",
+            "label": "Financial Operations Masterclass"
+          },
+          {
+            "routeId": "career-guide-upi-operations-analyst",
+            "path": "/career-guides/upi-operations-analyst/",
             "label": "Financial Operations Masterclass"
           },
           {
@@ -613,6 +673,11 @@
           {
             "routeId": "placements",
             "path": "/placements/",
+            "label": "Financial Operations Masterclass"
+          },
+          {
+            "routeId": "student-outcomes",
+            "path": "/placements/student-outcomes/",
             "label": "Financial Operations Masterclass"
           },
           {
@@ -817,7 +882,7 @@
           {
             "routeId": "career-guides",
             "path": "/career-guides/",
-            "label": "Finance Operations Career Guides",
+            "label": "Banking and Finance Career Guides",
             "authorityTier": "information-hub"
           },
           {
@@ -965,7 +1030,7 @@
             "authorityTier": "supporting"
           }
         ],
-        "inboundCount": 92,
+        "inboundCount": 105,
         "outboundCount": 42,
         "orphan": false
       },
@@ -1144,7 +1209,7 @@
           {
             "routeId": "career-guides",
             "path": "/career-guides/",
-            "label": "Finance Operations Career Guides",
+            "label": "Banking and Finance Career Guides",
             "authorityTier": "information-hub"
           },
           {
@@ -1281,6 +1346,16 @@
       "internalLinks": {
         "inbound": [
           {
+            "routeId": "career-guide-aml-analyst",
+            "path": "/career-guides/aml-analyst/",
+            "label": "KYC & AML Compliance Learning Module"
+          },
+          {
+            "routeId": "career-guide-client-onboarding-analyst",
+            "path": "/career-guides/client-onboarding-analyst/",
+            "label": "KYC & AML Compliance Learning Module"
+          },
+          {
             "routeId": "career-guide-kyc-aml-analyst",
             "path": "/career-guides/kyc-aml-analyst/",
             "label": "KYC & AML Compliance Learning Module"
@@ -1367,7 +1442,7 @@
             "authorityTier": "supporting"
           }
         ],
-        "inboundCount": 6,
+        "inboundCount": 8,
         "outboundCount": 9,
         "orphan": false
       },
@@ -1932,7 +2007,7 @@
           {
             "routeId": "career-guides",
             "path": "/career-guides/",
-            "label": "Finance Operations Career Guides",
+            "label": "Banking and Finance Career Guides",
             "authorityTier": "information-hub"
           },
           {
@@ -2170,7 +2245,7 @@
           {
             "routeId": "career-guides",
             "path": "/career-guides/",
-            "label": "Finance Operations Career Guides",
+            "label": "Banking and Finance Career Guides",
             "authorityTier": "information-hub"
           },
           {
@@ -2403,7 +2478,7 @@
           {
             "routeId": "career-guides",
             "path": "/career-guides/",
-            "label": "Finance Operations Career Guides",
+            "label": "Banking and Finance Career Guides",
             "authorityTier": "information-hub"
           },
           {
@@ -2596,7 +2671,7 @@
           {
             "routeId": "career-guides",
             "path": "/career-guides/",
-            "label": "Finance Operations Career Guides",
+            "label": "Banking and Finance Career Guides",
             "authorityTier": "information-hub"
           },
           {
@@ -2779,7 +2854,7 @@
           {
             "routeId": "career-guides",
             "path": "/career-guides/",
-            "label": "Finance Operations Career Guides",
+            "label": "Banking and Finance Career Guides",
             "authorityTier": "information-hub"
           },
           {
@@ -2941,7 +3016,7 @@
           {
             "routeId": "career-guides",
             "path": "/career-guides/",
-            "label": "Finance Operations Career Guides",
+            "label": "Banking and Finance Career Guides",
             "authorityTier": "information-hub"
           },
           {
@@ -3091,7 +3166,7 @@
           {
             "routeId": "career-guides",
             "path": "/career-guides/",
-            "label": "Finance Operations Career Guides",
+            "label": "Banking and Finance Career Guides",
             "authorityTier": "information-hub"
           },
           {
@@ -3435,7 +3510,7 @@
           {
             "routeId": "career-guides",
             "path": "/career-guides/",
-            "label": "Finance Operations Career Guides",
+            "label": "Banking and Finance Career Guides",
             "authorityTier": "information-hub"
           },
           {
@@ -3770,7 +3845,7 @@
           {
             "routeId": "career-guides",
             "path": "/career-guides/",
-            "label": "Finance Operations Career Guides",
+            "label": "Banking and Finance Career Guides",
             "authorityTier": "information-hub"
           },
           {
@@ -3857,8 +3932,8 @@
       "canonicalUrl": "https://centaurcareers.in/career-guides/investment-banking-operations/",
       "routeId": "career-guide-investment-banking-operations",
       "page": {
-        "title": "Investment Banking Operations Career Guide | Centaur Careers",
-        "description": "Learn what investment banking operations involves, how post-trade workflows work, which skills matter, and how graduates can explore this career direction.",
+        "title": "Investment Banking Operations Analyst Career | Centaur Careers",
+        "description": "Explore investment banking operations analyst responsibilities, trade settlements, reconciliation, entry skills, and relevant training in India.",
         "h1": "Investment Banking Operations: Career, Roles & Skills",
         "purpose": "Core IBO informational pillar",
         "type": "Pillar career guide",
@@ -4002,6 +4077,11 @@
             "label": "Investment Banking Operations: Career, Roles & Skills"
           },
           {
+            "routeId": "career-guide-corporate-actions-analyst",
+            "path": "/career-guides/corporate-actions-analyst/",
+            "label": "Investment Banking Operations: Career, Roles & Skills"
+          },
+          {
             "routeId": "career-guide-finance-careers-after-graduation",
             "path": "/career-guides/finance-careers-after-graduation/",
             "label": "Investment Banking Operations: Career, Roles & Skills"
@@ -4061,7 +4141,7 @@
           {
             "routeId": "career-guides",
             "path": "/career-guides/",
-            "label": "Finance Operations Career Guides",
+            "label": "Banking and Finance Career Guides",
             "authorityTier": "information-hub"
           },
           {
@@ -4131,7 +4211,7 @@
             "authorityTier": "commercial-support"
           }
         ],
-        "inboundCount": 14,
+        "inboundCount": 15,
         "outboundCount": 12,
         "orphan": false
       },
@@ -4430,7 +4510,7 @@
           {
             "routeId": "career-guides",
             "path": "/career-guides/",
-            "label": "Finance Operations Career Guides",
+            "label": "Banking and Finance Career Guides",
             "authorityTier": "information-hub"
           },
           {
@@ -4851,7 +4931,7 @@
           {
             "routeId": "career-guides",
             "path": "/career-guides/",
-            "label": "Finance Operations Career Guides",
+            "label": "Banking and Finance Career Guides",
             "authorityTier": "information-hub"
           },
           {
@@ -4956,8 +5036,8 @@
       "canonicalUrl": "https://centaurcareers.in/career-guides/kyc-aml-analyst/",
       "routeId": "career-guide-kyc-aml-analyst",
       "page": {
-        "title": "KYC & AML Analyst Career Guide | Centaur Careers",
-        "description": "Understand KYC and AML, the customer due-diligence workflow, analyst responsibilities, useful skills, and the relationship to BFSI operations training.",
+        "title": "KYC Analyst Career Guide for Graduates | Centaur Careers",
+        "description": "Learn KYC analyst responsibilities, due diligence, screening, case records, and entry skills. See the KYC/AML module and finance-job guarantee terms.",
         "h1": "KYC & AML Analyst Career Guide",
         "purpose": "KYC/AML career and knowledge pillar",
         "type": "Career / knowledge guide, Career guide / role hub",
@@ -5119,8 +5199,18 @@
             "label": "KYC & AML Analyst Career Guide"
           },
           {
+            "routeId": "career-guide-aml-analyst",
+            "path": "/career-guides/aml-analyst/",
+            "label": "KYC & AML Analyst Career Guide"
+          },
+          {
             "routeId": "career-guide-choosing-finance-career-course",
             "path": "/career-guides/choosing-finance-career-course/",
+            "label": "KYC & AML Analyst Career Guide"
+          },
+          {
+            "routeId": "career-guide-client-onboarding-analyst",
+            "path": "/career-guides/client-onboarding-analyst/",
             "label": "KYC & AML Analyst Career Guide"
           },
           {
@@ -5193,7 +5283,7 @@
           {
             "routeId": "career-guides",
             "path": "/career-guides/",
-            "label": "Finance Operations Career Guides",
+            "label": "Banking and Finance Career Guides",
             "authorityTier": "information-hub"
           },
           {
@@ -5263,7 +5353,7 @@
             "authorityTier": "supporting"
           }
         ],
-        "inboundCount": 15,
+        "inboundCount": 17,
         "outboundCount": 12,
         "orphan": false
       },
@@ -5399,7 +5489,7 @@
           {
             "routeId": "career-guides",
             "path": "/career-guides/",
-            "label": "Finance Operations Career Guides",
+            "label": "Banking and Finance Career Guides",
             "authorityTier": "information-hub"
           },
           {
@@ -5474,8 +5564,8 @@
       "canonicalUrl": "https://centaurcareers.in/career-guides/retail-banking-operations/",
       "routeId": "career-guide-retail-banking-operations",
       "page": {
-        "title": "Retail Banking Operations Guide | Centaur Careers",
-        "description": "Learn what retail banking operations means, how common workflows work, which roles and skills matter, and how graduates can prepare.",
+        "title": "Retail Banking Operations Career Guide | Centaur Careers",
+        "description": "Explore retail banking operations roles, customer and branch workflows, entry skills, and related training in Centaur Careers’ Masterclass.",
         "h1": "Retail Banking Operations: Meaning, Roles & Skills",
         "purpose": "Supporting module, career or regional page",
         "type": "Career guide",
@@ -5565,8 +5655,23 @@
             "label": "Retail Banking Operations: Meaning, Roles & Skills"
           },
           {
+            "routeId": "career-guide-banking-relationship-manager",
+            "path": "/career-guides/banking-relationship-manager/",
+            "label": "Retail Banking Operations: Meaning, Roles & Skills"
+          },
+          {
+            "routeId": "career-guide-branch-operations-analyst",
+            "path": "/career-guides/branch-operations-analyst/",
+            "label": "Retail Banking Operations: Meaning, Roles & Skills"
+          },
+          {
             "routeId": "career-guide-business-analyst-in-banking",
             "path": "/career-guides/business-analyst-in-banking/",
+            "label": "Retail Banking Operations: Meaning, Roles & Skills"
+          },
+          {
+            "routeId": "career-guide-client-onboarding-analyst",
+            "path": "/career-guides/client-onboarding-analyst/",
             "label": "Retail Banking Operations: Meaning, Roles & Skills"
           },
           {
@@ -5609,7 +5714,7 @@
           {
             "routeId": "career-guides",
             "path": "/career-guides/",
-            "label": "Finance Operations Career Guides",
+            "label": "Banking and Finance Career Guides",
             "authorityTier": "information-hub"
           },
           {
@@ -5667,7 +5772,7 @@
             "authorityTier": "supporting"
           }
         ],
-        "inboundCount": 9,
+        "inboundCount": 12,
         "outboundCount": 10,
         "orphan": false
       },
@@ -5745,6 +5850,16 @@
       },
       "internalLinks": {
         "inbound": [
+          {
+            "routeId": "career-guide-banking-relationship-manager",
+            "path": "/career-guides/banking-relationship-manager/",
+            "label": "Retail Banking"
+          },
+          {
+            "routeId": "career-guide-branch-operations-analyst",
+            "path": "/career-guides/branch-operations-analyst/",
+            "label": "Retail Banking"
+          },
           {
             "routeId": "career-guide-business-analyst-in-banking",
             "path": "/career-guides/business-analyst-in-banking/",
@@ -5826,7 +5941,7 @@
           {
             "routeId": "career-guides",
             "path": "/career-guides/",
-            "label": "Finance Operations Career Guides",
+            "label": "Banking and Finance Career Guides",
             "authorityTier": "information-hub"
           },
           {
@@ -5860,7 +5975,7 @@
             "authorityTier": "supporting"
           }
         ],
-        "inboundCount": 8,
+        "inboundCount": 10,
         "outboundCount": 12,
         "orphan": false
       },
@@ -5974,6 +6089,11 @@
             "label": "Digital Payment Operations: Process, Roles & Skills"
           },
           {
+            "routeId": "career-guide-fintech-operations-analyst",
+            "path": "/career-guides/fintech-operations-analyst/",
+            "label": "Digital Payment Operations: Process, Roles & Skills"
+          },
+          {
             "routeId": "career-guide-fintech-operations",
             "path": "/career-guides/fintech-operations/",
             "label": "Digital Payment Operations: Process, Roles & Skills"
@@ -5984,8 +6104,23 @@
             "label": "Digital Payment Operations: Process, Roles & Skills"
           },
           {
+            "routeId": "career-guide-payment-disputes-analyst",
+            "path": "/career-guides/payment-disputes-analyst/",
+            "label": "Digital Payment Operations: Process, Roles & Skills"
+          },
+          {
+            "routeId": "career-guide-payment-operations-analyst",
+            "path": "/career-guides/payment-operations-analyst/",
+            "label": "Digital Payment Operations: Process, Roles & Skills"
+          },
+          {
             "routeId": "career-guide-trade-lifecycle",
             "path": "/career-guides/trade-lifecycle/",
+            "label": "Digital Payment Operations: Process, Roles & Skills"
+          },
+          {
+            "routeId": "career-guide-upi-operations-analyst",
+            "path": "/career-guides/upi-operations-analyst/",
             "label": "Digital Payment Operations: Process, Roles & Skills"
           },
           {
@@ -6023,7 +6158,7 @@
           {
             "routeId": "career-guides",
             "path": "/career-guides/",
-            "label": "Finance Operations Career Guides",
+            "label": "Banking and Finance Career Guides",
             "authorityTier": "information-hub"
           },
           {
@@ -6093,7 +6228,7 @@
             "authorityTier": "supporting"
           }
         ],
-        "inboundCount": 10,
+        "inboundCount": 14,
         "outboundCount": 12,
         "orphan": false
       },
@@ -6173,8 +6308,28 @@
             "label": "Digital Payments Learning Module"
           },
           {
+            "routeId": "career-guide-fintech-operations-analyst",
+            "path": "/career-guides/fintech-operations-analyst/",
+            "label": "Digital Payments Learning Module"
+          },
+          {
             "routeId": "career-guide-fintech-operations",
             "path": "/career-guides/fintech-operations/",
+            "label": "Digital Payments Learning Module"
+          },
+          {
+            "routeId": "career-guide-payment-disputes-analyst",
+            "path": "/career-guides/payment-disputes-analyst/",
+            "label": "Digital Payments Learning Module"
+          },
+          {
+            "routeId": "career-guide-payment-operations-analyst",
+            "path": "/career-guides/payment-operations-analyst/",
+            "label": "Digital Payments Learning Module"
+          },
+          {
+            "routeId": "career-guide-upi-operations-analyst",
+            "path": "/career-guides/upi-operations-analyst/",
             "label": "Digital Payments Learning Module"
           },
           {
@@ -6238,7 +6393,7 @@
             "authorityTier": "supporting"
           }
         ],
-        "inboundCount": 4,
+        "inboundCount": 8,
         "outboundCount": 8,
         "orphan": false
       },
@@ -6255,8 +6410,8 @@
       "canonicalUrl": "https://centaurcareers.in/career-guides/fintech-operations/",
       "routeId": "career-guide-fintech-operations",
       "page": {
-        "title": "FinTech Operations Careers for Graduates | Centaur Careers",
-        "description": "Learn what FinTech operations teams do, how commerce graduates can explore the field, and which workflows connect digital finance, payments, and compliance.",
+        "title": "FinTech Operations Analyst Career Guide | Centaur Careers",
+        "description": "Explore FinTech operations analyst work across onboarding, payments, digital lending, service, controls, and entry skills for finance roles in India.",
         "h1": "FinTech Operations Careers for Graduates",
         "purpose": "Supporting module, career or regional page",
         "type": "Career guide",
@@ -6347,6 +6502,21 @@
             "label": "FinTech Operations Careers for Graduates"
           },
           {
+            "routeId": "career-guide-fintech-operations-analyst",
+            "path": "/career-guides/fintech-operations-analyst/",
+            "label": "FinTech Operations Careers for Graduates"
+          },
+          {
+            "routeId": "career-guide-payment-operations-analyst",
+            "path": "/career-guides/payment-operations-analyst/",
+            "label": "FinTech Operations Careers for Graduates"
+          },
+          {
+            "routeId": "career-guide-upi-operations-analyst",
+            "path": "/career-guides/upi-operations-analyst/",
+            "label": "FinTech Operations Careers for Graduates"
+          },
+          {
             "routeId": "courses",
             "path": "/courses/",
             "label": "FinTech Operations Careers for Graduates"
@@ -6381,7 +6551,7 @@
           {
             "routeId": "career-guides",
             "path": "/career-guides/",
-            "label": "Finance Operations Career Guides",
+            "label": "Banking and Finance Career Guides",
             "authorityTier": "information-hub"
           },
           {
@@ -6451,7 +6621,7 @@
             "authorityTier": "supporting"
           }
         ],
-        "inboundCount": 8,
+        "inboundCount": 11,
         "outboundCount": 12,
         "orphan": false
       },
@@ -6733,7 +6903,7 @@
           {
             "routeId": "career-guides",
             "path": "/career-guides/",
-            "label": "Finance Operations Career Guides",
+            "label": "Banking and Finance Career Guides",
             "authorityTier": "information-hub"
           },
           {

@@ -1562,6 +1562,7 @@
 
   @media (max-width: 639px) {
     .home-process-shell {
+      padding-top: 2rem;
       padding-bottom: 1.5rem;
     }
 

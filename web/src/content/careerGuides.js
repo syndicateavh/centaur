@@ -135,12 +135,12 @@ export const CAREER_GUIDES = Object.freeze([
     id: 'investment-banking-operations',
     routeId: 'career-guide-investment-banking-operations',
     path: '/career-guides/investment-banking-operations/',
-    title: 'Investment Banking Operations Career Guide | Centaur Careers',
-    description: 'Learn what investment banking operations involves, how post-trade workflows work, which skills matter, and how graduates can explore this career direction.',
+    title: 'Investment Banking Operations Analyst Career | Centaur Careers',
+    description: 'Explore investment banking operations analyst responsibilities, trade settlements, reconciliation, entry skills, and relevant training in India.',
     updatedAt: '2026-09-29',
     h1: 'Investment Banking Operations: Career, Roles & Skills',
     breadcrumbLabel: 'Investment Banking Operations',
-    primaryKeyword: 'what is investment banking operations',
+    primaryKeyword: 'investment banking operations analyst',
     secondaryKeywords: [
       'investment banking operations meaning',
       'investment banking operations process',
@@ -217,12 +217,12 @@ export const CAREER_GUIDES = Object.freeze([
     id: 'kyc-aml-analyst',
     routeId: 'career-guide-kyc-aml-analyst',
     path: '/career-guides/kyc-aml-analyst/',
-    title: 'KYC & AML Analyst Career Guide | Centaur Careers',
-    description: 'Understand KYC and AML, the customer due-diligence workflow, analyst responsibilities, useful skills, and the relationship to BFSI operations training.',
+    title: 'KYC Analyst Career Guide for Graduates | Centaur Careers',
+    description: 'Learn KYC analyst responsibilities, due diligence, screening, case records, and entry skills. See the KYC/AML module and finance-job guarantee terms.',
     updatedAt: '2026-09-26',
     h1: 'KYC & AML Analyst Career Guide',
     breadcrumbLabel: 'KYC & AML Analyst',
-    primaryKeyword: 'what is KYC in banking',
+    primaryKeyword: 'KYC analyst jobs for freshers',
     secondaryKeywords: [
       'what is AML in banking',
       'KYC and AML difference',
@@ -559,12 +559,12 @@ export const CAREER_GUIDES = Object.freeze([
     id: 'retail-banking-operations',
     routeId: 'career-guide-retail-banking-operations',
     path: '/career-guides/retail-banking-operations/',
-    title: 'Retail Banking Operations Guide | Centaur Careers',
-    description: 'Learn what retail banking operations means, how common workflows work, which roles and skills matter, and how graduates can prepare.',
+    title: 'Retail Banking Operations Career Guide | Centaur Careers',
+    description: 'Explore retail banking operations roles, customer and branch workflows, entry skills, and related training in Centaur Careers’ Masterclass.',
     updatedAt: '2026-09-27',
     h1: 'Retail Banking Operations: Meaning, Roles & Skills',
     breadcrumbLabel: 'Retail Banking Operations',
-    primaryKeyword: 'retail banking operations meaning',
+    primaryKeyword: 'retail banking operations jobs',
     secondaryKeywords: [
       'retail banking operations process',
       'retail banking operations jobs',
@@ -799,8 +799,8 @@ export const CAREER_GUIDES = Object.freeze([
     id: 'fintech-operations',
     routeId: 'career-guide-fintech-operations',
     path: '/career-guides/fintech-operations/',
-    title: 'FinTech Operations Careers for Graduates | Centaur Careers',
-    description: 'Learn what FinTech operations teams do, how commerce graduates can explore the field, and which workflows connect digital finance, payments, and compliance.',
+    title: 'FinTech Operations Analyst Career Guide | Centaur Careers',
+    description: 'Explore FinTech operations analyst work across onboarding, payments, digital lending, service, controls, and entry skills for finance roles in India.',
     updatedAt: '2026-09-24',
     h1: 'FinTech Operations Careers for Graduates',
     breadcrumbLabel: 'FinTech Operations',
@@ -843,14 +843,44 @@ export const CAREER_GUIDES = Object.freeze([
   ...PRIORITY_CAREER_GUIDES,
 ]);
 
+export const CAREER_ROLE_NAV_GROUPS = Object.freeze([
+  Object.freeze({ label: 'Investment Banking & Markets', guideIds: Object.freeze([
+    'investment-banking-operations', 'settlement-analyst', 'reconciliation-analyst', 'custody-operations',
+    'corporate-actions-analyst', 'fund-accounting-analyst',
+  ]) }),
+  Object.freeze({ label: 'Compliance & Onboarding', guideIds: Object.freeze([
+    'kyc-aml-analyst', 'aml-analyst', 'transaction-monitoring-analyst', 'client-onboarding-analyst',
+  ]) }),
+  Object.freeze({ label: 'Payments & FinTech', guideIds: Object.freeze([
+    'payment-operations-analyst', 'upi-operations-analyst', 'payment-disputes-analyst', 'fintech-operations-analyst',
+  ]) }),
+  Object.freeze({ label: 'Retail Banking', guideIds: Object.freeze([
+    'retail-banking-operations', 'branch-operations-analyst', 'banking-relationship-manager',
+  ]) }),
+  Object.freeze({ label: 'Credit & Lending', guideIds: Object.freeze([
+    'loan-processing-analyst', 'credit-operations-analyst', 'nbfc-operations-analyst',
+  ]) }),
+].map((group) => Object.freeze({
+  label: group.label,
+  links: Object.freeze(group.guideIds.map((guideId) => {
+    const guide = CAREER_GUIDES.find((candidate) => candidate.id === guideId);
+    if (!guide) throw new Error(`Unknown career guide in navigation: ${guideId}`);
+    return Object.freeze({ guideId, to: guide.path, label: guide.breadcrumbLabel });
+  })),
+})));
+
+export const CAREER_ROLE_GUIDE_IDS = Object.freeze(new Set(
+  CAREER_ROLE_NAV_GROUPS.flatMap((group) => group.links.map((guide) => guide.guideId)),
+));
+
 export const CAREER_GUIDE_HUB = Object.freeze({
   id: 'career-guides',
   path: '/career-guides/',
-  title: 'Finance Operations Career Guides | Centaur Careers',
-  description: 'Use this finance operations career guide collection to explore investment banking operations, KYC and AML, finance operations, retail banking, digital payments, trade lifecycle, and graduate pathways.',
-  h1: 'Finance Operations Career Guides',
+  title: 'Banking and Finance Role Guides for Graduates | Centaur Careers',
+  description: 'Explore individual banking and finance career guides for investment operations, compliance, payments, retail banking, credit, lending, and FinTech roles across India.',
+  h1: 'Banking and Finance Career Guides',
   breadcrumbLabel: 'Career Guides',
-  updatedAt: '2026-09-30',
+  updatedAt: '2026-10-04',
 });
 
 // One authoritative path per operations topic keeps the information cluster

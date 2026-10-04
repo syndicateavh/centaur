@@ -92,6 +92,9 @@ type Pages = {
   "/placements": {
     params: {};
   };
+  "/placements/student-outcomes": {
+    params: {};
+  };
   "/about": {
     params: {};
   };
@@ -215,6 +218,42 @@ type Pages = {
   "/career-guides/operations-analyst-banking": {
     params: {};
   };
+  "/career-guides/corporate-actions-analyst": {
+    params: {};
+  };
+  "/career-guides/fund-accounting-analyst": {
+    params: {};
+  };
+  "/career-guides/aml-analyst": {
+    params: {};
+  };
+  "/career-guides/client-onboarding-analyst": {
+    params: {};
+  };
+  "/career-guides/payment-operations-analyst": {
+    params: {};
+  };
+  "/career-guides/upi-operations-analyst": {
+    params: {};
+  };
+  "/career-guides/payment-disputes-analyst": {
+    params: {};
+  };
+  "/career-guides/branch-operations-analyst": {
+    params: {};
+  };
+  "/career-guides/banking-relationship-manager": {
+    params: {};
+  };
+  "/career-guides/loan-processing-analyst": {
+    params: {};
+  };
+  "/career-guides/nbfc-operations-analyst": {
+    params: {};
+  };
+  "/career-guides/fintech-operations-analyst": {
+    params: {};
+  };
   "/courses/banking-courses": {
     params: {};
   };
@@ -328,7 +367,7 @@ type Pages = {
 type RouteFiles = {
   "root.jsx": {
     id: "root";
-    page: "/" | "/blog-portal" | "/blog" | "/career-guides" | "/resources" | "/resources/investment-banking-interview-questions" | "/resources/accounting-interview-questions" | "/resources/finance-gk" | "/resources/accounting-basics" | "/resources/reconciliation-in-finance" | "/resources/bank-reconciliation-process" | "/resources/cost-accounting-finance-operations" | "/resources/financial-accounting-banking" | "/resources/financial-statement-analysis" | "/resources/corporate-actions-workflow" | "/resources/capital-market-operations" | "/resources/financial-system-india" | "/resources/kyc-aml-compliance-guide" | "/quiz" | "/courses" | "/courses/investment-banking-operations" | "/courses/retail-banking" | "/courses/finance-operations" | "/courses/kyc-aml" | "/courses/digital-payments" | "/courses/fintech" | "/placements" | "/about" | "/contact" | "/privacy-policy" | "/terms-and-conditions" | "/cookie-policy" | "/refund-cancellation-policy" | "/disclaimer" | "/india" | "/india/delhi-ncr" | "/india/bengaluru" | "/india/mumbai" | "/india/pune" | "/india/hyderabad" | "/locations/lucknow" | "/faqs" | "/career-guides/investment-banking-operations" | "/career-guides/kyc-aml-analyst" | "/career-guides/finance-operations" | "/career-guides/trade-lifecycle" | "/career-guides/finance-careers-after-graduation" | "/career-guides/retail-banking-operations" | "/career-guides/digital-payments-operations" | "/career-guides/financial-operations-faq" | "/career-guides/choosing-finance-career-course" | "/career-guides/fintech-operations" | "/career-guides/reconciliation-analyst" | "/career-guides/investment-banking-operations-roles" | "/career-guides/trade-support-analyst" | "/career-guides/securities-operations" | "/career-guides/what-is-investment-banking" | "/career-guides/risk-operations-analyst" | "/career-guides/credit-analyst" | "/career-guides/business-analyst-in-banking" | "/career-guides/custody-operations" | "/career-guides/credit-operations-analyst" | "/career-guides/transaction-monitoring-analyst" | "/career-guides/middle-office-operations" | "/career-guides/back-office-banking-jobs" | "/career-guides/settlement-analyst" | "/career-guides/finance-learning-roadmap" | "/career-guides/operations-analyst-banking" | "/courses/banking-courses" | "/courses/banking-and-finance" | "/courses/finance-operations-training" | "/best-finance-course-in-india-with-placement" | "/best-investment-banking-course-india" | "/best-finance-course-after-graduation" | "/best-finance-course-after-bcom" | "/finance-course-with-placement" | "/finance-course-with-job-guarantee" | "/finance-course-fees-in-india" | "/finance-course-duration" | "/finance-course-eligibility" | "/online-finance-course-with-placement" | "/job-oriented-finance-course-india" | "/banking-finance-course-with-placement" | "/investment-banking-operations-course-with-placement" | "/finance-institute-lucknow-with-placement" | "/finance-course-cities-india" | "/finance-course-vs-mba-cfa-financial-modelling" | "/which-finance-course-is-right-for-me" | "/courses/finance-operations-syllabus" | "/courses/finance-course-fees-eligibility" | "/courses/finance-course-for-graduates" | "/compare/best-finance-institutes-india" | "/compare/finance-operations-vs-financial-modelling-cfa" | "/compare/online-vs-offline-finance-training" | "/compare/investment-banking-operations-vs-financial-analyst" | "/compare/banking-vs-finance-careers" | "/faqs/finance-program" | "/compare/investment-banking-operations-courses" | "/404" | "/blog/category/:category" | "/blog/:slug" | "/*";
+    page: "/" | "/blog-portal" | "/blog" | "/career-guides" | "/resources" | "/resources/investment-banking-interview-questions" | "/resources/accounting-interview-questions" | "/resources/finance-gk" | "/resources/accounting-basics" | "/resources/reconciliation-in-finance" | "/resources/bank-reconciliation-process" | "/resources/cost-accounting-finance-operations" | "/resources/financial-accounting-banking" | "/resources/financial-statement-analysis" | "/resources/corporate-actions-workflow" | "/resources/capital-market-operations" | "/resources/financial-system-india" | "/resources/kyc-aml-compliance-guide" | "/quiz" | "/courses" | "/courses/investment-banking-operations" | "/courses/retail-banking" | "/courses/finance-operations" | "/courses/kyc-aml" | "/courses/digital-payments" | "/courses/fintech" | "/placements" | "/placements/student-outcomes" | "/about" | "/contact" | "/privacy-policy" | "/terms-and-conditions" | "/cookie-policy" | "/refund-cancellation-policy" | "/disclaimer" | "/india" | "/india/delhi-ncr" | "/india/bengaluru" | "/india/mumbai" | "/india/pune" | "/india/hyderabad" | "/locations/lucknow" | "/faqs" | "/career-guides/investment-banking-operations" | "/career-guides/kyc-aml-analyst" | "/career-guides/finance-operations" | "/career-guides/trade-lifecycle" | "/career-guides/finance-careers-after-graduation" | "/career-guides/retail-banking-operations" | "/career-guides/digital-payments-operations" | "/career-guides/financial-operations-faq" | "/career-guides/choosing-finance-career-course" | "/career-guides/fintech-operations" | "/career-guides/reconciliation-analyst" | "/career-guides/investment-banking-operations-roles" | "/career-guides/trade-support-analyst" | "/career-guides/securities-operations" | "/career-guides/what-is-investment-banking" | "/career-guides/risk-operations-analyst" | "/career-guides/credit-analyst" | "/career-guides/business-analyst-in-banking" | "/career-guides/custody-operations" | "/career-guides/credit-operations-analyst" | "/career-guides/transaction-monitoring-analyst" | "/career-guides/middle-office-operations" | "/career-guides/back-office-banking-jobs" | "/career-guides/settlement-analyst" | "/career-guides/finance-learning-roadmap" | "/career-guides/operations-analyst-banking" | "/career-guides/corporate-actions-analyst" | "/career-guides/fund-accounting-analyst" | "/career-guides/aml-analyst" | "/career-guides/client-onboarding-analyst" | "/career-guides/payment-operations-analyst" | "/career-guides/upi-operations-analyst" | "/career-guides/payment-disputes-analyst" | "/career-guides/branch-operations-analyst" | "/career-guides/banking-relationship-manager" | "/career-guides/loan-processing-analyst" | "/career-guides/nbfc-operations-analyst" | "/career-guides/fintech-operations-analyst" | "/courses/banking-courses" | "/courses/banking-and-finance" | "/courses/finance-operations-training" | "/best-finance-course-in-india-with-placement" | "/best-investment-banking-course-india" | "/best-finance-course-after-graduation" | "/best-finance-course-after-bcom" | "/finance-course-with-placement" | "/finance-course-with-job-guarantee" | "/finance-course-fees-in-india" | "/finance-course-duration" | "/finance-course-eligibility" | "/online-finance-course-with-placement" | "/job-oriented-finance-course-india" | "/banking-finance-course-with-placement" | "/investment-banking-operations-course-with-placement" | "/finance-institute-lucknow-with-placement" | "/finance-course-cities-india" | "/finance-course-vs-mba-cfa-financial-modelling" | "/which-finance-course-is-right-for-me" | "/courses/finance-operations-syllabus" | "/courses/finance-course-fees-eligibility" | "/courses/finance-course-for-graduates" | "/compare/best-finance-institutes-india" | "/compare/finance-operations-vs-financial-modelling-cfa" | "/compare/online-vs-offline-finance-training" | "/compare/investment-banking-operations-vs-financial-analyst" | "/compare/banking-vs-finance-careers" | "/faqs/finance-program" | "/compare/investment-banking-operations-courses" | "/404" | "/blog/category/:category" | "/blog/:slug" | "/*";
   };
   "routes/blog-portal.jsx": {
     id: "routes/blog-portal";
@@ -437,6 +476,10 @@ type RouteFiles = {
   "routes/placements.jsx": {
     id: "routes/placements";
     page: "/placements";
+  };
+  "routes/student-outcomes.jsx": {
+    id: "routes/student-outcomes";
+    page: "/placements/student-outcomes";
   };
   "routes/about.jsx": {
     id: "routes/about";
@@ -601,6 +644,43 @@ type RouteFiles = {
   "routes/career-guide-operations-analyst-banking.jsx": {
     id: "routes/career-guide-operations-analyst-banking";
     page: "/career-guides/operations-analyst-banking";
+  };
+  "routes/career-guide-role.jsx": {
+    id: "career-guide-corporate-actions-analyst";
+    page: "/career-guides/corporate-actions-analyst";
+  } | {
+    id: "career-guide-fund-accounting-analyst";
+    page: "/career-guides/fund-accounting-analyst";
+  } | {
+    id: "career-guide-aml-analyst";
+    page: "/career-guides/aml-analyst";
+  } | {
+    id: "career-guide-client-onboarding-analyst";
+    page: "/career-guides/client-onboarding-analyst";
+  } | {
+    id: "career-guide-payment-operations-analyst";
+    page: "/career-guides/payment-operations-analyst";
+  } | {
+    id: "career-guide-upi-operations-analyst";
+    page: "/career-guides/upi-operations-analyst";
+  } | {
+    id: "career-guide-payment-disputes-analyst";
+    page: "/career-guides/payment-disputes-analyst";
+  } | {
+    id: "career-guide-branch-operations-analyst";
+    page: "/career-guides/branch-operations-analyst";
+  } | {
+    id: "career-guide-banking-relationship-manager";
+    page: "/career-guides/banking-relationship-manager";
+  } | {
+    id: "career-guide-loan-processing-analyst";
+    page: "/career-guides/loan-processing-analyst";
+  } | {
+    id: "career-guide-nbfc-operations-analyst";
+    page: "/career-guides/nbfc-operations-analyst";
+  } | {
+    id: "career-guide-fintech-operations-analyst";
+    page: "/career-guides/fintech-operations-analyst";
   };
   "routes/courses-banking-courses.jsx": {
     id: "routes/courses-banking-courses";
@@ -769,6 +849,7 @@ type RouteModules = {
   "routes/digital-payments": typeof import("./src/routes/digital-payments.jsx");
   "routes/fintech-neo-banking": typeof import("./src/routes/fintech-neo-banking.jsx");
   "routes/placements": typeof import("./src/routes/placements.jsx");
+  "routes/student-outcomes": typeof import("./src/routes/student-outcomes.jsx");
   "routes/about": typeof import("./src/routes/about.jsx");
   "routes/contact": typeof import("./src/routes/contact.jsx");
   "routes/privacy-policy": typeof import("./src/routes/privacy-policy.jsx");
@@ -810,6 +891,18 @@ type RouteModules = {
   "routes/career-guide-settlement-analyst": typeof import("./src/routes/career-guide-settlement-analyst.jsx");
   "routes/career-guide-finance-learning-roadmap": typeof import("./src/routes/career-guide-finance-learning-roadmap.jsx");
   "routes/career-guide-operations-analyst-banking": typeof import("./src/routes/career-guide-operations-analyst-banking.jsx");
+  "career-guide-corporate-actions-analyst": typeof import("./src/routes/career-guide-role.jsx");
+  "career-guide-fund-accounting-analyst": typeof import("./src/routes/career-guide-role.jsx");
+  "career-guide-aml-analyst": typeof import("./src/routes/career-guide-role.jsx");
+  "career-guide-client-onboarding-analyst": typeof import("./src/routes/career-guide-role.jsx");
+  "career-guide-payment-operations-analyst": typeof import("./src/routes/career-guide-role.jsx");
+  "career-guide-upi-operations-analyst": typeof import("./src/routes/career-guide-role.jsx");
+  "career-guide-payment-disputes-analyst": typeof import("./src/routes/career-guide-role.jsx");
+  "career-guide-branch-operations-analyst": typeof import("./src/routes/career-guide-role.jsx");
+  "career-guide-banking-relationship-manager": typeof import("./src/routes/career-guide-role.jsx");
+  "career-guide-loan-processing-analyst": typeof import("./src/routes/career-guide-role.jsx");
+  "career-guide-nbfc-operations-analyst": typeof import("./src/routes/career-guide-role.jsx");
+  "career-guide-fintech-operations-analyst": typeof import("./src/routes/career-guide-role.jsx");
   "routes/courses-banking-courses": typeof import("./src/routes/courses-banking-courses.jsx");
   "routes/courses-banking-and-finance": typeof import("./src/routes/courses-banking-and-finance.jsx");
   "routes/courses-finance-operations-training": typeof import("./src/routes/courses-finance-operations-training.jsx");

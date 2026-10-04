@@ -368,33 +368,39 @@ export const EMPLOYER_LOGO_NAMES = Object.freeze([
 
 export const TESTIMONIALS = Object.freeze([
   Object.freeze({
-    name: 'Rohit K.',
+    name: 'Rohit Singh Yadav',
     role: 'Fund Accounting Specialist, Citi',
+    companyLogo: '/images/ogpartners/citi-testimonial.webp',
     quote: 'Centaur gave me structured guidance and hands-on practice. I landed at Citi within weeks. The mock interviews were more rigorous than the actual one.',
   }),
   Object.freeze({
-    name: 'Nikita B.',
-    role: 'Senior Fund Accounting Analyst, Citi',
+    name: 'Nikita Bohra',
+    role: 'Fund Accounting Specialist, Citi',
+    companyLogo: '/images/ogpartners/citi-testimonial.webp',
     quote: 'The program was practical and focused on real job readiness. My mentor walked me through every stage — skills, assessments, and interviews. It worked.',
   }),
   Object.freeze({
     name: 'Rahul S.',
     role: 'IB Operations, JP Morgan',
+    companyLogo: '/images/brand/jp-morgan.svg',
     quote: 'They pushed us harder in training than the actual interview. By the time I sat down at JP Morgan, I already knew what to expect.',
   }),
   Object.freeze({
     name: 'Sneha M.',
     role: 'Operations Analyst, Citi',
+    companyLogo: '/images/ogpartners/citi-testimonial.webp',
     quote: 'I appreciated how structured the process was. Every assessment had a purpose, and the placement team followed through at every step.',
   }),
   Object.freeze({
     name: 'Karan V.',
     role: 'Compliance Analyst, HSBC',
+    companyLogo: '/images/ogpartners/hsbc-testimonial.svg',
     quote: 'The KYC and AML modules were exactly what HSBC was looking for. I felt prepared — not just trained.',
   }),
   Object.freeze({
     name: 'Priya A.',
     role: 'Retail Banking Officer, Kotak',
+    companyLogo: '/images/ogpartners/kotak-testimonial.svg',
     quote: 'I had no banking background when I joined. Centaur broke everything down — from theory to job-ready skills. Placed within weeks of finishing.',
   }),
 ]);

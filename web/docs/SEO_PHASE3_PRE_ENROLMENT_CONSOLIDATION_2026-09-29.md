@@ -17,7 +17,7 @@ These are editorial owners based on page intent. They do not claim that Google s
 
 ## Implemented
 
-- The fee owner now uses the shared `LEARNING_MODES` values for current and reference fees, states the graduation entry rule, and links to the cost, eligibility, refund, syllabus, placement, and pre-enrolment resources.
+- The fee owner now uses the shared `LEARNING_MODES` values for the published online and offline fees, states the graduation entry rule, and links to the cost, eligibility, refund, syllabus, placement, and pre-enrolment resources.
 - The syllabus owner names the published six-week duration and links to the workload checklist and pre-enrolment guide.
 - Fee, duration, and eligibility support pages now act as comparison checklists and route Centaur-specific facts back to their owners instead of repeating those facts as competing answers.
 - Placement checklists point to the placement owner. Generic examples of possible guarantee conditions are explicitly not presented as Centaur-specific terms; the approved public promise remains consistent with the claims policy.

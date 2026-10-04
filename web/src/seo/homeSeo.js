@@ -98,6 +98,7 @@ const HOME_INTERNAL_LINKS = Object.freeze([
   { routeId: 'resource-bank-reconciliation-process', to: '/resources/bank-reconciliation-process/', label: 'Bank Reconciliation Process: Steps, Differences and Example', authorityTier: 'supporting' },
   { routeId: 'india', to: '/india/', label: 'Live Online Finance Course Across India', authorityTier: 'national-hub' },
   { routeId: 'placements', to: '/placements/', label: '100% Job Guarantee Program for Finance Careers in India', authorityTier: 'commercial-support' },
+  { routeId: 'student-outcomes', to: '/placements/student-outcomes/', label: 'Student Placements and Career Outcomes', authorityTier: 'commercial-support' },
   { routeId: 'comparison-best-finance-institutes-india', to: '/compare/best-finance-institutes-india/', label: 'Top Finance Institutes in India: Compare Courses and Placement Terms', authorityTier: 'supporting' },
   { routeId: 'lead-best-investment-banking-course-india', to: '/best-investment-banking-course-india/', label: 'Best Investment Banking Institute in India: Compare by Career Goal', authorityTier: 'supporting' },
   { routeId: 'lead-online-finance-course-placement', to: '/online-finance-course-with-placement/', label: 'Online Finance Course with Placement in India: What to Verify', authorityTier: 'supporting' },

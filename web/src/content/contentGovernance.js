@@ -10,6 +10,30 @@ import {
 } from './nextSeoPages.js';
 import { INDIA_LEAD_INTENT_PAGES } from './indiaLeadIntentPages.js';
 
+const IMPLEMENTED_ROLE_GUIDE_PATHS = new Set([
+  '/career-guides/investment-banking-operations/',
+  '/career-guides/settlement-analyst/',
+  '/career-guides/reconciliation-analyst/',
+  '/career-guides/corporate-actions-analyst/',
+  '/career-guides/fund-accounting-analyst/',
+  '/career-guides/custody-operations/',
+  '/career-guides/kyc-aml-analyst/',
+  '/career-guides/aml-analyst/',
+  '/career-guides/transaction-monitoring-analyst/',
+  '/career-guides/client-onboarding-analyst/',
+  '/career-guides/payment-operations-analyst/',
+  '/career-guides/upi-operations-analyst/',
+  '/career-guides/payment-disputes-analyst/',
+  '/career-guides/retail-banking-operations/',
+  '/career-guides/branch-operations-analyst/',
+  '/career-guides/banking-relationship-manager/',
+  '/career-guides/loan-processing-analyst/',
+  '/career-guides/credit-operations-analyst/',
+  '/career-guides/nbfc-operations-analyst/',
+  '/career-guides/fintech-operations-analyst/',
+  '/career-guides/fintech-operations/',
+]);
+
 const NEXT_SEO_PAGE_INVENTORY = Object.freeze([
   ...NEXT_CAREER_GUIDE_SPECS,
   ...NEXT_RESOURCE_SPECS,
@@ -70,7 +94,7 @@ export const CONTENT_FACTS = Object.freeze([
     allowedUse: 'Existing wording only; do not create new duration claims until reconfirmed.',
   }),
   Object.freeze({
-    id: 'program.fees', subject: 'Online and offline fees', value: 'Online ₹35,000 (₹50,000 reference price); Offline ₹50,000 (₹70,000 reference price).',
+    id: 'program.fees', subject: 'Online and offline fees', value: 'Online ₹35,000; Offline ₹50,000.',
     sourceStatus: 'approved-original', verificationStatus: 'approved-original',
     evidence: ['src/content/sourceContent.js#LEARNING_MODES', 'business-owner instruction to restore pricing'],
     requiredEvidence: 'Keep the fee sheet and cohort validity dates available to applicants.', routes: ['/courses/', '/placements/', '/faqs/'],
@@ -103,6 +127,14 @@ export const CONTENT_FACTS = Object.freeze([
     evidence: ['src/content/sourceContent.js#PLACEMENT_PROMISE', 'src/content/faqData.js', 'business-owner confirmation'],
     requiredEvidence: 'Current program details and program-owner approval for every published condition.', routes: ['/', '/courses/', '/placements/', '/faqs/'],
     allowedUse: 'Publish the exact claim with a visible graduates-and-job-switchers qualifier and program-terms note; do not invent support windows, covered roles, salary, locations, exclusions, or remedies.',
+  }),
+  Object.freeze({
+    id: 'program.best-in-industry', subject: 'Best-in-industry comparative positioning', value: 'The business owner requests the label “Best-in-industry finance course from Centaur Careers” on role-guide landing pages.',
+    sourceStatus: 'approved-original', verificationStatus: 'needs-business-verification',
+    evidence: ['business-owner instruction in the current implementation request'],
+    requiredEvidence: 'Provide dated, independent comparison evidence, the comparison set, criteria, and methodology before using the superiority claim in paid advertising or external promotional material.',
+    routes: ['/career-guides/'],
+    allowedUse: 'Use the requested label in the shared role-guide callout and keep the current program and guarantee scope visible; do not invent an award, rank, survey, or comparison result.',
   }),
   Object.freeze({
     id: 'program.interview-opportunities', subject: 'Interview opportunity count', value: 'Legacy source states an interview count; the count is not presented publicly pending current program-owner verification.',
@@ -185,6 +217,7 @@ export const CURRENT_ROUTE_CONTENT_INVENTORY = Object.freeze([
   Object.freeze({ path: '/courses/retail-banking/', purpose: 'Retail Banking module', source: 'CAREER_TRACKS, PROGRAM_PROCESS, COURSE_FAQS', status: 'approved-original', additions: 'Module-specific original content must remain subordinate to the Masterclass.' }),
   Object.freeze({ path: '/courses/finance-operations/', purpose: 'Finance Operations module', source: 'CAREER_TRACKS, PROGRAM_PROCESS, COURSE_FAQS', status: 'approved-original', additions: 'Module-specific original content must remain subordinate to the Masterclass.' }),
   Object.freeze({ path: '/placements/', purpose: '100% Job Guarantee Program process and terms explanation', source: 'Business-owner instruction plus qualified PLACEMENT_PROMISE copy; current program details require confirmation', status: 'needs-business-verification', additions: 'Keep the graduates-and-job-switchers qualifier and program-terms note visible; do not invent numeric support terms, covered employers, salary, locations, exclusions, or remedies.' }),
+  Object.freeze({ path: '/placements/student-outcomes/', purpose: 'Documented learner placement outcomes and supporting evidence', source: 'src/pages/StudentOutcomesPage.jsx; consent and placement records', status: 'needs-business-verification', additions: 'Publish named outcomes only with current role evidence and documented consent; keep the 100% Job Guarantee Program terms clearly linked.' }),
   Object.freeze({ path: '/about/', purpose: 'Business and leadership information', source: 'ABOUT_SUMMARY, LEADERSHIP, LEADERSHIP_INTRO', status: 'needs-permission', additions: 'Leadership expansion is gated by approved bios and consent.' }),
   Object.freeze({ path: '/contact/', purpose: 'Enrollment and public contact information', source: 'CONTACT_COPY, BUSINESS_DATA, OFFLINE_PARTNER_LINE', status: 'needs-business-verification', additions: 'Keep contact and location facts synchronized.' }),
   Object.freeze({ path: '/privacy-policy/', purpose: 'Privacy and personal-data disclosure for visitors and advertising enquiries', source: 'src/content/legalContent.js, BUSINESS_DATA, current analytics and tag configuration', status: 'needs-business-verification', additions: 'Confirm the actual data processors, retention periods, rights process, and consent approach before advertising.' }),
@@ -230,7 +263,10 @@ export const CURRENT_ROUTE_CONTENT_INVENTORY = Object.freeze([
     status: 'ready-to-build',
     additions: 'Keep the decision query distinct, use current written terms for fees and support, and do not add unsupported employer, salary, location, credential, or outcome claims.',
   })),
-  ...NEXT_SEO_PAGE_INVENTORY,
+  ...NEXT_SEO_PAGE_INVENTORY.map((page) => Object.freeze({
+    ...page,
+    status: IMPLEMENTED_ROLE_GUIDE_PATHS.has(page.path) ? 'repository-verified' : page.status,
+  })),
 ]);
 
 export const PROPOSED_PAGE_READINESS = Object.freeze([
