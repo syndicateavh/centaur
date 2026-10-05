@@ -39,7 +39,7 @@ export default function PriorityFaqPage({ pageId }) {
         </div>
       </section>
       <InternalLinkGroup links={getInternalLinks(page.routeId)} />
-      <CtaSection title="Have a question about the current cohort?" description="Use the published pages as a starting point and contact Centaur Careers for current schedule, fees, access, and support details." />
+      <CtaSection title="Confirm the details that apply to your cohort" description="Read the full program information and ask Centaur Careers about current schedule, fees, learning access, certificate requirements, or written support terms." primaryTo="/contact/" primaryLabel="Ask about the current cohort" primaryAnalyticsIntent="commercial_program" secondaryTo="/courses/" secondaryLabel="Review full course details" />
     </>
   );
 }

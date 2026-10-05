@@ -115,7 +115,7 @@ export default function IndiaPage() {
                 <ul className="mt-6 space-y-3 text-sm text-foreground/80">
                   {mode.features.slice(0, 4).map((feature) => <li key={feature} className="flex items-start gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent-ink" aria-hidden="true" />{feature}</li>)}
                 </ul>
-                <Link to={mode.name === 'Offline' ? '/locations/lucknow/' : '/contact/'} className="mt-6 inline-flex min-h-11 items-center gap-2 font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">
+                <Link to={mode.name === 'Offline' ? '/best-finance-course-in-lucknow/' : '/contact/'} className="mt-6 inline-flex min-h-11 items-center gap-2 font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">
                   {mode.name === 'Offline' ? 'View the Lucknow location' : 'Ask about online access'} <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </Link>
               </article>
@@ -124,7 +124,7 @@ export default function IndiaPage() {
           <div data-national-location-boundary className="mx-auto mt-8 max-w-4xl rounded-2xl border border-border bg-white p-7 text-muted-foreground shadow-sm">
             <h2 className="text-2xl font-bold text-primary">Where are in-person classes available?</h2>
             <p className="mt-3">The published physical learning location is Mindsprout Career Hub in Lucknow. Students elsewhere in India can ask about the online mode; do not assume a Centaur Careers classroom or branch exists in another city unless the team confirms it.</p>
-            <Link to="/locations/lucknow/" className="mt-5 inline-flex items-center gap-2 font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">See the verified Lucknow location <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
+            <Link to="/best-finance-course-in-lucknow/" className="mt-5 inline-flex items-center gap-2 font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">See the verified Lucknow location <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
           </div>
         </div>
       </section>
@@ -209,7 +209,7 @@ export default function IndiaPage() {
         featuredRouteIds={['courses', 'career-guides', 'resources', 'placements', 'lucknow-location', 'india-delhi-ncr', 'india-bengaluru', 'india-mumbai', 'india-pune', 'india-hyderabad', 'contact']}
         visibleCount={12}
       />
-      <CtaSection secondaryTo="/courses/" title="Explore finance operations training across India" description="Review the current Financial Operations Masterclass information, confirm the learning mode that fits you, and contact Centaur Careers with your questions." />
+      <CtaSection primaryTo="/courses/" primaryLabel="Review course details" primaryAnalyticsIntent="commercial_program" secondaryTo="/contact/" secondaryLabel="Ask about online access" title="Explore finance operations training across India" description="Review the Financial Operations Masterclass scope, confirm the learning mode that fits you, and contact Centaur Careers with questions about the current cohort." />
     </>
   );
 }

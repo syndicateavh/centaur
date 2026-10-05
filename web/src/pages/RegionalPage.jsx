@@ -68,8 +68,17 @@ export default function RegionalPage({ regionId }) {
 
   return (
     <>
-      <PageHero routeId={route.id} eyebrow={`${page.regionName} regional guide`} title={page.h1} intro={page.description}>
-        <p className="mt-6 inline-flex items-center gap-2 text-sm text-white/70"><CalendarDays className="h-4 w-4" aria-hidden="true" />Guide updated {page.updatedAt}</p>
+      <PageHero routeId={route.id} eyebrow={`${page.regionName} online course guide`} title={page.h1} intro={page.description}>
+        <div className="mt-8 flex flex-wrap gap-3">
+          <Link to="/courses/" data-analytics-id={`regional-${page.id}-online-course`} data-analytics-intent="regional_online_access" className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-accent px-5 py-3 font-bold text-primary">
+            View the live online course <ArrowRight className="h-4 w-4" aria-hidden="true" />
+          </Link>
+          <a href={regionalWhatsAppUrl} target="_blank" rel="noopener noreferrer" data-analytics-id={`regional-${page.id}-hero-whatsapp`} data-analytics-intent="regional_online_access" className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-white/25 bg-white/10 px-5 py-3 font-bold text-white">
+            Ask about access from {page.regionName} <ArrowRight className="h-4 w-4" aria-hidden="true" />
+          </a>
+        </div>
+        <p className="mt-4 text-sm text-white/70">Live online access is available in {page.regionName}. Centaur Careers lists in-person sessions only in Alambagh, Lucknow.</p>
+        <p className="mt-4 inline-flex items-center gap-2 text-sm text-white/70"><CalendarDays className="h-4 w-4" aria-hidden="true" />Guide updated {page.updatedAt}</p>
       </PageHero>
 
       {page.image && <figure className="mx-auto w-full max-w-7xl px-4 pt-8 sm:px-6 lg:px-8"><img src={page.image} alt={page.imageAlt} width="1672" height="941" loading="lazy" decoding="async" className="max-h-[28rem] w-full rounded-2xl border border-border object-cover shadow-sm" /></figure>}

@@ -57,6 +57,7 @@ export default function SeoHomePage() {
         primaryLabel="Enroll Now — Secure Your Seat"
           secondaryLabel="Chat on WhatsApp"
           secondaryHref={BUSINESS_DATA.whatsappUrl}
+          primaryMagnetic
         />
       </div>
     </div>

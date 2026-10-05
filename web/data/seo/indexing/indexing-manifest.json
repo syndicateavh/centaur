@@ -82,7 +82,7 @@
       "path": "/resources/bank-reconciliation-process/",
       "kind": "site-route",
       "routeId": "resource-bank-reconciliation-process",
-      "lastModified": "2026-09-27",
+      "lastModified": "2026-10-05",
       "eligibility": "sitemap"
     },
     {
@@ -286,51 +286,51 @@
       "eligibility": "sitemap"
     },
     {
-      "url": "https://centaurcareers.in/india/delhi-ncr/",
-      "path": "/india/delhi-ncr/",
+      "url": "https://centaurcareers.in/best-finance-course-in-delhi/",
+      "path": "/best-finance-course-in-delhi/",
       "kind": "site-route",
       "routeId": "india-delhi-ncr",
-      "lastModified": "2026-09-30",
+      "lastModified": "2026-10-05",
       "eligibility": "sitemap"
     },
     {
-      "url": "https://centaurcareers.in/india/bengaluru/",
-      "path": "/india/bengaluru/",
+      "url": "https://centaurcareers.in/best-finance-course-in-bangalore/",
+      "path": "/best-finance-course-in-bangalore/",
       "kind": "site-route",
       "routeId": "india-bengaluru",
-      "lastModified": "2026-09-30",
+      "lastModified": "2026-10-05",
       "eligibility": "sitemap"
     },
     {
-      "url": "https://centaurcareers.in/india/mumbai/",
-      "path": "/india/mumbai/",
+      "url": "https://centaurcareers.in/best-finance-course-in-mumbai/",
+      "path": "/best-finance-course-in-mumbai/",
       "kind": "site-route",
       "routeId": "india-mumbai",
-      "lastModified": "2026-09-30",
+      "lastModified": "2026-10-05",
       "eligibility": "sitemap"
     },
     {
-      "url": "https://centaurcareers.in/india/pune/",
-      "path": "/india/pune/",
+      "url": "https://centaurcareers.in/best-finance-course-in-pune/",
+      "path": "/best-finance-course-in-pune/",
       "kind": "site-route",
       "routeId": "india-pune",
-      "lastModified": "2026-09-26",
+      "lastModified": "2026-10-05",
       "eligibility": "sitemap"
     },
     {
-      "url": "https://centaurcareers.in/india/hyderabad/",
-      "path": "/india/hyderabad/",
+      "url": "https://centaurcareers.in/best-finance-course-in-hyderabad/",
+      "path": "/best-finance-course-in-hyderabad/",
       "kind": "site-route",
       "routeId": "india-hyderabad",
-      "lastModified": "2026-09-26",
+      "lastModified": "2026-10-05",
       "eligibility": "sitemap"
     },
     {
-      "url": "https://centaurcareers.in/locations/lucknow/",
-      "path": "/locations/lucknow/",
+      "url": "https://centaurcareers.in/best-finance-course-in-lucknow/",
+      "path": "/best-finance-course-in-lucknow/",
       "kind": "site-route",
       "routeId": "lucknow-location",
-      "lastModified": "2026-09-30",
+      "lastModified": "2026-10-05",
       "eligibility": "sitemap"
     },
     {
@@ -354,7 +354,7 @@
       "path": "/career-guides/kyc-aml-analyst/",
       "kind": "site-route",
       "routeId": "career-guide-kyc-aml-analyst",
-      "lastModified": "2026-09-29",
+      "lastModified": "2026-10-05",
       "eligibility": "sitemap"
     },
     {
@@ -386,7 +386,7 @@
       "path": "/career-guides/retail-banking-operations/",
       "kind": "site-route",
       "routeId": "career-guide-retail-banking-operations",
-      "lastModified": "2026-09-29",
+      "lastModified": "2026-09-27",
       "eligibility": "sitemap"
     },
     {
@@ -890,7 +890,7 @@
       "path": "/blog/category/career-guides/",
       "kind": "blog-category",
       "routeId": null,
-      "lastModified": "2026-10-04",
+      "lastModified": "2026-10-05",
       "eligibility": "sitemap"
     },
     {
@@ -922,7 +922,7 @@
       "path": "/blog/category/investment-banking/",
       "kind": "blog-category",
       "routeId": null,
-      "lastModified": "2026-10-04",
+      "lastModified": "2026-10-05",
       "eligibility": "sitemap"
     },
     {
@@ -938,7 +938,7 @@
       "path": "/blog/best-banking-course-with-placement-india/",
       "kind": "blog-article",
       "routeId": null,
-      "lastModified": "2026-10-04",
+      "lastModified": "2026-10-05",
       "eligibility": "sitemap"
     },
     {
@@ -962,7 +962,7 @@
       "path": "/blog/investment-banking-operations-course-career-india/",
       "kind": "blog-article",
       "routeId": null,
-      "lastModified": "2026-10-04",
+      "lastModified": "2026-10-05",
       "eligibility": "sitemap"
     },
     {
@@ -1162,7 +1162,7 @@
       "path": "/blog/how-to-evaluate-finance-institute-reviews/",
       "kind": "blog-article",
       "routeId": null,
-      "lastModified": "2026-09-29",
+      "lastModified": "2026-10-05",
       "eligibility": "sitemap"
     },
     {

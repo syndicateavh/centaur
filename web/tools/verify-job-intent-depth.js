@@ -73,7 +73,7 @@ for (const item of cases) {
   for (const filename of item.downloads) {
     const publicPath = `/downloads/${filename}`;
     check(post.body.some((block) => block.type === 'link' && block.href === publicPath), `${item.slug}: source link missing ${filename}`);
-    check(html.includes(`href="${publicPath}"`), `${item.slug}: download link not rendered ${filename}`);
+    check(html.includes(`data-preview-asset="${publicPath}"`), `${item.slug}: on-screen file preview not rendered ${filename}`);
     check(fs.existsSync(path.resolve('public/downloads', filename)), `${item.slug}: source download missing ${filename}`);
     check(fs.existsSync(path.join(buildRoot, 'downloads', filename)), `${item.slug}: built download missing ${filename}`);
   }

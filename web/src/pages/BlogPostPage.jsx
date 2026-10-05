@@ -116,7 +116,7 @@ export default function BlogPostPage() {
         </div>
       </section>
       <RoleIntentPathway intent={roleIntent} />
-      <CtaSection title="Continue your finance career journey" description="Explore the learning tracks and placement support available through Centaur Careers." />
+      <CtaSection eyebrow="Next step" title="See how these topics fit the Financial Operations Masterclass" description="Compare the curriculum, learning options, published fees, certificate details, and current written support terms. Contact the team if you want help matching the program to your goal." primaryTo="/courses/" primaryLabel="Review course details" primaryAnalyticsIntent="commercial_program" secondaryTo="/contact/" secondaryLabel="Ask about the current cohort" />
     </>
   );
 }

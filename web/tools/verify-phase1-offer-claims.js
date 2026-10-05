@@ -45,7 +45,7 @@ const placements = readRoute('/placements/');
 const feeOwner = readRoute('/courses/finance-course-fees-eligibility/');
 const eligibility = readRoute('/finance-course-eligibility/');
 const contact = readRoute('/contact/');
-const lucknow = readRoute('/locations/lucknow/');
+const lucknow = readRoute('/best-finance-course-in-lucknow/');
 const legalPages = [
   ['/terms-and-conditions/', readRoute('/terms-and-conditions/')],
   ['/refund-cancellation-policy/', readRoute('/refund-cancellation-policy/')],
@@ -66,23 +66,23 @@ requireContent('/courses/', courses, ['href="/placements/#job-guarantee-terms"',
 requireContent('/placements/', placements, [
   'Published program summary',
   'Graduation is the program entry requirement',
-  'this page and the downloadable summary do not replace them',
-  'href="/downloads/placement-support-terms.txt"',
+  'this page and the on-screen summary do not replace them',
+  'data-preview-asset="/downloads/placement-support-terms.txt"',
 ]);
 requireContent('/courses/finance-course-fees-eligibility/', feeOwner, ['Graduation is the program entry requirement', 'previous finance background is not required', 'written quote for your cohort']);
 requireContent('/finance-course-eligibility/', eligibility, ['Graduation is the entry requirement', 'previous finance education or work experience is not required']);
 requireContent('/contact/', contact, ['href="/courses/finance-course-fees-eligibility/"', 'href="/placements/#job-guarantee-terms"']);
-requireContent('/locations/lucknow/', lucknow, [BUSINESS_DATA.trainingLocation.address.streetAddress]);
+requireContent('/best-finance-course-in-lucknow/', lucknow, [BUSINESS_DATA.trainingLocation.address.streetAddress]);
 for (const [routePath, html] of legalPages) {
   requireContent(routePath, html, ['href="/placements/#job-guarantee-terms"', 'summary']);
   rejectContent(routePath, html, [/current published Job Guarantee Terms/i, /does not promise[^.]*individual outcome/i]);
 }
 
 const termsFile = path.resolve('public/downloads/placement-support-terms.txt');
-if (!fs.existsSync(termsFile)) failures.push('downloadable placement summary is missing');
+if (!fs.existsSync(termsFile)) failures.push('placement summary file is missing');
 else requireContent('placement summary download', fs.readFileSync(termsFile, 'utf8'), [
-  'plain-text summary',
-  'current written program terms provided for the applicable cohort control',
+  'published summary',
+  'Request the complete, current written terms for your cohort before enrolling',
 ]);
 
 const staleClaimPatterns = [

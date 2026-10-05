@@ -237,9 +237,9 @@ export const ROLE_INTENTS = Object.freeze([
     label: 'FinTech Operations',
     guideId: 'fintech-operations',
     canonicalPath: '/career-guides/fintech-operations/',
-    primaryQuestion: 'What does a FinTech operations analyst do?',
+    primaryQuestion: 'How do FinTech operations support digital finance services?',
     searchQuestions: [
-      'What does a FinTech operations analyst do?',
+      'How do FinTech operations support digital finance services?',
       'How can a commerce graduate explore FinTech operations?',
       'How do digital payments and FinTech operations connect?',
       'Which skills appear in entry-level FinTech operations roles?',
@@ -662,7 +662,7 @@ export const ROLE_INTENTS = Object.freeze([
     searchQuestions: ['What does a UPI operations analyst do?', 'How are UPI transaction issues reviewed?', 'What skills help with UPI operations jobs?', 'Can graduates apply for UPI operations roles?'],
     summary: 'A role guide to UPI transaction records, status checks, reconciliation, service cases, and operations boundaries.',
     quizDomainId: 'digital-payments-operations', coursePath: '/courses/digital-payments/', coursePathLabel: 'Explore the Digital Payments module',
-    articleLinks: [{ label: 'Read NPCI’s UPI FAQs', path: 'https://www.npci.org.in/what-we-do/upi/faqs' }],
+    articleLinks: [{ label: 'Explore the UPI payment lifecycle', path: '/blog/upi-payment-lifecycle/' }],
   }),
   createRoleIntent({
     id: 'payment-disputes-analyst-role', kind: 'guide', label: 'Payment Disputes Analyst', guideId: 'payment-disputes-analyst',

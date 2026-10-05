@@ -8,12 +8,12 @@
     "importedOn": "2026-09-13",
     "normalization": "Preserve workbook wording; collapse whitespace and normalize case/dash variants for ownership checks."
   },
-  "generatedOn": "2026-09-29",
+  "generatedOn": "2026-10-05",
   "briefs": [
     {
       "targetUrl": "/courses/",
       "canonical": "https://centaurcareers.in/courses/",
-      "primaryKeyword": "investment banking operations course",
+      "primaryKeyword": "financial operations masterclass",
       "secondaryKeywords": [
         "investment banking course",
         "investment banking course in India",
@@ -48,7 +48,7 @@
         "SmartSteps",
         "MentorMeCareers"
       ],
-      "title": "Investment Banking Operations Course | Centaur Careers",
+      "title": "Financial Operations Masterclass | Centaur Careers",
       "h1": "Financial Operations Masterclass",
       "h2Outline": [
         "Financial Operations Masterclass overview",
@@ -92,16 +92,20 @@
         "/courses/digital-payments/",
         "/courses/fintech/",
         "/placements/",
+        "/placements/student-outcomes/",
         "/about/",
         "/contact/",
         "/privacy-policy/",
+        "/terms-and-conditions/",
+        "/refund-cancellation-policy/",
+        "/disclaimer/",
         "/india/",
-        "/india/delhi-ncr/",
-        "/india/bengaluru/",
-        "/india/mumbai/",
-        "/india/pune/",
-        "/india/hyderabad/",
-        "/locations/lucknow/",
+        "/best-finance-course-in-delhi/",
+        "/best-finance-course-in-bangalore/",
+        "/best-finance-course-in-mumbai/",
+        "/best-finance-course-in-pune/",
+        "/best-finance-course-in-hyderabad/",
+        "/best-finance-course-in-lucknow/",
         "/faqs/",
         "/career-guides/investment-banking-operations/",
         "/career-guides/kyc-aml-analyst/",
@@ -129,12 +133,39 @@
         "/career-guides/settlement-analyst/",
         "/career-guides/finance-learning-roadmap/",
         "/career-guides/operations-analyst-banking/",
+        "/career-guides/corporate-actions-analyst/",
+        "/career-guides/fund-accounting-analyst/",
+        "/career-guides/aml-analyst/",
+        "/career-guides/client-onboarding-analyst/",
+        "/career-guides/payment-operations-analyst/",
+        "/career-guides/upi-operations-analyst/",
+        "/career-guides/payment-disputes-analyst/",
+        "/career-guides/branch-operations-analyst/",
+        "/career-guides/banking-relationship-manager/",
+        "/career-guides/loan-processing-analyst/",
+        "/career-guides/nbfc-operations-analyst/",
+        "/career-guides/fintech-operations-analyst/",
         "/courses/banking-courses/",
         "/courses/banking-and-finance/",
         "/courses/finance-operations-training/",
+        "/best-finance-course-in-india-with-placement/",
+        "/best-investment-banking-course-india/",
+        "/best-finance-course-after-graduation/",
+        "/best-finance-course-after-bcom/",
+        "/finance-course-with-placement/",
+        "/finance-course-with-job-guarantee/",
+        "/finance-course-fees-in-india/",
+        "/finance-course-duration/",
+        "/finance-course-eligibility/",
+        "/online-finance-course-with-placement/",
+        "/job-oriented-finance-course-india/",
+        "/investment-banking-operations-course-with-placement/",
+        "/finance-institute-lucknow-with-placement/",
+        "/which-finance-course-is-right-for-me/",
         "/courses/finance-operations-syllabus/",
         "/courses/finance-course-fees-eligibility/",
         "/courses/finance-course-for-graduates/",
+        "/compare/best-finance-institutes-india/",
         "/compare/finance-operations-vs-financial-modelling-cfa/",
         "/compare/online-vs-offline-finance-training/",
         "/compare/investment-banking-operations-vs-financial-analyst/",
@@ -168,16 +199,20 @@
         "/courses/digital-payments/",
         "/courses/fintech/",
         "/placements/",
+        "/placements/student-outcomes/",
         "/about/",
         "/contact/",
         "/privacy-policy/",
+        "/terms-and-conditions/",
+        "/refund-cancellation-policy/",
+        "/disclaimer/",
         "/india/",
-        "/india/delhi-ncr/",
-        "/india/bengaluru/",
-        "/india/mumbai/",
-        "/india/pune/",
-        "/india/hyderabad/",
-        "/locations/lucknow/",
+        "/best-finance-course-in-delhi/",
+        "/best-finance-course-in-bangalore/",
+        "/best-finance-course-in-mumbai/",
+        "/best-finance-course-in-pune/",
+        "/best-finance-course-in-hyderabad/",
+        "/best-finance-course-in-lucknow/",
         "/faqs/",
         "/career-guides/investment-banking-operations/",
         "/career-guides/kyc-aml-analyst/",
@@ -205,12 +240,39 @@
         "/career-guides/settlement-analyst/",
         "/career-guides/finance-learning-roadmap/",
         "/career-guides/operations-analyst-banking/",
+        "/career-guides/corporate-actions-analyst/",
+        "/career-guides/fund-accounting-analyst/",
+        "/career-guides/aml-analyst/",
+        "/career-guides/client-onboarding-analyst/",
+        "/career-guides/payment-operations-analyst/",
+        "/career-guides/upi-operations-analyst/",
+        "/career-guides/payment-disputes-analyst/",
+        "/career-guides/branch-operations-analyst/",
+        "/career-guides/banking-relationship-manager/",
+        "/career-guides/loan-processing-analyst/",
+        "/career-guides/nbfc-operations-analyst/",
+        "/career-guides/fintech-operations-analyst/",
         "/courses/banking-courses/",
         "/courses/banking-and-finance/",
         "/courses/finance-operations-training/",
+        "/best-finance-course-in-india-with-placement/",
+        "/best-investment-banking-course-india/",
+        "/best-finance-course-after-graduation/",
+        "/best-finance-course-after-bcom/",
+        "/finance-course-with-placement/",
+        "/finance-course-with-job-guarantee/",
+        "/finance-course-fees-in-india/",
+        "/finance-course-duration/",
+        "/finance-course-eligibility/",
+        "/online-finance-course-with-placement/",
+        "/job-oriented-finance-course-india/",
+        "/investment-banking-operations-course-with-placement/",
+        "/finance-institute-lucknow-with-placement/",
+        "/which-finance-course-is-right-for-me/",
         "/courses/finance-operations-syllabus/",
         "/courses/finance-course-fees-eligibility/",
         "/courses/finance-course-for-graduates/",
+        "/compare/best-finance-institutes-india/",
         "/compare/finance-operations-vs-financial-modelling-cfa/",
         "/compare/online-vs-offline-finance-training/",
         "/compare/investment-banking-operations-vs-financial-analyst/",
@@ -226,6 +288,8 @@
         "/courses/finance-operations-syllabus/",
         "/courses/finance-course-fees-eligibility/",
         "/courses/finance-course-for-graduates/",
+        "/job-oriented-finance-course-india/",
+        "/investment-banking-operations-course-with-placement/",
         "/courses/retail-banking/",
         "/courses/finance-operations/",
         "/courses/kyc-aml/",
@@ -233,9 +297,10 @@
         "/courses/fintech/",
         "/placements/",
         "/faqs/",
-        "/locations/lucknow/",
+        "/best-finance-course-in-lucknow/",
         "/career-guides/",
         "/compare/investment-banking-operations-courses/",
+        "/compare/best-finance-institutes-india/",
         "/compare/finance-operations-vs-financial-modelling-cfa/",
         "/compare/online-vs-offline-finance-training/",
         "/compare/investment-banking-operations-vs-financial-analyst/",
@@ -276,8 +341,8 @@
       "prerendered": true
     },
     {
-      "targetUrl": "/locations/lucknow/",
-      "canonical": "https://centaurcareers.in/locations/lucknow/",
+      "targetUrl": "/best-finance-course-in-lucknow/",
+      "canonical": "https://centaurcareers.in/best-finance-course-in-lucknow/",
       "primaryKeyword": "investment banking course in Lucknow",
       "secondaryKeywords": [
         "investment banking operations course in Lucknow",
@@ -301,13 +366,14 @@
         "upGrad",
         "MentorMeCareers"
       ],
-      "title": "Finance and Investment Banking Course in Lucknow",
+      "title": "Investment Banking Course in Lucknow | Centaur Careers",
       "h1": "Finance and Investment Banking Course in Lucknow",
       "h2Outline": [
-        "Investment Banking Course In Lucknow: local access and training context",
-        "Verified location, directions, and offline availability",
-        "What students can learn through the program",
-        "Local student FAQs and contact options"
+        "Investment Banking Course In Lucknow explained",
+        "Key roles, workflows, and skills",
+        "Career pathways for graduates and freshers",
+        "Practical questions and examples",
+        "How the Financial Operations Masterclass relates to this topic"
       ],
       "faqTopics": [],
       "incomingInternalLinks": [
@@ -321,10 +387,11 @@
         "/about/",
         "/contact/",
         "/india/",
-        "/india/delhi-ncr/",
-        "/india/bengaluru/",
-        "/india/mumbai/",
+        "/best-finance-course-in-delhi/",
+        "/best-finance-course-in-bangalore/",
+        "/best-finance-course-in-mumbai/",
         "/faqs/",
+        "/finance-institute-lucknow-with-placement/",
         "/compare/online-vs-offline-finance-training/"
       ],
       "recommendedIncomingInternalLinks": [
@@ -338,10 +405,11 @@
         "/about/",
         "/contact/",
         "/india/",
-        "/india/delhi-ncr/",
-        "/india/bengaluru/",
-        "/india/mumbai/",
+        "/best-finance-course-in-delhi/",
+        "/best-finance-course-in-bangalore/",
+        "/best-finance-course-in-mumbai/",
         "/faqs/",
+        "/finance-institute-lucknow-with-placement/",
         "/compare/online-vs-offline-finance-training/"
       ],
       "outgoingInternalLinks": [
@@ -351,6 +419,7 @@
         "/resources/",
         "/india/",
         "/placements/",
+        "/finance-institute-lucknow-with-placement/",
         "/faqs/"
       ],
       "schema": [
@@ -415,20 +484,27 @@
         "/resources/kyc-aml-compliance-guide/",
         "/courses/",
         "/india/",
+        "/best-finance-course-in-mumbai/",
         "/career-guides/kyc-aml-analyst/",
-        "/career-guides/transaction-monitoring-analyst/"
+        "/career-guides/transaction-monitoring-analyst/",
+        "/career-guides/aml-analyst/",
+        "/career-guides/client-onboarding-analyst/"
       ],
       "recommendedIncomingInternalLinks": [
         "/resources/kyc-aml-compliance-guide/",
         "/courses/",
         "/india/",
+        "/best-finance-course-in-mumbai/",
         "/career-guides/kyc-aml-analyst/",
-        "/career-guides/transaction-monitoring-analyst/"
+        "/career-guides/transaction-monitoring-analyst/",
+        "/career-guides/aml-analyst/",
+        "/career-guides/client-onboarding-analyst/"
       ],
       "outgoingInternalLinks": [
         "/courses/",
         "/career-guides/kyc-aml-analyst/",
         "/career-guides/fintech-operations/",
+        "/best-finance-course-in-mumbai/",
         "/resources/",
         "/resources/investment-banking-interview-questions/",
         "/placements/",
@@ -455,7 +531,7 @@
     {
       "targetUrl": "/india/",
       "canonical": "https://centaurcareers.in/india/",
-      "primaryKeyword": "investment banking operations course India",
+      "primaryKeyword": "finance career training India",
       "secondaryKeywords": [
         "online investment banking operations course India",
         "finance operations training India",
@@ -488,10 +564,10 @@
         "upGrad",
         "MentorMeCareers"
       ],
-      "title": "Live Online Finance Course Across India | Centaur Careers",
-      "h1": "Financial Operations Masterclass: Live Online Across India",
+      "title": "Online Finance Course in India | Centaur Careers",
+      "h1": "Live Online Finance Course Across India",
       "h2Outline": [
-        "Investment Banking Operations Course India explained",
+        "Finance Career Training India explained",
         "Key roles, workflows, and skills",
         "Career pathways for graduates and freshers",
         "Practical questions and examples",
@@ -517,12 +593,12 @@
         "/placements/",
         "/about/",
         "/contact/",
-        "/india/delhi-ncr/",
-        "/india/bengaluru/",
-        "/india/mumbai/",
-        "/india/pune/",
-        "/india/hyderabad/",
-        "/locations/lucknow/",
+        "/best-finance-course-in-delhi/",
+        "/best-finance-course-in-bangalore/",
+        "/best-finance-course-in-mumbai/",
+        "/best-finance-course-in-pune/",
+        "/best-finance-course-in-hyderabad/",
+        "/best-finance-course-in-lucknow/",
         "/faqs/",
         "/career-guides/investment-banking-operations/",
         "/career-guides/kyc-aml-analyst/",
@@ -533,6 +609,9 @@
         "/career-guides/digital-payments-operations/",
         "/career-guides/financial-operations-faq/",
         "/career-guides/fintech-operations/",
+        "/online-finance-course-with-placement/",
+        "/finance-course-cities-india/",
+        "/compare/best-finance-institutes-india/",
         "/compare/online-vs-offline-finance-training/",
         "/compare/investment-banking-operations-courses/"
       ],
@@ -555,12 +634,12 @@
         "/placements/",
         "/about/",
         "/contact/",
-        "/india/delhi-ncr/",
-        "/india/bengaluru/",
-        "/india/mumbai/",
-        "/india/pune/",
-        "/india/hyderabad/",
-        "/locations/lucknow/",
+        "/best-finance-course-in-delhi/",
+        "/best-finance-course-in-bangalore/",
+        "/best-finance-course-in-mumbai/",
+        "/best-finance-course-in-pune/",
+        "/best-finance-course-in-hyderabad/",
+        "/best-finance-course-in-lucknow/",
         "/faqs/",
         "/career-guides/investment-banking-operations/",
         "/career-guides/kyc-aml-analyst/",
@@ -571,6 +650,9 @@
         "/career-guides/digital-payments-operations/",
         "/career-guides/financial-operations-faq/",
         "/career-guides/fintech-operations/",
+        "/online-finance-course-with-placement/",
+        "/finance-course-cities-india/",
+        "/compare/best-finance-institutes-india/",
         "/compare/online-vs-offline-finance-training/",
         "/compare/investment-banking-operations-courses/"
       ],
@@ -590,18 +672,20 @@
         "/courses/fintech/",
         "/career-guides/",
         "/compare/investment-banking-operations-courses/",
+        "/compare/best-finance-institutes-india/",
+        "/finance-course-cities-india/",
         "/resources/",
         "/resources/investment-banking-interview-questions/",
         "/resources/finance-gk/",
         "/placements/",
         "/faqs/",
-        "/locations/lucknow/",
+        "/best-finance-course-in-lucknow/",
         "/contact/",
-        "/india/delhi-ncr/",
-        "/india/bengaluru/",
-        "/india/mumbai/",
-        "/india/pune/",
-        "/india/hyderabad/"
+        "/best-finance-course-in-delhi/",
+        "/best-finance-course-in-bangalore/",
+        "/best-finance-course-in-mumbai/",
+        "/best-finance-course-in-pune/",
+        "/best-finance-course-in-hyderabad/"
       ],
       "schema": [
         "WebPage",
@@ -665,17 +749,31 @@
       "incomingInternalLinks": [
         "/career-guides/",
         "/courses/",
-        "/career-guides/finance-learning-roadmap/"
+        "/career-guides/finance-learning-roadmap/",
+        "/best-finance-course-in-india-with-placement/",
+        "/best-finance-course-after-graduation/",
+        "/job-oriented-finance-course-india/",
+        "/finance-course-vs-mba-cfa-financial-modelling/",
+        "/which-finance-course-is-right-for-me/",
+        "/compare/best-finance-institutes-india/"
       ],
       "recommendedIncomingInternalLinks": [
         "/career-guides/",
         "/courses/",
-        "/career-guides/finance-learning-roadmap/"
+        "/career-guides/finance-learning-roadmap/",
+        "/best-finance-course-in-india-with-placement/",
+        "/best-finance-course-after-graduation/",
+        "/job-oriented-finance-course-india/",
+        "/finance-course-vs-mba-cfa-financial-modelling/",
+        "/which-finance-course-is-right-for-me/",
+        "/compare/best-finance-institutes-india/"
       ],
       "outgoingInternalLinks": [
         "/career-guides/",
         "/courses/",
+        "/which-finance-course-is-right-for-me/",
         "/compare/investment-banking-operations-courses/",
+        "/compare/best-finance-institutes-india/",
         "/career-guides/finance-careers-after-graduation/",
         "/career-guides/investment-banking-operations/",
         "/career-guides/kyc-aml-analyst/",
@@ -702,8 +800,8 @@
       "prerendered": true
     },
     {
-      "targetUrl": "/india/delhi-ncr/",
-      "canonical": "https://centaurcareers.in/india/delhi-ncr/",
+      "targetUrl": "/best-finance-course-in-delhi/",
+      "canonical": "https://centaurcareers.in/best-finance-course-in-delhi/",
       "primaryKeyword": "investment banking course in Delhi",
       "secondaryKeywords": [
         "investment banking operations course in Delhi",
@@ -736,7 +834,7 @@
         "MentorMeCareers"
       ],
       "title": "Investment Banking Course in Delhi | Online NCR Guide",
-      "h1": "Delhi-NCR Finance Operations: Online Course and Career Guide",
+      "h1": "Investment Banking Course in Delhi: Online NCR Guide",
       "h2Outline": [
         "Investment Banking Course In Delhi explained",
         "Key roles, workflows, and skills",
@@ -746,20 +844,29 @@
       ],
       "faqTopics": [],
       "incomingInternalLinks": [
-        "/india/"
+        "/india/",
+        "/career-guides/finance-operations/",
+        "/courses/banking-and-finance/",
+        "/finance-course-cities-india/"
       ],
       "recommendedIncomingInternalLinks": [
-        "/india/"
+        "/india/",
+        "/career-guides/finance-operations/",
+        "/courses/banking-and-finance/",
+        "/finance-course-cities-india/"
       ],
       "outgoingInternalLinks": [
         "/india/",
         "/courses/",
+        "/courses/banking-and-finance/",
+        "/courses/investment-banking-operations/",
         "/career-guides/",
         "/career-guides/finance-operations/",
         "/career-guides/kyc-aml-analyst/",
         "/resources/",
         "/resources/investment-banking-interview-questions/",
-        "/locations/lucknow/",
+        "/placements/",
+        "/best-finance-course-in-lucknow/",
         "/faqs/",
         "/contact/"
       ],
@@ -782,8 +889,8 @@
       "prerendered": true
     },
     {
-      "targetUrl": "/india/bengaluru/",
-      "canonical": "https://centaurcareers.in/india/bengaluru/",
+      "targetUrl": "/best-finance-course-in-bangalore/",
+      "canonical": "https://centaurcareers.in/best-finance-course-in-bangalore/",
       "primaryKeyword": "investment banking course in Bangalore",
       "secondaryKeywords": [
         "investment banking operations course in Bangalore",
@@ -815,8 +922,8 @@
         "upGrad",
         "MentorMeCareers"
       ],
-      "title": "Investment Banking Course in Bangalore | Online Guide",
-      "h1": "Bengaluru Finance and FinTech Operations: Online Course Guide",
+      "title": "Investment Banking Course in Bangalore | Online Bengaluru Guide",
+      "h1": "Investment Banking Course in Bangalore: Online Bengaluru Guide",
       "h2Outline": [
         "Investment Banking Course In Bangalore explained",
         "Key roles, workflows, and skills",
@@ -826,20 +933,29 @@
       ],
       "faqTopics": [],
       "incomingInternalLinks": [
-        "/india/"
+        "/courses/investment-banking-operations/",
+        "/india/",
+        "/career-guides/investment-banking-operations/",
+        "/finance-course-cities-india/"
       ],
       "recommendedIncomingInternalLinks": [
-        "/india/"
+        "/courses/investment-banking-operations/",
+        "/india/",
+        "/career-guides/investment-banking-operations/",
+        "/finance-course-cities-india/"
       ],
       "outgoingInternalLinks": [
         "/india/",
         "/courses/",
+        "/courses/investment-banking-operations/",
         "/career-guides/",
+        "/career-guides/investment-banking-operations/",
         "/career-guides/digital-payments-operations/",
         "/career-guides/finance-operations/",
         "/resources/",
         "/resources/investment-banking-interview-questions/",
-        "/locations/lucknow/",
+        "/placements/",
+        "/best-finance-course-in-lucknow/",
         "/faqs/",
         "/contact/"
       ],
@@ -862,8 +978,8 @@
       "prerendered": true
     },
     {
-      "targetUrl": "/india/mumbai/",
-      "canonical": "https://centaurcareers.in/india/mumbai/",
+      "targetUrl": "/best-finance-course-in-mumbai/",
+      "canonical": "https://centaurcareers.in/best-finance-course-in-mumbai/",
       "primaryKeyword": "investment banking course in Mumbai",
       "secondaryKeywords": [
         "investment banking operations course in Mumbai",
@@ -887,8 +1003,8 @@
         "upGrad",
         "MentorMeCareers"
       ],
-      "title": "Investment Banking Course in Mumbai | Online Guide",
-      "h1": "Mumbai Investment Operations: Online Course and Career Guide",
+      "title": "Investment Banking Course in Mumbai | Online Training Guide",
+      "h1": "Investment Banking Course in Mumbai: Online Training Guide",
       "h2Outline": [
         "Investment Banking Course In Mumbai explained",
         "Key roles, workflows, and skills",
@@ -898,20 +1014,29 @@
       ],
       "faqTopics": [],
       "incomingInternalLinks": [
-        "/india/"
+        "/courses/investment-banking-operations/",
+        "/courses/kyc-aml/",
+        "/india/",
+        "/career-guides/kyc-aml-analyst/"
       ],
       "recommendedIncomingInternalLinks": [
-        "/india/"
+        "/courses/investment-banking-operations/",
+        "/courses/kyc-aml/",
+        "/india/",
+        "/career-guides/kyc-aml-analyst/"
       ],
       "outgoingInternalLinks": [
         "/india/",
         "/courses/",
+        "/courses/kyc-aml/",
         "/career-guides/",
+        "/career-guides/kyc-aml-analyst/",
         "/career-guides/investment-banking-operations/",
         "/career-guides/trade-lifecycle/",
         "/resources/",
         "/resources/investment-banking-interview-questions/",
-        "/locations/lucknow/",
+        "/placements/",
+        "/best-finance-course-in-lucknow/",
         "/faqs/",
         "/contact/"
       ],
@@ -934,8 +1059,8 @@
       "prerendered": true
     },
     {
-      "targetUrl": "/india/pune/",
-      "canonical": "https://centaurcareers.in/india/pune/",
+      "targetUrl": "/best-finance-course-in-pune/",
+      "canonical": "https://centaurcareers.in/best-finance-course-in-pune/",
       "primaryKeyword": "investment banking course in Pune",
       "secondaryKeywords": [
         "investment banking operations course in Pune",
@@ -959,8 +1084,8 @@
         "upGrad",
         "MentorMeCareers"
       ],
-      "title": "Investment Banking Course in Pune | Online Guide",
-      "h1": "Pune Finance Operations: Online Learning and Career Guide",
+      "title": "Investment Banking Course in Pune | Online Training Guide",
+      "h1": "Investment Banking Course in Pune: Online Training Guide",
       "h2Outline": [
         "Investment Banking Course In Pune explained",
         "Key roles, workflows, and skills",
@@ -979,6 +1104,7 @@
         "/india/",
         "/courses/",
         "/career-guides/",
+        "/career-guides/finance-operations/",
         "/career-guides/fintech-operations/",
         "/career-guides/digital-payments-operations/",
         "/resources/",
@@ -1004,8 +1130,8 @@
       "prerendered": true
     },
     {
-      "targetUrl": "/india/hyderabad/",
-      "canonical": "https://centaurcareers.in/india/hyderabad/",
+      "targetUrl": "/best-finance-course-in-hyderabad/",
+      "canonical": "https://centaurcareers.in/best-finance-course-in-hyderabad/",
       "primaryKeyword": "investment banking course in Hyderabad",
       "secondaryKeywords": [
         "investment banking operations course in Hyderabad",
@@ -1029,8 +1155,8 @@
         "upGrad",
         "MentorMeCareers"
       ],
-      "title": "Investment Banking Course in Hyderabad | Online Guide",
-      "h1": "Hyderabad Finance Operations: Online Learning and Career Guide",
+      "title": "Investment Banking Course in Hyderabad | Online Training Guide",
+      "h1": "Investment Banking Course in Hyderabad: Online Training Guide",
       "h2Outline": [
         "Investment Banking Course In Hyderabad explained",
         "Key roles, workflows, and skills",
@@ -1134,9 +1260,9 @@
         "/courses/finance-operations/",
         "/courses/kyc-aml/",
         "/india/",
-        "/india/delhi-ncr/",
-        "/india/bengaluru/",
-        "/india/mumbai/",
+        "/best-finance-course-in-delhi/",
+        "/best-finance-course-in-bangalore/",
+        "/best-finance-course-in-mumbai/",
         "/faqs/",
         "/career-guides/investment-banking-operations/",
         "/career-guides/kyc-aml-analyst/",
@@ -1169,9 +1295,9 @@
         "/courses/finance-operations/",
         "/courses/kyc-aml/",
         "/india/",
-        "/india/delhi-ncr/",
-        "/india/bengaluru/",
-        "/india/mumbai/",
+        "/best-finance-course-in-delhi/",
+        "/best-finance-course-in-bangalore/",
+        "/best-finance-course-in-mumbai/",
         "/faqs/",
         "/career-guides/investment-banking-operations/",
         "/career-guides/kyc-aml-analyst/",
@@ -1277,6 +1403,8 @@
         "/career-guides/choosing-finance-career-course/",
         "/career-guides/fintech-operations/",
         "/career-guides/finance-learning-roadmap/",
+        "/best-finance-course-after-graduation/",
+        "/best-finance-course-after-bcom/",
         "/courses/finance-course-for-graduates/",
         "/compare/banking-vs-finance-careers/"
       ],
@@ -1291,12 +1419,16 @@
         "/career-guides/choosing-finance-career-course/",
         "/career-guides/fintech-operations/",
         "/career-guides/finance-learning-roadmap/",
+        "/best-finance-course-after-graduation/",
+        "/best-finance-course-after-bcom/",
         "/courses/finance-course-for-graduates/",
         "/compare/banking-vs-finance-careers/"
       ],
       "outgoingInternalLinks": [
         "/career-guides/",
         "/courses/",
+        "/best-finance-course-after-bcom/",
+        "/best-finance-course-after-graduation/",
         "/resources/",
         "/india/",
         "/resources/investment-banking-interview-questions/",
@@ -1355,7 +1487,7 @@
         "Imarticus",
         "Proschool"
       ],
-      "title": "Investment Banking Operations Career Guide | Centaur Careers",
+      "title": "Investment Banking Operations Analyst Career | Centaur Careers",
       "h1": "Investment Banking Operations: Career, Roles & Skills",
       "h2Outline": [
         "What Is Investment Banking Operations explained",
@@ -1378,12 +1510,15 @@
         "/resources/corporate-actions-workflow/",
         "/courses/",
         "/courses/investment-banking-operations/",
-        "/india/mumbai/",
+        "/best-finance-course-in-bangalore/",
+        "/best-finance-course-in-mumbai/",
         "/career-guides/finance-operations/",
         "/career-guides/trade-lifecycle/",
         "/career-guides/finance-careers-after-graduation/",
         "/career-guides/financial-operations-faq/",
         "/career-guides/choosing-finance-career-course/",
+        "/career-guides/corporate-actions-analyst/",
+        "/best-investment-banking-course-india/",
         "/compare/investment-banking-operations-vs-financial-analyst/"
       ],
       "recommendedIncomingInternalLinks": [
@@ -1392,12 +1527,15 @@
         "/resources/corporate-actions-workflow/",
         "/courses/",
         "/courses/investment-banking-operations/",
-        "/india/mumbai/",
+        "/best-finance-course-in-bangalore/",
+        "/best-finance-course-in-mumbai/",
         "/career-guides/finance-operations/",
         "/career-guides/trade-lifecycle/",
         "/career-guides/finance-careers-after-graduation/",
         "/career-guides/financial-operations-faq/",
         "/career-guides/choosing-finance-career-course/",
+        "/career-guides/corporate-actions-analyst/",
+        "/best-investment-banking-course-india/",
         "/compare/investment-banking-operations-vs-financial-analyst/"
       ],
       "outgoingInternalLinks": [
@@ -1406,6 +1544,8 @@
         "/courses/investment-banking-operations/",
         "/resources/",
         "/india/",
+        "/best-finance-course-in-bangalore/",
+        "/resources/corporate-actions-workflow/",
         "/resources/investment-banking-interview-questions/",
         "/career-guides/trade-lifecycle/",
         "/career-guides/finance-operations/",
@@ -1485,12 +1625,13 @@
         "/resources/finance-gk/",
         "/resources/reconciliation-in-finance/",
         "/resources/corporate-actions-workflow/",
-        "/india/mumbai/",
+        "/best-finance-course-in-mumbai/",
         "/career-guides/investment-banking-operations/",
         "/career-guides/digital-payments-operations/",
         "/career-guides/trade-support-analyst/",
         "/career-guides/securities-operations/",
-        "/career-guides/settlement-analyst/"
+        "/career-guides/settlement-analyst/",
+        "/investment-banking-operations-course-with-placement/"
       ],
       "recommendedIncomingInternalLinks": [
         "/career-guides/",
@@ -1498,17 +1639,19 @@
         "/resources/finance-gk/",
         "/resources/reconciliation-in-finance/",
         "/resources/corporate-actions-workflow/",
-        "/india/mumbai/",
+        "/best-finance-course-in-mumbai/",
         "/career-guides/investment-banking-operations/",
         "/career-guides/digital-payments-operations/",
         "/career-guides/trade-support-analyst/",
         "/career-guides/securities-operations/",
-        "/career-guides/settlement-analyst/"
+        "/career-guides/settlement-analyst/",
+        "/investment-banking-operations-course-with-placement/"
       ],
       "outgoingInternalLinks": [
         "/career-guides/",
         "/courses/",
         "/courses/investment-banking-operations/",
+        "/career-guides/settlement-analyst/",
         "/resources/",
         "/india/",
         "/resources/investment-banking-interview-questions/",
@@ -1597,8 +1740,9 @@
         "/resources/financial-statement-analysis/",
         "/courses/",
         "/courses/finance-operations/",
-        "/india/delhi-ncr/",
-        "/india/bengaluru/",
+        "/best-finance-course-in-delhi/",
+        "/best-finance-course-in-bangalore/",
+        "/best-finance-course-in-pune/",
         "/career-guides/investment-banking-operations/",
         "/career-guides/kyc-aml-analyst/",
         "/career-guides/trade-lifecycle/",
@@ -1613,6 +1757,7 @@
         "/career-guides/operations-analyst-banking/",
         "/courses/banking-courses/",
         "/courses/finance-operations-training/",
+        "/job-oriented-finance-course-india/",
         "/courses/finance-operations-syllabus/",
         "/compare/finance-operations-vs-financial-modelling-cfa/",
         "/compare/investment-banking-operations-vs-financial-analyst/",
@@ -1631,8 +1776,9 @@
         "/resources/financial-statement-analysis/",
         "/courses/",
         "/courses/finance-operations/",
-        "/india/delhi-ncr/",
-        "/india/bengaluru/",
+        "/best-finance-course-in-delhi/",
+        "/best-finance-course-in-bangalore/",
+        "/best-finance-course-in-pune/",
         "/career-guides/investment-banking-operations/",
         "/career-guides/kyc-aml-analyst/",
         "/career-guides/trade-lifecycle/",
@@ -1647,6 +1793,7 @@
         "/career-guides/operations-analyst-banking/",
         "/courses/banking-courses/",
         "/courses/finance-operations-training/",
+        "/job-oriented-finance-course-india/",
         "/courses/finance-operations-syllabus/",
         "/compare/finance-operations-vs-financial-modelling-cfa/",
         "/compare/investment-banking-operations-vs-financial-analyst/",
@@ -1661,6 +1808,7 @@
         "/resources/financial-accounting-banking/",
         "/resources/financial-statement-analysis/",
         "/india/",
+        "/best-finance-course-in-delhi/",
         "/resources/investment-banking-interview-questions/",
         "/career-guides/reconciliation-analyst/",
         "/career-guides/investment-banking-operations/",
@@ -1717,7 +1865,7 @@
         "MentorMeCareers",
         "TimesPro"
       ],
-      "title": "KYC & AML Analyst Career Guide | Centaur Careers",
+      "title": "KYC Analyst Career Guide for Graduates | Centaur Careers",
       "h1": "KYC & AML Analyst Career Guide",
       "h2Outline": [
         "What Is KYC In Banking explained",
@@ -1740,15 +1888,18 @@
         "/resources/kyc-aml-compliance-guide/",
         "/courses/",
         "/courses/kyc-aml/",
-        "/india/delhi-ncr/",
-        "/india/hyderabad/",
+        "/best-finance-course-in-delhi/",
+        "/best-finance-course-in-mumbai/",
+        "/best-finance-course-in-hyderabad/",
         "/career-guides/finance-operations/",
         "/career-guides/finance-careers-after-graduation/",
         "/career-guides/retail-banking-operations/",
         "/career-guides/digital-payments-operations/",
         "/career-guides/financial-operations-faq/",
         "/career-guides/choosing-finance-career-course/",
-        "/career-guides/transaction-monitoring-analyst/"
+        "/career-guides/transaction-monitoring-analyst/",
+        "/career-guides/aml-analyst/",
+        "/career-guides/client-onboarding-analyst/"
       ],
       "recommendedIncomingInternalLinks": [
         "/career-guides/",
@@ -1756,15 +1907,18 @@
         "/resources/kyc-aml-compliance-guide/",
         "/courses/",
         "/courses/kyc-aml/",
-        "/india/delhi-ncr/",
-        "/india/hyderabad/",
+        "/best-finance-course-in-delhi/",
+        "/best-finance-course-in-mumbai/",
+        "/best-finance-course-in-hyderabad/",
         "/career-guides/finance-operations/",
         "/career-guides/finance-careers-after-graduation/",
         "/career-guides/retail-banking-operations/",
         "/career-guides/digital-payments-operations/",
         "/career-guides/financial-operations-faq/",
         "/career-guides/choosing-finance-career-course/",
-        "/career-guides/transaction-monitoring-analyst/"
+        "/career-guides/transaction-monitoring-analyst/",
+        "/career-guides/aml-analyst/",
+        "/career-guides/client-onboarding-analyst/"
       ],
       "outgoingInternalLinks": [
         "/career-guides/",
@@ -1772,6 +1926,7 @@
         "/courses/kyc-aml/",
         "/resources/",
         "/india/",
+        "/best-finance-course-in-mumbai/",
         "/resources/investment-banking-interview-questions/",
         "/career-guides/finance-operations/",
         "/career-guides/retail-banking-operations/",
@@ -1912,7 +2067,7 @@
         "Manipal BFSI",
         "general banking institutes"
       ],
-      "title": "Retail Banking Operations Guide | Centaur Careers",
+      "title": "Retail Banking Operations Career Guide | Centaur Careers",
       "h1": "Retail Banking Operations: Meaning, Roles & Skills",
       "h2Outline": [
         "Retail Banking Operations Meaning explained",
@@ -1931,6 +2086,9 @@
         "/career-guides/digital-payments-operations/",
         "/career-guides/business-analyst-in-banking/",
         "/career-guides/operations-analyst-banking/",
+        "/career-guides/client-onboarding-analyst/",
+        "/career-guides/branch-operations-analyst/",
+        "/career-guides/banking-relationship-manager/",
         "/compare/banking-vs-finance-careers/"
       ],
       "recommendedIncomingInternalLinks": [
@@ -1942,6 +2100,9 @@
         "/career-guides/digital-payments-operations/",
         "/career-guides/business-analyst-in-banking/",
         "/career-guides/operations-analyst-banking/",
+        "/career-guides/client-onboarding-analyst/",
+        "/career-guides/branch-operations-analyst/",
+        "/career-guides/banking-relationship-manager/",
         "/compare/banking-vs-finance-careers/"
       ],
       "outgoingInternalLinks": [
@@ -2013,6 +2174,8 @@
         "/career-guides/retail-banking-operations/",
         "/career-guides/business-analyst-in-banking/",
         "/career-guides/operations-analyst-banking/",
+        "/career-guides/branch-operations-analyst/",
+        "/career-guides/banking-relationship-manager/",
         "/courses/banking-courses/"
       ],
       "recommendedIncomingInternalLinks": [
@@ -2023,6 +2186,8 @@
         "/career-guides/retail-banking-operations/",
         "/career-guides/business-analyst-in-banking/",
         "/career-guides/operations-analyst-banking/",
+        "/career-guides/branch-operations-analyst/",
+        "/career-guides/banking-relationship-manager/",
         "/courses/banking-courses/"
       ],
       "outgoingInternalLinks": [
@@ -2031,7 +2196,7 @@
         "/courses/finance-operations/",
         "/placements/",
         "/faqs/",
-        "/locations/lucknow/",
+        "/best-finance-course-in-lucknow/",
         "/career-guides/",
         "/career-guides/retail-banking-operations/",
         "/resources/",
@@ -2106,11 +2271,15 @@
         "/courses/",
         "/courses/digital-payments/",
         "/courses/fintech/",
-        "/india/bengaluru/",
-        "/india/pune/",
+        "/best-finance-course-in-bangalore/",
+        "/best-finance-course-in-pune/",
         "/career-guides/kyc-aml-analyst/",
         "/career-guides/trade-lifecycle/",
-        "/career-guides/fintech-operations/"
+        "/career-guides/fintech-operations/",
+        "/career-guides/payment-operations-analyst/",
+        "/career-guides/upi-operations-analyst/",
+        "/career-guides/payment-disputes-analyst/",
+        "/career-guides/fintech-operations-analyst/"
       ],
       "recommendedIncomingInternalLinks": [
         "/career-guides/",
@@ -2118,11 +2287,15 @@
         "/courses/",
         "/courses/digital-payments/",
         "/courses/fintech/",
-        "/india/bengaluru/",
-        "/india/pune/",
+        "/best-finance-course-in-bangalore/",
+        "/best-finance-course-in-pune/",
         "/career-guides/kyc-aml-analyst/",
         "/career-guides/trade-lifecycle/",
-        "/career-guides/fintech-operations/"
+        "/career-guides/fintech-operations/",
+        "/career-guides/payment-operations-analyst/",
+        "/career-guides/upi-operations-analyst/",
+        "/career-guides/payment-disputes-analyst/",
+        "/career-guides/fintech-operations-analyst/"
       ],
       "outgoingInternalLinks": [
         "/career-guides/",
@@ -2188,13 +2361,21 @@
         "/courses/",
         "/india/",
         "/career-guides/digital-payments-operations/",
-        "/career-guides/fintech-operations/"
+        "/career-guides/fintech-operations/",
+        "/career-guides/payment-operations-analyst/",
+        "/career-guides/upi-operations-analyst/",
+        "/career-guides/payment-disputes-analyst/",
+        "/career-guides/fintech-operations-analyst/"
       ],
       "recommendedIncomingInternalLinks": [
         "/courses/",
         "/india/",
         "/career-guides/digital-payments-operations/",
-        "/career-guides/fintech-operations/"
+        "/career-guides/fintech-operations/",
+        "/career-guides/payment-operations-analyst/",
+        "/career-guides/upi-operations-analyst/",
+        "/career-guides/payment-disputes-analyst/",
+        "/career-guides/fintech-operations-analyst/"
       ],
       "outgoingInternalLinks": [
         "/courses/",
@@ -2254,7 +2435,7 @@
         "upGrad",
         "broader fintech course providers"
       ],
-      "title": "FinTech Operations Careers for Graduates | Centaur Careers",
+      "title": "FinTech Operations Analyst Career Guide | Centaur Careers",
       "h1": "FinTech Operations Careers for Graduates",
       "h2Outline": [
         "Fintech Career For BCom Graduates explained",
@@ -2272,9 +2453,12 @@
         "/courses/kyc-aml/",
         "/courses/digital-payments/",
         "/courses/fintech/",
-        "/india/pune/",
-        "/india/hyderabad/",
-        "/career-guides/digital-payments-operations/"
+        "/best-finance-course-in-pune/",
+        "/best-finance-course-in-hyderabad/",
+        "/career-guides/digital-payments-operations/",
+        "/career-guides/payment-operations-analyst/",
+        "/career-guides/upi-operations-analyst/",
+        "/career-guides/fintech-operations-analyst/"
       ],
       "recommendedIncomingInternalLinks": [
         "/career-guides/",
@@ -2282,9 +2466,12 @@
         "/courses/kyc-aml/",
         "/courses/digital-payments/",
         "/courses/fintech/",
-        "/india/pune/",
-        "/india/hyderabad/",
-        "/career-guides/digital-payments-operations/"
+        "/best-finance-course-in-pune/",
+        "/best-finance-course-in-hyderabad/",
+        "/career-guides/digital-payments-operations/",
+        "/career-guides/payment-operations-analyst/",
+        "/career-guides/upi-operations-analyst/",
+        "/career-guides/fintech-operations-analyst/"
       ],
       "outgoingInternalLinks": [
         "/career-guides/",
@@ -2428,20 +2615,25 @@
         "/resources/",
         "/courses/",
         "/india/",
-        "/career-guides/choosing-finance-career-course/"
+        "/career-guides/choosing-finance-career-course/",
+        "/best-investment-banking-course-india/",
+        "/investment-banking-operations-course-with-placement/"
       ],
       "recommendedIncomingInternalLinks": [
         "/career-guides/",
         "/resources/",
         "/courses/",
         "/india/",
-        "/career-guides/choosing-finance-career-course/"
+        "/career-guides/choosing-finance-career-course/",
+        "/best-investment-banking-course-india/",
+        "/investment-banking-operations-course-with-placement/"
       ],
       "outgoingInternalLinks": [
         "/courses/",
         "/courses/banking-and-finance/",
         "/career-guides/",
         "/resources/",
+        "/compare/best-finance-institutes-india/",
         "/compare/finance-operations-vs-financial-modelling-cfa/",
         "/compare/online-vs-offline-finance-training/",
         "/india/",

@@ -58,10 +58,7 @@ export default function CareerGuidePage({ guideId }) {
             <span aria-hidden="true">·</span>
             <time className="inline-flex items-center gap-2" dateTime={guide.updatedAt}><CalendarDays className="h-4 w-4" aria-hidden="true" />Updated {guide.updatedAt}</time>
           </div>
-          <BlogContentRenderer
-            blocks={guide.body}
-            roleHeadingSupport={isRoleLandingPage ? { roleLabel: guide.breadcrumbLabel, courseName: PROGRAM.name, termsPath: JOB_GUARANTEE.termsPath } : null}
-          />
+          <BlogContentRenderer blocks={guide.body} />
 
           {isRoleLandingPage && roleCourseFit && relevantTrack && (
             <section data-role-program-positioning className="mt-12 space-y-6" aria-labelledby="role-course-fit-title">
@@ -109,7 +106,7 @@ export default function CareerGuidePage({ guideId }) {
 
       <RoleIntentPathway intent={roleIntent} />
       <InternalLinkGroup links={getInternalLinks(guide.routeId)} />
-      <CtaSection secondaryTo={guide.id === 'choosing-finance-career-course' ? '/courses/' : '/contact/'} title="Continue your finance career research" description="Compare the Financial Operations Masterclass with the career direction you are exploring, then contact Centaur Careers with your questions." />
+      <CtaSection eyebrow="Explore your next step" title={`Compare training with the ${guide.breadcrumbLabel} career path`} description="Review the full Masterclass scope, learning options, fees, certificate wording, and current written support terms. Ask the team whether the curriculum fits the role you are researching." primaryTo="/courses/" primaryLabel="Compare course details" primaryAnalyticsIntent="commercial_program" secondaryTo="/contact/" secondaryLabel="Ask about course fit" />
     </>
   );
 }

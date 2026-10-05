@@ -85,7 +85,7 @@ export default function ResourcesIndexPage() {
       </section>
 
       <InternalLinkGroup links={getInternalLinks('resources')} />
-      <CtaSection title="Prepare your next finance-career conversation" description="Use the resources to build context, then explore the Financial Operations Masterclass and current support information." />
+      <CtaSection title="Take your finance learning research further" description="Connect these resources to the Financial Operations Masterclass syllabus and review current learning options, fees, and written support terms." primaryTo="/courses/" primaryLabel="Review course details" primaryAnalyticsIntent="commercial_program" secondaryTo="/contact/" secondaryLabel="Ask a course question" />
     </>
   );
 }

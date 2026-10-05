@@ -8,7 +8,7 @@ import {
 
 const LOGO_ID = `${SITE_ORIGIN}/#logo`;
 
-const ORGANIZATION_DISAMBIGUATING_DESCRIPTION = 'Centaur Careers (CENTAURPRIVATE LIMITED) is an Indian finance and banking operations career-training provider offering the 6-week Financial Operations Masterclass, distinct from Centaur Pharmaceuticals and unrelated to AI or chess centaur metaphors.';
+const ORGANIZATION_DISAMBIGUATING_DESCRIPTION = `${BUSINESS_DATA.name} (${BUSINESS_DATA.legalName}) is an Indian finance and banking operations career-training provider offering the 6-week Financial Operations Masterclass, distinct from Centaur Pharmaceuticals and unrelated to AI or chess centaur metaphors.`;
 
 const ORGANIZATION_KNOWS_ABOUT = Object.freeze([
   'Investment banking operations',
@@ -104,7 +104,7 @@ const HOME_INTERNAL_LINKS = Object.freeze([
   { routeId: 'lead-online-finance-course-placement', to: '/online-finance-course-with-placement/', label: 'Online Finance Course with Placement in India: What to Verify', authorityTier: 'supporting' },
   { routeId: 'blog', to: '/blog/', label: 'Finance Career Insights & Industry Updates', authorityTier: 'supporting' },
   { routeId: 'faqs', to: '/faqs/', label: 'Finance Career Program FAQs', authorityTier: 'supporting' },
-  { routeId: 'lucknow-location', to: '/locations/lucknow/', label: 'Finance and Investment Banking Course in Lucknow', authorityTier: 'local-commercial' },
+  { routeId: 'lucknow-location', to: '/best-finance-course-in-lucknow/', label: 'Finance and Investment Banking Course in Lucknow', authorityTier: 'local-commercial' },
   { routeId: 'contact', to: '/contact/', label: 'Contact Centaur Careers', authorityTier: 'supporting' },
   { routeId: 'privacy-policy', to: '/privacy-policy/', label: 'Privacy Policy', authorityTier: 'supporting' },
 ].map((link) => Object.freeze(link)));

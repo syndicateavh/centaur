@@ -4,6 +4,7 @@ import { Link } from 'react-router';
 import InternalLinkGroup from '@/components/InternalLinkGroup.jsx';
 import CommercialDecisionChecklist from '@/components/CommercialDecisionChecklist.jsx';
 import TopicProgramPathway from '@/components/TopicProgramPathway.jsx';
+import ModuleWorkflowExplorer from '@/components/ModuleWorkflowExplorer.jsx';
 import { CtaSection, PageHero, SectionHeading } from '@/components/PageShell.jsx';
 import { ResponsiveImage } from '@/components/ui/responsive-image.jsx';
 import { getCourseData } from '@/content/courseData.js';
@@ -89,6 +90,8 @@ export default function CourseDetailPage({ courseId }) {
 
       <TopicProgramPathway topicId={courseId} />
 
+      <ModuleWorkflowExplorer courseId={courseId} title={track.title} />
+
       <section data-commercial-section="module-process" className="bg-muted py-16 sm:py-20">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
@@ -158,7 +161,7 @@ export default function CourseDetailPage({ courseId }) {
       />
 
       <InternalLinkGroup links={getInternalLinks(track.seoId)} />
-      <CtaSection title="Ask about this curriculum module" description="Contact the team to confirm current course details, learning modes, fees, and support terms." />
+      <CtaSection title="Ask about this curriculum module" description="Get clarification on how this subject fits the full Masterclass, which learning mode is available, the current fees, and the written support terms." primaryTo="/contact/" primaryLabel="Ask about this module" primaryAnalyticsIntent="commercial_program" secondaryTo="/courses/" secondaryLabel="Review the full Masterclass" />
     </>
   );
 }

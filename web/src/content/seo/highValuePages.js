@@ -31,7 +31,7 @@ const PAGE_REQUIREMENTS = Object.freeze({
       'course completion certificate',
     ]),
   }),
-  '/locations/lucknow/': Object.freeze({
+  '/best-finance-course-in-lucknow/': Object.freeze({
     pageMarker: 'lucknow-location',
     role: 'Verified local acquisition page',
     conversionPath: '/contact/',
@@ -86,7 +86,7 @@ const PAGE_REQUIREMENTS = Object.freeze({
       'data-national-faq="india"',
       'data-high-value-section="national-commercial-bridge"',
     ]),
-    requiredLinks: Object.freeze(['/courses/', '/locations/lucknow/', '/career-guides/', '/resources/', '/contact/']),
+    requiredLinks: Object.freeze(['/courses/', '/best-finance-course-in-lucknow/', '/career-guides/', '/resources/', '/contact/']),
     requiredTerms: Object.freeze([
       'online finance course in india',
       'live online',

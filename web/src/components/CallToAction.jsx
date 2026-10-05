@@ -34,14 +34,17 @@ export function CtaSection({
   description,
   primaryLabel = 'Start Your Application',
   primaryHref = BUSINESS_DATA.enrollmentUrl,
+  primaryTo,
   secondaryLabel = 'Contact Centaur Careers',
   secondaryTo = '/contact/',
   secondaryHref,
   primaryAnalyticsId,
   primaryAnalyticsIntent,
+  primaryMagnetic = false,
 }) {
   const primaryChannel = getOutboundCtaChannel(primaryHref);
-  const ctaId = primaryAnalyticsId ?? `conversion-section-${primaryChannel ?? 'primary'}`;
+  const ctaId = primaryAnalyticsId ?? `conversion-section-${primaryTo ? 'internal' : primaryChannel ?? 'primary'}`;
+  const primaryClassName = `conversion-cta-primary inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-accent px-6 py-3 font-bold text-primary shadow-md transition-all hover:-translate-y-0.5 hover:shadow-lg ${primaryMagnetic ? 'home-magnetic-button' : ''}`;
 
   return (
     <section data-conversion-cta data-conversion-path={secondaryTo} aria-labelledby="cta-section-title" className="bg-primary py-16 text-white">
@@ -52,9 +55,15 @@ export function CtaSection({
           <p className="mt-3 max-w-2xl text-white/70">{description}</p>
         </div>
         <div className="flex flex-wrap gap-3">
-          <a data-analytics-id={ctaId} data-analytics-intent={primaryAnalyticsIntent} data-analytics-channel={primaryChannel} href={primaryHref} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-accent px-6 py-3 font-bold text-primary shadow-md transition-all hover:-translate-y-0.5 hover:shadow-lg">
-            {primaryLabel} <ArrowRight className="h-4 w-4" aria-hidden="true" />
-          </a>
+          {primaryTo ? (
+            <Link to={primaryTo} data-analytics-id={ctaId} data-analytics-intent={primaryAnalyticsIntent} data-analytics-channel="internal" className={primaryClassName}>
+              {primaryLabel} <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </Link>
+          ) : (
+            <a data-analytics-id={ctaId} data-analytics-intent={primaryAnalyticsIntent} data-analytics-channel={primaryChannel} data-home-magnetic={primaryMagnetic ? '' : undefined} href={primaryHref} target="_blank" rel="noopener noreferrer" className={primaryClassName}>
+              {primaryLabel} <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </a>
+          )}
           {secondaryHref ? (
             <a href={secondaryHref} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-white/25 bg-white/10 px-6 py-3 font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-white/15">
               {secondaryLabel} <ArrowRight className="h-4 w-4" aria-hidden="true" />

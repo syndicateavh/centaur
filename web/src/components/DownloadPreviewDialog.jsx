@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { CheckCircle2, Download } from 'lucide-react';
+import { CheckCircle2, Download, Eye } from 'lucide-react';
 import {
   Dialog,
   DialogContent,
@@ -56,7 +56,7 @@ export default function DownloadPreviewDialog({
 }) {
   const assetPath = asset?.path || DOWNLOAD_ASSETS.syllabus.path;
   const filename = asset?.filename || getFilename(assetPath);
-  const label = triggerLabel || asset?.label || 'Download published file';
+  const label = triggerLabel || asset?.label || 'Preview published file';
   const isSyllabus = assetPath === DOWNLOAD_ASSETS.syllabus.path;
   const [open, setOpen] = useState(false);
   const [status, setStatus] = useState('idle');
@@ -141,11 +141,11 @@ export default function DownloadPreviewDialog({
     return () => window.cancelAnimationFrame(frame);
   }, [documentText, markReadingComplete, open, status]);
 
-  const fallbackDownloadId = `${analyticsId}-fallback`;
+  const saveCopyId = `${analyticsId}-save-copy`;
   const resolvedDescription = description || `Review the published ${filename} before connecting with Centaur Careers.`;
   const defaultTrigger = (
     <>
-      <Download className="h-5 w-5" aria-hidden="true" />
+      <Eye className="h-5 w-5" aria-hidden="true" />
       {label}
     </>
   );
@@ -156,6 +156,7 @@ export default function DownloadPreviewDialog({
         <button
           type="button"
           data-analytics-id={analyticsId}
+          data-preview-asset={assetPath}
           {...(analyticsIntent ? { 'data-analytics-intent': analyticsIntent } : {})}
           className={triggerClassName}
         >
@@ -183,16 +184,16 @@ export default function DownloadPreviewDialog({
 
           {status === 'error' && (
             <div role="alert" className="rounded-xl border border-red-200 bg-red-50 p-4 text-sm leading-relaxed text-red-900">
-              <p>We could not load this preview. You can download the published file below.</p>
+              <p>We could not load this preview. You can save the published file from this dialog.</p>
               <a
                 href={assetPath}
                 download={filename}
-                data-analytics-id={fallbackDownloadId}
+                data-analytics-id={saveCopyId}
                 {...(analyticsIntent ? { 'data-analytics-intent': analyticsIntent } : {})}
                 className="mt-4 inline-flex min-h-11 items-center gap-2 rounded-xl bg-primary px-4 py-2.5 font-bold text-white"
               >
                 <Download className="h-4 w-4" aria-hidden="true" />
-                {label}
+                Save a copy
               </a>
             </div>
           )}
@@ -203,20 +204,29 @@ export default function DownloadPreviewDialog({
         </div>
 
         <DialogFooter className="border-t border-border bg-muted/40 px-6 py-4 sm:px-8">
-          {!readingComplete ? (
-            <div className="flex w-full flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-              <p role="status" className="text-sm text-muted-foreground">
-                {status === 'ready'
-                  ? (isSyllabus ? 'Scroll to the end of the syllabus to continue.' : 'Scroll to the end of the file to continue.')
-                  : 'Use the fallback download if the preview cannot be loaded.'}
+          <div className="flex w-full flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            {readingComplete ? (
+              <p role="status" className="flex items-center gap-2 text-sm font-semibold text-primary">
+                <CheckCircle2 className="h-4 w-4 shrink-0 text-accent-ink" aria-hidden="true" />
+                {isSyllabus ? 'Syllabus reviewed' : 'File reviewed'}
               </p>
-            </div>
-          ) : (
-            <p role="status" className="flex w-full items-center gap-2 text-sm font-semibold text-primary">
-              <CheckCircle2 className="h-4 w-4 shrink-0 text-accent-ink" aria-hidden="true" />
-              {isSyllabus ? 'Syllabus reviewed' : 'File reviewed'}
-            </p>
-          )}
+            ) : (
+              <p role="status" className="text-sm text-muted-foreground">
+                {status === 'ready' ? 'Read the full file here, or save a copy.' : 'The file preview opens here on this page.'}
+              </p>
+            )}
+            {status === 'ready' && (
+              <a
+                href={assetPath}
+                download={filename}
+                data-analytics-id={saveCopyId}
+                {...(analyticsIntent ? { 'data-analytics-intent': analyticsIntent } : {})}
+                className="inline-flex min-h-11 shrink-0 items-center justify-center gap-2 rounded-xl bg-primary px-4 py-2.5 font-bold text-white"
+              >
+                <Download className="h-4 w-4" aria-hidden="true" /> Save a copy
+              </a>
+            )}
+          </div>
         </DialogFooter>
       </DialogContent>
     </Dialog>

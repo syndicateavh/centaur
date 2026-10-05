@@ -68,7 +68,7 @@ if (BUSINESS_DATA.locale !== 'en_IN') fail('business locale must remain en_IN');
 if ('address' in BUSINESS_DATA) fail('partner training address must not be exposed as the business address');
 if ('trainingPartner' in BUSINESS_DATA || 'mapUrl' in BUSINESS_DATA) fail('training-location fields must be nested under trainingLocation');
 if (BUSINESS_DATA.trainingLocation.address.addressCountry !== BUSINESS_DATA.countryCode) fail('training location country is inconsistent');
-if (!BUSINESS_DATA.trainingLocation.path.endsWith('/locations/lucknow/')) fail('training location path must remain the published Lucknow route');
+if (!BUSINESS_DATA.trainingLocation.path.endsWith('/best-finance-course-in-lucknow/')) fail('training location path must remain the published Lucknow route');
 
 for (const route of INDEXABLE_ROUTES) {
   const graph = graphFor(route.id);

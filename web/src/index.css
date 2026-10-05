@@ -147,6 +147,164 @@
   }
 }
 
+/* Enquiry journeys: reveal each step as it enters view while keeping the SSR fallback visible. */
+[data-scroll-reveal-ready='true'] [data-scroll-reveal-item] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 520ms cubic-bezier(0.22, 1, 0.36, 1) var(--scroll-reveal-delay, 0ms),
+    transform 520ms cubic-bezier(0.22, 1, 0.36, 1) var(--scroll-reveal-delay, 0ms);
+}
+
+[data-scroll-reveal-ready='true'] [data-scroll-reveal-item][data-scroll-reveal-visible='true'] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.program-journey-card {
+  border: 1px solid hsl(var(--border) / 0.72);
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.program-journey-card:hover {
+  transform: translateY(-4px);
+  border-color: hsl(var(--accent-ink) / 0.38);
+  box-shadow: 0 18px 36px -24px hsl(var(--primary) / 0.36);
+}
+
+.module-workflow-steps {
+  display: grid;
+  align-content: start;
+  gap: 0.75rem;
+}
+
+.module-workflow-step {
+  display: flex;
+  min-height: 5rem;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.045);
+  padding: 1rem 1.125rem;
+  color: white;
+  text-align: left;
+  transition: transform 200ms ease, border-color 200ms ease, background-color 200ms ease, box-shadow 200ms ease;
+}
+
+.module-workflow-step:hover,
+.module-workflow-step:focus-visible {
+  transform: translateX(4px);
+  border-color: rgba(212, 175, 55, 0.68);
+  outline: none;
+}
+
+.module-workflow-step:focus-visible {
+  box-shadow: 0 0 0 2px hsl(var(--primary)), 0 0 0 4px hsl(var(--accent));
+}
+
+.module-workflow-step.is-active {
+  border-color: hsl(var(--accent));
+  background: linear-gradient(110deg, rgba(212, 175, 55, 0.17), rgba(255, 255, 255, 0.07));
+  box-shadow: inset 3px 0 0 hsl(var(--accent));
+}
+
+.module-workflow-step-index {
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  color: hsl(var(--accent));
+  font-size: 0.75rem;
+  font-weight: 800;
+  transition: background-color 200ms ease, color 200ms ease, transform 200ms ease;
+}
+
+.module-workflow-step.is-active .module-workflow-step-index {
+  transform: scale(1.06);
+  background: hsl(var(--accent));
+  color: hsl(var(--primary));
+}
+
+.module-workflow-step-copy {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.module-workflow-step-title {
+  font-weight: 700;
+}
+
+.module-workflow-step-label {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8125rem;
+}
+
+.module-workflow-step-indicator {
+  margin-left: auto;
+  color: hsl(var(--accent));
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.module-workflow-step.is-active .module-workflow-step-indicator {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.module-workflow-panel {
+  min-height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 1.5rem;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.045));
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+  box-shadow: 0 28px 65px -46px rgba(0, 0, 0, 0.85);
+  animation: module-workflow-enter 280ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.conversion-cta-primary {
+  transform: translateZ(0);
+  box-shadow: 0 10px 28px -15px rgba(212, 175, 55, 0.8);
+}
+
+.conversion-cta-primary:hover,
+.conversion-cta-primary:focus-visible {
+  box-shadow: 0 14px 34px -14px rgba(212, 175, 55, 0.9);
+}
+
+.conversion-cta-primary:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 3px;
+}
+
+@keyframes module-workflow-enter {
+  from { opacity: 0.35; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-scroll-reveal-ready='true'] [data-scroll-reveal-item] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .program-journey-card:hover,
+  .module-workflow-step:hover,
+  .module-workflow-step:focus-visible,
+  .module-workflow-step.is-active .module-workflow-step-index {
+    transform: none;
+  }
+
+  .module-workflow-panel {
+    animation: none;
+  }
+}
+
 @media (max-width: 480px) {
   .route-loading-mark {
     height: 14rem;

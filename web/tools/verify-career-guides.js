@@ -99,7 +99,19 @@ for (const guide of CAREER_GUIDES) {
     if (!relatedRoute) fail(`${guide.path}: related route is unknown: ${routeId}`);
   }
 
-  const claimNeutralHtml = html.replace(/<footer\b[\s\S]*?<\/footer>/gi, '').replace(/100%\s+Job Guarantee/gi, '');
+  const programPositioning = html.match(/<section\b(?=[^>]*data-role-program-positioning)[^>]*>[\s\S]*?<\/section>/i)?.[0] || '';
+  if (programPositioning && (!programPositioning.includes('/placements/#job-guarantee-terms') || !programPositioning.includes('does not guarantee a job specifically'))) {
+    fail(`${guide.path}: program positioning must state the role limit and link to written terms`);
+  }
+  const jobIntentTerms = html.match(/<h2\b[^>]*>How the full program guarantee applies<\/h2>[\s\S]*?<a\b[^>]*href="\/placements\/#job-guarantee-terms"[^>]*>[^<]*<\/a>/i)?.[0] || '';
+  if (html.includes('How the full program guarantee applies') && (!jobIntentTerms || !jobIntentTerms.includes('not a separately guaranteed course or vacancy'))) {
+    fail(`${guide.path}: job-intent section must limit the claim and link to written terms`);
+  }
+  const claimNeutralHtml = html
+    .replace(/<footer\b[\s\S]*?<\/footer>/gi, '')
+    .replace(programPositioning, '')
+    .replace(jobIntentTerms, '')
+    .replace(/100%\s+Job Guarantee/gi, '');
   if (/(?:placement|job)\s+guarantee|guaranteed\s+(?:placement|job|interview)|typical\s+salary|average\s+salary/i.test(claimNeutralHtml)) {
     fail(`${guide.path}: guide contains unsupported guarantee or salary language`);
   }

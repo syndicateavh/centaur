@@ -45,7 +45,7 @@ export const BACKLINK_TARGET_PATHS = Object.freeze([
   '/resources/reconciliation-in-finance/',
   '/courses/',
   '/placements/',
-  '/locations/lucknow/',
+  '/best-finance-course-in-lucknow/',
   '/faqs/',
   '/india/',
 ]);

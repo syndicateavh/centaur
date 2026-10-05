@@ -369,7 +369,7 @@ export default function QuizPage() {
       </section>
 
       <InternalLinkGroup links={getInternalLinks('quiz')} />
-      <CtaSection title="Turn quiz practice into a finance-career plan" description="Use the results to identify topics to revise, then compare the current Financial Operations Masterclass curriculum and support terms before choosing your next step." />
+      <CtaSection title="Turn practice into a finance learning plan" description="Use your results to identify topics to revise, then compare the Financial Operations Masterclass curriculum, learning options, fees, and current support terms." primaryTo="/courses/" primaryLabel="Compare course details" primaryAnalyticsIntent="commercial_program" secondaryTo="/contact/" secondaryLabel="Ask about the program" />
     </>
   );
 }

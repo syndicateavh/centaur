@@ -4,6 +4,7 @@ import { Link } from 'react-router';
 import InternalLinkGroup from '@/components/InternalLinkGroup.jsx';
 import { CtaSection, PageHero, SectionHeading } from '@/components/PageShell.jsx';
 import DownloadPreviewDialog from '@/components/DownloadPreviewDialog.jsx';
+import { BUSINESS_DATA } from '@/content/businessData.js';
 import { DOWNLOAD_ASSETS } from '@/content/downloads.js';
 import { ABOUT_SUMMARY, LEADERSHIP, LEADERSHIP_INTRO, PROGRAM } from '@/content/sourceContent.js';
 import { getInternalLinks } from '@/seo/internalLinks.js';
@@ -28,6 +29,7 @@ export default function AboutPage() {
             {ABOUT_SUMMARY.paragraphs.map((paragraph) => (
               <p key={paragraph} className="mt-5 text-lg leading-relaxed text-muted-foreground">{paragraph}</p>
             ))}
+            <p className="mt-5 text-base leading-relaxed text-muted-foreground">This website is operated by {BUSINESS_DATA.legalName}. Live online learning is available across India; the published in-person option is at <Link to={BUSINESS_DATA.trainingLocation.path} className="font-semibold text-primary underline decoration-accent decoration-2 underline-offset-4">{BUSINESS_DATA.trainingLocation.name} in Lucknow</Link>. That training location is not the company’s registered office.</p>
           </article>
           <aside className="rounded-2xl bg-primary p-8 text-white">
             <h2 className="text-2xl font-bold text-white">{PROGRAM.name}</h2>
@@ -72,7 +74,7 @@ export default function AboutPage() {
               <DownloadPreviewDialog
                 asset={DOWNLOAD_ASSETS.syllabus}
                 title="Financial Operations Masterclass syllabus"
-                triggerLabel="Download syllabus summary"
+                triggerLabel="Preview syllabus summary"
                 analyticsId="about-syllabus-preview"
                 analyticsIntent="commercial_program"
                 triggerClassName="mt-5 inline-block cursor-pointer border-0 bg-transparent p-0 text-left font-bold text-primary underline decoration-accent decoration-2 underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
@@ -93,7 +95,7 @@ export default function AboutPage() {
       </section>
 
       <InternalLinkGroup links={getInternalLinks('about')} />
-      <CtaSection title="Ask about the current program" description="Contact the team to confirm cohort details, fees, and learning modes." />
+      <CtaSection title="Ask about the current program" description="Contact the team to confirm cohort details, fees, learning modes, certificate requirements, and written support terms." primaryTo="/contact/" primaryLabel="Contact Centaur Careers" primaryAnalyticsIntent="commercial_program" secondaryTo="/courses/" secondaryLabel="Review course details" />
     </>
   );
 }

@@ -57,8 +57,10 @@ requireLinks(courses.route.path, courses.html, CAREER_TRACKS.filter((track) => t
 for (const phrase of [PROGRAM.name, PROGRAM.duration, PROGRAM_FEATURES[0].title, GENERAL_FAQS[0].question, GENERAL_FAQS[1].question]) {
   if (!courses.html.includes(phrase)) fail(`${courses.route.path}: missing verified program content: ${phrase}`);
 }
+if (!courses.html.includes(`data-preview-asset="${DOWNLOAD_ASSETS.syllabus.path}"`)) {
+  fail(`${courses.route.path}: missing on-screen syllabus preview`);
+}
 for (const href of [
-  DOWNLOAD_ASSETS.syllabus.path,
   '/blog/settlement-trade-break-worked-example/',
   '/blog/kyc-onboarding-case-file-example/',
   '/contact/',

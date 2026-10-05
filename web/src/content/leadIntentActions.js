@@ -14,7 +14,7 @@ export const LEAD_INTENT_ACTIONS = Object.freeze({
   'lead-job-oriented-finance-course-india': ['Review the syllabus', 'Compare the current modules and practical tasks with your target role.', '/courses/'],
   'lead-banking-finance-course-placement': ['Choose a banking path', 'Check which banking operations topics and support terms apply.', '/courses/banking-and-finance/'],
   'lead-investment-banking-operations-course-placement': ['Check module fit', 'Ask about settlements, reconciliation, and the role scope of this module.', '/courses/investment-banking-operations/'],
-  'lead-finance-institute-lucknow-placement': ['Confirm Lucknow access', 'Check the published training location, cohort schedule, and written support terms.', '/locations/lucknow/'],
+  'lead-finance-institute-lucknow-placement': ['Confirm Lucknow access', 'Check the published training location, cohort schedule, and written support terms.', '/best-finance-course-in-lucknow/'],
   'lead-finance-course-cities-india': ['Confirm access from your city', 'Ask about the live online schedule; the published in-person option is in Lucknow.', '/india/'],
   'lead-finance-course-vs-mba-cfa-modelling': ['Compare learning goals', 'Use the role and course checklist before choosing a pathway.', '/compare/finance-operations-vs-financial-modelling-cfa/'],
   'lead-which-finance-course-right': ['Check your role fit', 'Use the course selection checklist and ask about your preferred role.', '/career-guides/choosing-finance-career-course/'],
@@ -100,13 +100,13 @@ const LEAD_INTENT_SOURCE_PAGES = Object.freeze({
     ['Read Centaur Careers placement terms', '/placements/#job-guarantee-terms'],
   ]),
   'lead-finance-institute-lucknow-placement': Object.freeze([
-    ['Check the published Lucknow location', '/locations/lucknow/'],
+    ['Check the published Lucknow location', '/best-finance-course-in-lucknow/'],
     ['Check fees and graduation entry', '/courses/finance-course-fees-eligibility/'],
     ['Read Centaur Careers placement terms', '/placements/#job-guarantee-terms'],
   ]),
   'lead-finance-course-cities-india': Object.freeze([
     ['Check nationwide online access', '/india/'],
-    ['Review the published Lucknow location', '/locations/lucknow/'],
+    ['Review the published Lucknow location', '/best-finance-course-in-lucknow/'],
     ['Review current program details', '/courses/'],
   ]),
   'lead-finance-course-vs-mba-cfa-modelling': Object.freeze([

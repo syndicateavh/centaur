@@ -48,7 +48,7 @@ export default function InformationalModulePage({ moduleId }) {
         primaryLabel="Review the Financial Operations Masterclass"
       />
       <InternalLinkGroup links={getInternalLinks(module.routeId)} />
-      <CtaSection title="Explore the complete Financial Operations Masterclass" description="Use the program page or contact Centaur Careers to confirm current curriculum, learning mode, fees, cohort timing, and support terms." />
+      <CtaSection title="Explore the complete Financial Operations Masterclass" description="Compare the full curriculum, learning mode, fees, cohort timing, certificate wording, and current written support terms before you decide." primaryTo="/courses/" primaryLabel="Review the full program" primaryAnalyticsIntent="commercial_program" secondaryTo="/contact/" secondaryLabel="Confirm current cohort details" />
     </>
   );
 }

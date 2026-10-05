@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useParams } from 'react-router';
 import BlogPostCard from '@/components/blog/BlogPostCard.jsx';
 import InternalLinkGroup from '@/components/InternalLinkGroup.jsx';
-import { Breadcrumbs, PageHero } from '@/components/PageShell.jsx';
+import { Breadcrumbs, CtaSection, PageHero } from '@/components/PageShell.jsx';
 import { getBlogPostsByCategory } from '@/content/blog/blogStorage.js';
 import { BLOG_CATEGORIES } from '@/content/blog/blogSchema.js';
 import { blogCategoryLabel } from '@/content/blog/blogRoutes.js';
@@ -84,6 +84,7 @@ export default function BlogCategoryPage() {
         </div>
       </section>
       <InternalLinkGroup links={getInternalLinks('blog')} />
+      <CtaSection eyebrow="Continue your research" title={`Explore finance training related to ${label.toLowerCase()}`} description="Review the full program scope, learning options, fees, and written support terms before deciding whether the course fits your plans." primaryTo="/courses/" primaryLabel="Compare course details" primaryAnalyticsIntent="commercial_program" secondaryTo="/contact/" secondaryLabel="Ask a question" />
     </>
   );
 }

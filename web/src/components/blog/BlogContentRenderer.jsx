@@ -17,18 +17,19 @@ function getDownloadAsset(href, label) {
 function ContentLink({ block }) {
   const href = block.href || '/blog/';
   if (href.startsWith('/downloads/')) {
-    const downloadAsset = getDownloadAsset(href, block.label);
+    const previewLabel = block.label.replace(/^Download\b/i, 'Preview').replace(/^Read\b/i, 'Preview');
+    const downloadAsset = getDownloadAsset(href, previewLabel);
     return (
       <DownloadPreviewDialog
         asset={downloadAsset}
-        title={`Preview: ${block.label}`}
+        title={previewLabel}
         description="Review the published file before connecting with Centaur Careers."
-        triggerLabel={block.label}
+        triggerLabel={previewLabel}
         analyticsId={`blog-download-preview-${downloadAsset.filename.replace(/[^a-z0-9]+/gi, '-')}`}
         analyticsIntent="informational_support"
         triggerClassName="inline cursor-pointer border-0 bg-transparent p-0 text-left font-bold text-primary underline decoration-accent decoration-2 underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
       >
-        {block.label}
+        {previewLabel}
       </DownloadPreviewDialog>
     );
   }
@@ -36,7 +37,7 @@ function ContentLink({ block }) {
   return <a href={href} target="_blank" rel="noopener noreferrer" className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">{block.label}</a>;
 }
 
-export default function BlogContentRenderer({ blocks = [], imageSizes = '(min-width: 1024px) 896px, 100vw', roleHeadingSupport = null }) {
+export default function BlogContentRenderer({ blocks = [], imageSizes = '(min-width: 1024px) 896px, 100vw' }) {
   return (
     <div className="prose-readable space-y-7 text-base leading-relaxed text-foreground/85">
       {blocks.map((block, index) => {
@@ -48,18 +49,11 @@ export default function BlogContentRenderer({ blocks = [], imageSizes = '(min-wi
         }
         if (block.type === BLOG_BLOCK_TYPES.HEADING) {
           const headingId = getBlogHeadingId(block.text, index);
-          const supportId = `${headingId}-course-support`;
           return (
             <React.Fragment key={index}>
               {block.level === 3
-                ? <h3 id={headingId} aria-describedby={roleHeadingSupport ? supportId : undefined} className="scroll-mt-24 pt-3 text-xl font-bold text-primary sm:text-2xl">{block.text}</h3>
-                : <h2 id={headingId} aria-describedby={roleHeadingSupport ? supportId : undefined} className="scroll-mt-24 border-l-4 border-accent-ink pl-4 pt-4 text-2xl font-bold leading-tight text-primary sm:text-[1.75rem]">{block.text}</h2>}
-              {roleHeadingSupport && (
-                <p id={supportId} data-role-heading-promotion className="-mt-4 rounded-lg border-l-2 border-accent-ink bg-muted/50 px-4 py-3 text-sm leading-relaxed text-muted-foreground">
-                  Preparing for <strong className="text-primary">{roleHeadingSupport.roleLabel} jobs</strong>? Centaur Careers’ best-in-industry {roleHeadingSupport.courseName} includes a 100% Job Guarantee for a finance job after course completion; it does not guarantee this exact role, employer, salary, or city.{' '}
-                  <Link to={roleHeadingSupport.termsPath} className="font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">Read the terms</Link>.
-                </p>
-              )}
+                ? <h3 id={headingId} className="scroll-mt-24 pt-3 text-xl font-bold text-primary sm:text-2xl">{block.text}</h3>
+                : <h2 id={headingId} className="scroll-mt-24 border-l-4 border-accent-ink pl-4 pt-4 text-2xl font-bold leading-tight text-primary sm:text-[1.75rem]">{block.text}</h2>}
             </React.Fragment>
           );
         }

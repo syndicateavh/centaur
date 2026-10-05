@@ -32,7 +32,7 @@ for (const pageId of Object.keys(LEAD_INTENT_ACTIONS)) {
 }
 
 const about = output('/about/');
-for (const marker of ['data-trust-evidence', '/downloads/financial-operations-masterclass-syllabus.txt', '/blog/settlement-trade-break-worked-example/', '/placements/#job-guarantee-terms']) {
+for (const marker of ['data-trust-evidence', 'data-preview-asset="/downloads/financial-operations-masterclass-syllabus.txt"', '/blog/settlement-trade-break-worked-example/', '/placements/#job-guarantee-terms']) {
   if (!about.includes(marker)) fail(`/about/: missing trust evidence ${marker}`);
 }
 

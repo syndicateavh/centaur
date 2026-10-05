@@ -17,8 +17,8 @@ const moduleTracks = CAREER_TRACKS.filter((track) => getCourseModulePath(track.i
 const phase5Paths = [
   '/courses/kyc-aml/',
   '/career-guides/choosing-finance-career-course/',
-  '/india/pune/',
-  '/india/hyderabad/',
+  '/best-finance-course-in-pune/',
+  '/best-finance-course-in-hyderabad/',
   '/courses/digital-payments/',
   '/career-guides/fintech-operations/',
   '/courses/fintech/',

@@ -679,7 +679,7 @@ export const INDIA_LEAD_INTENT_PAGES = Object.freeze([
       'Who should I contact to confirm the address and cohort before travelling?',
     ],
     links: [
-      link('View the published Lucknow training location', '/locations/lucknow/', 'lucknow-location'),
+      link('View the published Lucknow training location', '/best-finance-course-in-lucknow/', 'lucknow-location'),
       link('Read the placement summary', '/placements/#job-guarantee-terms', 'placements'),
       link('Compare online and offline training', '/compare/online-vs-offline-finance-training/', 'comparison-online-vs-offline-finance-training'),
       link('Contact Centaur Careers', '/contact/', 'contact'),
@@ -723,8 +723,8 @@ export const INDIA_LEAD_INTENT_PAGES = Object.freeze([
     links: [
       link('Review India-wide finance course access', '/india/', 'india'),
       link('Compare online and offline training', '/compare/online-vs-offline-finance-training/', 'comparison-online-vs-offline-finance-training'),
-      link('See Delhi NCR finance access', '/india/delhi-ncr/', 'india-delhi-ncr'),
-      link('See Bengaluru finance access', '/india/bengaluru/', 'india-bengaluru'),
+      link('See Delhi NCR finance access', '/best-finance-course-in-delhi/', 'india-delhi-ncr'),
+      link('See Bengaluru finance access', '/best-finance-course-in-bangalore/', 'india-bengaluru'),
       link('Contact about current city access', '/contact/', 'contact'),
     ],
     faqs: [

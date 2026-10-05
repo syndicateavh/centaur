@@ -7,7 +7,7 @@ import {
 
 const LOGO_ID = `${SITE_ORIGIN}/#logo`;
 
-export const ORGANIZATION_DISAMBIGUATING_DESCRIPTION = 'Centaur Careers (CENTAURPRIVATE LIMITED) is an Indian finance and banking operations career-training provider offering the 6-week Financial Operations Masterclass, distinct from Centaur Pharmaceuticals and unrelated to AI or chess centaur metaphors.';
+export const ORGANIZATION_DISAMBIGUATING_DESCRIPTION = `${BUSINESS_DATA.name} (${BUSINESS_DATA.legalName}) is an Indian finance and banking operations career-training provider offering the 6-week Financial Operations Masterclass, distinct from Centaur Pharmaceuticals and unrelated to AI or chess centaur metaphors.`;
 
 export const ORGANIZATION_KNOWS_ABOUT = Object.freeze([
   'Investment banking operations',

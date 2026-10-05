@@ -150,7 +150,7 @@ export default function LucknowLocationPage() {
       </section>
 
       <InternalLinkGroup links={getInternalLinks('lucknow-location')} />
-      <CtaSection title="Ask about the Lucknow learning option" description="Contact Centaur Careers to confirm the current cohort schedule, fees, facilities, and support terms." />
+      <CtaSection title="Ask about the Lucknow learning option" description="Confirm the current cohort schedule, published fees, learning location, and written support terms with Centaur Careers." primaryTo="/contact/" primaryLabel="Ask about Lucknow availability" primaryAnalyticsIntent="regional_course_enquiry" secondaryTo="/courses/" secondaryLabel="Review course details" />
     </>
   );
 }

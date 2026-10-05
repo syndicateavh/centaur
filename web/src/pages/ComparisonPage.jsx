@@ -129,7 +129,7 @@ export default function ComparisonPage() {
       </article>
 
       <InternalLinkGroup links={getInternalLinks(COMPARISON_PAGE.routeId)} />
-      <CtaSection title="Choose a finance learning path with current information" description="Review the provider pages, compare curriculum and delivery against your goals, and contact Centaur Careers if you want to discuss the Financial Operations Masterclass." />
+      <CtaSection title="Compare the program with your learning goal" description="Review the Financial Operations Masterclass curriculum, delivery, fees, certificate wording, and written support terms, then ask the team about any remaining questions." primaryTo="/courses/" primaryLabel="Review course details" primaryAnalyticsIntent="commercial_program" secondaryTo="/contact/" secondaryLabel="Ask a specific question" />
     </>
   );
 }

@@ -119,7 +119,7 @@ export default function ResourcePage({ resourceId }) {
       </article>
 
       <InternalLinkGroup links={getInternalLinks(resource.routeId)} />
-      <CtaSection title="Build practical finance operations context" description="Explore the related modules, career guides, and current program information before deciding your next step." />
+      <CtaSection eyebrow="Put this topic in context" title={`Explore ${resource.breadcrumbLabel.toLowerCase()} in the wider finance curriculum`} description="See how the Financial Operations Masterclass covers related workflows, then check current learning options, fees, and support terms. Contact the team if you want guidance on course fit." primaryTo="/courses/" primaryLabel="Review course details" primaryAnalyticsIntent="commercial_program" secondaryTo="/contact/" secondaryLabel="Ask about course fit" />
     </>
   );
 }

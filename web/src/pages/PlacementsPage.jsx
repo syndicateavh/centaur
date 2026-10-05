@@ -14,6 +14,7 @@ import { Link } from 'react-router';
 import InternalLinkGroup from '@/components/InternalLinkGroup.jsx';
 import { CtaSection, PageHero, SectionHeading } from '@/components/PageShell.jsx';
 import DownloadPreviewDialog from '@/components/DownloadPreviewDialog.jsx';
+import ScrollRevealGroup from '@/components/ScrollRevealGroup.jsx';
 import { BUSINESS_DATA } from '@/content/businessData.js';
 import { DOWNLOAD_ASSETS } from '@/content/downloads.js';
 import { HIRING_PARTNER_LOGOS } from '@/content/hiringPartnerLogos.js';
@@ -149,15 +150,15 @@ export default function PlacementsPage() {
       <section data-commercial-section="placement-assistance-process" className="bg-primary py-16 text-white sm:py-20">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="100% Job Guarantee Program" title="Complete the program. Get a finance job." intro="The job is guaranteed after completing the six-week Financial Operations Masterclass." align="center" light />
-          <div className="grid gap-6 lg:grid-cols-3">
+          <ScrollRevealGroup className="program-journey-grid grid gap-6 lg:grid-cols-3">
             {JOURNEY.map(({ step, title, description }) => (
-              <article key={step} className="rounded-2xl border border-white/10 bg-white/[0.06] p-7">
+              <article key={step} data-scroll-reveal-item className="program-journey-card rounded-2xl border border-white/10 bg-white/[0.06] p-7">
                 <p className="text-sm font-black uppercase tracking-[0.2em] text-accent">Step {step}</p>
                 <h2 className="mt-4 text-2xl font-bold text-white">{title}</h2>
                 <p className="mt-4 leading-relaxed text-white/70">{description}</p>
               </article>
             ))}
-          </div>
+          </ScrollRevealGroup>
         </div>
       </section>
 
@@ -223,7 +224,7 @@ export default function PlacementsPage() {
               <MapPin className="h-8 w-8 text-accent-ink" aria-hidden="true" />
               <h2 className="mt-5 text-2xl font-bold text-primary">In person in Lucknow</h2>
               <p className="mt-4 leading-relaxed text-muted-foreground">Attend the published classroom option at Mindsprout Career Hub in Lucknow for an in-person learning environment.</p>
-              <Link to="/locations/lucknow/" className="mt-6 inline-flex items-center gap-2 font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">View the Lucknow location <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
+              <Link to="/best-finance-course-in-lucknow/" className="mt-6 inline-flex items-center gap-2 font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">View the Lucknow location <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
             </article>
           </div>
         </div>
@@ -275,8 +276,8 @@ export default function PlacementsPage() {
             <div className="max-w-3xl">
               <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent-ink">Published program summary</p>
               <h2 id="job-guarantee-terms-title" className="mt-3 text-3xl font-bold text-primary sm:text-4xl">100% Job Guarantee Program summary</h2>
-              <p className="mt-5 text-lg leading-relaxed text-muted-foreground">Centaur Careers publishes a finance job guarantee for graduates and job switchers after completing the six-week Financial Operations Masterclass. Request the current written terms for your cohort before enrolling; this page and the downloadable summary do not replace them.</p>
-              <p className="mt-3 leading-relaxed text-muted-foreground"><strong>Salary opportunity:</strong> Centaur advertises ₹3–12 LPA as an indicative opportunity range, separate from the job guarantee. The guarantee summary does not promise a salary; actual compensation depends on the role, employer, location, experience, and applicable cohort terms. Confirm role-specific details in writing before enrolling.</p>
+              <p className="mt-5 text-lg leading-relaxed text-muted-foreground">Centaur Careers publishes a finance job guarantee for graduates and job switchers after completing the six-week Financial Operations Masterclass. Request the current written terms for your cohort before enrolling; this page and the on-screen summary do not replace them.</p>
+              <p className="mt-3 leading-relaxed text-muted-foreground"><strong>Salary and role scope:</strong> The published summary does not promise a salary, employer, role, or city. Request the current written cohort terms and confirm any role-specific details before enrolling.</p>
               <p className="mt-3 text-sm font-semibold text-foreground/70">Last reviewed: 30 September 2026</p>
             </div>
 
@@ -303,7 +304,7 @@ export default function PlacementsPage() {
               <DownloadPreviewDialog
                 asset={DOWNLOAD_ASSETS.placementTerms}
                 title="Published placement support terms"
-                description="Review the published placement support summary before connecting with Centaur Careers."
+                description="Read the published placement support summary here without leaving this page. Request the current written cohort terms before enrolling."
                 analyticsId="placement-terms-preview"
                 analyticsIntent="commercial_placement"
                 triggerClassName="mt-6 inline-flex min-h-11 items-center gap-2 rounded-xl bg-primary px-5 py-3 font-bold text-white transition hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"

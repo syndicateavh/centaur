@@ -2,8 +2,10 @@ import React from 'react';
 import { ArrowRight, BriefcaseBusiness, ShieldCheck } from 'lucide-react';
 import { Link } from 'react-router';
 import { HomePlacementShowcase } from '@/components/home/HomePlacementShowcase.jsx';
+import InternalLinkGroup from '@/components/InternalLinkGroup.jsx';
 import { PageHero, SectionHeading } from '@/components/PageShell.jsx';
 import { TESTIMONIALS } from '@/content/sourceContent.js';
+import { getInternalLinks } from '@/seo/internalLinks.js';
 import { createRouteMeta, getSeoRoute } from '@/seo/seoRoutes.js';
 
 export function meta() {
@@ -25,7 +27,7 @@ export default function StudentOutcomesPage() {
             <BriefcaseBusiness className="h-8 w-8 text-accent" aria-hidden="true" />
             <p className="mt-4 text-xs font-bold uppercase tracking-[0.18em] text-accent">Learner stories</p>
             <h2 className="mt-2 text-2xl font-bold leading-tight text-white">Where our learners work</h2>
-            <p className="mt-3 leading-relaxed text-white/75">Meet some of our learners and see the roles they’ve taken up in banking and finance. Every career journey is different.</p>
+            <p className="mt-3 leading-relaxed text-white/75">These are selected individual profiles. The page does not publish a cohort size, placement rate, verification date, or salary distribution. Ask the team for dated evidence relevant to your enrolment decision.</p>
             <Link to="/placements/" className="mt-5 inline-flex min-h-11 items-center gap-2 rounded-xl border border-white/20 px-4 py-3 font-semibold text-white transition hover:bg-white/10">How does the job guarantee work? <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
           </aside>
         )}
@@ -45,7 +47,7 @@ export default function StudentOutcomesPage() {
             id="student-stories-title"
             eyebrow="Learner testimonials"
             title="Learner stories"
-            intro="Individual learners describe their experience with training and interview preparation. Testimonials are personal accounts and do not define every learner’s experience."
+            intro="Individual learners describe their experience with training and interview preparation. These selected accounts do not establish a placement rate or a result that every learner can expect."
             align="center"
             light
           />
@@ -91,6 +93,7 @@ export default function StudentOutcomesPage() {
           <Link to="/placements/#job-guarantee-terms" className="inline-flex min-h-11 items-center gap-2 font-bold text-primary underline decoration-accent-ink decoration-2 underline-offset-4">Read guarantee terms <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
         </div>
       </section>
+      <InternalLinkGroup links={getInternalLinks('student-outcomes')} />
     </>
   );
 }

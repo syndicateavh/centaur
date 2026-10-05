@@ -1,9 +1,9 @@
 export const REGIONAL_MARKETS = Object.freeze({
-  '/india/delhi-ncr/': 'delhi_ncr',
-  '/india/bengaluru/': 'bengaluru',
-  '/india/mumbai/': 'mumbai',
-  '/india/pune/': 'pune',
-  '/india/hyderabad/': 'hyderabad',
+  '/best-finance-course-in-delhi/': 'delhi_ncr',
+  '/best-finance-course-in-bangalore/': 'bengaluru',
+  '/best-finance-course-in-mumbai/': 'mumbai',
+  '/best-finance-course-in-pune/': 'pune',
+  '/best-finance-course-in-hyderabad/': 'hyderabad',
 });
 
 // These root-level landing pages do not share a path prefix. Match their full
@@ -102,7 +102,7 @@ function getPageType(path, contentCluster) {
 function getAccessScope(path, contentCluster) {
   if (REGIONAL_MARKETS[path]) return 'online_from_regional_market';
   if (contentCluster === 'national') return 'online_across_india';
-  if (path === '/locations/lucknow/') return 'in_person_lucknow';
+  if (path === '/best-finance-course-in-lucknow/') return 'in_person_lucknow';
   if (contentCluster === 'courses' || contentCluster === 'placements') return 'online_and_lucknow_in_person';
   return 'sitewide';
 }

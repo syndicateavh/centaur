@@ -235,7 +235,7 @@ PAGE_ITEMS = [
         'intent': 'Local / commercial investigation',
         'basis': 'Approved India keyword map: P1 national access owner; it must stay distinct from the course sales page.',
         'brief': 'Keep a concise access answer, online delivery boundary, verified Lucknow information and routes to relevant regional guides. Avoid repeating programme sales copy.',
-        'links': '/courses/; /locations/lucknow/; the five current regional access guides',
+        'links': '/courses/; /best-finance-course-in-lucknow/; the five current regional access guides',
         'meta_title': 'Finance Learning Access Across India | Centaur Careers',
         'meta_description': 'See how learners across India can access Centaur Careers’ live online finance learning and where current in-person access is verified.',
         'h1': 'Finance Learning Access Across India',
@@ -245,7 +245,7 @@ PAGE_ITEMS = [
     },
     {
         'wave': '3', 'priority': 'P1', 'action': 'Fact audit; do not add unsupported local claims',
-        'title': 'Verified Lucknow Learning Access', 'url': '/locations/lucknow/',
+        'title': 'Verified Lucknow Learning Access', 'url': '/best-finance-course-in-lucknow/',
         'primary': 'investment banking course in Lucknow',
         'support': 'finance training in Lucknow; current in-person learning access; course terms',
         'intent': 'Local / commercial',
@@ -262,11 +262,11 @@ PAGE_ITEMS = [
 ]
 
 REGIONS = [
-    ('Delhi-NCR', '/india/delhi-ncr/', 'finance course in Delhi NCR', 'investment banking operations course in Delhi'),
-    ('Bengaluru', '/india/bengaluru/', 'finance course in Bengaluru', 'investment banking operations course in Bangalore'),
-    ('Mumbai', '/india/mumbai/', 'finance course in Mumbai', 'finance operations course in Mumbai'),
-    ('Pune', '/india/pune/', 'finance course in Pune', 'finance operations course in Pune'),
-    ('Hyderabad', '/india/hyderabad/', 'finance course in Hyderabad', 'investment banking operations course in Hyderabad'),
+    ('Delhi-NCR', '/best-finance-course-in-delhi/', 'finance course in Delhi NCR', 'investment banking operations course in Delhi'),
+    ('Bengaluru', '/best-finance-course-in-bangalore/', 'finance course in Bengaluru', 'investment banking operations course in Bangalore'),
+    ('Mumbai', '/best-finance-course-in-mumbai/', 'finance course in Mumbai', 'finance operations course in Mumbai'),
+    ('Pune', '/best-finance-course-in-pune/', 'finance course in Pune', 'finance operations course in Pune'),
+    ('Hyderabad', '/best-finance-course-in-hyderabad/', 'finance course in Hyderabad', 'investment banking operations course in Hyderabad'),
 ]
 for city, url, primary, secondary in REGIONS:
     PAGE_ITEMS.append({

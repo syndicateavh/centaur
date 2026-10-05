@@ -66,7 +66,7 @@ export default function PriorityLandingPage({ pageId }) {
         </div>
       </article>
       <InternalLinkGroup links={getInternalLinks(page.routeId)} />
-      <CtaSection title="Choose your finance career direction" description="Use the topic pages to understand the work, then confirm the current Financial Operations Masterclass details before you apply." />
+      <CtaSection title="Check the program details before you decide" description="Review the Financial Operations Masterclass scope, fees, learning options, and current written support terms. Contact the team to clarify a detail that matters to you." primaryTo="/courses/" primaryLabel="Review course details" primaryAnalyticsIntent="commercial_program" secondaryTo="/contact/" secondaryLabel="Ask for clarification" />
     </>
   );
 }

@@ -119,22 +119,22 @@ type Pages = {
   "/india": {
     params: {};
   };
-  "/india/delhi-ncr": {
+  "/best-finance-course-in-delhi": {
     params: {};
   };
-  "/india/bengaluru": {
+  "/best-finance-course-in-bangalore": {
     params: {};
   };
-  "/india/mumbai": {
+  "/best-finance-course-in-mumbai": {
     params: {};
   };
-  "/india/pune": {
+  "/best-finance-course-in-pune": {
     params: {};
   };
-  "/india/hyderabad": {
+  "/best-finance-course-in-hyderabad": {
     params: {};
   };
-  "/locations/lucknow": {
+  "/best-finance-course-in-lucknow": {
     params: {};
   };
   "/faqs": {
@@ -367,7 +367,7 @@ type Pages = {
 type RouteFiles = {
   "root.jsx": {
     id: "root";
-    page: "/" | "/blog-portal" | "/blog" | "/career-guides" | "/resources" | "/resources/investment-banking-interview-questions" | "/resources/accounting-interview-questions" | "/resources/finance-gk" | "/resources/accounting-basics" | "/resources/reconciliation-in-finance" | "/resources/bank-reconciliation-process" | "/resources/cost-accounting-finance-operations" | "/resources/financial-accounting-banking" | "/resources/financial-statement-analysis" | "/resources/corporate-actions-workflow" | "/resources/capital-market-operations" | "/resources/financial-system-india" | "/resources/kyc-aml-compliance-guide" | "/quiz" | "/courses" | "/courses/investment-banking-operations" | "/courses/retail-banking" | "/courses/finance-operations" | "/courses/kyc-aml" | "/courses/digital-payments" | "/courses/fintech" | "/placements" | "/placements/student-outcomes" | "/about" | "/contact" | "/privacy-policy" | "/terms-and-conditions" | "/cookie-policy" | "/refund-cancellation-policy" | "/disclaimer" | "/india" | "/india/delhi-ncr" | "/india/bengaluru" | "/india/mumbai" | "/india/pune" | "/india/hyderabad" | "/locations/lucknow" | "/faqs" | "/career-guides/investment-banking-operations" | "/career-guides/kyc-aml-analyst" | "/career-guides/finance-operations" | "/career-guides/trade-lifecycle" | "/career-guides/finance-careers-after-graduation" | "/career-guides/retail-banking-operations" | "/career-guides/digital-payments-operations" | "/career-guides/financial-operations-faq" | "/career-guides/choosing-finance-career-course" | "/career-guides/fintech-operations" | "/career-guides/reconciliation-analyst" | "/career-guides/investment-banking-operations-roles" | "/career-guides/trade-support-analyst" | "/career-guides/securities-operations" | "/career-guides/what-is-investment-banking" | "/career-guides/risk-operations-analyst" | "/career-guides/credit-analyst" | "/career-guides/business-analyst-in-banking" | "/career-guides/custody-operations" | "/career-guides/credit-operations-analyst" | "/career-guides/transaction-monitoring-analyst" | "/career-guides/middle-office-operations" | "/career-guides/back-office-banking-jobs" | "/career-guides/settlement-analyst" | "/career-guides/finance-learning-roadmap" | "/career-guides/operations-analyst-banking" | "/career-guides/corporate-actions-analyst" | "/career-guides/fund-accounting-analyst" | "/career-guides/aml-analyst" | "/career-guides/client-onboarding-analyst" | "/career-guides/payment-operations-analyst" | "/career-guides/upi-operations-analyst" | "/career-guides/payment-disputes-analyst" | "/career-guides/branch-operations-analyst" | "/career-guides/banking-relationship-manager" | "/career-guides/loan-processing-analyst" | "/career-guides/nbfc-operations-analyst" | "/career-guides/fintech-operations-analyst" | "/courses/banking-courses" | "/courses/banking-and-finance" | "/courses/finance-operations-training" | "/best-finance-course-in-india-with-placement" | "/best-investment-banking-course-india" | "/best-finance-course-after-graduation" | "/best-finance-course-after-bcom" | "/finance-course-with-placement" | "/finance-course-with-job-guarantee" | "/finance-course-fees-in-india" | "/finance-course-duration" | "/finance-course-eligibility" | "/online-finance-course-with-placement" | "/job-oriented-finance-course-india" | "/banking-finance-course-with-placement" | "/investment-banking-operations-course-with-placement" | "/finance-institute-lucknow-with-placement" | "/finance-course-cities-india" | "/finance-course-vs-mba-cfa-financial-modelling" | "/which-finance-course-is-right-for-me" | "/courses/finance-operations-syllabus" | "/courses/finance-course-fees-eligibility" | "/courses/finance-course-for-graduates" | "/compare/best-finance-institutes-india" | "/compare/finance-operations-vs-financial-modelling-cfa" | "/compare/online-vs-offline-finance-training" | "/compare/investment-banking-operations-vs-financial-analyst" | "/compare/banking-vs-finance-careers" | "/faqs/finance-program" | "/compare/investment-banking-operations-courses" | "/404" | "/blog/category/:category" | "/blog/:slug" | "/*";
+    page: "/" | "/blog-portal" | "/blog" | "/career-guides" | "/resources" | "/resources/investment-banking-interview-questions" | "/resources/accounting-interview-questions" | "/resources/finance-gk" | "/resources/accounting-basics" | "/resources/reconciliation-in-finance" | "/resources/bank-reconciliation-process" | "/resources/cost-accounting-finance-operations" | "/resources/financial-accounting-banking" | "/resources/financial-statement-analysis" | "/resources/corporate-actions-workflow" | "/resources/capital-market-operations" | "/resources/financial-system-india" | "/resources/kyc-aml-compliance-guide" | "/quiz" | "/courses" | "/courses/investment-banking-operations" | "/courses/retail-banking" | "/courses/finance-operations" | "/courses/kyc-aml" | "/courses/digital-payments" | "/courses/fintech" | "/placements" | "/placements/student-outcomes" | "/about" | "/contact" | "/privacy-policy" | "/terms-and-conditions" | "/cookie-policy" | "/refund-cancellation-policy" | "/disclaimer" | "/india" | "/best-finance-course-in-delhi" | "/best-finance-course-in-bangalore" | "/best-finance-course-in-mumbai" | "/best-finance-course-in-pune" | "/best-finance-course-in-hyderabad" | "/best-finance-course-in-lucknow" | "/faqs" | "/career-guides/investment-banking-operations" | "/career-guides/kyc-aml-analyst" | "/career-guides/finance-operations" | "/career-guides/trade-lifecycle" | "/career-guides/finance-careers-after-graduation" | "/career-guides/retail-banking-operations" | "/career-guides/digital-payments-operations" | "/career-guides/financial-operations-faq" | "/career-guides/choosing-finance-career-course" | "/career-guides/fintech-operations" | "/career-guides/reconciliation-analyst" | "/career-guides/investment-banking-operations-roles" | "/career-guides/trade-support-analyst" | "/career-guides/securities-operations" | "/career-guides/what-is-investment-banking" | "/career-guides/risk-operations-analyst" | "/career-guides/credit-analyst" | "/career-guides/business-analyst-in-banking" | "/career-guides/custody-operations" | "/career-guides/credit-operations-analyst" | "/career-guides/transaction-monitoring-analyst" | "/career-guides/middle-office-operations" | "/career-guides/back-office-banking-jobs" | "/career-guides/settlement-analyst" | "/career-guides/finance-learning-roadmap" | "/career-guides/operations-analyst-banking" | "/career-guides/corporate-actions-analyst" | "/career-guides/fund-accounting-analyst" | "/career-guides/aml-analyst" | "/career-guides/client-onboarding-analyst" | "/career-guides/payment-operations-analyst" | "/career-guides/upi-operations-analyst" | "/career-guides/payment-disputes-analyst" | "/career-guides/branch-operations-analyst" | "/career-guides/banking-relationship-manager" | "/career-guides/loan-processing-analyst" | "/career-guides/nbfc-operations-analyst" | "/career-guides/fintech-operations-analyst" | "/courses/banking-courses" | "/courses/banking-and-finance" | "/courses/finance-operations-training" | "/best-finance-course-in-india-with-placement" | "/best-investment-banking-course-india" | "/best-finance-course-after-graduation" | "/best-finance-course-after-bcom" | "/finance-course-with-placement" | "/finance-course-with-job-guarantee" | "/finance-course-fees-in-india" | "/finance-course-duration" | "/finance-course-eligibility" | "/online-finance-course-with-placement" | "/job-oriented-finance-course-india" | "/banking-finance-course-with-placement" | "/investment-banking-operations-course-with-placement" | "/finance-institute-lucknow-with-placement" | "/finance-course-cities-india" | "/finance-course-vs-mba-cfa-financial-modelling" | "/which-finance-course-is-right-for-me" | "/courses/finance-operations-syllabus" | "/courses/finance-course-fees-eligibility" | "/courses/finance-course-for-graduates" | "/compare/best-finance-institutes-india" | "/compare/finance-operations-vs-financial-modelling-cfa" | "/compare/online-vs-offline-finance-training" | "/compare/investment-banking-operations-vs-financial-analyst" | "/compare/banking-vs-finance-careers" | "/faqs/finance-program" | "/compare/investment-banking-operations-courses" | "/404" | "/blog/category/:category" | "/blog/:slug" | "/*";
   };
   "routes/blog-portal.jsx": {
     id: "routes/blog-portal";
@@ -515,27 +515,27 @@ type RouteFiles = {
   };
   "routes/india-delhi-ncr.jsx": {
     id: "routes/india-delhi-ncr";
-    page: "/india/delhi-ncr";
+    page: "/best-finance-course-in-delhi";
   };
   "routes/india-bengaluru.jsx": {
     id: "routes/india-bengaluru";
-    page: "/india/bengaluru";
+    page: "/best-finance-course-in-bangalore";
   };
   "routes/india-mumbai.jsx": {
     id: "routes/india-mumbai";
-    page: "/india/mumbai";
+    page: "/best-finance-course-in-mumbai";
   };
   "routes/india-pune.jsx": {
     id: "routes/india-pune";
-    page: "/india/pune";
+    page: "/best-finance-course-in-pune";
   };
   "routes/india-hyderabad.jsx": {
     id: "routes/india-hyderabad";
-    page: "/india/hyderabad";
+    page: "/best-finance-course-in-hyderabad";
   };
   "routes/lucknow-location.jsx": {
     id: "routes/lucknow-location";
-    page: "/locations/lucknow";
+    page: "/best-finance-course-in-lucknow";
   };
   "routes/faqs.jsx": {
     id: "routes/faqs";

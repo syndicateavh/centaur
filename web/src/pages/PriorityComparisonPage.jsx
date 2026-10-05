@@ -73,7 +73,7 @@ export default function PriorityComparisonPage({ pageId }) {
         </div>
       </article>
       <InternalLinkGroup links={getInternalLinks(page.routeId)} />
-      <CtaSection title="Make an informed finance-career decision" description="Compare the role, learning goal, time commitment, and current provider terms before taking the next step." />
+      <CtaSection title="Check the course details against your priorities" description="Compare curriculum, learning mode, fees, certificate wording, and current written support terms before deciding whether to enquire." primaryTo="/courses/" primaryLabel="Review course details" primaryAnalyticsIntent="commercial_program" secondaryTo="/contact/" secondaryLabel="Ask about the current cohort" />
     </>
   );
 }

@@ -28,7 +28,7 @@ export const BUSINESS_DATA = Object.freeze({
   }),
   trainingLocation: Object.freeze({
     name: 'Mindsprout Career Hub',
-    path: '/locations/lucknow/',
+    path: '/best-finance-course-in-lucknow/',
     address: Object.freeze({
       streetAddress: 'R K Tower, 70/2, Sector B, Barabirwa, Alambagh',
       addressLocality: 'Lucknow',

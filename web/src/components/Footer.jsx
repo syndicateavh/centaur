@@ -20,7 +20,7 @@ const companyLinks = [
   { label: 'About us', to: '/about/' },
   { label: 'Student placements', to: '/placements/student-outcomes/' },
   { label: '100% Job Guarantee', to: '/placements/' },
-  { label: 'Mindsprout Career Hub', to: '/locations/lucknow/' },
+  { label: 'Mindsprout Career Hub', to: '/best-finance-course-in-lucknow/' },
   { label: 'Program FAQs', to: '/faqs/' },
   { label: 'Career insights', to: '/blog/' },
   { label: 'Interview resources', to: '/resources/' },

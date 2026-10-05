@@ -4,6 +4,7 @@ import { Link } from 'react-router';
 import InternalLinkGroup from '@/components/InternalLinkGroup.jsx';
 import { CtaSection, PageHero, SectionHeading } from '@/components/PageShell.jsx';
 import DownloadPreviewDialog from '@/components/DownloadPreviewDialog.jsx';
+import ScrollRevealGroup from '@/components/ScrollRevealGroup.jsx';
 import { ResponsiveImage } from '@/components/ui/responsive-image.jsx';
 import { getCourseTrackImage } from '@/content/courseImages.js';
 import { getCourseModulePath } from '@/content/courseModulePaths.js';
@@ -215,9 +216,9 @@ export default function CoursesPage() {
       <section data-commercial-section="program-process" className="bg-muted py-16 sm:py-20">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="Our Process" title="Complete the Program. Get a Guaranteed Finance Job." intro="Graduates and job switchers who complete the six-week Financial Operations Masterclass get a finance job through the 100% Job Guarantee Program." align="center" />
-          <div className="grid gap-6 lg:grid-cols-3">
+          <ScrollRevealGroup className="program-journey-grid grid gap-6 lg:grid-cols-3">
             {PROGRAM_PROCESS.map(({ step, title, subtitle, items }) => (
-              <article key={step} className="rounded-2xl bg-white p-7 shadow-sm">
+              <article key={step} data-scroll-reveal-item className="program-journey-card rounded-2xl bg-white p-7 shadow-sm">
                 <p className="text-xs font-black uppercase tracking-widest text-accent-ink">{step}</p>
                 <h2 className="mt-3 text-2xl font-bold text-primary">{title}</h2>
                 <p className="mt-2 text-sm font-bold uppercase tracking-wide text-muted-foreground">{subtitle}</p>
@@ -226,7 +227,7 @@ export default function CoursesPage() {
                 </ul>
               </article>
             ))}
-          </div>
+          </ScrollRevealGroup>
         </div>
       </section>
 
@@ -259,7 +260,7 @@ export default function CoursesPage() {
           <SectionHeading
             eyebrow="Practical decision support"
             title="Review the syllabus and practise with sample projects"
-            intro="Download the current syllabus summary, then use fictional workflow records to understand the kind of evidence and exception reasoning that operations learners can practise."
+            intro="Preview the published syllabus on this page, then use fictional workflow records to understand the kind of evidence and exception reasoning that operations learners can practise."
             align="center"
           />
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
@@ -275,7 +276,7 @@ export default function CoursesPage() {
             </DownloadPreviewDialog>
             <Link to="/blog/settlement-trade-break-worked-example/" className="rounded-2xl border border-border bg-white p-6 font-bold text-primary shadow-sm transition hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-lg">
               <span className="block text-lg">Trade-break sample project</span>
-              <span className="mt-2 block text-sm font-normal leading-relaxed text-muted-foreground">Open the fictional settlement-break case and download its source records.</span>
+              <span className="mt-2 block text-sm font-normal leading-relaxed text-muted-foreground">Open the fictional settlement-break case and preview its source records on screen.</span>
             </Link>
             <Link to="/blog/kyc-onboarding-case-file-example/" className="rounded-2xl border border-border bg-white p-6 font-bold text-primary shadow-sm transition hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-lg">
               <span className="block text-lg">KYC case-file sample</span>

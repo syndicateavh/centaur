@@ -149,15 +149,15 @@
     "unreachableRouteIds": [],
     "reachableKeywordDestinations": [
       "/courses/",
-      "/locations/lucknow/",
+      "/best-finance-course-in-lucknow/",
       "/courses/kyc-aml/",
       "/india/",
       "/career-guides/choosing-finance-career-course/",
-      "/india/delhi-ncr/",
-      "/india/bengaluru/",
-      "/india/mumbai/",
-      "/india/pune/",
-      "/india/hyderabad/",
+      "/best-finance-course-in-delhi/",
+      "/best-finance-course-in-bangalore/",
+      "/best-finance-course-in-mumbai/",
+      "/best-finance-course-in-pune/",
+      "/best-finance-course-in-hyderabad/",
       "/resources/investment-banking-interview-questions/",
       "/career-guides/finance-careers-after-graduation/",
       "/career-guides/investment-banking-operations/",
@@ -700,50 +700,50 @@
     },
     {
       "routeId": "india-delhi-ncr",
-      "path": "/india/delhi-ncr/",
+      "path": "/best-finance-course-in-delhi/",
       "parentId": "india",
       "role": "regional-guide",
-      "keywordOwnerUrl": "/india/delhi-ncr/",
+      "keywordOwnerUrl": "/best-finance-course-in-delhi/",
       "indexable": true
     },
     {
       "routeId": "india-bengaluru",
-      "path": "/india/bengaluru/",
+      "path": "/best-finance-course-in-bangalore/",
       "parentId": "india",
       "role": "regional-guide",
-      "keywordOwnerUrl": "/india/bengaluru/",
+      "keywordOwnerUrl": "/best-finance-course-in-bangalore/",
       "indexable": true
     },
     {
       "routeId": "india-mumbai",
-      "path": "/india/mumbai/",
+      "path": "/best-finance-course-in-mumbai/",
       "parentId": "india",
       "role": "regional-guide",
-      "keywordOwnerUrl": "/india/mumbai/",
+      "keywordOwnerUrl": "/best-finance-course-in-mumbai/",
       "indexable": true
     },
     {
       "routeId": "india-pune",
-      "path": "/india/pune/",
+      "path": "/best-finance-course-in-pune/",
       "parentId": "india",
       "role": "regional-guide",
-      "keywordOwnerUrl": "/india/pune/",
+      "keywordOwnerUrl": "/best-finance-course-in-pune/",
       "indexable": true
     },
     {
       "routeId": "india-hyderabad",
-      "path": "/india/hyderabad/",
+      "path": "/best-finance-course-in-hyderabad/",
       "parentId": "india",
       "role": "regional-guide",
-      "keywordOwnerUrl": "/india/hyderabad/",
+      "keywordOwnerUrl": "/best-finance-course-in-hyderabad/",
       "indexable": true
     },
     {
       "routeId": "lucknow-location",
-      "path": "/locations/lucknow/",
+      "path": "/best-finance-course-in-lucknow/",
       "parentId": "home",
       "role": "local-commercial-hub",
-      "keywordOwnerUrl": "/locations/lucknow/",
+      "keywordOwnerUrl": "/best-finance-course-in-lucknow/",
       "indexable": true
     },
     {
@@ -839,7 +839,7 @@
       "path": "/career-guides/reconciliation-analyst/",
       "parentId": "career-guides",
       "role": "career-guide",
-      "keywordOwnerUrl": "/career-guides/reconciliation-analyst/",
+      "keywordOwnerUrl": null,
       "indexable": true
     },
     {
@@ -903,7 +903,7 @@
       "path": "/career-guides/custody-operations/",
       "parentId": "career-guides",
       "role": "career-guide",
-      "keywordOwnerUrl": "/career-guides/custody-operations/",
+      "keywordOwnerUrl": null,
       "indexable": true
     },
     {
@@ -911,7 +911,7 @@
       "path": "/career-guides/credit-operations-analyst/",
       "parentId": "career-guides",
       "role": "career-guide",
-      "keywordOwnerUrl": "/career-guides/credit-operations-analyst/",
+      "keywordOwnerUrl": null,
       "indexable": true
     },
     {
@@ -919,7 +919,7 @@
       "path": "/career-guides/transaction-monitoring-analyst/",
       "parentId": "career-guides",
       "role": "career-guide",
-      "keywordOwnerUrl": "/career-guides/transaction-monitoring-analyst/",
+      "keywordOwnerUrl": null,
       "indexable": true
     },
     {
@@ -943,7 +943,7 @@
       "path": "/career-guides/settlement-analyst/",
       "parentId": "career-guides",
       "role": "career-guide",
-      "keywordOwnerUrl": "/career-guides/settlement-analyst/",
+      "keywordOwnerUrl": null,
       "indexable": true
     },
     {
@@ -967,7 +967,7 @@
       "path": "/career-guides/corporate-actions-analyst/",
       "parentId": "career-guides",
       "role": "career-guide",
-      "keywordOwnerUrl": "/career-guides/corporate-actions-analyst/",
+      "keywordOwnerUrl": null,
       "indexable": true
     },
     {
@@ -975,7 +975,7 @@
       "path": "/career-guides/fund-accounting-analyst/",
       "parentId": "career-guides",
       "role": "career-guide",
-      "keywordOwnerUrl": "/career-guides/fund-accounting-analyst/",
+      "keywordOwnerUrl": null,
       "indexable": true
     },
     {
@@ -983,7 +983,7 @@
       "path": "/career-guides/aml-analyst/",
       "parentId": "career-guides",
       "role": "career-guide",
-      "keywordOwnerUrl": "/career-guides/aml-analyst/",
+      "keywordOwnerUrl": null,
       "indexable": true
     },
     {
@@ -991,7 +991,7 @@
       "path": "/career-guides/client-onboarding-analyst/",
       "parentId": "career-guides",
       "role": "career-guide",
-      "keywordOwnerUrl": "/career-guides/client-onboarding-analyst/",
+      "keywordOwnerUrl": null,
       "indexable": true
     },
     {
@@ -999,7 +999,7 @@
       "path": "/career-guides/payment-operations-analyst/",
       "parentId": "career-guides",
       "role": "career-guide",
-      "keywordOwnerUrl": "/career-guides/payment-operations-analyst/",
+      "keywordOwnerUrl": null,
       "indexable": true
     },
     {
@@ -1007,7 +1007,7 @@
       "path": "/career-guides/upi-operations-analyst/",
       "parentId": "career-guides",
       "role": "career-guide",
-      "keywordOwnerUrl": "/career-guides/upi-operations-analyst/",
+      "keywordOwnerUrl": null,
       "indexable": true
     },
     {
@@ -1015,7 +1015,7 @@
       "path": "/career-guides/payment-disputes-analyst/",
       "parentId": "career-guides",
       "role": "career-guide",
-      "keywordOwnerUrl": "/career-guides/payment-disputes-analyst/",
+      "keywordOwnerUrl": null,
       "indexable": true
     },
     {
@@ -1023,7 +1023,7 @@
       "path": "/career-guides/branch-operations-analyst/",
       "parentId": "career-guides",
       "role": "career-guide",
-      "keywordOwnerUrl": "/career-guides/branch-operations-analyst/",
+      "keywordOwnerUrl": null,
       "indexable": true
     },
     {
@@ -1031,7 +1031,7 @@
       "path": "/career-guides/banking-relationship-manager/",
       "parentId": "career-guides",
       "role": "career-guide",
-      "keywordOwnerUrl": "/career-guides/banking-relationship-manager/",
+      "keywordOwnerUrl": null,
       "indexable": true
     },
     {
@@ -1039,7 +1039,7 @@
       "path": "/career-guides/loan-processing-analyst/",
       "parentId": "career-guides",
       "role": "career-guide",
-      "keywordOwnerUrl": "/career-guides/loan-processing-analyst/",
+      "keywordOwnerUrl": null,
       "indexable": true
     },
     {
@@ -1047,7 +1047,7 @@
       "path": "/career-guides/nbfc-operations-analyst/",
       "parentId": "career-guides",
       "role": "career-guide",
-      "keywordOwnerUrl": "/career-guides/nbfc-operations-analyst/",
+      "keywordOwnerUrl": null,
       "indexable": true
     },
     {
@@ -1055,7 +1055,7 @@
       "path": "/career-guides/fintech-operations-analyst/",
       "parentId": "career-guides",
       "role": "career-guide",
-      "keywordOwnerUrl": "/career-guides/fintech-operations-analyst/",
+      "keywordOwnerUrl": null,
       "indexable": true
     },
     {
@@ -1976,7 +1976,7 @@
       "sampleKeywords": "investment banking operations course; investment banking operations training; investment banking operations certification; investment banking operations classes; investment banking operations program; investment banking operations institute; investment banking course; investment banking course in India"
     },
     {
-      "targetUrl": "/locations/lucknow/",
+      "targetUrl": "/best-finance-course-in-lucknow/",
       "primaryPurpose": "Local Lucknow acquisition page",
       "mappedKeywordCount": 8,
       "topPriority": 97,
@@ -2020,7 +2020,7 @@
       "sampleKeywords": "investment banking course with placement support; investment banking course with interview preparation; best short term investment banking course; best job oriented finance course; best finance course for freshers in India; best finance operations course in India; best KYC AML course in India; best banking operations course in India"
     },
     {
-      "targetUrl": "/india/delhi-ncr/",
+      "targetUrl": "/best-finance-course-in-delhi/",
       "primaryPurpose": "Supporting module, career or regional page",
       "mappedKeywordCount": 24,
       "topPriority": 88,
@@ -2031,7 +2031,7 @@
       "sampleKeywords": "investment banking course in Delhi; investment banking operations course in Delhi; investment banking classes in Delhi; investment banking institute in Delhi; finance operations course in Delhi; KYC AML course in Delhi; finance course with placement assistance in Delhi; best investment banking course in Delhi"
     },
     {
-      "targetUrl": "/india/bengaluru/",
+      "targetUrl": "/best-finance-course-in-bangalore/",
       "primaryPurpose": "Supporting module, career or regional page",
       "mappedKeywordCount": 16,
       "topPriority": 88,
@@ -2042,7 +2042,7 @@
       "sampleKeywords": "investment banking course in Bangalore; investment banking operations course in Bangalore; investment banking classes in Bangalore; investment banking institute in Bangalore; finance operations course in Bangalore; KYC AML course in Bangalore; finance course with placement assistance in Bangalore; best investment banking course in Bangalore"
     },
     {
-      "targetUrl": "/india/mumbai/",
+      "targetUrl": "/best-finance-course-in-mumbai/",
       "primaryPurpose": "Supporting module, career or regional page",
       "mappedKeywordCount": 8,
       "topPriority": 88,
@@ -2053,7 +2053,7 @@
       "sampleKeywords": "investment banking course in Mumbai; investment banking operations course in Mumbai; investment banking classes in Mumbai; investment banking institute in Mumbai; finance operations course in Mumbai; KYC AML course in Mumbai; finance course with placement assistance in Mumbai; best investment banking course in Mumbai"
     },
     {
-      "targetUrl": "/india/pune/",
+      "targetUrl": "/best-finance-course-in-pune/",
       "primaryPurpose": "Supporting module, career or regional page",
       "mappedKeywordCount": 8,
       "topPriority": 88,
@@ -2064,7 +2064,7 @@
       "sampleKeywords": "investment banking course in Pune; investment banking operations course in Pune; investment banking classes in Pune; investment banking institute in Pune; finance operations course in Pune; KYC AML course in Pune; finance course with placement assistance in Pune; best investment banking course in Pune"
     },
     {
-      "targetUrl": "/india/hyderabad/",
+      "targetUrl": "/best-finance-course-in-hyderabad/",
       "primaryPurpose": "Supporting module, career or regional page",
       "mappedKeywordCount": 8,
       "topPriority": 88,

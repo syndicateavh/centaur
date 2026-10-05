@@ -89,7 +89,7 @@ for (const href of [
   '/career-guides/',
   '/resources/',
   '/resources/investment-banking-interview-questions/',
-  '/locations/lucknow/',
+  '/best-finance-course-in-lucknow/',
   '/faqs/',
   '/contact/',
 ]) requireLink(INDIA_PAGE.path, html, href);

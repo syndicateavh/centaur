@@ -101,13 +101,13 @@ export default function CareerGuidesIndexPage() {
           <article className="rounded-2xl border border-border bg-white p-7 shadow-sm">
             <SectionHeading eyebrow="Local learning option" title="Looking for in-person learning in Lucknow?" />
             <p className="text-muted-foreground">The offline option is delivered at Mindsprout Career Hub in Lucknow. Use the location page for the verified address, directions, and contact options.</p>
-            <Link to="/locations/lucknow/" className="mt-6 inline-flex items-center gap-2 font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">See the Lucknow learning location <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
+            <Link to="/best-finance-course-in-lucknow/" className="mt-6 inline-flex items-center gap-2 font-bold text-primary underline decoration-accent decoration-2 underline-offset-4">See the Lucknow learning location <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
           </article>
         </div>
       </section>
 
       <InternalLinkGroup links={getInternalLinks('career-guides')} />
-      <CtaSection title="Choose your next finance-career question" description="Explore the guides, compare the learning tracks, and contact Centaur Careers when you are ready to discuss your next step." />
+      <CtaSection title="Match a career direction to a course syllabus" description="Compare the Financial Operations Masterclass topics with the role guides, then confirm learning options, fees, certificate wording, and current support terms." primaryTo="/courses/" primaryLabel="Review course details" primaryAnalyticsIntent="commercial_program" secondaryTo="/contact/" secondaryLabel="Ask about your career goal" />
     </>
   );
 }

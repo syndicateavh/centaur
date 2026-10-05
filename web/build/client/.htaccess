@@ -38,6 +38,14 @@ DirectorySlash On
 
 RewriteEngine On
 
+# Permanently forward the previous city-page URLs to their new SEO slugs.
+RewriteRule ^india/delhi-ncr/?$ https://centaurcareers.in/best-finance-course-in-delhi/ [R=301,L,NE]
+RewriteRule ^india/bengaluru/?$ https://centaurcareers.in/best-finance-course-in-bangalore/ [R=301,L,NE]
+RewriteRule ^india/mumbai/?$ https://centaurcareers.in/best-finance-course-in-mumbai/ [R=301,L,NE]
+RewriteRule ^india/pune/?$ https://centaurcareers.in/best-finance-course-in-pune/ [R=301,L,NE]
+RewriteRule ^india/hyderabad/?$ https://centaurcareers.in/best-finance-course-in-hyderabad/ [R=301,L,NE]
+RewriteRule ^locations/lucknow/?$ https://centaurcareers.in/best-finance-course-in-lucknow/ [R=301,L,NE]
+
 # Retire the former article slug without creating a duplicate content URL.
 RewriteRule ^blog/placement-guarantee-eligibility-and-terms/?$ https://centaurcareers.in/blog/placement-support-eligibility-and-terms/ [R=301,L,NE]
 

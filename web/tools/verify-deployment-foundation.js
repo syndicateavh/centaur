@@ -77,6 +77,12 @@ if (!fs.existsSync(buildRoot)) {
     'RewriteEngine On',
     'https://centaurcareers.in%{REQUEST_URI}',
     'ErrorDocument 404 /404/index.html',
+    'RewriteRule ^india/delhi-ncr/?$ https://centaurcareers.in/best-finance-course-in-delhi/ [R=301,L,NE]',
+    'RewriteRule ^india/bengaluru/?$ https://centaurcareers.in/best-finance-course-in-bangalore/ [R=301,L,NE]',
+    'RewriteRule ^india/mumbai/?$ https://centaurcareers.in/best-finance-course-in-mumbai/ [R=301,L,NE]',
+    'RewriteRule ^india/pune/?$ https://centaurcareers.in/best-finance-course-in-pune/ [R=301,L,NE]',
+    'RewriteRule ^india/hyderabad/?$ https://centaurcareers.in/best-finance-course-in-hyderabad/ [R=301,L,NE]',
+    'RewriteRule ^locations/lucknow/?$ https://centaurcareers.in/best-finance-course-in-lucknow/ [R=301,L,NE]',
     'RewriteRule ^financial-operations-masterclass/?$ https://centaurcareers.in/courses/ [R=301,L,NE]',
   ]) {
     if (!htaccess.includes(requiredRule)) fail(`deployment: .htaccess is missing ${requiredRule}`);

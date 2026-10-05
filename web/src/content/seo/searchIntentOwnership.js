@@ -45,24 +45,24 @@ export const SEARCH_INTENT_OWNERS = Object.freeze([
     supportingPaths: ['/courses/finance-course-for-graduates/', '/career-guides/finance-careers-after-graduation/'],
     intent: 'BTech and non-commerce graduates comparing a realistic finance-operations transition path.',
   }),
-  owner('investment-banking-course-mumbai', 'investment banking course in Mumbai', '/india/mumbai/', {
-    queryVariants: ['investment banking operations course in Mumbai', 'finance course in Mumbai with placement', 'KYC AML course in Mumbai with placement'], supportingPaths: ['/courses/investment-banking-operations/', '/courses/kyc-aml/'],
+  owner('investment-banking-course-mumbai', 'investment banking course in Mumbai', '/best-finance-course-in-mumbai/', {
+    queryVariants: ['investment banking operations course in Mumbai', 'online finance course in Mumbai', 'best online finance course in Mumbai', 'online investment banking course in Mumbai', 'best finance course in Mumbai', 'finance course in Mumbai with placement', 'KYC AML course in Mumbai with placement'], supportingPaths: ['/courses/investment-banking-operations/', '/courses/kyc-aml/'],
     intent: 'Mumbai online access to finance operations modules and market-specific role research, without claiming a local classroom or job.',
   }),
-  owner('investment-banking-course-bengaluru', 'investment banking course in Bangalore', '/india/bengaluru/', {
-    queryVariants: ['investment banking operations course in Bangalore with placement', 'investment banking operations course Bengaluru placement'], supportingPaths: ['/courses/investment-banking-operations/', '/career-guides/investment-banking-operations/'],
+  owner('investment-banking-course-bengaluru', 'investment banking course in Bangalore', '/best-finance-course-in-bangalore/', {
+    queryVariants: ['online finance course in Bangalore', 'best online finance course in Bangalore', 'online finance course in Bengaluru', 'best online finance course in Bengaluru', 'online investment banking course in Bangalore', 'best finance course in Bangalore', 'investment banking operations course in Bangalore with placement', 'investment banking operations course Bengaluru placement'], supportingPaths: ['/courses/investment-banking-operations/', '/career-guides/investment-banking-operations/'],
     intent: 'Bengaluru online course access and role research without claiming a Bengaluru classroom or job.',
   }),
-  owner('investment-banking-course-delhi', 'investment banking course in Delhi', '/india/delhi-ncr/', {
-    queryVariants: ['banking operations course in Delhi with placement', 'finance operations course Delhi NCR placement'], supportingPaths: ['/courses/banking-and-finance/', '/career-guides/finance-operations/'],
+  owner('investment-banking-course-delhi', 'investment banking course in Delhi', '/best-finance-course-in-delhi/', {
+    queryVariants: ['online finance course in Delhi', 'best online finance course in Delhi', 'online investment banking course in Delhi', 'best finance course in Delhi', 'banking operations course in Delhi with placement', 'finance operations course Delhi NCR placement'], supportingPaths: ['/courses/banking-and-finance/', '/career-guides/finance-operations/'],
     intent: 'Delhi-NCR online access to banking and finance operations learning, with accurate placement geography.',
   }),
-  owner('finance-course-pune', 'investment banking course in Pune', '/india/pune/', {
-    queryVariants: ['finance course in Pune with placement', 'online finance course in Pune'],
+  owner('finance-course-pune', 'investment banking course in Pune', '/best-finance-course-in-pune/', {
+    queryVariants: ['online finance course in Pune', 'best online finance course in Pune', 'online investment banking course in Pune', 'best finance course in Pune', 'finance course in Pune with placement'],
     intent: 'Pune live-online access and regional career research without claiming a Pune classroom or job.',
   }),
-  owner('finance-course-hyderabad', 'investment banking course in Hyderabad', '/india/hyderabad/', {
-    queryVariants: ['finance course in Hyderabad with placement', 'online finance course in Hyderabad'],
+  owner('finance-course-hyderabad', 'investment banking course in Hyderabad', '/best-finance-course-in-hyderabad/', {
+    queryVariants: ['online finance course in Hyderabad', 'best online finance course in Hyderabad', 'online investment banking course in Hyderabad', 'best finance course in Hyderabad', 'finance course in Hyderabad with placement'],
     intent: 'Hyderabad live-online access and regional career research without claiming a Hyderabad classroom or job.',
   }),
   owner('national-access', 'finance career training India', '/india/', {
@@ -70,8 +70,8 @@ export const SEARCH_INTENT_OWNERS = Object.freeze([
     supportingPaths: ['/finance-course-cities-india/'],
     intent: 'Nationwide live online access without extra physical-centre claims.',
   }),
-  owner('lucknow-access', 'investment banking course in Lucknow', '/locations/lucknow/', {
-    queryVariants: ['finance course in Lucknow', 'finance institute in Lucknow with placement'],
+  owner('lucknow-access', 'investment banking course in Lucknow', '/best-finance-course-in-lucknow/', {
+    queryVariants: ['best finance course in Lucknow', 'investment banking course in Lucknow', 'finance course in Lucknow', 'online finance course in Lucknow', 'finance institute in Lucknow with placement'],
     supportingPaths: ['/finance-institute-lucknow-with-placement/'], intent: 'Verified Lucknow access and support terms.',
   }),
   owner('investment-banking-operations-module', 'investment banking operations module', '/courses/investment-banking-operations/', {

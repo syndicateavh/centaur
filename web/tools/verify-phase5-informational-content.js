@@ -9,8 +9,8 @@ import { SITE_ORIGIN } from '../src/seo/seoRoutes.js';
 const targetPaths = new Set([
   '/courses/kyc-aml/',
   '/career-guides/choosing-finance-career-course/',
-  '/india/pune/',
-  '/india/hyderabad/',
+  '/best-finance-course-in-pune/',
+  '/best-finance-course-in-hyderabad/',
   '/courses/digital-payments/',
   '/career-guides/fintech-operations/',
   '/courses/fintech/',

@@ -73,7 +73,7 @@ requireText('docs/ANALYTICS_CONFIGURATION.md', [
 ], 'analytics configuration');
 
 try {
-  assert.deepEqual(getMeasurementEventFields('/india/pune/?utm_source=search'), {
+  assert.deepEqual(getMeasurementEventFields('/best-finance-course-in-pune/?utm_source=search'), {
     page_type: 'regional_guide',
     content_cluster: 'regional',
     access_scope: 'online_from_regional_market',
@@ -81,7 +81,7 @@ try {
     lead_intent_group: 'commercial_mode',
     conversion_stage: 'evaluate',
   });
-  assert.deepEqual(getMeasurementEventFields('/india/bengaluru/'), {
+  assert.deepEqual(getMeasurementEventFields('/best-finance-course-in-bangalore/'), {
     page_type: 'regional_guide',
     content_cluster: 'regional',
     access_scope: 'online_from_regional_market',
@@ -96,7 +96,7 @@ try {
     lead_intent_group: 'commercial_mode',
     conversion_stage: 'evaluate',
   });
-  assert.deepEqual(getMeasurementEventFields('/locations/lucknow/'), {
+  assert.deepEqual(getMeasurementEventFields('/best-finance-course-in-lucknow/'), {
     page_type: 'location',
     content_cluster: 'locations',
     access_scope: 'in_person_lucknow',

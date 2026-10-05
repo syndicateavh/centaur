@@ -25,7 +25,7 @@ const documentRoot = {
   head: { appendChild: (script) => scripts.push(script) },
 };
 
-sendGoogleAnalyticsEvent('page_view', { page_path: '/india/pune/' }, browser, documentRoot);
+sendGoogleAnalyticsEvent('page_view', { page_path: '/best-finance-course-in-pune/' }, browser, documentRoot);
 sendGoogleAnalyticsEvent('lead_cta_click', { channel: 'whatsapp' }, browser, documentRoot);
 trackAnalyticsEvent('quiz_whatsapp_request_prepared', { quiz_domain: 'investment-banking' }, browser, documentRoot);
 
@@ -41,7 +41,7 @@ assert.equal(scripts.length, 1, 'GA4 script should be loaded once after painting
 assert.equal(scripts[0].src, `https://www.googletagmanager.com/gtag/js?id=${GA4_MEASUREMENT_ID}`);
 assert.deepEqual(Array.from(browser.dataLayer[1]), ['config', GA4_MEASUREMENT_ID, { send_page_view: false }]);
 assert.deepEqual(Array.from(browser.dataLayer[2]), [
-  'event', 'page_view', { page_path: '/india/pune/', send_to: GA4_MEASUREMENT_ID },
+  'event', 'page_view', { page_path: '/best-finance-course-in-pune/', send_to: GA4_MEASUREMENT_ID },
 ]);
 assert.deepEqual(Array.from(browser.dataLayer[3]), [
   'event', 'lead_cta_click', { channel: 'whatsapp', send_to: GA4_MEASUREMENT_ID },

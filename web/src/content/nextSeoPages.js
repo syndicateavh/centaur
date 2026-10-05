@@ -543,7 +543,7 @@ export const NEXT_CAREER_GUIDE_SPECS = Object.freeze([
     title: 'AML Analyst Career Guide for Graduates | Centaur Careers',
     description: 'Understand AML analyst responsibilities, alert and case workflows, evidence handling, escalation skills, and graduate preparation in India.',
     h1: 'AML Analyst: Role, Skills and Case Workflow', breadcrumbLabel: 'AML Analyst',
-    primaryKeyword: 'AML analyst jobs for freshers', secondaryKeywords: ['AML analyst job description', 'AML analyst skills', 'anti money laundering analyst career', 'AML operations jobs India'], keywordOwnerUrl: null,
+    primaryKeyword: 'AML analyst job description', secondaryKeywords: ['AML analyst skills', 'anti money laundering analyst career', 'AML operations jobs India'], keywordOwnerUrl: null,
     image: COMPLIANCE_IMAGE, imageAlt: 'AML case review and compliance operations workflow',
     body: careerBody({
       opening: 'An AML analyst supports a financial institution’s anti-money-laundering controls by reviewing information, documenting case evidence, and routing concerns through approved procedures. The title covers different work across institutions, products, and teams.',
@@ -585,7 +585,7 @@ export const NEXT_CAREER_GUIDE_SPECS = Object.freeze([
     title: 'Payment Operations Analyst Career Guide | Centaur Careers',
     description: 'Learn payment operations analyst workflows, transaction status checks, reconciliation, exception handling, and skills for finance jobs in India.',
     h1: 'Payment Operations Analyst: Role, Skills and Workflow', breadcrumbLabel: 'Payment Operations Analyst',
-    primaryKeyword: 'payment operations analyst', secondaryKeywords: ['payment operations jobs for freshers', 'payments analyst job description', 'payment operations skills', 'bank payments operations career'], keywordOwnerUrl: null,
+    primaryKeyword: 'payment operations analyst responsibilities', secondaryKeywords: ['payment operations jobs for freshers', 'payments analyst job description', 'payment operations skills', 'bank payments operations career'], keywordOwnerUrl: null,
     image: RETAIL_BANKING_IMAGE, imageAlt: 'Payment processing, reconciliation, and exception operations workflow',
     body: careerBody({
       opening: 'A payment operations analyst supports the processing, monitoring, reconciliation, and resolution work around payments. The role helps ensure that instructions, statuses, records, and exceptions move through an organisation’s controlled process.',
@@ -618,7 +618,7 @@ export const NEXT_CAREER_GUIDE_SPECS = Object.freeze([
       preparation: 'Learn the broad digital-payment lifecycle and the meaning of transaction status, reconciliation, return, and dispute. Use invented records to trace a payment and document an exception without claiming that the exercise reproduces a live UPI operating rule.',
       boundaries: 'This guide is not a current UPI operating manual. Rules, participant duties, system behaviour, and dispute timelines may change; use NPCI’s current official material and the relevant employer procedure for live work.',
       links: [link('Read NPCI’s UPI FAQs', 'https://www.npci.org.in/what-we-do/upi/faqs'), link('Explore digital payments operations careers', '/career-guides/digital-payments-operations/', 'career-guide-digital-payments-operations'), link('Explore the Digital Payments module', '/courses/digital-payments/', 'digital-payments')],
-      faqs: [{ question: 'Does UPI operations mean software development?', answer: 'Not necessarily. Operations roles usually focus on transaction processes, service, reconciliation, controls, and exceptions. Engineering vacancies have different technical requirements.' }, { question: 'Are these pages a promise of a UPI job?', answer: 'No specific role is promised. The program’s finance-job guarantee, if applicable, is governed by the written terms on the placements page.' }],
+      faqs: [{ question: 'Does UPI operations mean software development?', answer: 'Not necessarily. Operations roles usually focus on transaction processes, service, reconciliation, controls, and exceptions. Engineering vacancies have different technical requirements.' }, { question: 'Are these pages a promise of a UPI job?', answer: 'No specific role is promised. The current written program terms on the placements page define any finance job commitment.' }],
     }),
     relatedGuideIds: ['digital-payments-operations', 'fintech-operations', 'reconciliation-analyst'], relatedRouteIds: ['courses', 'digital-payments', 'career-guide-digital-payments-operations', 'career-guide-payment-operations-analyst', 'career-guide-fintech-operations', 'placements'],
   },
@@ -732,7 +732,7 @@ export const NEXT_CAREER_GUIDE_SPECS = Object.freeze([
     title: 'FinTech Operations Analyst Career Guide in India | Centaur Careers',
     description: 'Learn what a FinTech operations analyst does in India: digital account and payment workflows, service cases, controls, required skills, and graduate preparation.',
     h1: 'FinTech Operations Analyst: Role, Skills and Workflow', breadcrumbLabel: 'FinTech Operations Analyst',
-    primaryKeyword: 'fintech operations analyst', secondaryKeywords: ['fintech operations jobs in India', 'fintech analyst jobs for freshers', 'fintech operations analyst skills', 'digital banking operations jobs'], keywordOwnerUrl: null,
+    primaryKeyword: 'fintech operations analyst responsibilities', secondaryKeywords: ['fintech operations jobs in India', 'fintech analyst jobs for freshers', 'fintech operations analyst skills', 'digital banking operations jobs'], keywordOwnerUrl: null,
     image: COURSE_IMAGE, imageAlt: 'FinTech operations analyst reviewing digital finance workflows',
     body: careerBody({
       opening: 'A FinTech operations analyst helps a technology-enabled financial service run reliably by maintaining accurate workflow records, resolving operational exceptions, coordinating with service and product teams, and following the controls assigned to the role. FinTech is a broad employer category, so the analyst’s actual product, process, authority, and measures matter more than the company label.',

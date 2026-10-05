@@ -79,7 +79,7 @@ export default function BlogIndexPage() {
       </section>
 
       <InternalLinkGroup links={getInternalLinks('blog')} />
-      <CtaSection title="Build your finance career foundation" description="Explore Centaur Careers courses, placement support and the next step for your learning journey." />
+      <CtaSection eyebrow="Continue your research" title="Connect what you read with a finance learning path" description="Compare the Financial Operations Masterclass curriculum, learning options, fees, and current written support terms, then contact the team with any questions." primaryTo="/courses/" primaryLabel="Review course details" primaryAnalyticsIntent="commercial_program" secondaryTo="/contact/" secondaryLabel="Ask a question" />
     </>
   );
 }

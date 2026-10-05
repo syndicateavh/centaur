@@ -271,8 +271,38 @@
             "label": "Financial Operations Masterclass"
           },
           {
+            "routeId": "india-bengaluru",
+            "path": "/best-finance-course-in-bangalore/",
+            "label": "Financial Operations Masterclass"
+          },
+          {
+            "routeId": "india-delhi-ncr",
+            "path": "/best-finance-course-in-delhi/",
+            "label": "Financial Operations Masterclass"
+          },
+          {
+            "routeId": "india-hyderabad",
+            "path": "/best-finance-course-in-hyderabad/",
+            "label": "Financial Operations Masterclass"
+          },
+          {
             "routeId": "lead-best-finance-course-placement",
             "path": "/best-finance-course-in-india-with-placement/",
+            "label": "Financial Operations Masterclass"
+          },
+          {
+            "routeId": "lucknow-location",
+            "path": "/best-finance-course-in-lucknow/",
+            "label": "Financial Operations Masterclass"
+          },
+          {
+            "routeId": "india-mumbai",
+            "path": "/best-finance-course-in-mumbai/",
+            "label": "Financial Operations Masterclass"
+          },
+          {
+            "routeId": "india-pune",
+            "path": "/best-finance-course-in-pune/",
             "label": "Financial Operations Masterclass"
           },
           {
@@ -626,31 +656,6 @@
             "label": "Financial Operations Masterclass"
           },
           {
-            "routeId": "india-bengaluru",
-            "path": "/india/bengaluru/",
-            "label": "Financial Operations Masterclass"
-          },
-          {
-            "routeId": "india-delhi-ncr",
-            "path": "/india/delhi-ncr/",
-            "label": "Financial Operations Masterclass"
-          },
-          {
-            "routeId": "india-hyderabad",
-            "path": "/india/hyderabad/",
-            "label": "Financial Operations Masterclass"
-          },
-          {
-            "routeId": "india-mumbai",
-            "path": "/india/mumbai/",
-            "label": "Financial Operations Masterclass"
-          },
-          {
-            "routeId": "india-pune",
-            "path": "/india/pune/",
-            "label": "Financial Operations Masterclass"
-          },
-          {
             "routeId": "lead-investment-banking-operations-course-placement",
             "path": "/investment-banking-operations-course-with-placement/",
             "label": "Financial Operations Masterclass"
@@ -658,11 +663,6 @@
           {
             "routeId": "lead-job-oriented-finance-course-india",
             "path": "/job-oriented-finance-course-india/",
-            "label": "Financial Operations Masterclass"
-          },
-          {
-            "routeId": "lucknow-location",
-            "path": "/locations/lucknow/",
             "label": "Financial Operations Masterclass"
           },
           {
@@ -875,8 +875,8 @@
           },
           {
             "routeId": "lucknow-location",
-            "path": "/locations/lucknow/",
-            "label": "Finance and Investment Banking Course in Lucknow",
+            "path": "/best-finance-course-in-lucknow/",
+            "label": "Best Finance Course in Lucknow? Explore Investment Banking Operations",
             "authorityTier": "local-commercial"
           },
           {
@@ -954,7 +954,7 @@
           {
             "routeId": "career-guide-kyc-aml-analyst",
             "path": "/career-guides/kyc-aml-analyst/",
-            "label": "KYC & AML Analyst Career Guide",
+            "label": "AML/KYC Analyst Career Guide",
             "authorityTier": "supporting"
           },
           {
@@ -1043,13 +1043,13 @@
       }
     },
     {
-      "targetUrl": "/locations/lucknow/",
-      "canonicalUrl": "https://centaurcareers.in/locations/lucknow/",
+      "targetUrl": "/best-finance-course-in-lucknow/",
+      "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-lucknow/",
       "routeId": "lucknow-location",
       "page": {
-        "title": "Finance & Investment Banking Course in Lucknow | Centaur Careers",
-        "description": "Study the six-week Financial Operations Masterclass in person at Mindsprout Career Hub, Alambagh, Lucknow. Review the curriculum, fees, and current cohort details.",
-        "h1": "Finance and Investment Banking Course in Lucknow",
+        "title": "Best Finance Course in Lucknow? | Centaur Careers",
+        "description": "Compare finance and investment banking operations training in Lucknow. Explore Centaur Careers’ six-week course in Alambagh and check current cohort details.",
+        "h1": "Best Finance Course in Lucknow? Explore Investment Banking Operations",
         "purpose": "Local Lucknow acquisition page",
         "type": "Real local page",
         "action": "Conditional"
@@ -1096,7 +1096,7 @@
         "evidenceUrls": [
           "https://proschoolonline.com/investment-banking-course/investment-banking-course-in-lucknow"
         ],
-        "lastModified": "2026-09-30",
+        "lastModified": "2026-10-05",
         "governanceStatus": "needs-business-verification"
       },
       "indexability": {
@@ -1107,7 +1107,7 @@
         "sitemapEligible": true,
         "sitemapIncluded": true,
         "prerendered": true,
-        "renderedCanonical": "https://centaurcareers.in/locations/lucknow/",
+        "renderedCanonical": "https://centaurcareers.in/best-finance-course-in-lucknow/",
         "canonicalMatches": true
       },
       "internalLinks": {
@@ -1115,82 +1115,82 @@
           {
             "routeId": "home",
             "path": "/",
-            "label": "Finance and Investment Banking Course in Lucknow"
+            "label": "Best Finance Course in Lucknow? Explore Investment Banking Operations"
           },
           {
             "routeId": "about",
             "path": "/about/",
-            "label": "Finance and Investment Banking Course in Lucknow"
+            "label": "Best Finance Course in Lucknow? Explore Investment Banking Operations"
+          },
+          {
+            "routeId": "india-bengaluru",
+            "path": "/best-finance-course-in-bangalore/",
+            "label": "Best Finance Course in Lucknow? Explore Investment Banking Operations"
+          },
+          {
+            "routeId": "india-delhi-ncr",
+            "path": "/best-finance-course-in-delhi/",
+            "label": "Best Finance Course in Lucknow? Explore Investment Banking Operations"
+          },
+          {
+            "routeId": "india-mumbai",
+            "path": "/best-finance-course-in-mumbai/",
+            "label": "Best Finance Course in Lucknow? Explore Investment Banking Operations"
           },
           {
             "routeId": "career-guides",
             "path": "/career-guides/",
-            "label": "Finance and Investment Banking Course in Lucknow"
+            "label": "Best Finance Course in Lucknow? Explore Investment Banking Operations"
           },
           {
             "routeId": "comparison-online-vs-offline-finance-training",
             "path": "/compare/online-vs-offline-finance-training/",
-            "label": "Finance and Investment Banking Course in Lucknow"
+            "label": "Best Finance Course in Lucknow? Explore Investment Banking Operations"
           },
           {
             "routeId": "contact",
             "path": "/contact/",
-            "label": "Finance and Investment Banking Course in Lucknow"
+            "label": "Best Finance Course in Lucknow? Explore Investment Banking Operations"
           },
           {
             "routeId": "courses",
             "path": "/courses/",
-            "label": "Finance and Investment Banking Course in Lucknow"
+            "label": "Best Finance Course in Lucknow? Explore Investment Banking Operations"
           },
           {
             "routeId": "finance-operations",
             "path": "/courses/finance-operations/",
-            "label": "Finance and Investment Banking Course in Lucknow"
+            "label": "Best Finance Course in Lucknow? Explore Investment Banking Operations"
           },
           {
             "routeId": "investment-banking-operations",
             "path": "/courses/investment-banking-operations/",
-            "label": "Finance and Investment Banking Course in Lucknow"
+            "label": "Best Finance Course in Lucknow? Explore Investment Banking Operations"
           },
           {
             "routeId": "retail-banking",
             "path": "/courses/retail-banking/",
-            "label": "Finance and Investment Banking Course in Lucknow"
+            "label": "Best Finance Course in Lucknow? Explore Investment Banking Operations"
           },
           {
             "routeId": "faqs",
             "path": "/faqs/",
-            "label": "Finance and Investment Banking Course in Lucknow"
+            "label": "Best Finance Course in Lucknow? Explore Investment Banking Operations"
           },
           {
             "routeId": "lead-finance-institute-lucknow-placement",
             "path": "/finance-institute-lucknow-with-placement/",
-            "label": "Finance and Investment Banking Course in Lucknow"
+            "label": "Best Finance Course in Lucknow? Explore Investment Banking Operations"
           },
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Finance and Investment Banking Course in Lucknow"
-          },
-          {
-            "routeId": "india-bengaluru",
-            "path": "/india/bengaluru/",
-            "label": "Finance and Investment Banking Course in Lucknow"
-          },
-          {
-            "routeId": "india-delhi-ncr",
-            "path": "/india/delhi-ncr/",
-            "label": "Finance and Investment Banking Course in Lucknow"
-          },
-          {
-            "routeId": "india-mumbai",
-            "path": "/india/mumbai/",
-            "label": "Finance and Investment Banking Course in Lucknow"
+            "label": "Best Finance Course in Lucknow? Explore Investment Banking Operations"
           },
           {
             "routeId": "resources",
             "path": "/resources/",
-            "label": "Finance and Investment Banking Course in Lucknow"
+            "label": "Best Finance Course in Lucknow? Explore Investment Banking Operations"
           }
         ],
         "outbound": [
@@ -1346,6 +1346,11 @@
       "internalLinks": {
         "inbound": [
           {
+            "routeId": "india-mumbai",
+            "path": "/best-finance-course-in-mumbai/",
+            "label": "KYC & AML Compliance Learning Module"
+          },
+          {
             "routeId": "career-guide-aml-analyst",
             "path": "/career-guides/aml-analyst/",
             "label": "KYC & AML Compliance Learning Module"
@@ -1376,11 +1381,6 @@
             "label": "KYC & AML Compliance Learning Module"
           },
           {
-            "routeId": "india-mumbai",
-            "path": "/india/mumbai/",
-            "label": "KYC & AML Compliance Learning Module"
-          },
-          {
             "routeId": "resource-kyc-aml-compliance-guide",
             "path": "/resources/kyc-aml-compliance-guide/",
             "label": "KYC & AML Compliance Learning Module"
@@ -1396,7 +1396,7 @@
           {
             "routeId": "career-guide-kyc-aml-analyst",
             "path": "/career-guides/kyc-aml-analyst/",
-            "label": "KYC & AML Analyst Career Guide",
+            "label": "AML/KYC Analyst Career Guide",
             "authorityTier": "supporting"
           },
           {
@@ -1407,8 +1407,8 @@
           },
           {
             "routeId": "india-mumbai",
-            "path": "/india/mumbai/",
-            "label": "Mumbai Investment Operations: Online Course and Career Guide",
+            "path": "/best-finance-course-in-mumbai/",
+            "label": "Best Online Finance Course in Mumbai? Investment Operations Guide",
             "authorityTier": "supporting"
           },
           {
@@ -1740,6 +1740,36 @@
             "label": "Live Online Finance Course Across India"
           },
           {
+            "routeId": "india-bengaluru",
+            "path": "/best-finance-course-in-bangalore/",
+            "label": "Live Online Finance Course Across India"
+          },
+          {
+            "routeId": "india-delhi-ncr",
+            "path": "/best-finance-course-in-delhi/",
+            "label": "Live Online Finance Course Across India"
+          },
+          {
+            "routeId": "india-hyderabad",
+            "path": "/best-finance-course-in-hyderabad/",
+            "label": "Live Online Finance Course Across India"
+          },
+          {
+            "routeId": "lucknow-location",
+            "path": "/best-finance-course-in-lucknow/",
+            "label": "Live Online Finance Course Across India"
+          },
+          {
+            "routeId": "india-mumbai",
+            "path": "/best-finance-course-in-mumbai/",
+            "label": "Live Online Finance Course Across India"
+          },
+          {
+            "routeId": "india-pune",
+            "path": "/best-finance-course-in-pune/",
+            "label": "Live Online Finance Course Across India"
+          },
+          {
             "routeId": "blog",
             "path": "/blog/",
             "label": "Live Online Finance Course Across India"
@@ -1847,36 +1877,6 @@
           {
             "routeId": "lead-finance-course-cities-india",
             "path": "/finance-course-cities-india/",
-            "label": "Live Online Finance Course Across India"
-          },
-          {
-            "routeId": "india-bengaluru",
-            "path": "/india/bengaluru/",
-            "label": "Live Online Finance Course Across India"
-          },
-          {
-            "routeId": "india-delhi-ncr",
-            "path": "/india/delhi-ncr/",
-            "label": "Live Online Finance Course Across India"
-          },
-          {
-            "routeId": "india-hyderabad",
-            "path": "/india/hyderabad/",
-            "label": "Live Online Finance Course Across India"
-          },
-          {
-            "routeId": "india-mumbai",
-            "path": "/india/mumbai/",
-            "label": "Live Online Finance Course Across India"
-          },
-          {
-            "routeId": "india-pune",
-            "path": "/india/pune/",
-            "label": "Live Online Finance Course Across India"
-          },
-          {
-            "routeId": "lucknow-location",
-            "path": "/locations/lucknow/",
             "label": "Live Online Finance Course Across India"
           },
           {
@@ -2060,8 +2060,8 @@
           },
           {
             "routeId": "lucknow-location",
-            "path": "/locations/lucknow/",
-            "label": "Finance and Investment Banking Course in Lucknow",
+            "path": "/best-finance-course-in-lucknow/",
+            "label": "Best Finance Course in Lucknow? Explore Investment Banking Operations",
             "authorityTier": "local-commercial"
           },
           {
@@ -2072,32 +2072,32 @@
           },
           {
             "routeId": "india-delhi-ncr",
-            "path": "/india/delhi-ncr/",
-            "label": "Delhi-NCR Finance Operations: Online Course and Career Guide",
+            "path": "/best-finance-course-in-delhi/",
+            "label": "Best Online Finance Course in Delhi? Live NCR Learning Guide",
             "authorityTier": "supporting"
           },
           {
             "routeId": "india-bengaluru",
-            "path": "/india/bengaluru/",
-            "label": "Bengaluru Finance and FinTech Operations: Online Course Guide",
+            "path": "/best-finance-course-in-bangalore/",
+            "label": "Best Online Finance Course in Bangalore? Bengaluru Course Guide",
             "authorityTier": "supporting"
           },
           {
             "routeId": "india-mumbai",
-            "path": "/india/mumbai/",
-            "label": "Mumbai Investment Operations: Online Course and Career Guide",
+            "path": "/best-finance-course-in-mumbai/",
+            "label": "Best Online Finance Course in Mumbai? Investment Operations Guide",
             "authorityTier": "supporting"
           },
           {
             "routeId": "india-pune",
-            "path": "/india/pune/",
-            "label": "Pune Finance Operations: Online Learning and Career Guide",
+            "path": "/best-finance-course-in-pune/",
+            "label": "Best Online Finance Course in Pune? Local Career Guide",
             "authorityTier": "supporting"
           },
           {
             "routeId": "india-hyderabad",
-            "path": "/india/hyderabad/",
-            "label": "Hyderabad Finance Operations: Online Learning and Career Guide",
+            "path": "/best-finance-course-in-hyderabad/",
+            "label": "Best Online Finance Course in Hyderabad? Local Career Guide",
             "authorityTier": "supporting"
           }
         ],
@@ -2287,7 +2287,7 @@
           {
             "routeId": "career-guide-kyc-aml-analyst",
             "path": "/career-guides/kyc-aml-analyst/",
-            "label": "KYC & AML Analyst Career Guide",
+            "label": "AML/KYC Analyst Career Guide",
             "authorityTier": "supporting"
           },
           {
@@ -2328,13 +2328,13 @@
       }
     },
     {
-      "targetUrl": "/india/delhi-ncr/",
-      "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/",
+      "targetUrl": "/best-finance-course-in-delhi/",
+      "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-delhi/",
       "routeId": "india-delhi-ncr",
       "page": {
-        "title": "Investment Banking Course in Delhi | Online NCR Guide",
-        "description": "Explore online banking operations, KYC, payments and finance training from Delhi-NCR. Review the current placement and 100% Job Guarantee Program terms.",
-        "h1": "Delhi-NCR Finance Operations: Online Course and Career Guide",
+        "title": "Best Online Finance Course in Delhi? | Centaur Careers",
+        "description": "Explore live online finance training for Delhi, Gurugram and Noida. Centaur Careers’ six-week Masterclass is online; in-person sessions are in Lucknow.",
+        "h1": "Best Online Finance Course in Delhi? Live NCR Learning Guide",
         "purpose": "Supporting module, career or regional page",
         "type": "Regional guide",
         "action": "Conditional"
@@ -2413,7 +2413,7 @@
         "evidenceUrls": [
           "https://imarticus.org/certified-investment-banking-operations-program-lucknow/"
         ],
-        "lastModified": "2026-09-30",
+        "lastModified": "2026-10-05",
         "governanceStatus": "ready-to-build"
       },
       "indexability": {
@@ -2424,7 +2424,7 @@
         "sitemapEligible": true,
         "sitemapIncluded": true,
         "prerendered": true,
-        "renderedCanonical": "https://centaurcareers.in/india/delhi-ncr/",
+        "renderedCanonical": "https://centaurcareers.in/best-finance-course-in-delhi/",
         "canonicalMatches": true
       },
       "internalLinks": {
@@ -2432,22 +2432,22 @@
           {
             "routeId": "career-guide-finance-operations",
             "path": "/career-guides/finance-operations/",
-            "label": "Delhi-NCR Finance Operations: Online Course and Career Guide"
+            "label": "Best Online Finance Course in Delhi? Live NCR Learning Guide"
           },
           {
             "routeId": "courses-banking-and-finance",
             "path": "/courses/banking-and-finance/",
-            "label": "Delhi-NCR Finance Operations: Online Course and Career Guide"
+            "label": "Best Online Finance Course in Delhi? Live NCR Learning Guide"
           },
           {
             "routeId": "lead-finance-course-cities-india",
             "path": "/finance-course-cities-india/",
-            "label": "Delhi-NCR Finance Operations: Online Course and Career Guide"
+            "label": "Best Online Finance Course in Delhi? Live NCR Learning Guide"
           },
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Delhi-NCR Finance Operations: Online Course and Career Guide"
+            "label": "Best Online Finance Course in Delhi? Live NCR Learning Guide"
           }
         ],
         "outbound": [
@@ -2490,7 +2490,7 @@
           {
             "routeId": "career-guide-kyc-aml-analyst",
             "path": "/career-guides/kyc-aml-analyst/",
-            "label": "KYC & AML Analyst Career Guide",
+            "label": "AML/KYC Analyst Career Guide",
             "authorityTier": "supporting"
           },
           {
@@ -2513,8 +2513,8 @@
           },
           {
             "routeId": "lucknow-location",
-            "path": "/locations/lucknow/",
-            "label": "Finance and Investment Banking Course in Lucknow",
+            "path": "/best-finance-course-in-lucknow/",
+            "label": "Best Finance Course in Lucknow? Explore Investment Banking Operations",
             "authorityTier": "local-commercial"
           },
           {
@@ -2543,13 +2543,13 @@
       }
     },
     {
-      "targetUrl": "/india/bengaluru/",
-      "canonicalUrl": "https://centaurcareers.in/india/bengaluru/",
+      "targetUrl": "/best-finance-course-in-bangalore/",
+      "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-bangalore/",
       "routeId": "india-bengaluru",
       "page": {
-        "title": "Investment Banking Course in Bangalore | Online Guide",
-        "description": "Study investment banking operations online from Bengaluru and explore finance, fintech, payments and GCC roles. Review placement and Job Guarantee Program terms.",
-        "h1": "Bengaluru Finance and FinTech Operations: Online Course Guide",
+        "title": "Best Online Finance Course in Bangalore? | Centaur Careers",
+        "description": "Explore live online finance training for Bangalore and Bengaluru learners, including investment operations and fintech workflows. In-person sessions are in Lucknow.",
+        "h1": "Best Online Finance Course in Bangalore? Bengaluru Course Guide",
         "purpose": "Supporting module, career or regional page",
         "type": "Regional guide",
         "action": "Conditional"
@@ -2612,7 +2612,7 @@
         "evidenceUrls": [
           "https://www.upgrad.com/offline-centres/certificate-global-investment-banking-operations-course-in-pune-city/"
         ],
-        "lastModified": "2026-09-30",
+        "lastModified": "2026-10-05",
         "governanceStatus": "ready-to-build"
       },
       "indexability": {
@@ -2623,7 +2623,7 @@
         "sitemapEligible": true,
         "sitemapIncluded": true,
         "prerendered": true,
-        "renderedCanonical": "https://centaurcareers.in/india/bengaluru/",
+        "renderedCanonical": "https://centaurcareers.in/best-finance-course-in-bangalore/",
         "canonicalMatches": true
       },
       "internalLinks": {
@@ -2631,22 +2631,22 @@
           {
             "routeId": "career-guide-investment-banking-operations",
             "path": "/career-guides/investment-banking-operations/",
-            "label": "Bengaluru Finance and FinTech Operations: Online Course Guide"
+            "label": "Best Online Finance Course in Bangalore? Bengaluru Course Guide"
           },
           {
             "routeId": "investment-banking-operations",
             "path": "/courses/investment-banking-operations/",
-            "label": "Bengaluru Finance and FinTech Operations: Online Course Guide"
+            "label": "Best Online Finance Course in Bangalore? Bengaluru Course Guide"
           },
           {
             "routeId": "lead-finance-course-cities-india",
             "path": "/finance-course-cities-india/",
-            "label": "Bengaluru Finance and FinTech Operations: Online Course Guide"
+            "label": "Best Online Finance Course in Bangalore? Bengaluru Course Guide"
           },
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Bengaluru Finance and FinTech Operations: Online Course Guide"
+            "label": "Best Online Finance Course in Bangalore? Bengaluru Course Guide"
           }
         ],
         "outbound": [
@@ -2712,8 +2712,8 @@
           },
           {
             "routeId": "lucknow-location",
-            "path": "/locations/lucknow/",
-            "label": "Finance and Investment Banking Course in Lucknow",
+            "path": "/best-finance-course-in-lucknow/",
+            "label": "Best Finance Course in Lucknow? Explore Investment Banking Operations",
             "authorityTier": "local-commercial"
           },
           {
@@ -2742,13 +2742,13 @@
       }
     },
     {
-      "targetUrl": "/india/mumbai/",
-      "canonicalUrl": "https://centaurcareers.in/india/mumbai/",
+      "targetUrl": "/best-finance-course-in-mumbai/",
+      "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-mumbai/",
       "routeId": "india-mumbai",
       "page": {
-        "title": "Investment Banking Course in Mumbai | Online Guide",
-        "description": "Explore KYC AML and finance operations courses online from Mumbai, including trade support and settlements. Review current placement and job guarantee terms.",
-        "h1": "Mumbai Investment Operations: Online Course and Career Guide",
+        "title": "Best Online Finance Course in Mumbai? | Centaur Careers",
+        "description": "Explore live online finance training for Mumbai learners, including investment operations, settlements and reconciliation. In-person sessions are in Lucknow.",
+        "h1": "Best Online Finance Course in Mumbai? Investment Operations Guide",
         "purpose": "Supporting module, career or regional page",
         "type": "Regional guide",
         "action": "Conditional"
@@ -2795,7 +2795,7 @@
         "evidenceUrls": [
           "https://imarticus.org/certified-investment-banking-operations-program-lucknow/"
         ],
-        "lastModified": "2026-09-30",
+        "lastModified": "2026-10-05",
         "governanceStatus": "ready-to-build"
       },
       "indexability": {
@@ -2806,7 +2806,7 @@
         "sitemapEligible": true,
         "sitemapIncluded": true,
         "prerendered": true,
-        "renderedCanonical": "https://centaurcareers.in/india/mumbai/",
+        "renderedCanonical": "https://centaurcareers.in/best-finance-course-in-mumbai/",
         "canonicalMatches": true
       },
       "internalLinks": {
@@ -2814,22 +2814,22 @@
           {
             "routeId": "career-guide-kyc-aml-analyst",
             "path": "/career-guides/kyc-aml-analyst/",
-            "label": "Mumbai Investment Operations: Online Course and Career Guide"
+            "label": "Best Online Finance Course in Mumbai? Investment Operations Guide"
           },
           {
             "routeId": "investment-banking-operations",
             "path": "/courses/investment-banking-operations/",
-            "label": "Mumbai Investment Operations: Online Course and Career Guide"
+            "label": "Best Online Finance Course in Mumbai? Investment Operations Guide"
           },
           {
             "routeId": "kyc-aml-compliance",
             "path": "/courses/kyc-aml/",
-            "label": "Mumbai Investment Operations: Online Course and Career Guide"
+            "label": "Best Online Finance Course in Mumbai? Investment Operations Guide"
           },
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Mumbai Investment Operations: Online Course and Career Guide"
+            "label": "Best Online Finance Course in Mumbai? Investment Operations Guide"
           }
         ],
         "outbound": [
@@ -2860,7 +2860,7 @@
           {
             "routeId": "career-guide-kyc-aml-analyst",
             "path": "/career-guides/kyc-aml-analyst/",
-            "label": "KYC & AML Analyst Career Guide",
+            "label": "AML/KYC Analyst Career Guide",
             "authorityTier": "supporting"
           },
           {
@@ -2895,8 +2895,8 @@
           },
           {
             "routeId": "lucknow-location",
-            "path": "/locations/lucknow/",
-            "label": "Finance and Investment Banking Course in Lucknow",
+            "path": "/best-finance-course-in-lucknow/",
+            "label": "Best Finance Course in Lucknow? Explore Investment Banking Operations",
             "authorityTier": "local-commercial"
           },
           {
@@ -2925,13 +2925,13 @@
       }
     },
     {
-      "targetUrl": "/india/pune/",
-      "canonicalUrl": "https://centaurcareers.in/india/pune/",
+      "targetUrl": "/best-finance-course-in-pune/",
+      "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-pune/",
       "routeId": "india-pune",
       "page": {
-        "title": "Investment Banking Course in Pune | Online Guide",
-        "description": "Compare Pune finance operations roles and join the online Masterclass. Review the 100% Job Guarantee Program terms before applying.",
-        "h1": "Pune Finance Operations: Online Learning and Career Guide",
+        "title": "Best Online Finance Course in Pune? | Centaur Careers",
+        "description": "Explore live online finance training for Pune learners, with finance operations, KYC and payments modules. In-person sessions are held in Lucknow.",
+        "h1": "Best Online Finance Course in Pune? Local Career Guide",
         "purpose": "Supporting module, career or regional page",
         "type": "Regional guide",
         "action": "Conditional"
@@ -2978,7 +2978,7 @@
         "evidenceUrls": [
           "https://www.upgrad.com/offline-centres/certificate-global-investment-banking-operations-course-in-pune-city/"
         ],
-        "lastModified": "2026-09-26",
+        "lastModified": "2026-10-05",
         "governanceStatus": "ready-to-build"
       },
       "indexability": {
@@ -2989,7 +2989,7 @@
         "sitemapEligible": true,
         "sitemapIncluded": true,
         "prerendered": true,
-        "renderedCanonical": "https://centaurcareers.in/india/pune/",
+        "renderedCanonical": "https://centaurcareers.in/best-finance-course-in-pune/",
         "canonicalMatches": true
       },
       "internalLinks": {
@@ -2997,7 +2997,7 @@
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Pune Finance Operations: Online Learning and Career Guide"
+            "label": "Best Online Finance Course in Pune? Local Career Guide"
           }
         ],
         "outbound": [
@@ -3075,13 +3075,13 @@
       }
     },
     {
-      "targetUrl": "/india/hyderabad/",
-      "canonicalUrl": "https://centaurcareers.in/india/hyderabad/",
+      "targetUrl": "/best-finance-course-in-hyderabad/",
+      "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-hyderabad/",
       "routeId": "india-hyderabad",
       "page": {
-        "title": "Investment Banking Course in Hyderabad | Online Guide",
-        "description": "Explore Hyderabad investment operations, KYC, payments, and GCC workflows through live online training. Review the 100% Job Guarantee Program terms.",
-        "h1": "Hyderabad Finance Operations: Online Learning and Career Guide",
+        "title": "Best Online Finance Course in Hyderabad? | Centaur Careers",
+        "description": "Explore live online finance training for Hyderabad learners, including GCC, KYC, payments and investment operations workflows. In-person sessions are in Lucknow.",
+        "h1": "Best Online Finance Course in Hyderabad? Local Career Guide",
         "purpose": "Supporting module, career or regional page",
         "type": "Regional guide",
         "action": "Conditional"
@@ -3128,7 +3128,7 @@
         "evidenceUrls": [
           "https://imarticus.org/certified-investment-banking-operations-program-lucknow/"
         ],
-        "lastModified": "2026-09-26",
+        "lastModified": "2026-10-05",
         "governanceStatus": "ready-to-build"
       },
       "indexability": {
@@ -3139,7 +3139,7 @@
         "sitemapEligible": true,
         "sitemapIncluded": true,
         "prerendered": true,
-        "renderedCanonical": "https://centaurcareers.in/india/hyderabad/",
+        "renderedCanonical": "https://centaurcareers.in/best-finance-course-in-hyderabad/",
         "canonicalMatches": true
       },
       "internalLinks": {
@@ -3147,7 +3147,7 @@
           {
             "routeId": "india",
             "path": "/india/",
-            "label": "Hyderabad Finance Operations: Online Learning and Career Guide"
+            "label": "Best Online Finance Course in Hyderabad? Local Career Guide"
           }
         ],
         "outbound": [
@@ -3178,7 +3178,7 @@
           {
             "routeId": "career-guide-kyc-aml-analyst",
             "path": "/career-guides/kyc-aml-analyst/",
-            "label": "KYC & AML Analyst Career Guide",
+            "label": "AML/KYC Analyst Career Guide",
             "authorityTier": "supporting"
           },
           {
@@ -3323,6 +3323,21 @@
       "internalLinks": {
         "inbound": [
           {
+            "routeId": "india-bengaluru",
+            "path": "/best-finance-course-in-bangalore/",
+            "label": "Investment Banking Operations Interview Questions for Freshers"
+          },
+          {
+            "routeId": "india-delhi-ncr",
+            "path": "/best-finance-course-in-delhi/",
+            "label": "Investment Banking Operations Interview Questions for Freshers"
+          },
+          {
+            "routeId": "india-mumbai",
+            "path": "/best-finance-course-in-mumbai/",
+            "label": "Investment Banking Operations Interview Questions for Freshers"
+          },
+          {
             "routeId": "career-guides",
             "path": "/career-guides/",
             "label": "Investment Banking Operations Interview Questions for Freshers"
@@ -3443,21 +3458,6 @@
             "label": "Investment Banking Operations Interview Questions for Freshers"
           },
           {
-            "routeId": "india-bengaluru",
-            "path": "/india/bengaluru/",
-            "label": "Investment Banking Operations Interview Questions for Freshers"
-          },
-          {
-            "routeId": "india-delhi-ncr",
-            "path": "/india/delhi-ncr/",
-            "label": "Investment Banking Operations Interview Questions for Freshers"
-          },
-          {
-            "routeId": "india-mumbai",
-            "path": "/india/mumbai/",
-            "label": "Investment Banking Operations Interview Questions for Freshers"
-          },
-          {
             "routeId": "quiz",
             "path": "/quiz/",
             "label": "Investment Banking Operations Interview Questions for Freshers"
@@ -3534,7 +3534,7 @@
           {
             "routeId": "career-guide-kyc-aml-analyst",
             "path": "/career-guides/kyc-aml-analyst/",
-            "label": "KYC & AML Analyst Career Guide",
+            "label": "AML/KYC Analyst Career Guide",
             "authorityTier": "supporting"
           },
           {
@@ -3899,7 +3899,7 @@
           {
             "routeId": "career-guide-kyc-aml-analyst",
             "path": "/career-guides/kyc-aml-analyst/",
-            "label": "KYC & AML Analyst Career Guide",
+            "label": "AML/KYC Analyst Career Guide",
             "authorityTier": "supporting"
           },
           {
@@ -4062,6 +4062,16 @@
       "internalLinks": {
         "inbound": [
           {
+            "routeId": "india-bengaluru",
+            "path": "/best-finance-course-in-bangalore/",
+            "label": "Investment Banking Operations: Career, Roles & Skills"
+          },
+          {
+            "routeId": "india-mumbai",
+            "path": "/best-finance-course-in-mumbai/",
+            "label": "Investment Banking Operations: Career, Roles & Skills"
+          },
+          {
             "routeId": "lead-best-investment-banking-course-india",
             "path": "/best-investment-banking-course-india/",
             "label": "Investment Banking Operations: Career, Roles & Skills"
@@ -4117,16 +4127,6 @@
             "label": "Investment Banking Operations: Career, Roles & Skills"
           },
           {
-            "routeId": "india-bengaluru",
-            "path": "/india/bengaluru/",
-            "label": "Investment Banking Operations: Career, Roles & Skills"
-          },
-          {
-            "routeId": "india-mumbai",
-            "path": "/india/mumbai/",
-            "label": "Investment Banking Operations: Career, Roles & Skills"
-          },
-          {
             "routeId": "resource-corporate-actions-workflow",
             "path": "/resources/corporate-actions-workflow/",
             "label": "Investment Banking Operations: Career, Roles & Skills"
@@ -4170,8 +4170,8 @@
           },
           {
             "routeId": "india-bengaluru",
-            "path": "/india/bengaluru/",
-            "label": "Bengaluru Finance and FinTech Operations: Online Course Guide",
+            "path": "/best-finance-course-in-bangalore/",
+            "label": "Best Online Finance Course in Bangalore? Bengaluru Course Guide",
             "authorityTier": "supporting"
           },
           {
@@ -4446,6 +4446,11 @@
       "internalLinks": {
         "inbound": [
           {
+            "routeId": "india-mumbai",
+            "path": "/best-finance-course-in-mumbai/",
+            "label": "Trade Lifecycle in Investment Banking: A Practical Guide"
+          },
+          {
             "routeId": "career-guides",
             "path": "/career-guides/",
             "label": "Trade Lifecycle in Investment Banking: A Practical Guide"
@@ -4473,11 +4478,6 @@
           {
             "routeId": "career-guide-trade-support-analyst",
             "path": "/career-guides/trade-support-analyst/",
-            "label": "Trade Lifecycle in Investment Banking: A Practical Guide"
-          },
-          {
-            "routeId": "india-mumbai",
-            "path": "/india/mumbai/",
             "label": "Trade Lifecycle in Investment Banking: A Practical Guide"
           },
           {
@@ -4757,6 +4757,21 @@
       "internalLinks": {
         "inbound": [
           {
+            "routeId": "india-bengaluru",
+            "path": "/best-finance-course-in-bangalore/",
+            "label": "Finance Operations Careers: Roles, Skills & Pathways"
+          },
+          {
+            "routeId": "india-delhi-ncr",
+            "path": "/best-finance-course-in-delhi/",
+            "label": "Finance Operations Careers: Roles, Skills & Pathways"
+          },
+          {
+            "routeId": "india-pune",
+            "path": "/best-finance-course-in-pune/",
+            "label": "Finance Operations Careers: Roles, Skills & Pathways"
+          },
+          {
             "routeId": "career-guides",
             "path": "/career-guides/",
             "label": "Finance Operations Careers: Roles, Skills & Pathways"
@@ -4862,21 +4877,6 @@
             "label": "Finance Operations Careers: Roles, Skills & Pathways"
           },
           {
-            "routeId": "india-bengaluru",
-            "path": "/india/bengaluru/",
-            "label": "Finance Operations Careers: Roles, Skills & Pathways"
-          },
-          {
-            "routeId": "india-delhi-ncr",
-            "path": "/india/delhi-ncr/",
-            "label": "Finance Operations Careers: Roles, Skills & Pathways"
-          },
-          {
-            "routeId": "india-pune",
-            "path": "/india/pune/",
-            "label": "Finance Operations Careers: Roles, Skills & Pathways"
-          },
-          {
             "routeId": "lead-job-oriented-finance-course-india",
             "path": "/job-oriented-finance-course-india/",
             "label": "Finance Operations Careers: Roles, Skills & Pathways"
@@ -4978,8 +4978,8 @@
           },
           {
             "routeId": "india-delhi-ncr",
-            "path": "/india/delhi-ncr/",
-            "label": "Delhi-NCR Finance Operations: Online Course and Career Guide",
+            "path": "/best-finance-course-in-delhi/",
+            "label": "Best Online Finance Course in Delhi? Live NCR Learning Guide",
             "authorityTier": "supporting"
           },
           {
@@ -5003,7 +5003,7 @@
           {
             "routeId": "career-guide-kyc-aml-analyst",
             "path": "/career-guides/kyc-aml-analyst/",
-            "label": "KYC & AML Analyst Career Guide",
+            "label": "AML/KYC Analyst Career Guide",
             "authorityTier": "supporting"
           },
           {
@@ -5036,9 +5036,9 @@
       "canonicalUrl": "https://centaurcareers.in/career-guides/kyc-aml-analyst/",
       "routeId": "career-guide-kyc-aml-analyst",
       "page": {
-        "title": "KYC Analyst Career Guide for Graduates | Centaur Careers",
-        "description": "Learn KYC analyst responsibilities, due diligence, screening, case records, and entry skills. See the KYC/AML module and finance-job guarantee terms.",
-        "h1": "KYC & AML Analyst Career Guide",
+        "title": "AML/KYC Analyst Career Guide: Roles and Skills | Centaur Careers",
+        "description": "Explore AML/KYC analyst responsibilities, customer due diligence, screening, case notes, entry skills, and the KYC/AML course module.",
+        "h1": "AML/KYC Analyst Career Guide",
         "purpose": "KYC/AML career and knowledge pillar",
         "type": "Career / knowledge guide, Career guide / role hub",
         "action": "Consolidate"
@@ -5177,7 +5177,7 @@
         "evidenceUrls": [
           "https://www.smartsteps.in/kyc-aml"
         ],
-        "lastModified": "2026-09-29",
+        "lastModified": "2026-10-05",
         "governanceStatus": "ready-to-build"
       },
       "indexability": {
@@ -5194,89 +5194,89 @@
       "internalLinks": {
         "inbound": [
           {
+            "routeId": "india-delhi-ncr",
+            "path": "/best-finance-course-in-delhi/",
+            "label": "AML/KYC Analyst Career Guide"
+          },
+          {
+            "routeId": "india-hyderabad",
+            "path": "/best-finance-course-in-hyderabad/",
+            "label": "AML/KYC Analyst Career Guide"
+          },
+          {
+            "routeId": "india-mumbai",
+            "path": "/best-finance-course-in-mumbai/",
+            "label": "AML/KYC Analyst Career Guide"
+          },
+          {
             "routeId": "career-guides",
             "path": "/career-guides/",
-            "label": "KYC & AML Analyst Career Guide"
+            "label": "AML/KYC Analyst Career Guide"
           },
           {
             "routeId": "career-guide-aml-analyst",
             "path": "/career-guides/aml-analyst/",
-            "label": "KYC & AML Analyst Career Guide"
+            "label": "AML/KYC Analyst Career Guide"
           },
           {
             "routeId": "career-guide-choosing-finance-career-course",
             "path": "/career-guides/choosing-finance-career-course/",
-            "label": "KYC & AML Analyst Career Guide"
+            "label": "AML/KYC Analyst Career Guide"
           },
           {
             "routeId": "career-guide-client-onboarding-analyst",
             "path": "/career-guides/client-onboarding-analyst/",
-            "label": "KYC & AML Analyst Career Guide"
+            "label": "AML/KYC Analyst Career Guide"
           },
           {
             "routeId": "career-guide-digital-payments-operations",
             "path": "/career-guides/digital-payments-operations/",
-            "label": "KYC & AML Analyst Career Guide"
+            "label": "AML/KYC Analyst Career Guide"
           },
           {
             "routeId": "career-guide-finance-careers-after-graduation",
             "path": "/career-guides/finance-careers-after-graduation/",
-            "label": "KYC & AML Analyst Career Guide"
+            "label": "AML/KYC Analyst Career Guide"
           },
           {
             "routeId": "career-guide-finance-operations",
             "path": "/career-guides/finance-operations/",
-            "label": "KYC & AML Analyst Career Guide"
+            "label": "AML/KYC Analyst Career Guide"
           },
           {
             "routeId": "career-guide-financial-operations-faq",
             "path": "/career-guides/financial-operations-faq/",
-            "label": "KYC & AML Analyst Career Guide"
+            "label": "AML/KYC Analyst Career Guide"
           },
           {
             "routeId": "career-guide-retail-banking-operations",
             "path": "/career-guides/retail-banking-operations/",
-            "label": "KYC & AML Analyst Career Guide"
+            "label": "AML/KYC Analyst Career Guide"
           },
           {
             "routeId": "career-guide-transaction-monitoring-analyst",
             "path": "/career-guides/transaction-monitoring-analyst/",
-            "label": "KYC & AML Analyst Career Guide"
+            "label": "AML/KYC Analyst Career Guide"
           },
           {
             "routeId": "courses",
             "path": "/courses/",
-            "label": "KYC & AML Analyst Career Guide"
+            "label": "AML/KYC Analyst Career Guide"
           },
           {
             "routeId": "kyc-aml-compliance",
             "path": "/courses/kyc-aml/",
-            "label": "KYC & AML Analyst Career Guide"
-          },
-          {
-            "routeId": "india-delhi-ncr",
-            "path": "/india/delhi-ncr/",
-            "label": "KYC & AML Analyst Career Guide"
-          },
-          {
-            "routeId": "india-hyderabad",
-            "path": "/india/hyderabad/",
-            "label": "KYC & AML Analyst Career Guide"
-          },
-          {
-            "routeId": "india-mumbai",
-            "path": "/india/mumbai/",
-            "label": "KYC & AML Analyst Career Guide"
+            "label": "AML/KYC Analyst Career Guide"
           },
           {
             "routeId": "resource-investment-banking-interview-questions",
             "path": "/resources/investment-banking-interview-questions/",
-            "label": "KYC & AML Analyst Career Guide"
+            "label": "AML/KYC Analyst Career Guide"
           },
           {
             "routeId": "resource-kyc-aml-compliance-guide",
             "path": "/resources/kyc-aml-compliance-guide/",
-            "label": "KYC & AML Analyst Career Guide"
+            "label": "AML/KYC Analyst Career Guide"
           }
         ],
         "outbound": [
@@ -5312,8 +5312,8 @@
           },
           {
             "routeId": "india-mumbai",
-            "path": "/india/mumbai/",
-            "label": "Mumbai Investment Operations: Online Course and Career Guide",
+            "path": "/best-finance-course-in-mumbai/",
+            "label": "Best Online Finance Course in Mumbai? Investment Operations Guide",
             "authorityTier": "supporting"
           },
           {
@@ -5531,7 +5531,7 @@
           {
             "routeId": "career-guide-kyc-aml-analyst",
             "path": "/career-guides/kyc-aml-analyst/",
-            "label": "KYC & AML Analyst Career Guide",
+            "label": "AML/KYC Analyst Career Guide",
             "authorityTier": "supporting"
           },
           {
@@ -5633,7 +5633,7 @@
         "evidenceUrls": [
           "https://timespro.com/early-career/investment-banking-operations-program"
         ],
-        "lastModified": "2026-09-29",
+        "lastModified": "2026-09-27",
         "governanceStatus": "ready-to-build"
       },
       "indexability": {
@@ -5750,7 +5750,7 @@
           {
             "routeId": "career-guide-kyc-aml-analyst",
             "path": "/career-guides/kyc-aml-analyst/",
-            "label": "KYC & AML Analyst Career Guide",
+            "label": "AML/KYC Analyst Career Guide",
             "authorityTier": "supporting"
           },
           {
@@ -5934,8 +5934,8 @@
           },
           {
             "routeId": "lucknow-location",
-            "path": "/locations/lucknow/",
-            "label": "Finance and Investment Banking Course in Lucknow",
+            "path": "/best-finance-course-in-lucknow/",
+            "label": "Best Finance Course in Lucknow? Explore Investment Banking Operations",
             "authorityTier": "local-commercial"
           },
           {
@@ -6084,6 +6084,16 @@
       "internalLinks": {
         "inbound": [
           {
+            "routeId": "india-bengaluru",
+            "path": "/best-finance-course-in-bangalore/",
+            "label": "Digital Payment Operations: Process, Roles & Skills"
+          },
+          {
+            "routeId": "india-pune",
+            "path": "/best-finance-course-in-pune/",
+            "label": "Digital Payment Operations: Process, Roles & Skills"
+          },
+          {
             "routeId": "career-guides",
             "path": "/career-guides/",
             "label": "Digital Payment Operations: Process, Roles & Skills"
@@ -6139,16 +6149,6 @@
             "label": "Digital Payment Operations: Process, Roles & Skills"
           },
           {
-            "routeId": "india-bengaluru",
-            "path": "/india/bengaluru/",
-            "label": "Digital Payment Operations: Process, Roles & Skills"
-          },
-          {
-            "routeId": "india-pune",
-            "path": "/india/pune/",
-            "label": "Digital Payment Operations: Process, Roles & Skills"
-          },
-          {
             "routeId": "resource-finance-gk",
             "path": "/resources/finance-gk/",
             "label": "Digital Payment Operations: Process, Roles & Skills"
@@ -6200,7 +6200,7 @@
           {
             "routeId": "career-guide-kyc-aml-analyst",
             "path": "/career-guides/kyc-aml-analyst/",
-            "label": "KYC & AML Analyst Career Guide",
+            "label": "AML/KYC Analyst Career Guide",
             "authorityTier": "supporting"
           },
           {
@@ -6492,6 +6492,16 @@
       "internalLinks": {
         "inbound": [
           {
+            "routeId": "india-hyderabad",
+            "path": "/best-finance-course-in-hyderabad/",
+            "label": "FinTech Operations Careers for Graduates"
+          },
+          {
+            "routeId": "india-pune",
+            "path": "/best-finance-course-in-pune/",
+            "label": "FinTech Operations Careers for Graduates"
+          },
+          {
             "routeId": "career-guides",
             "path": "/career-guides/",
             "label": "FinTech Operations Careers for Graduates"
@@ -6534,16 +6544,6 @@
           {
             "routeId": "kyc-aml-compliance",
             "path": "/courses/kyc-aml/",
-            "label": "FinTech Operations Careers for Graduates"
-          },
-          {
-            "routeId": "india-hyderabad",
-            "path": "/india/hyderabad/",
-            "label": "FinTech Operations Careers for Graduates"
-          },
-          {
-            "routeId": "india-pune",
-            "path": "/india/pune/",
             "label": "FinTech Operations Careers for Graduates"
           }
         ],
@@ -24184,9 +24184,9 @@
       "keyword": "investment banking course in Lucknow",
       "normalizedKeyword": "investment banking course in lucknow",
       "owner": {
-        "targetUrl": "/locations/lucknow/",
+        "targetUrl": "/best-finance-course-in-lucknow/",
         "routeId": "lucknow-location",
-        "canonicalUrl": "https://centaurcareers.in/locations/lucknow/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-lucknow/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -24218,9 +24218,9 @@
       "keyword": "investment banking operations course in Lucknow",
       "normalizedKeyword": "investment banking operations course in lucknow",
       "owner": {
-        "targetUrl": "/locations/lucknow/",
+        "targetUrl": "/best-finance-course-in-lucknow/",
         "routeId": "lucknow-location",
-        "canonicalUrl": "https://centaurcareers.in/locations/lucknow/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-lucknow/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -24252,9 +24252,9 @@
       "keyword": "investment banking classes in Lucknow",
       "normalizedKeyword": "investment banking classes in lucknow",
       "owner": {
-        "targetUrl": "/locations/lucknow/",
+        "targetUrl": "/best-finance-course-in-lucknow/",
         "routeId": "lucknow-location",
-        "canonicalUrl": "https://centaurcareers.in/locations/lucknow/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-lucknow/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -24286,9 +24286,9 @@
       "keyword": "investment banking institute in Lucknow",
       "normalizedKeyword": "investment banking institute in lucknow",
       "owner": {
-        "targetUrl": "/locations/lucknow/",
+        "targetUrl": "/best-finance-course-in-lucknow/",
         "routeId": "lucknow-location",
-        "canonicalUrl": "https://centaurcareers.in/locations/lucknow/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-lucknow/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -24320,9 +24320,9 @@
       "keyword": "finance operations course in Lucknow",
       "normalizedKeyword": "finance operations course in lucknow",
       "owner": {
-        "targetUrl": "/locations/lucknow/",
+        "targetUrl": "/best-finance-course-in-lucknow/",
         "routeId": "lucknow-location",
-        "canonicalUrl": "https://centaurcareers.in/locations/lucknow/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-lucknow/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -24354,9 +24354,9 @@
       "keyword": "KYC AML course in Lucknow",
       "normalizedKeyword": "kyc aml course in lucknow",
       "owner": {
-        "targetUrl": "/locations/lucknow/",
+        "targetUrl": "/best-finance-course-in-lucknow/",
         "routeId": "lucknow-location",
-        "canonicalUrl": "https://centaurcareers.in/locations/lucknow/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-lucknow/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -24388,9 +24388,9 @@
       "keyword": "finance course with placement assistance in Lucknow",
       "normalizedKeyword": "finance course with placement assistance in lucknow",
       "owner": {
-        "targetUrl": "/locations/lucknow/",
+        "targetUrl": "/best-finance-course-in-lucknow/",
         "routeId": "lucknow-location",
-        "canonicalUrl": "https://centaurcareers.in/locations/lucknow/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-lucknow/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -24422,9 +24422,9 @@
       "keyword": "best investment banking course in Lucknow",
       "normalizedKeyword": "best investment banking course in lucknow",
       "owner": {
-        "targetUrl": "/locations/lucknow/",
+        "targetUrl": "/best-finance-course-in-lucknow/",
         "routeId": "lucknow-location",
-        "canonicalUrl": "https://centaurcareers.in/locations/lucknow/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-lucknow/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -24456,9 +24456,9 @@
       "keyword": "investment banking course in Delhi",
       "normalizedKeyword": "investment banking course in delhi",
       "owner": {
-        "targetUrl": "/india/delhi-ncr/",
+        "targetUrl": "/best-finance-course-in-delhi/",
         "routeId": "india-delhi-ncr",
-        "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-delhi/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -24490,9 +24490,9 @@
       "keyword": "investment banking operations course in Delhi",
       "normalizedKeyword": "investment banking operations course in delhi",
       "owner": {
-        "targetUrl": "/india/delhi-ncr/",
+        "targetUrl": "/best-finance-course-in-delhi/",
         "routeId": "india-delhi-ncr",
-        "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-delhi/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -24524,9 +24524,9 @@
       "keyword": "investment banking classes in Delhi",
       "normalizedKeyword": "investment banking classes in delhi",
       "owner": {
-        "targetUrl": "/india/delhi-ncr/",
+        "targetUrl": "/best-finance-course-in-delhi/",
         "routeId": "india-delhi-ncr",
-        "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-delhi/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -24558,9 +24558,9 @@
       "keyword": "investment banking institute in Delhi",
       "normalizedKeyword": "investment banking institute in delhi",
       "owner": {
-        "targetUrl": "/india/delhi-ncr/",
+        "targetUrl": "/best-finance-course-in-delhi/",
         "routeId": "india-delhi-ncr",
-        "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-delhi/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -24592,9 +24592,9 @@
       "keyword": "finance operations course in Delhi",
       "normalizedKeyword": "finance operations course in delhi",
       "owner": {
-        "targetUrl": "/india/delhi-ncr/",
+        "targetUrl": "/best-finance-course-in-delhi/",
         "routeId": "india-delhi-ncr",
-        "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-delhi/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -24626,9 +24626,9 @@
       "keyword": "KYC AML course in Delhi",
       "normalizedKeyword": "kyc aml course in delhi",
       "owner": {
-        "targetUrl": "/india/delhi-ncr/",
+        "targetUrl": "/best-finance-course-in-delhi/",
         "routeId": "india-delhi-ncr",
-        "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-delhi/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -24660,9 +24660,9 @@
       "keyword": "finance course with placement assistance in Delhi",
       "normalizedKeyword": "finance course with placement assistance in delhi",
       "owner": {
-        "targetUrl": "/india/delhi-ncr/",
+        "targetUrl": "/best-finance-course-in-delhi/",
         "routeId": "india-delhi-ncr",
-        "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-delhi/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -24694,9 +24694,9 @@
       "keyword": "best investment banking course in Delhi",
       "normalizedKeyword": "best investment banking course in delhi",
       "owner": {
-        "targetUrl": "/india/delhi-ncr/",
+        "targetUrl": "/best-finance-course-in-delhi/",
         "routeId": "india-delhi-ncr",
-        "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-delhi/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -24728,9 +24728,9 @@
       "keyword": "investment banking course in Noida",
       "normalizedKeyword": "investment banking course in noida",
       "owner": {
-        "targetUrl": "/india/delhi-ncr/",
+        "targetUrl": "/best-finance-course-in-delhi/",
         "routeId": "india-delhi-ncr",
-        "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-delhi/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -24762,9 +24762,9 @@
       "keyword": "investment banking operations course in Noida",
       "normalizedKeyword": "investment banking operations course in noida",
       "owner": {
-        "targetUrl": "/india/delhi-ncr/",
+        "targetUrl": "/best-finance-course-in-delhi/",
         "routeId": "india-delhi-ncr",
-        "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-delhi/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -24796,9 +24796,9 @@
       "keyword": "investment banking classes in Noida",
       "normalizedKeyword": "investment banking classes in noida",
       "owner": {
-        "targetUrl": "/india/delhi-ncr/",
+        "targetUrl": "/best-finance-course-in-delhi/",
         "routeId": "india-delhi-ncr",
-        "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-delhi/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -24830,9 +24830,9 @@
       "keyword": "investment banking institute in Noida",
       "normalizedKeyword": "investment banking institute in noida",
       "owner": {
-        "targetUrl": "/india/delhi-ncr/",
+        "targetUrl": "/best-finance-course-in-delhi/",
         "routeId": "india-delhi-ncr",
-        "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-delhi/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -24864,9 +24864,9 @@
       "keyword": "finance operations course in Noida",
       "normalizedKeyword": "finance operations course in noida",
       "owner": {
-        "targetUrl": "/india/delhi-ncr/",
+        "targetUrl": "/best-finance-course-in-delhi/",
         "routeId": "india-delhi-ncr",
-        "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-delhi/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -24898,9 +24898,9 @@
       "keyword": "KYC AML course in Noida",
       "normalizedKeyword": "kyc aml course in noida",
       "owner": {
-        "targetUrl": "/india/delhi-ncr/",
+        "targetUrl": "/best-finance-course-in-delhi/",
         "routeId": "india-delhi-ncr",
-        "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-delhi/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -24932,9 +24932,9 @@
       "keyword": "finance course with placement assistance in Noida",
       "normalizedKeyword": "finance course with placement assistance in noida",
       "owner": {
-        "targetUrl": "/india/delhi-ncr/",
+        "targetUrl": "/best-finance-course-in-delhi/",
         "routeId": "india-delhi-ncr",
-        "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-delhi/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -24966,9 +24966,9 @@
       "keyword": "best investment banking course in Noida",
       "normalizedKeyword": "best investment banking course in noida",
       "owner": {
-        "targetUrl": "/india/delhi-ncr/",
+        "targetUrl": "/best-finance-course-in-delhi/",
         "routeId": "india-delhi-ncr",
-        "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-delhi/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25000,9 +25000,9 @@
       "keyword": "investment banking course in Gurgaon",
       "normalizedKeyword": "investment banking course in gurgaon",
       "owner": {
-        "targetUrl": "/india/delhi-ncr/",
+        "targetUrl": "/best-finance-course-in-delhi/",
         "routeId": "india-delhi-ncr",
-        "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-delhi/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25034,9 +25034,9 @@
       "keyword": "investment banking operations course in Gurgaon",
       "normalizedKeyword": "investment banking operations course in gurgaon",
       "owner": {
-        "targetUrl": "/india/delhi-ncr/",
+        "targetUrl": "/best-finance-course-in-delhi/",
         "routeId": "india-delhi-ncr",
-        "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-delhi/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25068,9 +25068,9 @@
       "keyword": "investment banking classes in Gurgaon",
       "normalizedKeyword": "investment banking classes in gurgaon",
       "owner": {
-        "targetUrl": "/india/delhi-ncr/",
+        "targetUrl": "/best-finance-course-in-delhi/",
         "routeId": "india-delhi-ncr",
-        "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-delhi/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25102,9 +25102,9 @@
       "keyword": "investment banking institute in Gurgaon",
       "normalizedKeyword": "investment banking institute in gurgaon",
       "owner": {
-        "targetUrl": "/india/delhi-ncr/",
+        "targetUrl": "/best-finance-course-in-delhi/",
         "routeId": "india-delhi-ncr",
-        "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-delhi/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25136,9 +25136,9 @@
       "keyword": "finance operations course in Gurgaon",
       "normalizedKeyword": "finance operations course in gurgaon",
       "owner": {
-        "targetUrl": "/india/delhi-ncr/",
+        "targetUrl": "/best-finance-course-in-delhi/",
         "routeId": "india-delhi-ncr",
-        "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-delhi/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25170,9 +25170,9 @@
       "keyword": "KYC AML course in Gurgaon",
       "normalizedKeyword": "kyc aml course in gurgaon",
       "owner": {
-        "targetUrl": "/india/delhi-ncr/",
+        "targetUrl": "/best-finance-course-in-delhi/",
         "routeId": "india-delhi-ncr",
-        "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-delhi/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25204,9 +25204,9 @@
       "keyword": "finance course with placement assistance in Gurgaon",
       "normalizedKeyword": "finance course with placement assistance in gurgaon",
       "owner": {
-        "targetUrl": "/india/delhi-ncr/",
+        "targetUrl": "/best-finance-course-in-delhi/",
         "routeId": "india-delhi-ncr",
-        "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-delhi/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25238,9 +25238,9 @@
       "keyword": "best investment banking course in Gurgaon",
       "normalizedKeyword": "best investment banking course in gurgaon",
       "owner": {
-        "targetUrl": "/india/delhi-ncr/",
+        "targetUrl": "/best-finance-course-in-delhi/",
         "routeId": "india-delhi-ncr",
-        "canonicalUrl": "https://centaurcareers.in/india/delhi-ncr/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-delhi/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25272,9 +25272,9 @@
       "keyword": "investment banking course in Mumbai",
       "normalizedKeyword": "investment banking course in mumbai",
       "owner": {
-        "targetUrl": "/india/mumbai/",
+        "targetUrl": "/best-finance-course-in-mumbai/",
         "routeId": "india-mumbai",
-        "canonicalUrl": "https://centaurcareers.in/india/mumbai/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-mumbai/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25306,9 +25306,9 @@
       "keyword": "investment banking operations course in Mumbai",
       "normalizedKeyword": "investment banking operations course in mumbai",
       "owner": {
-        "targetUrl": "/india/mumbai/",
+        "targetUrl": "/best-finance-course-in-mumbai/",
         "routeId": "india-mumbai",
-        "canonicalUrl": "https://centaurcareers.in/india/mumbai/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-mumbai/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25340,9 +25340,9 @@
       "keyword": "investment banking classes in Mumbai",
       "normalizedKeyword": "investment banking classes in mumbai",
       "owner": {
-        "targetUrl": "/india/mumbai/",
+        "targetUrl": "/best-finance-course-in-mumbai/",
         "routeId": "india-mumbai",
-        "canonicalUrl": "https://centaurcareers.in/india/mumbai/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-mumbai/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25374,9 +25374,9 @@
       "keyword": "investment banking institute in Mumbai",
       "normalizedKeyword": "investment banking institute in mumbai",
       "owner": {
-        "targetUrl": "/india/mumbai/",
+        "targetUrl": "/best-finance-course-in-mumbai/",
         "routeId": "india-mumbai",
-        "canonicalUrl": "https://centaurcareers.in/india/mumbai/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-mumbai/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25408,9 +25408,9 @@
       "keyword": "finance operations course in Mumbai",
       "normalizedKeyword": "finance operations course in mumbai",
       "owner": {
-        "targetUrl": "/india/mumbai/",
+        "targetUrl": "/best-finance-course-in-mumbai/",
         "routeId": "india-mumbai",
-        "canonicalUrl": "https://centaurcareers.in/india/mumbai/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-mumbai/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25442,9 +25442,9 @@
       "keyword": "KYC AML course in Mumbai",
       "normalizedKeyword": "kyc aml course in mumbai",
       "owner": {
-        "targetUrl": "/india/mumbai/",
+        "targetUrl": "/best-finance-course-in-mumbai/",
         "routeId": "india-mumbai",
-        "canonicalUrl": "https://centaurcareers.in/india/mumbai/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-mumbai/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25476,9 +25476,9 @@
       "keyword": "finance course with placement assistance in Mumbai",
       "normalizedKeyword": "finance course with placement assistance in mumbai",
       "owner": {
-        "targetUrl": "/india/mumbai/",
+        "targetUrl": "/best-finance-course-in-mumbai/",
         "routeId": "india-mumbai",
-        "canonicalUrl": "https://centaurcareers.in/india/mumbai/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-mumbai/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25510,9 +25510,9 @@
       "keyword": "best investment banking course in Mumbai",
       "normalizedKeyword": "best investment banking course in mumbai",
       "owner": {
-        "targetUrl": "/india/mumbai/",
+        "targetUrl": "/best-finance-course-in-mumbai/",
         "routeId": "india-mumbai",
-        "canonicalUrl": "https://centaurcareers.in/india/mumbai/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-mumbai/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25544,9 +25544,9 @@
       "keyword": "investment banking course in Pune",
       "normalizedKeyword": "investment banking course in pune",
       "owner": {
-        "targetUrl": "/india/pune/",
+        "targetUrl": "/best-finance-course-in-pune/",
         "routeId": "india-pune",
-        "canonicalUrl": "https://centaurcareers.in/india/pune/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-pune/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25578,9 +25578,9 @@
       "keyword": "investment banking operations course in Pune",
       "normalizedKeyword": "investment banking operations course in pune",
       "owner": {
-        "targetUrl": "/india/pune/",
+        "targetUrl": "/best-finance-course-in-pune/",
         "routeId": "india-pune",
-        "canonicalUrl": "https://centaurcareers.in/india/pune/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-pune/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25612,9 +25612,9 @@
       "keyword": "investment banking classes in Pune",
       "normalizedKeyword": "investment banking classes in pune",
       "owner": {
-        "targetUrl": "/india/pune/",
+        "targetUrl": "/best-finance-course-in-pune/",
         "routeId": "india-pune",
-        "canonicalUrl": "https://centaurcareers.in/india/pune/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-pune/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25646,9 +25646,9 @@
       "keyword": "investment banking institute in Pune",
       "normalizedKeyword": "investment banking institute in pune",
       "owner": {
-        "targetUrl": "/india/pune/",
+        "targetUrl": "/best-finance-course-in-pune/",
         "routeId": "india-pune",
-        "canonicalUrl": "https://centaurcareers.in/india/pune/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-pune/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25680,9 +25680,9 @@
       "keyword": "finance operations course in Pune",
       "normalizedKeyword": "finance operations course in pune",
       "owner": {
-        "targetUrl": "/india/pune/",
+        "targetUrl": "/best-finance-course-in-pune/",
         "routeId": "india-pune",
-        "canonicalUrl": "https://centaurcareers.in/india/pune/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-pune/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25714,9 +25714,9 @@
       "keyword": "KYC AML course in Pune",
       "normalizedKeyword": "kyc aml course in pune",
       "owner": {
-        "targetUrl": "/india/pune/",
+        "targetUrl": "/best-finance-course-in-pune/",
         "routeId": "india-pune",
-        "canonicalUrl": "https://centaurcareers.in/india/pune/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-pune/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25748,9 +25748,9 @@
       "keyword": "finance course with placement assistance in Pune",
       "normalizedKeyword": "finance course with placement assistance in pune",
       "owner": {
-        "targetUrl": "/india/pune/",
+        "targetUrl": "/best-finance-course-in-pune/",
         "routeId": "india-pune",
-        "canonicalUrl": "https://centaurcareers.in/india/pune/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-pune/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25782,9 +25782,9 @@
       "keyword": "best investment banking course in Pune",
       "normalizedKeyword": "best investment banking course in pune",
       "owner": {
-        "targetUrl": "/india/pune/",
+        "targetUrl": "/best-finance-course-in-pune/",
         "routeId": "india-pune",
-        "canonicalUrl": "https://centaurcareers.in/india/pune/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-pune/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25816,9 +25816,9 @@
       "keyword": "investment banking course in Bangalore",
       "normalizedKeyword": "investment banking course in bangalore",
       "owner": {
-        "targetUrl": "/india/bengaluru/",
+        "targetUrl": "/best-finance-course-in-bangalore/",
         "routeId": "india-bengaluru",
-        "canonicalUrl": "https://centaurcareers.in/india/bengaluru/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-bangalore/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25850,9 +25850,9 @@
       "keyword": "investment banking operations course in Bangalore",
       "normalizedKeyword": "investment banking operations course in bangalore",
       "owner": {
-        "targetUrl": "/india/bengaluru/",
+        "targetUrl": "/best-finance-course-in-bangalore/",
         "routeId": "india-bengaluru",
-        "canonicalUrl": "https://centaurcareers.in/india/bengaluru/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-bangalore/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25884,9 +25884,9 @@
       "keyword": "investment banking classes in Bangalore",
       "normalizedKeyword": "investment banking classes in bangalore",
       "owner": {
-        "targetUrl": "/india/bengaluru/",
+        "targetUrl": "/best-finance-course-in-bangalore/",
         "routeId": "india-bengaluru",
-        "canonicalUrl": "https://centaurcareers.in/india/bengaluru/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-bangalore/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25918,9 +25918,9 @@
       "keyword": "investment banking institute in Bangalore",
       "normalizedKeyword": "investment banking institute in bangalore",
       "owner": {
-        "targetUrl": "/india/bengaluru/",
+        "targetUrl": "/best-finance-course-in-bangalore/",
         "routeId": "india-bengaluru",
-        "canonicalUrl": "https://centaurcareers.in/india/bengaluru/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-bangalore/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25952,9 +25952,9 @@
       "keyword": "finance operations course in Bangalore",
       "normalizedKeyword": "finance operations course in bangalore",
       "owner": {
-        "targetUrl": "/india/bengaluru/",
+        "targetUrl": "/best-finance-course-in-bangalore/",
         "routeId": "india-bengaluru",
-        "canonicalUrl": "https://centaurcareers.in/india/bengaluru/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-bangalore/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -25986,9 +25986,9 @@
       "keyword": "KYC AML course in Bangalore",
       "normalizedKeyword": "kyc aml course in bangalore",
       "owner": {
-        "targetUrl": "/india/bengaluru/",
+        "targetUrl": "/best-finance-course-in-bangalore/",
         "routeId": "india-bengaluru",
-        "canonicalUrl": "https://centaurcareers.in/india/bengaluru/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-bangalore/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -26020,9 +26020,9 @@
       "keyword": "finance course with placement assistance in Bangalore",
       "normalizedKeyword": "finance course with placement assistance in bangalore",
       "owner": {
-        "targetUrl": "/india/bengaluru/",
+        "targetUrl": "/best-finance-course-in-bangalore/",
         "routeId": "india-bengaluru",
-        "canonicalUrl": "https://centaurcareers.in/india/bengaluru/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-bangalore/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -26054,9 +26054,9 @@
       "keyword": "best investment banking course in Bangalore",
       "normalizedKeyword": "best investment banking course in bangalore",
       "owner": {
-        "targetUrl": "/india/bengaluru/",
+        "targetUrl": "/best-finance-course-in-bangalore/",
         "routeId": "india-bengaluru",
-        "canonicalUrl": "https://centaurcareers.in/india/bengaluru/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-bangalore/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -26088,9 +26088,9 @@
       "keyword": "investment banking course in Bengaluru",
       "normalizedKeyword": "investment banking course in bengaluru",
       "owner": {
-        "targetUrl": "/india/bengaluru/",
+        "targetUrl": "/best-finance-course-in-bangalore/",
         "routeId": "india-bengaluru",
-        "canonicalUrl": "https://centaurcareers.in/india/bengaluru/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-bangalore/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -26122,9 +26122,9 @@
       "keyword": "investment banking operations course in Bengaluru",
       "normalizedKeyword": "investment banking operations course in bengaluru",
       "owner": {
-        "targetUrl": "/india/bengaluru/",
+        "targetUrl": "/best-finance-course-in-bangalore/",
         "routeId": "india-bengaluru",
-        "canonicalUrl": "https://centaurcareers.in/india/bengaluru/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-bangalore/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -26156,9 +26156,9 @@
       "keyword": "investment banking classes in Bengaluru",
       "normalizedKeyword": "investment banking classes in bengaluru",
       "owner": {
-        "targetUrl": "/india/bengaluru/",
+        "targetUrl": "/best-finance-course-in-bangalore/",
         "routeId": "india-bengaluru",
-        "canonicalUrl": "https://centaurcareers.in/india/bengaluru/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-bangalore/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -26190,9 +26190,9 @@
       "keyword": "investment banking institute in Bengaluru",
       "normalizedKeyword": "investment banking institute in bengaluru",
       "owner": {
-        "targetUrl": "/india/bengaluru/",
+        "targetUrl": "/best-finance-course-in-bangalore/",
         "routeId": "india-bengaluru",
-        "canonicalUrl": "https://centaurcareers.in/india/bengaluru/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-bangalore/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -26224,9 +26224,9 @@
       "keyword": "finance operations course in Bengaluru",
       "normalizedKeyword": "finance operations course in bengaluru",
       "owner": {
-        "targetUrl": "/india/bengaluru/",
+        "targetUrl": "/best-finance-course-in-bangalore/",
         "routeId": "india-bengaluru",
-        "canonicalUrl": "https://centaurcareers.in/india/bengaluru/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-bangalore/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -26258,9 +26258,9 @@
       "keyword": "KYC AML course in Bengaluru",
       "normalizedKeyword": "kyc aml course in bengaluru",
       "owner": {
-        "targetUrl": "/india/bengaluru/",
+        "targetUrl": "/best-finance-course-in-bangalore/",
         "routeId": "india-bengaluru",
-        "canonicalUrl": "https://centaurcareers.in/india/bengaluru/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-bangalore/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -26292,9 +26292,9 @@
       "keyword": "finance course with placement assistance in Bengaluru",
       "normalizedKeyword": "finance course with placement assistance in bengaluru",
       "owner": {
-        "targetUrl": "/india/bengaluru/",
+        "targetUrl": "/best-finance-course-in-bangalore/",
         "routeId": "india-bengaluru",
-        "canonicalUrl": "https://centaurcareers.in/india/bengaluru/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-bangalore/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -26326,9 +26326,9 @@
       "keyword": "best investment banking course in Bengaluru",
       "normalizedKeyword": "best investment banking course in bengaluru",
       "owner": {
-        "targetUrl": "/india/bengaluru/",
+        "targetUrl": "/best-finance-course-in-bangalore/",
         "routeId": "india-bengaluru",
-        "canonicalUrl": "https://centaurcareers.in/india/bengaluru/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-bangalore/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -26360,9 +26360,9 @@
       "keyword": "investment banking course in Hyderabad",
       "normalizedKeyword": "investment banking course in hyderabad",
       "owner": {
-        "targetUrl": "/india/hyderabad/",
+        "targetUrl": "/best-finance-course-in-hyderabad/",
         "routeId": "india-hyderabad",
-        "canonicalUrl": "https://centaurcareers.in/india/hyderabad/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-hyderabad/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -26394,9 +26394,9 @@
       "keyword": "investment banking operations course in Hyderabad",
       "normalizedKeyword": "investment banking operations course in hyderabad",
       "owner": {
-        "targetUrl": "/india/hyderabad/",
+        "targetUrl": "/best-finance-course-in-hyderabad/",
         "routeId": "india-hyderabad",
-        "canonicalUrl": "https://centaurcareers.in/india/hyderabad/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-hyderabad/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -26428,9 +26428,9 @@
       "keyword": "investment banking classes in Hyderabad",
       "normalizedKeyword": "investment banking classes in hyderabad",
       "owner": {
-        "targetUrl": "/india/hyderabad/",
+        "targetUrl": "/best-finance-course-in-hyderabad/",
         "routeId": "india-hyderabad",
-        "canonicalUrl": "https://centaurcareers.in/india/hyderabad/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-hyderabad/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -26462,9 +26462,9 @@
       "keyword": "investment banking institute in Hyderabad",
       "normalizedKeyword": "investment banking institute in hyderabad",
       "owner": {
-        "targetUrl": "/india/hyderabad/",
+        "targetUrl": "/best-finance-course-in-hyderabad/",
         "routeId": "india-hyderabad",
-        "canonicalUrl": "https://centaurcareers.in/india/hyderabad/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-hyderabad/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -26496,9 +26496,9 @@
       "keyword": "finance operations course in Hyderabad",
       "normalizedKeyword": "finance operations course in hyderabad",
       "owner": {
-        "targetUrl": "/india/hyderabad/",
+        "targetUrl": "/best-finance-course-in-hyderabad/",
         "routeId": "india-hyderabad",
-        "canonicalUrl": "https://centaurcareers.in/india/hyderabad/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-hyderabad/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -26530,9 +26530,9 @@
       "keyword": "KYC AML course in Hyderabad",
       "normalizedKeyword": "kyc aml course in hyderabad",
       "owner": {
-        "targetUrl": "/india/hyderabad/",
+        "targetUrl": "/best-finance-course-in-hyderabad/",
         "routeId": "india-hyderabad",
-        "canonicalUrl": "https://centaurcareers.in/india/hyderabad/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-hyderabad/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -26564,9 +26564,9 @@
       "keyword": "finance course with placement assistance in Hyderabad",
       "normalizedKeyword": "finance course with placement assistance in hyderabad",
       "owner": {
-        "targetUrl": "/india/hyderabad/",
+        "targetUrl": "/best-finance-course-in-hyderabad/",
         "routeId": "india-hyderabad",
-        "canonicalUrl": "https://centaurcareers.in/india/hyderabad/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-hyderabad/"
       },
       "search": {
         "cluster": "Local / Regional",
@@ -26598,9 +26598,9 @@
       "keyword": "best investment banking course in Hyderabad",
       "normalizedKeyword": "best investment banking course in hyderabad",
       "owner": {
-        "targetUrl": "/india/hyderabad/",
+        "targetUrl": "/best-finance-course-in-hyderabad/",
         "routeId": "india-hyderabad",
-        "canonicalUrl": "https://centaurcareers.in/india/hyderabad/"
+        "canonicalUrl": "https://centaurcareers.in/best-finance-course-in-hyderabad/"
       },
       "search": {
         "cluster": "Local / Regional",

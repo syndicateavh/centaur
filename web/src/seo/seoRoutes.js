@@ -11,6 +11,7 @@ import { FINANCE_QUIZ_DOMAINS, FINANCE_QUIZ_TOTAL } from '../content/quizLibrary
 import { PRIORITY_NON_ARTICLE_ROUTES } from '../content/prioritySeoContent.js';
 import { CAREER_TRACKS, LEADERSHIP, LEARNING_MODES, PROGRAM } from '../content/sourceContent.js';
 import { TOPIC_PROGRAM_REVIEW_DATE } from '../content/topicProgramPaths.js';
+import { getKeywordOwnership } from './keywordMap.js';
 import {
   DEFAULT_OG_IMAGE,
   DEFAULT_OG_IMAGE_HEIGHT,
@@ -36,36 +37,6 @@ const PAGE_IMAGES = Object.freeze({
   'career-guide-finance-operations': Object.freeze({ path: '/images/courses/finance-operations.jpg', alt: 'Finance operations and credit training topics', width: 1536, height: 1024 }),
   'resource-reconciliation-in-finance': Object.freeze({ path: '/images/blog/settlement-trade-break-worked-example.png', alt: 'Reconciliation and settlement break workflow', width: 1672, height: 941 }),
 });
-const KEYWORD_OWNED_CAREER_GUIDE_PATHS = new Set([
-  '/career-guides/choosing-finance-career-course/',
-  '/career-guides/finance-careers-after-graduation/',
-  '/career-guides/investment-banking-operations/',
-  '/career-guides/settlement-analyst/',
-  '/career-guides/reconciliation-analyst/',
-  '/career-guides/corporate-actions-analyst/',
-  '/career-guides/fund-accounting-analyst/',
-  '/career-guides/custody-operations/',
-  '/career-guides/trade-lifecycle/',
-  '/career-guides/finance-operations/',
-  '/career-guides/kyc-aml-analyst/',
-  '/career-guides/aml-analyst/',
-  '/career-guides/transaction-monitoring-analyst/',
-  '/career-guides/client-onboarding-analyst/',
-  '/career-guides/payment-operations-analyst/',
-  '/career-guides/upi-operations-analyst/',
-  '/career-guides/payment-disputes-analyst/',
-  '/career-guides/financial-operations-faq/',
-  '/career-guides/retail-banking-operations/',
-  '/career-guides/branch-operations-analyst/',
-  '/career-guides/banking-relationship-manager/',
-  '/career-guides/loan-processing-analyst/',
-  '/career-guides/credit-operations-analyst/',
-  '/career-guides/nbfc-operations-analyst/',
-  '/career-guides/digital-payments-operations/',
-  '/career-guides/fintech-operations/',
-  '/career-guides/fintech-operations-analyst/',
-]);
-
 const CAREER_GUIDE_ROUTES = CAREER_GUIDES.map((guide) => ({
   id: guide.routeId,
   parentId: 'career-guides',
@@ -78,7 +49,7 @@ const CAREER_GUIDE_ROUTES = CAREER_GUIDES.map((guide) => ({
   careerGuideId: guide.id,
   keywordPurpose: 'First-party career-guide information page',
   primaryKeyword: guide.primaryKeyword,
-  keywordOwnerUrl: guide.keywordOwnerUrl ?? (KEYWORD_OWNED_CAREER_GUIDE_PATHS.has(guide.path) ? guide.path : null),
+  keywordOwnerUrl: guide.keywordOwnerUrl ?? (getKeywordOwnership(guide.path)?.primaryKeyword === guide.primaryKeyword ? guide.path : null),
   image: guide.image || PAGE_IMAGES[guide.routeId]?.path,
   imageAlt: guide.imageAlt || PAGE_IMAGES[guide.routeId]?.alt,
   imageWidth: guide.imageWidth || PAGE_IMAGES[guide.routeId]?.width,
@@ -475,17 +446,17 @@ export const SEO_ROUTES = Object.freeze([
   {
     id: 'lucknow-location',
     parentId: 'home',
-    path: '/locations/lucknow/',
-    title: 'Finance & Investment Banking Course in Lucknow | Centaur Careers',
-    description: 'Study the six-week Financial Operations Masterclass in person at Mindsprout Career Hub, Alambagh, Lucknow. Review the curriculum, fees, and current cohort details.',
-    h1: 'Finance and Investment Banking Course in Lucknow',
+    path: '/best-finance-course-in-lucknow/',
+    title: 'Best Finance Course in Lucknow? | Centaur Careers',
+    description: 'Compare finance and investment banking operations training in Lucknow. Explore Centaur Careers’ six-week course in Alambagh and check current cohort details.',
+    h1: 'Best Finance Course in Lucknow? Explore Investment Banking Operations',
     breadcrumbLabel: 'Mindsprout Career Hub',
     schemaType: 'WebPage',
     keywordPurpose: 'Evidence-backed local Lucknow acquisition page',
     primaryKeyword: 'investment banking course in Lucknow',
-    keywordOwnerUrl: '/locations/lucknow/',
+    keywordOwnerUrl: '/best-finance-course-in-lucknow/',
     indexable: true,
-    lastModified: '2026-09-30',
+    lastModified: '2026-10-05',
   },
   {
     id: 'faqs',
@@ -591,7 +562,7 @@ export const INDEXABLE_ROUTES = Object.freeze(
   SEO_ROUTES.filter((route) => route.indexable),
 );
 
-export const TRAINING_LOCATION_ID = `${SITE_ORIGIN}/locations/lucknow/#place`;
+export const TRAINING_LOCATION_ID = `${SITE_ORIGIN}/best-finance-course-in-lucknow/#place`;
 export const PRIMARY_COURSE_ID = `${SITE_ORIGIN}/courses/#course`;
 
 // React Router treats slash-terminated prerender inputs as redirect requests

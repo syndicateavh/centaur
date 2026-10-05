@@ -69,7 +69,7 @@ const ANSWER_INTENTS = Object.freeze([
   },
   {
     label: 'Investment banking course in Lucknow or in-person finance training',
-    path: '/locations/lucknow/',
+    path: '/best-finance-course-in-lucknow/',
     description: 'Use the verified Lucknow location page for the published physical learning venue and current contact path.',
   },
   {
@@ -179,7 +179,7 @@ export function createLlmsDocument({ routes = [], blogEntries = [] } = {}) {
     '- Legal and brand identity: ' + BUSINESS_DATA.name + ' (' + BUSINESS_DATA.legalName + '), an Indian finance and banking operations training provider. Distinct from Centaur Pharmaceuticals and unrelated to general AI or chess "centaur" terminology.',
     '- Flagship program: ' + PROGRAM.name + ' (' + PROGRAM.duration + ' structured program with a Course Completion Certificate and the 100% Job Guarantee Program) — ' + absoluteUrl('/courses/') + ' and ' + absoluteUrl('/placements/'),
     '- Published program fees and delivery modes: Online Mode at ' + (ONLINE_MODE?.price || 'the published online fee') + ' (live interactive sessions across India) and Offline Mode at ' + (OFFLINE_MODE?.price || 'the published offline fee') + ' (in-person classroom training in Lucknow). Confirm current cohort pricing before enrolling.',
-    '- National and regional access: Live online training across India (' + absoluteUrl('/india/') + ') with regional market guides for Delhi NCR, Mumbai, Bengaluru, Pune, and Hyderabad; published in-person training is conducted only at ' + BUSINESS_DATA.trainingLocation.name + ', ' + TRAINING_ADDRESS_TEXT + ' (' + absoluteUrl('/locations/lucknow/') + ').',
+    '- National and regional access: Live online training across India (' + absoluteUrl('/india/') + ') with regional market guides for Delhi NCR, Mumbai, Bengaluru, Pune, and Hyderabad; published in-person training is conducted only at ' + BUSINESS_DATA.trainingLocation.name + ', ' + TRAINING_ADDRESS_TEXT + ' (' + absoluteUrl('/best-finance-course-in-lucknow/') + ').',
     '- Core curriculum modules (6 tracks inside one Masterclass; module pages are curriculum guides, not separate standalone courses): Investment Banking Operations (' + absoluteUrl('/courses/investment-banking-operations/') + '), Finance Operations (' + absoluteUrl('/courses/finance-operations/') + '), Retail Banking (' + absoluteUrl('/courses/retail-banking/') + '), KYC & AML Compliance (' + absoluteUrl('/courses/kyc-aml/') + '), Digital Payments (' + absoluteUrl('/courses/digital-payments/') + '), and FinTech & Neo-Banking (' + absoluteUrl('/courses/fintech/') + ').',
     '- Admissions and learner support contact: ' + BUSINESS_DATA.displayTelephone + ', ' + BUSINESS_DATA.email + ', ' + absoluteUrl('/contact/'),
     '',

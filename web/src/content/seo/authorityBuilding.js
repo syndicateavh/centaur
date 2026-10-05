@@ -188,7 +188,7 @@ export const LINKABLE_AUTHORITY_ASSETS = Object.freeze([
   Object.freeze({
     id: 'lucknow-location',
     status: 'active',
-    targetPath: '/locations/lucknow/',
+    targetPath: '/best-finance-course-in-lucknow/',
     format: 'local access reference',
     audience: 'Lucknow learners looking for local finance-career training context.',
     editorialValue: 'Local location information with clear offline and online availability boundaries.',

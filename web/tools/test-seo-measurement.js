@@ -70,7 +70,7 @@ try {
 
   const olderPageImport = importCsv(
     'older-page-export.csv',
-    'Top pages,Clicks,Impressions,CTR,Position\nhttps://centaurcareers.in/india/pune/,5,200,2.5%,8.1\n',
+    'Top pages,Clicks,Impressions,CTR,Position\nhttps://centaurcareers.in/best-finance-course-in-pune/,5,200,2.5%,8.1\n',
     '2026-07-01',
     '2026-07-28',
   );
@@ -78,7 +78,7 @@ try {
 
   const pageImport = importCsv(
     'page-export.csv',
-    'Top pages,Clicks,Impressions,CTR,Position\nhttps://www.centaurcareers.in/courses/fintech,1,250,0.4%,4.2\nhttps://centaurcareers.in/india/pune/,0,250,,\n',
+    'Top pages,Clicks,Impressions,CTR,Position\nhttps://www.centaurcareers.in/courses/fintech,1,250,0.4%,4.2\nhttps://centaurcareers.in/best-finance-course-in-pune/,0,250,,\n',
     '2026-07-29',
     '2026-08-25',
   );
@@ -157,14 +157,14 @@ try {
   assert.equal(currentQueryForDrop.status, 0, currentQueryForDrop.stderr);
   const priorPageForDrop = importCsv(
     'drop-prior-pages.csv',
-    'Top pages,Clicks,Impressions,CTR,Position\nhttps://centaurcareers.in/india/pune/,8,200,4%,5\nhttps://centaurcareers.in/courses/,5,100,5%,4\nhttps://centaurcareers.in/old-page/,1,30,3.3%,8\n',
+    'Top pages,Clicks,Impressions,CTR,Position\nhttps://centaurcareers.in/best-finance-course-in-pune/,8,200,4%,5\nhttps://centaurcareers.in/courses/,5,100,5%,4\nhttps://centaurcareers.in/old-page/,1,30,3.3%,8\n',
     '2026-08-01',
     '2026-08-28',
   );
   assert.equal(priorPageForDrop.status, 0, priorPageForDrop.stderr);
   const currentPageForDrop = importCsv(
     'drop-current-pages.csv',
-    'Top pages,Clicks,Impressions,CTR,Position\nhttps://centaurcareers.in/india/pune/,2,130,1.5%,6\nhttps://centaurcareers.in/courses/,7,120,5.8%,4\nhttps://centaurcareers.in/new-page/,1,30,3.3%,8\n',
+    'Top pages,Clicks,Impressions,CTR,Position\nhttps://centaurcareers.in/best-finance-course-in-pune/,2,130,1.5%,6\nhttps://centaurcareers.in/courses/,7,120,5.8%,4\nhttps://centaurcareers.in/new-page/,1,30,3.3%,8\n',
     '2026-08-29',
     '2026-09-25',
   );
@@ -182,7 +182,7 @@ try {
   const archiveBeforeChangedFilters = fs.readdirSync(path.join(measurementDirectory, 'history')).filter((name) => name.startsWith('search-console-page_')).length;
   const changedFilterImport = importCsv(
     'same-period-different-filter.csv',
-    'Top pages,Clicks,Impressions,CTR,Position\nhttps://centaurcareers.in/india/pune/,4,100,4%,5\n',
+    'Top pages,Clicks,Impressions,CTR,Position\nhttps://centaurcareers.in/best-finance-course-in-pune/,4,100,4%,5\n',
     '2026-08-29',
     '2026-09-25',
     ['--property', 'sc-domain:centaurcareers.in', '--search-type', 'web', '--country', 'USA', '--device', 'all', '--filters', 'none'],
