@@ -179,6 +179,29 @@ export interface MediaAssetSummary {
   processedAt: string | null;
 }
 
+export interface AdminMediaLibraryItem extends MediaAssetSummary {
+  courseId: string;
+  courseTitle: string;
+  courseSlug: string;
+  lessonTitle: string;
+  moduleTitle: string;
+}
+
+export interface AdminMediaLibraryQuery {
+  page: number;
+  pageSize?: number;
+  q?: string;
+  kind?: MediaAssetSummary['kind'] | '';
+  status?: MediaAssetSummary['status'] | '';
+}
+
+export interface AdminMediaLibraryPage {
+  items: AdminMediaLibraryItem[];
+  page: number;
+  pageSize: number;
+  total: number;
+}
+
 export interface LessonPlaybackMedia {
   id: string;
   kind: 'VIDEO' | 'PDF';
@@ -190,6 +213,8 @@ export interface LessonPlaybackMedia {
   posterUrl?: string | null;
 }
 
+export type AdminLessonMediaPreview = LessonPlaybackMedia;
+
 export type PublicCourse = Pick<CourseRecord, 'id' | 'slug' | 'title' | 'description' | 'certificateEnabled'> & {
   publishedAt: string | null;
   quizEnabled?: boolean;
@@ -200,6 +225,7 @@ export type PublicCourse = Pick<CourseRecord, 'id' | 'slug' | 'title' | 'descrip
 };
 
 export type CourseInput = Pick<CourseRecord, 'title' | 'slug' | 'description' | 'certificateEnabled' | 'quizEnabled' | 'quizRequired' | 'quizPassPercent' | 'videoCompletionPercent' | 'textCompletionMode'>;
+export type AdminCourseListItem = Omit<CourseRecord, 'modules'> & { moduleCount: number; lessonCount: number };
 export type ModuleInput = Pick<CourseModuleRecord, 'title' | 'description'>;
 export type LessonInput = Pick<LessonRecord, 'title' | 'description' | 'type' | 'content' | 'required'>;
 
@@ -209,7 +235,7 @@ export const listAdminCourses = (input: { q?: string; status?: string; page: num
   const params = new URLSearchParams({ page: String(input.page), pageSize: '25' });
   if (input.q) params.set('q', input.q);
   if (input.status) params.set('status', input.status);
-  return apiRequest<{ items: CourseRecord[]; page: number; pageSize: number; total: number }>(`/admin/courses?${params}`);
+  return apiRequest<{ items: AdminCourseListItem[]; page: number; pageSize: number; total: number }>(`/admin/courses?${params}`);
 };
 export const getAdminCourse = (id: string) => apiRequest<CourseRecord>(`/admin/courses/${id}`);
 export const listMyCourses = () => apiRequest<EnrolledCourseSummary[]>('/learner/courses');
@@ -226,12 +252,20 @@ export const getLearnerQuiz = (courseId: string) => apiRequest<LearnerQuiz>(`/le
 export const submitLearnerQuiz = (courseId: string, input: QuizSubmission) => apiRequest<QuizAttemptResult>(`/learner/courses/${courseId}/quiz/attempts`, { method: 'POST', body: JSON.stringify(input) });
 export const getLearnerProfile = () => apiRequest<SessionUser>('/learner/profile');
 export const listLessonMedia = (lessonId: string) => apiRequest<MediaAssetSummary[]>(`/admin/media/lessons/${lessonId}`);
+export const listAdminMedia = (input: AdminMediaLibraryQuery) => {
+  const params = new URLSearchParams({ page: String(input.page), pageSize: String(input.pageSize ?? 25) });
+  if (input.q) params.set('q', input.q);
+  if (input.kind) params.set('kind', input.kind);
+  if (input.status) params.set('status', input.status);
+  return apiRequest<AdminMediaLibraryPage>(`/admin/media?${params}`);
+};
 export const startMediaUpload = (input: { lessonId: string; fileName: string; contentType: string; sizeBytes: number }) => apiRequest<{ media: MediaAssetSummary; partSizeBytes: number }>('/admin/media/uploads', { method: 'POST', body: JSON.stringify(input) });
 export const getMediaUploadPartUrl = (mediaId: string, partNumber: number) => apiRequest<{ url: string; expiresInSeconds: number }>(`/admin/media/uploads/${mediaId}/parts/${partNumber}`);
 export const completeMediaUpload = (mediaId: string) => apiRequest<{ media: MediaAssetSummary; enqueued: boolean }>(`/admin/media/uploads/${mediaId}/complete`, { method: 'POST' });
 export const abortMediaUpload = (mediaId: string) => apiRequest<{ media: MediaAssetSummary }>(`/admin/media/uploads/${mediaId}/abort`, { method: 'POST' });
 export const retryMediaProcessing = (mediaId: string) => apiRequest<MediaAssetSummary>(`/admin/media/uploads/${mediaId}/retry`, { method: 'POST' });
 export const getLessonPlaybackMedia = (courseId: string, lessonId: string) => apiRequest<LessonPlaybackMedia>(`/learner/courses/${courseId}/lessons/${lessonId}/media`);
+export const getAdminLessonMediaPreview = (lessonId: string) => apiRequest<AdminLessonMediaPreview>(`/admin/media/lessons/${lessonId}/preview`);
 
 export const createCourse = (input: CourseInput) => apiRequest<CourseRecord>('/admin/courses', { method: 'POST', body: JSON.stringify(input) });
 export const updateCourse = (id: string, input: CourseInput) => apiRequest<CourseRecord>(`/admin/courses/${id}`, { method: 'PATCH', body: JSON.stringify(input) });

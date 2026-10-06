@@ -1,12 +1,12 @@
 import { BadRequestException, ConflictException, ForbiddenException, Inject, Injectable, NotFoundException } from '@nestjs/common';
-import { and, desc, eq } from 'drizzle-orm';
+import { and, count, desc, eq, ilike, or } from 'drizzle-orm';
 import type { createDatabase } from '@centaur/lms-database';
 import { courseModules, courses, enrollments, lessons, mediaAssets } from '@centaur/lms-database';
 import { parseApiEnv } from '@centaur/lms-config';
 import { DATABASE_CLIENT } from '../tokens.js';
 import { MediaQueueService } from './media-queue.service.js';
 import { MediaStorageService } from './media-storage.service.js';
-import type { MediaUploadInput } from './media.schemas.js';
+import type { MediaLibraryQuery, MediaUploadInput } from './media.schemas.js';
 
 type Database = ReturnType<typeof createDatabase>;
 const MIME_EXTENSIONS: Record<MediaUploadInput['contentType'], string[]> = {
@@ -33,6 +33,56 @@ export class MediaService {
     const rows = await this.database.db.select().from(mediaAssets)
       .where(eq(mediaAssets.lessonId, lesson.id)).orderBy(desc(mediaAssets.createdAt));
     return rows.map((media) => this.publicAdminMedia(media));
+  }
+
+  async listAdminMedia(input: MediaLibraryQuery) {
+    const filters = [];
+    if (input.kind) filters.push(eq(mediaAssets.kind, input.kind));
+    if (input.status) filters.push(eq(mediaAssets.status, input.status));
+    if (input.q) {
+      const query = `%${input.q.replace(/[\\%_]/g, '\\$&')}%`;
+      filters.push(or(
+        ilike(mediaAssets.originalFileName, query),
+        ilike(courses.title, query),
+        ilike(lessons.title, query),
+      ));
+    }
+    const where = filters.length ? and(...filters) : undefined;
+    const [total] = await this.database.db.select({ value: count() }).from(mediaAssets)
+      .innerJoin(lessons, eq(mediaAssets.lessonId, lessons.id))
+      .innerJoin(courseModules, eq(lessons.moduleId, courseModules.id))
+      .innerJoin(courses, eq(courseModules.courseId, courses.id))
+      .where(where);
+    const rows = await this.database.db.select({
+      id: mediaAssets.id,
+      lessonId: mediaAssets.lessonId,
+      kind: mediaAssets.kind,
+      status: mediaAssets.status,
+      originalFileName: mediaAssets.originalFileName,
+      contentType: mediaAssets.contentType,
+      sourceSizeBytes: mediaAssets.sourceSizeBytes,
+      outputSizeBytes: mediaAssets.outputSizeBytes,
+      durationSeconds: mediaAssets.durationSeconds,
+      width: mediaAssets.width,
+      height: mediaAssets.height,
+      errorCode: mediaAssets.errorCode,
+      createdAt: mediaAssets.createdAt,
+      updatedAt: mediaAssets.updatedAt,
+      processedAt: mediaAssets.processedAt,
+      courseId: courses.id,
+      courseTitle: courses.title,
+      courseSlug: courses.slug,
+      lessonTitle: lessons.title,
+      moduleTitle: courseModules.title,
+    }).from(mediaAssets)
+      .innerJoin(lessons, eq(mediaAssets.lessonId, lessons.id))
+      .innerJoin(courseModules, eq(lessons.moduleId, courseModules.id))
+      .innerJoin(courses, eq(courseModules.courseId, courses.id))
+      .where(where)
+      .orderBy(desc(mediaAssets.createdAt), desc(mediaAssets.id))
+      .limit(input.pageSize)
+      .offset((input.page - 1) * input.pageSize);
+    return { items: rows, page: input.page, pageSize: input.pageSize, total: total?.value ?? 0 };
   }
 
   async startUpload(userId: string, input: MediaUploadInput) {
@@ -165,6 +215,43 @@ export class MediaService {
     };
   }
 
+  async getAdminLessonPreview(lessonId: string) {
+    const lesson = await this.requireAdminLesson(lessonId);
+    if (lesson.type !== 'VIDEO' && lesson.type !== 'PDF') {
+      throw new BadRequestException({ code: 'MEDIA_PREVIEW_UNAVAILABLE', message: 'Text lessons do not have a media preview.' });
+    }
+    const [media] = await this.database.db.select().from(mediaAssets)
+      .where(and(eq(mediaAssets.lessonId, lessonId), eq(mediaAssets.kind, lesson.type), eq(mediaAssets.status, 'ready')))
+      .orderBy(desc(mediaAssets.createdAt)).limit(1);
+    if (!media) throw new NotFoundException({ code: 'MEDIA_PREVIEW_NOT_READY', message: 'A ready media file was not found for this lesson.' });
+    if (media.kind === 'PDF') {
+      return { id: media.id, kind: media.kind, url: await this.storage.signDownload(media.sourceKey, 'application/pdf', 300), expiresInSeconds: 300 };
+    }
+    return {
+      id: media.id,
+      kind: media.kind,
+      url: `/admin/media/uploads/${media.id}/manifest?key=master.m3u8`,
+      durationSeconds: media.durationSeconds,
+      width: media.width,
+      height: media.height,
+      posterUrl: media.posterKey ? await this.storage.signDownload(media.posterKey, 'image/jpeg', 300) : null,
+      expiresInSeconds: 300,
+    };
+  }
+
+  async getAdminPreviewManifest(mediaId: string, key: string) {
+    const media = await this.requireReadyAdminVideo(mediaId);
+    return this.readAndRewriteManifest(media.id, this.requireVideoOutput(media.kind, media.outputPrefix), key, true);
+  }
+
+  async getAdminPreviewAsset(mediaId: string, key: string) {
+    const media = await this.requireReadyAdminVideo(mediaId);
+    const outputPrefix = this.requireVideoOutput(media.kind, media.outputPrefix);
+    const objectKey = this.validateOutputKey(outputPrefix, key);
+    if (objectKey.endsWith('.m3u8')) return { manifest: await this.readAndRewriteManifest(media.id, outputPrefix, key, true) };
+    return { url: await this.storage.signDownload(objectKey) };
+  }
+
   async getManifest(userId: string, mediaId: string, key: string) {
     const media = await this.findReadyMediaById(userId, mediaId);
     const outputPrefix = this.requireVideoOutput(media.kind, media.outputPrefix);
@@ -179,7 +266,7 @@ export class MediaService {
     return { url: await this.storage.signDownload(objectKey) };
   }
 
-  private async readAndRewriteManifest(mediaId: string, outputPrefix: string, key: string) {
+  private async readAndRewriteManifest(mediaId: string, outputPrefix: string, key: string, adminPreview = false) {
     const objectKey = this.validateOutputKey(outputPrefix, key);
     if (!objectKey.endsWith('.m3u8')) throw new NotFoundException({ code: 'MEDIA_MANIFEST_NOT_FOUND', message: 'Media manifest not found.' });
     const manifest = await this.storage.readText(objectKey);
@@ -190,7 +277,10 @@ export class MediaService {
     const signedUrlLifetime = Math.min(604_800, Math.max(this.environment.MEDIA_SIGNED_URL_TTL_SECONDS, (media?.durationSeconds ?? 0) + 300));
     const rewrite = async (path: string) => {
       const relativeKey = `${directory}${path}`.replace(`${outputPrefix}/`, '');
-      if (relativeKey.endsWith('.m3u8')) return `${this.environment.API_PUBLIC_URL}/api/v1/learner/media/${mediaId}/asset?key=${encodeURIComponent(relativeKey)}`;
+      if (relativeKey.endsWith('.m3u8')) {
+        const route = adminPreview ? 'admin/media/uploads' : 'learner/media';
+        return `${this.environment.API_PUBLIC_URL}/api/v1/${route}/${mediaId}/asset?key=${encodeURIComponent(relativeKey)}`;
+      }
       return this.storage.signDownload(this.validateOutputKey(outputPrefix, relativeKey), undefined, signedUrlLifetime);
     };
     const lines = await Promise.all(manifest.split(/\r?\n/).map(async (line) => {
@@ -258,6 +348,12 @@ export class MediaService {
   private async requireMedia(mediaId: string) {
     const [media] = await this.database.db.select().from(mediaAssets).where(eq(mediaAssets.id, mediaId)).limit(1);
     if (!media) throw new NotFoundException({ code: 'MEDIA_NOT_FOUND', message: 'Media upload not found.' });
+    return media;
+  }
+
+  private async requireReadyAdminVideo(mediaId: string) {
+    const media = await this.requireMedia(mediaId);
+    if (media.status !== 'ready') throw new NotFoundException({ code: 'MEDIA_PREVIEW_NOT_READY', message: 'This video is not ready for preview.' });
     return media;
   }
 

@@ -53,6 +53,7 @@
       "lucknow-location",
       "contact",
       "privacy-policy",
+      "about",
       "investment-banking-operations",
       "courses-finance-operations-training",
       "courses-finance-operations-syllabus",
@@ -131,7 +132,6 @@
       "student-outcomes",
       "lead-finance-course-placement",
       "lead-finance-course-job-guarantee",
-      "about",
       "lead-best-finance-course-placement",
       "lead-finance-institute-lucknow-placement",
       "terms-and-conditions",
@@ -2355,6 +2355,7 @@
       "contact"
     ],
     "courses": [
+      "about",
       "investment-banking-operations",
       "courses-banking-courses",
       "courses-banking-and-finance",

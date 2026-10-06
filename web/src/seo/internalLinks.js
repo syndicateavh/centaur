@@ -10,6 +10,7 @@ export const INTERNAL_LINK_ARCHITECTURE = Object.freeze({
   resources: Object.freeze(['courses', 'courses-finance-operations-training', 'career-guides', 'career-guide-reconciliation-analyst', 'india', 'comparison-investment-banking-operations', 'comparison-best-finance-institutes-india', 'comparison-finance-operations-vs-financial-modelling-cfa', 'resource-investment-banking-interview-questions', 'resource-finance-gk', 'resource-accounting-basics', 'resource-accounting-interview-questions', 'resource-reconciliation-in-finance', 'resource-bank-reconciliation-process', 'resource-cost-accounting-finance-operations', 'resource-financial-accounting-banking', 'resource-financial-statement-analysis', 'resource-corporate-actions-workflow', 'resource-capital-market-operations', 'resource-financial-system-india', 'resource-kyc-aml-compliance-guide', 'quiz', 'placements', 'faqs', 'lucknow-location', 'contact']),
   quiz: Object.freeze(['resources', 'courses', 'career-guides', 'resource-investment-banking-interview-questions', 'resource-finance-gk', 'comparison-best-finance-institutes-india', 'india', 'faqs', 'placements', 'contact']),
   courses: Object.freeze([
+    'about',
     'investment-banking-operations',
     'courses-banking-courses',
     'courses-banking-and-finance',

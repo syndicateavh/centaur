@@ -4,7 +4,7 @@ COPY package.json package-lock.json ./
 COPY apps ./apps
 COPY packages ./packages
 COPY tsconfig.base.json eslint.config.js ./
-RUN npm ci && npm run build:packages
+RUN npm ci --fetch-retries=5 --fetch-retry-maxtimeout=120000 && npm run build:packages
 ARG VITE_API_BASE_URL=https://academy.example.com/api/v1
 ENV VITE_API_BASE_URL=${VITE_API_BASE_URL}
 RUN npm run build --workspace @centaur/lms-web

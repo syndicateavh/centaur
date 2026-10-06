@@ -8,3 +8,13 @@ export const mediaUploadInputSchema = z.object({
 });
 
 export type MediaUploadInput = z.infer<typeof mediaUploadInputSchema>;
+
+export const mediaLibraryQuerySchema = z.object({
+  page: z.coerce.number().int().min(1).max(100_000).default(1),
+  pageSize: z.coerce.number().int().min(1).max(100).default(25),
+  q: z.string().trim().max(160).optional(),
+  kind: z.enum(['VIDEO', 'PDF']).optional(),
+  status: z.enum(['uploading', 'processing', 'ready', 'failed', 'aborted']).optional(),
+});
+
+export type MediaLibraryQuery = z.infer<typeof mediaLibraryQuerySchema>;

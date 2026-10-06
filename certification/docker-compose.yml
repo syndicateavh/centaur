@@ -31,6 +31,90 @@ services:
       timeout: 3s
       retries: 12
 
+  migrate:
+    image: centaur-lms-migrate:local
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+      target: build
+    command: ["npm", "run", "db:migrate"]
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-centaur_lms}:${POSTGRES_PASSWORD:-centaur_lms_local_only}@postgres:5432/${POSTGRES_DB:-centaur_lms}
+    depends_on:
+      postgres: { condition: service_healthy }
+
+  api:
+    image: centaur-lms-api:local
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    restart: unless-stopped
+    environment:
+      NODE_ENV: development
+      LOG_LEVEL: ${LOG_LEVEL:-debug}
+      API_PORT: "4000"
+      API_PUBLIC_URL: ${API_PUBLIC_URL:-http://localhost:4000}
+      WEB_ORIGIN: ${WEB_ORIGIN:-http://localhost:5173}
+      TRUST_PROXY_HOPS: "0"
+      DATABASE_URL: postgresql://${POSTGRES_USER:-centaur_lms}:${POSTGRES_PASSWORD:-centaur_lms_local_only}@postgres:5432/${POSTGRES_DB:-centaur_lms}
+      REDIS_URL: redis://redis:6379
+      DATABASE_POOL_MAX: ${DATABASE_POOL_MAX:-10}
+      R2_ENDPOINT: ${R2_ENDPOINT:-}
+      R2_BUCKET: ${R2_BUCKET:-}
+      R2_ACCESS_KEY_ID: ${R2_ACCESS_KEY_ID:-}
+      R2_SECRET_ACCESS_KEY: ${R2_SECRET_ACCESS_KEY:-}
+      MEDIA_MAX_UPLOAD_BYTES: ${MEDIA_MAX_UPLOAD_BYTES:-5368709120}
+      MEDIA_UPLOAD_PART_BYTES: ${MEDIA_UPLOAD_PART_BYTES:-16777216}
+      MEDIA_SIGNED_URL_TTL_SECONDS: ${MEDIA_SIGNED_URL_TTL_SECONDS:-3600}
+    ports:
+      - "127.0.0.1:${API_PORT:-4000}:4000"
+    depends_on:
+      migrate: { condition: service_completed_successfully }
+      redis: { condition: service_healthy }
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:4000/api/v1/health').then(r=>r.ok?process.exit(0):process.exit(1)).catch(()=>process.exit(1))"]
+      interval: 20s
+      timeout: 5s
+      start_period: 30s
+      retries: 3
+
+  worker:
+    image: centaur-lms-worker:local
+    build:
+      context: .
+      dockerfile: Dockerfile.worker
+    restart: unless-stopped
+    environment:
+      NODE_ENV: development
+      LOG_LEVEL: ${LOG_LEVEL:-debug}
+      WEB_ORIGIN: ${WEB_ORIGIN:-http://localhost:5173}
+      DATABASE_URL: postgresql://${POSTGRES_USER:-centaur_lms}:${POSTGRES_PASSWORD:-centaur_lms_local_only}@postgres:5432/${POSTGRES_DB:-centaur_lms}
+      REDIS_URL: redis://redis:6379
+      DATABASE_POOL_MAX: ${DATABASE_POOL_MAX:-10}
+      R2_ENDPOINT: ${R2_ENDPOINT:-}
+      R2_BUCKET: ${R2_BUCKET:-}
+      R2_ACCESS_KEY_ID: ${R2_ACCESS_KEY_ID:-}
+      R2_SECRET_ACCESS_KEY: ${R2_SECRET_ACCESS_KEY:-}
+      MEDIA_MAX_DURATION_SECONDS: ${MEDIA_MAX_DURATION_SECONDS:-14400}
+      FFMPEG_PATH: ffmpeg
+      FFPROBE_PATH: ffprobe
+    depends_on:
+      migrate: { condition: service_completed_successfully }
+      redis: { condition: service_healthy }
+
+  web:
+    image: centaur-lms-web:local
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+      args:
+        VITE_API_BASE_URL: http://localhost:5173/api/v1
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${WEB_PORT:-5173}:8080"
+    depends_on:
+      api: { condition: service_healthy }
+
 volumes:
   lms-postgres-data:
   lms-redis-data:

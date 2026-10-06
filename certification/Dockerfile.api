@@ -4,13 +4,15 @@ COPY package.json package-lock.json ./
 COPY apps ./apps
 COPY packages ./packages
 COPY tsconfig.base.json eslint.config.js ./
-RUN npm ci && npm run build:packages && npm run build --workspace @centaur/lms-api
+RUN npm ci --fetch-retries=5 --fetch-retry-maxtimeout=120000 && npm run build:packages && npm run build --workspace @centaur/lms-api
+
+FROM build AS production-deps
 RUN npm prune --omit=dev
 
 FROM node:24-bookworm-slim AS runtime
 ENV NODE_ENV=production
 WORKDIR /workspace
-COPY --from=build --chown=node:node /workspace /workspace
+COPY --from=production-deps --chown=node:node /workspace /workspace
 USER node
 WORKDIR /workspace/apps/api
 EXPOSE 4000

@@ -9,6 +9,8 @@
     "dev:web": "npm run dev --workspace @centaur/lms-web",
     "dev:api": "npm run dev --workspace @centaur/lms-api",
     "dev:worker": "npm run dev --workspace @centaur/lms-worker",
+    "up": "docker compose up --build",
+    "down": "docker compose down",
     "db:generate": "npm run db:generate --workspace @centaur/lms-database",
     "db:migrate": "npm run db:migrate --workspace @centaur/lms-database",
     "db:check": "npm run db:check --workspace @centaur/lms-database",

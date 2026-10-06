@@ -64,6 +64,7 @@ services:
       start_period: 30s
       retries: 3
     security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
     read_only: true
     tmpfs: ["/tmp:rw,noexec,nosuid,size=64m"]
     stop_grace_period: 30s
@@ -88,6 +89,7 @@ services:
       start_period: 30s
       retries: 3
     security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
     read_only: true
     tmpfs: ["/tmp:rw,noexec,nosuid,size=6g"]
     stop_grace_period: 2m
@@ -109,8 +111,9 @@ services:
     depends_on:
       api: { condition: service_healthy }
     security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
     read_only: true
-    tmpfs: ["/tmp:rw,noexec,nosuid,size=16m", "/var/cache/nginx:rw,noexec,nosuid,size=16m", "/var/run:rw,noexec,nosuid,size=1m"]
+    tmpfs: ["/tmp:rw,noexec,nosuid,size=16m", "/var/cache/nginx:rw,noexec,nosuid,size=16m,uid=101,gid=101,mode=0750"]
 
   migrate:
     profiles: ["ops"]

@@ -25,7 +25,7 @@ export function LoginPage() {
       <FormField label="Password" name="password" type="password" autoComplete="current-password" registration={form.register('password')} error={form.formState.errors.password?.message} />
       {mutation.isError && <FormAlert>{errorMessage(mutation.error)}</FormAlert>}
       <Button className="w-full" type="submit" disabled={mutation.isPending}>{mutation.isPending ? 'Signing in…' : 'Sign in'}</Button>
-      <p className="text-center text-sm text-slate-600">New here? <Link className="font-semibold text-sky-800 hover:underline" to="/register">Create an account</Link></p>
+      <p className="text-center text-sm text-slate-600">New here? <Link className="font-semibold text-brand-800 hover:underline" to="/register">Create an account</Link></p>
     </form>
   </AuthCard>;
 }
@@ -45,7 +45,7 @@ export function RegisterPage() {
       <FormField label="Password (at least 8 characters)" name="password" type="password" autoComplete="new-password" registration={form.register('password')} error={form.formState.errors.password?.message} />
       {mutation.isError && <FormAlert>{errorMessage(mutation.error)}</FormAlert>}
       <Button className="w-full" type="submit" disabled={mutation.isPending}>{mutation.isPending ? 'Creating account…' : 'Create account'}</Button>
-      <p className="text-center text-sm text-slate-600">Already registered? <Link className="font-semibold text-sky-800 hover:underline" to="/login">Sign in</Link></p>
+      <p className="text-center text-sm text-slate-600">Already registered? <Link className="font-semibold text-brand-800 hover:underline" to="/login">Sign in</Link></p>
     </form>
   </AuthCard>;
 }

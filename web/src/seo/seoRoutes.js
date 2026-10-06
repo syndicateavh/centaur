@@ -325,16 +325,16 @@ export const SEO_ROUTES = Object.freeze([
     id: 'about',
     parentId: 'home',
     path: '/about/',
-    title: 'About Centaur Careers | Banking & Finance Training',
-    description: 'Learn about Centaur Careers and its finance-operations training, course topics, learning access, and current support information for prospective learners.',
-    h1: 'About Centaur Careers',
+    title: 'What Is Centaur Careers? How the Finance Program Works',
+    description: 'Learn what Centaur Careers does, who its six-week finance program is for, how learning works, and where to check course and job guarantee terms.',
+    h1: 'What Is Centaur Careers and How Does It Work?',
     breadcrumbLabel: 'About',
     schemaType: 'AboutPage',
-    keywordPurpose: 'Centaur Careers organization and leadership entity page',
+    keywordPurpose: 'Centaur Careers company overview and how its learning program works',
     primaryKeyword: 'Centaur Careers',
     keywordOwnerUrl: null,
     indexable: true,
-    lastModified: LAST_MEANINGFUL_UPDATE,
+    lastModified: '2026-10-07',
   },
   {
     id: 'contact',
@@ -892,7 +892,7 @@ export function createStructuredData(routeOrId) {
     ...(breadcrumb ? { breadcrumb: { '@id': breadcrumb['@id'] } } : {}),
   };
 
-  if (route.id === 'home' || route.id === 'contact') {
+  if (route.id === 'home' || route.id === 'contact' || route.id === 'about') {
     webPage.mainEntity = { '@id': ORGANIZATION_ID };
   }
 

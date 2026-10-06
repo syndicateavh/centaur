@@ -1,7 +1,7 @@
 import { BadRequestException, ConflictException, Inject, Injectable, NotFoundException } from '@nestjs/common';
-import { and, asc, count, desc, eq, ilike, inArray, max, or, sql } from 'drizzle-orm';
+import { and, asc, count, countDistinct, desc, eq, ilike, inArray, max, or, sql } from 'drizzle-orm';
 import type { createDatabase } from '@centaur/lms-database';
-import { courseModules, courses, lessons, quizOptions, quizQuestions, quizzes } from '@centaur/lms-database';
+import { courseModules, courses, lessons, mediaAssets, quizOptions, quizQuestions, quizzes } from '@centaur/lms-database';
 import { DATABASE_CLIENT } from '../tokens.js';
 import type { CreateCourseInput, LessonInput, ModuleInput, UpdateCourseInput } from './course.schemas.js';
 
@@ -24,7 +24,27 @@ export class CoursesService {
     const [total] = await this.database.db.select({ value: count() }).from(courses).where(where);
     const items = await this.database.db.select().from(courses).where(where)
       .orderBy(desc(courses.updatedAt), desc(courses.id)).limit(input.pageSize).offset((input.page - 1) * input.pageSize);
-    return { items, page: input.page, pageSize: input.pageSize, total: total?.value ?? 0 };
+    const outlineCounts = items.length
+      ? await this.database.db.select({
+        courseId: courseModules.courseId,
+        moduleCount: countDistinct(courseModules.id),
+        lessonCount: count(lessons.id),
+      }).from(courseModules)
+        .leftJoin(lessons, eq(lessons.moduleId, courseModules.id))
+        .where(inArray(courseModules.courseId, items.map((course) => course.id)))
+        .groupBy(courseModules.courseId)
+      : [];
+    const countsByCourse = new Map(outlineCounts.map((row) => [row.courseId, row]));
+    return {
+      items: items.map((course) => ({
+        ...course,
+        moduleCount: countsByCourse.get(course.id)?.moduleCount ?? 0,
+        lessonCount: countsByCourse.get(course.id)?.lessonCount ?? 0,
+      })),
+      page: input.page,
+      pageSize: input.pageSize,
+      total: total?.value ?? 0,
+    };
   }
 
   async getAdminCourse(courseId: string) {
@@ -95,18 +115,34 @@ export class CoursesService {
         if (!outline?.moduleCount || !outline.lessonCount) {
           throw new BadRequestException({ code: 'COURSE_CONTENT_REQUIRED', message: 'Add at least one module and one lesson before publishing.' });
         }
-        if (course.quizRequired) {
+        const lessonRows = await transaction.select({ id: lessons.id, title: lessons.title, type: lessons.type, content: lessons.content })
+          .from(courseModules).innerJoin(lessons, eq(lessons.moduleId, courseModules.id))
+          .where(eq(courseModules.courseId, courseId));
+        const emptyTextLessons = lessonRows.filter((lesson) => lesson.type === 'TEXT' && !lesson.content?.trim());
+        if (emptyTextLessons.length) {
+          throw new BadRequestException({ code: 'COURSE_TEXT_CONTENT_REQUIRED', message: `Add lesson content before publishing: ${emptyTextLessons.map((lesson) => lesson.title).join(', ')}.` });
+        }
+        const mediaLessons = lessonRows.filter((lesson) => lesson.type === 'VIDEO' || lesson.type === 'PDF');
+        if (mediaLessons.length) {
+          const readyMedia = await transaction.select({ lessonId: mediaAssets.lessonId, kind: mediaAssets.kind })
+            .from(mediaAssets).where(and(inArray(mediaAssets.lessonId, mediaLessons.map((lesson) => lesson.id)), eq(mediaAssets.status, 'ready')));
+          const missingMedia = mediaLessons.filter((lesson) => !readyMedia.some((media) => media.lessonId === lesson.id && media.kind === lesson.type));
+          if (missingMedia.length) {
+            throw new BadRequestException({ code: 'COURSE_MEDIA_NOT_READY', message: `Upload and finish processing media before publishing: ${missingMedia.map((lesson) => lesson.title).join(', ')}.` });
+          }
+        }
+        if (course.quizEnabled) {
           const [quiz] = await transaction.select({ id: quizzes.id }).from(quizzes)
             .where(eq(quizzes.courseId, courseId)).limit(1);
           const questions = quiz ? await transaction.select({ id: quizQuestions.id }).from(quizQuestions)
             .where(eq(quizQuestions.quizId, quiz.id)) : [];
           if (!quiz || questions.length === 0) {
-            throw new BadRequestException({ code: 'REQUIRED_QUIZ_CONTENT_REQUIRED', message: 'Configure at least one question before publishing a course with a required quiz.' });
+            throw new BadRequestException({ code: 'COURSE_QUIZ_CONTENT_REQUIRED', message: 'Configure at least one question before publishing a course with an enabled quiz.' });
           }
           const options = await transaction.select({ questionId: quizOptions.questionId, isCorrect: quizOptions.isCorrect })
             .from(quizOptions).where(inArray(quizOptions.questionId, questions.map((question) => question.id)));
           if (questions.some((question) => !options.some((option) => option.questionId === question.id && option.isCorrect))) {
-            throw new BadRequestException({ code: 'REQUIRED_QUIZ_ANSWER_KEY_REQUIRED', message: 'Every required quiz question must have a correct answer.' });
+            throw new BadRequestException({ code: 'COURSE_QUIZ_ANSWER_KEY_REQUIRED', message: 'Every quiz question needs a correct answer before publishing.' });
           }
         }
       }

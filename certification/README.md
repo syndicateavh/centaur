@@ -8,21 +8,27 @@ This workspace contains the implementation of the LMS phases. It is separate fro
 - npm 10 or newer
 - Docker Desktop with Docker Compose
 
-## Local setup
+## Quick start: run the whole LMS
 
-From this directory:
+Start Docker Desktop, open a terminal in this directory, and run:
+
+```sh
+npm run up
+```
+
+Compose builds the API, worker, and web images, starts PostgreSQL and Redis, applies database migrations, then starts all apps. Open `http://localhost:5173`; the admin console is at `http://localhost:5173/admin`. The API is also available at `http://localhost:4000/api/v1/health`. Stop the stack with `npm run down`; this preserves the local database volume.
+
+For a first local media upload, copy `.env.example` to `.env` and configure the R2 values before starting the stack. Without R2, the LMS still starts, but media upload/playback and certificate file storage are unavailable.
+
+## Host-based development mode
+
+Use this mode when you want Vite hot reload and separate app terminals. It is an alternative to the all-in-one Docker stack; stop that stack first to free ports.
 
 ```powershell
 Copy-Item .env.example .env
-docker compose up -d postgres redis
 npm ci
+docker compose up -d postgres redis
 npm run db:migrate
-npm run build
-```
-
-Run each app in a separate terminal:
-
-```powershell
 npm run dev:api
 npm run dev:web
 npm run dev:worker
