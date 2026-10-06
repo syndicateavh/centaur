@@ -1,0 +1,30 @@
+{
+  "name": "@centaur/lms-worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run build --workspace @centaur/lms-config && npm run build --workspace @centaur/lms-database && tsx watch src/main.ts",
+    "build": "tsc -b",
+    "typecheck": "tsc -b --pretty false",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1146.0",
+    "@centaur/lms-config": "*",
+    "@centaur/lms-database": "^0.1.0",
+    "bullmq": "^6.3.11",
+    "dotenv": "^16.6.1",
+    "ioredis": "^5.8.2",
+    "pdfkit": "^0.20.2",
+    "pino": "^9.14.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.1",
+    "@types/pdfkit": "^0.17.6",
+    "@types/qrcode": "^1.5.6",
+    "tsx": "^4.20.6",
+    "typescript": "~5.9.3"
+  }
+}

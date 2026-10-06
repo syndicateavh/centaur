@@ -1,0 +1,18 @@
+FROM node:24-bookworm-slim AS build
+WORKDIR /workspace
+COPY package.json package-lock.json ./
+COPY apps ./apps
+COPY packages ./packages
+COPY tsconfig.base.json eslint.config.js ./
+RUN npm ci && npm run build:packages && npm run build --workspace @centaur/lms-worker
+RUN npm prune --omit=dev
+
+FROM node:24-bookworm-slim AS runtime
+ENV NODE_ENV=production
+RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg ca-certificates \
+  && rm -rf /var/lib/apt/lists/*
+WORKDIR /workspace
+COPY --from=build --chown=node:node /workspace /workspace
+USER node
+WORKDIR /workspace/apps/worker
+CMD ["node", "dist/main.js"]

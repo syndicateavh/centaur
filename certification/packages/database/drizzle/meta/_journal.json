@@ -1,0 +1,76 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1791292402903,
+      "tag": "0000_cynical_moondragon",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1791293501209,
+      "tag": "0001_loving_rattler",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1791293953359,
+      "tag": "0002_chunky_scorpion",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1791295382366,
+      "tag": "0003_wakeful_the_fury",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1791296262862,
+      "tag": "0004_clever_carmella_unuscione",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1791300388343,
+      "tag": "0005_omniscient_katie_power",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1791300656486,
+      "tag": "0006_useful_smasher",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1791301660075,
+      "tag": "0007_rare_romulus",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1791302816725,
+      "tag": "0008_motionless_gressill",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1791303867184,
+      "tag": "0009_remarkable_steve_rogers",
+      "breakpoints": true
+    }
+  ]
+}

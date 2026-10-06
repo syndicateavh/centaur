@@ -1,0 +1,129 @@
+name: centaur-lms
+services:
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:?set POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER:?set POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}
+    volumes:
+      - lms-production-postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+    security_opt: ["no-new-privileges:true"]
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    environment:
+      REDIS_PASSWORD: ${REDIS_PASSWORD:?set REDIS_PASSWORD}
+    command: ["sh", "-c", "exec redis-server --appendonly yes --requirepass \"$$REDIS_PASSWORD\""]
+    volumes:
+      - lms-production-redis:/data
+    healthcheck:
+      test: ["CMD-SHELL", "REDISCLI_AUTH=$$REDIS_PASSWORD redis-cli ping | grep -q PONG"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+    security_opt: ["no-new-privileges:true"]
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    restart: unless-stopped
+    environment: &app-environment
+      NODE_ENV: production
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+      API_PORT: "4000"
+      API_PUBLIC_URL: ${API_PUBLIC_URL:?set API_PUBLIC_URL}
+      WEB_ORIGIN: ${WEB_ORIGIN:?set WEB_ORIGIN}
+      TRUST_PROXY_HOPS: ${TRUST_PROXY_HOPS:-2}
+      SESSION_TTL_SECONDS: ${SESSION_TTL_SECONDS:-2592000}
+      DATABASE_URL: ${DATABASE_URL:?set DATABASE_URL}
+      DATABASE_POOL_MAX: ${DATABASE_POOL_MAX:-10}
+      REDIS_URL: ${REDIS_URL:?set REDIS_URL}
+      R2_ENDPOINT: ${R2_ENDPOINT:?set R2_ENDPOINT}
+      R2_BUCKET: ${R2_BUCKET:?set R2_BUCKET}
+      R2_ACCESS_KEY_ID: ${R2_ACCESS_KEY_ID:?set R2_ACCESS_KEY_ID}
+      R2_SECRET_ACCESS_KEY: ${R2_SECRET_ACCESS_KEY:?set R2_SECRET_ACCESS_KEY}
+      MEDIA_MAX_UPLOAD_BYTES: ${MEDIA_MAX_UPLOAD_BYTES:-1073741824}
+      MEDIA_UPLOAD_PART_BYTES: ${MEDIA_UPLOAD_PART_BYTES:-16777216}
+      MEDIA_SIGNED_URL_TTL_SECONDS: ${MEDIA_SIGNED_URL_TTL_SECONDS:-3600}
+    depends_on:
+      postgres: { condition: service_healthy }
+      redis: { condition: service_healthy }
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:4000/api/v1/health').then(r=>r.ok?process.exit(0):process.exit(1)).catch(()=>process.exit(1))"]
+      interval: 20s
+      timeout: 5s
+      start_period: 30s
+      retries: 3
+    security_opt: ["no-new-privileges:true"]
+    read_only: true
+    tmpfs: ["/tmp:rw,noexec,nosuid,size=64m"]
+    stop_grace_period: 30s
+
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.worker
+    restart: unless-stopped
+    environment:
+      <<: *app-environment
+      MEDIA_MAX_DURATION_SECONDS: ${MEDIA_MAX_DURATION_SECONDS:-14400}
+      FFMPEG_PATH: ffmpeg
+      FFPROBE_PATH: ffprobe
+    depends_on:
+      postgres: { condition: service_healthy }
+      redis: { condition: service_healthy }
+    healthcheck:
+      test: ["CMD", "node", "--input-type=module", "-e", "import {Redis} from 'ioredis'; const r=new Redis(process.env.REDIS_URL); const n=await r.zcount('lms:workers:heartbeat', String(Date.now()-30000), '+inf'); await r.quit(); if(!n) process.exit(1)"]
+      interval: 20s
+      timeout: 5s
+      start_period: 30s
+      retries: 3
+    security_opt: ["no-new-privileges:true"]
+    read_only: true
+    tmpfs: ["/tmp:rw,noexec,nosuid,size=6g"]
+    stop_grace_period: 2m
+    deploy:
+      resources:
+        limits:
+          cpus: "4.0"
+          memory: 8G
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+      args:
+        VITE_API_BASE_URL: ${VITE_API_BASE_URL:?set VITE_API_BASE_URL}
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${WEB_BIND_PORT:-8080}:8080"
+    depends_on:
+      api: { condition: service_healthy }
+    security_opt: ["no-new-privileges:true"]
+    read_only: true
+    tmpfs: ["/tmp:rw,noexec,nosuid,size=16m", "/var/cache/nginx:rw,noexec,nosuid,size=16m", "/var/run:rw,noexec,nosuid,size=1m"]
+
+  migrate:
+    profiles: ["ops"]
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+      target: build
+    command: ["npm", "run", "db:migrate"]
+    environment:
+      DATABASE_URL: ${DATABASE_URL:?set DATABASE_URL}
+    depends_on:
+      postgres: { condition: service_healthy }
+
+volumes:
+  lms-production-postgres:
+  lms-production-redis:

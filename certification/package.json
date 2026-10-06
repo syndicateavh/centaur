@@ -1,0 +1,31 @@
+{
+  "name": "@centaur/certification-lms",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24.0.0" },
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev:web": "npm run dev --workspace @centaur/lms-web",
+    "dev:api": "npm run dev --workspace @centaur/lms-api",
+    "dev:worker": "npm run dev --workspace @centaur/lms-worker",
+    "db:generate": "npm run db:generate --workspace @centaur/lms-database",
+    "db:migrate": "npm run db:migrate --workspace @centaur/lms-database",
+    "db:check": "npm run db:check --workspace @centaur/lms-database",
+    "bootstrap:super-admin": "npm run build:packages && npm run bootstrap:super-admin --workspace @centaur/lms-api --",
+    "build:packages": "npm run build --workspace @centaur/lms-shared && npm run build --workspace @centaur/lms-config && npm run build --workspace @centaur/lms-database",
+    "build": "npm run build:packages && npm run build --workspace @centaur/lms-api && npm run build --workspace @centaur/lms-worker && npm run build --workspace @centaur/lms-web",
+    "typecheck": "npm run build:packages && npm run typecheck --workspace @centaur/lms-api && npm run typecheck --workspace @centaur/lms-worker && npm run typecheck --workspace @centaur/lms-web",
+    "lint": "npm run lint --workspace @centaur/lms-shared && npm run lint --workspace @centaur/lms-config && npm run lint --workspace @centaur/lms-database && npm run lint --workspace @centaur/lms-api && npm run lint --workspace @centaur/lms-worker && npm run lint --workspace @centaur/lms-web"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "drizzle-kit": "^0.31.11",
+    "drizzle-orm": "^0.45.3",
+    "@types/node": "^22.19.1",
+    "eslint": "^9.39.2",
+    "globals": "^16.5.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.48.0"
+  }
+}

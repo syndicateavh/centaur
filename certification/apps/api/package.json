@@ -1,0 +1,44 @@
+{
+  "name": "@centaur/lms-api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run build --workspace @centaur/lms-shared && npm run build --workspace @centaur/lms-config && npm run build --workspace @centaur/lms-database && tsx watch src/main.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start:prod": "node dist/main.js",
+    "bootstrap:super-admin": "tsx src/auth/bootstrap-super-admin.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1146.0",
+    "@aws-sdk/s3-request-presigner": "^3.1146.0",
+    "@centaur/lms-config": "*",
+    "@centaur/lms-database": "*",
+    "@centaur/lms-shared": "*",
+    "@nestjs/common": "^11.1.9",
+    "@nestjs/config": "^4.0.2",
+    "@nestjs/core": "^11.1.9",
+    "@nestjs/platform-express": "^11.1.9",
+    "bullmq": "^6.3.11",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.6.1",
+    "helmet": "^8.1.0",
+    "ioredis": "^5.8.2",
+    "nestjs-pino": "^4.4.1",
+    "pino": "^9.14.0",
+    "pino-http": "^10.5.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.12",
+    "@nestjs/schematics": "^11.0.9",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.19.1",
+    "tsx": "^4.20.6",
+    "typescript": "~5.9.3"
+  }
+}

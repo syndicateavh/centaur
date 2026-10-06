@@ -1,0 +1,12 @@
+node_modules/
+dist/
+build/
+.vite/
+.turbo/
+coverage/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+!.env.production.example
+*.log

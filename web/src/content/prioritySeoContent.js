@@ -1092,9 +1092,9 @@ export const PRIORITY_LANDING_PAGES = Object.freeze([
 export const PRIORITY_COMPARISON_PAGES = Object.freeze([
   comparison({
     id: 'best-finance-institutes-india', routeId: 'comparison-best-finance-institutes-india', parentId: 'home', path: '/compare/best-finance-institutes-india/',
-    title: 'Best Finance Programs in India with Placement | Centaur Careers',
-    description: 'Compare top finance courses and institutes in India by curriculum, fees, eligibility, and placement terms, including how to check a 100% job guarantee.',
-    h1: 'Top Finance Institutes in India: Compare Courses and Placement Terms', breadcrumbLabel: 'Best Finance Institutes in India', primaryKeyword: 'best finance institute in India', updatedAt: '2026-09-30',
+    title: 'Best Finance Institute in India for Finance Jobs? | Centaur Careers',
+    description: 'Compare finance institutes in India for finance and investment banking operations jobs by curriculum, practical work, fees, eligibility, credentials, and written placement terms.',
+    h1: 'Best Finance Institute in India? Compare Programs for Finance and Investment Banking Jobs', breadcrumbLabel: 'Best Finance Institutes in India', primaryKeyword: 'best finance institute in India', updatedAt: '2026-10-06',
     image: '/images/blog/best-finance-institutes-india.webp', imageAlt: 'Learner comparing finance institutes in India using curriculum, fees and placement evidence',
     directAnswer: 'There is no universal top finance institute or program for every learner. Compare the role fit, current syllabus, practical work, eligibility, total cost, learning mode, and written placement terms. A reported 100% cohort placement rate and an individual 100% job guarantee are different claims: check the cohort, denominator, outcome definition, eligibility, exclusions, and written terms before comparing providers.',
     criteria: [
@@ -1128,6 +1128,10 @@ export const PRIORITY_COMPARISON_PAGES = Object.freeze([
         'Score only criteria that matter to your decision, and explain the scoring method instead of publishing an unexplained ranking.',
         'Ask the same questions to each provider and keep a written record of material answers.',
       ], true),
+      heading('Choose a finance jobs program by the work it prepares you to understand'),
+      paragraph('Finance and investment banking jobs cover different work. An investment banking operations program should make its focus clear through workflows such as trade lifecycle, settlement, reconciliation, corporate actions, or fund operations. That preparation is different from financial modelling, valuation, research, or deal advisory. Compare the actual exercises and current vacancy requirements before deciding whether a course fits your target role.'),
+      paragraph('Centaur Careers presents Investment Banking Operations as one subject within its six-week Financial Operations Masterclass. Graduates and job switchers who complete the full Masterclass are covered by the published 100% Job Guarantee Program for a finance job, subject to the current written terms. The public promise does not name a specific investment banking role, employer, salary, or city. Read the applicable terms before enrolling.'),
+      link('Compare investment banking institutes by career goal', '/best-investment-banking-course-india/', 'lead-best-investment-banking-course-india'),
       heading('Where Centaur Careers fits in the comparison'),
       paragraph('Centaur Careers currently presents one six-week Financial Operations Masterclass with subjects covering investment banking operations, retail banking, KYC and AML, digital payments, finance operations, and FinTech. The current online and Lucknow access model, fees, certificate wording, and career-support terms should be confirmed with the team for the applicable cohort. This comparison page is a decision aid; it does not claim that Centaur is universally best or replace the current written programme terms.'),
       link('Review the Financial Operations Masterclass', '/courses/', 'courses'),

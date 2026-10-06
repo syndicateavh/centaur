@@ -43,7 +43,7 @@ const PLACED_LEARNERS = Object.freeze([
     role: 'Fund Accounting Specialist',
     company: 'State Street Bank',
     companyLogo: '/images/ogpartners/State-street-logo-final.svg.webp',
-    companyLogoClassName: 'w-36 sm:w-40',
+    companyLogoClassName: 'h-14 w-36 sm:w-40',
     image: '/images/profiles/optimized/mansi-kansal-state-street.webp',
     alt: 'Mansi Kansal, Fund Accounting Specialist at State Street Bank',
   }),
@@ -68,8 +68,18 @@ const PLACED_LEARNERS = Object.freeze([
     role: 'Relationship Manager',
     company: 'ICICI Bank',
     companyLogo: '/images/partners/icici-bank.svg',
+    companyLogoClassName: 'h-16 w-32 sm:h-20 sm:w-40',
     image: '/images/profiles/optimized/tanmay-icici-rhs.webp',
     alt: 'Tanmay Singh, Relationship Manager at ICICI Bank',
+  }),
+  Object.freeze({
+    name: 'Nidhi Verma',
+    role: 'Ongoing Monitoring Analyst',
+    company: 'Tide',
+    companyLogo: '/images/brand/Tide_idxybKEmUX_0.svg',
+    companyLogoClassName: 'h-10 w-24 sm:h-12 sm:w-28',
+    image: '/images/profiles/optimized/nidhi-verma-tide.webp',
+    alt: 'Nidhi Verma, Ongoing Monitoring Analyst at Tide',
   }),
 ]);
 
@@ -178,13 +188,19 @@ export function HomePlacementShowcase({
                           <h3 className="break-words text-lg font-bold leading-tight text-primary sm:text-xl">{learner.name}</h3>
                           <p className="mt-1 text-sm font-semibold leading-snug text-foreground/75">{learner.role}</p>
                         </div>
-                        <img
-                          src={learner.companyLogo}
-                          alt={`${learner.company} logo`}
-                          loading="lazy"
-                          decoding="async"
-                          className={`h-14 shrink-0 object-contain ${learner.companyLogoClassName ?? 'w-28 sm:w-36'}`}
-                        />
+                        {learner.companyLogo ? (
+                          <img
+                            src={learner.companyLogo}
+                            alt={`${learner.company} logo`}
+                            loading="lazy"
+                            decoding="async"
+                            className={`shrink-0 object-contain ${learner.companyLogoClassName ?? 'h-14 w-28 sm:w-36'}`}
+                          />
+                        ) : (
+                          <span className="shrink-0 text-xl font-extrabold tracking-tight text-primary" aria-label={learner.company}>
+                            {learner.company}
+                          </span>
+                        )}
                       </div>
                     </div>
                   </article>
